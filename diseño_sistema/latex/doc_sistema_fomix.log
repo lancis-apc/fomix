@@ -1,0 +1,1961 @@
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  8 JUN 2020 17:04
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**doc_sistema_fomix.tex
+(./doc_sistema_fomix.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count163
+\c@chapter=\count164
+\c@section=\count165
+\c@subsection=\count166
+\c@subsubsection=\count167
+\c@paragraph=\count168
+\c@subparagraph=\count169
+\c@figure=\count170
+\c@table=\count171
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/03/22 3.42 The Babel package
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/03/22 3.42 Babel switching mechanism
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/03/22 3.42 Babel common definitions
+\babel@savecnt=\count172
+\U@D=\dimen135
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/xebabel.def
+(/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def))
+\bbl@readstream=\read2
+\bbl@dirlevel=\count173
+)
+\es@quottoks=\toks15
+\es@quotdepth=\count174
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count175
+\Gm@cntv=\count176
+\c@Gm@tempcnt=\count177
+\Gm@bindingoffset=\dimen136
+\Gm@wd@mp=\dimen137
+\Gm@odd@mp=\dimen138
+\Gm@even@mp=\dimen139
+\Gm@layoutwidth=\dimen140
+\Gm@layoutheight=\dimen141
+\Gm@layouthoffset=\dimen142
+\Gm@layoutvoffset=\dimen143
+\Gm@dimlist=\toks19
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2020/01/24 v3.29 KOMA-Script package (type area)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
+)))
+\ta@bcor=\skip49
+\ta@div=\count178
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+\ta@hblk=\skip50
+\ta@vblk=\skip51
+\ta@temp=\skip52
+\footheight=\skip53
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 8
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 373.44246pt
+(typearea)              DIV departure   = -4%
+(typearea)              \evensidemargin = 39.76274pt
+(typearea)              \oddsidemargin  = 39.76274pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 538.0pt
+(typearea)              \topmargin      = 0.36087pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 1719.
+
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (373.44246pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (538.0pt) is ignored.
+
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+))
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box45
+\beforetitleunit=\skip54
+\aftertitleunit=\skip55
+\ttl@plus=\dimen144
+\ttl@minus=\dimen145
+\ttl@toksa=\toks20
+\titlewidth=\dimen146
+\titlewidthlast=\dimen147
+\titlewidthfirst=\dimen148
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count179
+\LTcapwidth=\dimen149
+\LT@head=\box46
+\LT@firsthead=\box47
+\LT@foot=\box48
+\LT@lastfoot=\box49
+\LT@cols=\count180
+\LT@rows=\count181
+\c@LT@tables=\count182
+\c@LT@chunks=\count183
+\LT@p@ftn=\toks21
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen150
+\lightrulewidth=\dimen151
+\cmidrulewidth=\dimen152
+\belowrulesep=\dimen153
+\belowbottomsep=\dimen154
+\aboverulesep=\dimen155
+\abovetopsep=\dimen156
+\cmidrulesep=\dimen157
+\cmidrulekern=\dimen158
+\defaultaddspace=\dimen159
+\@cmidla=\count184
+\@cmidlb=\count185
+\@aboverulesep=\dimen160
+\@belowrulesep=\dimen161
+\@thisruleclass=\count186
+\@lastruleclass=\count187
+\@thisrulewidth=\dimen162
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip60
+\f@nch@O@elh=\skip61
+\f@nch@O@erh=\skip62
+\f@nch@O@olh=\skip63
+\f@nch@O@orh=\skip64
+\f@nch@O@elf=\skip65
+\f@nch@O@erf=\skip66
+\f@nch@O@olf=\skip67
+\f@nch@O@orf=\skip68
+)
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 42.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 43.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 45.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 47.
+
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfmx.def
+File: l3backend-xdvipdfmx.def 2020-03-12 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count188
+\l__pdf_internal_box=\box50
+\g__pdf_backend_object_int=\count189
+\g__pdf_backend_annotation_int=\count190
+) (./doc_sistema_fomix.aux
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+
+
+LaTeX Warning: Label `item: modificar_datos_de_usuarios_internos_de_sds ' multi
+ply defined.
+
+)
+\openout1 = `doc_sistema_fomix.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 7
+2.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(112.03273pt, 377.0702pt, 108.405pt)
+* v-part:(T,H,B)=(105.63086pt, 631.01108pt, 108.405pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=377.0702pt
+* \textheight=631.01108pt
+* \oddsidemargin=39.76274pt
+* \evensidemargin=39.76274pt
+* \topmargin=0.36087pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=74.68849pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box51
+(./Portada.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(36.135pt, 525.23795pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 772.77695pt, 36.135pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=525.23795pt
+* \textheight=772.77695pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-69.135pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=74.68849pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: images/UNAM.eps Graphic file (type eps)
+<images/UNAM.eps>
+File: images/ie_logo.png Graphic file (type bmp)
+<images/ie_logo.png>
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+File: images/yucatan_logo.jpg Graphic file (type bmp)
+<images/yucatan_logo.jpg>
+
+Overfull \hbox (2.41847pt too wide) in paragraph at lines 32--36
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--36
+[]
+ []
+
+
+Overfull \hbox (39.40704pt too wide) in paragraph at lines 32--36
+[]
+ []
+
+
+Overfull \hbox (16.64485pt too wide) in paragraph at lines 32--36
+[] 
+ []
+
+[1
+
+
+]) (./doc_sistema_fomix.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `doc_sistema_fomix.toc'.
+
+ [1
+
+
+] (./doc_sistema_fomix.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lof=\write4
+\openout4 = `doc_sistema_fomix.lof'.
+
+ [2
+
+]
+(./doc_sistema_fomix.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
+Overfull \hbox (3.33986pt too wide) in paragraph at lines 11--11
+ [][] []\TU/lmss/m/n/10 Caso de uso: Consultar documento relacionado con la for
+mulación del POETY 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ [][]  
+ []
+
+)
+\tf@lot=\write5
+\openout5 = `doc_sistema_fomix.lot'.
+
+ [3
+
+]
+Capítulo 1.
+LaTeX Font Info:    Trying to load font information for TU+mdugm on input line 
+84.
+LaTeX Font Info:    No file TUmdugm.fd. on input line 84.
+
+LaTeX Font Warning: Font shape `TU/mdugm/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 84.
+
+(./secciones/EspReque_py.tex [4
+
+]
+Overfull \hbox (26.88287pt too wide) in alignment at lines 21--24
+ [] [] [] 
+ []
+
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 26.
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 26.
+
+Overfull \hbox (26.88287pt too wide) in alignment at lines 24--50
+ [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 50
+ []
+
+
+Overfull \hbox (26.88287pt too wide) in alignment at lines 50--50
+ [] [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+Make it at least 24.69003pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+
+Package Fancyhdr Warning: \footskip is too small (42.0pt): 
+Make it at least 53.18512pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[5]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.90755pt, 539.69284pt, 28.90755pt)
+* v-part:(T,H,B)=(7.22743pt, 830.59207pt, 7.22743pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=539.69284pt
+* \textheight=830.59207pt
+* \oddsidemargin=-43.36244pt
+* \evensidemargin=-43.36244pt
+* \topmargin=-98.04256pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=74.68849pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+
+Package typearea Warning: Bad type area settings!
+(typearea)                The detected line width is about 48%
+(typearea)                larger than the heuristically estimated maximum
+(typearea)                limit of typographical good line width.
+(typearea)                You should e.g. decrease DIV, increase fontsize
+(typearea)                or change papersize.
+
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 8
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 845.04694pt
+(typearea)              \textwidth      = 528.15436pt
+(typearea)              DIV departure   = -48%
+(typearea)              \evensidemargin = 86.1763pt
+(typearea)              \oddsidemargin  = 86.1763pt
+(typearea)             \paperheight     = 597.50793pt
+(typearea)              \textheight     = 382.0pt
+(typearea)              \topmargin      = -30.5815pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 63.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 63.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(158.44629pt, 528.15436pt, 158.44629pt)
+* v-part:(T,H,B)=(74.68849pt, 382.0pt, 140.81944pt)
+* \paperwidth=845.04694pt
+* \paperheight=597.50793pt
+* \textwidth=528.15436pt
+* \textheight=382.0pt
+* \oddsidemargin=86.1763pt
+* \evensidemargin=86.1763pt
+* \topmargin=-30.5815pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=105.63086pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead 
+* h-part:(L,W,R)=(36.135pt, 772.77695pt, 36.135pt)
+* v-part:(T,H,B)=(43.36243pt, 463.80801pt, 90.3375pt)
+* \paperwidth=845.04694pt
+* \paperheight=597.50793pt
+* \textwidth=772.77695pt
+* \textheight=422.80801pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-28.90756pt
+* \headheight=23.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=105.63086pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: images/PrioritizationRequirements.jpg Graphic file (type bmp)
+<images/PrioritizationRequirements.jpg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
+
+Package Fancyhdr Warning: \headheight is too small (23.0pt): 
+Make it at least 24.69003pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+
+Package Fancyhdr Warning: \footskip is too small (42.0pt): 
+Make it at least 53.18512pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[6]
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 8
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 373.44246pt
+(typearea)              DIV departure   = -4%
+(typearea)              \evensidemargin = 39.76274pt
+(typearea)              \oddsidemargin  = 39.76274pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 538.0pt
+(typearea)              \topmargin      = 0.36087pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 70.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 70.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(112.03273pt, 373.44246pt, 112.03275pt)
+* v-part:(T,H,B)=(105.63086pt, 538.0pt, 201.41608pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=373.44246pt
+* \textheight=538.0pt
+* \oddsidemargin=39.76274pt
+* \evensidemargin=39.76274pt
+* \topmargin=0.36087pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=74.68849pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead 
+* h-part:(L,W,R)=(36.135pt, 525.23795pt, 36.135pt)
+* v-part:(T,H,B)=(43.36243pt, 711.34702pt, 90.3375pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=525.23795pt
+* \textheight=670.34702pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-28.90756pt
+* \headheight=23.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=74.68849pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+
+Package typearea Warning: Bad type area settings!
+(typearea)                The detected line width is about 48%
+(typearea)                larger than the heuristically estimated maximum
+(typearea)                limit of typographical good line width.
+(typearea)                You should e.g. decrease DIV, increase fontsize
+(typearea)                or change papersize.
+
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 8
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 845.04694pt
+(typearea)              \textwidth      = 528.15436pt
+(typearea)              DIV departure   = -48%
+(typearea)              \evensidemargin = 86.1763pt
+(typearea)              \oddsidemargin  = 86.1763pt
+(typearea)             \paperheight     = 597.50793pt
+(typearea)              \textheight     = 382.0pt
+(typearea)              \topmargin      = -30.5815pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 74.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 74.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(158.44629pt, 528.15436pt, 158.44629pt)
+* v-part:(T,H,B)=(74.68849pt, 382.0pt, 140.81944pt)
+* \paperwidth=845.04694pt
+* \paperheight=597.50793pt
+* \textwidth=528.15436pt
+* \textheight=382.0pt
+* \oddsidemargin=86.1763pt
+* \evensidemargin=86.1763pt
+* \topmargin=-30.5815pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=105.63086pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead 
+* h-part:(L,W,R)=(36.135pt, 772.77695pt, 36.135pt)
+* v-part:(T,H,B)=(43.36243pt, 463.80801pt, 90.3375pt)
+* \paperwidth=845.04694pt
+* \paperheight=597.50793pt
+* \textwidth=772.77695pt
+* \textheight=422.80801pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-28.90756pt
+* \headheight=23.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=105.63086pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: images/AdminiInsumos.jpg Graphic file (type bmp)
+<images/AdminiInsumos.jpg>
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
+
+Package Fancyhdr Warning: \headheight is too small (23.0pt): 
+Make it at least 24.69003pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+
+Package Fancyhdr Warning: \footskip is too small (42.0pt): 
+Make it at least 53.18512pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[7
+
+
+
+
+
+
+
+
+
+
+
+]
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 8
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 373.44246pt
+(typearea)              DIV departure   = -4%
+(typearea)              \evensidemargin = 39.76274pt
+(typearea)              \oddsidemargin  = 39.76274pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 538.0pt
+(typearea)              \topmargin      = 0.36087pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 84.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 84.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(112.03273pt, 373.44246pt, 112.03275pt)
+* v-part:(T,H,B)=(105.63086pt, 538.0pt, 201.41608pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=373.44246pt
+* \textheight=538.0pt
+* \oddsidemargin=39.76274pt
+* \evensidemargin=39.76274pt
+* \topmargin=0.36087pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=74.68849pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead 
+* h-part:(L,W,R)=(36.135pt, 525.23795pt, 36.135pt)
+* v-part:(T,H,B)=(43.36243pt, 711.34702pt, 90.3375pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=525.23795pt
+* \textheight=670.34702pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-28.90756pt
+* \headheight=23.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=74.68849pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+
+Package typearea Warning: Bad type area settings!
+(typearea)                The detected line width is about 48%
+(typearea)                larger than the heuristically estimated maximum
+(typearea)                limit of typographical good line width.
+(typearea)                You should e.g. decrease DIV, increase fontsize
+(typearea)                or change papersize.
+
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 8
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 845.04694pt
+(typearea)              \textwidth      = 528.15436pt
+(typearea)              DIV departure   = -48%
+(typearea)              \evensidemargin = 86.1763pt
+(typearea)              \oddsidemargin  = 86.1763pt
+(typearea)             \paperheight     = 597.50793pt
+(typearea)              \textheight     = 382.0pt
+(typearea)              \topmargin      = -30.5815pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 86.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 86.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(158.44629pt, 528.15436pt, 158.44629pt)
+* v-part:(T,H,B)=(74.68849pt, 382.0pt, 140.81944pt)
+* \paperwidth=845.04694pt
+* \paperheight=597.50793pt
+* \textwidth=528.15436pt
+* \textheight=382.0pt
+* \oddsidemargin=86.1763pt
+* \evensidemargin=86.1763pt
+* \topmargin=-30.5815pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=105.63086pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead 
+* h-part:(L,W,R)=(36.135pt, 772.77695pt, 36.135pt)
+* v-part:(T,H,B)=(43.36243pt, 463.80801pt, 90.3375pt)
+* \paperwidth=845.04694pt
+* \paperheight=597.50793pt
+* \textwidth=772.77695pt
+* \textheight=422.80801pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-28.90756pt
+* \headheight=23.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=105.63086pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: images/ConsumoRecursosPropuesta.jpg Graphic file (type bmp)
+<images/ConsumoRecursosPropuesta.jpg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
+
+Package Fancyhdr Warning: \headheight is too small (23.0pt): 
+Make it at least 24.69003pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+
+Package Fancyhdr Warning: \footskip is too small (42.0pt): 
+Make it at least 53.18512pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[8]
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 8
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 373.44246pt
+(typearea)              DIV departure   = -4%
+(typearea)              \evensidemargin = 39.76274pt
+(typearea)              \oddsidemargin  = 39.76274pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 538.0pt
+(typearea)              \topmargin      = 0.36087pt
+(typearea)              \headheight     = 15.0pt
+(typearea)              \headsep        = 18.0pt
+(typearea)              \topskip        = 10.0pt
+(typearea)              \footskip       = 42.0pt
+(typearea)              \baselineskip   = 12.0pt
+(typearea)              on input line 95.
+Package typearea Info: Using dirty hack to recalculate internal output
+(typearea)             dimensions of LaTeX on input line 95.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(112.03273pt, 373.44246pt, 112.03275pt)
+* v-part:(T,H,B)=(105.63086pt, 538.0pt, 201.41608pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=373.44246pt
+* \textheight=538.0pt
+* \oddsidemargin=39.76274pt
+* \evensidemargin=39.76274pt
+* \topmargin=0.36087pt
+* \headheight=15.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=74.68849pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead 
+* h-part:(L,W,R)=(36.135pt, 525.23795pt, 36.135pt)
+* v-part:(T,H,B)=(43.36243pt, 711.34702pt, 90.3375pt)
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=525.23795pt
+* \textheight=670.34702pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-28.90756pt
+* \headheight=23.0pt
+* \headsep=18.0pt
+* \topskip=10.0pt
+* \footskip=42.0pt
+* \marginparwidth=74.68849pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Underfull \vbox (badness 10000) detected at line 145
+ []
+
+LaTeX Info: Redefining \. on input line 184.
+LaTeX Info: Redefining \% on input line 184.
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+Make it at least 24.69003pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+
+Package Fancyhdr Warning: \footskip is too small (42.0pt): 
+Make it at least 53.18512pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[9
+
+
+
+
+
+
+
+
+
+
+]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 195--198
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 198--257
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 257
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 257--257
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 261.
+LaTeX Info: Redefining \% on input line 261.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[10]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 269--272
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 272--325
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 325
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 325--325
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 329.
+LaTeX Info: Redefining \% on input line 329.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[11]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 337--340
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 340--399
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 399
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 399--399
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 403.
+LaTeX Info: Redefining \% on input line 403.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[12]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 411--414
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 414--469
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 469
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 469--469
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 473.
+LaTeX Info: Redefining \% on input line 473.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[13]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 481--484
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 484--535
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 535
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 535--535
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 539.
+LaTeX Info: Redefining \% on input line 539.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[14]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 547--550
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 550--603
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 603
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 603--603
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 607.
+LaTeX Info: Redefining \% on input line 607.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[15]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 615--618
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 618--669
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 669
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 669--669
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 673.
+LaTeX Info: Redefining \% on input line 673.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[16]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 681--684
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 684--743
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 743
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 743--743
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 747.
+LaTeX Info: Redefining \% on input line 747.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[17]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 755--758
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 758--815
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 815
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 815--815
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 819.
+LaTeX Info: Redefining \% on input line 819.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[18]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 827--830
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 830--891
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 891
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 891--891
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 895.
+LaTeX Info: Redefining \% on input line 895.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[19]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 903--906
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 906--967
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 967
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 967--967
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 971.
+LaTeX Info: Redefining \% on input line 971.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[20]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 979--982
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 982--1037
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1037
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1037--1037
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1041.
+LaTeX Info: Redefining \% on input line 1041.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[21]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1049--1052
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1052--1107
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1107
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1107--1107
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1111.
+LaTeX Info: Redefining \% on input line 1111.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[22]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1119--1122
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1122--1179
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1179
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1179--1179
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1183.
+LaTeX Info: Redefining \% on input line 1183.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[23]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1191--1194
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1194--1253
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1253
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1253--1253
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1257.
+LaTeX Info: Redefining \% on input line 1257.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[24]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1265--1268
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1268--1325
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1325
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1325--1325
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1329.
+LaTeX Info: Redefining \% on input line 1329.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[25]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1337--1340
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1340--1401
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1401
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1401--1401
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1405.
+LaTeX Info: Redefining \% on input line 1405.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[26]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1413--1416
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1416--1473
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1473
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1473--1473
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1477.
+LaTeX Info: Redefining \% on input line 1477.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[27]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1485--1488
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1488--1549
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1549
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1549--1549
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1553.
+LaTeX Info: Redefining \% on input line 1553.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[28]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1561--1564
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1564--1621
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1621
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1621--1621
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1625.
+LaTeX Info: Redefining \% on input line 1625.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[29]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1633--1636
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1636--1703
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1703
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1703--1703
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1707.
+LaTeX Info: Redefining \% on input line 1707.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[30]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1715--1718
+ [] [] 
+ []
+
+Missing character: There is no ṕ in font [lmsans10-regular]:mapping=tex-text;!
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1718--1777
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1777
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1777--1777
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1781.
+LaTeX Info: Redefining \% on input line 1781.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[31]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1789--1792
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1792--1851
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1851
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1851--1851
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1851.
+LaTeX Info: Redefining \% on input line 1851.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[32]
+LaTeX Info: Redefining \. on input line 1855.
+LaTeX Info: Redefining \% on input line 1855.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+ [33]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1863--1866
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1866--1925
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1925
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1925--1925
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 1929.
+LaTeX Info: Redefining \% on input line 1929.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[34]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1937--1940
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1940--1999
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1999
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1999--1999
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 2003.
+LaTeX Info: Redefining \% on input line 2003.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[35]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2011--2014
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2014--2074
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2074
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2074--2074
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 2078.
+LaTeX Info: Redefining \% on input line 2078.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[36]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2086--2089
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2089--2147
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2147
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2147--2147
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 2151.
+LaTeX Info: Redefining \% on input line 2151.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[37]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2159--2162
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2162--2221
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2221
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2221--2221
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 2225.
+LaTeX Info: Redefining \% on input line 2225.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[38]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2233--2236
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2236--2298
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2298
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2298--2298
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 2302.
+LaTeX Info: Redefining \% on input line 2302.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[39]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2310--2313
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2313--2375
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2375
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2375--2375
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 2379.
+LaTeX Info: Redefining \% on input line 2379.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[40]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2387--2390
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2390--2450
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2450
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2450--2450
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 2454.
+LaTeX Info: Redefining \% on input line 2454.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[41]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2462--2465
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2465--2519
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2519
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2519--2519
+ [] [] 
+ []
+
+LaTeX Info: Redefining \. on input line 2523.
+LaTeX Info: Redefining \% on input line 2523.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+[42]
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2531--2534
+ [] [] 
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2534--2584
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2584
+ []
+
+
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2584--2584
+ [] [] 
+ []
+
+)
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+ [43] (./doc_sistema_fomix.aux
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4777 strings out of 479418
+ 72591 string characters out of 5884586
+ 384579 words of memory out of 5000000
+ 22189 multiletter control sequences out of 15000+600000
+ 532498 words of font info for 44 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 46i,11n,88p,564b,503s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on doc_sistema_fomix.pdf (44 pages).

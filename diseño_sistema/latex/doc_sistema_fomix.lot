@@ -1,0 +1,38 @@
+\babel@toc {spanish}{}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{Requerimientos del Sistema}}{5}%
+\contentsline {table}{\numberline {1.2}{Módulos y Casos de Uso}}{9}%
+\contentsline {table}{\numberline {1.3}{Caso de uso: Consultar fichas de UGAs }}{10}%
+\contentsline {table}{\numberline {1.4}{Caso de uso: Descargar ficha de UGA }}{11}%
+\contentsline {table}{\numberline {1.5}{Caso de uso: Consultar capas de insumo para el ordenamiento }}{12}%
+\contentsline {table}{\numberline {1.6}{Caso de uso: Consultar mapas de aptitud }}{13}%
+\contentsline {table}{\numberline {1.7}{Caso de uso: Descargar capas }}{14}%
+\contentsline {table}{\numberline {1.8}{Caso de uso: Consultar mapas de UGAs }}{15}%
+\contentsline {table}{\numberline {1.9}{Caso de uso: Consultar documento relacionado con la formulación del POETY }}{16}%
+\contentsline {table}{\numberline {1.10}{Caso de uso: Consultar documento del POETY por búsqueda }}{17}%
+\contentsline {table}{\numberline {1.11}{Caso de uso: Consultar documento del POETY por orden cronológico }}{18}%
+\contentsline {table}{\numberline {1.12}{Caso de uso: Consultar documento del POETY por tipo }}{19}%
+\contentsline {table}{\numberline {1.13}{Caso de uso: Descargar documento }}{20}%
+\contentsline {table}{\numberline {1.14}{Caso de uso: Consultar criterios de regulación por polígono }}{21}%
+\contentsline {table}{\numberline {1.15}{Caso de uso: Descargar criterios de regulación por polígono }}{22}%
+\contentsline {table}{\numberline {1.16}{Caso de uso: Descargar criterios de regulación por UGA }}{23}%
+\contentsline {table}{\numberline {1.17}{Caso de uso: Dar de alta documentos (fichas, u otros) }}{24}%
+\contentsline {table}{\numberline {1.18}{Caso de uso: Actualizar documentos (fichas, u otros) }}{25}%
+\contentsline {table}{\numberline {1.19}{Caso de uso: Dar de alta capas }}{26}%
+\contentsline {table}{\numberline {1.20}{Caso de uso: Actualizar capas }}{27}%
+\contentsline {table}{\numberline {1.21}{Caso de uso: Borrar documentos (fichas, u otros) }}{28}%
+\contentsline {table}{\numberline {1.22}{Caso de uso: Borrar capas }}{29}%
+\contentsline {table}{\numberline {1.23}{Caso de uso: Dar de alta Usuario interno }}{30}%
+\contentsline {table}{\numberline {1.24}{Caso de uso: Dar de baja Usuario interno }}{31}%
+\contentsline {table}{\numberline {1.25}{Caso de uso: Modificar datos de usuarios internos de SDS }}{32}%
+\contentsline {table}{\numberline {1.25}{Caso de uso: Modificar datos de usuarios internos de SDS }}{33}%
+\contentsline {table}{\numberline {1.26}{Caso de uso: Dar de alta recursos de monitoreo }}{34}%
+\contentsline {table}{\numberline {1.27}{Caso de uso: Actualizar recursos de monitoreo }}{35}%
+\contentsline {table}{\numberline {1.28}{Caso de uso: Borrar recursos de monitoreo }}{36}%
+\contentsline {table}{\numberline {1.29}{Caso de uso: Consultar indicadores del POETY }}{37}%
+\contentsline {table}{\numberline {1.30}{Caso de uso: Obtener un informe sobre los criterios de regulación y los impactos acumulados }}{38}%
+\contentsline {table}{\numberline {1.31}{Caso de uso: Dar de alta dictaminación un proyecto }}{39}%
+\contentsline {table}{\numberline {1.32}{Caso de uso: Actualizar datos de un proyecto }}{40}%
+\contentsline {table}{\numberline {1.33}{Caso de uso: Borrar proyectos en la base de datos de proyectos }}{41}%
+\contentsline {table}{\numberline {1.34}{Caso de uso: Validar usuario }}{42}%
+\contentsline {table}{\numberline {1.35}{Caso de uso: Autenticar usuario }}{43}%

@@ -1,0 +1,88 @@
+\documentclass[a4paper]{report}
+
+%%%%%%% Portada del documento
+%%%%%%% Definimos el español como idioma
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+%%%%%%% Para definir los colores en RGB
+\usepackage[dvipsnames]{xcolor}
+%%%%%%% Para modificar los márgenes
+\usepackage[margin = 1.5in]{geometry}
+\usepackage[usegeometry]{typearea}% before geometry!
+
+\usepackage{geometry}
+%%%%%%% Páginas horizontales
+\usepackage{pdflscape}
+%%%%%%% Definimos los colores que usaremos en la portada
+\definecolor{mygray}{RGB}{243,240,240}
+\definecolor{myblue}{RGB}{6,97,165}
+%%%%%%% Personalizamos el nombre de las secciones
+\definecolor{RoyalRed}{RGB}{157,16, 45}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalsize \huge  \color{black}}%
+  {\flushright\normalsize \color{RoyalRed}%
+   \MakeUppercase{\chaptertitlename}\hspace{1ex}%
+   {\fontfamily{mdugm}\fontsize{60}{60}\selectfont\thechapter}}%
+  {15 pt}%
+  {\bfseries\Huge}%
+
+%% Para incluir longtables
+\usepackage{longtable}
+%% Para incluir item en las celdas de la tabla
+\usepackage{booktabs}
+\newcommand{\tabitem}{~~\llap{\hspace{2mm}}~~}
+%% Para insertar figuras
+\usepackage{graphicx}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,RO]{\documentnumber~Rev.~\currentrevision}
+\fancyhead[RE,RO]{Versión.~\currentrevision}
+
+\fancyhead[LE,LO]{\leftmark \\ Sistema de Gestión de POETY}
+
+\fancyfoot[LE,CO]{\thepage}
+
+\lfoot{\includegraphics[width=4cm]{images/lancis_logo}}
+
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+
+\def \currentrevision{0.1}
+%%\def \documentnumber{ME-MAN-001}
+\newcommand*{\useportrait}{%
+  \clearpage
+  \KOMAoptions{paper=portrait,DIV=current}%switch to portrait
+  \newgeometry{% geometry settings for portrait
+    left=0.5in, right=0.5in, top=0.6in, bottom=1.25in,headheight=23pt,includehead
+  }%
+  \fancyhfoffset{0pt}% <- recalculate head and foot width for fancyhdr
+}
+\newcommand*{\uselandscape}{%
+  \clearpage
+  \KOMAoptions{paper=landscape,DIV=current}%switch to landscape
+  \newgeometry{% geometry settings for landscap
+    left=0.5in, right=0.5in, top=0.6in, bottom=1.25in,headheight=23pt,includehead
+  }
+  \fancyhfoffset{0pt}% recalculate head and foot width for fancyhdr
+}
+
+\begin{document}
+
+\sffamily
+
+\input{Portada}
+
+
+\tableofcontents
+\listoffigures
+\listoftables
+\pagebreak
+
+\chapter{Especificación de Requerimientos}
+\input{secciones/EspReque_py}
+\label{chap:espreque}
+ 
+\end{document}

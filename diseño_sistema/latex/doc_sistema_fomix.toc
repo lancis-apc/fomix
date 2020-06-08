@@ -1,0 +1,14 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Especificación de Requerimientos}{4}%
+\contentsline {section}{\numberline {1.1}Introducción}{4}%
+\contentsline {section}{\numberline {1.2}Antecedentes}{4}%
+\contentsline {section}{\numberline {1.3}Descripción de Sistema (Alcances del Sistema)}{4}%
+\contentsline {subsection}{\numberline {1.3.1}Objetivos General del Sistema}{4}%
+\contentsline {subsection}{\numberline {1.3.2}Requerimientos del Sistema}{5}%
+\contentsline {subsection}{\numberline {1.3.3}Beneficios}{5}%
+\contentsline {subsection}{\numberline {1.3.4}Limitaciones del sistema}{5}%
+\contentsline {section}{\numberline {1.4}Especificación de Requerimientos funcionales}{5}%
+\contentsline {subsection}{\numberline {1.4.1}Priorización de Requerimientos}{5}%
+\contentsline {subsection}{\numberline {1.4.2}Diagrama de Casos de Uso}{7}%
+\contentsline {subsection}{\numberline {1.4.3}Descripción de Módulos y Casos de Uso}{9}%
+\contentsline {subsection}{\numberline {1.4.4}Casos de Uso}{10}%

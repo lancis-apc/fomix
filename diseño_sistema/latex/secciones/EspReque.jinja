@@ -1,0 +1,247 @@
+\section{Introducción}
+
+\section{Antecedentes}
+
+¿Cómo se viene/venía realizando la gestión del POETY?¿Qué cuellos de botella presentaba? ¿Qué áreas de oportunidad se detectan de la evaluación del proceso?
+\section{Descripción de Sistema (Alcances del Sistema)}
+
+\subsection{Objetivos General del Sistema}
+
+Los Objetivos del Negocio del proyecto del Sistema de gestión del POETY son:
+\begin{itemize}
+\item Proporcionar un mecanismo de conocimiento y soporte geográfico de decisiones para la gestión del POETY(QUÉ).
+\item Desarrollando un Sistema que permita la gestión del POETY mediante la organización dinámica de información relevante, la simplificación de informes técnicos, al definirse como base para configuración de la bitácora ambiental, así como geovisualizaciones que faciliten los procesos multi-escalares, multitemporales y multi-sectoriales de la transformación territorial y la vulnerabilidad de los ecosistemas al cambio climático. (CÓMO)
+\item Para que las autoridades así como otros actores de la vida pública cuenten con un mecanismo que funcione como un sistema de información geográfica para la puesta en marcha de la actualización del POETY, para el manejo, análisis y visualización de información que facilite la gobernanza colaborativa en el proceso de ordenamiento ecológico en la entidad y su articulación con otros instrumentos de planeación pertinentes.(POR QUÉ)
+\end{itemize}
+
+\pagebreak
+\subsection{Requerimientos del Sistema}
+
+
+\begin{longtable}{@{\extracolsep{2pt}}l p{7cm} p{5cm}}
+\caption{Requerimientos del Sistema}\label{item:req_sistema}\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{Num}}}& {\textit{\textbf{Requerimiento}}} & {\textit{\textbf{Descripción}}}\\
+\hline \\[-1ex]
+\\
+1 & Acceso interactivo a bancos de datos de la caracterización ambiental y socio-económica & \\
+\\
+\hline
+\\
+2 & Monitoreo y evaluación pública a través de índices e indicadores del desempeño del ordenamiento ecológico & \\
+\\
+\hline
+\\
+3 & Consulta interactiva de mecanismos de resolución de conflictos del programa de ordenamiento ecológico con base en los criterios, estrategias y lineamientos de regulación ecológico en cada UGA & \\
+\\
+\hline
+\\
+4 & Simplificar la consulta de informes técnicos & \\
+\\
+\hline
+\\
+5 & Permitir la realización de procedimientos de geovisualización que incluyan como mínimo manejo de bancos de datos, manejo de modelos de análisis, generador de reportes gráficos y tabulares e interfaces de operación & \\
+\\
+\hline
+\hline \\[-1.8ex]
+  \\
+\end{longtable}
+
+\subsection{Beneficios}
+
+\subsection{Limitaciones del sistema}
+
+
+\section{Especificación de Requerimientos funcionales}
+
+\subsection{Priorización de Requerimientos}
+
+\newgeometry{hmargin=.4in,vmargin=0.1in}
+
+\uselandscape
+\begin{figure}[h]
+
+\centering
+\caption{Priorización de requerimientos}\label{fig:priorReq}
+\includegraphics[width=1\textwidth, height=.5\textwidth]{images/PrioritizationRequirements}
+\end{figure}
+\useportrait
+
+\restoregeometry
+
+\uselandscape
+\subsection{Diagrama de Casos de Uso}
+
+\begin{figure}[h]
+
+\centering
+\includegraphics[width=1\textwidth, height=.39\textwidth]{images/AdminiInsumos}
+\caption{Diagrama de Administración de Recursos}\label{fig:consumorec_cu_diag}
+
+\end{figure}
+\useportrait
+
+\uselandscape
+
+\begin{figure}[h]
+
+\centering
+\includegraphics[width=1\textwidth, height=.43\textwidth]{images/ConsumoRecursosPropuesta}
+\caption{Diagrama de Consumo de Recursos}\label{fig:consumorec_cu_diag_prop}
+
+\end{figure}
+\useportrait
+\restoregeometry
+
+
+
+\subsection{Descripción de Módulos y Casos de Uso}
+
+
+\begin{longtable}{@{\extracolsep{6pt}}l p{7.5cm}}
+\caption{Módulos y Casos de Uso}\label{item:mod_cu}\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{Módulo}}} & {\textit{\textbf{Casos de Uso}}} \\
+\hline \\[-1ex]
+
+  & Consultar fichas de UGAs\\
+\cline{2-2}
+	 & Descargar ficha de UGA\\
+\cline{2-2}
+	 & Consultar capas de insumo para el ordenamiento\\
+\cline{2-2}
+	 & Consultar mapas de aptitud\\
+\cline{2-2}
+   & Descargar capas\\
+\cline{2-2}
+	 & Consultar mapas de UGAs\\
+\cline{2-2}
+	Consultas y descargas & Consultar documentos relacionados con la formulación del POETY\\
+\cline{2-2}
+   & Consultar documentos del POETY por búsqueda\\
+\cline{2-2}
+   & Consultar documentos del POETY por orden cronológico\\
+\cline{2-2}
+   & Consultar documentos del POETY por tipo\\
+\cline{2-2}
+   & Descargar documento\\
+\cline{2-2}
+	 & Consultar criterios de regulación por polígono\\
+\cline{2-2}
+   & Descargar criterios de regulación por polígono\\
+\cline{2-2}
+	 & Descargar criterios de regulación por UGA\\
+\cline{2-2}
+   & Consultar indicadores del POETY \\
+\hline
+\cline{2-2}
+	 & Dar de alta documentos (fichas, u otros)\\
+\cline{2-2}
+	 & Dar de alta capas \\
+\cline{2-2}
+	 & Actualizar documentos (fichas, u otros)\\
+\cline{2-2}
+	Actualización de recursos & Actualizar capas \\
+\cline{2-2}
+	 & Borrar documentos (fichas, u otros)\\
+\cline{2-2}
+	 & Borrar capas \\
+\cline{2-2}
+	 & Dar de alta recursos de monitoreo \\
+\cline{2-2}
+	 & Actualizar recursos de monitoreo \\
+\cline{2-2}
+   & Borrar recursos de monitoreo\\
+\hline
+	 &
+Obtener un informe sobre los criterios de regulación y los impactos acumulados\\
+\cline{2-2}
+ &
+LLenar un formulario cuando se dictamina un proyecto \\
+\cline{2-2}
+Automatización de reportes	 & Modificar los datos de un proyecto \\
+\cline{2-2}
+	 & Borrar proyectos en la base de datos de proyectos\\
+\cline{2-2}
+	 & Obtener información externa y cruzarla con un polígono de interés \\
+\hline
+	 &Dar de alta usuario interno de SDS \\
+\cline{2-2}
+Módulo de administración	 & Dar de baja usuario interno de SDS  \\
+\cline{2-2}
+	 & Modificar datos de usuarios internos de SDS\\
+
+\hline
+\hline \\[-1.8ex]
+  \\
+\end{longtable}
+
+\pagebreak
+\subsection{Casos de Uso}
+
+
+{% for caso in casos_uso %}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CU: {{caso.nombre}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
+\caption{Caso de uso: {{caso.nombre}} }\label{item: {{caso.label}} }\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ {{caso.nombre}} }}} \\
+\hline \\[-1ex]
+ID. DEL CU&  {{caso.id}} \\
+\hline\\[-1ex]
+ACTORES PARTICIPANTES & {% for line in caso.actores %}
+\par {{line}}
+{% endfor %}
+\\
+\hline \\[-1ex]
+BREVE DESCRIPCIÓN & {{caso.descripcion}} \\
+\hline \\[-1ex]
+
+PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} {{caso.pre_proceso}}
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} {{caso.pre_sistema}} \\
+\hline \\[-1ex]
+
+FLUJO PRINCIPAL &
+{% for line in caso.flujo_lines %}
+ {{line}} \par\vspace{.1cm}
+{% endfor %}
+\\
+\hline \\[-1ex]
+
+FLUJOS ALTERNOS & {% for line in caso.flujos_alternos %}
+\par {{line}}
+{% endfor %}
+
+
+\\
+\hline \\[-1ex]
+
+FLUJOS DE EXCEPCIÓN & {% for line in caso.flujos_excepcion %}
+\par\vspace{.1cm} {{line}}
+{% endfor %}
+
+\\%%%<---- Este salto de linea faltaba
+
+\hline \\[-1ex]
+POST-CONDICIONES & {{post_condiciones}}
+\\
+\hline
+\hline \\[-1.8ex]
+ \\
+\end{longtable}
+
+
+\pagebreak
+{% endfor %}
