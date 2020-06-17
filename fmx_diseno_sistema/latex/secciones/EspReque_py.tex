@@ -108,73 +108,79 @@ Los Objetivos del Negocio del proyecto del Sistema de gestión del POETY son:
  \multicolumn{1}{c} {\textit{\textbf{Módulo}}} & {\textit{\textbf{Casos de Uso}}} \\
 \hline \\[-1ex]
 
-  & Consultar fichas de UGAs\\
+& Consultar fichas de UGAs\\
 \cline{2-2}
-	 & Descargar ficha de UGA\\
+ & Descargar ficha de UGA\\
 \cline{2-2}
-	 & Consultar capas de insumo para el ordenamiento\\
+ & Consultar capas de insumo para el ordenamiento\\
 \cline{2-2}
-	 & Consultar mapas de aptitud\\
+ & Consultar mapas de aptitud\\
 \cline{2-2}
-   & Descargar capas\\
+ & Descargar capas\\
 \cline{2-2}
-	 & Consultar mapas de UGAs\\
+ & Consultar mapas de UGAs\\
 \cline{2-2}
-	Consultas y descargas & Consultar documentos relacionados con la formulación del POETY\\
+& Consultar documentos relacionados con la formulación del (POETY, POETCY, o POEL)\\
 \cline{2-2}
-   & Consultar documentos del POETY por búsqueda\\
+Consultas y descargas & Consultar documentos del (POETY, POETCY, o POEL) por búsqueda\\
 \cline{2-2}
-   & Consultar documentos del POETY por orden cronológico\\
+ & Consultar documentos del (POETY, POETCY, o POEL) por orden cronológico\\
 \cline{2-2}
-   & Consultar documentos del POETY por tipo\\
+ & Consultar documentos del (POETY, POETCY, o POEL) por tipo\\
 \cline{2-2}
-   & Descargar documento\\
+ & Descargar documento\\
 \cline{2-2}
-	 & Consultar criterios de regulación por polígono\\
+ & Consultar criterios de regulación por polígono\\
 \cline{2-2}
-   & Descargar criterios de regulación por polígono\\
+ & Descargar criterios de regulación por polígono\\
 \cline{2-2}
-	 & Descargar criterios de regulación por UGA\\
+ & Descargar criterios de regulación por UGA\\
 \cline{2-2}
-   & Consultar indicadores del POETY \\
+ & Consultar indicadores del (POETY, POETCY, o POEL) \\
 \hline
 \cline{2-2}
-	 & Dar de alta documentos (fichas, u otros)\\
+ & Dar de alta documentos (fichas, u otros)\\
 \cline{2-2}
-	 & Dar de alta capas \\
+ & Dar de alta capas \\
 \cline{2-2}
-	 & Actualizar documentos (fichas, u otros)\\
+ & Actualizar documentos (fichas, u otros)\\
 \cline{2-2}
-	Actualización de recursos & Actualizar capas \\
+& Actualizar capas \\
 \cline{2-2}
-	 & Borrar documentos (fichas, u otros)\\
+Actualización de recursos & Borrar documentos (fichas, u otros)\\
 \cline{2-2}
-	 & Borrar capas \\
+ & Borrar capas \\
 \cline{2-2}
-	 & Dar de alta recursos de monitoreo \\
+ & Dar de alta recursos de monitoreo \\
 \cline{2-2}
-	 & Actualizar recursos de monitoreo \\
+ & Actualizar recursos de monitoreo \\
 \cline{2-2}
-   & Borrar recursos de monitoreo\\
+ & Borrar recursos de monitoreo\\
 \hline
-	 &
+ &
 Obtener un informe sobre los criterios de regulación y los impactos acumulados\\
 \cline{2-2}
- &
-LLenar un formulario cuando se dictamina un proyecto \\
+Automatización de reportes & Dar de alta dictamen de un proyecto\\
 \cline{2-2}
-Automatización de reportes	 & Modificar los datos de un proyecto \\
+  & Modificar los datos de un proyecto \\
 \cline{2-2}
-	 & Borrar proyectos en la base de datos de proyectos\\
-\cline{2-2}
-	 & Obtener información externa y cruzarla con un polígono de interés \\
+ & Borrar proyectos en la base de datos de proyectos\\
 \hline
-	 &Dar de alta usuario interno de SDS \\
+ & Dar de alta usuario interno de SDS \\
 \cline{2-2}
-Módulo de administración	 & Dar de baja usuario interno de SDS  \\
+ & Dar de baja usuario interno de SDS  \\
 \cline{2-2}
-	 & Modificar datos de usuarios internos de SDS\\
-
+ & Modificar datos de usuarios internos de SDS\\
+\cline{2-2}
+Módulo de administración & Validar usuraio \\
+\cline{2-2}
+ & Autenticar usuario\\
+\cline{2-2}
+ & Dar de alta un ordenamiento\\
+\cline{2-2}
+ & Borrar un ordenamiento\\
+\cline{2-2}
+ & Modificar datos generales de un ordenamiento\\
 \hline
 \hline \\[-1.8ex]
   \\
@@ -217,13 +223,13 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario selcciona la sección de POETY \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El usuario la capa de UGAs \par\vspace{.1cm}
+ 3. El usuario seleciona la capa de UGAs \par\vspace{.1cm}
 
- 4. El usuario selecciona la  UGA de interés \par\vspace{.1cm}
+ 4. El usuario selecciona la UGA de interés \par\vspace{.1cm}
 
  5. El usuario solicita la ficha de la UGA de interés \par\vspace{.1cm}
 
@@ -291,9 +297,9 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario realiza la 
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario selcciona la sección de POETY \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
  3. El usuario la capa de UGAs \par\vspace{.1cm}
 
@@ -359,19 +365,21 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario selecciona 
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario selcciona la sección de diagnóstico \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El sistema muestra una lista de sectores  \par\vspace{.1cm}
+ 3. El usuario selcciona la sección de diagnóstico \par\vspace{.1cm}
 
- 4. El usuario elige el sector de interés \par\vspace{.1cm}
+ 4. El sistema muestra una lista de sectores  \par\vspace{.1cm}
 
- 5. El sistema visualiza el mapa de aptitud del sector (CU3) \par\vspace{.1cm}
+ 5. El usuario elige el sector de interés \par\vspace{.1cm}
 
- 6. El usuario selecciona la capa de insumo deseada \par\vspace{.1cm}
+ 6. El sistema visualiza el mapa de aptitud del sector (CU3) \par\vspace{.1cm}
 
- 7. El sistema muestra la capa deseada y la función de valor asociada \par\vspace{.1cm}
+ 7. El usuario selecciona la capa de insumo deseada \par\vspace{.1cm}
+
+ 8. El sistema muestra la capa deseada y la función de valor asociada \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -433,15 +441,17 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario selcciona la sección de diagnóstico \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El sistema muestra una lista de sectores  \par\vspace{.1cm}
+ 3. El usuario selcciona la sección de diagnóstico \par\vspace{.1cm}
 
- 4. El usuario elige el sector de interés \par\vspace{.1cm}
+ 4. El sistema muestra una lista de sectores  \par\vspace{.1cm}
 
- 5. El sistema visualiza el mapa de aptitud del sector y despliega una lista de los insumos \par\vspace{.1cm}
+ 5. El usuario elige el sector de interés \par\vspace{.1cm}
+
+ 6. El sistema visualiza el mapa de aptitud del sector y despliega una lista de los insumos \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -503,11 +513,17 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} La capa esta visualiza
 
 FLUJO PRINCIPAL &
 
- 1. El usuario visualiza una capa mediante los casos de uso (CU2,CU3,CU5) \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario solicita la descarga \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El sistema incluye en la descarga la capa geográfica y los metadatos asociados \par\vspace{.1cm}
+ 3. El usuario selcciona la sección de diagnóstico \par\vspace{.1cm}
+
+ 4. El usuario visualiza una capa mediante los casos de uso (CU2,CU3,CU5) \par\vspace{.1cm}
+
+ 5. El usuario solicita la descarga \par\vspace{.1cm}
+
+ 6. El sistema incluye en la descarga la capa geográfica y los metadatos asociados \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -569,13 +585,13 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario selcciona la sección de POETY \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
  3. El usuario la capa de UGAs \par\vspace{.1cm}
 
- 4. El sistema muestra las UGAs según el tipo seleccionado \par\vspace{.1cm}
+ 4. El sistema muestra la capa de UGAs  \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -607,17 +623,17 @@ POST-CONDICIONES &
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% CU: Consultar documento relacionado con la formulación del POETY 
+%%%%%% CU: Consultar documento relacionado con la formulación del (POETY, POETCY, o POEL)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
-\caption{Caso de uso: Consultar documento relacionado con la formulación del POETY  }\label{item: consultar_documento_relacionado_con_la_formulacion_del_poety }\\
+\caption{Caso de uso: Consultar documento relacionado con la formulación del (POETY, POETCY, o POEL) }\label{item: consultar_documento_relacionado_con_la_formulacion_del_poety_poetcy_o_poel }\\
 \\[-1.8ex]\hline
 \endhead
 \hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento relacionado con la formulación del POETY  }}} \\
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento relacionado con la formulación del (POETY, POETCY, o POEL) }}} \\
 \hline \\[-1ex]
 ID. DEL CU&  6 \\
 \hline\\[-1ex]
@@ -637,11 +653,13 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario selecciona la sección de documentos de la formulación del POETY \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El sistema despliega los modos de búsqueda (por búsqueda de palabra clave,por orden cronológico, por tipo) Ver casos de uso (CU7, CU8, CU9) \par\vspace{.1cm}
+ 3. El usuario selecciona la sección de documentos de la formulación del ordenamiento específico  \par\vspace{.1cm}
+
+ 4. El sistema despliega los modos de búsqueda (por búsqueda de palabra clave,por orden cronológico, por tipo) Ver casos de uso (CU7, CU8, CU9) \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -673,17 +691,17 @@ POST-CONDICIONES &
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% CU: Consultar documento del POETY por búsqueda
+%%%%%% CU: Consultar documento del (POETY, POETCY, o POEL) por búsqueda
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
-\caption{Caso de uso: Consultar documento del POETY por búsqueda }\label{item: consultar_documento_del_poety_por_busqueda }\\
+\caption{Caso de uso: Consultar documento del (POETY, POETCY, o POEL) por búsqueda }\label{item: consultar_documento_del_poety_poetcy_o_poel_por_busqueda }\\
 \\[-1.8ex]\hline
 \endhead
 \hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento del POETY por búsqueda }}} \\
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento del (POETY, POETCY, o POEL) por búsqueda }}} \\
 \hline \\[-1ex]
 ID. DEL CU&  7 \\
 \hline\\[-1ex]
@@ -703,15 +721,91 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario elige el mo
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario selecciona la sección de documentos de la formulación del POETY \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El usuario selecciona el modo de  búsqueda de palabra clave \par\vspace{.1cm}
+ 3. El usuario selecciona la sección de documentos de la formulación del ordenamiento específico  \par\vspace{.1cm}
 
- 4. El usuario ingresa la palabra(s) clave relacionada(s) con el documento \par\vspace{.1cm}
+ 4. El usuario selecciona el modo de  búsqueda de palabra clave \par\vspace{.1cm}
 
- 5. El sistema despliega una lista de documentos relacionados \par\vspace{.1cm}
+ 5. El usuario ingresa la palabra(s) clave relacionada(s) con el documento \par\vspace{.1cm}
+
+ 6. El sistema despliega una lista de documentos relacionados \par\vspace{.1cm}
+
+ 7. El usuario selecciona el documento deseado \par\vspace{.1cm}
+
+ 8. El sistema ejecuta la visualización del documento seleccionado \par\vspace{.1cm}
+
+\\
+\hline \\[-1ex]
+
+FLUJOS ALTERNOS & 
+\par (A1) El usuario solicita la descarga del documento (CU10)
+
+
+
+\\
+\hline \\[-1ex]
+
+FLUJOS DE EXCEPCIÓN & 
+\par\vspace{.1cm} NA
+
+
+\\%%%<---- Este salto de linea faltaba
+
+\hline \\[-1ex]
+POST-CONDICIONES & 
+\\
+\hline
+\hline \\[-1.8ex]
+ \\
+\end{longtable}
+
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CU: Consultar documento del (POETY, POETCY, o POEL) por orden cronológico
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
+\caption{Caso de uso: Consultar documento del (POETY, POETCY, o POEL) por orden cronológico }\label{item: consultar_documento_del_poety_poetcy_o_poel_por_orden_cronologico }\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento del (POETY, POETCY, o POEL) por orden cronológico }}} \\
+\hline \\[-1ex]
+ID. DEL CU&  8 \\
+\hline\\[-1ex]
+ACTORES PARTICIPANTES & 
+\par - Usuario externo
+
+\par - Usuario interno
+
+\\
+\hline \\[-1ex]
+BREVE DESCRIPCIÓN & El usuario consulta un documento relacionado con la formulación del POETY por orden cronológico \\
+\hline \\[-1ex]
+
+PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\
+\hline \\[-1ex]
+
+FLUJO PRINCIPAL &
+
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
+
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
+
+ 3. El usuario selecciona la sección de documentos de la formulación del ordenamiento específico  \par\vspace{.1cm}
+
+ 4. El usuario selecciona el modo de  búsqueda por orden cronológico \par\vspace{.1cm}
+
+ 5. El sistema despliega una lista de documentos por orden cronológico \par\vspace{.1cm}
 
  6. El usuario selecciona el documento deseado \par\vspace{.1cm}
 
@@ -747,89 +841,17 @@ POST-CONDICIONES &
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% CU: Consultar documento del POETY por orden cronológico
+%%%%%% CU: Consultar documento del (POETY, POETCY, o POEL) por tipo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
-\caption{Caso de uso: Consultar documento del POETY por orden cronológico }\label{item: consultar_documento_del_poety_por_orden_cronologico }\\
+\caption{Caso de uso: Consultar documento del (POETY, POETCY, o POEL) por tipo }\label{item: consultar_documento_del_poety_poetcy_o_poel_por_tipo }\\
 \\[-1.8ex]\hline
 \endhead
 \hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento del POETY por orden cronológico }}} \\
-\hline \\[-1ex]
-ID. DEL CU&  8 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
-\par - Usuario externo
-
-\par - Usuario interno
-
-\\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario consulta un documento relacionado con la formulación del POETY por orden cronológico \\
-\hline \\[-1ex]
-
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\
-\hline \\[-1ex]
-
-FLUJO PRINCIPAL &
-
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
-
- 2. El usuario selecciona la sección de documentos de la formulación del POETY \par\vspace{.1cm}
-
- 3. El usuario selecciona el modo de  búsqueda por orden cronológico \par\vspace{.1cm}
-
- 4. El sistema despliega una lista de documentos por orden cronológico \par\vspace{.1cm}
-
- 5. El usuario selecciona el documento deseado \par\vspace{.1cm}
-
- 6. El sistema ejecuta la visualización del documento seleccionado \par\vspace{.1cm}
-
-\\
-\hline \\[-1ex]
-
-FLUJOS ALTERNOS & 
-\par (A1) El usuario solicita la descarga del documento (CU10)
-
-
-
-\\
-\hline \\[-1ex]
-
-FLUJOS DE EXCEPCIÓN & 
-\par\vspace{.1cm} NA
-
-
-\\%%%<---- Este salto de linea faltaba
-
-\hline \\[-1ex]
-POST-CONDICIONES & 
-\\
-\hline
-\hline \\[-1.8ex]
- \\
-\end{longtable}
-
-
-\pagebreak
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% CU: Consultar documento del POETY por tipo
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
-\caption{Caso de uso: Consultar documento del POETY por tipo }\label{item: consultar_documento_del_poety_por_tipo }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento del POETY por tipo }}} \\
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento del (POETY, POETCY, o POEL) por tipo }}} \\
 \hline \\[-1ex]
 ID. DEL CU&  9 \\
 \hline\\[-1ex]
@@ -849,21 +871,23 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario selecciona la sección de documentos de la formulación del POETY \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El usuario selecciona el modo de  búsqueda por tipo \par\vspace{.1cm}
+ 3. El usuario selecciona la sección de documentos de la formulación del ordenamiento específico  \par\vspace{.1cm}
 
- 4. El sistema despliega una lista de documentos por tipo de documento \par\vspace{.1cm}
+ 4. El usuario selecciona el modo de  búsqueda por tipo \par\vspace{.1cm}
 
- 5. El usuario selecciona el tipo de docuemento  \par\vspace{.1cm}
+ 5. El sistema despliega una lista de documentos por tipo de documento \par\vspace{.1cm}
 
- 6. El sistema despliega una lista de los documentos en la categoria seleccionada \par\vspace{.1cm}
+ 6. El usuario selecciona el tipo de docuemento  \par\vspace{.1cm}
 
- 7. El usuario selecciona el documento deseado \par\vspace{.1cm}
+ 7. El sistema despliega una lista de los documentos en la categoria seleccionada \par\vspace{.1cm}
 
- 8. El sistema ejecuta la visualización del documento deseado \par\vspace{.1cm}
+ 8. El usuario selecciona el documento deseado \par\vspace{.1cm}
+
+ 9. El sistema ejecuta la visualización del documento deseado \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -925,21 +949,23 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario selecciona la sección de documentos de la formulación del POETY \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El usuario selecciona el modo de  búsqueda  \par\vspace{.1cm}
+ 3. El usuario selecciona la sección de documentos de la formulación del ordenamiento específico  \par\vspace{.1cm}
 
- 4. El sistema despliega una lista de documentos según el tipo de búsqueda (CU6) \par\vspace{.1cm}
+ 4. El usuario selecciona el modo de  búsqueda  \par\vspace{.1cm}
 
- 5. El sistema despliega una lista de los documentos \par\vspace{.1cm}
+ 5. El sistema despliega una lista de documentos según el tipo de búsqueda (CU6) \par\vspace{.1cm}
 
- 6. El usuario selecciona el documento deseado \par\vspace{.1cm}
+ 6. El sistema despliega una lista de los documentos \par\vspace{.1cm}
 
- 7. El sistema ejecuta la visualización del documento deseado \par\vspace{.1cm}
+ 7. El usuario selecciona el documento deseado \par\vspace{.1cm}
 
- 8. El usuario solicita la descarga del documento \par\vspace{.1cm}
+ 8. El sistema ejecuta la visualización del documento deseado \par\vspace{.1cm}
+
+ 9. El usuario solicita la descarga del documento \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -1007,7 +1033,7 @@ FLUJO PRINCIPAL &
 
  3. El usuario provee un poligono de interés en formato shapefile \par\vspace{.1cm}
 
- 4. El sistema despliega una lista de los criterios de regulación que aplican en el área de interés \par\vspace{.1cm}
+ 4. El sistema despliega un mapa con la intersección del polígono proporcionado y las UGAS estatales y/o locales y una lista de los criterios de regulación que aplican para cada una de las interesecciones \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -1062,7 +1088,7 @@ ACTORES PARTICIPANTES &
 
 \\
 \hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario descarga la lista de criterios de regulación \\
+BREVE DESCRIPCIÓN & El usuario descarga los criterios de regulación que aplican en un polígono específico \\
 \hline \\[-1ex]
 
 PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario realiza la consulta de criterios de regulación por polígono (CU11)
@@ -1077,9 +1103,9 @@ FLUJO PRINCIPAL &
 
  3. El usuario provee un poligono de interés en formato shapefile \par\vspace{.1cm}
 
- 4. El sistema despliega una lista de los criterios de regulación que aplican en el área de interés \par\vspace{.1cm}
+ 4. El sistema despliega un mapa con la intersección del polígono proporcionado y las UGAS estatales y/o locales y una lista de los criterios de regulación que aplican para cada una de las interesecciones \par\vspace{.1cm}
 
- 5. El usuario descarga la lista de los criterios de regulación en formato csv o xls \par\vspace{.1cm}
+ 5. El usuario descarga un documento que incluye el mapa y la lista de los criterios de regulación o solo la lista de criterios de regulación en formato csv o xls \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -1141,9 +1167,9 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario visualiza l
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario selcciona la sección de POETY \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
  3. El usuario la capa de UGAs \par\vspace{.1cm}
 
@@ -1183,6 +1209,83 @@ POST-CONDICIONES &
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CU: Consultar indicadores del (POETY, POETCY, o POEL)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
+\caption{Caso de uso: Consultar indicadores del (POETY, POETCY, o POEL) }\label{item: consultar_indicadores_del_poety_poetcy_o_poel }\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar indicadores del (POETY, POETCY, o POEL) }}} \\
+\hline \\[-1ex]
+ID. DEL CU&  14 \\
+\hline\\[-1ex]
+ACTORES PARTICIPANTES & 
+\par - Usuario externo
+
+\par - Usuario interno
+
+\\
+\hline \\[-1ex]
+BREVE DESCRIPCIÓN & El usuario  consulta indicadores del POETY.
+ \\
+\hline \\[-1ex]
+
+PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el indicador a consultar.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Cualquier usuario puede acceder al recurso. \\
+\hline \\[-1ex]
+
+FLUJO PRINCIPAL &
+
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
+
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
+
+ 3. El usuario se dirige al apartado de “Indicadores del (POETY, POETCY, o POEL)”. \par\vspace{.1cm}
+
+ 4. El usuario ingresa el id del indicador a consultar. (E1) \par\vspace{.1cm}
+
+ 5. El usuario descarga la ficha del indicador consultado. \par\vspace{.1cm}
+
+ 6. El Sistema muestra una mensaje de confirmación sobre el indicador. \par\vspace{.1cm}
+
+ 7. El usuario acepta la advertencia. (A1) \par\vspace{.1cm}
+
+ 8. La información se descarga en un archivo PDF o CSV. \par\vspace{.1cm}
+
+\\
+\hline \\[-1ex]
+
+FLUJOS ALTERNOS & 
+\par (A1) En caso contrario, el usuario sale del proceso.
+
+
+
+\\
+\hline \\[-1ex]
+
+FLUJOS DE EXCEPCIÓN & 
+\par\vspace{.1cm} (E1). El sistema no puede acceder a la base de datos. 
+
+
+\\%%%<---- Este salto de linea faltaba
+
+\hline \\[-1ex]
+POST-CONDICIONES & 
+\\
+\hline
+\hline \\[-1.8ex]
+ \\
+\end{longtable}
+
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% CU: Dar de alta documentos (fichas, u otros)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1195,7 +1298,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta documentos (fichas, u otros) }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  14 \\
+ID. DEL CU&  15 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par 
@@ -1215,17 +1318,19 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentif
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El usuario selecciona la sección a la que pertenece el documento \par\vspace{.1cm}
+ 3. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
 
- 4. El usuario proporciona el titulo del documento \par\vspace{.1cm}
+ 4. El usuario selecciona la sección a la que pertenece el documento \par\vspace{.1cm}
 
- 5. El usuario proporciona una descripción general del documento \par\vspace{.1cm}
+ 5. El usuario proporciona el titulo del documento \par\vspace{.1cm}
 
- 6. El usuario adjunta el documento  \par\vspace{.1cm}
+ 6. El usuario proporciona una descripción general del documento \par\vspace{.1cm}
+
+ 7. El usuario adjunta el documento  \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -1287,17 +1392,97 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentif
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El usuario selecciona la sección a la que pertenece el documento \par\vspace{.1cm}
+ 3. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
 
- 4. El sistema despliega una lista de los documentos \par\vspace{.1cm}
+ 4. El usuario selecciona la sección a la que pertenece el documento \par\vspace{.1cm}
 
- 5. El usuario selecciona el documento a actualizar \par\vspace{.1cm}
+ 5. El sistema despliega una lista de los documentos \par\vspace{.1cm}
 
- 6. El usuario actualiza el titulo, la descripción o el documento \par\vspace{.1cm}
+ 6. El usuario selecciona el documento a actualizar \par\vspace{.1cm}
+
+ 7. El usuario actualiza el titulo, la descripción o el documento \par\vspace{.1cm}
+
+\\
+\hline \\[-1ex]
+
+FLUJOS ALTERNOS & 
+\par NA
+
+
+
+\\
+\hline \\[-1ex]
+
+FLUJOS DE EXCEPCIÓN & 
+\par\vspace{.1cm} (E1) En caso de error en la autentificación el sistema redirige a la recuperación de contraseña
+
+
+\\%%%<---- Este salto de linea faltaba
+
+\hline \\[-1ex]
+POST-CONDICIONES & 
+\\
+\hline
+\hline \\[-1.8ex]
+ \\
+\end{longtable}
+
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CU: Borrar documentos (fichas, u otros)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
+\caption{Caso de uso: Borrar documentos (fichas, u otros) }\label{item: borrar_documentos_fichas_u_otros }\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Borrar documentos (fichas, u otros) }}} \\
+\hline \\[-1ex]
+ID. DEL CU&  17 \\
+\hline\\[-1ex]
+ACTORES PARTICIPANTES & 
+\par 
+
+\par - Usuario interno
+
+\\
+\hline \\[-1ex]
+BREVE DESCRIPCIÓN & El usuario borra un documento relacionado con la formulación del POETY o una ficha de UGA \\
+\hline \\[-1ex]
+
+PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa que se quiere actualizar existe \\
+\hline \\[-1ex]
+
+FLUJO PRINCIPAL &
+
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
+
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
+
+ 3. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
+
+ 4. El usuario selecciona la sección a la que pertenece el documento \par\vspace{.1cm}
+
+ 5. El sistema despliega una lista de los documentos \par\vspace{.1cm}
+
+ 6. El usuario selecciona el documento a borrar \par\vspace{.1cm}
+
+ 7. El usuario borra el documento \par\vspace{.1cm}
+
+ 8. El sistema manda un mensaje para confirmar la acción de borrar \par\vspace{.1cm}
+
+ 9. El documento ha sido borrado \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -1341,7 +1526,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta capas }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  15 \\
+ID. DEL CU&  18 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par 
@@ -1359,19 +1544,21 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentif
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El usuario selecciona la sección a la que pertenece la capa \par\vspace{.1cm}
+ 3. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
 
- 4. El usuario proporciona el titulo de la capa \par\vspace{.1cm}
+ 4. El usuario selecciona la sección a la que pertenece la capa \par\vspace{.1cm}
 
- 5. El usuario proporciona una descripción general de la capa \par\vspace{.1cm}
+ 5. El usuario proporciona el titulo de la capa \par\vspace{.1cm}
 
- 6. El usuario adjunta el metadato en formato xml \par\vspace{.1cm}
+ 6. El usuario proporciona una descripción general de la capa \par\vspace{.1cm}
 
- 7. El usuario adjunta la capa  \par\vspace{.1cm}
+ 7. El usuario adjunta el metadato en formato xml \par\vspace{.1cm}
+
+ 8. El usuario adjunta la capa  \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -1417,7 +1604,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Actualizar capas }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  17 \\
+ID. DEL CU&  19 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par - Usuario interno
@@ -1433,17 +1620,19 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentif
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El usuario selecciona la sección a la que pertenece la capa \par\vspace{.1cm}
+ 3. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
 
- 4. El sistema muestra una lista de las capas \par\vspace{.1cm}
+ 4. El usuario selecciona la sección a la que pertenece la capa \par\vspace{.1cm}
 
- 5. El usuario selecciona la capa \par\vspace{.1cm}
+ 5. El sistema muestra una lista de las capas \par\vspace{.1cm}
 
- 6. El usuario actuliza el título, la descripción, el metadato o la capa \par\vspace{.1cm}
+ 6. El usuario selecciona la capa \par\vspace{.1cm}
+
+ 7. El usuario actuliza el título, la descripción, el metadato o la capa \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -1477,82 +1666,6 @@ POST-CONDICIONES &
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% CU: Borrar documentos (fichas, u otros)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
-\caption{Caso de uso: Borrar documentos (fichas, u otros) }\label{item: borrar_documentos_fichas_u_otros }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Borrar documentos (fichas, u otros) }}} \\
-\hline \\[-1ex]
-ID. DEL CU&  18 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
-\par 
-
-\par - Usuario interno
-
-\\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario borra un documento relacionado con la formulación del POETY o una ficha de UGA \\
-\hline \\[-1ex]
-
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa que se quiere actualizar existe \\
-\hline \\[-1ex]
-
-FLUJO PRINCIPAL &
-
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
-
- 2. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
-
- 3. El usuario selecciona la sección a la que pertenece el documento \par\vspace{.1cm}
-
- 4. El sistema despliega una lista de los documentos \par\vspace{.1cm}
-
- 5. El usuario selecciona el documento a borrar \par\vspace{.1cm}
-
- 6. El usuario borra el documento \par\vspace{.1cm}
-
- 7. El sistema manda un mensaje para confirmar la acción de borrar \par\vspace{.1cm}
-
- 8. El documento ha sido borrado \par\vspace{.1cm}
-
-\\
-\hline \\[-1ex]
-
-FLUJOS ALTERNOS & 
-\par NA
-
-
-
-\\
-\hline \\[-1ex]
-
-FLUJOS DE EXCEPCIÓN & 
-\par\vspace{.1cm} (E1) En caso de error en la autentificación el sistema redirige a la recuperación de contraseña
-
-
-\\%%%<---- Este salto de linea faltaba
-
-\hline \\[-1ex]
-POST-CONDICIONES & 
-\\
-\hline
-\hline \\[-1.8ex]
- \\
-\end{longtable}
-
-
-\pagebreak
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% CU: Borrar capas
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1565,7 +1678,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Borrar capas }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  19 \\
+ID. DEL CU&  20 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par 
@@ -1583,17 +1696,19 @@ PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentif
 
 FLUJO PRINCIPAL &
 
- 1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3. El usuario selecciona la sección a la que pertenece la capa \par\vspace{.1cm}
+ 3. El usuario se autentifica con nombre de usuario y contraseña \par\vspace{.1cm}
 
- 4. El sistema muestra una lista de las capas \par\vspace{.1cm}
+ 4. El usuario selecciona la sección a la que pertenece la capa \par\vspace{.1cm}
 
- 5. El usuario selecciona la capa \par\vspace{.1cm}
+ 5. El sistema muestra una lista de las capas \par\vspace{.1cm}
 
- 6. El usuario borra la capa  \par\vspace{.1cm}
+ 6. El usuario selecciona la capa \par\vspace{.1cm}
+
+ 7. El usuario borra la capa  \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -1608,236 +1723,6 @@ FLUJOS ALTERNOS &
 
 FLUJOS DE EXCEPCIÓN & 
 \par\vspace{.1cm} (E1) En caso de error en la autentificación el sistema redirige a la recuperación de contraseña
-
-
-\\%%%<---- Este salto de linea faltaba
-
-\hline \\[-1ex]
-POST-CONDICIONES & 
-\\
-\hline
-\hline \\[-1.8ex]
- \\
-\end{longtable}
-
-
-\pagebreak
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% CU: Dar de alta Usuario interno
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
-\caption{Caso de uso: Dar de alta Usuario interno }\label{item: dar_de_alta_usuario_interno }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta Usuario interno }}} \\
-\hline \\[-1ex]
-ID. DEL CU&  20 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
-\par - Usuario de interno de la SDS
-
-\par - Sistema interno de la SDS
-
-\\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El caso de uso describe el proceso de registro de un nuevo usuario de la SDS en el sistema. Los datos del usuario deben ser verificados en el sistema de la SDS para que el usuario sea registrado. \\
-\hline \\[-1ex]
-
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario interno de la SDS aún no ha sido registrado en el sistema.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El usuario interno debe contar con un número de trabajador y estar en activo. \\
-\hline \\[-1ex]
-
-FLUJO PRINCIPAL &
-
- 1. El usuario solicita interno al sistema registrarse como usuario. \par\vspace{.1cm}
-
- 2. El sistema le solicita su número de trabajador. \par\vspace{.1cm}
-
- 3. El usuario proporciona su número de trabajador. \par\vspace{.1cm}
-
- 4. El sistema verifica la información del trabajador dentro del sistema interno de la SDS.(A1)(E1) \par\vspace{.1cm}
-
- 5. El sistema verifica la información del trabajador dentro del sistema.(A2) \par\vspace{.1cm}
-
- 6. El sistema solicita un nombre de usuario y contraseña. \par\vspace{.1cm}
-
- 7. El sistema guarda la información proporcionada.(A3) \par\vspace{.1cm}
-
- 8. El sistema confirma el registro del usuario interno. \par\vspace{.1cm}
-
-   \par\vspace{.1cm}
-
-\\
-\hline \\[-1ex]
-
-FLUJOS ALTERNOS & 
-\par (A1) Si el trabajador no se encuentra activo, el sistema se lo informa y el proceso termina.
-
-\par (A2) Si un usuario ya ha sido dado de alta con ese número de trabajador, el sistema se lo informa y el proceso termina.
-
-\par (A3) Si el nombre de usuario coincide con uno que ya ha sido registrado, el sistema se lo informa al usuario, indicando que tiene que cambiarlo. 
-
-
-
-\\
-\hline \\[-1ex]
-
-FLUJOS DE EXCEPCIÓN & 
-\par\vspace{.1cm} (E1). No se tiene acceso a la base de datos del sistema interno de la SDS.
-
-
-\\%%%<---- Este salto de linea faltaba
-
-\hline \\[-1ex]
-POST-CONDICIONES & 
-\\
-\hline
-\hline \\[-1.8ex]
- \\
-\end{longtable}
-
-
-\pagebreak
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% CU: Dar de baja Usuario interno
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
-\caption{Caso de uso: Dar de baja Usuario interno }\label{item: dar_de_baja_usuario_interno }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de baja Usuario interno }}} \\
-\hline \\[-1ex]
-ID. DEL CU&  21 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
-\par - Administrador
-
-\\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El caso de uso describe el proceso de baja del sistema de un usuario interno de la SDS. \\
-\hline \\[-1ex]
-
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario a dar de baja debe estar registrado en el sistema.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado con el rol de Administrador \\
-\hline \\[-1ex]
-
-FLUJO PRINCIPAL &
-
- 1. El Administrador solicita al sistema el listado de los usuarios. \par\vspace{.1cm}
-
- 2. El sistema actualiza el listado de usuarios y lo muestra al Administrador.(E1). \par\vspace{.1cm}
-
- 3. El Administrador selecciona el usuario a dar de baja. \par\vspace{.1cm}
-
- 4. El Administrador indica al Sistema dar de baja a dicho usuario. \par\vspace{.1cm}
-
- 5. El Sistema solicita al usuario que indique si está seguro de la acción de dar de baja. \par\vspace{.1cm}
-
- 6. El Administrador confirma la solicitud (A1). \par\vspace{.1cm}
-
- 7. El Sistema da de baja al usuario seleccionado .(E2) \par\vspace{.1cm}
-
-\\
-\hline \\[-1ex]
-
-FLUJOS ALTERNOS & 
-\par (A1). En caso contrario, el sistema regresa al Administrador a su interfaz de Administrador.
-
-
-
-\\
-\hline \\[-1ex]
-
-FLUJOS DE EXCEPCIÓN & 
-\par\vspace{.1cm} (E1). El sistema no ṕuede actualizar el listado de usuarios. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
-
-\par\vspace{.1cm} (E2) El sistema no puede eliminar o inhabilitar al usuario seleccionado. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
-
-
-\\%%%<---- Este salto de linea faltaba
-
-\hline \\[-1ex]
-POST-CONDICIONES & 
-\\
-\hline
-\hline \\[-1.8ex]
- \\
-\end{longtable}
-
-
-\pagebreak
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% CU: Modificar datos de usuarios internos de SDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
-\caption{Caso de uso: Modificar datos de usuarios internos de SDS }\label{item: modificar_datos_de_usuarios_internos_de_sds }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Modificar datos de usuarios internos de SDS }}} \\
-\hline \\[-1ex]
-ID. DEL CU&  22 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
-\par - Administrador
-
-\\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El caso de uso describe el proceso en el que el administrador modifica los datos de un usuario y se guardan los cambios. \\
-\hline \\[-1ex]
-
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario a modificar debe estar registrado.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado con el rol de Administrador \\
-\hline \\[-1ex]
-
-FLUJO PRINCIPAL &
-
- 1. El Administrador solicita al sistema el listado de usuarios. \par\vspace{.1cm}
-
- 2. El sistema actualiza el listado de usuarios y lo muestra al Administrador. (E1) \par\vspace{.1cm}
-
- 3. El Administrador selecciona un usuario para ver sus detalles. \par\vspace{.1cm}
-
- 4. El sistema obtiene los detalles del usuario y los muestra al Administrador. (E2) \par\vspace{.1cm}
-
- 5. El Administrador ve y/o modifica los datos del usuario seleccionado e indica al sistema que guarde los cambios. (A1) \par\vspace{.1cm}
-
- 6. El sistema actualiza los datos del usuario modificados por el Administrador (E3) \par\vspace{.1cm}
-
-\\
-\hline \\[-1ex]
-
-FLUJOS ALTERNOS & 
-\par (A1) El usuario solicita al sistema que se cancelen los cambios hechos. El sistema descarta los cambios a los detalles del usuario seleccionado
-
-
-
-\\
-\hline \\[-1ex]
-
-FLUJOS DE EXCEPCIÓN & 
-\par\vspace{.1cm} (E1) El sistema no puede actualizar el listado de usuarios. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada y pidiendo que lo intente más tarde.
-
-\par\vspace{.1cm} (E2) El sistema no puede obtener los detalles del usuario seleccionado. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada y pidiendo que lo intente más tarde.
-
-\par\vspace{.1cm} (E3) El sistema no puede actualizar los datos del usuario. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada y pidiendo que lo intente más tarde
 
 
 \\%%%<---- Este salto de linea faltaba
@@ -1867,7 +1752,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta recursos de monitoreo }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  23 \\
+ID. DEL CU&  21 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par -Usuario interno
@@ -1941,7 +1826,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Actualizar recursos de monitoreo }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  24 \\
+ID. DEL CU&  22 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par - Usuario interno
@@ -2015,7 +1900,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Borrar recursos de monitoreo }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  25 \\
+ID. DEL CU&  23 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par - Usuario interno
@@ -2078,79 +1963,6 @@ POST-CONDICIONES &
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% CU: Consultar indicadores del POETY
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
-\caption{Caso de uso: Consultar indicadores del POETY }\label{item: consultar_indicadores_del_poety }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar indicadores del POETY }}} \\
-\hline \\[-1ex]
-ID. DEL CU&  26 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
-\par - Usuario externo
-
-\par - Usuario interno
-
-\\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario  consulta indicadores del POETY.
- \\
-\hline \\[-1ex]
-
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el indicador a consultar.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Cualquier usuario puede acceder al recurso. \\
-\hline \\[-1ex]
-
-FLUJO PRINCIPAL &
-
- 1.- El usuario se dirige al apartado de “Indicadores del POETY”. \par\vspace{.1cm}
-
- 2.- El usuario ingresa el id del indicador a consultar. (E1) \par\vspace{.1cm}
-
- 3.- El usuario descarga la ficha del indicador consultado. \par\vspace{.1cm}
-
- 4.- El Sistema muestra una mensaje de confirmación sobre el indicador. \par\vspace{.1cm}
-
- 5.- El usuario acepta la advertencia. (A1) \par\vspace{.1cm}
-
- 6.- La información se descarga en un archivo PDF o CSV. \par\vspace{.1cm}
-
-\\
-\hline \\[-1ex]
-
-FLUJOS ALTERNOS & 
-\par (A1) En caso contrario, el usuario sale del proceso.
-
-
-
-\\
-\hline \\[-1ex]
-
-FLUJOS DE EXCEPCIÓN & 
-\par\vspace{.1cm} (E1). El sistema no puede acceder a la base de datos. 
-
-
-\\%%%<---- Este salto de linea faltaba
-
-\hline \\[-1ex]
-POST-CONDICIONES & 
-\\
-\hline
-\hline \\[-1.8ex]
- \\
-\end{longtable}
-
-
-\pagebreak
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% CU: Obtener un informe sobre los criterios de regulación y los impactos acumulados
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2163,7 +1975,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Obtener un informe sobre los criterios de regulación y los impactos acumulados }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  27 \\
+ID. DEL CU&  24 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par - Usuario externo
@@ -2183,17 +1995,21 @@ FLUJO PRINCIPAL &
 
   \par\vspace{.1cm}
 
- 1.- El usuario se dirige al apartado de “Informes sobre los criterios de regulación y los impactos acumulados”. \par\vspace{.1cm}
+ 1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
- 2.- El usuario ingresa el id del informe a consultar. (E1) \par\vspace{.1cm}
+ 2. El usuario selcciona el ordenamiento deseado (POETY, POETCY, o POEL) \par\vspace{.1cm}
 
- 3.- El usuario descarga la ficha del informe consultado. \par\vspace{.1cm}
+ 3. El usuario se dirige al apartado de “Informes sobre los criterios de regulación y los impactos acumulados”. \par\vspace{.1cm}
 
- 4.- El Sistema muestra una mensaje de confirmación sobre el informe. \par\vspace{.1cm}
+ 4. El usuario ingresa el id del informe a consultar. (E1) \par\vspace{.1cm}
 
- 5.- El usuario acepta la advertencia. (A1) \par\vspace{.1cm}
+ 5. El usuario descarga la ficha del informe consultado. \par\vspace{.1cm}
 
- 6.- La información se descarga en un archivo PDF o CSV. \par\vspace{.1cm}
+ 6. El Sistema muestra una mensaje de confirmación sobre el informe. \par\vspace{.1cm}
+
+ 7. El usuario acepta la advertencia. (A1) \par\vspace{.1cm}
+
+ 8. La información se descarga en un archivo PDF o CSV. \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
@@ -2225,19 +2041,19 @@ POST-CONDICIONES &
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% CU: Dar de alta dictaminación un proyecto
+%%%%%% CU: Dar de alta dictamen de un proyecto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
-\caption{Caso de uso: Dar de alta dictaminación un proyecto }\label{item: dar_de_alta_dictaminacion_un_proyecto }\\
+\caption{Caso de uso: Dar de alta dictamen de un proyecto }\label{item: dar_de_alta_dictamen_de_un_proyecto }\\
 \\[-1.8ex]\hline
 \endhead
 \hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta dictaminación un proyecto }}} \\
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta dictamen de un proyecto }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  28 \\
+ID. DEL CU&  25 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par - Usuario interno
@@ -2314,7 +2130,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Actualizar datos de un proyecto }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  29 \\
+ID. DEL CU&  26 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par - Usuario interno
@@ -2391,7 +2207,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Borrar proyectos en la base de datos de proyectos }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  30 \\
+ID. DEL CU&  27 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par 
@@ -2454,6 +2270,248 @@ POST-CONDICIONES &
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CU: Dar de alta Usuario interno
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
+\caption{Caso de uso: Dar de alta Usuario interno }\label{item: dar_de_alta_usuario_interno }\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta Usuario interno }}} \\
+\hline \\[-1ex]
+ID. DEL CU&  28 \\
+\hline\\[-1ex]
+ACTORES PARTICIPANTES & 
+\par - Usuario de interno
+
+\par - Sistema interno
+
+\\
+\hline \\[-1ex]
+BREVE DESCRIPCIÓN & El caso de uso describe el proceso de registro de un nuevo usuario de la SDS en el sistema. Los datos del usuario deben ser verificados en el sistema de la SDS para que el usuario sea registrado. \\
+\hline \\[-1ex]
+
+PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario interno de la SDS aún no ha sido registrado en el sistema.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El usuario interno debe contar con un número de trabajador y estar en activo. \\
+\hline \\[-1ex]
+
+FLUJO PRINCIPAL &
+
+ 1. El usuario solicita interno al sistema registrarse como usuario. \par\vspace{.1cm}
+
+ 2. El sistema le solicita su número de trabajador. \par\vspace{.1cm}
+
+ 3. El usuario proporciona su número de trabajador. \par\vspace{.1cm}
+
+ 4. El sistema verifica la información del trabajador dentro del sistema interno de la SDS.(A1)(E1) \par\vspace{.1cm}
+
+ 5. El sistema verifica la información del trabajador dentro del sistema.(A2) \par\vspace{.1cm}
+
+ 6. El sistema solicita un nombre de usuario y contraseña. \par\vspace{.1cm}
+
+ 7. El sistema guarda la información proporcionada.(A3) \par\vspace{.1cm}
+
+ 8. El sistema confirma el registro del usuario interno. \par\vspace{.1cm}
+
+   \par\vspace{.1cm}
+
+\\
+\hline \\[-1ex]
+
+FLUJOS ALTERNOS & 
+\par (A1) Si el trabajador no se encuentra activo, el sistema se lo informa y el proceso termina.
+
+\par (A2) Si un usuario ya ha sido dado de alta con ese número de trabajador, el sistema se lo informa y el proceso termina.
+
+\par (A3) Si el nombre de usuario coincide con uno que ya ha sido registrado, el sistema se lo informa al usuario, indicando que tiene que cambiarlo. 
+
+
+
+\\
+\hline \\[-1ex]
+
+FLUJOS DE EXCEPCIÓN & 
+\par\vspace{.1cm} (E1). No se tiene acceso a la base de datos del sistema interno de la SDS.
+
+
+\\%%%<---- Este salto de linea faltaba
+
+\hline \\[-1ex]
+POST-CONDICIONES & 
+\\
+\hline
+\hline \\[-1.8ex]
+ \\
+\end{longtable}
+
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CU: Dar de baja Usuario interno
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
+\caption{Caso de uso: Dar de baja Usuario interno }\label{item: dar_de_baja_usuario_interno }\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de baja Usuario interno }}} \\
+\hline \\[-1ex]
+ID. DEL CU&  29 \\
+\hline\\[-1ex]
+ACTORES PARTICIPANTES & 
+\par - Administrador
+
+\\
+\hline \\[-1ex]
+BREVE DESCRIPCIÓN & El caso de uso describe el proceso de baja del sistema de un usuario interno de la SDS. \\
+\hline \\[-1ex]
+
+PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario a dar de baja debe estar registrado en el sistema.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado con el rol de Administrador \\
+\hline \\[-1ex]
+
+FLUJO PRINCIPAL &
+
+ 1. El Administrador solicita al sistema el listado de los usuarios. \par\vspace{.1cm}
+
+ 2. El sistema actualiza el listado de usuarios y lo muestra al Administrador.(E1). \par\vspace{.1cm}
+
+ 3. El Administrador selecciona el usuario a dar de baja. \par\vspace{.1cm}
+
+ 4. El Administrador indica al Sistema dar de baja a dicho usuario. \par\vspace{.1cm}
+
+ 5. El Sistema solicita al usuario que indique si está seguro de la acción de dar de baja. \par\vspace{.1cm}
+
+ 6. El Administrador confirma la solicitud (A1). \par\vspace{.1cm}
+
+ 7. El Sistema da de baja al usuario seleccionado .(E2) \par\vspace{.1cm}
+
+\\
+\hline \\[-1ex]
+
+FLUJOS ALTERNOS & 
+\par (A1). En caso contrario, el sistema regresa al Administrador a su interfaz de Administrador.
+
+
+
+\\
+\hline \\[-1ex]
+
+FLUJOS DE EXCEPCIÓN & 
+\par\vspace{.1cm} (E1). El sistema no ṕuede actualizar el listado de usuarios. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
+
+\par\vspace{.1cm} (E2) El sistema no puede eliminar o inhabilitar al usuario seleccionado. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
+
+
+\\%%%<---- Este salto de linea faltaba
+
+\hline \\[-1ex]
+POST-CONDICIONES & 
+\\
+\hline
+\hline \\[-1.8ex]
+ \\
+\end{longtable}
+
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CU: Modificar datos de usuarios internos de SDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
+\caption{Caso de uso: Modificar datos de usuarios internos de SDS }\label{item: modificar_datos_de_usuarios_internos_de_sds }\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Modificar datos de usuarios internos de SDS }}} \\
+\hline \\[-1ex]
+ID. DEL CU&  30 \\
+\hline\\[-1ex]
+ACTORES PARTICIPANTES & 
+\par - Usuario Interno
+
+\\
+\hline \\[-1ex]
+BREVE DESCRIPCIÓN & El caso de uso describe el proceso en el que el usuario modifica sus datos y se guardan los cambios. \\
+\hline \\[-1ex]
+
+PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario a modificar debe estar registrado.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El usuario debe estar autenticado como usuario interno \\
+\hline \\[-1ex]
+
+FLUJO PRINCIPAL &
+
+ 1. El usuario ingresa sus credenciales de usuario: nombre de usuario y contraseña.(A1) \par\vspace{.1cm}
+
+ 2. El sistema presenta la interfaz de usuario. \par\vspace{.1cm}
+
+ 3. El usuario se dirige al apartado de “Modificar datos de usuario”. \par\vspace{.1cm}
+
+ 4. El sistema muestra un listado con los datos actuales del usuario. \par\vspace{.1cm}
+
+ 5. El usuario selecciona el dato particular a actualizar. \par\vspace{.1cm}
+
+ 6. El Sistema muestra un formulario de actualización del dato \par\vspace{.1cm}
+
+ 7. El usuario llena el formulario. \par\vspace{.1cm}
+
+ 8. El Sistema muestra una advertencia de actualización. \par\vspace{.1cm}
+
+ 9. El usuario acepta la advertencia.(A2) \par\vspace{.1cm}
+
+ 10. El sistema registra los datos actualizados.(E1) \par\vspace{.1cm}
+
+\\
+\hline \\[-1ex]
+
+FLUJOS ALTERNOS & 
+\par (A1) En caso de no contar con credenciales, ver caso de uso Dar de alta usuario.
+
+\par (A2) El usuario solicita al sistema que se cancelen los cambios hechos. El sistema descarta los cambios a los detalles del usuario seleccionado
+
+\par 
+
+
+
+\\
+\hline \\[-1ex]
+
+FLUJOS DE EXCEPCIÓN & 
+\par\vspace{.1cm} (E1) El sistema no puede actualizar el listado de usuarios. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada y pidiendo que lo intente más tarde.
+
+\par\vspace{.1cm} (E2) El sistema no puede obtener los detalles del usuario seleccionado. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada y pidiendo que lo intente más tarde.
+
+\par\vspace{.1cm} (E3) El sistema no puede actualizar los datos del usuario. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada y pidiendo que lo intente más tarde
+
+
+\\%%%<---- Este salto de linea faltaba
+
+\hline \\[-1ex]
+POST-CONDICIONES & 
+\\
+\hline
+\hline \\[-1.8ex]
+ \\
+\end{longtable}
+
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% CU: Validar usuario
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2466,7 +2524,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Validar usuario }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  32 \\
+ID. DEL CU&  31 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par - Administrador
@@ -2535,7 +2593,7 @@ POST-CONDICIONES &
 \hline \\[-1.8ex]
  \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Autenticar usuario }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  33 \\
+ID. DEL CU&  32 \\
 \hline\\[-1ex]
 ACTORES PARTICIPANTES & 
 \par - Administrador
@@ -2559,6 +2617,215 @@ FLUJO PRINCIPAL &
  2. El usuario ingresa su nombre de usuario y contraseña. \par\vspace{.1cm}
 
  3. El sistema autentica al usuario por medio de sus credenciales (A1) \par\vspace{.1cm}
+
+\\
+\hline \\[-1ex]
+
+FLUJOS ALTERNOS & 
+\par (A1) Las credenciales proporcionadas son incorrectas. Se informa al usuario y se le solicitan nuevamente sus credenciales.
+
+
+
+\\
+\hline \\[-1ex]
+
+FLUJOS DE EXCEPCIÓN & 
+
+\\%%%<---- Este salto de linea faltaba
+
+\hline \\[-1ex]
+POST-CONDICIONES & 
+\\
+\hline
+\hline \\[-1.8ex]
+ \\
+\end{longtable}
+
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CU: Dar de alta un ordenamiento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
+\caption{Caso de uso: Dar de alta un ordenamiento }\label{item: dar_de_alta_un_ordenamiento }\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta un ordenamiento }}} \\
+\hline \\[-1ex]
+ID. DEL CU&  33 \\
+\hline\\[-1ex]
+ACTORES PARTICIPANTES & 
+\par - Administrador
+
+\par - Usuario Interno de la SDS
+
+\\
+\hline \\[-1ex]
+BREVE DESCRIPCIÓN & 
+El usuario interno o administrador dan de alta un nuevo ordenamiento (POETY, POETCY, o POEL) \\
+\hline \\[-1ex]
+
+PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Los usuarios deben estar registrados en el sistema
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} NA \\
+\hline \\[-1ex]
+
+FLUJO PRINCIPAL &
+
+ 1. El usuario se autentifica (CU33). \par\vspace{.1cm}
+
+ 2. El usuario entra al menu "Ordenamientos" \par\vspace{.1cm}
+
+ 3. El usuario selecciona la opción "dar de alta" \par\vspace{.1cm}
+
+ 4. El ususario ingresa los datos generales del ordenamiento \par\vspace{.1cm}
+
+ 5. El usuario guarda los cambios.  \par\vspace{.1cm}
+
+\\
+\hline \\[-1ex]
+
+FLUJOS ALTERNOS & 
+\par (A1) Las credenciales proporcionadas son incorrectas. Se informa al usuario y se le solicitan nuevamente sus credenciales.
+
+
+
+\\
+\hline \\[-1ex]
+
+FLUJOS DE EXCEPCIÓN & 
+
+\\%%%<---- Este salto de linea faltaba
+
+\hline \\[-1ex]
+POST-CONDICIONES & 
+\\
+\hline
+\hline \\[-1.8ex]
+ \\
+\end{longtable}
+
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CU: Borrar un ordenamiento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
+\caption{Caso de uso: Borrar un ordenamiento }\label{item: borrar_un_ordenamiento }\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Borrar un ordenamiento }}} \\
+\hline \\[-1ex]
+ID. DEL CU&  34 \\
+\hline\\[-1ex]
+ACTORES PARTICIPANTES & 
+\par - Administrador
+
+\par - Usuario Interno de la SDS
+
+\\
+\hline \\[-1ex]
+BREVE DESCRIPCIÓN & 
+El usuario interno o administrador borran un ordenamiento existente (POETY, POETCY, o POEL) \\
+\hline \\[-1ex]
+
+PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Los usuarios deben estar registrados en el sistema
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} NA \\
+\hline \\[-1ex]
+
+FLUJO PRINCIPAL &
+
+ 1. El usuario se autentifica (CU33). \par\vspace{.1cm}
+
+ 2. El usuario entra al menu "Ordenamientos" \par\vspace{.1cm}
+
+ 3. El usuario selecciona la opción "borrar" \par\vspace{.1cm}
+
+ 4. El ususario selecciona el ordenamiento \par\vspace{.1cm}
+
+ 5. El usuario guarda los cambios.  \par\vspace{.1cm}
+
+\\
+\hline \\[-1ex]
+
+FLUJOS ALTERNOS & 
+\par (A1) Las credenciales proporcionadas son incorrectas. Se informa al usuario y se le solicitan nuevamente sus credenciales.
+
+
+
+\\
+\hline \\[-1ex]
+
+FLUJOS DE EXCEPCIÓN & 
+
+\\%%%<---- Este salto de linea faltaba
+
+\hline \\[-1ex]
+POST-CONDICIONES & 
+\\
+\hline
+\hline \\[-1.8ex]
+ \\
+\end{longtable}
+
+
+\pagebreak
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CU: Modificar datos generales de un ordenamiento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
+\caption{Caso de uso: Modificar datos generales de un ordenamiento }\label{item: modificar_datos_generales_de_un_ordenamiento }\\
+\\[-1.8ex]\hline
+\endhead
+\hline \\[-1.8ex]
+ \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Modificar datos generales de un ordenamiento }}} \\
+\hline \\[-1ex]
+ID. DEL CU&  35 \\
+\hline\\[-1ex]
+ACTORES PARTICIPANTES & 
+\par - Administrador
+
+\par - Usuario Interno de la SDS
+
+\\
+\hline \\[-1ex]
+BREVE DESCRIPCIÓN & 
+El usuario modifica los datos generales de un ordenamiento \\
+\hline \\[-1ex]
+
+PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Los usuarios deben estar registrados en el sistema
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El ordenamiento existe y el usuario tiene permisos apropiados para modificarlo \\
+\hline \\[-1ex]
+
+FLUJO PRINCIPAL &
+
+ 1. El usuario se autentifica (CU33). \par\vspace{.1cm}
+
+ 2. El usuario entra al menu "Ordenamientos" \par\vspace{.1cm}
+
+ 3. El usuario selecciona la opción "editar" \par\vspace{.1cm}
+
+ 4. El ususario selecciona el ordenamiento \par\vspace{.1cm}
+
+ 5. El usuario modifica alguno de los datos generales del ordenamiento \par\vspace{.1cm}
+
+ 6. El usuario guarda los cambios.  \par\vspace{.1cm}
 
 \\
 \hline \\[-1ex]
