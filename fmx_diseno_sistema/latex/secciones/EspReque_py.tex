@@ -5,7 +5,7 @@
 ¿Cómo se viene/venía realizando la gestión del POETY?¿Qué cuellos de botella presentaba? ¿Qué áreas de oportunidad se detectan de la evaluación del proceso?
 \section{Descripción de Sistema (Alcances del Sistema)}
 
-\subsection{Objetivos General del Sistema}
+\subsection{Objetivos Generales del Sistema}
 
 Los Objetivos del Negocio del proyecto del Sistema de gestión del POETY son:
 \begin{itemize}
@@ -50,6 +50,12 @@ Los Objetivos del Negocio del proyecto del Sistema de gestión del POETY son:
 \end{longtable}
 
 \subsection{Beneficios}
+
+El sistema permitirá: a) organizar de manera dinámica toda la información relevante del POETY; b) simplificar la consulta de informes técnicos; c) dar elementos de sustento en los procedimientos administrativos para la emisión de permisos, licencias y autorizaciones; d) facilitar la gobernanza colaborativa del ordenamiento ecológico; e) servir de base para la configuración de la bitácora ambiental del POETY; f) permitir la realización de procedimientos de geovisualización que incluyan como mínimo manejo de bancos de datos, manejo de modelos de análisis, generador de reportes gráficos y tabulares e interfaces de operación; y g) facilitar la exploración y geovisualización de los procesos multi-escalares, multitemporales y multi-sectoriales de la transformación territorial y la vulnerabilidad de los ecosistemas al cambio climático.
+\\
+\\
+Adicionalmente el sistema integrará la capacidad de agregar nuevos ordenamientos, por ejemplo ordenamientos locales (POELs) o costero (POETCY), dando así la capacidad a la Secretaría de Desarrollo Sustentable del Gobierno del Estado de Yucatán (SDS) de agregar en un mismo instrumento de consulta y gestión los distintos ordenamientos del territorio. Un beneficio directo de este esquema será que al consultar los criterios de regulación que aplican a un polígono particular, el sistema responderá con información de todos los ordenamientos que apliquen a la zona, es decir si el polígono en cuestión intersecta con Unidades de gestión ambiental (UGAs) estatales y/o municipales y/o costeras, en una sola consulta, se obtendrán todos los criterios de regulación que apliquen en los distintos niveles. Esta capacidad se implementará de modo tal que además de servir como insumo de la bitácora de ordenamientos se pueda utilizar como servicio independiente en otros flujos de trabajo de la SDS.
+
 
 \subsection{Limitaciones del sistema}
 
@@ -2406,7 +2412,7 @@ FLUJOS ALTERNOS &
 \hline \\[-1ex]
 
 FLUJOS DE EXCEPCIÓN & 
-\par\vspace{.1cm} (E1). El sistema no puede actualizar el listado de usuarios. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
+\par\vspace{.1cm} (E1). El sistema no ṕuede actualizar el listado de usuarios. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
 
 \par\vspace{.1cm} (E2) El sistema no puede eliminar o inhabilitar al usuario seleccionado. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
 
@@ -2847,6 +2853,8 @@ POST-CONDICIONES &
 \end{longtable}
 
 
+\pagebreak
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2899,7 +2907,7 @@ POST-CONDICIONES &
 \restoregeometry
 
 
-%%%%%%%%%%%%%%%%%% Dar de Alta recurso 
+%%%%%%%%%%%%%%%%%% Dar de Alta recurso
 \pagebreak
 \begin{figure}[h]
 \centering
@@ -2924,7 +2932,7 @@ POST-CONDICIONES &
 \includegraphics[width=1\textwidth, height=1.5\textwidth]{images/diag_act_borrar_recurso}
 \end{figure}
 
-%%%%%%%%%%%%%%%%%% Dar de Alta usuario 
+%%%%%%%%%%%%%%%%%% Dar de Alta usuario
 \pagebreak
 \begin{figure}[h]
 \centering
