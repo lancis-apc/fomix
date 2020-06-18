@@ -2406,7 +2406,7 @@ FLUJOS ALTERNOS &
 \hline \\[-1ex]
 
 FLUJOS DE EXCEPCIÓN & 
-\par\vspace{.1cm} (E1). El sistema no ṕuede actualizar el listado de usuarios. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
+\par\vspace{.1cm} (E1). El sistema no puede actualizar el listado de usuarios. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
 
 \par\vspace{.1cm} (E2) El sistema no puede eliminar o inhabilitar al usuario seleccionado. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
 
@@ -2847,4 +2847,104 @@ POST-CONDICIONES &
 \end{longtable}
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% DIAGRAMAS DE ACTIVIDAD  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \pagebreak
+\useportrait
+
+\uselandscape
+\subsection{Diagramas de actividad}
+
+
+%%%%%%%%%%%%%%%% Actualizar-descargar criterios de regulación por polígono
+\begin{figure}[h]
+\centering
+\caption{Diagrama de actividad \textbf{Actualizar-descargar criterios de regulación por polígono}}\label{fig:priorReq}
+\includegraphics[width=0.8\textwidth, height=.37\textwidth]{images/diag_act_consultardescargar_critreg_poligono}
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%% Actualizar-descargar recursos por UGAs
+\pagebreak
+\begin{figure}[h]
+\centering
+\caption{Diagrama de actividad \textbf{Actualizar-descargar recursos por UGAs}}\label{fig:priorReq}
+\includegraphics[width=0.8\textwidth, height=.5\textwidth]{images/diag_act_consultardescargar_UGAs}
+\end{figure}
+
+%%%%%%%%%%%%%%% Actualizar-descargar documentos relacionados con la formulación de ordenamiento
+\pagebreak
+\begin{figure}[h]
+\centering
+\caption{Diagrama de actividad \textbf{Actualizar-descargar documentos relacionados con la formulación de ordenamiento}}\label{fig:priorReq}
+\includegraphics[width=0.8\textwidth, height=.6\textwidth]{images/diag_act_consultardescargar_doc_relac_form}
+\end{figure}
+
+
+%%%%%%%%%%%%%%% Actualizar-descargar capas de insumo para el ordenamiento
+\pagebreak
+\begin{figure}[h]
+\centering
+\caption{Diagrama de actividad \textbf{Actualizar-descargar capas de insumo para el ordenamiento}}\label{fig:priorReq}
+\includegraphics[width=0.8\textwidth, height=.5\textwidth]{images/dic_act_consultardescargar_capas_insumo_ordenamiento}
+\end{figure}
+
+\useportrait
+\restoregeometry
+
+
+%%%%%%%%%%%%%%%%%% Dar de Alta recurso 
+\pagebreak
+\begin{figure}[h]
+\centering
+\caption{Diagrama de actividad \textbf{Dar de Alta recurso}}
+\label{fig:priorReq}
+\includegraphics[width=1\textwidth, height=1.5\textwidth]{images/diag_act_alta_recurso}
+\end{figure}
+
+%%%%%%%%%%%%%%%%% Actualizar recurso
+\pagebreak
+\begin{figure}[h]
+\centering
+\caption{Diagrama de actividad \textbf{Actualizar recurso}}\label{fig:priorReq}
+\includegraphics[width=1\textwidth, height=1.5\textwidth]{images/diag_act_actualizar_recurso}
+\end{figure}
+
+%%%%%%%%%%%%%%%% Borrar recurso
+\pagebreak
+\begin{figure}[h]
+\centering
+\caption{Diagrama de actividad \textbf{Borrar recurso}}\label{fig:priorReq}
+\includegraphics[width=1\textwidth, height=1.5\textwidth]{images/diag_act_borrar_recurso}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%% Dar de Alta usuario 
+\pagebreak
+\begin{figure}[h]
+\centering
+\caption{Diagrama de actividad \textbf{Dar de Alta usuario}}
+\label{fig:priorReq}
+\includegraphics[width=1.2\textwidth, height=1.5\textwidth]{images/diag_act_alta_usuario}
+\end{figure}
+
+%%%%%%%%%%%%%%%%% Actualizar usuario
+\pagebreak
+\begin{figure}[h]
+\centering
+\caption{Diagrama de actividad \textbf{Actualizar usuario}}\label{fig:priorReq}
+\includegraphics[width=1\textwidth, height=1.5\textwidth]{images/diag_act_actualizar_usuario}
+\end{figure}
+
+%%%%%%%%%%%%%%%% Borrar usuario
+\pagebreak
+\begin{figure}[h]
+\centering
+\caption{Diagrama de actividad \textbf{Borrar usuario}}\label{fig:priorReq}
+\includegraphics[width=1\textwidth, height=1.5\textwidth]{images/diag_act_borrar_usuario}
+\end{figure}
