@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  18 JUN 2020 13:01
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.4.7)  18 JUN 2020 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -505,46 +505,65 @@ LaTeX Font Info:    No file TUmdugm.fd. on input line 84.
 LaTeX Font Warning: Font shape `TU/mdugm/m/n' undefined
 (Font)              using `TU/lmr/m/n' instead on input line 84.
 
-(./secciones/EspReque_py.tex [5
+(./secciones/EspReque_py.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+[5
 
 ]
-Overfull \hbox (26.88287pt too wide) in alignment at lines 21--24
+Overfull \hbox (26.88287pt too wide) in alignment at lines 19--22
  [] [] [] 
  []
 
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 26.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 24.
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 26.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 24.
 
-Overfull \hbox (26.88287pt too wide) in alignment at lines 24--50
+Overfull \hbox (26.88287pt too wide) in alignment at lines 22--48
  [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 50
+Underfull \vbox (badness 10000) detected at line 48
  []
 
 
-Overfull \hbox (26.88287pt too wide) in alignment at lines 50--50
+Overfull \hbox (26.88287pt too wide) in alignment at lines 48--48
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--58
+Underfull \hbox (badness 10000) in paragraph at lines 52--56
 
  []
 
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [6]
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
+
+ []
+
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
- [7]
+[7]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: custom
@@ -602,9 +621,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 69.
+(typearea)              on input line 70.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 69.
+(typearea)             dimensions of LaTeX on input line 70.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: custom
@@ -674,8 +693,8 @@ File: images/PrioritizationRequirements.jpg Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 76.
-LaTeX Info: Redefining \% on input line 76.
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
 
 Package Fancyhdr Warning: \headheight is too small (23.0pt): 
 Make it at least 24.69003pt.
@@ -707,9 +726,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 76.
+(typearea)              on input line 77.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 76.
+(typearea)             dimensions of LaTeX on input line 77.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: custom
@@ -799,9 +818,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 80.
+(typearea)              on input line 81.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 80.
+(typearea)             dimensions of LaTeX on input line 81.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: custom
@@ -868,8 +887,8 @@ Package typearea Info: Using dirty hack to recalculate internal output
 
 File: images/AdminiInsumos.jpg Graphic file (type bmp)
 <images/AdminiInsumos.jpg>
-LaTeX Info: Redefining \. on input line 90.
-LaTeX Info: Redefining \% on input line 90.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
 
 Package Fancyhdr Warning: \headheight is too small (23.0pt): 
 Make it at least 24.69003pt.
@@ -913,9 +932,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 90.
+(typearea)              on input line 91.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 90.
+(typearea)             dimensions of LaTeX on input line 91.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: custom
@@ -1005,9 +1024,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 92.
+(typearea)              on input line 93.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 92.
+(typearea)             dimensions of LaTeX on input line 93.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: custom
@@ -1077,8 +1096,8 @@ File: images/ConsumoRecursosPropuesta.jpg Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
 
 Package Fancyhdr Warning: \headheight is too small (23.0pt): 
 Make it at least 24.69003pt.
@@ -1110,9 +1129,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 101.
+(typearea)              on input line 102.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 101.
+(typearea)             dimensions of LaTeX on input line 102.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: custom
@@ -1178,11 +1197,11 @@ Package typearea Info: Using dirty hack to recalculate internal output
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \vbox (badness 10000) detected at line 151
+Underfull \vbox (badness 10000) detected at line 152
  []
 
-LaTeX Info: Redefining \. on input line 196.
-LaTeX Info: Redefining \% on input line 196.
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): 
 Make it at least 24.69003pt.
@@ -1209,832 +1228,832 @@ This may cause the page layout to be inconsistent, however.
 
 
 ]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 207--210
+Overfull \hbox (14.14824pt too wide) in alignment at lines 208--211
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 210--269
+Overfull \hbox (14.14824pt too wide) in alignment at lines 211--270
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 269
+Underfull \vbox (badness 10000) detected at line 270
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 269--269
+Overfull \hbox (14.14824pt too wide) in alignment at lines 270--270
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
+LaTeX Info: Redefining \. on input line 274.
+LaTeX Info: Redefining \% on input line 274.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [12]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 281--284
+Overfull \hbox (14.14824pt too wide) in alignment at lines 282--285
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 284--337
+Overfull \hbox (14.14824pt too wide) in alignment at lines 285--338
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 337
+Underfull \vbox (badness 10000) detected at line 338
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 337--337
+Overfull \hbox (14.14824pt too wide) in alignment at lines 338--338
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 341.
-LaTeX Info: Redefining \% on input line 341.
+LaTeX Info: Redefining \. on input line 342.
+LaTeX Info: Redefining \% on input line 342.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [13]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 349--352
+Overfull \hbox (14.14824pt too wide) in alignment at lines 350--353
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 352--413
+Overfull \hbox (14.14824pt too wide) in alignment at lines 353--414
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 413
+Underfull \vbox (badness 10000) detected at line 414
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 413--413
+Overfull \hbox (14.14824pt too wide) in alignment at lines 414--414
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 417.
-LaTeX Info: Redefining \% on input line 417.
+LaTeX Info: Redefining \. on input line 418.
+LaTeX Info: Redefining \% on input line 418.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [14]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 425--428
+Overfull \hbox (14.14824pt too wide) in alignment at lines 426--429
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 428--485
+Overfull \hbox (14.14824pt too wide) in alignment at lines 429--486
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 485
+Underfull \vbox (badness 10000) detected at line 486
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 485--485
+Overfull \hbox (14.14824pt too wide) in alignment at lines 486--486
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 489.
-LaTeX Info: Redefining \% on input line 489.
+LaTeX Info: Redefining \. on input line 490.
+LaTeX Info: Redefining \% on input line 490.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [15]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 497--500
+Overfull \hbox (14.14824pt too wide) in alignment at lines 498--501
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 500--557
+Overfull \hbox (14.14824pt too wide) in alignment at lines 501--558
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 557
+Underfull \vbox (badness 10000) detected at line 558
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 557--557
+Overfull \hbox (14.14824pt too wide) in alignment at lines 558--558
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 561.
-LaTeX Info: Redefining \% on input line 561.
+LaTeX Info: Redefining \. on input line 562.
+LaTeX Info: Redefining \% on input line 562.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [16]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 569--572
+Overfull \hbox (14.14824pt too wide) in alignment at lines 570--573
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 572--625
+Overfull \hbox (14.14824pt too wide) in alignment at lines 573--626
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 625
+Underfull \vbox (badness 10000) detected at line 626
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 625--625
+Overfull \hbox (14.14824pt too wide) in alignment at lines 626--626
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 629.
-LaTeX Info: Redefining \% on input line 629.
+LaTeX Info: Redefining \. on input line 630.
+LaTeX Info: Redefining \% on input line 630.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [17]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 637--640
+Overfull \hbox (14.14824pt too wide) in alignment at lines 638--641
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 640--693
+Overfull \hbox (14.14824pt too wide) in alignment at lines 641--694
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 693
+Underfull \vbox (badness 10000) detected at line 694
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 693--693
+Overfull \hbox (14.14824pt too wide) in alignment at lines 694--694
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 697.
-LaTeX Info: Redefining \% on input line 697.
+LaTeX Info: Redefining \. on input line 698.
+LaTeX Info: Redefining \% on input line 698.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [18]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 705--708
+Overfull \hbox (14.14824pt too wide) in alignment at lines 706--709
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 708--769
+Overfull \hbox (14.14824pt too wide) in alignment at lines 709--770
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 769
+Underfull \vbox (badness 10000) detected at line 770
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 769--769
+Overfull \hbox (14.14824pt too wide) in alignment at lines 770--770
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 773.
-LaTeX Info: Redefining \% on input line 773.
+LaTeX Info: Redefining \. on input line 774.
+LaTeX Info: Redefining \% on input line 774.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [19]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 781--784
+Overfull \hbox (14.14824pt too wide) in alignment at lines 782--785
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 784--843
+Overfull \hbox (14.14824pt too wide) in alignment at lines 785--844
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 843
+Underfull \vbox (badness 10000) detected at line 844
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 843--843
+Overfull \hbox (14.14824pt too wide) in alignment at lines 844--844
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 847.
-LaTeX Info: Redefining \% on input line 847.
+LaTeX Info: Redefining \. on input line 848.
+LaTeX Info: Redefining \% on input line 848.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [20]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 855--858
+Overfull \hbox (14.14824pt too wide) in alignment at lines 856--859
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 858--921
+Overfull \hbox (14.14824pt too wide) in alignment at lines 859--922
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 921
+Underfull \vbox (badness 10000) detected at line 922
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 921--921
+Overfull \hbox (14.14824pt too wide) in alignment at lines 922--922
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 925.
-LaTeX Info: Redefining \% on input line 925.
+LaTeX Info: Redefining \. on input line 926.
+LaTeX Info: Redefining \% on input line 926.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [21]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 933--936
+Overfull \hbox (14.14824pt too wide) in alignment at lines 934--937
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 936--999
+Overfull \hbox (14.14824pt too wide) in alignment at lines 937--1000
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 999
+Underfull \vbox (badness 10000) detected at line 1000
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 999--999
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1000--1000
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1003.
-LaTeX Info: Redefining \% on input line 1003.
+LaTeX Info: Redefining \. on input line 1004.
+LaTeX Info: Redefining \% on input line 1004.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [22]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1011--1014
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1012--1015
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1014--1069
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1015--1070
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1069
+Underfull \vbox (badness 10000) detected at line 1070
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1069--1069
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1070--1070
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1073.
-LaTeX Info: Redefining \% on input line 1073.
+LaTeX Info: Redefining \. on input line 1074.
+LaTeX Info: Redefining \% on input line 1074.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [23]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1081--1084
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1082--1085
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1084--1139
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1085--1140
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1139
+Underfull \vbox (badness 10000) detected at line 1140
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1139--1139
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1140--1140
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1143.
-LaTeX Info: Redefining \% on input line 1143.
+LaTeX Info: Redefining \. on input line 1144.
+LaTeX Info: Redefining \% on input line 1144.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [24]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1151--1154
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1152--1155
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1154--1211
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1155--1212
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1211
+Underfull \vbox (badness 10000) detected at line 1212
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1211--1211
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1212--1212
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1215.
-LaTeX Info: Redefining \% on input line 1215.
+LaTeX Info: Redefining \. on input line 1216.
+LaTeX Info: Redefining \% on input line 1216.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [25]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1223--1226
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1224--1227
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1226--1288
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1227--1289
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1288
+Underfull \vbox (badness 10000) detected at line 1289
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1288--1288
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1289--1289
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1292.
-LaTeX Info: Redefining \% on input line 1292.
+LaTeX Info: Redefining \. on input line 1293.
+LaTeX Info: Redefining \% on input line 1293.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [26]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1300--1303
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1301--1304
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1303--1364
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1304--1365
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1364
+Underfull \vbox (badness 10000) detected at line 1365
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1364--1364
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1365--1365
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1368.
-LaTeX Info: Redefining \% on input line 1368.
+LaTeX Info: Redefining \. on input line 1369.
+LaTeX Info: Redefining \% on input line 1369.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [27]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1376--1379
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1377--1380
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1379--1438
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1380--1439
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1438
+Underfull \vbox (badness 10000) detected at line 1439
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1438--1438
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1439--1439
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1442.
-LaTeX Info: Redefining \% on input line 1442.
+LaTeX Info: Redefining \. on input line 1443.
+LaTeX Info: Redefining \% on input line 1443.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [28]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1450--1453
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1451--1454
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1453--1516
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1454--1517
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1516
+Underfull \vbox (badness 10000) detected at line 1517
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1516--1516
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1517--1517
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1520.
-LaTeX Info: Redefining \% on input line 1520.
+LaTeX Info: Redefining \. on input line 1521.
+LaTeX Info: Redefining \% on input line 1521.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [29]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1528--1531
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1529--1532
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1531--1594
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1532--1595
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1594
+Underfull \vbox (badness 10000) detected at line 1595
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1594--1594
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1595--1595
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1598.
-LaTeX Info: Redefining \% on input line 1598.
+LaTeX Info: Redefining \. on input line 1599.
+LaTeX Info: Redefining \% on input line 1599.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [30]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1606--1609
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1607--1610
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1609--1668
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1610--1669
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1668
+Underfull \vbox (badness 10000) detected at line 1669
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1668--1668
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1669--1669
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1672.
-LaTeX Info: Redefining \% on input line 1672.
+LaTeX Info: Redefining \. on input line 1673.
+LaTeX Info: Redefining \% on input line 1673.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [31]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1680--1683
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1681--1684
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1683--1742
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1684--1743
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1742
+Underfull \vbox (badness 10000) detected at line 1743
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1742--1742
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1743--1743
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1746.
-LaTeX Info: Redefining \% on input line 1746.
+LaTeX Info: Redefining \. on input line 1747.
+LaTeX Info: Redefining \% on input line 1747.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [32]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1754--1757
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1755--1758
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1757--1816
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1758--1817
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1816
+Underfull \vbox (badness 10000) detected at line 1817
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1816--1816
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1817--1817
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1820.
-LaTeX Info: Redefining \% on input line 1820.
+LaTeX Info: Redefining \. on input line 1821.
+LaTeX Info: Redefining \% on input line 1821.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [33]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1828--1831
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1829--1832
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1831--1890
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1832--1891
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1890
+Underfull \vbox (badness 10000) detected at line 1891
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1890--1890
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1891--1891
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1894.
-LaTeX Info: Redefining \% on input line 1894.
+LaTeX Info: Redefining \. on input line 1895.
+LaTeX Info: Redefining \% on input line 1895.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [34]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1902--1905
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1903--1906
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1905--1965
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1906--1966
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1965
+Underfull \vbox (badness 10000) detected at line 1966
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1965--1965
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1966--1966
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1969.
-LaTeX Info: Redefining \% on input line 1969.
+LaTeX Info: Redefining \. on input line 1970.
+LaTeX Info: Redefining \% on input line 1970.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [35]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1977--1980
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1978--1981
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 1980--2043
+Overfull \hbox (14.14824pt too wide) in alignment at lines 1981--2044
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2043
+Underfull \vbox (badness 10000) detected at line 2044
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2043--2043
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2044--2044
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2047.
-LaTeX Info: Redefining \% on input line 2047.
+LaTeX Info: Redefining \. on input line 2048.
+LaTeX Info: Redefining \% on input line 2048.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [36]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2055--2058
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2056--2059
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2058--2120
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2059--2121
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2120
+Underfull \vbox (badness 10000) detected at line 2121
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2120--2120
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2121--2121
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2124.
-LaTeX Info: Redefining \% on input line 2124.
+LaTeX Info: Redefining \. on input line 2125.
+LaTeX Info: Redefining \% on input line 2125.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [37]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2132--2135
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2133--2136
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2135--2197
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2136--2198
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2197
+Underfull \vbox (badness 10000) detected at line 2198
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2197--2197
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2198--2198
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2201.
-LaTeX Info: Redefining \% on input line 2201.
+LaTeX Info: Redefining \. on input line 2202.
+LaTeX Info: Redefining \% on input line 2202.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [38]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2209--2212
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2210--2213
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2212--2272
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2213--2273
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2272
+Underfull \vbox (badness 10000) detected at line 2273
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2272--2272
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2273--2273
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2276.
-LaTeX Info: Redefining \% on input line 2276.
+LaTeX Info: Redefining \. on input line 2277.
+LaTeX Info: Redefining \% on input line 2277.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [39]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2284--2287
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2285--2288
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2287--2354
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2288--2355
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2354
+Underfull \vbox (badness 10000) detected at line 2355
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2354--2354
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2355--2355
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2358.
-LaTeX Info: Redefining \% on input line 2358.
+LaTeX Info: Redefining \. on input line 2359.
+LaTeX Info: Redefining \% on input line 2359.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [40]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2366--2369
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2367--2370
  [] [] 
  []
 
 Missing character: There is no ṕ in font [lmsans10-regular]:mapping=tex-text;!
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2369--2428
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2370--2429
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2428
+Underfull \vbox (badness 10000) detected at line 2429
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2428--2428
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2429--2429
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2432.
-LaTeX Info: Redefining \% on input line 2432.
+LaTeX Info: Redefining \. on input line 2433.
+LaTeX Info: Redefining \% on input line 2433.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [41]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2440--2443
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2441--2444
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2443--2510
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2444--2511
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2510
+Underfull \vbox (badness 10000) detected at line 2511
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2510--2510
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2511--2511
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2514.
-LaTeX Info: Redefining \% on input line 2514.
+LaTeX Info: Redefining \. on input line 2515.
+LaTeX Info: Redefining \% on input line 2515.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [42]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2522--2525
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2523--2526
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2525--2579
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2526--2580
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2579
+Underfull \vbox (badness 10000) detected at line 2580
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2579--2579
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2580--2580
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2583.
-LaTeX Info: Redefining \% on input line 2583.
+LaTeX Info: Redefining \. on input line 2584.
+LaTeX Info: Redefining \% on input line 2584.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [43]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2591--2594
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2592--2595
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2594--2644
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2595--2645
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2644
+Underfull \vbox (badness 10000) detected at line 2645
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2644--2644
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2645--2645
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2648.
-LaTeX Info: Redefining \% on input line 2648.
+LaTeX Info: Redefining \. on input line 2649.
+LaTeX Info: Redefining \% on input line 2649.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [44]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2656--2659
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2657--2660
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2659--2713
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2660--2714
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2713
+Underfull \vbox (badness 10000) detected at line 2714
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2713--2713
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2714--2714
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2717.
-LaTeX Info: Redefining \% on input line 2717.
+LaTeX Info: Redefining \. on input line 2718.
+LaTeX Info: Redefining \% on input line 2718.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [45]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2725--2728
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2726--2729
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2728--2782
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2729--2783
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2782
+Underfull \vbox (badness 10000) detected at line 2783
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2782--2782
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2783--2783
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2786.
-LaTeX Info: Redefining \% on input line 2786.
+LaTeX Info: Redefining \. on input line 2787.
+LaTeX Info: Redefining \% on input line 2787.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [46]
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2794--2797
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2795--2798
  [] [] 
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2797--2853
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2798--2854
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2853
+Underfull \vbox (badness 10000) detected at line 2854
  []
 
 
-Overfull \hbox (14.14824pt too wide) in alignment at lines 2853--2853
+Overfull \hbox (14.14824pt too wide) in alignment at lines 2854--2854
  [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 2857.
-LaTeX Info: Redefining \% on input line 2857.
+LaTeX Info: Redefining \. on input line 2858.
+LaTeX Info: Redefining \% on input line 2858.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [47]
@@ -2054,9 +2073,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 2866.
+(typearea)              on input line 2867.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 2866.
+(typearea)             dimensions of LaTeX on input line 2867.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: custom
@@ -2146,9 +2165,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 2868.
+(typearea)              on input line 2869.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 2868.
+(typearea)             dimensions of LaTeX on input line 2869.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: custom
@@ -2216,8 +2235,8 @@ Package typearea Info: Using dirty hack to recalculate internal output
 File: images/diag_act_consultardescargar_critreg_poligono.jpg Graphic file (typ
 e bmp)
 <images/diag_act_consultardescargar_critreg_poligono.jpg>
-LaTeX Info: Redefining \. on input line 2883.
-LaTeX Info: Redefining \% on input line 2883.
+LaTeX Info: Redefining \. on input line 2884.
+LaTeX Info: Redefining \% on input line 2884.
 
 Package Fancyhdr Warning: \headheight is too small (23.0pt): 
 Make it at least 24.69003pt.
@@ -2250,7 +2269,7 @@ File: images/diag_act_consultardescargar_doc_relac_form.jpg Graphic file (type
 bmp)
 <images/diag_act_consultardescargar_doc_relac_form.jpg>
 
-LaTeX Warning: Float too large for page by 60.96193pt on input line 2895.
+LaTeX Warning: Float too large for page by 60.96193pt on input line 2896.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2261,18 +2280,18 @@ ile (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 2906.
-LaTeX Info: Redefining \% on input line 2906.
+LaTeX Info: Redefining \. on input line 2907.
+LaTeX Info: Redefining \% on input line 2907.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
 [49]
-LaTeX Info: Redefining \. on input line 2906.
-LaTeX Info: Redefining \% on input line 2906.
+LaTeX Info: Redefining \. on input line 2907.
+LaTeX Info: Redefining \% on input line 2907.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
  [50]
-LaTeX Info: Redefining \. on input line 2906.
-LaTeX Info: Redefining \% on input line 2906.
+LaTeX Info: Redefining \. on input line 2907.
+LaTeX Info: Redefining \% on input line 2907.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
  [51]
@@ -2292,9 +2311,9 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 2906.
+(typearea)              on input line 2907.
 Package typearea Info: Using dirty hack to recalculate internal output
-(typearea)             dimensions of LaTeX on input line 2906.
+(typearea)             dimensions of LaTeX on input line 2907.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: custom
@@ -2378,7 +2397,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/diag_act_alta_usuario.jpg Graphic file (type bmp)
 <images/diag_act_alta_usuario.jpg>
 
-Overfull \hbox (75.42633pt too wide) in paragraph at lines 2941--2942
+Overfull \hbox (75.42633pt too wide) in paragraph at lines 2942--2943
  [][] 
  []
 
@@ -2438,7 +2457,32 @@ LaTeX Info: Redefining \. on input line 88.
 LaTeX Info: Redefining \% on input line 88.
 File: images/lancis_logo.png Graphic file (type bmp)
 <images/lancis_logo.png>
- [57] (./doc_sistema_fomix.aux
+ [57]
+Capítulo 2.
+File: images/componentes.jpg Graphic file (type bmp)
+<images/componentes.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--105
+
+ []
+
+[58
+
+
+
+
+
+]
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
+File: images/lancis_logo.png Graphic file (type bmp)
+<images/lancis_logo.png>
+ [59] (./doc_sistema_fomix.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
@@ -2450,12 +2494,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4923 strings out of 479418
- 78488 string characters out of 5884586
- 387727 words of memory out of 5000000
- 22322 multiletter control sequences out of 15000+600000
+ 4939 strings out of 479418
+ 78818 string characters out of 5884586
+ 387760 words of memory out of 5000000
+ 22337 multiletter control sequences out of 15000+600000
  532514 words of font info for 46 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 46i,11n,88p,1046b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,11n,88p,1046b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on doc_sistema_fomix.pdf (58 pages).
+Output written on doc_sistema_fomix.pdf (60 pages).

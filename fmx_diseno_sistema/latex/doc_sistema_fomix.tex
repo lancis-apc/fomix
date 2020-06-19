@@ -84,5 +84,25 @@
 \chapter{Especificación de Requerimientos}
 \input{secciones/EspReque_py}
 \label{chap:espreque}
- 
+
+\chapter{Arquitectura del sistema}
+\label{chap:arqsis}
+
+
+\begin{figure}
+   \noindent\makebox[\textwidth]{%
+   \includegraphics[width=1.1\textwidth]{images/componentes}}
+   \caption{Componentes de software}\label{fig:componentes}
+\end{figure}
+
+En cuanto a los componentes de software se propone utilizar una serie de proyectos de código abierto que permitan el buen funcionamiento de la plataforma así como su fácil actualización. Ya que estos proyectos cuentan con comunidades grandes y activas en su desarrollo, por lo que se tienen actualizaciones frecuentes que apoyan el desarrollo de nuevas tecnologías, así como la incorporación de capas más seguras, que en caso de ser necesarias serán fáciles de aplicar.
+\\
+\\
+Dado que durante el proceso de actualización del POETY se utilizará GRASS como sistema de información geográfica proponemos utilizar la combinación de GRASS con Postgres-PostGIS para la base de datos espacial. Postgres es un manejador de bases de datos con capacidades espaciales en su módulo PostGIS.  Adicionalmente proponemos utilizar el manejador de metadatos Geonetwork que nos permitirá ser transparentes en el manejo de todas las capas de información geográfica, los insumos que se usaron para crearlas y el procedimiento que se aplicó.
+\\
+\\
+Para la lógica del sistema proponemos Django, un marco de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como MVC (Modelo–Vista–Controlador). Django es un proyecto que tiene una gran comunidad de desarrollo por lo que las actualizaciones al sistema en caso de ser necesarias serán fáciles de aplicar.  Como servidor http proponemos utilizar Apache, Apache es un proyecto de código abierto muy consolidado, la primer versión se liberó en 1995, hace 25 años y es mantenido por desarrolladores alrededor de todo el mundo. Finalmente para desplegar mapas y gráficas proponemos el uso de d3 y openlayers que son dos bibliotecas de código abierto programadas un JavaScript enfocadas en crear visualizaciones dinámicas con mapas y gráficas.
+
+
+
 \end{document}
