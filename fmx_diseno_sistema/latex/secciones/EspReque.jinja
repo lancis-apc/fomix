@@ -211,28 +211,24 @@ Módulo de administración & Validar usuraio \\
 \\[-1.8ex]\hline
 \endhead
 \hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ {{caso.nombre}} }}} \\
+  \multicolumn{1}{l} {\textcolor{myotroazul}{\textit{\textbf{Elemento}}}}& {\textcolor{myotroazul}{\textit{\textbf{ Descripción }}}} \\
 \hline \\[-1ex]
+CASO DE USO & {{caso.nombre}} \\
 ID. DEL CU&  {{caso.id}} \\
-\hline\\[-1ex]
 ACTORES PARTICIPANTES & {% for line in caso.actores %}
 \par {{line}}
 {% endfor %}
 \\
-\hline \\[-1ex]
 BREVE DESCRIPCIÓN & {{caso.descripcion}} \\
-\hline \\[-1ex]
 
 PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} {{caso.pre_proceso}}
  \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} {{caso.pre_sistema}} \\
-\hline \\[-1ex]
 
 FLUJO PRINCIPAL &
 {% for line in caso.flujo_lines %}
  {{line}} \par\vspace{.1cm}
 {% endfor %}
 \\
-\hline \\[-1ex]
 
 FLUJOS ALTERNOS & {% for line in caso.flujos_alternos %}
 \par {{line}}
@@ -240,7 +236,6 @@ FLUJOS ALTERNOS & {% for line in caso.flujos_alternos %}
 
 
 \\
-\hline \\[-1ex]
 
 FLUJOS DE EXCEPCIÓN & {% for line in caso.flujos_excepcion %}
 \par\vspace{.1cm} {{line}}
@@ -248,7 +243,6 @@ FLUJOS DE EXCEPCIÓN & {% for line in caso.flujos_excepcion %}
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
 POST-CONDICIONES & {{post_condiciones}}
 \\
 \hline
