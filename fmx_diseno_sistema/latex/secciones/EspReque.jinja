@@ -112,85 +112,85 @@ En esta sección se exponen y describen las capacidades específicas del sistema
 \caption{Módulos y Casos de Uso}\label{item:mod_cu}\\
 \\[-1.8ex]\hline
 \endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{Módulo}}} & {\textit{\textbf{Casos de Uso}}} \\
+
+ \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Módulo}}} & {\textcolor{myotroazul}{\textbf{Casos de Uso}}} \\
 \hline \\[-1ex]
 
 & Consultar fichas de UGAs\\
-\cline{2-2}
+
  & Descargar ficha de UGA\\
-\cline{2-2}
+
  & Consultar capas de insumo para el ordenamiento\\
-\cline{2-2}
+
  & Consultar mapas de aptitud\\
-\cline{2-2}
+
  & Descargar capas\\
-\cline{2-2}
+
  & Consultar mapas de UGAs\\
-\cline{2-2}
+
 & Consultar documentos relacionados con la formulación del (POETY, POETCY, o POEL)\\
-\cline{2-2}
+
 Consultas y descargas & Consultar documentos del (POETY, POETCY, o POEL) por búsqueda\\
-\cline{2-2}
+
  & Consultar documentos del (POETY, POETCY, o POEL) por orden cronológico\\
-\cline{2-2}
+
  & Consultar documentos del (POETY, POETCY, o POEL) por tipo\\
-\cline{2-2}
+
  & Descargar documento\\
-\cline{2-2}
+
  & Consultar criterios de regulación por polígono\\
-\cline{2-2}
+
  & Descargar criterios de regulación por polígono\\
-\cline{2-2}
+
  & Descargar criterios de regulación por UGA\\
-\cline{2-2}
+
  & Consultar indicadores del (POETY, POETCY, o POEL) \\
 \hline
-\cline{2-2}
+
  & Dar de alta documentos (fichas, u otros)\\
-\cline{2-2}
+
  & Dar de alta capas \\
-\cline{2-2}
+
  & Actualizar documentos (fichas, u otros)\\
-\cline{2-2}
+
 & Actualizar capas \\
-\cline{2-2}
+
 Actualización de recursos & Borrar documentos (fichas, u otros)\\
-\cline{2-2}
+
  & Borrar capas \\
-\cline{2-2}
+
  & Dar de alta recursos de monitoreo \\
-\cline{2-2}
+
  & Actualizar recursos de monitoreo \\
-\cline{2-2}
+
  & Borrar recursos de monitoreo\\
 \hline
  &
 Obtener un informe sobre los criterios de regulación y los impactos acumulados\\
-\cline{2-2}
+
 Automatización de reportes & Dar de alta dictamen de un proyecto\\
-\cline{2-2}
+
   & Modificar los datos de un proyecto \\
-\cline{2-2}
+
  & Borrar proyectos en la base de datos de proyectos\\
 \hline
  & Dar de alta usuario interno de SDS \\
-\cline{2-2}
+
  & Dar de baja usuario interno de SDS  \\
-\cline{2-2}
+
  & Modificar datos de usuarios internos de SDS\\
-\cline{2-2}
+
 Módulo de administración & Validar usuraio \\
-\cline{2-2}
+
  & Autenticar usuario\\
-\cline{2-2}
+
  & Dar de alta un ordenamiento\\
-\cline{2-2}
+
  & Borrar un ordenamiento\\
-\cline{2-2}
+
  & Modificar datos generales de un ordenamiento\\
 \hline
-\hline \\[-1.8ex]
+
   \\
 \end{longtable}
 
@@ -208,45 +208,44 @@ Módulo de administración & Validar usuraio \\
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: {{caso.nombre}} }\label{item: {{caso.label}} }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
-  \multicolumn{1}{l} {\textcolor{myotroazul}{\textit{\textbf{Elemento}}}}& {\textcolor{myotroazul}{\textit{\textbf{ Descripción }}}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-CASO DE USO & {{caso.nombre}} \\
-ID. DEL CU&  {{caso.id}} \\
-ACTORES PARTICIPANTES & {% for line in caso.actores %}
+\hspace{.2cm}Caso de uso (CU) & {{caso.nombre}} \\ \\
+\hspace{.2cm}Id del CU &  {{caso.id}} \\ \\
+\hspace{.2cm}Actores participantes & {% for line in caso.actores %}
 \par {{line}}
 {% endfor %}
 \\
-BREVE DESCRIPCIÓN & {{caso.descripcion}} \\
+\hspace{.2cm}Breve descripción & {{caso.descripcion}} \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} {{caso.pre_proceso}}
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} {{caso.pre_sistema}} \\
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} {{caso.pre_proceso}}
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} {{caso.pre_sistema}} \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 {% for line in caso.flujo_lines %}
  {{line}} \par\vspace{.1cm}
 {% endfor %}
 \\
 
-FLUJOS ALTERNOS & {% for line in caso.flujos_alternos %}
+\hspace{.2cm}Flujos alternos & {% for line in caso.flujos_alternos %}
 \par {{line}}
 {% endfor %}
 
 
 \\
 
-FLUJOS DE EXCEPCIÓN & {% for line in caso.flujos_excepcion %}
+\hspace{.2cm}Flujos de excepción & {% for line in caso.flujos_excepcion %}
 \par\vspace{.1cm} {{line}}
 {% endfor %}
 
 \\%%%<---- Este salto de linea faltaba
 
-POST-CONDICIONES & {{post_condiciones}}
+\hspace{.2cm}post-condiciones & {{post_condiciones}}
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 

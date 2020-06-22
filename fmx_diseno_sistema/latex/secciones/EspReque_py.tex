@@ -112,85 +112,85 @@ En esta sección se exponen y describen las capacidades específicas del sistema
 \caption{Módulos y Casos de Uso}\label{item:mod_cu}\\
 \\[-1.8ex]\hline
 \endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{Módulo}}} & {\textit{\textbf{Casos de Uso}}} \\
+
+ \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Módulo}}} & {\textcolor{myotroazul}{\textbf{Casos de Uso}}} \\
 \hline \\[-1ex]
 
 & Consultar fichas de UGAs\\
-\cline{2-2}
+
  & Descargar ficha de UGA\\
-\cline{2-2}
+
  & Consultar capas de insumo para el ordenamiento\\
-\cline{2-2}
+
  & Consultar mapas de aptitud\\
-\cline{2-2}
+
  & Descargar capas\\
-\cline{2-2}
+
  & Consultar mapas de UGAs\\
-\cline{2-2}
+
 & Consultar documentos relacionados con la formulación del (POETY, POETCY, o POEL)\\
-\cline{2-2}
+
 Consultas y descargas & Consultar documentos del (POETY, POETCY, o POEL) por búsqueda\\
-\cline{2-2}
+
  & Consultar documentos del (POETY, POETCY, o POEL) por orden cronológico\\
-\cline{2-2}
+
  & Consultar documentos del (POETY, POETCY, o POEL) por tipo\\
-\cline{2-2}
+
  & Descargar documento\\
-\cline{2-2}
+
  & Consultar criterios de regulación por polígono\\
-\cline{2-2}
+
  & Descargar criterios de regulación por polígono\\
-\cline{2-2}
+
  & Descargar criterios de regulación por UGA\\
-\cline{2-2}
+
  & Consultar indicadores del (POETY, POETCY, o POEL) \\
 \hline
-\cline{2-2}
+
  & Dar de alta documentos (fichas, u otros)\\
-\cline{2-2}
+
  & Dar de alta capas \\
-\cline{2-2}
+
  & Actualizar documentos (fichas, u otros)\\
-\cline{2-2}
+
 & Actualizar capas \\
-\cline{2-2}
+
 Actualización de recursos & Borrar documentos (fichas, u otros)\\
-\cline{2-2}
+
  & Borrar capas \\
-\cline{2-2}
+
  & Dar de alta recursos de monitoreo \\
-\cline{2-2}
+
  & Actualizar recursos de monitoreo \\
-\cline{2-2}
+
  & Borrar recursos de monitoreo\\
 \hline
  &
 Obtener un informe sobre los criterios de regulación y los impactos acumulados\\
-\cline{2-2}
+
 Automatización de reportes & Dar de alta dictamen de un proyecto\\
-\cline{2-2}
+
   & Modificar los datos de un proyecto \\
-\cline{2-2}
+
  & Borrar proyectos en la base de datos de proyectos\\
 \hline
  & Dar de alta usuario interno de SDS \\
-\cline{2-2}
+
  & Dar de baja usuario interno de SDS  \\
-\cline{2-2}
+
  & Modificar datos de usuarios internos de SDS\\
-\cline{2-2}
+
 Módulo de administración & Validar usuraio \\
-\cline{2-2}
+
  & Autenticar usuario\\
-\cline{2-2}
+
  & Dar de alta un ordenamiento\\
-\cline{2-2}
+
  & Borrar un ordenamiento\\
-\cline{2-2}
+
  & Modificar datos generales de un ordenamiento\\
 \hline
-\hline \\[-1.8ex]
+
   \\
 \end{longtable}
 
@@ -208,28 +208,24 @@ Módulo de administración & Validar usuraio \\
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Consultar fichas de UGAs }\label{item: consultar_fichas_de_ugas }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar fichas de UGAs }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  0 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Consultar fichas de UGAs \\ \\
+\hspace{.2cm}Id del CU &  0 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario selecciona la UGA en el mapa, solicita la ficha de esa UGA y el sistema despliega la visualización de la ficha \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario selecciona la UGA en el mapa, solicita la ficha de esa UGA y el sistema despliega la visualización de la ficha \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La ficha de la UGA está disponible \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La ficha de la UGA está disponible \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -244,9 +240,8 @@ FLUJO PRINCIPAL &
  6. El usuario descarga la ficha(A1)  \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) El usuario solicita la descarga de la ficha (CU1)
 
 \par (A2) El usuario solicita la descarga de los criterios de regulación por UGA (CU13)
@@ -254,19 +249,17 @@ FLUJOS ALTERNOS &
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de no existir la ficha de la UGA solicitada, levantar un reporte
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -282,28 +275,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Descargar ficha de UGA }\label{item: descargar_ficha_de_uga }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Descargar ficha de UGA }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  1 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Descargar ficha de UGA \\ \\
+\hspace{.2cm}Id del CU &  1 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario descarga la ficha técnica de una unidad de gestión ambiental  \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario descarga la ficha técnica de una unidad de gestión ambiental  \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario realiza la consulta de una UGA para visualizar su ficha
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La ficha de la UGA está disponible \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario realiza la consulta de una UGA para visualizar su ficha
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La ficha de la UGA está disponible \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -316,25 +305,22 @@ FLUJO PRINCIPAL &
  5. El usuario descarga la ficha \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de no existir la ficha de la UGA solicitada, levantar un reporte
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -350,28 +336,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Consultar capas de insumo para el ordenamiento }\label{item: consultar_capas_de_insumo_para_el_ordenamiento }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar capas de insumo para el ordenamiento }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  2 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Consultar capas de insumo para el ordenamiento \\ \\
+\hspace{.2cm}Id del CU &  2 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario consulta las capas de insumo que conforman el mapa de aptitud de un sector específico  \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario consulta las capas de insumo que conforman el mapa de aptitud de un sector específico  \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario selecciona un sector
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Las capas de los insumos están disponibles y tienen un estilo asociado \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario selecciona un sector
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Las capas de los insumos están disponibles y tienen un estilo asociado \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -390,27 +372,24 @@ FLUJO PRINCIPAL &
  8. El sistema muestra la capa deseada y la función de valor asociada \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) El usuario descarga la capa de insumo (CU4)
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de no existir la capa de insumo solicitada, levantar un reporte
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -426,28 +405,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Consultar mapas de aptitud }\label{item: consultar_mapas_de_aptitud }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar mapas de aptitud }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  3 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Consultar mapas de aptitud \\ \\
+\hspace{.2cm}Id del CU &  3 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario visualiza el mapa de aptitud por sector  \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario visualiza el mapa de aptitud por sector  \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa está disponible \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa está disponible \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -462,27 +437,24 @@ FLUJO PRINCIPAL &
  6. El sistema visualiza el mapa de aptitud del sector y despliega una lista de los insumos \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) El usuario visualiza las capas de insumo (CU2)
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de no visualizar el mapa, levantar un reporte
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -498,28 +470,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Descargar capas }\label{item: descargar_capas }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Descargar capas }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  4 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Descargar capas \\ \\
+\hspace{.2cm}Id del CU &  4 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario descarga la capa visualizada  \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario descarga la capa visualizada  \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} La capa esta visualizada en el sistema
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa está disponible \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} La capa esta visualizada en el sistema
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa está disponible \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -534,27 +502,24 @@ FLUJO PRINCIPAL &
  6. El sistema incluye en la descarga la capa geográfica y los metadatos asociados \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par NA 
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de no descargarse la capa  solicitada, levantar un reporte
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -570,28 +535,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Consultar mapas de UGAs }\label{item: consultar_mapas_de_ugas }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar mapas de UGAs }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  5 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Consultar mapas de UGAs \\ \\
+\hspace{.2cm}Id del CU &  5 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario visualiza las unidades de gestión ambiental \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario visualiza las unidades de gestión ambiental \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La ficha de la UGA está disponible \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La ficha de la UGA está disponible \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -602,27 +563,24 @@ FLUJO PRINCIPAL &
  4. El sistema muestra la capa de UGAs  \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) El usuario solicita la descarga de la capa de las ugas (CU4)
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de no visualizar el mapa solicitado, levantar un reporte
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -638,28 +596,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Consultar documento relacionado con la formulación del (POETY, POETCY, o POEL) }\label{item: consultar_documento_relacionado_con_la_formulacion_del_poety_poetcy_o_poel }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento relacionado con la formulación del (POETY, POETCY, o POEL) }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  6 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Consultar documento relacionado con la formulación del (POETY, POETCY, o POEL) \\ \\
+\hspace{.2cm}Id del CU &  6 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario consulta cualquier documento relacionado con la formulación del POETY (por búsqueda, por orden cronológico, por categoría) \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario consulta cualquier documento relacionado con la formulación del POETY (por búsqueda, por orden cronológico, por categoría) \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -670,27 +624,24 @@ FLUJO PRINCIPAL &
  4. El sistema despliega los modos de búsqueda (por búsqueda de palabra clave,por orden cronológico, por tipo) Ver casos de uso (CU7, CU8, CU9) \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par NA
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} NA
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -706,28 +657,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Consultar documento del (POETY, POETCY, o POEL) por búsqueda }\label{item: consultar_documento_del_poety_poetcy_o_poel_por_busqueda }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento del (POETY, POETCY, o POEL) por búsqueda }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  7 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Consultar documento del (POETY, POETCY, o POEL) por búsqueda \\ \\
+\hspace{.2cm}Id del CU &  7 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario consulta un documento relacionado con la formulación del POETY por búsqueda de palabra(s) clave(s) \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario consulta un documento relacionado con la formulación del POETY por búsqueda de palabra(s) clave(s) \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario elige el modo de búsqueda por palabra clave (CU6)
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario elige el modo de búsqueda por palabra clave (CU6)
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -746,27 +693,24 @@ FLUJO PRINCIPAL &
  8. El sistema ejecuta la visualización del documento seleccionado \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) El usuario solicita la descarga del documento (CU10)
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} NA
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -782,28 +726,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Consultar documento del (POETY, POETCY, o POEL) por orden cronológico }\label{item: consultar_documento_del_poety_poetcy_o_poel_por_orden_cronologico }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento del (POETY, POETCY, o POEL) por orden cronológico }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  8 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Consultar documento del (POETY, POETCY, o POEL) por orden cronológico \\ \\
+\hspace{.2cm}Id del CU &  8 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario consulta un documento relacionado con la formulación del POETY por orden cronológico \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario consulta un documento relacionado con la formulación del POETY por orden cronológico \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -820,27 +760,24 @@ FLUJO PRINCIPAL &
  7. El sistema ejecuta la visualización del documento seleccionado \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) El usuario solicita la descarga del documento (CU10)
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} NA
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -856,28 +793,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Consultar documento del (POETY, POETCY, o POEL) por tipo }\label{item: consultar_documento_del_poety_poetcy_o_poel_por_tipo }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar documento del (POETY, POETCY, o POEL) por tipo }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  9 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Consultar documento del (POETY, POETCY, o POEL) por tipo \\ \\
+\hspace{.2cm}Id del CU &  9 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario consulta un documento relacionado con la formulación del POETY por tipo \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario consulta un documento relacionado con la formulación del POETY por tipo \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -898,27 +831,24 @@ FLUJO PRINCIPAL &
  9. El sistema ejecuta la visualización del documento deseado \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) El usuario solicita la descarga del documento (CU10)
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} NA
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -934,28 +864,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Descargar documento }\label{item: descargar_documento }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Descargar documento }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  10 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Descargar documento \\ \\
+\hspace{.2cm}Id del CU &  10 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & EL usuario descarga el documento relacionado con la formulación del POETY \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & EL usuario descarga el documento relacionado con la formulación del POETY \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El documento este disponible \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -976,27 +902,24 @@ FLUJO PRINCIPAL &
  9. El usuario solicita la descarga del documento \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par NA
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} NA
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1012,28 +935,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Consultar criterios de regulación por polígono }\label{item: consultar_criterios_de_regulacion_por_poligono }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar criterios de regulación por polígono }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  11 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Consultar criterios de regulación por polígono \\ \\
+\hspace{.2cm}Id del CU &  11 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario consulta los criterios de regulación que aplican en un área de interés \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario consulta los criterios de regulación que aplican en un área de interés \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Ninguna \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Ninguna \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
 
@@ -1044,17 +963,15 @@ FLUJO PRINCIPAL &
  4. El sistema despliega un mapa con la intersección del polígono proporcionado y las UGAS estatales y/o locales y una lista de los criterios de regulación que aplican para cada una de las interesecciones \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) El usuario solicita la descarga de los criterios de regulación (CU12)
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de que el shapefile proporcionado sea defectuoso el sistema muestra un mensaje "capa no válida" y regresa a la sección de criterios de regulación 
 
 \par\vspace{.1cm} (E2) En caso de no aplicar ningún criterio de regulación, el sistema responde que no aplica ningún criterio y regresa a la sección de criterios de regulación
@@ -1062,11 +979,10 @@ FLUJOS DE EXCEPCIÓN &
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1082,28 +998,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Descargar criterios de regulación por polígono }\label{item: descargar_criterios_de_regulacion_por_poligono }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Descargar criterios de regulación por polígono }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  12 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Descargar criterios de regulación por polígono \\ \\
+\hspace{.2cm}Id del CU &  12 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario descarga los criterios de regulación que aplican en un polígono específico \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario descarga los criterios de regulación que aplican en un polígono específico \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario realiza la consulta de criterios de regulación por polígono (CU11)
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Ninguna \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario realiza la consulta de criterios de regulación por polígono (CU11)
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Ninguna \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamiento \par\vspace{.1cm}
 
@@ -1116,27 +1028,24 @@ FLUJO PRINCIPAL &
  5. El usuario descarga un documento que incluye el mapa y la lista de los criterios de regulación o solo la lista de criterios de regulación en formato csv o xls \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par NA
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de error al  descargar la lista solicitada, levantar un reporte
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1152,28 +1061,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Descargar criterios de regulación por UGA }\label{item: descargar_criterios_de_regulacion_por_uga }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Descargar criterios de regulación por UGA }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  13 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Descargar criterios de regulación por UGA \\ \\
+\hspace{.2cm}Id del CU &  13 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario descarga los criterios de regulación que aplican en una unidad de gestión ambiental \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario descarga los criterios de regulación que aplican en una unidad de gestión ambiental \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario visualiza la ficha de la UGA
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Los criterios de la UGA están disponibles \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario visualiza la ficha de la UGA
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Los criterios de la UGA están disponibles \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -1188,27 +1093,24 @@ FLUJO PRINCIPAL &
  6. El usuario descarga los criterios de regulación en formato csv o xls \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par NA
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de error al  descargar la lista solicitada, levantar un reporte
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1224,29 +1126,25 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Consultar indicadores del (POETY, POETCY, o POEL) }\label{item: consultar_indicadores_del_poety_poetcy_o_poel }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Consultar indicadores del (POETY, POETCY, o POEL) }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  14 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Consultar indicadores del (POETY, POETCY, o POEL) \\ \\
+\hspace{.2cm}Id del CU &  14 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario  consulta indicadores del POETY.
- \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario  consulta indicadores del POETY.
+ \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el indicador a consultar.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Cualquier usuario puede acceder al recurso. \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el indicador a consultar.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Cualquier usuario puede acceder al recurso. \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -1265,27 +1163,24 @@ FLUJO PRINCIPAL &
  8. La información se descarga en un archivo PDF o CSV. \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) En caso contrario, el usuario sale del proceso.
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1). El sistema no puede acceder a la base de datos. 
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1301,30 +1196,26 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Dar de alta documentos (fichas, u otros) }\label{item: dar_de_alta_documentos_fichas_u_otros }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta documentos (fichas, u otros) }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  15 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Dar de alta documentos (fichas, u otros) \\ \\
+\hspace{.2cm}Id del CU &  15 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par 
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario sube un documento relacionado con la formulación del POETY o una ficha de UGA		
+\hspace{.2cm}Breve descripción & El usuario sube un documento relacionado con la formulación del POETY o una ficha de UGA		
 		
-		 \\
-\hline \\[-1ex]
+		 \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Ninguna \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Ninguna \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -1341,27 +1232,24 @@ FLUJO PRINCIPAL &
  7. El usuario adjunta el documento  \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par NA 
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de error en la autentificación el sistema redirige a la recuperación de contraseña
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1377,28 +1265,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Actualizar documentos (fichas, u otros) }\label{item: actualizar_documentos_fichas_u_otros }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Actualizar documentos (fichas, u otros) }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  16 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Actualizar documentos (fichas, u otros) \\ \\
+\hspace{.2cm}Id del CU &  16 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par 
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario actualiza un documento relacionado con la formulación del POETY o una ficha de UGA \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario actualiza un documento relacionado con la formulación del POETY o una ficha de UGA \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Ninguna \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Ninguna \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -1415,27 +1299,24 @@ FLUJO PRINCIPAL &
  7. El usuario actualiza el titulo, la descripción o el documento \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par NA
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de error en la autentificación el sistema redirige a la recuperación de contraseña
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1451,28 +1332,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Borrar documentos (fichas, u otros) }\label{item: borrar_documentos_fichas_u_otros }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Borrar documentos (fichas, u otros) }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  17 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Borrar documentos (fichas, u otros) \\ \\
+\hspace{.2cm}Id del CU &  17 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par 
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario borra un documento relacionado con la formulación del POETY o una ficha de UGA \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario borra un documento relacionado con la formulación del POETY o una ficha de UGA \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa que se quiere actualizar existe \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa que se quiere actualizar existe \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -1493,27 +1370,24 @@ FLUJO PRINCIPAL &
  9. El documento ha sido borrado \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par NA
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de error en la autentificación el sistema redirige a la recuperación de contraseña
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1529,28 +1403,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Dar de alta capas }\label{item: dar_de_alta_capas }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta capas }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  18 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Dar de alta capas \\ \\
+\hspace{.2cm}Id del CU &  18 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par 
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario sube una capa \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario sube una capa \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Ninguna \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Ninguna \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -1569,17 +1439,15 @@ FLUJO PRINCIPAL &
  8. El usuario adjunta la capa  \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par NA
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de error en la autentificación el sistema redirige a la recuperación de contraseña
 
 \par\vspace{.1cm} (E2) El sistema verifica que  la capa y sus metadatos sean válidos, en caso de no serlo manda un mensaje de error
@@ -1587,11 +1455,10 @@ FLUJOS DE EXCEPCIÓN &
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1607,26 +1474,22 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Actualizar capas }\label{item: actualizar_capas }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Actualizar capas }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  19 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Actualizar capas \\ \\
+\hspace{.2cm}Id del CU &  19 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario actualiza una capa \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario actualiza una capa \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa que se quiere actualizar existe \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa que se quiere actualizar existe \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -1643,17 +1506,15 @@ FLUJO PRINCIPAL &
  7. El usuario actuliza el título, la descripción, el metadato o la capa \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par NA
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de error en la autentificación el sistema redirige a la recuperación de contraseña
 
 \par\vspace{.1cm} (E2) El sistema verifica que  la capa y sus metadatos sean válidos, en caso de no serlo manda un mensaje de error
@@ -1661,11 +1522,10 @@ FLUJOS DE EXCEPCIÓN &
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1681,28 +1541,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Borrar capas }\label{item: borrar_capas }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Borrar capas }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  20 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Borrar capas \\ \\
+\hspace{.2cm}Id del CU &  20 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par 
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario borra una capa \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario borra una capa \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa que se quiere borrar existe \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario se autentifica y tiene los permisos necesarios
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} La capa que se quiere borrar existe \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario accede a la bitácora del ordenamientos \par\vspace{.1cm}
 
@@ -1719,27 +1575,24 @@ FLUJO PRINCIPAL &
  7. El usuario borra la capa  \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par NA
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) En caso de error en la autentificación el sistema redirige a la recuperación de contraseña
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1755,26 +1608,22 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Dar de alta recursos de monitoreo }\label{item: dar_de_alta_recursos_de_monitoreo }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta recursos de monitoreo }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  21 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Dar de alta recursos de monitoreo \\ \\
+\hspace{.2cm}Id del CU &  21 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par -Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario interno de la SDS incorpora recursos propios del monitoreo \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario interno de la SDS incorpora recursos propios del monitoreo \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} NA
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} NA
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1.- El usuario ingresa sus credenciales de usuario: nombre de usuario y contraseña.(A1) \par\vspace{.1cm}
 
@@ -1791,9 +1640,8 @@ FLUJO PRINCIPAL &
  7.- El sistema registra los datos de la medición.(E1) \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) En caso de no contar con credenciales, ver caso de uso Dar de alta usuario.
 
 \par (A2) En caso contrario, el usuario sale del proceso.
@@ -1801,19 +1649,17 @@ FLUJOS ALTERNOS &
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) El sistema no puede acceder a la base de datos. 
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1829,26 +1675,22 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Actualizar recursos de monitoreo }\label{item: actualizar_recursos_de_monitoreo }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Actualizar recursos de monitoreo }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  22 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Actualizar recursos de monitoreo \\ \\
+\hspace{.2cm}Id del CU &  22 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El funcionario actualiza un recurso de monitoreo \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El funcionario actualiza un recurso de monitoreo \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir la medición a modificar.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir la medición a modificar.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1.- El usuario ingresa sus credenciales de usuario: nombre de usuario y contraseña.(A1) \par\vspace{.1cm}
 
@@ -1865,9 +1707,8 @@ FLUJO PRINCIPAL &
  7.- El sistema registra los recursos actualizados.(E1) \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) En caso de no contar con credenciales, ver caso de uso Dar de alta usuario.
 
 \par (A2) En caso contrario, el usuario sale del proceso.
@@ -1875,19 +1716,17 @@ FLUJOS ALTERNOS &
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) El sistema no puede acceder a la base de datos. 
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1903,27 +1742,23 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Borrar recursos de monitoreo }\label{item: borrar_recursos_de_monitoreo }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Borrar recursos de monitoreo }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  23 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Borrar recursos de monitoreo \\ \\
+\hspace{.2cm}Id del CU &  23 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario interno de la SDS elimina un recurso de monitoreo
- \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario interno de la SDS elimina un recurso de monitoreo
+ \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir la medición a eliminar.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir la medición a eliminar.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1.- El usuario ingresa sus credenciales de usuario: nombre de usuario y contraseña.(A1) \par\vspace{.1cm}
 
@@ -1940,9 +1775,8 @@ FLUJO PRINCIPAL &
     \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) En caso de no contar con credenciales, ver caso de uso Dar de alta usuario.
 
 \par (A2) En caso contrario, el usuario sale del proceso.
@@ -1950,19 +1784,17 @@ FLUJOS ALTERNOS &
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1). El sistema no puede acceder a la base de datos. 
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -1978,28 +1810,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Obtener un informe sobre los criterios de regulación y los impactos acumulados }\label{item: obtener_un_informe_sobre_los_criterios_de_regulacion_y_los_impactos_acumulados }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Obtener un informe sobre los criterios de regulación y los impactos acumulados }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  24 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Obtener un informe sobre los criterios de regulación y los impactos acumulados \\ \\
+\hspace{.2cm}Id del CU &  24 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario externo
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario  obtiene informes sobre los criterios de regulación y los impactos acumulados. \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario  obtiene informes sobre los criterios de regulación y los impactos acumulados. \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el informe sobre los criterios de regulación y los impactos acumulados  a consultar.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Cualquier usuario puede acceder al recurso. \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el informe sobre los criterios de regulación y los impactos acumulados  a consultar.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} Cualquier usuario puede acceder al recurso. \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
   \par\vspace{.1cm}
 
@@ -2020,27 +1848,24 @@ FLUJO PRINCIPAL &
  8. La información se descarga en un archivo PDF o CSV. \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) En caso contrario, el usuario sale del proceso.
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) El sistema no puede acceder a la base de datos. 
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -2056,27 +1881,23 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Dar de alta dictamen de un proyecto }\label{item: dar_de_alta_dictamen_de_un_proyecto }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta dictamen de un proyecto }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  25 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Dar de alta dictamen de un proyecto \\ \\
+\hspace{.2cm}Id del CU &  25 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El usuario interno dictamina un proyecto.
- \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El usuario interno dictamina un proyecto.
+ \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el proyecto a dictaminar.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el proyecto a dictaminar.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario ingresa sus credenciales de usuario: nombre de usuario y contraseña.(A1) \par\vspace{.1cm}
 
@@ -2095,9 +1916,8 @@ FLUJO PRINCIPAL &
  8. El sistema registra la información del dictamen.(E1) \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) En caso de no contar con credenciales, ver caso de uso Dar de alta usuario.
 
 \par (A2) En caso contrario, el usuario sale del proceso.
@@ -2105,19 +1925,17 @@ FLUJOS ALTERNOS &
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1). El sistema no puede acceder a la bd. 
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -2133,27 +1951,23 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Actualizar datos de un proyecto }\label{item: actualizar_datos_de_un_proyecto }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Actualizar datos de un proyecto }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  26 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Actualizar datos de un proyecto \\ \\
+\hspace{.2cm}Id del CU &  26 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El funcionario modifica los datos de un proyecto en el sistema.
- \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El funcionario modifica los datos de un proyecto en el sistema.
+ \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el proyecto a modificar.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el proyecto a modificar.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario ingresa sus credenciales de usuario: nombre de usuario y contraseña.(A1) \par\vspace{.1cm}
 
@@ -2172,9 +1986,8 @@ FLUJO PRINCIPAL &
  8. El sistema registra la modificación de la información del proyecto.(E1) \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) En caso de no contar con credenciales, ver caso de uso Dar de alta usuario.
 
 \par (A2) En caso contrario, el usuario sale del proceso.
@@ -2182,19 +1995,17 @@ FLUJOS ALTERNOS &
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1). El sistema no puede acceder a la base de datos. 
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -2210,29 +2021,25 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Borrar proyectos en la base de datos de proyectos }\label{item: borrar_proyectos_en_la_base_de_datos_de_proyectos }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Borrar proyectos en la base de datos de proyectos }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  27 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Borrar proyectos en la base de datos de proyectos \\ \\
+\hspace{.2cm}Id del CU &  27 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par 
 
 \par - Usuario interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El funcionario elimina la información de un proyecto.
- \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El funcionario elimina la información de un proyecto.
+ \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el proyecto a eliminar.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Debe existir el proyecto a eliminar.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado como usuario interno de la SDS. \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario ingresa sus credenciales de usuario: nombre de usuario y contraseña.(A1) \par\vspace{.1cm}
 
@@ -2247,9 +2054,8 @@ FLUJO PRINCIPAL &
  6. El sistema elimina el proyecto.(E1) \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) En caso de no contar con credenciales, ver caso de uso Dar de alta usuario.
 
 \par (A2) En caso contrario, el usuario sale del proceso.
@@ -2257,19 +2063,17 @@ FLUJOS ALTERNOS &
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1). El sistema no puede acceder a la base de datos. 
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -2285,28 +2089,24 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Dar de alta Usuario interno }\label{item: dar_de_alta_usuario_interno }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta Usuario interno }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  28 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Dar de alta Usuario interno \\ \\
+\hspace{.2cm}Id del CU &  28 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario de interno
 
 \par - Sistema interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El caso de uso describe el proceso de registro de un nuevo usuario de la SDS en el sistema. Los datos del usuario deben ser verificados en el sistema de la SDS para que el usuario sea registrado. \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El caso de uso describe el proceso de registro de un nuevo usuario de la SDS en el sistema. Los datos del usuario deben ser verificados en el sistema de la SDS para que el usuario sea registrado. \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario interno de la SDS aún no ha sido registrado en el sistema.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El usuario interno debe contar con un número de trabajador y estar en activo. \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario interno de la SDS aún no ha sido registrado en el sistema.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El usuario interno debe contar con un número de trabajador y estar en activo. \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario solicita interno al sistema registrarse como usuario. \par\vspace{.1cm}
 
@@ -2327,9 +2127,8 @@ FLUJO PRINCIPAL &
    \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) Si el trabajador no se encuentra activo, el sistema se lo informa y el proceso termina.
 
 \par (A2) Si un usuario ya ha sido dado de alta con ese número de trabajador, el sistema se lo informa y el proceso termina.
@@ -2339,19 +2138,17 @@ FLUJOS ALTERNOS &
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1). No se tiene acceso a la base de datos del sistema interno de la SDS.
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -2367,26 +2164,22 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Dar de baja Usuario interno }\label{item: dar_de_baja_usuario_interno }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de baja Usuario interno }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  29 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Dar de baja Usuario interno \\ \\
+\hspace{.2cm}Id del CU &  29 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Administrador
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El caso de uso describe el proceso de baja del sistema de un usuario interno de la SDS. \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El caso de uso describe el proceso de baja del sistema de un usuario interno de la SDS. \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario a dar de baja debe estar registrado en el sistema.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado con el rol de Administrador \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario a dar de baja debe estar registrado en el sistema.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor debe estar autenticado con el rol de Administrador \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El Administrador solicita al sistema el listado de los usuarios. \par\vspace{.1cm}
 
@@ -2403,17 +2196,15 @@ FLUJO PRINCIPAL &
  7. El Sistema da de baja al usuario seleccionado .(E2) \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1). En caso contrario, el sistema regresa al Administrador a su interfaz de Administrador.
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1). El sistema no ṕuede actualizar el listado de usuarios. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
 
 \par\vspace{.1cm} (E2) El sistema no puede eliminar o inhabilitar al usuario seleccionado. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
@@ -2421,11 +2212,10 @@ FLUJOS DE EXCEPCIÓN &
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -2441,26 +2231,22 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Modificar datos de usuarios internos de SDS }\label{item: modificar_datos_de_usuarios_internos_de_sds }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Modificar datos de usuarios internos de SDS }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  30 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Modificar datos de usuarios internos de SDS \\ \\
+\hspace{.2cm}Id del CU &  30 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Usuario Interno
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & El caso de uso describe el proceso en el que el usuario modifica sus datos y se guardan los cambios. \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & El caso de uso describe el proceso en el que el usuario modifica sus datos y se guardan los cambios. \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} El usuario a modificar debe estar registrado.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El usuario debe estar autenticado como usuario interno \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} El usuario a modificar debe estar registrado.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El usuario debe estar autenticado como usuario interno \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario ingresa sus credenciales de usuario: nombre de usuario y contraseña.(A1) \par\vspace{.1cm}
 
@@ -2483,9 +2269,8 @@ FLUJO PRINCIPAL &
  10. El sistema registra los datos actualizados.(E1) \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) En caso de no contar con credenciales, ver caso de uso Dar de alta usuario.
 
 \par (A2) El usuario solicita al sistema que se cancelen los cambios hechos. El sistema descarta los cambios a los detalles del usuario seleccionado
@@ -2495,19 +2280,17 @@ FLUJOS ALTERNOS &
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 \par\vspace{.1cm} (E1) El sistema no puede actualizar los datos del usuario. El sistema muestra un mensaje al Usuario indicando que no es posible realizar la acción solicitada y pidiendo que lo intente más tarde
 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -2523,38 +2306,33 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Validar usuario }\label{item: validar_usuario }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Validar usuario }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  31 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Validar usuario \\ \\
+\hspace{.2cm}Id del CU &  31 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Administrador
 
 \par - Usuario interno de la SDS
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & 
-El usuario realiza una solicitud y se valida su identidad \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & 
+El usuario realiza una solicitud y se valida su identidad \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento del proceso en que el actor requiera acceso autorizado.
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor solicita acceso a un recurso protegido \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Ninguna, puede ocurrir en cualquier momento del proceso en que el actor requiera acceso autorizado.
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor solicita acceso a un recurso protegido \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El sistema valida la autenticidad del usuario. (A1) \par\vspace{.1cm}
 
  2. El sistema valida que los permisos del rol del usuario coincidan con los permisos requeridos para acceder al recurso solicitado. (A2)   \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) El usuario no se encuentra autenticado: A) Se le solicita al usuario que se autentique para poder acceder.
 
 \par B) Se redirige al usuario a la pantalla de autenticación (Ver caso de uso: Autenticar usuario)
@@ -2566,17 +2344,15 @@ FLUJOS ALTERNOS &
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -2592,29 +2368,25 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Autenticar usuario }\label{item: autenticar_usuario }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Autenticar usuario }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  32 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Autenticar usuario \\ \\
+\hspace{.2cm}Id del CU &  32 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Administrador
 
 \par - Usuario Interno de la SDS
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & 
-El usuario ingresa sus credenciales para autenticar su identidad \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & 
+El usuario ingresa sus credenciales para autenticar su identidad \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Los usuarios deben estar registrados en el sistema
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor falla la validación al solicitar acceso a un recurso protegido. \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Los usuarios deben estar registrados en el sistema
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El actor falla la validación al solicitar acceso a un recurso protegido. \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El sistema solicita las credenciales del usuario: nombre de usuario y contraseña. \par\vspace{.1cm}
 
@@ -2623,25 +2395,22 @@ FLUJO PRINCIPAL &
  3. El sistema autentica al usuario por medio de sus credenciales (A1) \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) Las credenciales proporcionadas son incorrectas. Se informa al usuario y se le solicitan nuevamente sus credenciales.
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -2657,60 +2426,53 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Dar de alta un ordenamiento }\label{item: dar_de_alta_un_ordenamiento }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Dar de alta un ordenamiento }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  33 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Dar de alta un ordenamiento \\ \\
+\hspace{.2cm}Id del CU &  33 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Administrador
 
 \par - Usuario Interno de la SDS
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & 
-El usuario interno o administrador dan de alta un nuevo ordenamiento (POETY, POETCY, o POEL) \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & 
+El usuario interno o administrador dan de alta un nuevo ordenamiento (POETY, POETCY, o POEL) \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Los usuarios deben estar registrados en el sistema
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} NA \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Los usuarios deben estar registrados en el sistema
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} NA \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario se autentifica (CU33). \par\vspace{.1cm}
 
- 2. El usuario entra al menu "Ordenamientos" \par\vspace{.1cm}
+ 2. El usuario entra al menu ordenamientos \par\vspace{.1cm}
 
- 3. El usuario selecciona la opción "dar de alta" \par\vspace{.1cm}
+ 3. El usuario selecciona la opción dar de alta \par\vspace{.1cm}
 
  4. El ususario ingresa los datos generales del ordenamiento \par\vspace{.1cm}
 
  5. El usuario guarda los cambios.  \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) Las credenciales proporcionadas son incorrectas. Se informa al usuario y se le solicitan nuevamente sus credenciales.
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -2726,60 +2488,53 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Borrar un ordenamiento }\label{item: borrar_un_ordenamiento }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Borrar un ordenamiento }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  34 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Borrar un ordenamiento \\ \\
+\hspace{.2cm}Id del CU &  34 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Administrador
 
 \par - Usuario Interno de la SDS
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & 
-El usuario interno o administrador borran un ordenamiento existente (POETY, POETCY, o POEL) \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & 
+El usuario interno o administrador borran un ordenamiento existente (POETY, POETCY, o POEL) \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Los usuarios deben estar registrados en el sistema
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} NA \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Los usuarios deben estar registrados en el sistema
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} NA \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario se autentifica (CU33). \par\vspace{.1cm}
 
- 2. El usuario entra al menu "Ordenamientos" \par\vspace{.1cm}
+ 2. El usuario entra al menu ordenamientos \par\vspace{.1cm}
 
- 3. El usuario selecciona la opción "borrar" \par\vspace{.1cm}
+ 3. El usuario selecciona la opción borrar \par\vspace{.1cm}
 
  4. El ususario selecciona el ordenamiento \par\vspace{.1cm}
 
  5. El usuario guarda los cambios.  \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) Las credenciales proporcionadas son incorrectas. Se informa al usuario y se le solicitan nuevamente sus credenciales.
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
@@ -2795,35 +2550,31 @@ POST-CONDICIONES &
 
 \begin{longtable}{@{\extracolsep{8pt}}l p{8.5cm}}
 \caption{Caso de uso: Modificar datos generales de un ordenamiento }\label{item: modificar_datos_generales_de_un_ordenamiento }\\
-\\[-1.8ex]\hline
-\endhead
-\hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{CASO DE USO}}}& {\textit{\textbf{ Modificar datos generales de un ordenamiento }}} \\
+\\[-1.8ex]
+\hline
+  \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Elemento}}}& \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{ Descripción }}} \\
 \hline \\[-1ex]
-ID. DEL CU&  35 \\
-\hline\\[-1ex]
-ACTORES PARTICIPANTES & 
+\hspace{.2cm}Caso de uso (CU) & Modificar datos generales de un ordenamiento \\ \\
+\hspace{.2cm}Id del CU &  35 \\ \\
+\hspace{.2cm}Actores participantes & 
 \par - Administrador
 
 \par - Usuario Interno de la SDS
 
 \\
-\hline \\[-1ex]
-BREVE DESCRIPCIÓN & 
-El usuario modifica los datos generales de un ordenamiento \\
-\hline \\[-1ex]
+\hspace{.2cm}Breve descripción & 
+El usuario modifica los datos generales de un ordenamiento \\ \\
 
-PRE-CONDICIONES & \textbf{Del proceso}: \par\vspace{.1cm} Los usuarios deben estar registrados en el sistema
- \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El ordenamiento existe y el usuario tiene permisos apropiados para modificarlo \\
-\hline \\[-1ex]
+\hspace{.2cm}Pre-condiciones & \textbf{Del proceso}: \par\vspace{.1cm} Los usuarios deben estar registrados en el sistema
+ \par\vspace{.2cm} \textbf{Del sistema} \par\vspace{.1cm} El ordenamiento existe y el usuario tiene permisos apropiados para modificarlo \\ \\
 
-FLUJO PRINCIPAL &
+\hspace{.2cm}Flujo principal &
 
  1. El usuario se autentifica (CU33). \par\vspace{.1cm}
 
- 2. El usuario entra al menu "Ordenamientos" \par\vspace{.1cm}
+ 2. El usuario entra al menu ordenamientos \par\vspace{.1cm}
 
- 3. El usuario selecciona la opción "editar" \par\vspace{.1cm}
+ 3. El usuario selecciona la opción editar \par\vspace{.1cm}
 
  4. El ususario selecciona el ordenamiento \par\vspace{.1cm}
 
@@ -2832,25 +2583,22 @@ FLUJO PRINCIPAL &
  6. El usuario guarda los cambios.  \par\vspace{.1cm}
 
 \\
-\hline \\[-1ex]
 
-FLUJOS ALTERNOS & 
+\hspace{.2cm}Flujos alternos & 
 \par (A1) Las credenciales proporcionadas son incorrectas. Se informa al usuario y se le solicitan nuevamente sus credenciales.
 
 
 
 \\
-\hline \\[-1ex]
 
-FLUJOS DE EXCEPCIÓN & 
+\hspace{.2cm}Flujos de excepción & 
 
 \\%%%<---- Este salto de linea faltaba
 
-\hline \\[-1ex]
-POST-CONDICIONES & 
+\hspace{.2cm}post-condiciones & 
 \\
 \hline
-\hline \\[-1.8ex]
+
  \\
 \end{longtable}
 
