@@ -15,37 +15,29 @@ Los Objetivos del Negocio del proyecto del Sistema de gestión del POETY son:
 \pagebreak
 \subsection{Requerimientos del Sistema}
 
-
+\begingroup
+\renewcommand\arraystretch{1.3}
 \begin{longtable}{@{\extracolsep{2pt}}l p{7cm} p{5cm}}
 \caption{Requerimientos del Sistema}\label{item:req_sistema}\\
-\\[-1.8ex]\hline
 \endhead
 \hline \\[-1.8ex]
- \multicolumn{1}{c} {\textit{\textbf{Num}}}& {\textit{\textbf{Requerimiento}}} & {\textit{\textbf{Descripción}}}\\
-\hline \\[-1ex]
+ \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Num}}}& \multicolumn{1}{c} {\textcolor{myotroazul}{\textbf{Requerimiento}}} & \multicolumn{1}{c}{\textcolor{myotroazul}{\textbf{Descripción}}}\\
+\hline 
 \\
 1 & Acceso interactivo a bancos de datos de la caracterización ambiental y socio-económica & \\
 \\
-\hline
-\\
 2 & Monitoreo y evaluación pública a través de índices e indicadores del desempeño del ordenamiento ecológico & \\
-\\
-\hline
 \\
 3 & Consulta interactiva de mecanismos de resolución de conflictos del programa de ordenamiento ecológico con base en los criterios, estrategias y lineamientos de regulación ecológico en cada UGA & \\
 \\
-\hline
-\\
 4 & Simplificar la consulta de informes técnicos & \\
-\\
-\hline
 \\
 5 & Permitir la realización de procedimientos de geovisualización que incluyan como mínimo manejo de bancos de datos, manejo de modelos de análisis, generador de reportes gráficos y tabulares e interfaces de operación & \\
 \\
-\hline
 \hline \\[-1.8ex]
   \\
 \end{longtable}
+\endgroup
 
 \subsection{Beneficios}
 
@@ -107,7 +99,8 @@ En esta sección se exponen y describen las capacidades específicas del sistema
 
 \subsection{Descripción de Módulos y Casos de Uso}
 
-
+\begingroup
+\renewcommand\arraystretch{1}
 \begin{longtable}{@{\extracolsep{6pt}}l p{7.5cm}}
 \caption{Módulos y Casos de Uso}\label{item:mod_cu}\\
 \\[-1.8ex]\hline
@@ -193,6 +186,7 @@ Módulo de administración & Validar usuraio \\
 
   \\
 \end{longtable}
+\endgroup
 
 \pagebreak
 \subsection{Casos de Uso}
@@ -2264,7 +2258,7 @@ Módulo de administración & Validar usuraio \\
 \\
 
 \hspace{.2cm}Flujos de excepción &
-\par\vspace{.1cm} (E1). El sistema no ṕuede actualizar el listado de usuarios. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
+\par\vspace{.1cm} (E1). El sistema no puede actualizar el listado de usuarios. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
 
 \par\vspace{.1cm} (E2) El sistema no puede eliminar o inhabilitar al usuario seleccionado. El sistema muestra un mensaje al Administrador indicando que no es posible realizar la acción solicitada, pidiendo que lo intente más tarde.
 
