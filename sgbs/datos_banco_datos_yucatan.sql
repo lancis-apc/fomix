@@ -1,25 +1,17 @@
 --Esta sección es la información que se usa de manera general
---Borrando todos los datos de estados para correr el archivo sql
-DELETE FROM development.bd_usv_c2_mun;
-
---Se llena la información de las tablas;
---La siguiente instrucción se debe correr como superuser
-COPY development.bd_usv_c2_mun
-FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_natural/bd_usv_c2_mun.csv'
-WITH DELIMITER ',' CSV HEADER;
-
---Se borran los espacios en blanco del final de region
-UPDATE development.bd_usv_c2_mun SET region=rtrim(region);
-
---Se realiza la segunda forma normal para las columnas id_region y region
-INSERT INTO development.regiones
-SELECT DISTINCT id_region, region FROM development.bd_usv_c2_mun;
 
 --Borrando todos los datos de estados para correr el archivo sql
 DELETE FROM development.estados;
 --Ingresando información de los estados
 INSERT INTO development.estados(clave_entidad,entidad_federativa)
 VALUES ('31','Yucatán');
+
+--Borrando todos los datos de las regiones para correr el archivo sql
+DELETE FROM development.regiones;
+
+--Se realiza la segunda forma normal para las columnas id_region y region
+INSERT INTO development.regiones
+SELECT DISTINCT id_region, region FROM development.bd_usv_c2_mun;
 
 --Borrando todos los datos de municipios para correr el archivo sql
 DELETE FROM development.municipios;
@@ -131,51 +123,3 @@ INSERT INTO development.municipios(clave_municipio,municipio,id_region,cve_ent) 
 ('104','Yaxcabá',6,'31'),
 ('105','Yaxkukul',2,'31'),
 ('106','Yobaín',4,'31');
-
---Se realiza la segunda forma normal para las columna serie_usv
---Borrando todos los datos de municipios para correr el archivo sql
-DELETE FROM development.series;
---Ingresando información de la tabla development.series
-INSERT INTO development.series(serie_usv, serie) VALUES
-(1,1985),
-(2,1993),
-(3,2002),
-(4,2007),
-(5,2011),
-(6,2014);
-
---Borrando todos los datos de municipios para correr el archivo sql
-DELETE FROM development.coberturas_c3;
---Se ingresa la información de la tabla coberturas_c3
-INSERT INTO development.coberturas_c3(cob_c3_id, cobertura_c3) VALUES 
-(1,'Natural'),
-(2,'No natural');
-
---Borrando todos los datos de municipios para correr el archivo sql
-DELETE FROM development.coberturas_c4;
---Se ingresa la información de la tabla coberturas_c4
-INSERT INTO development.coberturas_c4(cob_c4_id, cobertura_c4, cob_c3_id) VALUES 
-(1,'Asentamiento humano', 2),
-(2,'Agropecuario', 2),
-(3,'Natural',1);
-
---Borrando todos los datos de municipios para correr el archivo sql
-DELETE FROM development.coberturas_c2;
---Se ingresa la información de la tabla coberturas_c2
-INSERT INTO development.coberturas_c2(cob_c2_id, cobertura_c2, cob_c4_id) VALUES 
-(1,'Agricultura de riego', 2),
-(2,'Agricultura de temporal', 2),
-(3,'Cuerpo de agua', 3),
-(4,'Manglar', 3),
-(5,'Pastizal', 2),
-(6,'Sin vegetación', 1),
-(7,'Asentamiento humano', 1),
-(8,'Vegetación de duna costera', 3),
-(9,'Vegetación de petén', 3),
-(10,'Vegetación secundaria de selva baja', 3),
-(11,'Vegetación secundaria de selva mediana', 3),
-(12,'Acuícola', 2),
-(13,'Bosque cultivado/Palmar inducido', 2),
-(14,'Tular', 3),
-(15,'Vegetación halófila hidrófila', 3),
-(16,'Sábana', 3);
