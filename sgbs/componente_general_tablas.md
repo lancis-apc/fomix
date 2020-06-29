@@ -18,5 +18,3 @@ La componente general hace referencia las tablas que guardan la información gen
     iii. `cve_mun`. Este campo es una _Foreign Key_ de tipo _CHAR_. Está asociada con la _Primary Key_ de la tabla `development.municipios`.
 
 Estas tablas son creadas ejecutando el código en sql que almacena el archivo [db_banco_datos_yucatan.sql](db_banco_datos_yucatan.sql). La información que almacenan estas tablas se obtiene ejecuntando el código en sql que almacena el archivo [datos_banco_datos_yucatan.sql](datos_banco_datos_yucatan.sql).
-
-Las siguientes secciones detallan cada una de las tablas.
