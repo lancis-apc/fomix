@@ -26,6 +26,6 @@ CREATE TABLE development.municipios (
 --Se crea la tabla para las agebs
 CREATE TABLE development.agebs (
     clave_ageb CHAR(4) PRIMARY KEY,
-    fol_ageb SMALLINT NOT NULL,
+    fol_ageb CHAR(13) NOT NULL,
     cve_mun CHAR REFERENCES development.municipios(clave_municipio)
 );
