@@ -77,7 +77,7 @@ denue_yuc_rama_wide$año<-2015
 denue_yuc_rama_wide<-denue_yuc_rama_wide[,c("cvegeo","cve_ent","cve_mun","nom_mun.y","region","año","rama", "0_a_5_personas","6_a_10_personas","11_a_30_personas","31_a_50_personas", "51_a_100_personas","101_a_250_personas","251_y_mas_personas")]
 
 colnames(denue_yuc_rama_wide)<-c("cvegeo","cve_ent","cve_mun","nom_mun","region","año","act_ec_cod", "0_a_5_personas","6_a_10_personas","11_a_30_personas","31_a_50_personas", "51_a_100_personas","101_a_250_personas","251_y_mas_personas")
-write.csv(denue_yuc_rama_wide,"/CARPETAS_TRABAJO/hcortes/denue/output/denue_yuc_rama_wide.csv",fileEncoding = "UTF-8",row.names = FALSE)
+write.csv(denue_yuc_rama_wide,"/CARPETAS_TRABAJO/hcortes/denue/output/bd_denue_yuc_rama_wide.csv",fileEncoding = "UTF-8",row.names = FALSE)
 
 ### Agrupamos por subsector
 ##denue_yuc_rama_wide<-read.csv("/home/milo/Documentos/LANCIS/FOMIX/denue/output/denue_yuc_rama_wide.csv")
@@ -90,5 +90,5 @@ denue_yuc_subsector_wide<-denue_yuc_subsector_wide %>%
   group_by(cvegeo,cve_ent,cve_mun,nom_mun,region,año,act_ec_cod) %>%
   summarise_all(funs(sum))
 
-colnames(denue_yuc_subsector_wide)<-c("cvegeo","cve_ent","cve_mun","nom_mun","region","año","act_ec_cod", "0_a_5_personas","6_a_10_personas","11_a_30_personas","31_a_50_personas", "51_a_100_personas","101_a_250_personas","251_y_mas_personas")
-write.csv(denue_yuc_subsector_wide,"/CARPETAS_TRABAJO/hcortes/denue/output/denue_yuc_subsector_wide.csv",fileEncoding = "UTF-8",row.names = FALSE)
+colnames(denue_yuc_subsector_wide)<-c("cvegeo","cve_ent","cve_mun","nom_mun","region","año","act_ec_cod_subsector", "0_a_5_personas","6_a_10_personas","11_a_30_personas","31_a_50_personas", "51_a_100_personas","101_a_250_personas","251_y_mas_personas")
+write.csv(denue_yuc_subsector_wide,"/CARPETAS_TRABAJO/hcortes/denue/output/bd_denue_yuc_subsector_wide.csv",fileEncoding = "UTF-8",row.names = FALSE)

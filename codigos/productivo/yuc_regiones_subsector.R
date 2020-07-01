@@ -73,6 +73,41 @@ yuc_porcentajes_act_ec_muni$porcentaje<-100*yuc_porcentajes_act_ec_muni$porcenta
 ## Guardamos los datos en formato long
 colnames(yuc_porcentajes_act_ec_muni)<-c("cvegeo","cve_ent","cve_mun","nom_mun","region","año","act_ec_cod_subsector","variable_censal","valor","porcentaje" )
 ##write.csv(yuc_porcentajes_act_ec_muni,"/home/milo/Documentos/LANCIS/FOMIX/fomix/output/yuc_porcentajes_act_ec_subsector_muni.csv",fileEncoding = "UTF-8",row.names = FALSE)
+## Guardamos en formato wide sólo las variables:
+# inversion="tc_A211A_INVERSION_TOTAL__MILLONES_DE_PESOS_"
+# personal ocupado="tc_H001A_PERSONAL_OCUPADO_TOTAL"
+# produccion fija bruta="tc_A111A_PRODUCCION_BRUTA_TOTAL__MILLONES_DE_PESOS_"
+# unidades económicas="tc_UE_UNIDADES_ECONOMICAS"
+
+#### yuc_porcentajes_act_ec_muni
+
+yuc_porcentajes_act_ec_muni$variable_censal<-as.character(yuc_porcentajes_act_ec_muni$variable_censal)
+yuc_porcentajes_act_ec_muni_wide_write<-subset(yuc_porcentajes_act_ec_muni, yuc_porcentajes_act_ec_muni$variable_censal=="A211A_INVERSION_TOTAL__MILLONES_DE_PESOS_" | yuc_porcentajes_act_ec_muni$variable_censal=="H001A_PERSONAL_OCUPADO_TOTAL" | yuc_porcentajes_act_ec_muni$variable_censal=="A111A_PRODUCCION_BRUTA_TOTAL__MILLONES_DE_PESOS_" | yuc_porcentajes_act_ec_muni$variable_censal=="UE_UNIDADES_ECONOMICAS")
+yuc_porcentajes_act_ec_muni_wide_write_valor<-cast(yuc_porcentajes_act_ec_muni_wide_write[, ! colnames(yuc_porcentajes_act_ec_muni_wide_write) %in% c("porcentaje")],cvegeo+cve_ent+cve_mun+nom_mun+region+año+act_ec_cod_subsector~variable_censal,sum)
+yuc_porcentajes_act_ec_muni_wide_write_porcentaje<-cast(yuc_porcentajes_act_ec_muni_wide_write[, ! colnames(yuc_porcentajes_act_ec_muni_wide_write) %in% c("valor")],cvegeo+cve_ent+cve_mun+nom_mun+region+año+act_ec_cod_subsector~variable_censal,sum)
+
+yuc_porcentajes_act_ec_muni_wide_write_total<-cbind.data.frame(yuc_porcentajes_act_ec_muni_wide_write_valor,yuc_porcentajes_act_ec_muni_wide_write_porcentaje[,c(8,9,10,11)])
+
+colnames(yuc_porcentajes_act_ec_muni_wide_write_total)<-c("cvegeo","cve_ent","cve_mun","nom_mun","region","año","act_ec_cod_subsector","prod_brut_tot_valor","inv_total_valor","per_ocupado_valor","ue_valor","prod_brut_tot_porcen","inv_total_porcen","per_ocupado_porcen","ue_porcen")
+
+# Cambiamos las regiones
+region_func<-function(datos){
+  datos$region[datos$region=="IPoniente"]<-"I Poniente"
+  datos$region[datos$region=="IINoroeste"]<-"II Noroeste"
+  datos$region[datos$region=="IIICentro"]<-"III Centro"
+  datos$region[datos$region=="IVLitoral centro"]<-"IV Litoral centro"
+  datos$region[datos$region=="VNoreste"]<-"V Noreste"
+  datos$region[datos$region=="VIOriente"]<-"VI Oriente"
+  datos$region[datos$region=="VIISur"]<-"VII Sur"
+
+  return(datos$region)
+}
+
+yuc_porcentajes_act_ec_muni_wide_write_total$region<-as.character(yuc_porcentajes_act_ec_muni_wide_write_total$region)
+yuc_porcentajes_act_ec_muni_wide_write_total$region<-region_func(yuc_porcentajes_act_ec_muni_wide_write_total)
+
+write.csv(yuc_porcentajes_act_ec_muni_wide_write_total,"/CARPETAS_TRABAJO/hcortes/fomix/output/bd_yuc_porcentajes_act_ec_subsector_muni_wide.csv",fileEncoding = "UTF-8",row.names = FALSE)
+
 
 
 #### Generación de Matriz de ritmo de crecimiento de la inversión, personal ocupado, produccion fija bruta y unidades económicas por , municipio, por subsector y por subsector dentro de cada municipio
