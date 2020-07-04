@@ -1,11 +1,52 @@
-####### DENUE ###########
-### Limpiamos el área de trabajo ###
+#/******************************************************************************************************************************************************************
+ #* DESCRIPCIÓN:
+ #* Genera el conteo de unidades económicas por rama y subsector de actividad económica de cada municipio que operan con 0 a 5 personas, 6 a 10 personas,
+ #* 11 a 30 personas, 31 a 50 personas, 51 a 100 personas, 101 a 250 personas , 251 y más personas, para el año 2015.
+ #*
+ #* INSUMOS:
+ #* DENUE_INEGI_11_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 11
+ #* DENUE_INEGI_21_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 21
+ #* DENUE_INEGI_22_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 22
+ #* DENUE_INEGI_23_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 23
+ #* DENUE_INEGI_31-33_.csv        ---> Directorio de unidades económicas a nivel nacional para los sectores 31-33
+ #* DENUE_INEGI_43_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 43
+ #* DENUE_INEGI_46111_.csv        ---> Directorio de unidades económicas a nivel nacional para la rama 46111
+ #* DENUE_INEGI_46112-46311_.csv  ---> Directorio de unidades económicas a nivel nacional para las ramas 46112-46311
+ #* DENUE_INEGI_46321-46531_.csv  ---> Directorio de unidades económicas a nivel nacional para las ramas 46321-46531
+ #* DENUE_INEGI_46591-46911_.csv  ---> Directorio de unidades económicas a nivel nacional para las ramas 46591-46911
+ #* DENUE_INEGI_48-49_.csv        ---> Directorio de unidades económicas a nivel nacional para los sectores 48 y 49
+ #* DENUE_INEGI_51_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 51
+ #* DENUE_INEGI_52_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 52
+ #* DENUE_INEGI_53_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 53
+ #* DENUE_INEGI_54_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 54
+ #* DENUE_INEGI_55_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 55
+ #* DENUE_INEGI_56_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 56
+ #* DENUE_INEGI_61_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 61
+ #* DENUE_INEGI_62_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 62
+ #* DENUE_INEGI_71_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 71
+ #* DENUE_INEGI_72_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 72
+ #* DENUE_INEGI_81_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 81
+ #* regiones_yuc.csv              ---> Diccionario de municipios y regiones del estado de Yucatán
+ #*
+ #*
+ #* SALIDAS:
+ #* bd_denue_yuc_subsector_wide.csv ---> Cantidad de unidades económicas que operan con distintas cantidades de trabajadores por rama de actividad económica por municipio
+ #* bd_denue_yuc_rama_wide.csv      ---> Cantidad de unidades económicas que operan con distintas cantidades de trabajadores por subsector de actividad económica por municipio
+ #*
+ #*
+ #* Subsistema: Productivo
+ #* Autor: LANCIS
+ #* Fecha: 3 de julio de 2020
+ #*
+#*/********************************************************************************************************************************************************************
+### Limpiamos el área de trabajo
 rm(list=ls())
 
 ### Cargamos las bibliotecas
 library(sqldf)
 library(stringi)
 library(reshape)
+
 
 ### Cargamos las lista de csv por año
 
@@ -23,6 +64,11 @@ for (i in lista_files) {
 
 # Quitamos acentos y sustituimos los . por _ a los nombres de las columnas
 colnames(denue)<-chartr(".", "_",toupper(stri_trans_general(colnames(denue),"Latin-ASCII")))
+
+#/**************************************************************************************************************************************
+#* Generación del archivo:
+#* bd_denue_yuc_rama_wide.csv
+#/**************************************************************************************************************************************
 
 # Nos quedamos con los registros de Yucatán
 denue_yuc<-subset(denue,denue$CLAVE_ENTIDAD==31)
@@ -79,8 +125,12 @@ denue_yuc_rama_wide<-denue_yuc_rama_wide[,c("cvegeo","cve_ent","cve_mun","nom_mu
 colnames(denue_yuc_rama_wide)<-c("cvegeo","cve_ent","cve_mun","nom_mun","region","año","act_ec_cod", "0_a_5_personas","6_a_10_personas","11_a_30_personas","31_a_50_personas", "51_a_100_personas","101_a_250_personas","251_y_mas_personas")
 write.csv(denue_yuc_rama_wide,"/CARPETAS_TRABAJO/hcortes/denue/output/bd_denue_yuc_rama_wide.csv",fileEncoding = "UTF-8",row.names = FALSE)
 
+#/**************************************************************************************************************************************
+#* Generación del archivo:
+#* bd_denue_yuc_subsector_wide.csv
+#/**************************************************************************************************************************************
+
 ### Agrupamos por subsector
-##denue_yuc_rama_wide<-read.csv("/home/milo/Documentos/LANCIS/FOMIX/denue/output/denue_yuc_rama_wide.csv")
 denue_yuc_subsector_wide<-denue_yuc_rama_wide
 denue_yuc_subsector_wide$act_ec_cod<-substring(denue_yuc_subsector_wide$act_ec_cod,1,2)
 

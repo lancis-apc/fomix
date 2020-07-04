@@ -1,5 +1,26 @@
-######## Script Censos Econ?micos 2009-2013 Yucat?n  ######
-### Limpiamos el ?rea de trabajo
+#/******************************************************************************************************************************************************************
+ #* DESCRIPCIÓN:
+ #* Genera las tasas de participación y crecimiento de la inversión, personal ocupado,
+ #* producción fija bruta y unidades económicas por rama de actividad económica y por municipio.
+ #*
+ #* INSUMOS:
+ #* yucatan_ce_09-14.csv  ---> Censos económicos de 2004, 2009 y 2014
+ #* regiones_yuc.csv      ---> Diccionario de municipios y regiones del estado de Yucatán
+ #*
+ #* SALIDAS:
+ #* bd_yuc_porcentajes_act_ec_muni_wide.csv ---> Participación de cada rama de actividad económica en el total municipal de la inversión, personal ocupado,producción fija bruta y unidades económicas para 2004, 2009 y 2014.
+ #* bd_yuc_porcentajes_muni_wide.csv ---> Participación de cada municipio en el total estatal de la inversión, personal ocupado,producción fija bruta y unidades económicas para 2004, 2009 y 2014.
+ #* bd_mat_tc_muni.csv --> Tasa de crecimiento de la inversión, personal ocupado,producción fija bruta y unidades económicas del municipio para 2009 y 2014.
+ #* bd_mat_tc_rama.csv ---> Tasa de crecimiento de inversión, personal ocupado,producción fija bruta y unidades económicas por rama de actividad económica para 2009 y 2014.
+ #* bd_mat_tc_muni_rama.csv ---> Tasa de crecimiento de inversión, personal ocupado,producción fija bruta y unidades económicas de cada rama de actividad económica dentro del total municipal para 2009 y 2014.
+ #*
+ #* Subsistema: Productivo
+ #* Autor: LANCIS
+ #* Fecha: 3 de julio de 2020
+ #*
+#*/********************************************************************************************************************************************************************
+
+### Limpiamos el área de trabajo
 rm(list=ls())
 
 ### Cargamos las bibliotecas
@@ -16,8 +37,18 @@ yuc_regiones<-read.csv("/CARPETAS_TRABAJO/hcortes/fomix/data/regiones_yuc.csv",s
 
 colnames(yuc)<-chartr(".", "_",toupper(stri_trans_general(colnames(yuc),"Latin-ASCII")))
 
-### Haremos una funci?n para obtener los porcentajes de participaci?n de cada
-#   Actividad Econ?mica en el total municipal de alguna de las variables censales.
+#/**************************************************************************************************************************************
+#* Generación de los archivos:
+#* bd_yuc_porcentajes_act_ec_muni_wide.csv
+#* bd_yuc_porcentajes_muni_wide.csv
+#/**************************************************************************************************************************************
+
+#/**************************************************************************************************************************************
+#* Archivo de salida: bd_yuc_porcentajes_act_ec_muni_wide.csv
+#/**************************************************************************************************************************************
+
+### Haremos una función para obtener los porcentajes de participación de cada
+#   Actividad Económica en el total municipal de alguna de las variables censales.
 
 porc_tot_mun<-function(datos, variable){
   sub_data<-datos[,c("ANO_CENSAL", "ENTIDAD", "MUNICIPIO", "ACTIVIDAD_ECONOMICA",variable)]
@@ -59,8 +90,8 @@ yuc_porcentajes_act_ec_muni<-subset(yuc_porcentajes_act_ec_muni,yuc_porcentajes_
 
 yuc_porcentajes_act_ec_muni<-yuc_porcentajes_act_ec_muni[,c("cvegeo","cve_ent","cve_mun","nom_mun","region","ANO_CENSAL","ACTIVIDAD_ECONOMICA","variable","value","porcentaje")]
 yuc_porcentajes_act_ec_muni$porcentaje<-100*yuc_porcentajes_act_ec_muni$porcentaje
-#########################
-### Haremos una funci?n para calcular la participaci?n de cada municipio en el total del estado
+
+### Haremos una función para calcular la participación de cada municipio en el total del estado
 
 porc_tot_edo<-function(datos, variable){
   sub_data<-datos[,c("ANO_CENSAL", "ENTIDAD", "MUNICIPIO",variable)]
@@ -148,7 +179,9 @@ yuc_porcentajes_act_ec_muni_wide_write_total$region<-region_func(yuc_porcentajes
 
 write.csv(yuc_porcentajes_act_ec_muni_wide_write_total,"/CARPETAS_TRABAJO/hcortes/fomix/output/bd_yuc_porcentajes_act_ec_muni_wide.csv",fileEncoding = "UTF-8",row.names = FALSE)
 
-#### yuc_porcentajes_muni
+#/**************************************************************************************************************************************
+#* Archivo de salida: bd_yuc_porcentajes_muni_wide.csv
+#/**************************************************************************************************************************************
 
 yuc_porcentajes_muni$variable_censal<-as.character(yuc_porcentajes_muni$variable_censal)
 yuc_porcentajes_muni_wide_write<-subset(yuc_porcentajes_muni, yuc_porcentajes_muni$variable_censal=="A211A_INVERSION_TOTAL__MILLONES_DE_PESOS_" | yuc_porcentajes_muni$variable_censal=="H001A_PERSONAL_OCUPADO_TOTAL" | yuc_porcentajes_muni$variable_censal=="A111A_PRODUCCION_BRUTA_TOTAL__MILLONES_DE_PESOS_" | yuc_porcentajes_muni$variable_censal=="UE_UNIDADES_ECONOMICAS")
@@ -166,7 +199,15 @@ yuc_porcentajes_muni_wide_write_total$region<-region_func(yuc_porcentajes_muni_w
 write.csv(yuc_porcentajes_muni_wide_write_total,"/CARPETAS_TRABAJO/hcortes/fomix/output/bd_yuc_porcentajes_muni_wide.csv",fileEncoding = "UTF-8",row.names = FALSE)
 
 
-#### Generación de Matriz de ritmo de crecimiento de la inversión, personal ocupado, produccion fija bruta y unidades económicas por , municipio, por rama y por rama dentro de cada municipio
+
+#/**************************************************************************************************************************************
+#* Generación de Matriz de ritmo de crecimiento de la inversión, personal ocupado, produccion fija bruta y unidades económicas por municipio, por rama y por rama dentro de cada municipio
+#/**************************************************************************************************************************************
+
+#/**************************************************************************************************************************************
+#* Archivo de salida: bd_mat_tc_muni.csv
+#/**************************************************************************************************************************************
+
 library(tidyverse)
 
 #### Damos formato wide a los datos
@@ -239,6 +280,10 @@ colnames(yuc_porcentajes_muni_wide)<-c("cvegeo","cve_ent","cve_mun","nom_mun","r
 write.csv(yuc_porcentajes_muni_wide,"/CARPETAS_TRABAJO/hcortes/fomix/output/bd_mat_tc_muni.csv",fileEncoding = "UTF-8",row.names = FALSE)
 
 
+#/**************************************************************************************************************************************
+#* Archivo de salida: bd_mat_tc_muni_rama.csv
+#/**************************************************************************************************************************************
+
 ####### Obtenemos la tasa de crecimiento de cada rama dentro del municipio
 
 ## Generamos una función para obtener las tasas de crecimiento
@@ -298,18 +343,6 @@ colnames(yuc_porcentajes_act_ec_muni_wide)<-c("cvegeo","cve_ent","cve_mun","nom_
 yuc_porcentajes_act_ec_muni_wide<-subset(yuc_porcentajes_act_ec_muni_wide,yuc_porcentajes_act_ec_muni_wide$año!=2004)
 
 # Cambiamos las regiones
-region_func<-function(datos){
-  datos$region[datos$region=="IPoniente"]<-"I Poniente"
-  datos$region[datos$region=="IINoroeste"]<-"II Noroeste"
-  datos$region[datos$region=="IIICentro"]<-"III Centro"
-  datos$region[datos$region=="IVLitoral centro"]<-"IV Litoral centro"
-  datos$region[datos$region=="VNoreste"]<-"V Noreste"
-  datos$region[datos$region=="VIOriente"]<-"VI Oriente"
-  datos$region[datos$region=="VIISur"]<-"VII Sur"
-
-  return(datos$region)
-}
-
 yuc_porcentajes_act_ec_muni_wide$region<-as.character(yuc_porcentajes_act_ec_muni_wide$region)
 yuc_porcentajes_act_ec_muni_wide$region<-region_func(yuc_porcentajes_act_ec_muni_wide)
 
@@ -318,7 +351,9 @@ colnames(yuc_porcentajes_act_ec_muni_wide)<-c("cvegeo","cve_ent","cve_mun","nom_
 write.csv(yuc_porcentajes_act_ec_muni_wide,"/CARPETAS_TRABAJO/hcortes/fomix/output/bd_mat_tc_muni_rama.csv",fileEncoding = "UTF-8",row.names = FALSE)
 
 
-#### Obtenemos la tasa de crecimiento por rama
+#/**************************************************************************************************************************************
+#* Archivo de salida: bd_mat_tc_rama.csv
+#/**************************************************************************************************************************************
 
 yuc_porcentajes_act_ec_muni_rama<-yuc_porcentajes_act_ec_muni[,c("act_ec_cod","año","variable_censal","valor")]
 
