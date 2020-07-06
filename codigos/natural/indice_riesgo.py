@@ -1,4 +1,12 @@
 # -*- coding: utf-8 -*-
+'''
+Proyecto: FOMIX YUCATÁN
+Objetivo:   Generar el mapa de riesgo a eventos naturales
+Autor: LANCIS APC
+Desarrollado en: Qgis 2.18, python 2.7 
+Contacto: victor.hernandez@iecologia.unam.mx
+'''
+
 
 import numpy, gdal_calc
 import os, sys, subprocess, processing 
@@ -8,7 +16,17 @@ from qgis.analysis import QgsRasterCalculator, QgsRasterCalculatorEntry
 from qgis.analysis import *
 import string 
 
+def raster_nodata(path_raster):
 
+    rlayer = QgsRasterLayer(path_raster,"raster")
+    extent = rlayer.extent()
+    provider = rlayer.dataProvider()
+    rows = rlayer.rasterUnitsPerPixelY()
+    cols = rlayer.rasterUnitsPerPixelX()
+    block = provider.block(1, extent,  rows, cols)
+    no_data = block.noDataValue()
+
+    return no_data
 #____________funciones_______________________________
 def raster_min_max(path_raster):
     '''
@@ -54,6 +72,7 @@ def ecuacion_clp(n_variables,pesos):
 
 
 
+
 def crea_capa(ecuacion,rasters_input,salida): 
     path_A=''
     path_B=''
@@ -64,6 +83,8 @@ def crea_capa(ecuacion,rasters_input,salida):
     path_G=''
     path_H=''
     total_raster = len(rasters_input)
+    
+    no_data =-9999# raster_nodata(rasters_input[0])
     
     for a,b in zip(range(total_raster), rasters_input):
         if a == 0:
@@ -87,20 +108,23 @@ def crea_capa(ecuacion,rasters_input,salida):
     if total_raster == 1:
             gdal_calc.Calc(calc=ecuacion, 
                             A=path_A, 
-                            outfile=salida)
+                            outfile=salida,
+                            NoDataValue=no_data)
                             
     if total_raster == 2:
         gdal_calc.Calc(calc=ecuacion, 
                         A=path_A, 
                         B=path_B,
-                        outfile=salida)
+                        outfile=salida,
+                        NoDataValue=no_data)
 
     if total_raster == 3:
             gdal_calc.Calc(calc=ecuacion, 
                             A=path_A, 
                             B=path_B,
                             C=path_C, 
-                            outfile=salida)
+                            outfile=salida,
+                            NoDataValue=no_data)
                             
     if total_raster == 4:
         gdal_calc.Calc(calc=ecuacion, 
@@ -108,7 +132,8 @@ def crea_capa(ecuacion,rasters_input,salida):
                         B=path_B,
                         C=path_C, 
                         D=path_D,
-                        outfile=salida)
+                        outfile=salida,
+                        NoDataValue=no_data)
 
     if total_raster == 5:
             gdal_calc.Calc(calc=ecuacion, 
@@ -117,7 +142,8 @@ def crea_capa(ecuacion,rasters_input,salida):
                             C=path_C, 
                             D=path_D,
                             E=path_E, 
-                            outfile=salida )
+                            outfile=salida,
+                           NoDataValue=no_data )
                             
     if total_raster == 6:
         gdal_calc.Calc(calc=ecuacion, 
@@ -127,7 +153,8 @@ def crea_capa(ecuacion,rasters_input,salida):
                         D=path_D,
                         E=path_E, 
                         F=path_F,
-                        outfile=salida)
+                        outfile=salida,
+                        NoDataValue=no_data)
 
     if total_raster == 7:
             gdal_calc.Calc(calc=ecuacion, 
@@ -138,7 +165,8 @@ def crea_capa(ecuacion,rasters_input,salida):
                             E=path_E, 
                             F=path_F,
                             G=path_G, 
-                            outfile=salida)
+                            outfile=salida,
+                            NoDataValue=no_data)
                             
     if total_raster == 8:
         gdal_calc.Calc(calc=ecuacion, 
@@ -150,9 +178,8 @@ def crea_capa(ecuacion,rasters_input,salida):
                         F=path_F,
                         G=path_G, 
                         H=path_H,
-                        outfile=salida )
-
-
+                        outfile=salida,
+                       NoDataValue=no_data)
 
 
 
@@ -170,7 +197,7 @@ inundacion = path_sig + 'procesamiento/indice_riesgo/insumos/riesgo_inundaciones
 ## Creacion del indice de riesgos a eventos naturales ##
 fv_indice_riesgos = [0.38,0.22,0.10,0.30]
 lista_inputs_indice_riesgos = [ciclones, sequia, granizo, inundacion]
-indice_recursos = path_sig + 'procesamiento/indice_riesgo/procesamiento/indice_calidad_riesgo_eventos_nat.tif'
+indice_recursos = path_sig + 'procesamiento/indice_riesgo/procesamiento/indice_riesgo_eventos_nat.tif'
 n_variables = len(fv_indice_riesgos)
 ecuacion  = ecuacion_clp(n_variables,fv_indice_riesgos)
 crea_capa(ecuacion,lista_inputs_indice_riesgos,indice_recursos)
