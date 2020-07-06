@@ -1,6 +1,6 @@
 # Tablas auxiliares del Subsistema Natural.
 
-Estas tablas sirven para obtener la información de archivos en formato CSV, la información alamacenada en estas tablas es utilizada para el Subsitema Natural, y apoyan en el vaciado de información a las tablas de este sistema.
+Estas tablas sirven para obtener la información de archivos en formato CSV, la información almacenada en estas tablas es utilizada para el Subsistema Natural, y apoyan en el vaciado de información a las tablas de este sistema.
 Las tablas auxiliares son las siguiente:
 1. `development.bd_usv_c2_mun`. Esta tabla almacena la información del área, en hectáreas, de uso de suelo y vegetación, está compuesta por los campos siguientes:
     1. `cve_ent`. Este campo es de tipo _CHAR_ con una longitud de 2 caracteres. Corresponde a la clave de la entidad, los valores se encuentran en el rango de `01` al `32`. Almacenados en el orden que el INEGI utiliza.
@@ -15,8 +15,8 @@ Las tablas auxiliares son las siguiente:
     10. `serie_usv`. Este campo es de tipo _SMALLINT_. Corresponde al número identificador de la serie (año) de uso de suelo y vegetación.
     11. `cob_1`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: agricultura de riego.
     12. `cob_2`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: agricultura de temporal.
-    13. `cob_3`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al area del municipio con el tipo de cobertura o vegetación: cuerpo de agua.
-    14. `cob_4`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al area del municipio con el tipo de cobertura o vegetación: manglar.
+    13. `cob_3`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: cuerpo de agua.
+    14. `cob_4`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: manglar.
     15. `cob_5`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: pastizal.
     16. `cob_6`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: sin vegetación.
     17. `cob_7`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: asentamiento humano.
@@ -42,8 +42,8 @@ Las tablas auxiliares son las siguiente:
     10. `serie_usv`. Este campo es de tipo _SMALLINT_. Corresponde al número identificador de la serie (año) de uso de suelo y vegetación.
     11. `cob_1`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: agricultura de riego.
     12. `cob_2`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: agricultura de temporal.
-    13. `cob_3`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al area del municipio con el tipo de cobertura o vegetación: cuerpo de agua.
-    14. `cob_4`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al area del municipio con el tipo de cobertura o vegetación: manglar.
+    13. `cob_3`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: cuerpo de agua.
+    14. `cob_4`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: manglar.
     15. `cob_5`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: pastizal.
     16. `cob_6`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: sin vegetación.
     17. `cob_7`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: asentamiento humano.
@@ -69,8 +69,8 @@ Las tablas auxiliares son las siguiente:
     10. `serie_usv`. Este campo es de tipo _SMALLINT_. Corresponde al número identificador de la serie (año) de uso de suelo y vegetación.
     11. `cob_1`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: agricultura de riego.
     12. `cob_2`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: agricultura de temporal.
-    13. `cob_3`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al area del municipio con el tipo de cobertura o vegetación: cuerpo de agua.
-    14. `cob_4`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al area del municipio con el tipo de cobertura o vegetación: manglar.
+    13. `cob_3`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: cuerpo de agua.
+    14. `cob_4`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: manglar.
     15. `cob_5`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: pastizal.
     16. `cob_6`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: sin vegetación.
     17. `cob_7`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: asentamiento humano.
@@ -84,4 +84,4 @@ Las tablas auxiliares son las siguiente:
     25. `cob_15`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: vegetación halófila hidrófila.
     26. `cob_16`. Este campo es de tipo _NUMERIC_ con una longitud máxima de 10 dígitos, 2 reservados para los decimales. Corresponde al área del municipio con el tipo de cobertura o vegetación: sábana.
 
-Estas tablas son creadas ejecutando el código en sql que almacena el archivo [db_banco_datos_yucatan_sub_natural_aux.sql](db_banco_datos_yucatan_sub_natural_aux.sql). La información que almacenan estas tablas se obtiene ejecuntando el código en sql que almacena el archivo [datos_banco_datos_yucatan_sub_natural_aux.sql](datos_banco_datos_yucatan_sub_natural_aux.sql).
+Estas tablas son creadas ejecutando el código en sql que almacena el archivo [db_banco_datos_yucatan_sub_natural_aux.sql](db_banco_datos_yucatan_sub_natural_aux.sql). La información que almacenan estas tablas se obtiene ejecutando el código en sql que almacena el archivo [datos_banco_datos_yucatan_sub_natural_aux.sql](datos_banco_datos_yucatan_sub_natural_aux.sql).
