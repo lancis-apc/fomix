@@ -10,10 +10,10 @@
  #* DENUE_INEGI_23_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 23
  #* DENUE_INEGI_31-33_.csv        ---> Directorio de unidades económicas a nivel nacional para los sectores 31-33
  #* DENUE_INEGI_43_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 43
- #* DENUE_INEGI_46111_.csv        ---> Directorio de unidades económicas a nivel nacional para la rama 46111
- #* DENUE_INEGI_46112-46311_.csv  ---> Directorio de unidades económicas a nivel nacional para las ramas 46112-46311
- #* DENUE_INEGI_46321-46531_.csv  ---> Directorio de unidades económicas a nivel nacional para las ramas 46321-46531
- #* DENUE_INEGI_46591-46911_.csv  ---> Directorio de unidades económicas a nivel nacional para las ramas 46591-46911
+ #* DENUE_INEGI_46111_.csv        ---> Directorio de unidades económicas a nivel nacional para la subrama 46111
+ #* DENUE_INEGI_46112-46311_.csv  ---> Directorio de unidades económicas a nivel nacional para las subramas 46112-46311
+ #* DENUE_INEGI_46321-46531_.csv  ---> Directorio de unidades económicas a nivel nacional para las subramas 46321-46531
+ #* DENUE_INEGI_46591-46911_.csv  ---> Directorio de unidades económicas a nivel nacional para las subramas 46591-46911
  #* DENUE_INEGI_48-49_.csv        ---> Directorio de unidades económicas a nivel nacional para los sectores 48 y 49
  #* DENUE_INEGI_51_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 51
  #* DENUE_INEGI_52_.csv           ---> Directorio de unidades económicas a nivel nacional para el sector 52
@@ -30,8 +30,8 @@
  #*
  #*
  #* SALIDAS:
- #* bd_denue_yuc_subsector_wide.csv ---> Cantidad de unidades económicas que operan con distintas cantidades de trabajadores por rama de actividad económica por municipio
- #* bd_denue_yuc_rama_wide.csv      ---> Cantidad de unidades económicas que operan con distintas cantidades de trabajadores por subsector de actividad económica por municipio
+ #* bd_denue_yuc_subsector_wide.csv ---> Cantidad de unidades económicas que operan con distintas cantidades de trabajadores por subsector de actividad económica por municipio
+ #* bd_denue_yuc_rama_wide.csv      ---> Cantidad de unidades económicas que operan con distintas cantidades de trabajadores por rama de actividad económica por municipio
  #*
  #*
  #* Subsistema: Productivo
