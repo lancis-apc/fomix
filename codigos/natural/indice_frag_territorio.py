@@ -7,9 +7,9 @@ import numpy as np
 
 '''
 Proyecto: FOMIX YUCATÁN
-Objetivo:   Generar mapas de fragilidad del territorio
+Objetivo:   Generar mapa de fragilidad del territorio
 Autor: LANCIS APC
-Desarrollado en: Qgis 3.10 
+Desarrollado en: Qgis 3.10, python 3
 Contacto: victor.hernandez@iecologia.unam.mx
 
 '''
