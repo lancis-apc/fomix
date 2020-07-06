@@ -27,3 +27,8 @@ Los códigos auxiliares para el borrado de información, o eliminación de tabla
 4. [db_rm_banco_datos_yucatan_sub_natural_aux.sql](db_rm_banco_datos_yucatan_sub_natural_aux.sql). Elimina las tablas auxiliares del Componente Subsistema Natural.
 
 Para más información ver el archivo [auxiliares.md](auxiliares.md).
+
+## Diagrama de la base
+
+A continuación, se presenta el diagrama de la base anteriormente descrita.
+![](tp_er_fomix_rc05.png)
