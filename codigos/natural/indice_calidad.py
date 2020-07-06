@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 '''
-Código creado para la generación del mapa de calidad de recursos naturales
-
-versión: Qgis 2.18, python 2.7 
-
-
+Proyecto: FOMIX YUCATÁN
+Objetivo:   Generar el mapa de calidad de recursos naturales
+Autor: LANCIS APC
+Desarrollado en: Qgis 2.18, python 2.7 
+Contacto: victor.hernandez@iecologia.unam.mx
 '''
 
 
