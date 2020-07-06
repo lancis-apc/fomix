@@ -5,6 +5,19 @@ from functools import reduce
 from osgeo import gdal
 from osgeo import osr
 
+
+'''
+Proyecto: FOMIX YUCATÁN
+Objetivo:   Generar matriz de transición a partir de dos capas raster de Uso de suelo y vegetación
+Autor: LANCIS APC
+Desarrollado en: Qgis 3.10, python 3
+Contacto: victor.hernandez@iecologia.unam.mx
+'''
+
+
+
+
+
 def raster_max(path_raster):
     '''
 
