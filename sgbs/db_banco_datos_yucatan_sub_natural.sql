@@ -28,7 +28,6 @@ CREATE TABLE development.coberturas_c2 (
 
 --Se crea la tabla usv_municipios_coberturas para establecer las relaciones de las coberturas con los municipios
 CREATE TABLE development.usv_municipios_coberturas (
-    cve_ent CHAR(2) REFERENCES development.estados(clave_entidad),
     cve_mun CHAR(3) REFERENCES development.municipios(clave_municipio),
     cve_geo CHAR(5) NOT NULL,
     serie_usv SMALLINT REFERENCES development.series(serie_usv),
@@ -38,7 +37,6 @@ CREATE TABLE development.usv_municipios_coberturas (
 
 --Se crea la tabla anp_municipios_coberturas para establecer las relaciones de las coberturas con los municipios
 CREATE TABLE development.anp_municipios_coberturas (
-    cve_ent CHAR(2) REFERENCES development.estados(clave_entidad),
     cve_mun CHAR(3) REFERENCES development.municipios(clave_municipio),
     cve_geo CHAR(5) NOT NULL,
     serie_usv SMALLINT REFERENCES development.series(serie_usv),
@@ -48,7 +46,6 @@ CREATE TABLE development.anp_municipios_coberturas (
 
 --Se crea la tabla deg_municipios_coberturas para establecer las relaciones de las coberturas con los municipios
 CREATE TABLE development.deg_municipios_coberturas (
-    cve_ent CHAR(2) REFERENCES development.estados(clave_entidad),
     cve_mun CHAR(3) REFERENCES development.municipios(clave_municipio),
     cve_geo CHAR(5) NOT NULL,
     serie_usv SMALLINT REFERENCES development.series(serie_usv),
