@@ -1,5 +1,15 @@
 # -*- coding: utf-8 -*-
 
+'''
+Código creado para la generación del mapa de calidad de recursos naturales
+
+versión: Qgis 2.18, python 2.7 
+
+
+'''
+
+
+
 import numpy, gdal_calc
 import os, sys, subprocess, processing 
 from qgis.core import QgsRasterLayer, QgsRasterBandStats
@@ -8,6 +18,19 @@ from qgis.analysis import QgsRasterCalculator, QgsRasterCalculatorEntry
 from qgis.analysis import *
 import string 
 
+
+
+def raster_nodata(path_raster):
+
+    rlayer = QgsRasterLayer(path_raster,"raster")
+    extent = rlayer.extent()
+    provider = rlayer.dataProvider()
+    rows = rlayer.rasterUnitsPerPixelY()
+    cols = rlayer.rasterUnitsPerPixelX()
+    block = provider.block(1, extent,  rows, cols)
+    no_data = block.noDataValue()
+
+    return no_data
 
 #____________funciones_______________________________
 def raster_min_max(path_raster):
@@ -32,12 +55,21 @@ def raster_min_max(path_raster):
 
 def norm_estandar(path_raster, path_raster_n):
     min,max = raster_min_max(path_raster)
-
+    no_data = raster_nodata(path_mascara)
     clp_norm ='(A - ' + str(min) + ') / (' + str(max) + ' - ' +str(min) +')' 
     gdal_calc.Calc(calc=clp_norm, 
             A=path_raster,
-            outfile=path_raster_n)
-
+            outfile=path_raster_n,
+            NoDataValue=no_data)
+            
+def norm_max(path_raster, path_raster_n):
+    min,max = raster_min_max(path_raster)
+    no_data = raster_nodata(path_raster)
+    clp_norm ='(A ) / (' + str(max) + ')' 
+    gdal_calc.Calc(calc=clp_norm, 
+            A=path_raster,
+            outfile=path_raster_n,
+            NoDataValue=no_data)
 
 
 def ecuacion_clp(n_variables,pesos):
@@ -65,6 +97,8 @@ def crea_capa(ecuacion,rasters_input,salida):
     path_H=''
     total_raster = len(rasters_input)
     
+    no_data =-9999# raster_nodata(rasters_input[0])
+    
     for a,b in zip(range(total_raster), rasters_input):
         if a == 0:
             path_A=b
@@ -87,20 +121,23 @@ def crea_capa(ecuacion,rasters_input,salida):
     if total_raster == 1:
             gdal_calc.Calc(calc=ecuacion, 
                             A=path_A, 
-                            outfile=salida)
+                            outfile=salida,
+                            NoDataValue=no_data)
                             
     if total_raster == 2:
         gdal_calc.Calc(calc=ecuacion, 
                         A=path_A, 
                         B=path_B,
-                        outfile=salida)
+                        outfile=salida,
+                        NoDataValue=no_data)
 
     if total_raster == 3:
             gdal_calc.Calc(calc=ecuacion, 
                             A=path_A, 
                             B=path_B,
                             C=path_C, 
-                            outfile=salida)
+                            outfile=salida,
+                            NoDataValue=no_data)
                             
     if total_raster == 4:
         gdal_calc.Calc(calc=ecuacion, 
@@ -108,7 +145,8 @@ def crea_capa(ecuacion,rasters_input,salida):
                         B=path_B,
                         C=path_C, 
                         D=path_D,
-                        outfile=salida)
+                        outfile=salida,
+                        NoDataValue=no_data)
 
     if total_raster == 5:
             gdal_calc.Calc(calc=ecuacion, 
@@ -117,7 +155,8 @@ def crea_capa(ecuacion,rasters_input,salida):
                             C=path_C, 
                             D=path_D,
                             E=path_E, 
-                            outfile=salida )
+                            outfile=salida,
+                           NoDataValue=no_data )
                             
     if total_raster == 6:
         gdal_calc.Calc(calc=ecuacion, 
@@ -127,7 +166,8 @@ def crea_capa(ecuacion,rasters_input,salida):
                         D=path_D,
                         E=path_E, 
                         F=path_F,
-                        outfile=salida)
+                        outfile=salida,
+                        NoDataValue=no_data)
 
     if total_raster == 7:
             gdal_calc.Calc(calc=ecuacion, 
@@ -138,7 +178,8 @@ def crea_capa(ecuacion,rasters_input,salida):
                             E=path_E, 
                             F=path_F,
                             G=path_G, 
-                            outfile=salida)
+                            outfile=salida,
+                            NoDataValue=no_data)
                             
     if total_raster == 8:
         gdal_calc.Calc(calc=ecuacion, 
@@ -150,7 +191,8 @@ def crea_capa(ecuacion,rasters_input,salida):
                         F=path_F,
                         G=path_G, 
                         H=path_H,
-                        outfile=salida )
+                        outfile=salida,
+                       NoDataValue=no_data)
 
 
 
@@ -162,13 +204,23 @@ path_sig ="C:/Dropbox (LANCIS)/SIG/desarrollo/sig_fomix/"
 
 ### Insumos####
 ### VEGETACION ##
-carbono_almacenado = path_sig + 'procesamiento/indice_calidad/insumos/vegetacion/fv_snigf_carbono_almacenado.tif'
-composicion_total = path_sig + 'procesamiento/indice_calidad/insumos/vegetacion/fv_snigf_composicion_total.tif'
-densidad_arbolado  = path_sig + 'procesamiento/indice_calidad/insumos/vegetacion/fv_snigf_densidad_arbolado.tif'
+carbono_almacenado = path_sig + 'procesamiento/indice_calidad/insumos/vegetacion/snigf_carbono_almacenado.tif'
+composicion_total = path_sig + 'procesamiento/indice_calidad/insumos/vegetacion/snigf_composicion_total.tif'
+densidad_arbolado  = path_sig + 'procesamiento/indice_calidad/insumos/vegetacion/snigf_densidad_arbolado.tif'
+ 
+ ## llevar a ideales las capas de vegetacion
+ 
+fv_carbono_almacenado = path_sig + 'procesamiento/indice_calidad/insumos/vegetacion/fv_snigf_carbono_almacenado.tif'
+fv_composicion_total = path_sig + 'procesamiento/indice_calidad/insumos/vegetacion/fv_snigf_composicion_total.tif'
+fv_densidad_arbolado  = path_sig + 'procesamiento/indice_calidad/insumos/vegetacion/fv_snigf_densidad_arbolado.tif'
+
+norm_max(carbono_almacenado, fv_carbono_almacenado)
+norm_max(composicion_total, fv_composicion_total)
+norm_max(densidad_arbolado, fv_densidad_arbolado)
  
 ## crea capa de vegetacion##
 fv_vegetacion = [0.33,0.33,0.33]
-lista_inputs_vegetacion = [densidad_arbolado,carbono_almacenado,composicion_total]
+lista_inputs_vegetacion = [fv_densidad_arbolado,fv_carbono_almacenado,fv_composicion_total]
 vegetacion = path_sig + 'procesamiento/indice_calidad/insumos/vegetacion/fv_vegetacion.tif'
 n_variables = len(fv_vegetacion)
 ecuacion  = ecuacion_clp(n_variables,fv_vegetacion)
