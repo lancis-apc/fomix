@@ -13,8 +13,8 @@ La componente general hace referencia las tablas que guardan la información gen
     3. `id_region`. Este campo es una _Foreign Key_ de tipo _SMALLINT_. Está asociada con la _Primary Key_ de la tabla `development.regiones`.
     4. `cve_ent`. Este campo es una _Foreign Key_ de tipo _CHAR_. Está asociada con la _Primary Key_ de la tabla `development.estados`.
 4. `development.agebs`. Esta tabla está compuesta por los campos siguientes:
-    1. `clave_ageb`. Este campo es una _Primary Key_ de tipo _CHAR_ con una longitud de 4 caracteres. Corresponde a las claves utilizadas por el INEGI para cada AGEB, los valores son claves alfanuméricas.
-    2. `fol_ageb`. Este campo es de tipo _CHAR_ con una longitud de 13 caracteres. Corresponde al Folio que el INEGI asigna a cada AGEB, los valores son claves alfanuméricas.
+    1. `clave_ageb`. Este campo es una _Primary Key_ de tipo _VARCHAR_ con una longitud de 4 caracteres. Corresponde a las claves utilizadas por el INEGI para cada AGEB, los valores son claves alfanuméricas.
+    2. `fol_ageb`. Este campo es de tipo _VARCHAR_ con una longitud de 14 caracteres. Corresponde al Folio que el INEGI asigna a cada AGEB, los valores son claves alfanuméricas.
     3. `cve_mun`. Este campo es una _Foreign Key_ de tipo _CHAR_. Está asociada con la _Primary Key_ de la tabla `development.municipios`.
 
 Estas tablas son creadas ejecutando el código en sql que almacena el archivo [db_banco_datos_yucatan.sql](db_banco_datos_yucatan.sql). La información que almacenan estas tablas se obtiene ejecutando el código en sql que almacena el archivo [datos_banco_datos_yucatan.sql](datos_banco_datos_yucatan.sql).
