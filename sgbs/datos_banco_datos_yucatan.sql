@@ -8,7 +8,6 @@ VALUES ('31','Yucatán');
 
 --Borrando todos los datos de las regiones para correr el archivo sql
 DELETE FROM development.regiones;
-
 --Se realiza la segunda forma normal para las columnas id_region y region
 INSERT INTO development.regiones
 SELECT DISTINCT id_region, region FROM development.bd_usv_c2_mun;
@@ -123,3 +122,9 @@ INSERT INTO development.municipios(clave_municipio,municipio,id_region,cve_ent) 
 ('104','Yaxcabá',6,'31'),
 ('105','Yaxkukul',2,'31'),
 ('106','Yobaín',4,'31');
+
+--Borrando todos los datos de las regiones para correr el archivo sql
+DELETE FROM development.agebs;
+--Se realiza la segunda forma normal para las columnas fol_ageb, cve_ageb, y nom_loc
+INSERT INTO development.agebs
+SELECT DISTINCT fol_ageb, cve_ageb, nom_loc, cve_mun FROM development.bd_ageb_caract;
