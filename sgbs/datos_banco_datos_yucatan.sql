@@ -128,3 +128,27 @@ DELETE FROM development.agebs;
 --Se realiza la segunda forma normal para las columnas fol_ageb, cve_ageb, y nom_loc
 INSERT INTO development.agebs
 SELECT DISTINCT fol_ageb, cve_ageb, nom_loc, cve_mun FROM development.bd_ageb_caract;
+------------------------------------------------------------------------------------
+--El valor que se introduce aquí es provicional y se requiere confirmación de Ofelia
+INSERT INTO development.agebs(fol_ageb, cve_ageb, nom_loc, cve_mun)
+SELECT DISTINCT fol_ageb, '0000', '00000000000000000', cve_mun
+FROM development.bd_ageb_diag_pobr
+WHERE fol_ageb
+IN (
+    SELECT fol_ageb
+    FROM development.bd_ageb_diag_pobr
+    WHERE fol_ageb
+    NOT IN (SELECT fol_ageb FROM development.agebs)
+    );
+
+INSERT INTO development.agebs(fol_ageb, cve_ageb, nom_loc, cve_mun)
+SELECT DISTINCT fol_ageb, '0000', '00000000000000000', cve_mun
+FROM development.bd_ageb_diag_rezago
+WHERE fol_ageb
+IN (
+    SELECT fol_ageb
+    FROM development.bd_ageb_diag_rezago
+    WHERE fol_ageb
+    NOT IN (SELECT fol_ageb FROM development.agebs)
+    );
+------------------------------------------------------------------------------------

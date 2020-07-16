@@ -1,4 +1,4 @@
---Esta sección es para el componente socioeconómico
+--Esta sección es para los auxiliares del componente socioeconómico
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\bd_ageb_caract.csv
 CREATE TABLE IF NOT EXISTS development.bd_ageb_caract(
     cve_ent CHAR(2) NOT NULL,
@@ -427,4 +427,18 @@ CREATE TABLE IF NOT EXISTS development.bd_socioec_diagn(
     p_ibm_15 NUMERIC(5,2),
     h_ibm_10 INTEGER,
     h_ibm_15 INTEGER
+);
+
+-------------------------------------------------------------------
+--Esta sección es para los catalogos de las tablas auxiliares del componente socioeconómico
+--Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_pob_afrodesc.xlsx
+CREATE TABLE IF NOT EXISTS development.dd_pob_afrodesc(
+    id SMALLINT,
+    nombre VARCHAR(10),
+    tipo VARCHAR(10),
+    unidad VARCHAR(20),
+    descripcion VARCHAR(120),
+    fuente VARCHAR(40),
+    año CHAR(4),
+    web TEXT
 );
