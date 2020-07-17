@@ -112,10 +112,82 @@ UPDATE development.bd_socioec_diagn SET cve_geo = CONCAT(cve_ent,cve_mun);
 ------------------------------------------------------------------------------------------------------------------------------
 --Esta sección es para los catalogos de las tablas auxiliares del componente socioeconómico
 
+--Borrando todos los datos de dd_ageb_caract para correr el archivo sql
+DELETE FROM development.dd_ageb_caract;
+--Ingresando información de la tabla /sub_socioeconomico/dd_ageb_caract.xlsx en development.dd_ageb_caract
+--La siguiente instrucción se debe correr como superuser
+COPY development.dd_ageb_caract
+FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_socioeconomico/dd_ageb_caract.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+--Borrando todos los datos de dd_ageb_diag_pobr para correr el archivo sql
+DELETE FROM development.dd_ageb_diag_pobr;
+--Ingresando información de la tabla /sub_socioeconomico/dd_ageb_diag_pobr.xlsx en development.dd_ageb_diag_pobr
+--La siguiente instrucción se debe correr como superuser
+COPY development.dd_ageb_diag_pobr
+FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_socioeconomico/dd_ageb_diag_pobr.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+--Borrando todos los datos de dd_ageb_diag_rezago para correr el archivo sql
+DELETE FROM development.dd_ageb_diag_rezago;
+--Ingresando información de la tabla /sub_socioeconomico/dd_ageb_diag_rezago.xlsx en development.dd_ageb_diag_rezago
+--La siguiente instrucción se debe correr como superuser
+COPY development.dd_ageb_diag_rezago
+FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_socioeconomico/dd_ageb_diag_rezago.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+--Borrando todos los datos de dd_idp para correr el archivo sql
+DELETE FROM development.dd_idp;
+--Ingresando información de la tabla /sub_socioeconomico/dd_idp.xlsx en development.dd_idp
+--La siguiente instrucción se debe correr como superuser
+COPY development.dd_idp
+FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_socioeconomico/dd_idp.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+--Borrando todos los datos de dd_indigena para correr el archivo sql
+DELETE FROM development.dd_indigena;
+--Ingresando información de la tabla /sub_socioeconomico/dd_indigena.xlsx en development.dd_indigena
+--La siguiente instrucción se debe correr como superuser
+COPY development.dd_indigena
+FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_socioeconomico/dd_indigena.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+--Borrando todos los datos de dd_migracion para correr el archivo sql
+DELETE FROM development.dd_migracion;
+--Ingresando información de la tabla /sub_socioeconomico/dd_migracion.xlsx en development.dd_migracion
+--La siguiente instrucción se debe correr como superuser
+COPY development.dd_migracion
+FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_socioeconomico/dd_migracion.csv'
+WITH DELIMITER ',' CSV HEADER;
+
 --Borrando todos los datos de dd_pob_afrodesc para correr el archivo sql
 DELETE FROM development.dd_pob_afrodesc;
 --Ingresando información de la tabla /sub_socioeconomico/dd_pob_afrodesc.xlsx en development.dd_pob_afrodesc
 --La siguiente instrucción se debe correr como superuser
 COPY development.dd_pob_afrodesc
 FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_socioeconomico/dd_pob_afrodesc.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+--Borrando todos los datos de dd_pob_gpo_edad_quinq para correr el archivo sql
+DELETE FROM development.dd_pob_gpo_edad_quinq;
+--Ingresando información de la tabla /sub_socioeconomico/dd_pob_gpo_edad_quinq.xlsx en development.dd_pob_gpo_edad_quinq
+--La siguiente instrucción se debe correr como superuser
+COPY development.dd_pob_gpo_edad_quinq
+FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_socioeconomico/dd_pob_gpo_edad_quinq.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+--Borrando todos los datos de dd_socioec_caract para correr el archivo sql
+DELETE FROM development.dd_socioec_caract;
+--Ingresando información de la tabla /sub_socioeconomico/dd_socioec_caract.xlsx en development.dd_socioec_caract
+--La siguiente instrucción se debe correr como superuser
+COPY development.dd_socioec_caract
+FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_socioeconomico/dd_socioec_caract.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+--Borrando todos los datos de dd_socioec_diagn para correr el archivo sql
+DELETE FROM development.dd_socioec_diagn;
+--Ingresando información de la tabla /sub_socioeconomico/dd_socioec_diagn.xlsx en development.dd_socioec_diagn
+--La siguiente instrucción se debe correr como superuser
+COPY development.dd_socioec_diagn
+FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_socioeconomico/dd_socioec_diagn.csv'
 WITH DELIMITER ',' CSV HEADER;

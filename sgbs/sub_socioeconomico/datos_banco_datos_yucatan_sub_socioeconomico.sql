@@ -42,5 +42,68 @@ USING (c_pobr_e);
 --Borrando inrformación de pobreza extrema para correr las instrucciones sql
 DELETE FROM development.fuentes_informacion;
 --Ingresando información de development.bd_ageb_diag_pobr
-INSERT INTO development.fuentes_informacion(fuente, año, web)
-SELECT DISTINCT fuente, CAST(año AS SMALLINT), web FROM development.dd_pob_afrodesc WHERE id > 8;
+INSERT INTO development.fuentes_informacion(subsistema, fuente, año, web)
+SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_ageb_caract OFFSET 11 UNION ALL
+SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_ageb_diag_pobr OFFSET 8 UNION ALL
+SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_ageb_diag_rezago OFFSET 11 UNION ALL
+SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_idp OFFSET 9 UNION ALL
+SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_indigena OFFSET 8 UNION ALL
+SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_migracion OFFSET 8 UNION ALL
+SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_pob_afrodesc OFFSET 7 UNION ALL
+SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_pob_gpo_edad_quinq OFFSET 5 UNION ALL
+SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_socioec_caract OFFSET 8 UNION ALL
+SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_socioec_diagn OFFSET 8;
+
+
+--INSERT INTO development.fuentes_informacion(subsistema, fuente, año, web)
+
+SELECT DISTINCT 'socio-económico',* 
+FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
+        FROM development.dd_ageb_caract 
+        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
+        OFFSET 11) AS foo UNION ALL
+SELECT DISTINCT 'socio-económico',* 
+FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
+        FROM development.dd_ageb_diag_pobr
+        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
+        OFFSET 8) AS foo UNION ALL
+SELECT DISTINCT 'socio-económico',* 
+FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
+        FROM development.dd_ageb_diag_rezago
+        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
+        OFFSET 11) AS foo UNION ALL
+SELECT DISTINCT 'socio-económico',* 
+FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
+        FROM development.dd_idp
+        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
+        OFFSET 9) AS foo UNION ALL
+SELECT DISTINCT 'socio-económico',* 
+FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
+        FROM development.dd_indigena
+        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
+        OFFSET 8) AS foo UNION ALL
+SELECT DISTINCT 'socio-económico',* 
+FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
+        FROM development.dd_migracion
+        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
+        OFFSET 8) AS foo UNION ALL
+SELECT DISTINCT 'socio-económico', fuente, año, web, NULL
+FROM (SELECT fuente, CAST(año AS SMALLINT), web
+        FROM development.dd_pob_afrodesc
+        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL
+        OFFSET 7) AS foo UNION ALL
+SELECT DISTINCT 'socio-económico',* 
+FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
+        FROM development.dd_pob_gpo_edad_quinq
+        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
+        OFFSET 5) AS foo UNION ALL
+SELECT DISTINCT 'socio-económico',* 
+FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
+        FROM development.dd_socioec_caract
+        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
+        OFFSET 8) AS foo UNION ALL
+SELECT DISTINCT 'socio-económico',* 
+FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
+        FROM development.dd_socioec_diagn
+        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
+        OFFSET 8) AS foo;

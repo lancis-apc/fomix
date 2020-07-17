@@ -431,7 +431,84 @@ CREATE TABLE IF NOT EXISTS development.bd_socioec_diagn(
 
 -------------------------------------------------------------------
 --Esta sección es para los catalogos de las tablas auxiliares del componente socioeconómico
---Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_pob_afrodesc.xlsx
+
+--Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_ageb_caract.csv
+CREATE TABLE IF NOT EXISTS development.dd_ageb_caract(
+    id SMALLINT,
+    nombre VARCHAR(10),
+    tipo VARCHAR(10),
+    unidad VARCHAR(20),
+    descripcion TEXT,
+    fuente VARCHAR(40),
+    año CHAR(4),
+    web TEXT,
+    metadatos TEXT
+);
+
+--Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_ageb_diag_pobr.csv
+CREATE TABLE IF NOT EXISTS development.dd_ageb_diag_pobr(
+    id SMALLINT,
+    nombre VARCHAR(10),
+    tipo VARCHAR(10),
+    unidad VARCHAR(20),
+    descripcion VARCHAR(120),
+    fuente VARCHAR(40),
+    año CHAR(4),
+    web TEXT,
+    metadatos TEXT
+);
+
+--Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_ageb_diag_rezago.csv
+CREATE TABLE IF NOT EXISTS development.dd_ageb_diag_rezago(
+    id SMALLINT,
+    nombre VARCHAR(10),
+    tipo VARCHAR(10),
+    unidad VARCHAR(20),
+    descripcion VARCHAR(120),
+    fuente VARCHAR(40),
+    año CHAR(4),
+    web TEXT,
+    metadatos TEXT
+);
+
+--Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_idp.csv
+CREATE TABLE IF NOT EXISTS development.dd_idp(
+    nombre VARCHAR(10),
+    unidad VARCHAR(20),
+    descripcion VARCHAR(120),
+    fuente VARCHAR(40),
+    año CHAR(4),
+    web TEXT,
+    metadatos TEXT
+);
+
+--Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_indigena.csv
+CREATE TABLE IF NOT EXISTS development.dd_indigena(
+    id SMALLINT,
+    nombre VARCHAR(10),
+    tipo VARCHAR(10),
+    unidad VARCHAR(20),
+    descripcion TEXT,
+    fuente VARCHAR(40),
+    año CHAR(4),
+    web TEXT,
+    metadatos TEXT
+);
+
+--Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_migracion.csv
+CREATE TABLE IF NOT EXISTS development.dd_migracion(
+    id SMALLINT,
+    nombre VARCHAR(10),
+    tipo VARCHAR(10),
+    unidad TEXT,
+    descripcion TEXT,
+    fuente TEXT,
+    año CHAR(4),
+    web TEXT,
+    metadatos TEXT
+);
+
+--Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_pob_afrodesc.csv
 CREATE TABLE IF NOT EXISTS development.dd_pob_afrodesc(
     id SMALLINT,
     nombre VARCHAR(10),
@@ -441,4 +518,43 @@ CREATE TABLE IF NOT EXISTS development.dd_pob_afrodesc(
     fuente VARCHAR(40),
     año CHAR(4),
     web TEXT
+);
+
+--Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_pob_gpo_edad_quinq.csv
+CREATE TABLE IF NOT EXISTS development.dd_pob_gpo_edad_quinq(
+    id SMALLINT,
+    nombre VARCHAR(10),
+    tipo VARCHAR(10),
+    unidad VARCHAR(20),
+    descripcion VARCHAR(120),
+    fuente VARCHAR(40),
+    año CHAR(4),
+    web TEXT,
+    metadatos TEXT
+);
+
+--Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.dd_socioec_caract(
+    id SMALLINT,
+    nombre VARCHAR(10),
+    tipo VARCHAR(10),
+    unidad TEXT,
+    descripcion TEXT,
+    fuente TEXT,
+    año CHAR(4),
+    web TEXT,
+    metadatos TEXT
+);
+
+--Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_socioec_diagn.csv
+CREATE TABLE IF NOT EXISTS development.dd_socioec_diagn(
+    id SMALLINT,
+    nombre VARCHAR(10),
+    tipo VARCHAR(10),
+    unidad TEXT,
+    descripcion TEXT,
+    fuente TEXT,
+    año CHAR(4),
+    web TEXT,
+    metadatos TEXT
 );

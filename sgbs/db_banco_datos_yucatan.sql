@@ -30,3 +30,14 @@ CREATE TABLE development.agebs (
     nom_loc VARCHAR(17) NOT NULL,
     cve_mun CHAR(3) REFERENCES development.municipios(clave_municipio)
 );
+
+------------------------------------------------------------
+--Se crea una tabla para las fuentes
+CREATE TABLE IF NOT EXISTS development.fuentes_informacion(
+    id SERIAL PRIMARY KEY,
+    subsistema VARCHAR(20),
+    fuente TEXT,
+    año SMALLINT,
+    web TEXT,
+    metadatos TEXT
+);
