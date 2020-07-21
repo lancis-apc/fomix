@@ -1,5 +1,34 @@
 --Esta sección es para el componente socioeconómico
 
+---------------------------------------------------------------------
+--En esta subsección se llena la información de los catalogos
+
+--Borrando inrformación de pobreza para correr las instrucciones sql
+DELETE FROM development.ct_pob_ind;
+--Ingresando información de development.bd_ageb_diag_pobr
+INSERT INTO development.ct_pob_ind VALUES
+('A', 'Población indígena > 70% de la población municipal'),
+('B', 'Población indígena 40.0 - 69.9%'),
+('C', 'Población indígena  >= 5,000 habitantes'),
+('D', 'Población indígena < 5,000 habla lengua indígena'),
+('E', 'Población indígena dispersa'),
+('F', 'Sin población indígena');
+
+--Borrando inrformación de pobreza para correr las instrucciones sql
+DELETE FROM development.ct_pob;
+--Ingresando información de development.bd_ageb_diag_pobr
+INSERT INTO development.ct_pob VALUES
+(1,'Menos de 15,000 habitantes'),
+(2,'De 15,000 a 49,999 habitantes'),
+(3,'De 50,000 a 99,000 habitantes'),
+(4,'Más de 100,000 habitantes');
+
+
+
+
+
+--Sección en aún prueba
+-----------------------------------------------------------------------------------------------------------------
 --Borrando inrformación de pobreza para correr las instrucciones sql
 DELETE FROM development.ctg_pobreza;
 --Ingresando información de development.bd_ageb_diag_pobr

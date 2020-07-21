@@ -1,5 +1,20 @@
 --Esta sección es para el componente socioeconómico
 
+CREATE TABLE IF NOT EXISTS development.ct_pob_ind(
+    cve_pob_ind CHAR(1) PRIMARY KEY,
+    sub_tipo VARCHAR(50)
+);
+
+CREATE TABLE IF NOT EXISTS development.ct_pob(
+    cve_pob SMALLINT PRIMARY KEY,
+    grupo VARCHAR(30)
+);
+
+
+
+
+--Sección en aún prueba
+-----------------------------------------------------------------------------------------------------------------
 --Se crea una tabla para las categorias de pobreza
 CREATE TABLE IF NOT EXISTS development.ctg_pobreza(
     id SERIAL PRIMARY KEY,

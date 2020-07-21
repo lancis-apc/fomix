@@ -91,7 +91,7 @@ DELETE FROM development.bd_socioec_caract;
 --La siguiente instrucción se debe correr como superuser
 COPY development.bd_socioec_caract
 FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamiento/sub_socioeconomico/bd_socioec_caract.csv'
-WITH DELIMITER ',' CSV HEADER ENCODING 'WIN1252';
+WITH DELIMITER ',' CSV HEADER;
 --Se colocan correctamente las claves de municipios
 UPDATE development.bd_socioec_caract SET cve_mun = RIGHT('00'||bd_socioec_caract.cve_mun,3);
 --Se colocan correctamente las claves cve_geo
