@@ -3,16 +3,24 @@
 ---------------------------------------------------------------------
 --En esta subsección se llena la información de los catalogos
 
+--Borrando inrformación de Tipología de municipio con población indigena para correr las instrucciones sql
+DELETE FROM development.ct_pob_ind_tipo;
+--Ingresando información de development.bd_ageb_diag_pobr
+INSERT INTO development.ct_pob_ind_tipo VALUES
+(1, 'Municipio indígena'),
+(2, 'Municipio con presencia indígena'),
+(3, 'Municipio con población indígena dispersa');
+
 --Borrando inrformación de pobreza para correr las instrucciones sql
 DELETE FROM development.ct_pob_ind;
 --Ingresando información de development.bd_ageb_diag_pobr
 INSERT INTO development.ct_pob_ind VALUES
-('A', 'Población indígena > 70% de la población municipal'),
-('B', 'Población indígena 40.0 - 69.9%'),
-('C', 'Población indígena  >= 5,000 habitantes'),
-('D', 'Población indígena < 5,000 habla lengua indígena'),
-('E', 'Población indígena dispersa'),
-('F', 'Sin población indígena');
+('A', 'Población indígena > 70% de la población municipal', 1),
+('B', 'Población indígena 40.0 - 69.9%', 1),
+('C', 'Población indígena  >= 5,000 habitantes', 2),
+('D', 'Población indígena < 5,000 habla lengua indígena',NULL),
+('E', 'Población indígena dispersa', 3),
+('F', 'Sin población indígena',NULL);
 
 --Borrando inrformación de pobreza para correr las instrucciones sql
 DELETE FROM development.ct_pob;
