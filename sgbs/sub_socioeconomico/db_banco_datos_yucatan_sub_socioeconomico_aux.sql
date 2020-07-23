@@ -440,7 +440,7 @@ CREATE TABLE IF NOT EXISTS development.dd_ageb_caract(
     unidad VARCHAR(20),
     descripcion TEXT,
     fuente VARCHAR(40),
-    año CHAR(4),
+    año SMALLINT,
     web TEXT,
     metadatos TEXT
 );
@@ -453,7 +453,7 @@ CREATE TABLE IF NOT EXISTS development.dd_ageb_diag_pobr(
     unidad VARCHAR(20),
     descripcion VARCHAR(120),
     fuente VARCHAR(40),
-    año CHAR(4),
+    año SMALLINT,
     web TEXT,
     metadatos TEXT
 );
@@ -466,7 +466,7 @@ CREATE TABLE IF NOT EXISTS development.dd_ageb_diag_rezago(
     unidad VARCHAR(20),
     descripcion VARCHAR(120),
     fuente VARCHAR(40),
-    año CHAR(4),
+    año SMALLINT,
     web TEXT,
     metadatos TEXT
 );
@@ -477,7 +477,7 @@ CREATE TABLE IF NOT EXISTS development.dd_idp(
     unidad VARCHAR(20),
     descripcion VARCHAR(120),
     fuente VARCHAR(40),
-    año CHAR(4),
+    año SMALLINT,
     web TEXT,
     metadatos TEXT
 );
@@ -490,7 +490,7 @@ CREATE TABLE IF NOT EXISTS development.dd_indigena(
     unidad VARCHAR(20),
     descripcion TEXT,
     fuente VARCHAR(40),
-    año CHAR(4),
+    año SMALLINT,
     web TEXT,
     metadatos TEXT
 );
@@ -503,7 +503,7 @@ CREATE TABLE IF NOT EXISTS development.dd_migracion(
     unidad TEXT,
     descripcion TEXT,
     fuente TEXT,
-    año CHAR(4),
+    año SMALLINT,
     web TEXT,
     metadatos TEXT
 );
@@ -516,7 +516,7 @@ CREATE TABLE IF NOT EXISTS development.dd_pob_afrodesc(
     unidad VARCHAR(20),
     descripcion VARCHAR(120),
     fuente VARCHAR(40),
-    año CHAR(4),
+    año SMALLINT,
     web TEXT
 );
 
@@ -528,7 +528,7 @@ CREATE TABLE IF NOT EXISTS development.dd_pob_gpo_edad_quinq(
     unidad VARCHAR(20),
     descripcion VARCHAR(120),
     fuente VARCHAR(40),
-    año CHAR(4),
+    año SMALLINT,
     web TEXT,
     metadatos TEXT
 );
@@ -541,7 +541,7 @@ CREATE TABLE IF NOT EXISTS development.dd_socioec_caract(
     unidad TEXT,
     descripcion TEXT,
     fuente TEXT,
-    año CHAR(4),
+    año SMALLINT,
     web TEXT,
     metadatos TEXT
 );
@@ -554,7 +554,7 @@ CREATE TABLE IF NOT EXISTS development.dd_socioec_diagn(
     unidad TEXT,
     descripcion TEXT,
     fuente TEXT,
-    año CHAR(4),
+    año SMALLINT,
     web TEXT,
     metadatos TEXT
 );

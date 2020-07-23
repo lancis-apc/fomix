@@ -33,10 +33,10 @@ CREATE TABLE development.agebs (
 
 ------------------------------------------------------------
 --Se crea una tabla para las fuentes
-CREATE TABLE IF NOT EXISTS development.fuentes_informacion(
-    id SERIAL PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS development.ct_fuentes_informacion(
+    id CHAR(5) PRIMARY KEY,
     subsistema VARCHAR(20),
-    fuente TEXT,
+    fuente VARCHAR(50),
     año SMALLINT,
     web TEXT,
     metadatos TEXT
