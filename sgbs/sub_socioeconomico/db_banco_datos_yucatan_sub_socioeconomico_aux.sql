@@ -246,7 +246,7 @@ CREATE TABLE IF NOT EXISTS development.bd_migracion(
 CREATE TABLE IF NOT EXISTS development.bd_pob_afrodesc(
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32) NOT NULL,
-    cve_mun VARCHAR(23) NOT NULL,
+    cve_mun VARCHAR(23),
     nom_mun VARCHAR(80) NOT NULL,
     mun_ori VARCHAR(80) NOT NULL,
     id_region SMALLINT,

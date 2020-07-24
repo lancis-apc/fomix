@@ -16,6 +16,7 @@ SELECT DISTINCT id_region, region FROM development.bd_usv_c2_mun;
 DELETE FROM development.municipios;
 --Ingresando información de los municipios
 INSERT INTO development.municipios(clave_municipio,municipio,id_region,cve_ent) VALUES
+('000','Resto de los municipios',NULL,'31'),
 ('001','Abalá',2,'31'),
 ('002','Acanceh',2,'31'),
 ('003','Akil',7,'31'),

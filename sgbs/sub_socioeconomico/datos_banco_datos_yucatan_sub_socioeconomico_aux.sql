@@ -74,6 +74,7 @@ FROM '/mnt/c/Dropbox (LANCIS)/CARPETAS_TRABAJO/atorrijos/banco_datos/procesamien
 WITH DELIMITER ',' CSV HEADER;
 --Se colocan correctamente las claves de municipios
 UPDATE development.bd_pob_afrodesc SET cve_mun = RIGHT('00'||bd_pob_afrodesc.cve_mun,3);
+UPDATE development.bd_pob_afrodesc SET cve_mun = '000' WHERE cve_mun NOT IN (SELECT clave_municipio FROM development.municipios);
 
 --Borrando todos los datos de bd_pob_gpo_edad_quinq para correr el archivo sql
 DELETE FROM development.bd_pob_gpo_edad_quinq;

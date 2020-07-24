@@ -3,29 +3,49 @@
 --------------------------------------------------------------------------
 --En esta subsección se crean los catalogos
 
---Se crea catalogo para registro 9 (subtipo) del archivo dd_indigena.csv
-CREATE TABLE IF NOT EXISTS development.ct_subtipo(
+--Se crea catalogo para registro 10 (nom_tipo) del archivo dd_indigena.csv
+CREATE TABLE IF NOT EXISTS development.ct_nom_tipo(
     id SMALLINT PRIMARY KEY,
-    nom_tipo VARCHAR(50)
+    nom_tipo VARCHAR(50) NOT NULL
 );
 
---Se crea catalogo para registro 10 (nom_tipo) del archivo dd_indigena.csv
-CREATE TABLE IF NOT EXISTS development.nom_tipo(
+--Se crea catalogo para registro 9 (subtipo) del archivo dd_indigena.csv
+CREATE TABLE IF NOT EXISTS development.ct_subtipo(
     id CHAR(1) PRIMARY KEY,
-    sub_tipo VARCHAR(50),
-    cve_tipo SMALLINT REFERENCES development.ct_subtipo(id)
+    subtipo VARCHAR(50) NOT NULL,
+    cve_nt SMALLINT REFERENCES development.ct_nom_tipo(id) NOT NULL
 );
 
 --Se crea catalogo para registros pob del archivo dd_indigena.csv
 CREATE TABLE IF NOT EXISTS development.ct_pob_indigena(
     id SERIAL PRIMARY KEY,
-    campo VARCHAR(10),
-    descripcion VARCHAR(90),
+    campo VARCHAR(10) NOT NULL,
+    descripcion VARCHAR(90) NOT NULL,
     fi_id CHAR(5) REFERENCES development.ct_fuentes_informacion(id)
 );
 
+--Se crea catalogo para registros viv del archivo dd_indigena.csv
+CREATE TABLE IF NOT EXISTS development.ct_viv_indigena(
+    id SERIAL PRIMARY KEY,
+    campo VARCHAR(10) NOT NULL,
+    descripcion VARCHAR(200) NOT NULL,
+    fi_id CHAR(5) REFERENCES development.ct_fuentes_informacion(id)
+);
 
+--Se crea catalogo para registros pob del archivo dd_pob_afrodesc.csv
+CREATE TABLE IF NOT EXISTS development.ct_pob_afrodesc(
+    id SERIAL PRIMARY KEY,
+    campo VARCHAR(10) NOT NULL,
+    descripcion VARCHAR(70) NOT NULL,
+    fi_id CHAR(5) REFERENCES development.ct_fuentes_informacion(id)
+);
 
+--Se crea catalogo para registro 6 (gpo_quin) del archivo dd_pob_gpo_edad_quinq.csv
+CREATE TABLE IF NOT EXISTS development.ct_gpo_quin(
+    id SERIAL PRIMARY KEY,
+    gpo_quin VARCHAR(15) NOT NULL,
+    fi_id CHAR(5) REFERENCES development.ct_fuentes_informacion(id)
+);
 
 
 
@@ -42,17 +62,33 @@ CREATE TABLE IF NOT EXISTS development.ct_pob(
 --------------------------------------------------------------------------
 --En esta subsección se crean las tablas de la información
 
---Se crea tabla para registros pob del archivo dd_indigena.csv
+--Se crea tabla para registros pob del archivo bd_indigena.csv
 CREATE TABLE IF NOT EXISTS development.pob_indigena(
     cve_geo CHAR(5) NOT NULL,
-    cve_mun CHAR(3) NOT NULL,
-    subtipo CHAR(1) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    subtipo_id CHAR(1) NOT NULL REFERENCES development.ct_subtipo(id),
     habitantes INTEGER,
-    cpi_id SMALLINT
+    año SMALLINT,
+    cpi_id SMALLINT NOT NULL REFERENCES development.ct_pob_indigena(id)
 );
 
+--Se crea tabla para registros viv del archivo bd_indigena.csv
+CREATE TABLE IF NOT EXISTS development.viv_indigena(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    subtipo_id CHAR(1) NOT NULL NOT NULL REFERENCES development.ct_subtipo(id),
+    viviendas INTEGER,
+    año SMALLINT,
+    cvi_id SMALLINT NOT NULL REFERENCES development.ct_viv_indigena(id)
+);
 
-
+--Se crea tabla para registros pob del archivo bd_pob_afrodesc.csv
+CREATE TABLE IF NOT EXISTS development.pob_afrodesc(
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    porcentaje NUMERIC(5,2),
+    año SMALLINT,
+    cpa_id SMALLINT NOT NULL REFERENCES development.ct_pob_afrodesc(id)
+);
 
 
 
