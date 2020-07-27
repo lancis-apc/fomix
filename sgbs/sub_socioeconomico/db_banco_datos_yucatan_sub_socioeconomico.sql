@@ -90,7 +90,13 @@ CREATE TABLE IF NOT EXISTS development.pob_afrodesc(
     cpa_id SMALLINT NOT NULL REFERENCES development.ct_pob_afrodesc(id)
 );
 
-
+CREATE TABLE IF NOT EXISTS development.pob_gpo_quin(
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    gpo_quin_id SMALLINT NOT NULL REFERENCES development.ct_gpo_quin(id),
+    pob_masculina INTEGER,
+    pob_femenina INTEGER,
+    año SMALLINT
+);
 
 
 --Sección en aún prueba

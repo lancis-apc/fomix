@@ -81,9 +81,11 @@ WITH a AS (
     FROM development.bd_pob_gpo_edad_quinq
     WHERE gpo_quin != 'Total'
     ORDER BY gpo_quin)
-SELECT a.gpo_quin, b.fuente
+SELECT a.gpo_quin, c.id
 FROM a
 JOIN development.dd_pob_gpo_edad_quinq AS b USING (nombre)
+JOIN development.ct_fuentes_informacion AS c ON c.fuente LIKE (SELECT DISTINCT REPLACE(fuente||'%',',','') FROM development.dd_pob_gpo_edad_quinq)
+ORDER BY a.gpo_quin;
 
 
 
@@ -443,8 +445,18 @@ FROM a
 JOIN development.ct_pob_afrodesc AS b USING (campo)
 JOIN development.dd_pob_afrodesc AS c ON a.campo = c.nombre;
 
-
-
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.pob_gpo_quin;
+--Ingresando información
+INSERT INTO development.pob_gpo_quin (cve_mun, gpo_quin_id, pob_masculina, pob_femenina, año)
+WITH a AS (
+    SELECT cve_mun, gpo_quin, pobqm_15, pobqf_15, 'gpo_quin' AS nombre
+    FROM development.bd_pob_gpo_edad_quinq
+    WHERE gpo_quin != 'Total')
+SELECT a.cve_mun, b.id, a.pobqm_15, a.pobqf_15, c.año
+FROM a
+JOIN development.ct_gpo_quin AS b USING (gpo_quin)
+JOIN development.dd_pob_gpo_edad_quinq as c USING (nombre);
 
 
 --Sección en aún prueba
