@@ -4,6 +4,13 @@
   ####################################################################
 */
 
+-- Catálogo de rama de actividad económica del SCIAN (Sistema de Clasificación Industrial para América del Norte)
+
+CREATE TABLE IF NOT EXISTS development.tb_rama (
+  act_ec_cod CHAR(4) NOT NULL,
+  rama VARCHAR(130) NOT NULL
+);
+
 -- Tabla de Producción Bruta, Inversión, Unidades Económicas y Personal Ocupado por municipios
 
 CREATE TABLE IF NOT EXISTS development.bd_activ_ec_muni (
@@ -15,22 +22,14 @@ CREATE TABLE IF NOT EXISTS development.bd_activ_ec_muni (
     per_ocup INTEGER NOT NULL
 );
 
--- Tabla de principal rama de actividad económica del municipio
-
-CREATE TABLE IF NOT EXISTS development.bd_activ_ec_principal (
-    serie SMALLINT NOT NULL,
-    cve_mun CHAR(3) NOT NULL,
-    act_ec_cod CHAR(4) NOT NULL
-);
-
 -- Tabla de Coeficientes de especialización
 
 CREATE TABLE IF NOT EXISTS development.bd_coef_esp (
     serie SMALLINT NOT NULL,
     cve_mun CHAR(3) NOT NULL,
     act_ec_cod CHAR(4) NOT NULL,
-    ce_pbt REAL NOT NULL,
-    ce_per_ocup REAL NOT NULL
+    ce_pbt NUMERIC(10,6) NOT NULL,
+    ce_per_ocup NUMERIC(10,6) NOT NULL
 );
 
 -- Tabla de  Coeficientes técnicos
@@ -43,7 +42,7 @@ CREATE TABLE IF NOT EXISTS development.bd_coef_tec (
     construc_coef NUMERIC(5,4) NOT NULL,
     manufac_coef NUMERIC(5,4) NOT NULL,
     comercio_coef NUMERIC(5,4) NOT NULL,
-    trans_cor_coef NUMERIC(5,4) NOT NULL,
+    trans_corr_coef NUMERIC(5,4) NOT NULL,
     med_masiv_coef NUMERIC(5,4) NOT NULL,
     s_finan_coef NUMERIC(5,4) NOT NULL,
     s_inmob_coef NUMERIC(5,4) NOT NULL,
@@ -63,7 +62,7 @@ CREATE TABLE IF NOT EXISTS development.bd_coef_tec (
 CREATE TABLE IF NOT EXISTS development.bd_conc_indust (
     serie SMALLINT NOT NULL,
     cve_mun CHAR(3) NOT NULL,
-    concen_ind REAL NOT NULL
+    concen_ind NUMERIC(9,6) NOT NULL
 );
 
 -- Tabla de Cantidad de unidades económicas que operan con distintas cantidades de trabajadores por rama de actividad económica por municipio
@@ -101,10 +100,10 @@ CREATE TABLE IF NOT EXISTS  development.bd_denue_yuc_subsector (
 CREATE TABLE IF NOT EXISTS  development.bd_mat_tc_muni (
     cve_mun CHAR(3) NOT NULL,
     serie SMALLINT NOT NULL,
-    tc_inv_total_mun REAL NOT NULL,
-    tc_per_ocupado_mun REAL NOT NULL,
-    tc_prod_brut_tot_mun REAL NOT NULL,
-    tc_ue_mun REAL NOT NULL
+    tc_inv_total_mun NUMERIC(10,6) NOT NULL,
+    tc_per_ocupado_mun NUMERIC(10,6) NOT NULL,
+    tc_prod_brut_tot_mun NUMERIC(10,6) NOT NULL,
+    tc_ue_mun NUMERIC(10,6) NOT NULL
 );
 
 -- Tabla de Tasa de crecimiento de inversión, personal ocupado,producción fija bruta y unidades económicas de cada rama de actividad económica dentro del total municipal para 2009 y 2014.
@@ -113,10 +112,10 @@ CREATE TABLE IF NOT EXISTS development.bd_mat_tc_muni_rama (
     cve_mun CHAR(3) NOT NULL,
     serie SMALLINT NOT NULL,
     act_ec_cod CHAR(4) NOT NULL,
-    tc_inv_total REAL NOT NULL,
-    tc_per_ocupado REAL NOT NULL,
-    tc_prod_brut_tot REAL NOT NULL,
-    tc_ue REAL NOT NULL
+    tc_inv_total NUMERIC(10,6) NOT NULL,
+    tc_per_ocupado NUMERIC(10,6) NOT NULL,
+    tc_prod_brut_tot NUMERIC(10,6) NOT NULL,
+    tc_ue NUMERIC(10,6) NOT NULL
 );
 
 -- Tabla de Tasa de crecimiento de inversión, personal ocupado,producción fija bruta y unidades económicas de cada subsector de actividad económica dentro del total municipal para 2009 y 2014.
@@ -125,10 +124,10 @@ CREATE TABLE IF NOT EXISTS development.bd_mat_tc_muni_subsector (
     cve_mun CHAR(3) NOT NULL,
     serie SMALLINT NOT NULL,
     act_ec_sub_cod CHAR(2) NOT NULL,
-    tc_inv_total_mun_subsector REAL NOT NULL,
-    tc_per_ocupado_mun_subsector REAL NOT NULL,
-    tc_prod_brut_tot_mun_subsector REAL NOT NULL,
-    tc_ue_mun_subsector REAL NOT NULL
+    tc_inv_total_mun_subsector NUMERIC(10,6) NOT NULL,
+    tc_per_ocupado_mun_subsector NUMERIC(10,6) NOT NULL,
+    tc_prod_brut_tot_mun_subsector NUMERIC(10,6) NOT NULL,
+    tc_ue_mun_subsector NUMERIC(10,6) NOT NULL
 );
 
 -- Tabla de Tasa de crecimiento de inversión, personal ocupado,producción fija bruta y unidades económicas por rama de actividad económica para 2009 y 2014.
@@ -136,10 +135,10 @@ CREATE TABLE IF NOT EXISTS development.bd_mat_tc_muni_subsector (
 CREATE TABLE IF NOT EXISTS development.bd_mat_tc_rama (
     act_ec_cod CHAR(4) NOT NULL,
     serie SMALLINT NOT NULL,
-    tc_inv_total_rama REAL NOT NULL,
-    tc_per_ocupado_rama REAL NOT NULL,
-    tc_prod_brut_tot_rama REAL NOT NULL,
-    tc_ue_rama REAL NOT NULL
+    tc_inv_total_rama NUMERIC(10,6) NOT NULL,
+    tc_per_ocupado_rama NUMERIC(10,6) NOT NULL,
+    tc_prod_brut_tot_rama NUMERIC(10,6) NOT NULL,
+    tc_ue_rama NUMERIC(10,6) NOT NULL
 );
 
 -- Tabla de Tasa de crecimiento de inversión, personal ocupado,producción fija bruta y unidades económicas por subsector de actividad económica para 2009 y 2014.
@@ -147,10 +146,10 @@ CREATE TABLE IF NOT EXISTS development.bd_mat_tc_rama (
 CREATE TABLE IF NOT EXISTS development.bd_mat_tc_subsector (
     act_ec_sub_cod CHAR(2) NOT NULL,
     serie SMALLINT NOT NULL,
-    tc_inv_total_subsector REAL NOT NULL,
-    tc_per_ocupado_subsector REAL NOT NULL,
-    tc_prod_brut_tot_subsector REAL NOT NULL,
-    tc_ue_subsector REAL NOT NULL
+    tc_inv_total_subsector NUMERIC(10,6) NOT NULL,
+    tc_per_ocupado_subsector NUMERIC(10,6) NOT NULL,
+    tc_prod_brut_tot_subsector NUMERIC(10,6) NOT NULL,
+    tc_ue_subsector NUMERIC(10,6) NOT NULL
 );
 
 -- Tabla de Producto Interno Bruto anual total y por sectores del estado de Yucatán
@@ -174,10 +173,10 @@ CREATE TABLE IF NOT EXISTS development.bd_yuc_porcentajes_act_ec_muni (
     inv_total_valor NUMERIC(7,3) NOT NULL,
     per_ocupado_valor INTEGER NOT NULL,
     ue_valor INTEGER NOT NULL,
-    prod_brut_tot_porcen REAL NOT NULL,
-    inv_total_porcen REAL NOT NULL,
-    per_ocupado_porcen REAL NOT NULL,
-    ue_porcen REAL NOT NULL
+    prod_brut_tot_porcen NUMERIC(10,6) NOT NULL,
+    inv_total_porcen NUMERIC(10,6) NOT NULL,
+    per_ocupado_porcen NUMERIC(10,6) NOT NULL,
+    ue_porcen NUMERIC(10,6) NOT NULL
 );
 
 -- Tabla de Participación de cada subsector de actividad económica en el total municipal de la inversión, personal ocupado,producción fija bruta y unidades económicas para 2004, 2009 y 2014.
@@ -190,10 +189,10 @@ CREATE TABLE IF NOT EXISTS development.bd_yuc_porcentajes_act_ec_subsector_muni 
     inv_total_valor NUMERIC(7,3) NOT NULL,
     per_ocupado_valor INTEGER NOT NULL,
     ue_valor INTEGER NOT NULL,
-    prod_brut_tot_porcen REAL NOT NULL,
-    inv_total_porcen REAL NOT NULL,
-    per_ocupado_porcen REAL NOT NULL,
-    ue_porcen REAL NOT NULL
+    prod_brut_tot_porcen NUMERIC(10,6) NOT NULL,
+    inv_total_porcen NUMERIC(10,6) NOT NULL,
+    per_ocupado_porcen NUMERIC(10,6) NOT NULL,
+    ue_porcen NUMERIC(10,6) NOT NULL
 );
 
 -- Tabla de Participación de cada municipio en el total estatal de la inversión, personal ocupado,producción fija bruta y unidades económicas para 2004, 2009 y 2014.
@@ -205,8 +204,8 @@ CREATE TABLE IF NOT EXISTS development.bd_yuc_porcentajes_muni (
     inv_total_valor NUMERIC(7,3) NOT NULL,
     per_ocupado_valor INTEGER NOT NULL,
     ue_valor INTEGER NOT NULL,
-    prod_brut_tot_porcen REAL NOT NULL,
-    inv_total_porcen REAL NOT NULL,
-    per_ocupado_porcen REAL NOT NULL,
-    ue_porcen REAL NOT NULL
+    prod_brut_tot_porcen NUMERIC(10,6) NOT NULL,
+    inv_total_porcen NUMERIC(10,6) NOT NULL,
+    per_ocupado_porcen NUMERIC(10,6) NOT NULL,
+    ue_porcen NUMERIC(10,6) NOT NULL
 );

@@ -4,18 +4,18 @@ Importamos los csv a nuestras tablas
 *****************************************
 */
 
+-- Importamos el csv al catálogo de rama de actividad económica del SCIAN (Sistema de Clasificación Industrial para América del Norte)
+
+DELETE FROM development.tb_rama;
+COPY development.tb_rama (act_ec_cod,rama)
+FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/procesamiento/sub_productivo/finales/csv/catalogos/ct_rama.csv'
+WITH CSV HEADER;
+
 -- Importamos el csv a la Tabla de Producción Bruta, Inversión, Unidades Económicas y Personal Ocupado por municipios
 
 DELETE FROM development.bd_activ_ec_muni;
 COPY development.bd_activ_ec_muni (serie,cve_mun,prod_brut,inv,ue,per_ocup)
 FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/procesamiento/sub_productivo/finales/csv/tablas/bd_activ_ec_muni.csv'
-WITH CSV HEADER;
-
--- Importamos el csv a la Tabla de principal rama de actividad económica del municipio
-
-DELETE FROM development.bd_activ_ec_principal;
-COPY development.bd_activ_ec_principal (serie,cve_mun,act_ec_cod)
-FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/procesamiento/sub_productivo/finales/csv/tablas/bd_activ_ec_principal.csv'
 WITH CSV HEADER;
 
 -- Importamos el csv a la Tabla de Coeficientes de especialización
