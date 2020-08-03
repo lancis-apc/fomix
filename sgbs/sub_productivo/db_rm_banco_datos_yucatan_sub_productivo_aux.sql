@@ -1,6 +1,9 @@
 --En caso que existan los catálogos y tablas del componente productivo, se eliminan
 
 DROP TABLE IF EXISTS 
+    development.tb_rama,
+    development.tb_sector,
+    development.tb_subsector,
     development.bd_activ_ec_muni,
     development.bd_activ_ec_principal,
     development.bd_coef_esp,

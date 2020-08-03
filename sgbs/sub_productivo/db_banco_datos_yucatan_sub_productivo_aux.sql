@@ -11,6 +11,20 @@ CREATE TABLE IF NOT EXISTS development.tb_rama (
   rama VARCHAR(130) NOT NULL
 );
 
+-- Catálogo de sector de actividad económica del SCIAN (Sistema de Clasificación Industrial para América del Norte)
+
+CREATE TABLE IF NOT EXISTS development.tb_sector(
+    sector VARCHAR(10) NOT NULL,
+    descripcion VARCHAR(40) NOT NULL
+);
+
+-- Catálogo de subsector de actividad económica del SCIAN (Sistema de Clasificación Industrial para América del Norte)
+
+CREATE TABLE IF NOT EXISTS development.tb_subsector(
+    act_ec_sub_cod CHAR(2) NOT NULL,
+    subsector VARCHAR(160) NOT NULL
+);
+
 -- Tabla de Producción Bruta, Inversión, Unidades Económicas y Personal Ocupado por municipios
 
 CREATE TABLE IF NOT EXISTS development.bd_activ_ec_muni (
@@ -20,6 +34,14 @@ CREATE TABLE IF NOT EXISTS development.bd_activ_ec_muni (
     inv NUMERIC(7,3) NOT NULL,
     ue INTEGER NOT NULL,
     per_ocup INTEGER NOT NULL
+);
+
+-- Tabla de principal rama de actividad económica del municipio
+
+CREATE TABLE IF NOT EXISTS development.bd_activ_ec_principal(
+    serie SMALLINT NOT NULL,
+    cve_mun CHAR(3) NOT NULL,
+    act_ec_cod CHAR(4) NOT NULL
 );
 
 -- Tabla de Coeficientes de especialización
@@ -42,7 +64,7 @@ CREATE TABLE IF NOT EXISTS development.bd_coef_tec (
     construc_coef NUMERIC(5,4) NOT NULL,
     manufac_coef NUMERIC(5,4) NOT NULL,
     comercio_coef NUMERIC(5,4) NOT NULL,
-    trans_corr_coef NUMERIC(5,4) NOT NULL,
+    trans_cor_coef NUMERIC(5,4) NOT NULL,
     med_masiv_coef NUMERIC(5,4) NOT NULL,
     s_finan_coef NUMERIC(5,4) NOT NULL,
     s_inmob_coef NUMERIC(5,4) NOT NULL,
@@ -86,13 +108,13 @@ CREATE TABLE IF NOT EXISTS  development.bd_denue_yuc_subsector (
     cve_mun CHAR(3) NOT NULL,
     serie SMALLINT NOT NULL,
     act_ec_sub_cod CHAR(2) NOT NULL,
-    de_0_a_5_personas INTEGER NULL,
-    de_6_a_10_personas INTEGER NULL,
-    de_11_a_30_personas INTEGER NULL,
-    de_31_a_50_personas INTEGER NULL,
-    de_51_a_100_personas INTEGER NULL,
-    de_101_a_250_personas INTEGER NULL,
-    de_250_y_mas_personas INTEGER NULL
+    de_0_a_5_personas INTEGER NOT NULL,
+    de_6_a_10_personas INTEGER NOT NULL,
+    de_11_a_30_personas INTEGER NOT NULL,
+    de_31_a_50_personas INTEGER NOT NULL,
+    de_51_a_100_personas INTEGER NOT NULL,
+    de_101_a_250_personas INTEGER NOT NULL,
+    de_250_y_mas_personas INTEGER NOT NULL
 );
 
 -- Tabla de Tasa de crecimiento de la inversión, personal ocupado,producción fija bruta y unidades económicas del municipio para 2009 y 2014.
