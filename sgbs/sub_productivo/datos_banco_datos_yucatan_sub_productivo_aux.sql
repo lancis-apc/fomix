@@ -25,13 +25,6 @@ COPY development.tb_subsector(act_ec_sub_cod,subsector)
 FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/procesamiento/sub_productivo/finales/csv/catalogos/ct_subsector.csv'
 WITH CSV HEADER;
 
--- Importamos el csv a la Tabla de Producción Bruta, Inversión, Unidades Económicas y Personal Ocupado por municipios
-
-DELETE FROM development.bd_activ_ec_muni;
-COPY development.bd_activ_ec_muni (serie,cve_mun,prod_brut,inv,ue,per_ocup)
-FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/procesamiento/sub_productivo/finales/csv/tablas/bd_activ_ec_muni.csv'
-WITH CSV HEADER;
-
 -- Importamos el csv a la Tabla de principal rama de actividad económica del municipio
 
 DELETE FROM development.bd_activ_ec_principal;
@@ -65,13 +58,6 @@ WITH CSV HEADER;
 DELETE FROM development.bd_denue_yuc_rama;
 COPY development.bd_denue_yuc_rama (cve_mun,serie,act_ec_cod,de_0_a_5_personas,de_6_a_10_personas,de_11_a_30_personas,de_31_a_50_personas,de_51_a_100_personas,de_101_a_250_personas,de_250_y_mas_personas)
 FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/procesamiento/sub_productivo/finales/csv/tablas/bd_denue_yuc_rama_wide.csv'
-WITH CSV HEADER;
-
--- Importamos el csv a la Tabla de Cantidad de unidades económicas que operan con distintas cantidades de trabajadores por subsector de actividad económica por municipio
-
-DELETE FROM development.bd_denue_yuc_subsector;
-COPY development.bd_denue_yuc_subsector (cve_mun,serie,act_ec_sub_cod,de_0_a_5_personas,de_6_a_10_personas,de_11_a_30_personas,de_31_a_50_personas,de_51_a_100_personas,de_101_a_250_personas,de_250_y_mas_personas)
-FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/procesamiento/sub_productivo/finales/csv/tablas/bd_denue_yuc_subsector_wide.csv'
 WITH CSV HEADER;
 
 -- Importamos el csv a la Tabla de Tasa de crecimiento de la inversión, personal ocupado,producción fija bruta y unidades económicas del municipio para 2009 y 2014.
@@ -121,18 +107,4 @@ WITH CSV HEADER;
 DELETE FROM development.bd_yuc_porcentajes_act_ec_muni;
 COPY development.bd_yuc_porcentajes_act_ec_muni (cve_mun,serie,ct_rama_act_ec_cod,prod_brut_tot_valor,inv_total_valor,per_ocupado_valor,ue_valor,prod_brut_tot_porcen,inv_total_porcen,per_ocupado_porcen,ue_porcen)
 FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/procesamiento/sub_productivo/finales/csv/tablas/bd_yuc_porcentajes_act_ec_muni_wide.csv'
-WITH CSV HEADER;
-
--- Importamos el csv a la Tabla de Participación de cada subsector de actividad económica en el total municipal de la inversión, personal ocupado,producción fija bruta y unidades económicas para 2004, 2009 y 2014.
-
-DELETE FROM development.bd_yuc_porcentajes_act_ec_subsector_muni;
-COPY development.bd_yuc_porcentajes_act_ec_subsector_muni (cve_mun,serie,act_ec_sub_cod,prod_brut_tot_valor,inv_total_valor,per_ocupado_valor,ue_valor,prod_brut_tot_porcen,inv_total_porcen,per_ocupado_porcen,ue_porcen)
-FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/procesamiento/sub_productivo/finales/csv/tablas/bd_yuc_porcentajes_act_ec_subsector_muni_wide.csv'
-WITH CSV HEADER;
-
--- Importamos el csv a la Tabla de Participación de cada municipio en el total estatal de la inversión, personal ocupado,producción fija bruta y unidades económicas para 2004, 2009 y 2014.
-
-DELETE FROM development.bd_yuc_porcentajes_muni;
-COPY development.bd_yuc_porcentajes_muni (cve_mun,serie,prod_brut_tot_valor,inv_total_valor,per_ocupado_valor,ue_valor,prod_brut_tot_porcen,inv_total_porcen,per_ocupado_porcen,ue_porcen)
-FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/procesamiento/sub_productivo/finales/csv/tablas/bd_yuc_porcentajes_muni_wide.csv'
 WITH CSV HEADER;

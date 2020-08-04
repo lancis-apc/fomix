@@ -25,17 +25,6 @@ CREATE TABLE IF NOT EXISTS development.tb_subsector(
     subsector VARCHAR(160) NOT NULL
 );
 
--- Tabla de Producción Bruta, Inversión, Unidades Económicas y Personal Ocupado por municipios
-
-CREATE TABLE IF NOT EXISTS development.bd_activ_ec_muni (
-    serie SMALLINT NOT NULL,
-    cve_mun CHAR(3) NOT NULL,
-    prod_brut NUMERIC(9,3) NOT NULL,
-    inv NUMERIC(7,3) NOT NULL,
-    ue INTEGER NOT NULL,
-    per_ocup INTEGER NOT NULL
-);
-
 -- Tabla de principal rama de actividad económica del municipio
 
 CREATE TABLE IF NOT EXISTS development.bd_activ_ec_principal(
@@ -93,21 +82,6 @@ CREATE TABLE IF NOT EXISTS development.bd_denue_yuc_rama (
     cve_mun CHAR(3) NOT NULL,
     serie SMALLINT NOT NULL,
     act_ec_cod CHAR(4) NOT NULL,
-    de_0_a_5_personas INTEGER NOT NULL,
-    de_6_a_10_personas INTEGER NOT NULL,
-    de_11_a_30_personas INTEGER NOT NULL,
-    de_31_a_50_personas INTEGER NOT NULL,
-    de_51_a_100_personas INTEGER NOT NULL,
-    de_101_a_250_personas INTEGER NOT NULL,
-    de_250_y_mas_personas INTEGER NOT NULL
-);
-
--- Tabla de Cantidad de unidades económicas que operan con distintas cantidades de trabajadores por subsector de actividad económica por municipio
-
-CREATE TABLE IF NOT EXISTS  development.bd_denue_yuc_subsector (
-    cve_mun CHAR(3) NOT NULL,
-    serie SMALLINT NOT NULL,
-    act_ec_sub_cod CHAR(2) NOT NULL,
     de_0_a_5_personas INTEGER NOT NULL,
     de_6_a_10_personas INTEGER NOT NULL,
     de_11_a_30_personas INTEGER NOT NULL,
@@ -192,37 +166,6 @@ CREATE TABLE IF NOT EXISTS development.bd_yuc_porcentajes_act_ec_muni (
     serie SMALLINT NOT NULL,
     ct_rama_act_ec_cod CHAR(4) NOT NULL,
     prod_brut_tot_valor NUMERIC(8,3) NOT NULL,
-    inv_total_valor NUMERIC(7,3) NOT NULL,
-    per_ocupado_valor INTEGER NOT NULL,
-    ue_valor INTEGER NOT NULL,
-    prod_brut_tot_porcen NUMERIC(10,6) NOT NULL,
-    inv_total_porcen NUMERIC(10,6) NOT NULL,
-    per_ocupado_porcen NUMERIC(10,6) NOT NULL,
-    ue_porcen NUMERIC(10,6) NOT NULL
-);
-
--- Tabla de Participación de cada subsector de actividad económica en el total municipal de la inversión, personal ocupado,producción fija bruta y unidades económicas para 2004, 2009 y 2014.
-
-CREATE TABLE IF NOT EXISTS development.bd_yuc_porcentajes_act_ec_subsector_muni (
-    cve_mun CHAR(3) NOT NULL,
-    serie SMALLINT NOT NULL,
-    act_ec_sub_cod CHAR(2) NOT NULL,
-    prod_brut_tot_valor NUMERIC(8,3) NOT NULL,
-    inv_total_valor NUMERIC(7,3) NOT NULL,
-    per_ocupado_valor INTEGER NOT NULL,
-    ue_valor INTEGER NOT NULL,
-    prod_brut_tot_porcen NUMERIC(10,6) NOT NULL,
-    inv_total_porcen NUMERIC(10,6) NOT NULL,
-    per_ocupado_porcen NUMERIC(10,6) NOT NULL,
-    ue_porcen NUMERIC(10,6) NOT NULL
-);
-
--- Tabla de Participación de cada municipio en el total estatal de la inversión, personal ocupado,producción fija bruta y unidades económicas para 2004, 2009 y 2014.
-
-CREATE TABLE IF NOT EXISTS development.bd_yuc_porcentajes_muni (
-    cve_mun CHAR(3) NOT NULL,
-    serie SMALLINT NOT NULL,
-    prod_brut_tot_valor NUMERIC(9,3) NOT NULL,
     inv_total_valor NUMERIC(7,3) NOT NULL,
     per_ocupado_valor INTEGER NOT NULL,
     ue_valor INTEGER NOT NULL,
