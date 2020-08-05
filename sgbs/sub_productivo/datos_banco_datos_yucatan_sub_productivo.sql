@@ -45,6 +45,11 @@ VALUES
     (18, 'Valor en términos monetarios de los insumos de cada uno de los sectores necesarios para producir un dólar del sector Otros servicios excepto actividades gubernamentales.'),
     (19, 'Valor en términos monetarios de los insumos de cada uno de los sectores necesarios para producir un dólar del sector Actividades legislativas, gubernamentales, de impartición de justicia y de organismos internacionales y extraterritoriales');
 
+-- Se ingresan los valores para el catalogo del archivo bd_conc_indust.csv
+INSERT INTO development.ct_conc_indust(ci_id, descripcion)
+VALUES (1, 'Número de unidades económicas dedicadas al sector manufacturero.');
+
+-- Se ingresan los valores para el catalogo del archivo bd_denue_yuc_rama_wide.csv
 INSERT INTO development.ct_denue(denue_id, descripcion)
 VALUES
 (1, 'Cantidad de unidades económicas con entre 0 y 5 personas'),
@@ -54,6 +59,13 @@ VALUES
 (5, 'Cantidad de unidades económicas con entre 51 y 100 personas'),
 (6, 'Cantidad de unidades económicas con entre 101 y 250 personas'),
 (7, 'Cantidad de unidades económicas con entre 251 y más personas');
+
+-- Se ingresan los valores para el catalogo del archivo bd_pib_yucatan.csv
+INSERT INTO development.ct_pib(pib_id, descripcion)
+VALUES
+    (1,'Producto Interno Bruto del total de la actividad primaria del estado en millones de pesos a precios contantes.'),
+    (2,'Producto Interno Bruto del total de la actividad secundaria del estado en millones de pesos a precios contantes.'),
+    (3,'Producto Interno Bruto del total de la actividad terciaria del estado en millones de pesos a precios contantes.');
 
 -- Se ingresan los valores para el catalogo de las dos primeras columnas del archivo bd_yuc_porcentajes_act_ec_muni.csv
 INSERT INTO development.ct_act_ec_valores(valor_id, descripcion)
@@ -104,6 +116,10 @@ SELECT sector, s_aloj_alm_coef, 17 FROM development.bd_coef_tec UNION
 SELECT sector, ot_serv_coef, 18 FROM development.bd_coef_tec UNION
 SELECT sector, act_gub_coef, 19 FROM development.bd_coef_tec;
 
+-- Se ingresan la información del archivo bd_conc_indust.csv
+INSERT INTO development.conc_indust(serie, cve_mun, cantidad, ci_id)
+SELECT serie, cve_mun, concen_ind, 1 FROM development.bd_conc_indust;
+
 -- Se ingresan la información del archivo bd_denue_yuc_rama_wide.csv
 INSERT INTO development.denue(cve_mun, serie, act_ec_cod, ue, denue_id)
 SELECT cve_mun, serie, act_ec_cod, de_0_a_5_personas, 1 FROM development.bd_denue_yuc_rama UNION
@@ -113,6 +129,12 @@ SELECT cve_mun, serie, act_ec_cod, de_31_a_50_personas, 4 FROM development.bd_de
 SELECT cve_mun, serie, act_ec_cod, de_51_a_100_personas, 5 FROM development.bd_denue_yuc_rama UNION
 SELECT cve_mun, serie, act_ec_cod, de_101_a_250_personas, 6 FROM development.bd_denue_yuc_rama UNION
 SELECT cve_mun, serie, act_ec_cod, de_250_y_mas_personas, 7 FROM development.bd_denue_yuc_rama;
+
+-- Se ingresan la información del archivo bd_pib_yucatan.csv
+INSERT INTO development.pib(serie, millones_pesos, pib_id)
+SELECT serie, pib_prim, 1 FROM development.bd_pib_yucatan UNION
+SELECT serie, pib_sec, 2 FROM development.bd_pib_yucatan UNION
+SELECT serie, pib_ter, 3 FROM development.bd_pib_yucatan;
 
 -- Se ingresa información de las dos primeras columnas del archivo bd_yuc_porcentajes_act_ec_muni.csv
 INSERT INTO development.act_ec_valores(cve_mun, serie, act_ec_cod, millones_pesos, valor_id)
