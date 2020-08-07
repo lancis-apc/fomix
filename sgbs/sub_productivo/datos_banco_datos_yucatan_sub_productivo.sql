@@ -52,13 +52,21 @@ VALUES (1, 'Número de unidades económicas dedicadas al sector manufacturero.')
 -- Se ingresan los valores para el catalogo del archivo bd_denue_yuc_rama_wide.csv
 INSERT INTO development.ct_denue(denue_id, descripcion)
 VALUES
-(1, 'Cantidad de unidades económicas con entre 0 y 5 personas'),
-(2, 'Cantidad de unidades económicas con entre 6 y 10 personas'),
-(3, 'Cantidad de unidades económicas con entre 11 y 30 personas'),
-(4, 'Cantidad de unidades económicas con entre 31 y 50 personas'),
-(5, 'Cantidad de unidades económicas con entre 51 y 100 personas'),
-(6, 'Cantidad de unidades económicas con entre 101 y 250 personas'),
-(7, 'Cantidad de unidades económicas con entre 251 y más personas');
+    (1, 'Cantidad de unidades económicas con entre 0 y 5 personas'),
+    (2, 'Cantidad de unidades económicas con entre 6 y 10 personas'),
+    (3, 'Cantidad de unidades económicas con entre 11 y 30 personas'),
+    (4, 'Cantidad de unidades económicas con entre 31 y 50 personas'),
+    (5, 'Cantidad de unidades económicas con entre 51 y 100 personas'),
+    (6, 'Cantidad de unidades económicas con entre 101 y 250 personas'),
+    (7, 'Cantidad de unidades económicas con entre 251 y más personas');
+
+-- Se ingresan los valores para el catalogo del los archivos bd_mat_tc_*.csv
+INSERT INTO development.ct_mat_tc(mt_id, descripcion)
+VALUES
+    (1, 'Tasa de crecimiento de la inversión total del municipio'),
+    (2, 'Tasa de crecimiento del personal ocupado del municipio'),
+    (3, 'Tasa de crecimiento de la la producción bruta total del municipio'),
+    (4, 'Tasa de crecimiento de las unidades económicas del municipio');
 
 -- Se ingresan los valores para el catalogo del archivo bd_pib_yucatan.csv
 INSERT INTO development.ct_pib(pib_id, descripcion)
@@ -129,6 +137,41 @@ SELECT cve_mun, serie, act_ec_cod, de_31_a_50_personas, 4 FROM development.bd_de
 SELECT cve_mun, serie, act_ec_cod, de_51_a_100_personas, 5 FROM development.bd_denue_yuc_rama UNION
 SELECT cve_mun, serie, act_ec_cod, de_101_a_250_personas, 6 FROM development.bd_denue_yuc_rama UNION
 SELECT cve_mun, serie, act_ec_cod, de_250_y_mas_personas, 7 FROM development.bd_denue_yuc_rama;
+
+-- Se ingresan la información del archivo bd_mat_tc_muni.csv
+INSERT INTO development.mat_tc_muni(cve_mun, serie, tasa, mt_id)
+SELECT cve_mun, serie, tc_inv_total_mun, 1 FROM development.bd_mat_tc_muni UNION
+SELECT cve_mun, serie, tc_per_ocupado_mun, 2 FROM development.bd_mat_tc_muni UNION
+SELECT cve_mun, serie, tc_prod_brut_tot_mun, 3 FROM development.bd_mat_tc_muni UNION
+SELECT cve_mun, serie, tc_ue_mun, 4 FROM development.bd_mat_tc_muni;
+
+-- Se ingresan la información del archivo bd_mat_tc_muni_rama.csv
+INSERT INTO development.mat_tc_muni_rama(cve_mun, serie, act_ec_cod, tasa, mt_id)
+SELECT cve_mun, serie, act_ec_cod, tc_inv_total, 1 FROM development.bd_mat_tc_muni_rama UNION
+SELECT cve_mun, serie, act_ec_cod, tc_per_ocupado, 2 FROM development.bd_mat_tc_muni_rama UNION
+SELECT cve_mun, serie, act_ec_cod, tc_prod_brut_tot, 3 FROM development.bd_mat_tc_muni_rama UNION
+SELECT cve_mun, serie, act_ec_cod, tc_ue, 4 FROM development.bd_mat_tc_muni_rama;
+
+-- Se ingresan la información del archivo bd_mat_tc_muni_subsector.csv
+INSERT INTO development.mat_tc_muni_subsector(cve_mun, serie, act_ec_sub_cod, tasa, mt_id)
+SELECT cve_mun, serie, act_ec_sub_cod, tc_inv_total_mun_subsector, 1 FROM development.bd_mat_tc_muni_subsector UNION
+SELECT cve_mun, serie, act_ec_sub_cod, tc_per_ocupado_mun_subsector, 2 FROM development.bd_mat_tc_muni_subsector UNION
+SELECT cve_mun, serie, act_ec_sub_cod, tc_prod_brut_tot_mun_subsector, 3 FROM development.bd_mat_tc_muni_subsector UNION
+SELECT cve_mun, serie, act_ec_sub_cod, tc_ue_mun_subsector, 4 FROM development.bd_mat_tc_muni_subsector;
+
+-- Se ingresan la información del archivo bd_mat_tc_rama.csv
+INSERT INTO development.mat_tc_rama(act_ec_cod, serie, tasa, mt_id)
+SELECT act_ec_cod, serie, CAST(tc_inv_total_rama AS NUMERIC(10,6)), 1 FROM development.bd_mat_tc_rama UNION
+SELECT act_ec_cod, serie, tc_per_ocupado_rama, 2 FROM development.bd_mat_tc_rama UNION
+SELECT act_ec_cod, serie, tc_prod_brut_tot_rama, 3 FROM development.bd_mat_tc_rama UNION
+SELECT act_ec_cod, serie, tc_ue_rama, 4 FROM development.bd_mat_tc_rama;
+
+-- Se ingresan la información del archivo bd_mat_tc_subsector.csv
+INSERT INTO development.mat_tc_subsector(act_ec_sub_cod, serie, tasa, mt_id)
+SELECT act_ec_sub_cod, serie, tc_inv_total_subsector, 1 FROM development.bd_mat_tc_subsector UNION
+SELECT act_ec_sub_cod, serie, tc_per_ocupado_subsector, 2 FROM development.bd_mat_tc_subsector UNION
+SELECT act_ec_sub_cod, serie, tc_prod_brut_tot_subsector, 3 FROM development.bd_mat_tc_subsector UNION
+SELECT act_ec_sub_cod, serie, tc_ue_subsector, 4 FROM development.bd_mat_tc_subsector;
 
 -- Se ingresan la información del archivo bd_pib_yucatan.csv
 INSERT INTO development.pib(serie, millones_pesos, pib_id)

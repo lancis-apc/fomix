@@ -87,6 +87,8 @@ DELETE FROM development.bd_mat_tc_rama;
 COPY development.bd_mat_tc_rama (act_ec_cod,serie,tc_inv_total_rama,tc_per_ocupado_rama,tc_prod_brut_tot_rama,tc_ue_rama)
 FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/procesamiento/sub_productivo/finales/csv/tablas/bd_mat_tc_rama.csv'
 WITH CSV HEADER;
+UPDATE development.bd_mat_tc_rama SET tc_inv_total_rama = 'NaN'
+WHERE tc_inv_total_rama = 'inf'
 
 -- Importamos el csv a la Tabla de Tasa de crecimiento de inversión, personal ocupado,producción fija bruta y unidades económicas por subsector de actividad económica para 2009 y 2014.
 

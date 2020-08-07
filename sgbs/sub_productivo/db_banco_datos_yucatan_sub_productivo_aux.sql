@@ -131,7 +131,7 @@ CREATE TABLE IF NOT EXISTS development.bd_mat_tc_muni_subsector (
 CREATE TABLE IF NOT EXISTS development.bd_mat_tc_rama (
     act_ec_cod CHAR(4) NOT NULL,
     serie SMALLINT NOT NULL,
-    tc_inv_total_rama NUMERIC(10,6) NOT NULL,
+    tc_inv_total_rama VARCHAR(20) NOT NULL,
     tc_per_ocupado_rama NUMERIC(10,6) NOT NULL,
     tc_prod_brut_tot_rama NUMERIC(10,6) NOT NULL,
     tc_ue_rama NUMERIC(10,6) NOT NULL
