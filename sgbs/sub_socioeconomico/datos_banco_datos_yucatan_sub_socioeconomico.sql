@@ -1,27 +1,51 @@
 --Esta sección es para el componente socioeconómico
 
----------------------------------------------------------------------
---En esta subsección se llenan las fuentes de información
-
---Se crea una secuencia auxiliar para los id's de las fuentes
-CREATE SEQUENCE id;
+/*
+    ****************************************************************
+    Esta sección es para los catalogos del componente socioeconómico
+    ****************************************************************
+*/
 
 --Borrando información para correr las instrucciones sql
-DELETE FROM development.ct_fuentes_informacion;
+DELETE FROM development.ct_gpo_edad_quinq;
 --Ingresando información
-INSERT INTO development.ct_fuentes_informacion(id, subsistema, fuente, web, metadatos)
-WITH a AS(
-    SELECT fuente, web, metadatos
-    FROM development.dd_indigena OFFSET 8
-)
-SELECT 'S'||RIGHT(LPAD(NEXTVAL('id')::TEXT,4,'0'),4), 'socio-económico', * FROM (SELECT DISTINCT fuente, web, metadatos FROM a) AS b;
+INSERT INTO development.ct_gpo_edad_quinq (gpo_quin)
+SELECT DISTINCT gpo_quin
+FROM development.bd_pob_gpo_edad_quinq
+WHERE gpo_quin != 'Total'
+ORDER BY gpo_quin;
 
-INSERT INTO development.ct_fuentes_informacion(id, subsistema, fuente, web)
-WITH a AS(
-    SELECT fuente, web
-    FROM development.dd_pob_afrodesc OFFSET 8
-)
-SELECT 'S'||RIGHT(LPAD(NEXTVAL('id')::TEXT,4,'0'),4), 'socio-económico', * FROM (SELECT DISTINCT fuente, web FROM a) AS b;
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_pob_geq;
+--Ingresando información de Población masculina
+INSERT INTO development.ct_pob_geq(pgeq_id, descripcion)
+SELECT 1, REPLACE(descripcion,' en 2015','.') FROM development.dd_pob_gpo_edad_quinq WHERE nombre = 'pobqm_15';
+--Ingresando información de Población femenina
+INSERT INTO development.ct_pob_geq(pgeq_id, descripcion)
+SELECT 2, REPLACE(descripcion,' en 2015','.') FROM development.dd_pob_gpo_edad_quinq WHERE nombre = 'pobqf_15';
+
+/*
+    *************************************************************
+    Esta sección es para las tablas del componente socioeconómico
+    *************************************************************
+*/
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.pob_gpo_edad_quinq;
+--Ingresando información
+INSERT INTO development.pob_gpo_edad_quinq (cve_mun, serie, geq_id, cantidad, pgeq_id)
+WITH wo_total AS (
+    SELECT cve_mun, gpo_quin, pobqm_15, pobqf_15
+    FROM development.bd_pob_gpo_edad_quinq
+    WHERE gpo_quin != 'Total')
+SELECT a.cve_mun, c.año, b.geq_id, a.pobqm_15, 1 AS pgeq_id
+FROM wo_total AS a
+JOIN development.ct_gpo_edad_quinq AS b USING (gpo_quin)
+JOIN development.dd_pob_gpo_edad_quinq as c ON nombre = 'pobqm_15'
+UNION SELECT d.cve_mun, f.año, e.geq_id, d.pobqf_15, 2 AS pgeq_id
+FROM wo_total AS d
+JOIN development.ct_gpo_edad_quinq AS e USING (gpo_quin)
+JOIN development.dd_pob_gpo_edad_quinq as f ON nombre = 'pobqf_15';
 
  ---------------------------------------------------------------------
 --En esta subsección se llena la información de los catalogos
@@ -72,20 +96,7 @@ FROM development.dd_pob_afrodesc AS a
 JOIN development.ct_fuentes_informacion AS b USING (fuente)
 WHERE a.descripcion LIKE 'Pob%';
 
---Borrando información para correr las instrucciones sql (Esta tabla ya integra las fuentes)
-DELETE FROM development.ct_gpo_quin;
---Ingresando información
-INSERT INTO development.ct_gpo_quin (gpo_quin, fi_id)
-WITH a AS (
-    SELECT DISTINCT gpo_quin, 'gpo_quin' AS nombre
-    FROM development.bd_pob_gpo_edad_quinq
-    WHERE gpo_quin != 'Total'
-    ORDER BY gpo_quin)
-SELECT a.gpo_quin, c.id
-FROM a
-JOIN development.dd_pob_gpo_edad_quinq AS b USING (nombre)
-JOIN development.ct_fuentes_informacion AS c ON c.fuente LIKE (SELECT DISTINCT REPLACE(fuente||'%',',','') FROM development.dd_pob_gpo_edad_quinq)
-ORDER BY a.gpo_quin;
+
 
 
 
@@ -445,18 +456,7 @@ FROM a
 JOIN development.ct_pob_afrodesc AS b USING (campo)
 JOIN development.dd_pob_afrodesc AS c ON a.campo = c.nombre;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM development.pob_gpo_quin;
---Ingresando información
-INSERT INTO development.pob_gpo_quin (cve_mun, gpo_quin_id, pob_masculina, pob_femenina, año)
-WITH a AS (
-    SELECT cve_mun, gpo_quin, pobqm_15, pobqf_15, 'gpo_quin' AS nombre
-    FROM development.bd_pob_gpo_edad_quinq
-    WHERE gpo_quin != 'Total')
-SELECT a.cve_mun, b.id, a.pobqm_15, a.pobqf_15, c.año
-FROM a
-JOIN development.ct_gpo_quin AS b USING (gpo_quin)
-JOIN development.dd_pob_gpo_edad_quinq as c USING (nombre);
+
 
 
 --Sección en aún prueba
@@ -498,6 +498,33 @@ SELECT bd_ageb_diag_pobr.cve_mun,
 FROM development.bd_ageb_diag_pobr
 JOIN development.ctg_pobreza_extrema
 USING (c_pobr_e);
+
+---------------------------------------------------------------------
+/*
+    *******************************************************
+    En esta subsección se llenan las fuentes de información
+    *******************************************************
+*/
+
+--Se crea una secuencia auxiliar para los id's de las fuentes
+CREATE SEQUENCE id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_fuentes_informacion;
+--Ingresando información
+INSERT INTO development.ct_fuentes_informacion(id, subsistema, fuente, web, metadatos)
+WITH a AS(
+    SELECT fuente, web, metadatos
+    FROM development.dd_indigena OFFSET 8
+)
+SELECT 'S'||RIGHT(LPAD(NEXTVAL('id')::TEXT,4,'0'),4), 'socio-económico', * FROM (SELECT DISTINCT fuente, web, metadatos FROM a) AS b;
+
+INSERT INTO development.ct_fuentes_informacion(id, subsistema, fuente, web)
+WITH a AS(
+    SELECT fuente, web
+    FROM development.dd_pob_afrodesc OFFSET 8
+)
+SELECT 'S'||RIGHT(LPAD(NEXTVAL('id')::TEXT,4,'0'),4), 'socio-económico', * FROM (SELECT DISTINCT fuente, web FROM a) AS b;
 
 ------------------------------------------------------------------------------------
 --Borrando información para correr las instrucciones sql

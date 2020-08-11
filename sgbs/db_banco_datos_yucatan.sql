@@ -34,7 +34,7 @@ CREATE TABLE development.agebs (
 ------------------------------------------------------------
 --Se crea una tabla para las fuentes
 CREATE TABLE IF NOT EXISTS development.ct_fuentes_informacion(
-    id CHAR(5) PRIMARY KEY,
+    fi_id CHAR(5) PRIMARY KEY,
     subsistema VARCHAR(20),
     fuente VARCHAR(50),
     web TEXT,
