@@ -6,6 +6,12 @@
     ***********************************************************************
 */
 
+--Se crea catalogo para registros pob del archivo dd_pob_afrodesc.csv
+CREATE TABLE IF NOT EXISTS development.ct_pob_afrodesc(
+    pa_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(70) NOT NULL
+);
+
 --Se crea catalogo para el archivo bd_pob_gpo_edad_quinq.csv
 CREATE TABLE IF NOT EXISTS development.ct_gpo_edad_quinq(
     geq_id SERIAL PRIMARY KEY,
@@ -33,12 +39,21 @@ CREATE TABLE IF NOT EXISTS development.pob_gpo_edad_quinq(
     pgeq_id SMALLINT NOT NULL REFERENCES development.ct_pob_geq(pgeq_id)
 );
 
+--Se crea tabla para registros del archivo bd_pob_afrodesc.csv
+CREATE TABLE IF NOT EXISTS development.pob_afrodesc(
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT NOT NULL,
+    porcentaje NUMERIC(5,2) NOT NULL,
+    pa_id SMALLINT NOT NULL REFERENCES development.ct_pob_afrodesc(pa_id)
+);
+
 /*
     *************************************************************
     Esta sección es para las vistas del componente socioeconómico
     *************************************************************
 */
 
+-- Se crea vista para el archivo bd_pob_gpo_edad_quinq.csv
 CREATE VIEW development.view_pob_gpo_edad_quinq AS
 WITH pgeq AS (
     WITH tab_tot AS (
@@ -93,6 +108,19 @@ JOIN (
     SELECT * FROM development.ct_pob_geq
     UNION SELECT 3 AS pgeq_id, 'Población por grupo de edad quinquenal.' AS descripcion) AS h USING(pgeq_id);
 
+-- Se crea vista para el archivo bd_pob_afrodesc.csv
+CREATE VIEW development.view_pob_afrodesc AS
+SELECT
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.porcentaje,
+    d.descripcion
+FROM development.pob_afrodesc AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_pob_afrodesc AS d USING(pa_id);
 
 
 
@@ -128,14 +156,6 @@ CREATE TABLE IF NOT EXISTS development.ct_viv_indigena(
     fi_id CHAR(5) REFERENCES development.ct_fuentes_informacion(id)
 );
 
---Se crea catalogo para registros pob del archivo dd_pob_afrodesc.csv
-CREATE TABLE IF NOT EXISTS development.ct_pob_afrodesc(
-    id SERIAL PRIMARY KEY,
-    campo VARCHAR(10) NOT NULL,
-    descripcion VARCHAR(70) NOT NULL,
-    fi_id CHAR(5) REFERENCES development.ct_fuentes_informacion(id)
-);
-
 --Se crea una tabla para el grupo de municipios al que pertenece el municipio según su tamaño de población
 CREATE TABLE IF NOT EXISTS development.ct_pob(
     cve_pob SMALLINT PRIMARY KEY,
@@ -163,14 +183,6 @@ CREATE TABLE IF NOT EXISTS development.viv_indigena(
     viviendas INTEGER,
     año SMALLINT,
     cvi_id SMALLINT NOT NULL REFERENCES development.ct_viv_indigena(id)
-);
-
---Se crea tabla para registros pob del archivo bd_pob_afrodesc.csv
-CREATE TABLE IF NOT EXISTS development.pob_afrodesc(
-    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
-    porcentaje NUMERIC(5,2),
-    año SMALLINT,
-    cpa_id SMALLINT NOT NULL REFERENCES development.ct_pob_afrodesc(id)
 );
 
 

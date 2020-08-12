@@ -6,6 +6,15 @@
     ****************************************************************
 */
 
+--Borrando información para correr las instrucciones sql (Esta tabla ya integra las fuentes)
+DELETE FROM development.ct_pob_afrodesc;
+--Ingresando información
+INSERT INTO development.ct_pob_afrodesc (descripcion)
+SELECT descripcion
+FROM development.dd_pob_afrodesc
+WHERE descripcion LIKE 'Pob%'
+ORDER BY id;
+
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_gpo_edad_quinq;
 --Ingresando información
@@ -31,6 +40,26 @@ SELECT 2, REPLACE(descripcion,' en 2015','.') FROM development.dd_pob_gpo_edad_q
 */
 
 --Borrando información para correr las instrucciones sql
+DELETE FROM development.pob_afrodesc;
+--Ingresando información del campo afr_si
+INSERT INTO development.pob_afrodesc (cve_mun, serie, porcentaje, pa_id)
+SELECT a.cve_mun, c.año, a.afr_si, 1 AS pa_id
+FROM development.bd_pob_afrodesc AS a
+JOIN development.dd_pob_afrodesc AS c ON c.nombre = 'afr_si'
+UNION SELECT a.cve_mun, c.año, a.afr_parc, 2 AS pa_id
+FROM development.bd_pob_afrodesc AS a
+JOIN development.dd_pob_afrodesc AS c ON c.nombre = 'afr_parc'
+UNION SELECT a.cve_mun, c.año, a.afr_no, 3 AS pa_id
+FROM development.bd_pob_afrodesc AS a
+JOIN development.dd_pob_afrodesc AS c ON c.nombre = 'afr_no'
+UNION SELECT a.cve_mun, c.año, a.afr_ns, 4 AS pa_id
+FROM development.bd_pob_afrodesc AS a
+JOIN development.dd_pob_afrodesc AS c ON c.nombre = 'afr_ns'
+UNION SELECT a.cve_mun, c.año, a.afr_ne, 5 AS pa_id
+FROM development.bd_pob_afrodesc AS a
+JOIN development.dd_pob_afrodesc AS c ON c.nombre = 'afr_ne';
+
+--Borrando información para correr las instrucciones sql
 DELETE FROM development.pob_gpo_edad_quinq;
 --Ingresando información
 INSERT INTO development.pob_gpo_edad_quinq (cve_mun, serie, geq_id, cantidad, pgeq_id)
@@ -46,6 +75,14 @@ UNION SELECT d.cve_mun, f.año, e.geq_id, d.pobqf_15, 2 AS pgeq_id
 FROM wo_total AS d
 JOIN development.ct_gpo_edad_quinq AS e USING (gpo_quin)
 JOIN development.dd_pob_gpo_edad_quinq as f ON nombre = 'pobqf_15';
+
+
+
+
+
+
+
+
 
  ---------------------------------------------------------------------
 --En esta subsección se llena la información de los catalogos
@@ -86,21 +123,6 @@ SELECT a.nombre, a.descripcion, b.id
 FROM development.dd_indigena AS a
 JOIN development.ct_fuentes_informacion AS b USING (fuente)
 WHERE a.descripcion LIKE '%vivienda%' OR a.descripcion LIKE '%cocina%';
-
---Borrando información para correr las instrucciones sql (Esta tabla ya integra las fuentes)
-DELETE FROM development.ct_pob_afrodesc;
---Ingresando información
-INSERT INTO development.ct_pob_afrodesc (campo, descripcion, fi_id)
-SELECT a.nombre, a.descripcion, b.id
-FROM development.dd_pob_afrodesc AS a
-JOIN development.ct_fuentes_informacion AS b USING (fuente)
-WHERE a.descripcion LIKE 'Pob%';
-
-
-
-
-
-
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_pob;
@@ -407,57 +429,6 @@ SELECT a.cve_geo, a.cve_mun, a.subtipo, a.iv_leña, c.año, b.id
 FROM a
 JOIN development.ct_viv_indigena AS b USING (campo)
 JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
---Borrando información para correr las instrucciones sql
-DELETE FROM development.pob_afrodesc;
---Ingresando información
-INSERT INTO development.pob_afrodesc (cve_mun, porcentaje, año, cpa_id)
-WITH a AS (
-    SELECT cve_mun, afr_ne, 'afr_ne' AS campo 
-    FROM development.bd_pob_afrodesc)
-SELECT a.cve_mun, a.afr_ne, c.año, b.id
-FROM a
-JOIN development.ct_pob_afrodesc AS b USING (campo)
-JOIN development.dd_pob_afrodesc AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_afrodesc (cve_mun, porcentaje, año, cpa_id)
-WITH a AS (
-    SELECT cve_mun, afr_ns, 'afr_ns' AS campo 
-    FROM development.bd_pob_afrodesc)
-SELECT a.cve_mun, a.afr_ns, c.año, b.id
-FROM a
-JOIN development.ct_pob_afrodesc AS b USING (campo)
-JOIN development.dd_pob_afrodesc AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_afrodesc (cve_mun, porcentaje, año, cpa_id)
-WITH a AS (
-    SELECT cve_mun, afr_no, 'afr_no' AS campo 
-    FROM development.bd_pob_afrodesc)
-SELECT a.cve_mun, a.afr_no, c.año, b.id
-FROM a
-JOIN development.ct_pob_afrodesc AS b USING (campo)
-JOIN development.dd_pob_afrodesc AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_afrodesc (cve_mun, porcentaje, año, cpa_id)
-WITH a AS (
-    SELECT cve_mun, afr_parc, 'afr_parc' AS campo 
-    FROM development.bd_pob_afrodesc)
-SELECT a.cve_mun, a.afr_parc, c.año, b.id
-FROM a
-JOIN development.ct_pob_afrodesc AS b USING (campo)
-JOIN development.dd_pob_afrodesc AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_afrodesc (cve_mun, porcentaje, año, cpa_id)
-WITH a AS (
-    SELECT cve_mun, afr_si, 'afr_si' AS campo 
-    FROM development.bd_pob_afrodesc)
-SELECT a.cve_mun, a.afr_si, c.año, b.id
-FROM a
-JOIN development.ct_pob_afrodesc AS b USING (campo)
-JOIN development.dd_pob_afrodesc AS c ON a.campo = c.nombre;
-
-
-
 
 --Sección en aún prueba
 -----------------------------------------------------------------------------------------------------------------
