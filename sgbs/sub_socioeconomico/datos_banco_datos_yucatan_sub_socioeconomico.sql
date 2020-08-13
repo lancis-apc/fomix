@@ -6,7 +6,45 @@
     ****************************************************************
 */
 
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_idp_grados;
+--Ingresando información
+INSERT INTO development.ct_idp_grados (descripcion)
+SELECT descripcion
+FROM development.dd_idp
+WHERE descripcion LIKE 'Grado%';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_idp;
+--Ingresando información
+INSERT INTO development.ct_idp (idp_id, descripcion) VALUES
+(1, 'Dispersión Poblacional');
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_idp_categorias;
+--Ingresando información
+INSERT INTO development.ct_idp_categorias(cidp_id, categoria) VALUES
+(1, 'Muy bajo'),
+(2, 'Bajo'),
+(3, 'Medio'),
+(4, 'Alto');
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_idp_rtp;
+--Ingresando información
+INSERT INTO development.ct_idp_rtp(rtp_id, descripcion)
+SELECT 1 AS rtp_id, descripcion
+FROM development.dd_idp WHERE nombre = 'rtp';
+
 --Borrando información para correr las instrucciones sql (Esta tabla ya integra las fuentes)
+DELETE FROM development.ct_pob_ind;
+--Ingresando información
+INSERT INTO development.ct_pob_ind (descripcion)
+SELECT descripcion FROM development.dd_indigena
+WHERE unidad LIKE '%habitantes'
+ORDER BY id;
+
+--Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_pob_afrodesc;
 --Ingresando información
 INSERT INTO development.ct_pob_afrodesc (descripcion)
@@ -40,8 +78,106 @@ SELECT 2, REPLACE(descripcion,' en 2015','.') FROM development.dd_pob_gpo_edad_q
 */
 
 --Borrando información para correr las instrucciones sql
+DELETE FROM development.idp_grados;
+--Ingresando información de los campos
+INSERT INTO development.idp_grados (cve_mun, serie, grado, gidp_id)
+SELECT a.cve_mun, b.año, a.vgr, 1 AS gidp_id
+FROM development.bd_idp AS a
+JOIN development.dd_idp AS b ON b.nombre = 'vgr'
+UNION SELECT a.cve_mun, b.año, a.vga, 2 AS gidp_id
+FROM development.bd_idp AS a
+JOIN development.dd_idp AS b ON b.nombre = 'vga'
+UNION SELECT a.cve_mun, b.año, a.vgf, 3 AS gidp_id
+FROM development.bd_idp AS a
+JOIN development.dd_idp AS b ON b.nombre = 'vgf';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.idp;
+--Ingresando información de los campos
+INSERT INTO development.idp (cve_mun, serie, indice, cidp_id, idp_id)
+SELECT a.cve_mun, b.año, a.idp, c.cidp_id, 1 AS idp_id
+FROM development.bd_idp AS a
+JOIN development.dd_idp AS b ON b.nombre = 'idp'
+JOIN development.ct_idp_categorias AS c ON a.idp_cat = c.categoria;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.idp_rtp;
+--Ingresando información de los campos
+INSERT INTO development.idp_rtp (cve_mun, serie, rtp, rtp_id)
+SELECT a.cve_mun, b.año, a.rtp, 1 AS rtp_id
+FROM development.bd_idp AS a
+JOIN development.dd_idp AS b ON b.nombre = 'rtp';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.habitantes;
+--Ingresando información de los campos
+INSERT INTO development.habitantes (cve_mun, serie, habitantes)
+SELECT a.cve_mun, b.año, a.pobtot
+FROM development.bd_idp AS a
+JOIN development.dd_idp AS b ON b.nombre = 'pobtot';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.pob_ind;
+--Ingresando información
+INSERT INTO development.pob_ind (cve_geo, cve_mun, serie, habitantes, pi_id)
+SELECT a.cve_geo, a.cve_mun, b.año, a.pob_ind_t, 1 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'pob_ind_t'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.iphli5, 2 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'iphli5'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip5_bili, 3 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip5_bili'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip5_mon, 4 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip5_mon'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip15_alf, 5 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip15_alf'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip15_ana, 6 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip15_ana'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip_der, 7 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip_der'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip_noder, 8 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip_noder'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.il_ent, 9 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'il_ent'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.il_otent, 10 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'il_otent'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip_act, 11 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip_act'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip_ocu, 12 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip_ocu'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip_des, 13 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip_des'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip_inac, 14 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip_inac'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip_noing, 15 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip_noing'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip_1sm, 16 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip_1sm'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip_1a2sm, 17 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip_1a2sm'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip_m2sm, 18 AS pi_id
+FROM development.bd_indigena AS a
+JOIN development.dd_indigena AS b ON b.nombre = 'ip_m2sm';
+
+--Borrando información para correr las instrucciones sql
 DELETE FROM development.pob_afrodesc;
---Ingresando información del campo afr_si
+--Ingresando información de los campos
 INSERT INTO development.pob_afrodesc (cve_mun, serie, porcentaje, pa_id)
 SELECT a.cve_mun, c.año, a.afr_si, 1 AS pa_id
 FROM development.bd_pob_afrodesc AS a
@@ -87,33 +223,7 @@ JOIN development.dd_pob_gpo_edad_quinq as f ON nombre = 'pobqf_15';
  ---------------------------------------------------------------------
 --En esta subsección se llena la información de los catalogos
 
---Borrando información para correr las instrucciones sql
-DELETE FROM development.ct_nom_tipo;
---Ingresando información
-INSERT INTO development.ct_nom_tipo VALUES
-(1, 'Municipio indígena'),
-(2, 'Municipio con presencia indígena'),
-(3, 'Municipio con población indígena dispersa');
 
---Borrando información para correr las instrucciones sql
-DELETE FROM development.ct_subtipo;
---Ingresando información
-INSERT INTO development.ct_subtipo VALUES
-('A', 'Población indígena > 70% de la población municipal', 1),
-('B', 'Población indígena 40.0 - 69.9%', 1),
-('C', 'Población indígena >= 5,000 habitantes', 2),
-('D', 'Población indígena < 5,000 habla lengua indígena',NULL),
-('E', 'Población indígena dispersa', 3),
-('F', 'Sin población indígena',NULL);
-
---Borrando información para correr las instrucciones sql (Esta tabla ya integra las fuentes)
-DELETE FROM development.ct_pob_indigena;
---Ingresando información
-INSERT INTO development.ct_pob_indigena (campo, descripcion, fi_id)
-SELECT a.nombre, a.descripcion, b.id
-FROM development.dd_indigena AS a
-JOIN development.ct_fuentes_informacion AS b USING (fuente)
-WHERE a.descripcion LIKE 'Pob%' AND a.descripcion != 'Población total';
 
 --Borrando información para correr las instrucciones sql (Esta tabla ya integra las fuentes)
 DELETE FROM development.ct_viv_indigena;
@@ -136,220 +246,12 @@ INSERT INTO development.ct_pob VALUES
 ---------------------------------------------------------------------
 --Esta sección es para el componente socioeconómico
 
---Borrando información para correr las instrucciones sql
-DELETE FROM development.pob_indigena;
---Ingresando información
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, pob_ind_t, 'pob_ind_t' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.pob_ind_t, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
 
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip_m2sm, 'ip_m2sm' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip_m2sm, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip_1a2sm, 'ip_1a2sm' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip_1a2sm, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip_1sm, 'ip_1sm' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip_1sm, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip_noing, 'ip_noing' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip_noing, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip_inac, 'ip_inac' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip_inac, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip_des, 'ip_des' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip_des, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip_ocu, 'ip_ocu' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip_ocu, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip_act, 'ip_act' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip_act, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, il_otent, 'il_otent' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.il_otent, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, il_ent, 'il_ent' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.il_ent, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip_noder, 'ip_noder' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip_noder, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip_der, 'ip_der' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip_der, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip15_msys, 'ip15_msys' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip15_msys, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip15_sec, 'ip15_sec' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip15_sec, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip15_sein, 'ip15_sein' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip15_sein, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip15_pric, 'ip15_pric' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip15_pric, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip15_prin, 'ip15_prin' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip15_prin, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip15_ana, 'ip15_ana' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip15_ana, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip15_alf, 'ip15_alf' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip15_alf, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip5_mon, 'ip5_mon' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip5_mon, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, ip5_bili, 'ip5_bili' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.ip5_bili, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
-
-INSERT INTO development.pob_indigena (cve_geo, cve_mun, subtipo_id, habitantes, año, cpi_id)
-WITH a AS (
-    SELECT cve_geo,cve_mun, subtipo, iphli5, 'iphli5' AS campo 
-    FROM development.bd_indigena)
-SELECT a.cve_geo, a.cve_mun, a.subtipo, a.iphli5, c.año, b.id
-FROM a
-JOIN development.ct_pob_indigena AS b USING (campo)
-JOIN development.dd_indigena AS c ON a.campo = c.nombre;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.viv_indigena;
 --Ingresando información
-INSERT INTO development.viv_indigena (cve_geo, cve_mun, subtipo_id, viviendas, año, cvi_id)
+INSERT INTO development.viv_indigena (cve_geo, cve_mun, serie, viviendas, año, cvi_id)
 WITH a AS (
     SELECT cve_geo,cve_mun, subtipo, ivivph, 'ivivph' AS campo 
     FROM development.bd_indigena)
@@ -358,7 +260,7 @@ FROM a
 JOIN development.ct_viv_indigena AS b USING (campo)
 JOIN development.dd_indigena AS c ON a.campo = c.nombre;
 
-INSERT INTO development.viv_indigena (cve_geo, cve_mun, subtipo_id, viviendas, año, cvi_id)
+INSERT INTO development.viv_indigena (cve_geo, cve_mun, serie, viviendas, año, cvi_id)
 WITH a AS (
     SELECT cve_geo,cve_mun, subtipo, iv_agent, 'iv_agent' AS campo 
     FROM development.bd_indigena)
@@ -367,7 +269,7 @@ FROM a
 JOIN development.ct_viv_indigena AS b USING (campo)
 JOIN development.dd_indigena AS c ON a.campo = c.nombre;
 
-INSERT INTO development.viv_indigena (cve_geo, cve_mun, subtipo_id, viviendas, año, cvi_id)
+INSERT INTO development.viv_indigena (cve_geo, cve_mun, serie, viviendas, año, cvi_id)
 WITH a AS (
     SELECT cve_geo,cve_mun, subtipo, iv_noag, 'iv_noag' AS campo 
     FROM development.bd_indigena)
@@ -376,7 +278,7 @@ FROM a
 JOIN development.ct_viv_indigena AS b USING (campo)
 JOIN development.dd_indigena AS c ON a.campo = c.nombre;
 
-INSERT INTO development.viv_indigena (cve_geo, cve_mun, subtipo_id, viviendas, año, cvi_id)
+INSERT INTO development.viv_indigena (cve_geo, cve_mun, serie, viviendas, año, cvi_id)
 WITH a AS (
     SELECT cve_geo,cve_mun, subtipo, iv_dren, 'iv_dren' AS campo 
     FROM development.bd_indigena)
@@ -385,7 +287,7 @@ FROM a
 JOIN development.ct_viv_indigena AS b USING (campo)
 JOIN development.dd_indigena AS c ON a.campo = c.nombre;
 
-INSERT INTO development.viv_indigena (cve_geo, cve_mun, subtipo_id, viviendas, año, cvi_id)
+INSERT INTO development.viv_indigena (cve_geo, cve_mun, serie, viviendas, año, cvi_id)
 WITH a AS (
     SELECT cve_geo,cve_mun, subtipo, iv_nodren, 'iv_nodren' AS campo 
     FROM development.bd_indigena)
@@ -394,7 +296,7 @@ FROM a
 JOIN development.ct_viv_indigena AS b USING (campo)
 JOIN development.dd_indigena AS c ON a.campo = c.nombre;
  
-INSERT INTO development.viv_indigena (cve_geo, cve_mun, subtipo_id, viviendas, año, cvi_id)
+INSERT INTO development.viv_indigena (cve_geo, cve_mun, serie, viviendas, año, cvi_id)
 WITH a AS (
     SELECT cve_geo,cve_mun, subtipo, iv_elec, 'iv_elec' AS campo 
     FROM development.bd_indigena)
@@ -403,7 +305,7 @@ FROM a
 JOIN development.ct_viv_indigena AS b USING (campo)
 JOIN development.dd_indigena AS c ON a.campo = c.nombre;
  
-INSERT INTO development.viv_indigena (cve_geo, cve_mun, subtipo_id, viviendas, año, cvi_id)
+INSERT INTO development.viv_indigena (cve_geo, cve_mun, serie, viviendas, año, cvi_id)
 WITH a AS (
     SELECT cve_geo,cve_mun, subtipo, iv_noelec, 'iv_noelec' AS campo 
     FROM development.bd_indigena)
@@ -412,7 +314,7 @@ FROM a
 JOIN development.ct_viv_indigena AS b USING (campo)
 JOIN development.dd_indigena AS c ON a.campo = c.nombre;
  
-INSERT INTO development.viv_indigena (cve_geo, cve_mun, subtipo_id, viviendas, año, cvi_id)
+INSERT INTO development.viv_indigena (cve_geo, cve_mun, serie, viviendas, año, cvi_id)
 WITH a AS (
     SELECT cve_geo,cve_mun, subtipo, iv_tier, 'iv_tier' AS campo 
     FROM development.bd_indigena)
@@ -421,7 +323,7 @@ FROM a
 JOIN development.ct_viv_indigena AS b USING (campo)
 JOIN development.dd_indigena AS c ON a.campo = c.nombre;
 
-INSERT INTO development.viv_indigena (cve_geo, cve_mun, subtipo_id, viviendas, año, cvi_id)
+INSERT INTO development.viv_indigena (cve_geo, cve_mun, serie, viviendas, año, cvi_id)
 WITH a AS (
     SELECT cve_geo,cve_mun, subtipo, iv_leña, 'iv_leña' AS campo 
     FROM development.bd_indigena)

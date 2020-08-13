@@ -131,6 +131,8 @@ WITH DELIMITER ',' CSV HEADER;
 UPDATE development.bd_idp SET cve_mun = LPAD(bd_idp.cve_mun,3,'0');
 --Se colocan correctamente las claves cve_geo
 UPDATE development.bd_idp SET cve_geo = CONCAT(cve_ent,cve_mun);
+--Se quitan los espacios del campo idp_cat
+UPDATE development.bd_idp SET idp_cat = RTRIM(idp_cat);
 
 --Borrando todos los datos de bd_indigena para correr el archivo sql
 DELETE FROM development.bd_indigena;
