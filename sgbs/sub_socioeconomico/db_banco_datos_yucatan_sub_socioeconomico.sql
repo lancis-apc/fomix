@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS development.ct_idp_grados(
 
 --Se crea catalogo para registros de categoria del archivo bd_idp.csv
 CREATE TABLE IF NOT EXISTS development.ct_idp_categorias(
-    cidp_id SMALLINT PRIMARY KEY,
+    cidp_id SERIAL PRIMARY KEY,
     categoria VARCHAR(10) NOT NULL
 );
 
@@ -34,6 +34,31 @@ CREATE TABLE IF NOT EXISTS development.ct_idp_rtp(
 CREATE TABLE IF NOT EXISTS development.ct_pob_ind(
     pi_id SERIAL PRIMARY KEY,
     descripcion VARCHAR(90) NOT NULL
+);
+
+--Se crea catalogo para registros pob del archivo dd_indigena.csv
+CREATE TABLE IF NOT EXISTS development.ct_viv_ind(
+    vi_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(200) NOT NULL
+);
+
+--Se crea catalogo para registros pob del archivo dd_indigena.csv
+CREATE TABLE IF NOT EXISTS development.ct_prop_pob_ind_tip(
+    ppit_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(50) NOT NULL
+);
+
+--Se crea catalogo para registros pob del archivo dd_indigena.csv
+CREATE TABLE IF NOT EXISTS development.ct_prop_pob_ind_sub(
+    ppis_id CHAR(1) PRIMARY KEY,
+    descripcion VARCHAR(50) NOT NULL,
+    ppit_id SMALLINT REFERENCES development.ct_prop_pob_ind_tip(ppit_id)
+);
+
+--Se crea catalogo para registros pob del archivo dd_indigena.csv
+CREATE TABLE IF NOT EXISTS development.ct_prop_pob(
+    pp_id SMALLINT PRIMARY KEY,
+    descripcion VARCHAR(60) NOT NULL
 );
 
 --Se crea catalogo para registros pob del archivo bd_pob_afrodesc.csv
@@ -99,6 +124,25 @@ CREATE TABLE IF NOT EXISTS development.pob_ind(
     serie SMALLINT,
     habitantes INTEGER,
     pi_id SMALLINT NOT NULL REFERENCES development.ct_pob_ind(pi_id)
+);
+
+--Se crea tabla para registros pob del archivo bd_indigena.csv
+CREATE TABLE IF NOT EXISTS development.viv_ind(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT,
+    viviendas INTEGER,
+    vi_id SMALLINT NOT NULL REFERENCES development.ct_viv_ind(vi_id)
+);
+
+--Se crea tabla para registros pob del archivo bd_indigena.csv
+CREATE TABLE IF NOT EXISTS development.prop_pob_ind(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT,
+    porcentaje NUMERIC(6,3),
+    ppis_id CHAR(1) NOT NULL REFERENCES development.ct_prop_pob_ind_sub(ppis_id),
+    pp_id SMALLINT NOT NULL REFERENCES development.ct_prop_pob(pp_id)
 );
 
 --Se crea tabla para registros del archivo bd_pob_gpo_edad_quinq.csv
@@ -186,7 +230,7 @@ JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
 JOIN development.regiones AS c USING(id_region)
 ORDER BY a.serie, a.cve_mun;
 
--- Se crea vista para rtp del archivo bd_idp.csv
+-- Se crea vista para rtp del archivo bd_indigena.csv
 CREATE VIEW development.view_pob_ind AS
 SELECT
     a.cve_mun,
@@ -199,6 +243,57 @@ FROM development.pob_ind AS a
 JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
 JOIN development.regiones AS c USING(id_region)
 JOIN development.ct_pob_ind AS d USING(pi_id);
+
+-- Se crea vista para rtp del archivo bd_indigena.csv
+CREATE VIEW development.view_viv_ind AS
+SELECT
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.viviendas,
+    d.descripcion
+FROM development.viv_ind AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_viv_ind AS d USING(vi_id);
+
+-- Se crea vista para rtp del archivo bd_indigena.csv
+CREATE VIEW development.view_prop_pob_ind AS
+SELECT
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    d.habitantes,
+    a.porcentaje,
+    e.descripcion,
+    f.descripcion AS sub_tipo_municipio,
+    g.descripcion AS tipo_municipio
+FROM development.prop_pob_ind AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN development.regiones AS c USING(id_region)
+JOIN (
+    SELECT cve_mun, serie, habitantes
+    FROM development.pob_ind
+    WHERE pi_id=1) AS d USING(cve_mun, serie)
+JOIN development.ct_prop_pob AS e USING(pp_id)
+JOIN development.ct_prop_pob_ind_sub AS f USING(ppis_id)
+JOIN development.ct_prop_pob_ind_tip AS g USING(ppit_id);
+
+-- Se crea vista para el archivo bd_pob_afrodesc.csv
+CREATE VIEW development.view_pob_afrodesc AS
+SELECT
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.porcentaje,
+    d.descripcion
+FROM development.pob_afrodesc AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_pob_afrodesc AS d USING(pa_id);
 
 -- Se crea vista para el archivo bd_pob_gpo_edad_quinq.csv
 CREATE VIEW development.view_pob_gpo_edad_quinq AS
@@ -255,19 +350,10 @@ JOIN (
     SELECT * FROM development.ct_pob_geq
     UNION SELECT 3 AS pgeq_id, 'Población por grupo de edad quinquenal.' AS descripcion) AS h USING(pgeq_id);
 
--- Se crea vista para el archivo bd_pob_afrodesc.csv
-CREATE VIEW development.view_pob_afrodesc AS
-SELECT
-    a.cve_mun,
-    b.municipio,
-    c.region,
-    a.serie,
-    a.porcentaje,
-    d.descripcion
-FROM development.pob_afrodesc AS a
-JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
-LEFT JOIN development.regiones AS c USING(id_region)
-JOIN development.ct_pob_afrodesc AS d USING(pa_id);
+
+
+
+
 
 
 
@@ -275,36 +361,12 @@ JOIN development.ct_pob_afrodesc AS d USING(pa_id);
 ----------------------------------------------------------------------------
 --En esta subsección se crean los catalogos
 
---Se crea catalogo para registros viv del archivo dd_indigena.csv
-CREATE TABLE IF NOT EXISTS development.ct_viv_indigena(
-    id SERIAL PRIMARY KEY,
-    campo VARCHAR(10) NOT NULL,
-    descripcion VARCHAR(200) NOT NULL,
-    fi_id CHAR(5) REFERENCES development.ct_fuentes_informacion(id)
-);
 
 --Se crea una tabla para el grupo de municipios al que pertenece el municipio según su tamaño de población
 CREATE TABLE IF NOT EXISTS development.ct_pob(
     cve_pob SMALLINT PRIMARY KEY,
     grupo VARCHAR(30)
 );
-
---------------------------------------------------------------------------
---En esta subsección se crean las tablas de la información
-
-
-
---Se crea tabla para registros viv del archivo bd_indigena.csv
-CREATE TABLE IF NOT EXISTS development.viv_indigena(
-    cve_geo CHAR(5) NOT NULL,
-    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
-    subtipo_id CHAR(1) NOT NULL NOT NULL REFERENCES development.ct_subtipo(id),
-    viviendas INTEGER,
-    año SMALLINT,
-    cvi_id SMALLINT NOT NULL REFERENCES development.ct_viv_indigena(id)
-);
-
-
 
 
 --Sección en aún prueba
