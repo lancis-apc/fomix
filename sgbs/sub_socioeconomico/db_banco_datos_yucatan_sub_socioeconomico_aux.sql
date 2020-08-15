@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS development.dd_migracion(
     unidad TEXT,
     descripcion TEXT,
     fuente TEXT,
-    año SMALLINT,
+    año VARCHAR(4),
     web TEXT,
     metadatos TEXT
 );

@@ -64,26 +64,80 @@ SELECT DISTINCT TRIM(nom_tipo) AS cat FROM development.bd_indigena ORDER BY cat 
 DELETE FROM development.ct_prop_pob_ind_sub;
 --Ingresando información
 INSERT INTO development.ct_prop_pob_ind_sub (ppis_id, descripcion, ppit_id)
-WITH temp AS (VALUES
-    ('A', 'Población indígena >70% de la población municipal'),
-    ('B', 'Población indígena 40-69.9%'),
-    ('C', 'Población indígena  >= 5,000 habitantes'),
-    ('D', 'Población indígena < 5,000 habla lengua indígena'),
-    ('E', 'Población indígena dispersa'),
-    ('F', 'Sin población indígena'))
-SELECT a.column1, a.column2, c.ppit_id
-FROM temp AS a
+SELECT a.id, UPPER(LEFT(a.descripcion,1))||SUBSTR(a.descripcion,2), c.ppit_id
+FROM (
+    SELECT
+        LEFT(subtipos,1) AS id,
+        LOWER(TRIM(SUBSTR(subtipos,4)))||'.' AS descripcion
+    FROM(
+        SELECT REGEXP_SPLIT_TO_TABLE(SUBSTRING(descripcion from 'A=.*'), '; ') AS subtipos
+        FROM development.dd_indigena
+        WHERE nombre = 'subtipo') AS a
+    ORDER BY id) AS a
 LEFT JOIN (
     SELECT DISTINCT subtipo, TRIM(nom_tipo) AS nom_tipo
-    FROM development.bd_indigena ORDER BY subtipo) AS b ON a.column1 = b.subtipo
+    FROM development.bd_indigena ORDER BY subtipo) AS b ON a.id = b.subtipo
 LEFT JOIN development.ct_prop_pob_ind_tip AS c ON b.nom_tipo = c.descripcion
-ORDER BY a.column1;
+ORDER BY a.id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_prop_pob;
 --Ingresando información
 INSERT INTO development.ct_prop_pob (pp_id, descripcion) VALUES
 (1, 'Población indígena respecto al total municipal (o estatal)');
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_mig_prop;
+TRUNCATE TABLE development.ct_mig_prop RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_mig_prop (descripcion)
+SELECT TRIM(descripcion) FROM development.dd_migracion
+WHERE unidad LIKE 'Porcentaje%'
+ORDER BY id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_mig_grad;
+--Ingresando información
+INSERT INTO development.ct_mig_grad (mg_id, descripcion)
+SELECT DISTINCT
+    LEFT(TRIM(gim_2010), 1)::SMALLINT AS mg_id,
+    SUBSTR(TRIM(gim_2010), 3) AS descripcion
+FROM development.bd_migracion
+ORDER BY mg_id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_mig_grad;
+--Ingresando información
+INSERT INTO development.ct_mig_grad (mg_id, descripcion)
+SELECT DISTINCT
+    LEFT(TRIM(gim_2010), 1)::SMALLINT AS mg_id,
+    SUBSTR(TRIM(gim_2010), 3) AS descripcion
+FROM development.bd_migracion
+ORDER BY mg_id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_mig_mun_cat;
+TRUNCATE TABLE development.ct_mig_mun_cat RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_mig_mun_cat (descripcion)
+SELECT DISTINCT TRIM(catm_10) AS descripcion
+FROM development.bd_migracion
+ORDER BY descripcion;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_gpo_mun;
+--Ingresando información
+INSERT INTO development.ct_gpo_mun (gm_id, descripcion)
+SELECT id, UPPER(LEFT(descripcion,1))||SUBSTR(descripcion,2)
+FROM(
+    SELECT
+        RIGHT(TRIM(SPLIT_PART(grupos,': ',1)),1)::SMALLINT AS id,
+        LOWER(TRIM(SPLIT_PART(grupos,': ',2)))||'.' AS descripcion
+    FROM(
+        SELECT REGEXP_SPLIT_TO_TABLE(SUBSTRING(descripcion from 'Grupo 1.*'), '; ') AS grupos
+        FROM development.dd_migracion
+        WHERE nombre = 'gpo_mun') AS a
+    ORDER BY id) AS b;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_pob_afrodesc;
@@ -259,6 +313,51 @@ FROM development.bd_indigena AS a
 JOIN development.dd_indigena AS b ON b.nombre = 'ipob_rel';
 
 --Borrando información para correr las instrucciones sql
+DELETE FROM development.mig_prop;
+--Ingresando información
+INSERT INTO development.mig_prop (cve_geo, cve_mun, serie, porcentaje, mp_id)
+SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob_ment, 1 AS mp_id
+FROM development.bd_migracion AS a
+JOIN development.dd_migracion AS b ON b.nombre = 'pob_ment'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob_mmcp, 2 AS mp_id
+FROM development.bd_migracion AS a
+JOIN development.dd_migracion AS b ON b.nombre = 'pob_mmcp'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob_otrm, 3 AS mp_id
+FROM development.bd_migracion AS a
+JOIN development.dd_migracion AS b ON b.nombre = 'pob_otrm'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob_enne, 4 AS mp_id
+FROM development.bd_migracion AS a
+JOIN development.dd_migracion AS b ON b.nombre = 'pob_enne'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob_oten, 5 AS mp_id
+FROM development.bd_migracion AS a
+JOIN development.dd_migracion AS b ON b.nombre = 'pob_oten';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.mig_int;
+--Ingresando información
+INSERT INTO development.mig_int (cve_geo, cve_mun, serie, indice, mg_id)
+SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.iim_a100, LEFT(gim_2010,1)::SMALLINT
+FROM development.bd_migracion AS a
+JOIN development.dd_migracion AS b ON b.nombre = 'iim_a100';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.mig_mun_cat;
+--Ingresando información
+INSERT INTO development.mig_mun_cat (cve_geo, cve_mun, serie, cm_id)
+SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), c.cm_id
+FROM development.bd_migracion AS a
+JOIN development.dd_migracion AS b ON b.nombre = 'catm_10'
+JOIN development.ct_mig_mun_cat AS c ON a.catm_10 = c.descripcion;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.mig_mun;
+--Ingresando información
+INSERT INTO development.mig_mun (cve_geo, cve_mun, serie, habitantes, gm_id)
+SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob5_mas, gpo_mun::SMALLINT
+FROM development.bd_migracion AS a
+JOIN development.dd_migracion AS b ON b.nombre = 'pob5_mas';
+
+--Borrando información para correr las instrucciones sql
 DELETE FROM development.pob_afrodesc;
 --Ingresando información de los campos
 INSERT INTO development.pob_afrodesc (cve_mun, serie, porcentaje, pa_id)
@@ -305,15 +404,6 @@ JOIN development.dd_pob_gpo_edad_quinq as f ON nombre = 'pobqf_15';
 
  ---------------------------------------------------------------------
 --En esta subsección se llena la información de los catalogos
-
---Borrando información para correr las instrucciones sql
-DELETE FROM development.ct_pob;
---Ingresando información
-INSERT INTO development.ct_pob VALUES
-(1,'Menos de 15,000 habitantes'),
-(2,'De 15,000 a 49,999 habitantes'),
-(3,'De 50,000 a 99,000 habitantes'),
-(4,'Más de 100,000 habitantes');
 
 --Sección en aún prueba
 -----------------------------------------------------------------------------------------------------------------

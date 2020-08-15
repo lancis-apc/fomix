@@ -61,6 +61,30 @@ CREATE TABLE IF NOT EXISTS development.ct_prop_pob(
     descripcion VARCHAR(60) NOT NULL
 );
 
+--Se crea catalogo para registros pob del archivo dd_migracion.csv
+CREATE TABLE IF NOT EXISTS development.ct_mig_prop(
+    mp_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(120) NOT NULL
+);
+
+--Se crea catalogo para registros pob del archivo dd_migracion.csv
+CREATE TABLE IF NOT EXISTS development.ct_mig_grad(
+    mg_id SMALLINT PRIMARY KEY,
+    descripcion VARCHAR(10) NOT NULL
+);
+
+--Se crea catalogo para registros pob del archivo dd_migracion.csv
+CREATE TABLE IF NOT EXISTS development.ct_mig_mun_cat(
+    cm_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(20) NOT NULL
+);
+
+--Se crea catalogo para registros pob del archivo dd_migracion.csv
+CREATE TABLE IF NOT EXISTS development.ct_gpo_mun(
+    gm_id SMALLINT PRIMARY KEY,
+    descripcion VARCHAR(30) NOT NULL
+);
+
 --Se crea catalogo para registros pob del archivo bd_pob_afrodesc.csv
 CREATE TABLE IF NOT EXISTS development.ct_pob_afrodesc(
     pa_id SERIAL PRIMARY KEY,
@@ -145,13 +169,39 @@ CREATE TABLE IF NOT EXISTS development.prop_pob_ind(
     pp_id SMALLINT NOT NULL REFERENCES development.ct_prop_pob(pp_id)
 );
 
---Se crea tabla para registros del archivo bd_pob_gpo_edad_quinq.csv
-CREATE TABLE IF NOT EXISTS development.pob_gpo_edad_quinq(
+--Se crea tabla para registros pob del archivo bd_migracion.csv
+CREATE TABLE IF NOT EXISTS development.mig_prop(
+    cve_geo CHAR(5) NOT NULL,
     cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
-    serie SMALLINT NOT NULL,
-    geq_id SMALLINT NOT NULL REFERENCES development.ct_gpo_edad_quinq(geq_id),
-    cantidad INTEGER NOT NULL,
-    pgeq_id SMALLINT NOT NULL REFERENCES development.ct_pob_geq(pgeq_id)
+    serie SMALLINT,
+    porcentaje NUMERIC(5,2),
+    mp_id SMALLINT NOT NULL REFERENCES development.ct_mig_prop(mp_id)
+);
+
+--Se crea tabla para registros pob del archivo bd_migracion.csv
+CREATE TABLE IF NOT EXISTS development.mig_int(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT,
+    indice NUMERIC(6,3),
+    mg_id SMALLINT NOT NULL REFERENCES development.ct_mig_grad(mg_id)
+);
+
+--Se crea tabla para registros pob del archivo bd_migracion.csv
+CREATE TABLE IF NOT EXISTS development.mig_mun(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT,
+    habitantes INTEGER,
+    gm_id SMALLINT NOT NULL REFERENCES development.ct_gpo_mun(gm_id)
+);
+
+--Se crea tabla para registros pob del archivo bd_migracion.csv
+CREATE TABLE IF NOT EXISTS development.mig_mun_cat(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT,
+    cm_id SMALLINT NOT NULL REFERENCES development.ct_mig_mun_cat(cm_id)
 );
 
 --Se crea tabla para registros del archivo bd_pob_afrodesc.csv
@@ -160,6 +210,15 @@ CREATE TABLE IF NOT EXISTS development.pob_afrodesc(
     serie SMALLINT NOT NULL,
     porcentaje NUMERIC(5,2) NOT NULL,
     pa_id SMALLINT NOT NULL REFERENCES development.ct_pob_afrodesc(pa_id)
+);
+
+--Se crea tabla para registros del archivo bd_pob_gpo_edad_quinq.csv
+CREATE TABLE IF NOT EXISTS development.pob_gpo_edad_quinq(
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT NOT NULL,
+    geq_id SMALLINT NOT NULL REFERENCES development.ct_gpo_edad_quinq(geq_id),
+    cantidad INTEGER NOT NULL,
+    pgeq_id SMALLINT NOT NULL REFERENCES development.ct_pob_geq(pgeq_id)
 );
 
 /*
@@ -294,6 +353,63 @@ FROM development.pob_afrodesc AS a
 JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
 LEFT JOIN development.regiones AS c USING(id_region)
 JOIN development.ct_pob_afrodesc AS d USING(pa_id);
+
+-- Se crea vista para el archivo bd_migracion.csv
+CREATE VIEW development.view_mig_prop AS
+SELECT
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.porcentaje,
+    d.descripcion
+FROM development.mig_prop AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_mig_prop AS d USING(mp_id);
+
+-- Se crea vista para el archivo bd_migracion.csv
+CREATE VIEW development.view_mig_int AS
+SELECT
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.indice,
+    d.descripcion AS categoria,
+    'Intensidad migratoria' AS descripcion
+FROM development.mig_int AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_mig_grad AS d USING(mg_id);
+
+-- Se crea vista para el archivo bd_migracion.csv
+CREATE VIEW development.view_mig_mun_cat AS
+SELECT
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    d.descripcion
+FROM development.mig_mun_cat AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_mig_mun_cat AS d USING(cm_id);
+
+-- Se crea vista para el archivo bd_migracion.csv
+CREATE VIEW development.view_mig_mun AS
+SELECT
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.habitantes ,
+    d.descripcion AS grupo,
+    'Población de 5 años y  más cuyo lugar de residencia en marzo de 2010 era la misma entidad (%)' AS descripcion
+FROM development.mig_mun AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_gpo_mun AS d USING(gm_id);
 
 -- Se crea vista para el archivo bd_pob_gpo_edad_quinq.csv
 CREATE VIEW development.view_pob_gpo_edad_quinq AS
