@@ -7,6 +7,52 @@
 */
 
 --Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_ageb_caract_pob;
+TRUNCATE TABLE development.ct_ageb_caract_pob RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_ageb_caract_pob (descripcion)
+SELECT descripcion
+FROM development.dd_ageb_caract
+WHERE unidad LIKE 'Número de habitantes%'
+ORDER BY id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_ageb_caract_viv;
+TRUNCATE TABLE development.ct_ageb_caract_viv RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_ageb_caract_viv (descripcion)
+SELECT descripcion
+FROM development.dd_ageb_caract
+WHERE unidad LIKE 'Número de viivendas%'
+ORDER BY id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_ageb_caract_prom_hij;
+TRUNCATE TABLE development.ct_ageb_caract_prom_hij RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_ageb_caract_prom_hij (descripcion)
+SELECT descripcion
+FROM development.dd_ageb_caract
+WHERE nombre = 'pro_hv_10';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_ageb_caract_prom_esc;
+TRUNCATE TABLE development.ct_ageb_caract_prom_esc RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_ageb_caract_prom_esc (descripcion)
+SELECT descripcion
+FROM development.dd_ageb_caract
+WHERE nombre = 'a_g_esc';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_ageb_caract_nom_loc;
+TRUNCATE TABLE development.ct_ageb_caract_nom_loc RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_ageb_caract_nom_loc (descripcion)
+SELECT distinct nom_loc
+FROM development.bd_ageb_caract;
+
+--Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_idp_grados;
 TRUNCATE TABLE development.ct_idp_grados RESTART IDENTITY;
 --Ingresando información
@@ -173,6 +219,194 @@ SELECT 2, REPLACE(descripcion,' en 2015','.') FROM development.dd_pob_gpo_edad_q
     Esta sección es para las tablas del componente socioeconómico
     *************************************************************
 */
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ageb_caract_pob;
+--Ingresando información de los campos
+INSERT INTO development.ageb_caract_pob (cve_mun, cve_ageb, fol_ageb, acnl_id, serie, habitantes, acp_id)
+SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.pobt_10, 1 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'pobt_10'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_5mas, 2 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_5mas'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_12mas, 3 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_12mas'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_15m, 4 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_15m'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_1549_f, 5 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_1549_f'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.apnacent, 6 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'apnacent'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.apnacoe, 7 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'apnacoe'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_5hli, 8 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_5hli'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_5l_ne, 9 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_5l_ne'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_5li_e, 10 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_5li_e'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_15_an, 11 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_15_an'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap15m_se, 12 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap15m_se'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_15pin, 13 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_15pin'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_15sin, 14 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_15sin'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_18pb, 15 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_18pb'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.apea, 16 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'apea'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.apob_ocup, 17 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'apob_ocup'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.apob_des, 18 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'apob_des'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_no_af, 19 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_no_af'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.ap_pob_af, 20 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'ap_pob_af'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.aoc_vp, 21 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'aoc_vp'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.a_pro_oc, 22 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'a_pro_oc';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ageb_caract_viv;
+--Ingresando información de los campos
+INSERT INTO development.ageb_caract_viv (cve_mun, cve_ageb, fol_ageb, acnl_id, serie, viviendas, acv_id)
+SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.avivtot, 1 AS acv_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'avivtot'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.aviv_hab, 2 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'aviv_hab'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.aviv_par, 3 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'aviv_par'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.aviv_p_h, 4 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'aviv_p_h'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.avp_pti, 5 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'avp_pti'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.avp_ele, 6 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'avp_ele'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.avp_noele, 7 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'avp_noele'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.avp_agdv, 8 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'avp_agdv'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.avp_agfv, 9 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'avp_agfv'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.avp_sanit, 10 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'avp_sanit'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.avp_dren, 11 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'avp_dren'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.av_nodren, 12 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'av_nodren'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.av_cserv, 13 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'av_cserv'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.av_snbien, 14 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'av_snbien'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.av_pc, 15 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'av_pc'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.av_telef, 16 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'av_telef'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.av_cel, 17 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'av_cel'
+UNION SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.av_inter, 18 AS acp_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'av_inter';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ageb_caract_prom_hij;
+--Ingresando información de los campos
+INSERT INTO development.ageb_caract_prom_hij (cve_mun, cve_ageb, fol_ageb, acnl_id, serie, promedio, acph_id)
+SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.pro_hv_10, 1 AS acph_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'pro_hv_10';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ageb_caract_prom_esc;
+--Ingresando información de los campos
+INSERT INTO development.ageb_caract_prom_esc (cve_mun, cve_ageb, fol_ageb, acnl_id, serie, promedio, acpe_id)
+SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.a_g_esc, 1 AS acpe_id
+FROM development.bd_ageb_caract AS a
+JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
+JOIN development.dd_ageb_caract AS c ON c.nombre = 'a_g_esc';
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.idp_grados;
@@ -393,151 +627,3 @@ UNION SELECT d.cve_mun, f.año, e.geq_id, d.pobqf_15, 2 AS pgeq_id
 FROM wo_total AS d
 JOIN development.ct_gpo_edad_quinq AS e USING (gpo_quin)
 JOIN development.dd_pob_gpo_edad_quinq as f ON nombre = 'pobqf_15';
-
-
-
-
-
-
-
-
-
- ---------------------------------------------------------------------
---En esta subsección se llena la información de los catalogos
-
---Sección en aún prueba
------------------------------------------------------------------------------------------------------------------
---Borrando información para correr las instrucciones sql
-DELETE FROM development.ctg_pobreza;
---Ingresando información de development.bd_ageb_diag_pobr
-INSERT INTO development.ctg_pobreza(r_pobr, c_pobr)
-SELECT DISTINCT r_pobr, c_pobr FROM development.bd_ageb_diag_pobr WHERE c_pobr = 'Muy bajo';
-INSERT INTO development.ctg_pobreza(r_pobr, c_pobr)
-SELECT DISTINCT r_pobr, c_pobr FROM development.bd_ageb_diag_pobr WHERE c_pobr != 'Muy bajo' ORDER BY r_pobr;
-
---Borrando información para correr las instrucciones sql
-DELETE FROM development.ctg_pobreza_extrema;
---Ingresando información de development.bd_ageb_diag_pobr
-INSERT INTO development.ctg_pobreza_extrema(r_pobr_e, c_pobr_e)
-SELECT DISTINCT r_pobr_e, c_pobr_e FROM development.bd_ageb_diag_pobr WHERE c_pobr_e = 'Bajo';
-INSERT INTO development.ctg_pobreza_extrema(r_pobr_e, c_pobr_e)
-SELECT DISTINCT r_pobr_e, c_pobr_e FROM development.bd_ageb_diag_pobr WHERE c_pobr_e != 'Bajo' ORDER BY r_pobr_e;
-
---Borrando información para correr las instrucciones sql
-DELETE FROM development.diag_pobreza_ageb;
---Ingresando información de development.bd_ageb_diag_pobr
-INSERT INTO development.diag_pobreza_ageb(cve_mun, fol_ageb, ctg_p_id)
-SELECT bd_ageb_diag_pobr.cve_mun,
-    bd_ageb_diag_pobr.fol_ageb,
-    ctg_pobreza.id
-FROM development.bd_ageb_diag_pobr
-JOIN development.ctg_pobreza
-USING (c_pobr);
-
---Borrando información para correr las instrucciones sql
-DELETE FROM development.diag_pobreza_extrema_ageb;
---Ingresando información de development.bd_ageb_diag_pobr
-INSERT INTO development.diag_pobreza_extrema_ageb(cve_mun, fol_ageb, ctg_pe_id)
-SELECT bd_ageb_diag_pobr.cve_mun,
-    bd_ageb_diag_pobr.fol_ageb,
-    ctg_pobreza_extrema.id
-FROM development.bd_ageb_diag_pobr
-JOIN development.ctg_pobreza_extrema
-USING (c_pobr_e);
-
----------------------------------------------------------------------
-/*
-    *******************************************************
-    En esta subsección se llenan las fuentes de información
-    *******************************************************
-*/
-
---Se crea una secuencia auxiliar para los id's de las fuentes
-CREATE SEQUENCE id;
-
---Borrando información para correr las instrucciones sql
-DELETE FROM development.ct_fuentes_informacion;
---Ingresando información
-INSERT INTO development.ct_fuentes_informacion(id, subsistema, fuente, web, metadatos)
-WITH a AS(
-    SELECT fuente, web, metadatos
-    FROM development.dd_indigena OFFSET 8
-)
-SELECT 'S'||RIGHT(LPAD(NEXTVAL('id')::TEXT,4,'0'),4), 'socio-económico', * FROM (SELECT DISTINCT fuente, web, metadatos FROM a) AS b;
-
-INSERT INTO development.ct_fuentes_informacion(id, subsistema, fuente, web)
-WITH a AS(
-    SELECT fuente, web
-    FROM development.dd_pob_afrodesc OFFSET 8
-)
-SELECT 'S'||RIGHT(LPAD(NEXTVAL('id')::TEXT,4,'0'),4), 'socio-económico', * FROM (SELECT DISTINCT fuente, web FROM a) AS b;
-
-------------------------------------------------------------------------------------
---Borrando información para correr las instrucciones sql
-DELETE FROM development.fuentes_informacion;
---Ingresando información de development.bd_ageb_diag_pobr
-INSERT INTO development.fuentes_informacion(subsistema, fuente, año, web)
-SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_ageb_caract OFFSET 11 UNION ALL
-SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_ageb_diag_pobr OFFSET 8 UNION ALL
-SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_ageb_diag_rezago OFFSET 11 UNION ALL
-SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_idp OFFSET 9 UNION ALL
-SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_indigena OFFSET 8 UNION ALL
-SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_migracion OFFSET 8 UNION ALL
-SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_pob_afrodesc OFFSET 7 UNION ALL
-SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_pob_gpo_edad_quinq OFFSET 5 UNION ALL
-SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_socioec_caract OFFSET 8 UNION ALL
-SELECT DISTINCT 'socio-económico', fuente, CAST(año AS SMALLINT), web FROM development.dd_socioec_diagn OFFSET 8;
-
-
---INSERT INTO development.fuentes_informacion(subsistema, fuente, año, web)
-
-SELECT DISTINCT 'socio-económico',* 
-FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
-        FROM development.dd_ageb_caract 
-        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
-        OFFSET 11) AS foo UNION ALL
-SELECT DISTINCT 'socio-económico',* 
-FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
-        FROM development.dd_ageb_diag_pobr
-        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
-        OFFSET 8) AS foo UNION ALL
-SELECT DISTINCT 'socio-económico',* 
-FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
-        FROM development.dd_ageb_diag_rezago
-        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
-        OFFSET 11) AS foo UNION ALL
-SELECT DISTINCT 'socio-económico',* 
-FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
-        FROM development.dd_idp
-        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
-        OFFSET 9) AS foo UNION ALL
-SELECT DISTINCT 'socio-económico',* 
-FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
-        FROM development.dd_indigena
-        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
-        OFFSET 8) AS foo UNION ALL
-SELECT DISTINCT 'socio-económico',* 
-FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
-        FROM development.dd_migracion
-        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
-        OFFSET 8) AS foo UNION ALL
-SELECT DISTINCT 'socio-económico', fuente, año, web, NULL
-FROM (SELECT fuente, CAST(año AS SMALLINT), web
-        FROM development.dd_pob_afrodesc
-        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL
-        OFFSET 7) AS foo UNION ALL
-SELECT DISTINCT 'socio-económico',* 
-FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
-        FROM development.dd_pob_gpo_edad_quinq
-        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
-        OFFSET 5) AS foo UNION ALL
-SELECT DISTINCT 'socio-económico',* 
-FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
-        FROM development.dd_socioec_caract
-        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
-        OFFSET 8) AS foo UNION ALL
-SELECT DISTINCT 'socio-económico',* 
-FROM (SELECT fuente, CAST(año AS SMALLINT), web, metadatos
-        FROM development.dd_socioec_diagn
-        WHERE fuente IS NOT NULL OR año IS NOT NULL OR web IS NOT NULL OR metadatos IS NOT NULL
-        OFFSET 8) AS foo;

@@ -6,6 +6,36 @@
     ***********************************************************************
 */
 
+--Se crea catalogo para registros de grados del archivo bd_ageb_caract.csv
+CREATE TABLE IF NOT EXISTS development.ct_ageb_caract_pob(
+    acp_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(250) NOT NULL
+);
+
+--Se crea catalogo para registros de grados del archivo bd_ageb_caract.csv
+CREATE TABLE IF NOT EXISTS development.ct_ageb_caract_viv(
+    acv_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(250) NOT NULL
+);
+
+--Se crea catalogo para registros de grados del archivo bd_ageb_caract.csv
+CREATE TABLE IF NOT EXISTS development.ct_ageb_caract_prom_hij(
+    acph_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(40) NOT NULL
+);
+
+--Se crea catalogo para registros de grados del archivo bd_ageb_caract.csv
+CREATE TABLE IF NOT EXISTS development.ct_ageb_caract_prom_esc(
+    acpe_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(30) NOT NULL
+);
+
+--Se crea catalogo para registros de grados del archivo bd_ageb_caract.csv
+CREATE TABLE IF NOT EXISTS development.ct_ageb_caract_nom_loc(
+    acnl_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(20) NOT NULL
+);
+
 --Se crea catalogo para registros de grados del archivo bd_idp.csv
 CREATE TABLE IF NOT EXISTS development.ct_idp_grados(
     gidp_id SERIAL PRIMARY KEY,
@@ -108,6 +138,50 @@ CREATE TABLE IF NOT EXISTS development.ct_pob_geq(
     En esta subsección se crean las tablas de la información del componente socioeconómico
     **************************************************************************************
 */
+
+--Se crea tabla para registros de grados del archivo dd_ageb_caract.csv
+CREATE TABLE IF NOT EXISTS development.ageb_caract_pob(
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    cve_ageb VARCHAR(4) NOT NULL,
+    fol_ageb VARCHAR(14) NOT NULL,
+    acnl_id SMALLINT NOT NULL REFERENCES development.ct_ageb_caract_nom_loc(acnl_id),
+    serie SMALLINT,
+    habitantes INTEGER,
+    acp_id SMALLINT NOT NULL REFERENCES development.ct_ageb_caract_pob(acp_id)
+);
+
+--Se crea tabla para registros de grados del archivo dd_ageb_caract.csv
+CREATE TABLE IF NOT EXISTS development.ageb_caract_viv(
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    cve_ageb VARCHAR(4) NOT NULL,
+    fol_ageb VARCHAR(14) NOT NULL,
+    acnl_id SMALLINT NOT NULL REFERENCES development.ct_ageb_caract_nom_loc(acnl_id),
+    serie SMALLINT,
+    viviendas INTEGER,
+    acv_id SMALLINT NOT NULL REFERENCES development.ct_ageb_caract_viv(acv_id)
+);
+
+--Se crea tabla para registros de grados del archivo dd_ageb_caract.csv
+CREATE TABLE IF NOT EXISTS development.ageb_caract_prom_hij(
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    cve_ageb VARCHAR(4) NOT NULL,
+    fol_ageb VARCHAR(14) NOT NULL,
+    acnl_id SMALLINT NOT NULL REFERENCES development.ct_ageb_caract_nom_loc(acnl_id),
+    serie SMALLINT,
+    promedio NUMERIC(4,2),
+    acph_id SMALLINT NOT NULL REFERENCES development.ct_ageb_caract_prom_hij(acph_id)
+);
+
+--Se crea tabla para registros de grados del archivo dd_ageb_caract.csv
+CREATE TABLE IF NOT EXISTS development.ageb_caract_prom_esc(
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    cve_ageb VARCHAR(4) NOT NULL,
+    fol_ageb VARCHAR(14) NOT NULL,
+    acnl_id SMALLINT NOT NULL REFERENCES development.ct_ageb_caract_nom_loc(acnl_id),
+    serie SMALLINT,
+    promedio NUMERIC(4,2),
+    acpe_id SMALLINT NOT NULL REFERENCES development.ct_ageb_caract_prom_esc(acpe_id)
+);
 
 --Se crea tabla para registros de grados del archivo bd_idp.csv
 CREATE TABLE IF NOT EXISTS development.idp_grados(
@@ -226,6 +300,78 @@ CREATE TABLE IF NOT EXISTS development.pob_gpo_edad_quinq(
     Esta sección es para las vistas del componente socioeconómico
     *************************************************************
 */
+
+-- Se crea vista para los grados del archivo dd_ageb_caract.csv
+CREATE VIEW development.view_ageb_caract_pob AS
+SELECT
+    a.cve_mun,
+    a.cve_ageb,
+    a.fol_ageb,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.habitantes,
+    d.descripcion,
+    e.descripcion AS ageb
+FROM development.ageb_caract_pob AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_ageb_caract_pob AS d USING(acp_id)
+JOIN development.ct_ageb_caract_nom_loc AS e USING (acnl_id);
+
+-- Se crea vista para los grados del archivo dd_ageb_caract.csv
+CREATE VIEW development.view_ageb_caract_viv AS
+SELECT
+    a.cve_mun,
+    a.cve_ageb,
+    a.fol_ageb,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.viviendas,
+    d.descripcion,
+    e.descripcion AS ageb
+FROM development.ageb_caract_viv AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_ageb_caract_viv AS d USING(acv_id)
+JOIN development.ct_ageb_caract_nom_loc AS e USING (acnl_id);
+
+-- Se crea vista para los grados del archivo dd_ageb_caract.csv
+CREATE VIEW development.view_ageb_caract_prom_hij AS
+SELECT
+    a.cve_mun,
+    a.cve_ageb,
+    a.fol_ageb,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.promedio,
+    d.descripcion,
+    e.descripcion AS ageb
+FROM development.ageb_caract_prom_hij AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_ageb_caract_prom_hij AS d USING(acph_id)
+JOIN development.ct_ageb_caract_nom_loc AS e USING (acnl_id);
+
+-- Se crea vista para los grados del archivo dd_ageb_caract.csv
+CREATE VIEW development.view_ageb_caract_prom_esc AS
+SELECT
+    a.cve_mun,
+    a.cve_ageb,
+    a.fol_ageb,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.promedio,
+    d.descripcion,
+    e.descripcion AS ageb
+FROM development.ageb_caract_prom_esc AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_ageb_caract_prom_esc AS d USING(acpe_id)
+JOIN development.ct_ageb_caract_nom_loc AS e USING (acnl_id);
 
 -- Se crea vista para los grados del archivo bd_idp.csv
 CREATE VIEW development.view_idp_grados AS
@@ -465,52 +611,3 @@ JOIN (
 JOIN (
     SELECT * FROM development.ct_pob_geq
     UNION SELECT 3 AS pgeq_id, 'Población por grupo de edad quinquenal.' AS descripcion) AS h USING(pgeq_id);
-
-
-
-
-
-
-
-
-
-----------------------------------------------------------------------------
---En esta subsección se crean los catalogos
-
-
---Se crea una tabla para el grupo de municipios al que pertenece el municipio según su tamaño de población
-CREATE TABLE IF NOT EXISTS development.ct_pob(
-    cve_pob SMALLINT PRIMARY KEY,
-    grupo VARCHAR(30)
-);
-
-
---Sección en aún prueba
------------------------------------------------------------------------------------------------------------------
---Se crea una tabla para las categorias de pobreza
-CREATE TABLE IF NOT EXISTS development.ctg_pobreza(
-    id SERIAL PRIMARY KEY,
-    r_pobr VARCHAR(9) NOT NULL,
-    c_pobr VARCHAR(8) NOT NULL
-);
-
---Se crea una tabla para las categorias de pobreza extrema
-CREATE TABLE IF NOT EXISTS development.ctg_pobreza_extrema(
-    id SERIAL PRIMARY KEY,
-    r_pobr_e VARCHAR(9) NOT NULL,
-    c_pobr_e VARCHAR(9) NOT NULL
-);
-
---Se crea una tabla de pobreza
-CREATE TABLE IF NOT EXISTS development.diag_pobreza_ageb(
-    cve_mun CHAR(3) REFERENCES development.municipios(clave_municipio),
-    fol_ageb VARCHAR(14) REFERENCES development.agebs(fol_ageb),
-    ctg_p_id SMALLINT REFERENCES development.ctg_pobreza(id)
-);
-
---Se crea una tabla de pobreza extrema
-CREATE TABLE IF NOT EXISTS development.diag_pobreza_extrema_ageb(
-    cve_mun CHAR(3) REFERENCES development.municipios(clave_municipio),
-    fol_ageb VARCHAR(14) REFERENCES development.agebs(fol_ageb),
-    ctg_pe_id SMALLINT REFERENCES development.ctg_pobreza_extrema(id)
-);
