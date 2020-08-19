@@ -53,6 +53,44 @@ SELECT distinct nom_loc
 FROM development.bd_ageb_caract;
 
 --Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_ageb_diag_pobr_c;
+TRUNCATE TABLE development.ct_ageb_diag_pobr_c RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_ageb_diag_pobr_c (categoria)
+SELECT distinct TRIM(c_pobr) AS cat
+FROM development.bd_ageb_diag_pobr_16jul20
+ORDER BY cat DESC;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_ageb_diag_pobr_r;
+TRUNCATE TABLE development.ct_ageb_diag_pobr_r RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_ageb_diag_pobr_r (rango)
+SELECT distinct TRIM(r_pobr) AS ran
+FROM development.bd_ageb_diag_pobr_16jul20
+UNION SELECT distinct TRIM(r_pobr_e) AS ran
+FROM development.bd_ageb_diag_pobr_16jul20
+ORDER BY ran;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_ageb_diag_pobr;
+TRUNCATE TABLE development.ct_ageb_diag_pobr RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_ageb_diag_pobr (adp_id, descripcion)
+VALUES
+    (1, 'Porcentaje de población que vive en condición de pobreza.'),
+    (2, 'Porcentaje de población que vive en condición de pobreza extrema.');
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_ageb_diag_rezago;
+TRUNCATE TABLE development.ct_ageb_diag_rezago RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_ageb_diag_rezago (adr_id, descripcion)
+SELECT 1 AS adr_id, descripcion||'.'
+FROM development.dd_ageb_diag_rezago
+WHERE nombre = 'ag_rezs';
+
+--Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_idp_grados;
 TRUNCATE TABLE development.ct_idp_grados RESTART IDENTITY;
 --Ingresando información
@@ -407,6 +445,30 @@ SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.a_g_esc, 1 AS acp
 FROM development.bd_ageb_caract AS a
 JOIN development.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
 JOIN development.dd_ageb_caract AS c ON c.nombre = 'a_g_esc';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ageb_diag_pobr;
+--Ingresando información de los campos
+INSERT INTO development.ageb_diag_pobr (cve_mun, fol_ageb, serie, adpr_id, adpc_id, adc_id)
+SELECT a.cve_mun, a.fol_ageb, b.año, c.adpr_id, d.adpc_id, 1 AS adc_id
+FROM development.bd_ageb_diag_pobr_16jul20 AS a
+JOIN development.dd_ageb_diag_pobr AS b ON b.nombre = 'r_pobr'
+JOIN development.ct_ageb_diag_pobr_r AS c ON a.r_pobr = c.rango
+JOIN development.ct_ageb_diag_pobr_c AS d ON a.c_pobr = d.categoria
+UNION SELECT a.cve_mun, a.fol_ageb, b.año, c.adpr_id, d.adpc_id, 2 AS adc_id
+FROM development.bd_ageb_diag_pobr_16jul20 AS a
+JOIN development.dd_ageb_diag_pobr AS b ON b.nombre = 'r_pobr_e'
+JOIN development.ct_ageb_diag_pobr_r AS c ON a.r_pobr_e = c.rango
+JOIN development.ct_ageb_diag_pobr_c AS d ON a.c_pobr_e = d.categoria;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ageb_diag_rezago;
+--Ingresando información de los campos
+INSERT INTO development.ageb_diag_rezago (cve_mun, cve_ageb, fol_ageb, serie, habitantes, viviendas, adpc_id, adr_id)
+SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.año, a.pobt_10, a.aviv_p_h, c.adpc_id, 1 AS adr_id
+FROM development.bd_ageb_diag_rezago_16jul20 AS a
+JOIN development.dd_ageb_diag_rezago AS b ON b.nombre = 'pobt_10'
+JOIN development.ct_ageb_diag_pobr_c AS c ON TRIM(a.ag_rezs) = c.categoria;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.idp_grados;

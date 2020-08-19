@@ -36,6 +36,30 @@ CREATE TABLE IF NOT EXISTS development.ct_ageb_caract_nom_loc(
     descripcion VARCHAR(20) NOT NULL
 );
 
+--Se crea catalogo para registros de grados del archivo bd_ageb_diag_pobr_16jul20.csv
+CREATE TABLE IF NOT EXISTS development.ct_ageb_diag_pobr_r(
+    adpr_id SERIAL PRIMARY KEY,
+    rango VARCHAR(10) NOT NULL
+);
+
+--Se crea catalogo para registros de grados del archivo bd_ageb_diag_pobr_16jul20.csv
+CREATE TABLE IF NOT EXISTS development.ct_ageb_diag_pobr_c(
+    adpc_id SERIAL PRIMARY KEY,
+    categoria VARCHAR(10) NOT NULL
+);
+
+--Se crea catalogo para registros de grados del archivo bd_ageb_diag_pobr_16jul20.csv
+CREATE TABLE IF NOT EXISTS development.ct_ageb_diag_pobr(
+    adp_id SMALLINT PRIMARY KEY,
+    descripcion VARCHAR(70) NOT NULL
+);
+
+--Se crea catalogo para registros de grados del archivo bd_ageb_diag_pobr_16jul20.csv
+CREATE TABLE IF NOT EXISTS development.ct_ageb_diag_rezago(
+    adr_id SMALLINT PRIMARY KEY,
+    descripcion VARCHAR(40) NOT NULL
+);
+
 --Se crea catalogo para registros de grados del archivo bd_idp.csv
 CREATE TABLE IF NOT EXISTS development.ct_idp_grados(
     gidp_id SERIAL PRIMARY KEY,
@@ -181,6 +205,28 @@ CREATE TABLE IF NOT EXISTS development.ageb_caract_prom_esc(
     serie SMALLINT,
     promedio NUMERIC(4,2),
     acpe_id SMALLINT NOT NULL REFERENCES development.ct_ageb_caract_prom_esc(acpe_id)
+);
+
+--Se crea tabla para registros de grados del archivo bd_ageb_diag_pobr_16jul20.csv
+CREATE TABLE IF NOT EXISTS development.ageb_diag_pobr(
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    fol_ageb VARCHAR(14) NOT NULL,
+    serie SMALLINT,
+    adpr_id SMALLINT NOT NULL REFERENCES development.ct_ageb_diag_pobr_r(adpr_id),
+    adpc_id SMALLINT NOT NULL REFERENCES development.ct_ageb_diag_pobr_c(adpc_id),
+    adc_id SMALLINT NOT NULL REFERENCES development.ct_ageb_diag(adc_id)
+);
+
+--Se crea tabla para registros de grados del archivo bd_ageb_diag_rezago_16jul20.csv
+CREATE TABLE IF NOT EXISTS development.ageb_diag_rezago(
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    cve_ageb VARCHAR(4) NOT NULL,
+    fol_ageb VARCHAR(14) NOT NULL,
+    serie SMALLINT,
+    habitantes INTEGER,
+    viviendas INTEGER,
+    adpc_id SMALLINT NOT NULL REFERENCES development.ct_ageb_diag_pobr_c(adpc_id),
+    adr_id SMALLINT NOT NULL REFERENCES development.ct_ageb_diag_rezago(adr_id)
 );
 
 --Se crea tabla para registros de grados del archivo bd_idp.csv
@@ -372,6 +418,43 @@ JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
 JOIN development.regiones AS c USING(id_region)
 JOIN development.ct_ageb_caract_prom_esc AS d USING(acpe_id)
 JOIN development.ct_ageb_caract_nom_loc AS e USING (acnl_id);
+
+-- Se crea vista para los grados del archivo bd_ageb_diag_pobr_16jul20.csv
+CREATE VIEW development.view_ageb_diag_pobr AS
+SELECT
+    a.cve_mun,
+    a.fol_ageb,
+    b.municipio,
+    c.region,
+    a.serie,
+    d.rango,
+    e.categoria,
+    f.descripcion
+FROM development.ageb_diag_pobr AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_ageb_diag_pobr_r AS d USING(adpr_id)
+JOIN development.ct_ageb_diag_pobr_c AS e USING(adpc_id)
+JOIN development.ct_ageb_diag AS f USING(adc_id);
+
+-- Se crea vista para los grados del archivo bd_ageb_diag_rezago_16jul20.csv
+CREATE VIEW development.view_ageb_diag_rezago AS
+SELECT
+    a.cve_mun,
+    a.cve_ageb,
+    a.fol_ageb,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.habitantes,
+    a.viviendas,
+    d.categoria AS grado,
+    e.descripcion
+FROM development.ageb_diag_rezago AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_ageb_diag_pobr_c AS d USING(adpc_id)
+JOIN development.ct_ageb_diag_rezago AS e USING(adr_id);
 
 -- Se crea vista para los grados del archivo bd_idp.csv
 CREATE VIEW development.view_idp_grados AS
