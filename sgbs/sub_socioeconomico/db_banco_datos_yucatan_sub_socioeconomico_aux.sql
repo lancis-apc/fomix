@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS development.dd_socioec_caract(
     unidad TEXT,
     descripcion TEXT,
     fuente TEXT,
-    año SMALLINT,
+    año VARCHAR(10),
     web TEXT,
     metadatos TEXT
 );

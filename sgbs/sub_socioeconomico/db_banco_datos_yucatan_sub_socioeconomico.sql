@@ -157,6 +157,48 @@ CREATE TABLE IF NOT EXISTS development.ct_pob_geq(
     descripcion VARCHAR(50) NOT NULL
 );
 
+--Se crea catalogo para el archivo bd_socioec_caract.csv para separar según población
+CREATE TABLE IF NOT EXISTS development.ct_socioec_caract_hab(
+    sch_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(70) NOT NULL
+);
+
+--Se crea catalogo para el archivo bd_socioec_caract.csv para separar según pocentajes
+CREATE TABLE IF NOT EXISTS development.ct_socioec_caract_prc(
+    scp_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(120) NOT NULL
+);
+
+--Se crea catalogo para el archivo bd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.ct_socioec_caract_h(
+    sch_id SERIAL PRIMARY KEY,
+    descripcion VARCHAR(120) NOT NULL
+);
+
+--Se crea catalogo para el archivo bd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.ct_socioec_caract_iev(
+    iev_id SMALLINT PRIMARY KEY,
+    descripcion VARCHAR(40) NOT NULL
+);
+
+--Se crea catalogo para el archivo bd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.ct_socioec_caract_tmacp(
+    tmacp_id SMALLINT PRIMARY KEY,
+    descripcion VARCHAR(50) NOT NULL
+);
+
+--Se crea catalogo para el archivo bd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.ct_socioec_caract_gpe(
+    gpe_id SMALLINT PRIMARY KEY,
+    descripcion VARCHAR(40) NOT NULL
+);
+
+--Se crea catalogo para el archivo bd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.ct_socioec_caract_viv(
+    viv_id SMALLINT PRIMARY KEY,
+    descripcion VARCHAR(60) NOT NULL
+);
+
 /*
     **************************************************************************************
     En esta subsección se crean las tablas de la información del componente socioeconómico
@@ -339,6 +381,68 @@ CREATE TABLE IF NOT EXISTS development.pob_gpo_edad_quinq(
     geq_id SMALLINT NOT NULL REFERENCES development.ct_gpo_edad_quinq(geq_id),
     cantidad INTEGER NOT NULL,
     pgeq_id SMALLINT NOT NULL REFERENCES development.ct_pob_geq(pgeq_id)
+);
+
+--Se crea tabla para registros del archivo bd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.socioec_caract_hab(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT NOT NULL,
+    habitantes INTEGER NOT NULL,
+    sch_id SMALLINT NOT NULL REFERENCES development.ct_socioec_caract_hab(sch_id)
+);
+
+--Se crea tabla para registros del archivo bd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.socioec_caract_prc(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT NOT NULL,
+    porcentaje NUMERIC(5,2),
+    scp_id SMALLINT NOT NULL REFERENCES development.ct_socioec_caract_prc(scp_id)
+);
+
+--Se crea tabla para registros del archivo bd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.socioec_caract_h(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT NOT NULL,
+    habitantes NUMERIC(10,2),
+    sch_id SMALLINT NOT NULL REFERENCES development.ct_socioec_caract_h(sch_id)
+);
+
+--Se crea tabla para registros del archivo bd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.socioec_caract_iev(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT NOT NULL,
+    indice NUMERIC(5,4),
+    iev_id SMALLINT NOT NULL REFERENCES development.ct_socioec_caract_iev(iev_id)
+);
+
+--Se crea tabla para registros del archivo bd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.socioec_caract_tmacp(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    periodo CHAR(11) NOT NULL,
+    tasa NUMERIC(4,3),
+    tmacp_id SMALLINT NOT NULL REFERENCES development.ct_socioec_caract_tmacp(tmacp_id)
+);
+
+--Se crea tabla para registros del archivo bd_socioec_caract.csv
+CREATE TABLE IF NOT EXISTS development.socioec_caract_gpe(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT NOT NULL,
+    promedio NUMERIC(4,2),
+    gpe_id SMALLINT NOT NULL REFERENCES development.ct_socioec_caract_gpe(gpe_id)
+);
+
+CREATE TABLE IF NOT EXISTS development.socioec_caract_viv(
+    cve_geo CHAR(5) NOT NULL,
+    cve_mun CHAR(3) NOT NULL REFERENCES development.municipios(clave_municipio),
+    serie SMALLINT NOT NULL,
+    viviendas INTEGER,
+    viv_id SMALLINT NOT NULL REFERENCES development.ct_socioec_caract_viv(viv_id)
 );
 
 /*
@@ -694,3 +798,93 @@ JOIN (
 JOIN (
     SELECT * FROM development.ct_pob_geq
     UNION SELECT 3 AS pgeq_id, 'Población por grupo de edad quinquenal.' AS descripcion) AS h USING(pgeq_id);
+
+-- Se crea vista para el archivo bd_socioec_caract.csv
+CREATE VIEW development.view_socioec_caract_hab AS
+SELECT
+    a.cve_geo,
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.habitantes,
+    d.descripcion
+FROM development.socioec_caract_hab AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_socioec_caract_hab AS d USING(sch_id);
+
+-- Se crea vista para el archivo bd_socioec_caract.csv
+CREATE VIEW development.view_socioec_caract_prc AS
+SELECT
+    a.cve_geo,
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.porcentaje,
+    d.descripcion
+FROM development.socioec_caract_prc AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_socioec_caract_prc AS d USING(scp_id);
+
+-- Se crea vista para el archivo bd_socioec_caract.csv
+CREATE VIEW development.view_socioec_caract_h AS
+SELECT
+    a.cve_geo,
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.habitantes,
+    d.descripcion
+FROM development.socioec_caract_h AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_socioec_caract_h AS d USING(sch_id);
+
+-- Se crea vista para el archivo bd_socioec_caract.csv
+CREATE VIEW development.view_socioec_caract_iev AS
+SELECT
+    a.cve_geo,
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.indice,
+    d.descripcion
+FROM development.socioec_caract_iev AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_socioec_caract_iev AS d USING(iev_id);
+
+-- Se crea vista para el archivo bd_socioec_caract.csv
+CREATE VIEW development.view_socioec_caract_gpe AS
+SELECT
+    a.cve_geo,
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.promedio,
+    d.descripcion
+FROM development.socioec_caract_gpe AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_socioec_caract_gpe AS d USING(gpe_id);
+
+-- Se crea vista para el archivo bd_socioec_caract.csv
+CREATE VIEW development.view_socioec_caract_viv AS
+SELECT
+    a.cve_geo,
+    a.cve_mun,
+    b.municipio,
+    c.region,
+    a.serie,
+    a.viviendas,
+    d.descripcion
+FROM development.socioec_caract_viv AS a
+JOIN development.municipios AS b ON a.cve_mun = b.clave_municipio
+LEFT JOIN development.regiones AS c USING(id_region)
+JOIN development.ct_socioec_caract_viv AS d USING(viv_id);

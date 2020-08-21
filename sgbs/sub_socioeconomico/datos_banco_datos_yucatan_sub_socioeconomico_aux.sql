@@ -206,7 +206,7 @@ UPDATE development.bd_socioec_caract SET cve_mun = LPAD(bd_socioec_caract.cve_mu
 --Se colocan correctamente las claves cve_geo
 UPDATE development.bd_socioec_caract SET cve_geo = CONCAT(cve_ent,cve_mun);
 --Se quitan los espacios
-UPDATE development.bd_socioec_caract SET p_no_af = REPLACE(bd_socioec_caract.p_no_af,' ','');
+UPDATE development.bd_socioec_caract SET p_no_af = REPLACE(bd_socioec_caract.p_no_af,' ',NULL);
 
 --Borrando todos los datos de bd_socioec_diagn para correr el archivo sql
 DELETE FROM development.bd_socioec_diagn;

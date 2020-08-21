@@ -247,10 +247,80 @@ ORDER BY gpo_quin;
 DELETE FROM development.ct_pob_geq;
 --Ingresando información de Población masculina
 INSERT INTO development.ct_pob_geq(pgeq_id, descripcion)
-SELECT 1, REPLACE(descripcion,' en 2015','.') FROM development.dd_pob_gpo_edad_quinq WHERE nombre = 'pobqm_15';
+SELECT 1, TRIM(REPLACE(descr, ', ', ' - 'i)pcion,' en 2015','.') FROM development.dd_pob_gpo_edad_quinq WHERE nombre = 'pobqm_15';
 --Ingresando información de Población femenina
 INSERT INTO development.ct_pob_geq(pgeq_id, descripcion)
 SELECT 2, REPLACE(descripcion,' en 2015','.') FROM development.dd_pob_gpo_edad_quinq WHERE nombre = 'pobqf_15';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_socioec_caract_hab;
+TRUNCATE TABLE development.ct_socioec_caract_hab RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_socioec_caract_hab (descripcion)
+SELECT descripcion
+FROM development.dd_socioec_caract
+WHERE unidad LIKE 'Número de habitantes%' AND id >= 19
+ORDER BY id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_socioec_caract_prc;
+TRUNCATE TABLE development.ct_socioec_caract_prc RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_socioec_caract_prc (descripcion)
+SELECT descripcion
+FROM development.dd_socioec_caract
+WHERE unidad LIKE 'Porcentaje'
+ORDER BY id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_socioec_caract_h;
+TRUNCATE TABLE development.ct_socioec_caract_h RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_socioec_caract_h (descripcion)
+SELECT descripcion
+FROM development.dd_socioec_caract
+WHERE descripcion LIKE '%hijos%' AND descripcion NOT LIKE 'Porcentaje%'
+ORDER BY id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_socioec_caract_iev;
+TRUNCATE TABLE development.ct_socioec_caract_iev RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_socioec_caract_iev (iev_id, descripcion)
+SELECT 1 AS iev_id, descripcion
+FROM development.dd_socioec_caract
+WHERE descripcion LIKE 'Índice%'
+ORDER BY id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_socioec_caract_tmacp;
+TRUNCATE TABLE development.ct_socioec_caract_tmacp RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_socioec_caract_tmacp (tmacp_id, descripcion)
+SELECT 1 AS tmacp_id, unidad||'.'
+FROM development.dd_socioec_caract
+WHERE unidad LIKE 'Tasa%'
+ORDER BY id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_socioec_caract_gpe;
+TRUNCATE TABLE development.ct_socioec_caract_gpe RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_socioec_caract_gpe (gpe_id, descripcion)
+SELECT 1 AS gpe_id, descripcion||'.'
+FROM development.dd_socioec_caract
+WHERE descripcion LIKE 'Grado%'
+ORDER BY id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_socioec_caract_viv;
+TRUNCATE TABLE development.ct_socioec_caract_viv RESTART IDENTITY;
+--Ingresando información
+INSERT INTO development.ct_socioec_caract_viv (viv_id, descripcion)
+SELECT 1 AS viv_id, descripcion||'.'
+FROM development.dd_socioec_caract
+WHERE descripcion LIKE '%Número de viviendas%'
+ORDER BY id;
 
 /*
     *************************************************************
@@ -689,3 +759,179 @@ UNION SELECT d.cve_mun, f.año, e.geq_id, d.pobqf_15, 2 AS pgeq_id
 FROM wo_total AS d
 JOIN development.ct_gpo_edad_quinq AS e USING (gpo_quin)
 JOIN development.dd_pob_gpo_edad_quinq as f ON nombre = 'pobqf_15';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.socioec_caract_hab;
+--Ingresando información
+INSERT INTO development.socioec_caract_hab (cve_geo, cve_mun, serie, habitantes, sch_id)
+SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob12_mas, 1 AS sch_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'pob12_mas'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob_ocup, 2 AS sch_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'pob_ocup'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob15_mas, 3 AS sch_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'pob15_mas'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.ocu_vpart, 4 AS sch_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'ocu_vpart';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.socioec_caract_prc;
+--Ingresando información
+INSERT INTO development.socioec_caract_prc (cve_geo, cve_mun, serie, porcentaje, scp_id)
+SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_hif_10, 1 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_hif_10'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_pea_t, 2 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_pea_t'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_pea_oc, 3 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_pea_oc'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_pea_de, 4 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_pea_de'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_pob_1s, 5 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_pob_1s'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_pob_a2s, 6 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_pob_a2s'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_pob_m2s, 7 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_pob_m2s'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_sec_pri, 8 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_sec_pri'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_sec_sec, 9 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_sec_sec'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_sec_ter, 10 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_sec_ter'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_alf, 11 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_alf'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_analf, 12 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_analf'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_sin_esc, 13 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_sin_esc'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_edu_bas, 14 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_edu_bas'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_edu_med, 15 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_edu_med'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_edu_sup, 16 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_edu_sup'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_pob_af, 17 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_pob_af'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), CAST(a.p_no_af AS NUMERIC(5,3)), 18 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'p_no_af'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.oag_ent_t, 19 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'oag_ent_t'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.oag_denv, 20 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'oag_denv'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vag_ent_t, 21 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vag_ent_t'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.viag_denv, 22 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'viag_denv'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.viag_fuev, 23 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'viag_fuev'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.viacarr_t, 24 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'viacarr_t'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vidren_t, 25 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vidren_t'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vidre_red, 26 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vidre_red'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vidre_fos, 27 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vidre_fos'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vidre_bar, 28 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vidre_bar'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vidre_rio, 29 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vidre_rio'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.visindre, 30 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'visindre'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vi_elec, 31 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vi_elec'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vi_no_elec, 32 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vi_no_elec'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.v_con_san, 33 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'v_con_san'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vi_no_san, 34 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vi_no_san'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vi_res_sp, 35 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vi_res_sp'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vi_res_ba, 36 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vi_res_ba'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vi_res_qu, 37 AS scp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'vi_res_qu';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.socioec_caract_h;
+--Ingresando información
+INSERT INTO development.socioec_caract_h (cve_geo, cve_mun, serie, habitantes, sch_id)
+SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pro_hv_10, 1 AS sch_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'pro_hv_10'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.hvi_10, 2 AS sch_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'hvi_10';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.socioec_caract_iev;
+--Ingresando información
+INSERT INTO development.socioec_caract_iev (cve_geo, cve_mun, serie, indice, iev_id)
+SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.iesp_vid, 1 AS iev_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'iesp_vid';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.socioec_caract_tmacp;
+--Ingresando información
+INSERT INTO development.socioec_caract_tmacp (cve_geo, cve_mun, periodo, tasa, tmacp_id)
+SELECT a.cve_geo, a.cve_mun, TRIM(REPLACE(b.año, ', ', ' - ')) AS periodo, a.t_crecma, 1 AS tmacp_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 't_crecma';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.socioec_caract_gpe;
+--Ingresando información
+INSERT INTO development.socioec_caract_gpe (cve_geo, cve_mun, serie, promedio, gpe_id)
+SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.esc_prom, 1 AS gpe_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'esc_prom';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.socioec_caract_viv;
+--Ingresando información
+INSERT INTO development.socioec_caract_viv (cve_geo, cve_mun, serie, viviendas, viv_id)
+SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.viv_p_hab, 1 AS viv_id
+FROM development.bd_socioec_caract AS a
+JOIN development.dd_socioec_caract AS b ON b.nombre = 'viv_p_hab';
