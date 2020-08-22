@@ -1,5 +1,3 @@
---Esta sección es para el componente socioeconómico
-
 /*
     ****************************************************************
     Esta sección es para los catalogos del componente socioeconómico
@@ -7,8 +5,17 @@
 */
 
 --Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_grados;
+TRUNCATE TABLE development.ct_grados RESTART IDENTITY CASCADE;
+--Ingresando información
+INSERT INTO development.ct_grados (grado)
+SELECT distinct TRIM(c_pobr) AS cat
+FROM development.bd_ageb_diag_pobr_16jul20
+ORDER BY cat DESC;
+
+--Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_ageb_caract_pob;
-TRUNCATE TABLE development.ct_ageb_caract_pob RESTART IDENTITY;
+TRUNCATE TABLE development.ct_ageb_caract_pob RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_ageb_caract_pob (descripcion)
 SELECT descripcion
@@ -18,7 +25,7 @@ ORDER BY id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_ageb_caract_viv;
-TRUNCATE TABLE development.ct_ageb_caract_viv RESTART IDENTITY;
+TRUNCATE TABLE development.ct_ageb_caract_viv RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_ageb_caract_viv (descripcion)
 SELECT descripcion
@@ -28,7 +35,7 @@ ORDER BY id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_ageb_caract_prom_hij;
-TRUNCATE TABLE development.ct_ageb_caract_prom_hij RESTART IDENTITY;
+TRUNCATE TABLE development.ct_ageb_caract_prom_hij RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_ageb_caract_prom_hij (descripcion)
 SELECT descripcion
@@ -37,7 +44,7 @@ WHERE nombre = 'pro_hv_10';
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_ageb_caract_prom_esc;
-TRUNCATE TABLE development.ct_ageb_caract_prom_esc RESTART IDENTITY;
+TRUNCATE TABLE development.ct_ageb_caract_prom_esc RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_ageb_caract_prom_esc (descripcion)
 SELECT descripcion
@@ -46,7 +53,7 @@ WHERE nombre = 'a_g_esc';
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_ageb_caract_nom_loc;
-TRUNCATE TABLE development.ct_ageb_caract_nom_loc RESTART IDENTITY;
+TRUNCATE TABLE development.ct_ageb_caract_nom_loc RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_ageb_caract_nom_loc (descripcion)
 SELECT distinct nom_loc
@@ -54,7 +61,7 @@ FROM development.bd_ageb_caract;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_ageb_diag_pobr_c;
-TRUNCATE TABLE development.ct_ageb_diag_pobr_c RESTART IDENTITY;
+TRUNCATE TABLE development.ct_ageb_diag_pobr_c RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_ageb_diag_pobr_c (categoria)
 SELECT distinct TRIM(c_pobr) AS cat
@@ -63,7 +70,7 @@ ORDER BY cat DESC;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_ageb_diag_pobr_r;
-TRUNCATE TABLE development.ct_ageb_diag_pobr_r RESTART IDENTITY;
+TRUNCATE TABLE development.ct_ageb_diag_pobr_r RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_ageb_diag_pobr_r (rango)
 SELECT distinct TRIM(r_pobr) AS ran
@@ -74,7 +81,7 @@ ORDER BY ran;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_ageb_diag_pobr;
-TRUNCATE TABLE development.ct_ageb_diag_pobr RESTART IDENTITY;
+TRUNCATE TABLE development.ct_ageb_diag_pobr RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_ageb_diag_pobr (adp_id, descripcion)
 VALUES
@@ -83,7 +90,7 @@ VALUES
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_ageb_diag_rezago;
-TRUNCATE TABLE development.ct_ageb_diag_rezago RESTART IDENTITY;
+TRUNCATE TABLE development.ct_ageb_diag_rezago RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_ageb_diag_rezago (adr_id, descripcion)
 SELECT 1 AS adr_id, descripcion||'.'
@@ -92,7 +99,7 @@ WHERE nombre = 'ag_rezs';
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_idp_grados;
-TRUNCATE TABLE development.ct_idp_grados RESTART IDENTITY;
+TRUNCATE TABLE development.ct_idp_grados RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_idp_grados (descripcion)
 SELECT descripcion
@@ -107,7 +114,7 @@ INSERT INTO development.ct_idp (idp_id, descripcion) VALUES
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_idp_categorias;
-TRUNCATE TABLE development.ct_idp_categorias RESTART IDENTITY;
+TRUNCATE TABLE development.ct_idp_categorias RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_idp_categorias(categoria)
 SELECT DISTINCT TRIM(idp_cat) AS cat FROM development.bd_idp ORDER BY cat DESC;
@@ -121,7 +128,7 @@ FROM development.dd_idp WHERE nombre = 'rtp';
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_pob_ind;
-TRUNCATE TABLE development.ct_pob_ind RESTART IDENTITY;
+TRUNCATE TABLE development.ct_pob_ind RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_pob_ind (descripcion)
 SELECT descripcion FROM development.dd_indigena
@@ -130,7 +137,7 @@ ORDER BY id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_viv_ind;
-TRUNCATE TABLE development.ct_viv_ind RESTART IDENTITY;
+TRUNCATE TABLE development.ct_viv_ind RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_viv_ind (descripcion)
 SELECT TRIM(descripcion) FROM development.dd_indigena
@@ -139,7 +146,7 @@ ORDER BY id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_prop_pob_ind_tip;
-TRUNCATE TABLE development.ct_prop_pob_ind_tip RESTART IDENTITY;
+TRUNCATE TABLE development.ct_prop_pob_ind_tip RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_prop_pob_ind_tip (descripcion)
 SELECT DISTINCT TRIM(nom_tipo) AS cat FROM development.bd_indigena ORDER BY cat DESC;
@@ -172,7 +179,7 @@ INSERT INTO development.ct_prop_pob (pp_id, descripcion) VALUES
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_mig_prop;
-TRUNCATE TABLE development.ct_mig_prop RESTART IDENTITY;
+TRUNCATE TABLE development.ct_mig_prop RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_mig_prop (descripcion)
 SELECT TRIM(descripcion) FROM development.dd_migracion
@@ -201,7 +208,7 @@ ORDER BY mg_id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_mig_mun_cat;
-TRUNCATE TABLE development.ct_mig_mun_cat RESTART IDENTITY;
+TRUNCATE TABLE development.ct_mig_mun_cat RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_mig_mun_cat (descripcion)
 SELECT DISTINCT TRIM(catm_10) AS descripcion
@@ -225,7 +232,7 @@ FROM(
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_pob_afrodesc;
-TRUNCATE TABLE development.ct_pob_afrodesc RESTART IDENTITY;
+TRUNCATE TABLE development.ct_pob_afrodesc RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_pob_afrodesc (descripcion)
 SELECT descripcion
@@ -235,7 +242,7 @@ ORDER BY id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_gpo_edad_quinq;
-TRUNCATE TABLE development.ct_gpo_edad_quinq RESTART IDENTITY;
+TRUNCATE TABLE development.ct_gpo_edad_quinq RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_gpo_edad_quinq (gpo_quin)
 SELECT DISTINCT gpo_quin
@@ -254,7 +261,7 @@ SELECT 2, REPLACE(descripcion,' en 2015','.') FROM development.dd_pob_gpo_edad_q
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_socioec_caract_hab;
-TRUNCATE TABLE development.ct_socioec_caract_hab RESTART IDENTITY;
+TRUNCATE TABLE development.ct_socioec_caract_hab RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_socioec_caract_hab (descripcion)
 SELECT descripcion
@@ -264,7 +271,7 @@ ORDER BY id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_socioec_caract_prc;
-TRUNCATE TABLE development.ct_socioec_caract_prc RESTART IDENTITY;
+TRUNCATE TABLE development.ct_socioec_caract_prc RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_socioec_caract_prc (descripcion)
 SELECT descripcion
@@ -274,7 +281,7 @@ ORDER BY id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_socioec_caract_h;
-TRUNCATE TABLE development.ct_socioec_caract_h RESTART IDENTITY;
+TRUNCATE TABLE development.ct_socioec_caract_h RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO development.ct_socioec_caract_h (descripcion)
 SELECT descripcion
@@ -284,7 +291,6 @@ ORDER BY id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_socioec_caract_iev;
-TRUNCATE TABLE development.ct_socioec_caract_iev RESTART IDENTITY;
 --Ingresando información
 INSERT INTO development.ct_socioec_caract_iev (iev_id, descripcion)
 SELECT 1 AS iev_id, descripcion
@@ -294,7 +300,6 @@ ORDER BY id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_socioec_caract_tmacp;
-TRUNCATE TABLE development.ct_socioec_caract_tmacp RESTART IDENTITY;
 --Ingresando información
 INSERT INTO development.ct_socioec_caract_tmacp (tmacp_id, descripcion)
 SELECT 1 AS tmacp_id, unidad||'.'
@@ -304,7 +309,6 @@ ORDER BY id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_socioec_caract_gpe;
-TRUNCATE TABLE development.ct_socioec_caract_gpe RESTART IDENTITY;
 --Ingresando información
 INSERT INTO development.ct_socioec_caract_gpe (gpe_id, descripcion)
 SELECT 1 AS gpe_id, descripcion||'.'
@@ -314,13 +318,44 @@ ORDER BY id;
 
 --Borrando información para correr las instrucciones sql
 DELETE FROM development.ct_socioec_caract_viv;
-TRUNCATE TABLE development.ct_socioec_caract_viv RESTART IDENTITY;
 --Ingresando información
 INSERT INTO development.ct_socioec_caract_viv (viv_id, descripcion)
 SELECT 1 AS viv_id, descripcion||'.'
 FROM development.dd_socioec_caract
 WHERE descripcion LIKE '%Número de viviendas%'
 ORDER BY id;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_socioec_diagn_rz;
+--Ingresando información
+INSERT INTO development.ct_socioec_diagn_rz (sdrz_id, descripcion)
+VALUES
+    (1, 'Rezago social'),
+    (2, 'Marginación');
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_socioec_diagn_pb;
+TRUNCATE TABLE development.ct_socioec_diagn_pb RESTART IDENTITY CASCADE;
+--Ingresando información
+INSERT INTO development.ct_socioec_diagn_pb (descripcion)
+SELECT DISTINCT REPLACE(SUBSTRING(descripcion FROM '.*,'), ',','.') AS descripcion
+FROM development.dd_socioec_diagn
+WHERE descripcion LIKE '%pobreza%' OR descripcion LIKE '%vulnerables%'
+ORDER BY descripcion DESC;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.ct_socioec_diagn_prc;
+TRUNCATE TABLE development.ct_socioec_diagn_prc RESTART IDENTITY CASCADE;
+--Ingresando información
+INSERT INTO development.ct_socioec_diagn_prc (descripcion)
+SELECT DISTINCT TRIM(REPLACE(SUBSTRING(descripcion FROM '.*en'), ' en', '.')) AS descripcion
+FROM development.dd_socioec_diagn
+WHERE unidad LIKE 'Porcentaje%' AND descripcion LIKE '%educativo%'
+UNION SELECT DISTINCT TRIM(REPLACE(SUBSTRING(descripcion FROM '.*,'), ',','.')) AS descripcion
+FROM development.dd_socioec_diagn
+WHERE unidad LIKE 'Porcentaje%' AND descripcion LIKE '%bienestar%'
+ORDER BY descripcion DESC
+LIMIT 3;
 
 /*
     *************************************************************
@@ -935,3 +970,80 @@ INSERT INTO development.socioec_caract_viv (cve_geo, cve_mun, serie, viviendas, 
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.viv_p_hab, 1 AS viv_id
 FROM development.bd_socioec_caract AS a
 JOIN development.dd_socioec_caract AS b ON b.nombre = 'viv_p_hab';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.socioec_diagn_rz;
+--Ingresando información
+INSERT INTO development.socioec_diagn_rz (cve_geo, cve_mun, serie, indice, ctg_id, sdrz_id)
+SELECT a.cve_geo, a.cve_mun, b.año, a.irz_s_00, c.ctg_id, 1 AS sdrz_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'irz_s_00'
+JOIN development.ct_grados AS c ON a.grz_s_00 = c.grado
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.irz_s_05, c.ctg_id, 1 AS sdrz_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'irz_s_05'
+JOIN development.ct_grados AS c ON a.grz_s_05 = c.grado
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.irz_s_10, c.ctg_id, 1 AS sdrz_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'irz_s_10'
+JOIN development.ct_grados AS c ON a.grz_s_10 = c.grado
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.irz_s_15, c.ctg_id, 1 AS sdrz_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'irz_s_15'
+JOIN development.ct_grados AS c ON a.grz_s_15 = c.grado
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.marg_i_15, c.ctg_id, 2 AS sdrz_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'marg_i_15'
+JOIN development.ct_grados AS c ON a.marg_g_15 = c.grado;
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.socioec_diagn_pb;
+--Ingresando información
+INSERT INTO development.socioec_diagn_pb (cve_geo, cve_mun, serie, porcentaje, habitantes, pb_id)
+SELECT a.cve_geo, a.cve_mun, b.año, a.p_vu_10, a.h_vu_10, 1 AS pb_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_vu_10'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.p_pbr_10, a.h_pb_10, 2 AS pb_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_pbr_10'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.p_pm_10, a.h_pm_10, 3 AS pb_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_pm_10'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.p_pex_10, a.h_pex_10, 4 AS pb_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_pex_10'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.p_vu_15, a.h_vu_15, 1 AS pb_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_vu_15'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.p_pbr_15, a.h_pb_15, 2 AS pb_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_pbr_15'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.p_pm_15, a.h_pm_15, 3 AS pb_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_pm_15'
+UNION SELECT a.cve_geo, a.cve_mun, b.año, a.p_pex_15, a.h_pex_15, 4 AS pb_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_pex_15';
+
+--Borrando información para correr las instrucciones sql
+DELETE FROM development.socioec_diagn_prc;
+--Ingresando información
+INSERT INTO development.socioec_diagn_prc (cve_geo, cve_mun, serie, porcentaje, sdp_id)
+SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_red_10, 1 AS scp_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_red_10'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_red_15, 1 AS scp_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_red_15'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_ib_10, 2 AS scp_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_ib_10'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_ib_15, 2 AS scp_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_ib_15'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_ibm_10, 3 AS scp_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_ibm_10'
+UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_ibm_15, 3 AS scp_id
+FROM development.bd_socioec_diagn AS a
+JOIN development.dd_socioec_diagn AS b ON b.nombre = 'p_ibm_15';
