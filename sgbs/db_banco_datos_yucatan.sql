@@ -20,7 +20,7 @@ CREATE TABLE development.municipios (
     clave_municipio CHAR(3) PRIMARY KEY,
     municipio VARCHAR(80) NOT NULL,
     id_region SMALLINT REFERENCES development.regiones(id_region),
-    cve_ent CHAR(2) REFERENCES development.estados(clave_entidad)
+    cve_ent CHAR(2) NOT NULL REFERENCES development.estados(clave_entidad)
 );
 
 --Se crea la tabla para las agebs
