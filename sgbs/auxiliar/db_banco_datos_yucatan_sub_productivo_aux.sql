@@ -6,28 +6,28 @@
 
 -- Catálogo de rama de actividad económica del SCIAN (Sistema de Clasificación Industrial para América del Norte)
 
-CREATE TABLE IF NOT EXISTS development.tb_rama (
+CREATE TABLE IF NOT EXISTS auxiliar.tb_rama (
   act_ec_cod CHAR(4) NOT NULL,
   rama VARCHAR(130) NOT NULL
 );
 
 -- Catálogo de sector de actividad económica del SCIAN (Sistema de Clasificación Industrial para América del Norte)
 
-CREATE TABLE IF NOT EXISTS development.tb_sector(
+CREATE TABLE IF NOT EXISTS auxiliar.tb_sector(
     sector VARCHAR(10) NOT NULL,
     descripcion VARCHAR(40) NOT NULL
 );
 
 -- Catálogo de subsector de actividad económica del SCIAN (Sistema de Clasificación Industrial para América del Norte)
 
-CREATE TABLE IF NOT EXISTS development.tb_subsector(
+CREATE TABLE IF NOT EXISTS auxiliar.tb_subsector(
     act_ec_sub_cod CHAR(2) NOT NULL,
     subsector VARCHAR(160) NOT NULL
 );
 
 -- Tabla de principal rama de actividad económica del municipio
 
-CREATE TABLE IF NOT EXISTS development.bd_activ_ec_principal(
+CREATE TABLE IF NOT EXISTS auxiliar.bd_activ_ec_principal(
     serie SMALLINT NOT NULL,
     cve_mun CHAR(3) NOT NULL,
     act_ec_cod CHAR(4) NOT NULL
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS development.bd_activ_ec_principal(
 
 -- Tabla de Coeficientes de especialización
 
-CREATE TABLE IF NOT EXISTS development.bd_coef_esp (
+CREATE TABLE IF NOT EXISTS auxiliar.bd_coef_esp (
     serie SMALLINT NOT NULL,
     cve_mun CHAR(3) NOT NULL,
     act_ec_cod CHAR(4) NOT NULL,
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS development.bd_coef_esp (
 
 -- Tabla de  Coeficientes técnicos
 
-CREATE TABLE IF NOT EXISTS development.bd_coef_tec (
+CREATE TABLE IF NOT EXISTS auxiliar.bd_coef_tec (
     sector VARCHAR(10) NOT NULL,
     agr_pesca_coef NUMERIC(5,4) NOT NULL,
     mineria_coef NUMERIC(5,4) NOT NULL,
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS development.bd_coef_tec (
 
 -- Tabla de Concentración Industrial
 
-CREATE TABLE IF NOT EXISTS development.bd_conc_indust (
+CREATE TABLE IF NOT EXISTS auxiliar.bd_conc_indust (
     serie SMALLINT NOT NULL,
     cve_mun CHAR(3) NOT NULL,
     concen_ind NUMERIC(9,6) NOT NULL
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS development.bd_conc_indust (
 
 -- Tabla de Cantidad de unidades económicas que operan con distintas cantidades de trabajadores por rama de actividad económica por municipio
 
-CREATE TABLE IF NOT EXISTS development.bd_denue_yuc_rama (
+CREATE TABLE IF NOT EXISTS auxiliar.bd_denue_yuc_rama (
     cve_mun CHAR(3) NOT NULL,
     serie SMALLINT NOT NULL,
     act_ec_cod CHAR(4) NOT NULL,
@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS development.bd_denue_yuc_rama (
 
 -- Tabla de Tasa de crecimiento de la inversión, personal ocupado,producción fija bruta y unidades económicas del municipio para 2009 y 2014.
 
-CREATE TABLE IF NOT EXISTS  development.bd_mat_tc_muni (
+CREATE TABLE IF NOT EXISTS  auxiliar.bd_mat_tc_muni (
     cve_mun CHAR(3) NOT NULL,
     serie SMALLINT NOT NULL,
     tc_inv_total_mun NUMERIC(10,6) NOT NULL,
@@ -104,7 +104,7 @@ CREATE TABLE IF NOT EXISTS  development.bd_mat_tc_muni (
 
 -- Tabla de Tasa de crecimiento de inversión, personal ocupado,producción fija bruta y unidades económicas de cada rama de actividad económica dentro del total municipal para 2009 y 2014.
 
-CREATE TABLE IF NOT EXISTS development.bd_mat_tc_muni_rama (
+CREATE TABLE IF NOT EXISTS auxiliar.bd_mat_tc_muni_rama (
     cve_mun CHAR(3) NOT NULL,
     serie SMALLINT NOT NULL,
     act_ec_cod CHAR(4) NOT NULL,
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS development.bd_mat_tc_muni_rama (
 
 -- Tabla de Tasa de crecimiento de inversión, personal ocupado,producción fija bruta y unidades económicas de cada subsector de actividad económica dentro del total municipal para 2009 y 2014.
 
-CREATE TABLE IF NOT EXISTS development.bd_mat_tc_muni_subsector (
+CREATE TABLE IF NOT EXISTS auxiliar.bd_mat_tc_muni_subsector (
     cve_mun CHAR(3) NOT NULL,
     serie SMALLINT NOT NULL,
     act_ec_sub_cod CHAR(2) NOT NULL,
@@ -128,7 +128,7 @@ CREATE TABLE IF NOT EXISTS development.bd_mat_tc_muni_subsector (
 
 -- Tabla de Tasa de crecimiento de inversión, personal ocupado,producción fija bruta y unidades económicas por rama de actividad económica para 2009 y 2014.
 
-CREATE TABLE IF NOT EXISTS development.bd_mat_tc_rama (
+CREATE TABLE IF NOT EXISTS auxiliar.bd_mat_tc_rama (
     act_ec_cod CHAR(4) NOT NULL,
     serie SMALLINT NOT NULL,
     tc_inv_total_rama VARCHAR(20) NOT NULL,
@@ -139,7 +139,7 @@ CREATE TABLE IF NOT EXISTS development.bd_mat_tc_rama (
 
 -- Tabla de Tasa de crecimiento de inversión, personal ocupado,producción fija bruta y unidades económicas por subsector de actividad económica para 2009 y 2014.
 
-CREATE TABLE IF NOT EXISTS development.bd_mat_tc_subsector (
+CREATE TABLE IF NOT EXISTS auxiliar.bd_mat_tc_subsector (
     act_ec_sub_cod CHAR(2) NOT NULL,
     serie SMALLINT NOT NULL,
     tc_inv_total_subsector NUMERIC(10,6) NOT NULL,
@@ -150,7 +150,7 @@ CREATE TABLE IF NOT EXISTS development.bd_mat_tc_subsector (
 
 -- Tabla de Producto Interno Bruto anual total y por sectores del estado de Yucatán
 
-CREATE TABLE IF NOT EXISTS development.bd_pib_yucatan (
+CREATE TABLE IF NOT EXISTS auxiliar.bd_pib_yucatan (
     serie SMALLINT NOT NULL,
     pib_total NUMERIC(9,3) NOT NULL,
     pib_prim NUMERIC(9,3) NOT NULL,
@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS development.bd_pib_yucatan (
 
 -- Tabla de Participación de cada rama de actividad económica en el total municipal de la inversión, personal ocupado,producción fija bruta y unidades económicas para 2004, 2009 y 2014.
 
-CREATE TABLE IF NOT EXISTS development.bd_yuc_porcentajes_act_ec_muni (
+CREATE TABLE IF NOT EXISTS auxiliar.bd_yuc_porcentajes_act_ec_muni (
     cve_mun CHAR(3) NOT NULL,
     serie SMALLINT NOT NULL,
     ct_rama_act_ec_cod CHAR(4) NOT NULL,

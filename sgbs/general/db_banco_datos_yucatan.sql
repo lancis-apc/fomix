@@ -1,32 +1,32 @@
 --Crea el schema
-CREATE SCHEMA IF NOT EXISTS development;
+CREATE SCHEMA IF NOT EXISTS general;
 
 --Esta es la sección "general"
 
 --Se crea la tabla para los estados
-CREATE TABLE development.estados (
+CREATE TABLE general.estados (
     clave_entidad CHAR(2) PRIMARY KEY,
     entidad_federativa VARCHAR(32) NOT NULL
 );
 
 --Se crea la tabla para región
-CREATE TABLE development.regiones (
+CREATE TABLE general.regiones (
     id_region SMALLINT PRIMARY KEY,
     region VARCHAR(20) NOT NULL
 );
 
 --Se crea la tabla para los municipios
-CREATE TABLE development.municipios (
+CREATE TABLE general.municipios (
     clave_municipio CHAR(3) PRIMARY KEY,
     municipio VARCHAR(80) NOT NULL,
-    id_region SMALLINT REFERENCES development.regiones(id_region),
-    cve_ent CHAR(2) NOT NULL REFERENCES development.estados(clave_entidad)
+    id_region SMALLINT REFERENCES general.regiones(id_region),
+    cve_ent CHAR(2) NOT NULL REFERENCES general.estados(clave_entidad)
 );
 
 --Se crea la tabla para las agebs
-CREATE TABLE development.agebs (
+CREATE TABLE general.agebs (
     fol_ageb VARCHAR(14) PRIMARY KEY,
     cve_ageb VARCHAR(4) NOT NULL,
     nom_loc VARCHAR(17) NOT NULL,
-    cve_mun CHAR(3) REFERENCES development.municipios(clave_municipio)
+    cve_mun CHAR(3) REFERENCES general.municipios(clave_municipio)
 );

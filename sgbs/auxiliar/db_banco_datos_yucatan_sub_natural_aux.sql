@@ -1,5 +1,5 @@
 --Se crea una tabla para cargar la información de la tabla \sub_natural\bd_usv_c2_mun.csv
-CREATE TABLE development.bd_usv_c2_mun (
+CREATE TABLE auxiliar.bd_usv_c2_mun (
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32),
     cve_mun CHAR(3) NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE development.bd_usv_c2_mun (
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_natural\bd_anp_c2_mun.csv
-CREATE TABLE development.bd_anp_c2_mun (
+CREATE TABLE auxiliar.bd_anp_c2_mun (
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32),
     cve_mun CHAR(3) NOT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE development.bd_anp_c2_mun (
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_natural\bd_deg_c2_mun.csv
-CREATE TABLE development.bd_deg_c2_mun (
+CREATE TABLE auxiliar.bd_deg_c2_mun (
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32),
     cve_mun CHAR(3) NOT NULL,

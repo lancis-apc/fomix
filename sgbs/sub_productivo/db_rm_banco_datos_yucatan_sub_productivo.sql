@@ -1,9 +1,9 @@
 --En caso que existan los catálogos y tablas del componente productivo, se eliminan
 
 DROP TABLE IF EXISTS
-    development.ct_act_ec_cantidades,
-    development.ct_act_ec_valores,
-    development.ct_ramas,
-    development.ct_subsectores,
-    development.ct_sectores
+    sub_productivo.ct_act_ec_cantidades,
+    sub_productivo.ct_act_ec_valores,
+    sub_productivo.ct_ramas,
+    sub_productivo.ct_subsectores,
+    sub_productivo.ct_sectores
     CASCADE;

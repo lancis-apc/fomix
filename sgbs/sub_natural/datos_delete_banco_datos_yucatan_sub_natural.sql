@@ -1,7 +1,7 @@
-DELETE FROM development.anp_municipios_coberturas;
-DELETE FROM development.deg_municipios_coberturas;
-DELETE FROM development.usv_municipios_coberturas;
-DELETE FROM development.coberturas_c2;
-DELETE FROM development.coberturas_c4;
-DELETE FROM development.coberturas_c3;
-DELETE FROM development.series;
+DELETE FROM sub_natural.anp_municipios_coberturas;
+DELETE FROM sub_natural.deg_municipios_coberturas;
+DELETE FROM sub_natural.usv_municipios_coberturas;
+DELETE FROM sub_natural.coberturas_c2;
+DELETE FROM sub_natural.coberturas_c4;
+DELETE FROM sub_natural.coberturas_c3;
+DELETE FROM sub_natural.series;

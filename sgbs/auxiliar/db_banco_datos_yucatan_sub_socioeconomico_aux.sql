@@ -5,7 +5,7 @@
 */
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_ageb_caract.csv
-CREATE TABLE IF NOT EXISTS development.dd_ageb_caract(
+CREATE TABLE IF NOT EXISTS auxiliar.dd_ageb_caract(
     id SMALLINT,
     nombre VARCHAR(10),
     tipo VARCHAR(10),
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS development.dd_ageb_caract(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_ageb_diag_pobr.csv
-CREATE TABLE IF NOT EXISTS development.dd_ageb_diag_pobr(
+CREATE TABLE IF NOT EXISTS auxiliar.dd_ageb_diag_pobr(
     id SMALLINT,
     nombre VARCHAR(10),
     tipo VARCHAR(10),
@@ -31,12 +31,12 @@ CREATE TABLE IF NOT EXISTS development.dd_ageb_diag_pobr(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_ageb_diag_rezago.csv
-CREATE TABLE IF NOT EXISTS development.dd_ageb_diag_rezago(
+CREATE TABLE IF NOT EXISTS auxiliar.dd_ageb_diag_rezago(
     id SMALLINT,
     nombre VARCHAR(10),
     tipo VARCHAR(10),
     unidad VARCHAR(20),
-    descripcion VARCHAR(120),
+    descripcion VARCHAR(140),
     fuente VARCHAR(40),
     año SMALLINT,
     web TEXT,
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS development.dd_ageb_diag_rezago(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_idp.csv
-CREATE TABLE IF NOT EXISTS development.dd_idp(
+CREATE TABLE IF NOT EXISTS auxiliar.dd_idp(
     nombre VARCHAR(10),
     unidad VARCHAR(20),
     descripcion VARCHAR(120),
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS development.dd_idp(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_indigena.csv
-CREATE TABLE IF NOT EXISTS development.dd_indigena(
+CREATE TABLE IF NOT EXISTS auxiliar.dd_indigena(
     id SMALLINT,
     nombre VARCHAR(10),
     tipo VARCHAR(10),
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS development.dd_indigena(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_migracion.csv
-CREATE TABLE IF NOT EXISTS development.dd_migracion(
+CREATE TABLE IF NOT EXISTS auxiliar.dd_migracion(
     id SMALLINT,
     nombre VARCHAR(10),
     tipo VARCHAR(10),
@@ -81,19 +81,19 @@ CREATE TABLE IF NOT EXISTS development.dd_migracion(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_pob_afrodesc.csv
-CREATE TABLE IF NOT EXISTS development.dd_pob_afrodesc(
+CREATE TABLE IF NOT EXISTS auxiliar.dd_pob_afrodesc(
     id SMALLINT,
     nombre VARCHAR(10),
     tipo VARCHAR(10),
     unidad VARCHAR(20),
     descripcion VARCHAR(120),
     fuente VARCHAR(40),
-    año SMALLINT,
+    año VARCHAR(4),
     web TEXT
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_pob_gpo_edad_quinq.csv
-CREATE TABLE IF NOT EXISTS development.dd_pob_gpo_edad_quinq(
+CREATE TABLE IF NOT EXISTS auxiliar.dd_pob_gpo_edad_quinq(
     id SMALLINT,
     nombre VARCHAR(10),
     tipo VARCHAR(10),
@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS development.dd_pob_gpo_edad_quinq(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_socioec_caract.csv
-CREATE TABLE IF NOT EXISTS development.dd_socioec_caract(
+CREATE TABLE IF NOT EXISTS auxiliar.dd_socioec_caract(
     id SMALLINT,
     nombre VARCHAR(10),
     tipo VARCHAR(10),
@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS development.dd_socioec_caract(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\dd_socioec_diagn.csv
-CREATE TABLE IF NOT EXISTS development.dd_socioec_diagn(
+CREATE TABLE IF NOT EXISTS auxiliar.dd_socioec_diagn(
     id SMALLINT,
     nombre VARCHAR(10),
     tipo VARCHAR(10),
@@ -138,7 +138,7 @@ CREATE TABLE IF NOT EXISTS development.dd_socioec_diagn(
 */
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\bd_ageb_caract.csv
-CREATE TABLE IF NOT EXISTS development.bd_ageb_caract(
+CREATE TABLE IF NOT EXISTS auxiliar.bd_ageb_caract(
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32) NOT NULL,
     id_region SMALLINT NOT NULL,
@@ -195,7 +195,7 @@ CREATE TABLE IF NOT EXISTS development.bd_ageb_caract(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\bd_ageb_diag_pobr_16jul20.csv
-CREATE TABLE IF NOT EXISTS development.bd_ageb_diag_pobr_16jul20(
+CREATE TABLE IF NOT EXISTS auxiliar.bd_ageb_diag_pobr(
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32) NOT NULL,
     id_region SMALLINT NOT NULL,
@@ -214,7 +214,7 @@ CREATE TABLE IF NOT EXISTS development.bd_ageb_diag_pobr_16jul20(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\bd_ageb_diag_rezago_16jul20.csv
-CREATE TABLE IF NOT EXISTS development.bd_ageb_diag_rezago_16jul20(
+CREATE TABLE IF NOT EXISTS auxiliar.bd_ageb_diag_rezago(
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32) NOT NULL,
     id_region SMALLINT NOT NULL,
@@ -232,7 +232,7 @@ CREATE TABLE IF NOT EXISTS development.bd_ageb_diag_rezago_16jul20(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\bd_idp.csv
-CREATE TABLE IF NOT EXISTS development.bd_idp(
+CREATE TABLE IF NOT EXISTS auxiliar.bd_idp(
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32) NOT NULL,
     cve_mun CHAR(3) NOT NULL,
@@ -251,7 +251,7 @@ CREATE TABLE IF NOT EXISTS development.bd_idp(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\bd_indigena.csv
-CREATE TABLE IF NOT EXISTS development.bd_indigena(
+CREATE TABLE IF NOT EXISTS auxiliar.bd_indigena(
     cve_geo CHAR(5) NOT NULL,
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32) NOT NULL,
@@ -293,7 +293,7 @@ CREATE TABLE IF NOT EXISTS development.bd_indigena(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\bd_migracion.csv
-CREATE TABLE IF NOT EXISTS development.bd_migracion(
+CREATE TABLE IF NOT EXISTS auxiliar.bd_migracion(
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32) NOT NULL,
     cve_mun CHAR(3) NOT NULL,
@@ -315,7 +315,7 @@ CREATE TABLE IF NOT EXISTS development.bd_migracion(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\bd_pob_afrodesc.csv
-CREATE TABLE IF NOT EXISTS development.bd_pob_afrodesc(
+CREATE TABLE IF NOT EXISTS auxiliar.bd_pob_afrodesc(
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32) NOT NULL,
     cve_mun VARCHAR(23),
@@ -332,7 +332,7 @@ CREATE TABLE IF NOT EXISTS development.bd_pob_afrodesc(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\bd_pob_gpo_edad_quinq.csv
-CREATE TABLE IF NOT EXISTS development.bd_pob_gpo_edad_quinq(
+CREATE TABLE IF NOT EXISTS auxiliar.bd_pob_gpo_edad_quinq(
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32) NOT NULL,
     cve_mun CHAR(3) NOT NULL,
@@ -348,7 +348,7 @@ CREATE TABLE IF NOT EXISTS development.bd_pob_gpo_edad_quinq(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\bd_socioec_caract.csv
-CREATE TABLE IF NOT EXISTS development.bd_socioec_caract(
+CREATE TABLE IF NOT EXISTS auxiliar.bd_socioec_caract(
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32) NOT NULL,
     cve_mun CHAR(3) NOT NULL,
@@ -412,7 +412,7 @@ CREATE TABLE IF NOT EXISTS development.bd_socioec_caract(
 );
 
 --Se crea una tabla para cargar la información de la tabla \sub_socioeconomico\bd_socioec_diagn.csv
-CREATE TABLE IF NOT EXISTS development.bd_socioec_diagn(
+CREATE TABLE IF NOT EXISTS auxiliar.bd_socioec_diagn(
     cve_ent CHAR(2) NOT NULL,
     nom_ent VARCHAR(32) NOT NULL,
     cve_mun CHAR(3) NOT NULL,
