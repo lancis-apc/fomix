@@ -4,4 +4,3 @@ DROP TABLE IF EXISTS sub_natural.usv_municipios_coberturas, sub_natural.anp_muni
 DROP TABLE IF EXISTS sub_natural.coberturas_c2 CASCADE;
 DROP TABLE IF EXISTS sub_natural.coberturas_c4 CASCADE;
 DROP TABLE IF EXISTS sub_natural.coberturas_c3 CASCADE;
-DROP TABLE IF EXISTS sub_natural.series CASCADE;

@@ -13,7 +13,7 @@ SELECT
     a.serie,
     c.rama
 FROM sub_productivo.ramas_municipios AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS d USING(id_region)
 JOIN sub_productivo.ct_ramas AS c USING(act_ec_cod);
 
@@ -30,7 +30,7 @@ SELECT
 FROM sub_productivo.coef_esp AS a
 JOIN sub_productivo.ct_ramas AS b USING(act_ec_cod)
 JOIN sub_productivo.ct_coef_esp c USING(ce_id)
-JOIN general.municipios AS d ON a.cve_mun = d.clave_municipio
+JOIN general.municipios AS d USING(cve_mun)
 JOIN general.regiones AS e USING(id_region);
 
 -- Vista del archivo bd_coef_tec.csv
@@ -53,7 +53,7 @@ SELECT
     a.cantidad,
     d.descripcion
 FROM sub_productivo.conc_indust AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_productivo.ct_conc_indust AS d USING(ci_id);
 
@@ -68,7 +68,7 @@ SELECT
     c.descripcion,
     d.rama
 FROM sub_productivo.denue AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS e USING(id_region)
 JOIN sub_productivo.ct_denue AS c USING(denue_id)
 JOIN sub_productivo.ct_ramas AS d USING(act_ec_cod);
@@ -90,7 +90,7 @@ SELECT
     c.descripcion,
     d.subsector
 FROM tot_sub AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS e USING(id_region)
 JOIN sub_productivo.ct_denue AS c USING(denue_id)
 JOIN sub_productivo.ct_subsectores AS d USING(act_ec_sub_cod);
@@ -105,7 +105,7 @@ SELECT
     a.tasa,
     d.descripcion
 FROM sub_productivo.mat_tc_muni AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_productivo.ct_mat_tc AS d USING(mt_id);
 
@@ -120,7 +120,7 @@ SELECT
     d.descripcion,
     e.rama
 FROM sub_productivo.mat_tc_muni_rama AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_productivo.ct_mat_tc AS d USING(mt_id)
 JOIN sub_productivo.ct_ramas AS e USING(act_ec_cod);
@@ -136,7 +136,7 @@ SELECT
     d.descripcion,
     e.subsector
 FROM sub_productivo.mat_tc_muni_subsector AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_productivo.ct_mat_tc AS d USING(mt_id)
 JOIN sub_productivo.ct_subsectores AS e USING(act_ec_sub_cod);
@@ -210,7 +210,7 @@ SELECT
     d.rama
 FROM sub_productivo.act_ec_valores AS a
 JOIN totales AS b USING(cve_mun, valor_id, serie)
-JOIN general.municipios AS c ON a.cve_mun = c.clave_municipio
+JOIN general.municipios AS c USING(cve_mun)
 JOIN general.regiones AS f USING(id_region)
 JOIN sub_productivo.ct_ramas AS d USING(act_ec_cod)
 JOIN sub_productivo.ct_act_ec_valores AS e USING(valor_id);
@@ -234,7 +234,7 @@ FROM (
     FROM sub_productivo.act_ec_valores
     GROUP BY cve_mun, serie, valor_id) AS a
 JOIN totales AS b USING(valor_id, serie)
-JOIN general.municipios AS c ON a.cve_mun = c.clave_municipio
+JOIN general.municipios AS c USING(cve_mun)
 JOIN general.regiones AS e USING(id_region)
 JOIN sub_productivo.ct_act_ec_valores AS d USING(valor_id);
 
@@ -259,7 +259,7 @@ FROM (
     JOIN sub_productivo.ct_ramas AS sub USING(act_ec_cod)
     GROUP BY orig.cve_mun, orig.valor_id, orig.serie, sub.act_ec_sub_cod) AS a
 JOIN totales AS b USING(cve_mun, valor_id, serie)
-JOIN general.municipios AS c ON a.cve_mun = c.clave_municipio
+JOIN general.municipios AS c USING(cve_mun)
 JOIN general.regiones AS f USING(id_region)
 JOIN sub_productivo.ct_subsectores AS d USING(act_ec_sub_cod)
 JOIN sub_productivo.ct_act_ec_valores AS e USING(valor_id);
@@ -281,7 +281,7 @@ SELECT
     d.rama
 FROM sub_productivo.act_ec_cantidades AS a
 JOIN totales AS b USING(cve_mun, cantidad_id, serie)
-JOIN general.municipios AS c ON a.cve_mun = c.clave_municipio
+JOIN general.municipios AS c USING(cve_mun)
 JOIN general.regiones AS f USING(id_region)
 JOIN sub_productivo.ct_ramas AS d USING(act_ec_cod)
 JOIN sub_productivo.ct_act_ec_cantidades AS e USING(cantidad_id);
@@ -305,7 +305,7 @@ FROM (
     FROM sub_productivo.act_ec_cantidades
     GROUP BY cve_mun, serie, cantidad_id) AS a
 JOIN totales AS b USING(cantidad_id, serie)
-JOIN general.municipios AS c ON a.cve_mun = c.clave_municipio
+JOIN general.municipios AS c USING(cve_mun)
 JOIN general.regiones AS e USING(id_region)
 JOIN sub_productivo.ct_act_ec_cantidades AS d USING(cantidad_id);
 
@@ -330,7 +330,7 @@ FROM (
     JOIN sub_productivo.ct_ramas AS sub USING(act_ec_cod)
     GROUP BY orig.cve_mun, orig.cantidad_id, orig.serie, sub.act_ec_sub_cod) AS a
 JOIN totales AS b USING(cve_mun, cantidad_id, serie)
-JOIN general.municipios AS c ON a.cve_mun = c.clave_municipio
+JOIN general.municipios AS c USING(cve_mun)
 JOIN general.regiones AS f USING(id_region)
 JOIN sub_productivo.ct_subsectores AS d USING(act_ec_sub_cod)
 JOIN sub_productivo.ct_act_ec_cantidades AS e USING(cantidad_id);

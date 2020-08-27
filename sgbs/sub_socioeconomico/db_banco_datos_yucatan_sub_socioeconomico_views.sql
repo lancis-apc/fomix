@@ -17,7 +17,7 @@ SELECT
     d.descripcion,
     e.descripcion AS ageb
 FROM sub_socioeconomico.ageb_caract_pob AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_ageb_caract_pob AS d USING(acp_id)
 JOIN sub_socioeconomico.ct_ageb_caract_nom_loc AS e USING (acnl_id);
@@ -35,7 +35,7 @@ SELECT
     d.descripcion,
     e.descripcion AS ageb
 FROM sub_socioeconomico.ageb_caract_viv AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_ageb_caract_viv AS d USING(acv_id)
 JOIN sub_socioeconomico.ct_ageb_caract_nom_loc AS e USING (acnl_id);
@@ -53,7 +53,7 @@ SELECT
     d.descripcion,
     e.descripcion AS ageb
 FROM sub_socioeconomico.ageb_caract_prom_hij AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_ageb_caract_prom_hij AS d USING(acph_id)
 JOIN sub_socioeconomico.ct_ageb_caract_nom_loc AS e USING (acnl_id);
@@ -71,7 +71,7 @@ SELECT
     d.descripcion,
     e.descripcion AS ageb
 FROM sub_socioeconomico.ageb_caract_prom_esc AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_ageb_caract_prom_esc AS d USING(acpe_id)
 JOIN sub_socioeconomico.ct_ageb_caract_nom_loc AS e USING (acnl_id);
@@ -88,7 +88,7 @@ SELECT
     e.categoria,
     f.descripcion
 FROM sub_socioeconomico.ageb_diag_pobr AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_ageb_diag_pobr_r AS d USING(adpr_id)
 JOIN sub_socioeconomico.ct_ageb_diag_pobr_c AS e USING(adpc_id)
@@ -108,7 +108,7 @@ SELECT
     d.categoria AS grado,
     e.descripcion
 FROM sub_socioeconomico.ageb_diag_rezago AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_ageb_diag_pobr_c AS d USING(adpc_id)
 JOIN sub_socioeconomico.ct_ageb_diag_rezago AS e USING(adr_id);
@@ -123,7 +123,7 @@ SELECT
     a.grado,
     d.descripcion
 FROM sub_socioeconomico.idp_grados AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_idp_grados AS d USING(gidp_id);
 
@@ -138,7 +138,7 @@ SELECT
     d.categoria,
     e.descripcion
 FROM sub_socioeconomico.idp AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_idp_categorias AS d USING(cidp_id)
 JOIN sub_socioeconomico.ct_idp AS e USING(idp_id);
@@ -153,7 +153,7 @@ SELECT
     a.rtp,
     d.descripcion
 FROM sub_socioeconomico.idp_rtp AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_idp_rtp AS d USING(rtp_id);
 
@@ -171,7 +171,7 @@ SELECT
     c.region,
     a.habitantes
 FROM hab AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 ORDER BY a.serie, a.cve_mun;
 
@@ -185,7 +185,7 @@ SELECT
     a.habitantes,
     d.descripcion
 FROM sub_socioeconomico.pob_ind AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_pob_ind AS d USING(pi_id);
 
@@ -199,7 +199,7 @@ SELECT
     a.viviendas,
     d.descripcion
 FROM sub_socioeconomico.viv_ind AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_viv_ind AS d USING(vi_id);
 
@@ -216,7 +216,7 @@ SELECT
     f.descripcion AS sub_tipo_municipio,
     g.descripcion AS tipo_municipio
 FROM sub_socioeconomico.prop_pob_ind AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN (
     SELECT cve_mun, serie, habitantes
@@ -236,7 +236,7 @@ SELECT
     a.porcentaje,
     d.descripcion
 FROM sub_socioeconomico.pob_afrodesc AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_pob_afrodesc AS d USING(pa_id);
 
@@ -250,7 +250,7 @@ SELECT
     a.porcentaje,
     d.descripcion
 FROM sub_socioeconomico.mig_prop AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_mig_prop AS d USING(mp_id);
 
@@ -265,7 +265,7 @@ SELECT
     d.descripcion AS categoria,
     'Intensidad migratoria' AS descripcion
 FROM sub_socioeconomico.mig_int AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_mig_grad AS d USING(mg_id);
 
@@ -278,7 +278,7 @@ SELECT
     a.serie,
     d.descripcion
 FROM sub_socioeconomico.mig_mun_cat AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_mig_mun_cat AS d USING(cm_id);
 
@@ -293,7 +293,7 @@ SELECT
     d.descripcion AS grupo,
     'Población de 5 años y  más cuyo lugar de residencia en marzo de 2010 era la misma entidad (%)' AS descripcion
 FROM sub_socioeconomico.mig_mun AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_gpo_mun AS d USING(gm_id);
 
@@ -343,7 +343,7 @@ SELECT
     g.gpo_quin,
     h.descripcion
 FROM pgeq AS d
-JOIN general.municipios AS e ON d.cve_mun = e.clave_municipio
+JOIN general.municipios AS e USING(cve_mun)
 JOIN general.regiones AS f USING(id_region)
 JOIN (
     SELECT * FROM sub_socioeconomico.ct_gpo_edad_quinq
@@ -363,7 +363,7 @@ SELECT
     a.habitantes,
     d.descripcion
 FROM sub_socioeconomico.socioec_caract_hab AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_socioec_caract_hab AS d USING(sch_id);
 
@@ -378,7 +378,7 @@ SELECT
     a.porcentaje,
     d.descripcion
 FROM sub_socioeconomico.socioec_caract_prc AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_socioec_caract_prc AS d USING(scp_id);
 
@@ -393,7 +393,7 @@ SELECT
     a.habitantes,
     d.descripcion
 FROM sub_socioeconomico.socioec_caract_h AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_socioec_caract_h AS d USING(sch_id);
 
@@ -408,7 +408,7 @@ SELECT
     a.indice,
     d.descripcion
 FROM sub_socioeconomico.socioec_caract_iev AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_socioec_caract_iev AS d USING(iev_id);
 
@@ -423,7 +423,7 @@ SELECT
     a.promedio,
     d.descripcion
 FROM sub_socioeconomico.socioec_caract_gpe AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_socioec_caract_gpe AS d USING(gpe_id);
 
@@ -438,7 +438,7 @@ SELECT
     a.viviendas,
     d.descripcion
 FROM sub_socioeconomico.socioec_caract_viv AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_socioec_caract_viv AS d USING(viv_id);
 
@@ -454,7 +454,7 @@ SELECT
     d.grado,
     e.descripcion
 FROM sub_socioeconomico.socioec_diagn_rz AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_grados AS d USING(ctg_id)
 JOIN sub_socioeconomico.ct_socioec_diagn_rz AS e USING(sdrz_id);
@@ -471,7 +471,7 @@ SELECT
     a.habitantes,
     d.descripcion
 FROM sub_socioeconomico.socioec_diagn_pb AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_socioec_diagn_pb AS d USING(pb_id);
 
@@ -486,6 +486,6 @@ SELECT
     a.porcentaje,
     d.descripcion
 FROM sub_socioeconomico.socioec_diagn_prc AS a
-JOIN general.municipios AS b ON a.cve_mun = b.clave_municipio
+JOIN general.municipios AS b USING(cve_mun)
 LEFT JOIN general.regiones AS c USING(id_region)
 JOIN sub_socioeconomico.ct_socioec_diagn_prc AS d USING(sdp_id);

@@ -91,13 +91,13 @@ CREATE TABLE IF NOT EXISTS sub_productivo.ct_act_ec_cantidades(
 
 CREATE TABLE IF NOT EXISTS sub_productivo.ramas_municipios(
     serie SMALLINT NOT NULL,
-    cve_mun CHAR(3) NOT NULL REFERENCES general.municipios(clave_municipio),
+    cve_mun CHAR(3) NOT NULL REFERENCES general.municipios(cve_mun),
     act_ec_cod CHAR(4) NOT NULL REFERENCES sub_productivo.ct_ramas(act_ec_cod)
 );
 
 -- Tabla que guarda información del archivo bd_coef_esp.csv
 CREATE TABLE IF NOT EXISTS sub_productivo.coef_esp(
-    cve_mun CHAR(3) NOT NULL REFERENCES general.municipios(clave_municipio),
+    cve_mun CHAR(3) NOT NULL REFERENCES general.municipios(cve_mun),
     serie SMALLINT NOT NULL,
     act_ec_cod CHAR(4) NOT NULL REFERENCES sub_productivo.ct_ramas(act_ec_cod),
     coeficiente NUMERIC(10,6) NOT NULL,
@@ -114,14 +114,14 @@ CREATE TABLE IF NOT EXISTS sub_productivo.coef_tec(
 -- Tabla que guarda información del bd_conc_indust.csv
 CREATE TABLE IF NOT EXISTS sub_productivo.conc_indust(
     serie SMALLINT NOT NULL,
-    cve_mun CHAR(3) NOT NULL REFERENCES general.municipios(clave_municipio),
+    cve_mun CHAR(3) NOT NULL REFERENCES general.municipios(cve_mun),
     cantidad NUMERIC(9,6) NOT NULL,
     ci_id SMALLINT REFERENCES sub_productivo.ct_conc_indust(ci_id)
 );
 
 -- Tabla que guarda información del archivo bd_denue_yuc_rama_wide.csv
 CREATE TABLE IF NOT EXISTS sub_productivo.denue(
-    cve_mun  CHAR(3) NOT NULL REFERENCES general.municipios(clave_municipio),
+    cve_mun  CHAR(3) NOT NULL REFERENCES general.municipios(cve_mun),
     serie SMALLINT NOT NULL,
     act_ec_cod CHAR(4) NOT NULL REFERENCES sub_productivo.ct_ramas(act_ec_cod),
     ue INTEGER NOT NULL,
@@ -130,7 +130,7 @@ CREATE TABLE IF NOT EXISTS sub_productivo.denue(
 
 -- Tabla que guarda información del archivo bd_mat_tc_muni.csv
 CREATE TABLE IF NOT EXISTS sub_productivo.mat_tc_muni(
-    cve_mun  CHAR(3) NOT NULL REFERENCES general.municipios(clave_municipio),
+    cve_mun  CHAR(3) NOT NULL REFERENCES general.municipios(cve_mun),
     serie SMALLINT NOT NULL,
     tasa NUMERIC(10,6) NOT NULL,
     mt_id SMALLINT NOT NULL REFERENCES sub_productivo.ct_mat_tc(mt_id)
@@ -138,7 +138,7 @@ CREATE TABLE IF NOT EXISTS sub_productivo.mat_tc_muni(
 
 -- Tabla que guarda información del archivo bd_mat_tc_muni_rama.csv
 CREATE TABLE IF NOT EXISTS sub_productivo.mat_tc_muni_rama(
-    cve_mun  CHAR(3) NOT NULL REFERENCES general.municipios(clave_municipio),
+    cve_mun  CHAR(3) NOT NULL REFERENCES general.municipios(cve_mun),
     serie SMALLINT NOT NULL,
     act_ec_cod CHAR(4) NOT NULL REFERENCES sub_productivo.ct_ramas(act_ec_cod),
     tasa NUMERIC(10,6) NOT NULL,
@@ -147,7 +147,7 @@ CREATE TABLE IF NOT EXISTS sub_productivo.mat_tc_muni_rama(
 
 -- Tabla que guarda información del archivo bd_mat_tc_muni_subsector.csv
 CREATE TABLE IF NOT EXISTS sub_productivo.mat_tc_muni_subsector(
-    cve_mun  CHAR(3) NOT NULL REFERENCES general.municipios(clave_municipio),
+    cve_mun  CHAR(3) NOT NULL REFERENCES general.municipios(cve_mun),
     serie SMALLINT NOT NULL,
     act_ec_sub_cod CHAR(2) NOT NULL REFERENCES sub_productivo.ct_subsectores(act_ec_sub_cod),
     tasa NUMERIC(10,6) NOT NULL,
@@ -179,7 +179,7 @@ CREATE TABLE IF NOT EXISTS sub_productivo.pib(
 
 -- Tablas que guardan información de las dos primeras columnas del archivo bd_yuc_porcentajes_act_ec_muni.csv
 CREATE TABLE IF NOT EXISTS sub_productivo.act_ec_valores(
-    cve_mun CHAR(3) NOT NULL REFERENCES general.municipios(clave_municipio),
+    cve_mun CHAR(3) NOT NULL REFERENCES general.municipios(cve_mun),
     serie SMALLINT NOT NULL,
     act_ec_cod CHAR(4) NOT NULL REFERENCES sub_productivo.ct_ramas(act_ec_cod),
     millones_pesos NUMERIC(8,3) NOT NULL,
@@ -188,7 +188,7 @@ CREATE TABLE IF NOT EXISTS sub_productivo.act_ec_valores(
 
 -- Tablas que guardan información de las dos últimas columnas del archivo bd_yuc_porcentajes_act_ec_muni.csv
 CREATE TABLE IF NOT EXISTS sub_productivo.act_ec_cantidades(
-    cve_mun CHAR(3) NOT NULL REFERENCES general.municipios(clave_municipio),
+    cve_mun CHAR(3) NOT NULL REFERENCES general.municipios(cve_mun),
     serie SMALLINT NOT NULL,
     act_ec_cod CHAR(4) NOT NULL REFERENCES sub_productivo.ct_ramas(act_ec_cod),
     cantidad INTEGER NOT NULL,
