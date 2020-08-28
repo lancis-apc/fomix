@@ -1,20 +1,20 @@
---Borrando todos los datos de municipios para correr el archivo sql
-DELETE FROM sub_natural.coberturas_c3;
+/*
+    *****************************************************
+    Esta sección es la información es para el sub_natural
+    *****************************************************
+*/
+
 --Se ingresa la información de la tabla coberturas_c3
 INSERT INTO sub_natural.coberturas_c3(cob_c3_id, cobertura_c3) VALUES 
     (1,'Natural'),
     (2,'No natural');
 
---Borrando todos los datos de municipios para correr el archivo sql
-DELETE FROM sub_natural.coberturas_c4;
 --Se ingresa la información de la tabla coberturas_c4
 INSERT INTO sub_natural.coberturas_c4(cob_c4_id, cobertura_c4, cob_c3_id) VALUES 
     (1,'Asentamiento humano', 2),
     (2,'Agropecuario', 2),
     (3,'Natural',1);
 
---Borrando todos los datos de municipios para correr el archivo sql
-DELETE FROM sub_natural.coberturas_c2;
 --Se ingresa la información de la tabla coberturas_c2
 INSERT INTO sub_natural.coberturas_c2(cob_c2_id, cobertura_c2, cob_c4_id) VALUES 
     (1,'Agricultura de riego', 2),
@@ -35,8 +35,6 @@ INSERT INTO sub_natural.coberturas_c2(cob_c2_id, cobertura_c2, cob_c4_id) VALUES
     (16,'Sábana', 3);
 
 --Se realiza la tercer forma normal para la tabla auxiliar.bd_usv_c2_mun y el resultado se guarda en auxiliar.usv_municipios_coberturas
---Borrando todos los datos de municipios para correr el archivo sql
-DELETE FROM sub_natural.usv_municipios_coberturas;
 --Se ingresa la información de la tabla auxiliar.bd_usv_c2_mun en auxiliar.usv_municipios_coberturas
 INSERT INTO sub_natural.usv_municipios_coberturas(cve_mun, cve_geo, serie,cobertura, cob_c2_id)
 SELECT cve_mun, cve_geo, serie, cob_1, 1
@@ -80,8 +78,6 @@ UPDATE sub_natural.usv_municipios_coberturas SET serie = 2011 WHERE serie = 5;
 UPDATE sub_natural.usv_municipios_coberturas SET serie = 2014 WHERE serie = 6;
 
 --Se realiza la tercer forma normal para la tabla auxiliar.bd_anp_c2_mun y el resultado se guarda en auxiliar.anp_municipios_coberturas
---Borrando todos los datos de municipios para correr el archivo sql
-DELETE FROM sub_natural.anp_municipios_coberturas;
 --Se ingresa la información de la tabla auxiliar.bd_usv_c2_mun en auxiliar.usv_municipios_coberturas
 INSERT INTO sub_natural.anp_municipios_coberturas(cve_mun, cve_geo, serie,cobertura, cob_c2_id)
 SELECT cve_mun, cve_geo, serie, cob_1, 1
@@ -125,8 +121,6 @@ UPDATE sub_natural.anp_municipios_coberturas SET serie = 2011 WHERE serie = 5;
 UPDATE sub_natural.anp_municipios_coberturas SET serie = 2014 WHERE serie = 6;
 
 --Se realiza la tercer forma normal para la tabla auxiliar.bd_deg_c2_mun y el resultado se guarda en auxiliar.deg_municipios_coberturas
---Borrando todos los datos de municipios para correr el archivo sql
-DELETE FROM sub_natural.deg_municipios_coberturas;
 --Se ingresa la información de la tabla auxiliar.bd_usv_c2_mun en auxiliar.usv_municipios_coberturas
 INSERT INTO sub_natural.deg_municipios_coberturas(cve_mun, cve_geo, serie,cobertura, cob_c2_id)
 SELECT cve_mun, cve_geo, serie, cob_1, 1

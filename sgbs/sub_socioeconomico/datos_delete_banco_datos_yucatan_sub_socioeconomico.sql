@@ -86,9 +86,6 @@ TRUNCATE TABLE sub_socioeconomico.ct_mig_prop RESTART IDENTITY CASCADE;
 DELETE FROM sub_socioeconomico.ct_mig_grad;
 
 --Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_mig_grad;
-
---Borrando información para correr las instrucciones sql
 DELETE FROM sub_socioeconomico.ct_mig_mun_cat;
 TRUNCATE TABLE sub_socioeconomico.ct_mig_mun_cat RESTART IDENTITY CASCADE;
 

@@ -4,18 +4,12 @@
     ****************************************************************
 */
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_grados;
-TRUNCATE TABLE sub_socioeconomico.ct_grados RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_grados (grado)
 SELECT distinct TRIM(c_pobr) AS cat
 FROM auxiliar.bd_ageb_diag_pobr
 ORDER BY cat DESC;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_ageb_caract_pob;
-TRUNCATE TABLE sub_socioeconomico.ct_ageb_caract_pob RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_ageb_caract_pob (descripcion)
 SELECT descripcion
@@ -23,9 +17,6 @@ FROM auxiliar.dd_ageb_caract
 WHERE unidad LIKE 'Número de habitantes%'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_ageb_caract_viv;
-TRUNCATE TABLE sub_socioeconomico.ct_ageb_caract_viv RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_ageb_caract_viv (descripcion)
 SELECT descripcion
@@ -33,44 +24,29 @@ FROM auxiliar.dd_ageb_caract
 WHERE unidad LIKE 'Número de viivendas%'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_ageb_caract_prom_hij;
-TRUNCATE TABLE sub_socioeconomico.ct_ageb_caract_prom_hij RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_ageb_caract_prom_hij (descripcion)
 SELECT descripcion
 FROM auxiliar.dd_ageb_caract
 WHERE nombre = 'pro_hv_10';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_ageb_caract_prom_esc;
-TRUNCATE TABLE sub_socioeconomico.ct_ageb_caract_prom_esc RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_ageb_caract_prom_esc (descripcion)
 SELECT descripcion
 FROM auxiliar.dd_ageb_caract
 WHERE nombre = 'a_g_esc';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_ageb_caract_nom_loc;
-TRUNCATE TABLE sub_socioeconomico.ct_ageb_caract_nom_loc RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_ageb_caract_nom_loc (descripcion)
 SELECT distinct nom_loc
 FROM auxiliar.bd_ageb_caract;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_ageb_diag_pobr_c;
-TRUNCATE TABLE sub_socioeconomico.ct_ageb_diag_pobr_c RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_ageb_diag_pobr_c (categoria)
 SELECT distinct TRIM(c_pobr) AS cat
 FROM auxiliar.bd_ageb_diag_pobr
 ORDER BY cat DESC;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_ageb_diag_pobr_r;
-TRUNCATE TABLE sub_socioeconomico.ct_ageb_diag_pobr_r RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_ageb_diag_pobr_r (rango)
 SELECT distinct TRIM(r_pobr) AS ran
@@ -79,80 +55,53 @@ UNION SELECT distinct TRIM(r_pobr_e) AS ran
 FROM auxiliar.bd_ageb_diag_pobr
 ORDER BY ran;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_ageb_diag_pobr;
-TRUNCATE TABLE sub_socioeconomico.ct_ageb_diag_pobr RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_ageb_diag_pobr (adp_id, descripcion)
 VALUES
     (1, 'Porcentaje de población que vive en condición de pobreza.'),
     (2, 'Porcentaje de población que vive en condición de pobreza extrema.');
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_ageb_diag_rezago;
-TRUNCATE TABLE sub_socioeconomico.ct_ageb_diag_rezago RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_ageb_diag_rezago (adr_id, descripcion)
 SELECT 1 AS adr_id, descripcion||'.'
 FROM auxiliar.dd_ageb_diag_rezago
 WHERE nombre = 'ag_rezs';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_idp_grados;
-TRUNCATE TABLE sub_socioeconomico.ct_idp_grados RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_idp_grados (descripcion)
 SELECT descripcion
 FROM auxiliar.dd_idp
 WHERE descripcion LIKE 'Grado%';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_idp;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_idp (idp_id, descripcion) VALUES
 (1, 'Dispersión Poblacional');
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_idp_categorias;
-TRUNCATE TABLE sub_socioeconomico.ct_idp_categorias RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_idp_categorias(categoria)
 SELECT DISTINCT TRIM(idp_cat) AS cat FROM auxiliar.bd_idp ORDER BY cat DESC;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_idp_rtp;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_idp_rtp(rtp_id, descripcion)
 SELECT 1 AS rtp_id, descripcion
 FROM auxiliar.dd_idp WHERE nombre = 'rtp';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_pob_ind;
-TRUNCATE TABLE sub_socioeconomico.ct_pob_ind RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_pob_ind (descripcion)
 SELECT descripcion FROM auxiliar.dd_indigena
 WHERE unidad LIKE '%habitantes'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_viv_ind;
-TRUNCATE TABLE sub_socioeconomico.ct_viv_ind RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_viv_ind (descripcion)
 SELECT TRIM(descripcion) FROM auxiliar.dd_indigena
 WHERE unidad LIKE '%viviendas%'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_prop_pob_ind_tip;
-TRUNCATE TABLE sub_socioeconomico.ct_prop_pob_ind_tip RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_prop_pob_ind_tip (descripcion)
 SELECT DISTINCT TRIM(nom_tipo) AS cat FROM auxiliar.bd_indigena ORDER BY cat DESC;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_prop_pob_ind_sub;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_prop_pob_ind_sub (ppis_id, descripcion, ppit_id)
 SELECT a.id, UPPER(LEFT(a.descripcion,1))||SUBSTR(a.descripcion,2), c.ppit_id
@@ -171,23 +120,16 @@ LEFT JOIN (
 LEFT JOIN sub_socioeconomico.ct_prop_pob_ind_tip AS c ON b.nom_tipo = c.descripcion
 ORDER BY a.id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_prop_pob;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_prop_pob (pp_id, descripcion) VALUES
 (1, 'Población indígena respecto al total municipal (o estatal)');
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_mig_prop;
-TRUNCATE TABLE sub_socioeconomico.ct_mig_prop RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_mig_prop (descripcion)
 SELECT TRIM(descripcion) FROM auxiliar.dd_migracion
 WHERE unidad LIKE 'Porcentaje%'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_mig_grad;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_mig_grad (mg_id, descripcion)
 SELECT DISTINCT
@@ -196,27 +138,12 @@ SELECT DISTINCT
 FROM auxiliar.bd_migracion
 ORDER BY mg_id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_mig_grad;
---Ingresando información
-INSERT INTO sub_socioeconomico.ct_mig_grad (mg_id, descripcion)
-SELECT DISTINCT
-    LEFT(TRIM(gim_2010), 1)::SMALLINT AS mg_id,
-    SUBSTR(TRIM(gim_2010), 3) AS descripcion
-FROM auxiliar.bd_migracion
-ORDER BY mg_id;
-
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_mig_mun_cat;
-TRUNCATE TABLE sub_socioeconomico.ct_mig_mun_cat RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_mig_mun_cat (descripcion)
 SELECT DISTINCT TRIM(catm_10) AS descripcion
 FROM auxiliar.bd_migracion
 ORDER BY descripcion;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_gpo_mun;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_gpo_mun (gm_id, descripcion)
 SELECT id, UPPER(LEFT(descripcion,1))||SUBSTR(descripcion,2)
@@ -230,9 +157,6 @@ FROM(
         WHERE nombre = 'gpo_mun') AS a
     ORDER BY id) AS b;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_pob_afrodesc;
-TRUNCATE TABLE sub_socioeconomico.ct_pob_afrodesc RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_pob_afrodesc (descripcion)
 SELECT descripcion
@@ -240,9 +164,6 @@ FROM auxiliar.dd_pob_afrodesc
 WHERE descripcion LIKE 'Pob%'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_gpo_edad_quinq;
-TRUNCATE TABLE sub_socioeconomico.ct_gpo_edad_quinq RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_gpo_edad_quinq (gpo_quin)
 SELECT DISTINCT gpo_quin
@@ -250,8 +171,6 @@ FROM auxiliar.bd_pob_gpo_edad_quinq
 WHERE gpo_quin != 'Total'
 ORDER BY gpo_quin;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_pob_geq;
 --Ingresando información de Población masculina
 INSERT INTO sub_socioeconomico.ct_pob_geq(pgeq_id, descripcion)
 SELECT 1, TRIM(REPLACE(descripcion,' en 2015','.')) FROM auxiliar.dd_pob_gpo_edad_quinq WHERE nombre = 'pobqm_15';
@@ -259,9 +178,6 @@ SELECT 1, TRIM(REPLACE(descripcion,' en 2015','.')) FROM auxiliar.dd_pob_gpo_eda
 INSERT INTO sub_socioeconomico.ct_pob_geq(pgeq_id, descripcion)
 SELECT 2, REPLACE(descripcion,' en 2015','.') FROM auxiliar.dd_pob_gpo_edad_quinq WHERE nombre = 'pobqf_15';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_socioec_caract_hab;
-TRUNCATE TABLE sub_socioeconomico.ct_socioec_caract_hab RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_socioec_caract_hab (descripcion)
 SELECT descripcion
@@ -269,9 +185,6 @@ FROM auxiliar.dd_socioec_caract
 WHERE unidad LIKE 'Número de habitantes%' AND id >= 19
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_socioec_caract_prc;
-TRUNCATE TABLE sub_socioeconomico.ct_socioec_caract_prc RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_socioec_caract_prc (descripcion)
 SELECT descripcion
@@ -279,9 +192,6 @@ FROM auxiliar.dd_socioec_caract
 WHERE unidad LIKE 'Porcentaje'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_socioec_caract_h;
-TRUNCATE TABLE sub_socioeconomico.ct_socioec_caract_h RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_socioec_caract_h (descripcion)
 SELECT descripcion
@@ -289,8 +199,6 @@ FROM auxiliar.dd_socioec_caract
 WHERE descripcion LIKE '%hijos%' AND descripcion NOT LIKE 'Porcentaje%'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_socioec_caract_iev;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_socioec_caract_iev (iev_id, descripcion)
 SELECT 1 AS iev_id, descripcion
@@ -298,8 +206,6 @@ FROM auxiliar.dd_socioec_caract
 WHERE descripcion LIKE 'Índice%'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_socioec_caract_tmacp;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_socioec_caract_tmacp (tmacp_id, descripcion)
 SELECT 1 AS tmacp_id, unidad||'.'
@@ -307,8 +213,6 @@ FROM auxiliar.dd_socioec_caract
 WHERE unidad LIKE 'Tasa%'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_socioec_caract_gpe;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_socioec_caract_gpe (gpe_id, descripcion)
 SELECT 1 AS gpe_id, descripcion||'.'
@@ -316,8 +220,6 @@ FROM auxiliar.dd_socioec_caract
 WHERE descripcion LIKE 'Grado%'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_socioec_caract_viv;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_socioec_caract_viv (viv_id, descripcion)
 SELECT 1 AS viv_id, descripcion||'.'
@@ -325,17 +227,12 @@ FROM auxiliar.dd_socioec_caract
 WHERE descripcion LIKE '%Número de viviendas%'
 ORDER BY id;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_socioec_diagn_rz;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_socioec_diagn_rz (sdrz_id, descripcion)
 VALUES
     (1, 'Rezago social'),
     (2, 'Marginación');
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_socioec_diagn_pb;
-TRUNCATE TABLE sub_socioeconomico.ct_socioec_diagn_pb RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_socioec_diagn_pb (descripcion)
 SELECT DISTINCT REPLACE(SUBSTRING(descripcion FROM '.*,'), ',','.') AS descripcion
@@ -343,9 +240,6 @@ FROM auxiliar.dd_socioec_diagn
 WHERE descripcion LIKE '%pobreza%' OR descripcion LIKE '%vulnerables%'
 ORDER BY descripcion DESC;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ct_socioec_diagn_prc;
-TRUNCATE TABLE sub_socioeconomico.ct_socioec_diagn_prc RESTART IDENTITY CASCADE;
 --Ingresando información
 INSERT INTO sub_socioeconomico.ct_socioec_diagn_prc (descripcion)
 SELECT DISTINCT TRIM(REPLACE(SUBSTRING(descripcion FROM '.*en'), ' en', '.')) AS descripcion
@@ -363,8 +257,6 @@ LIMIT 3;
     *************************************************************
 */
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ageb_caract_pob;
 --Ingresando información de los campos
 INSERT INTO sub_socioeconomico.ageb_caract_pob (cve_mun, cve_ageb, fol_ageb, acnl_id, serie, habitantes, acp_id)
 SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.pobt_10, 1 AS acp_id
@@ -456,8 +348,6 @@ FROM auxiliar.bd_ageb_caract AS a
 JOIN sub_socioeconomico.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
 JOIN auxiliar.dd_ageb_caract AS c ON c.nombre = 'a_pro_oc';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ageb_caract_viv;
 --Ingresando información de los campos
 INSERT INTO sub_socioeconomico.ageb_caract_viv (cve_mun, cve_ageb, fol_ageb, acnl_id, serie, viviendas, acv_id)
 SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.avivtot, 1 AS acv_id
@@ -533,8 +423,6 @@ FROM auxiliar.bd_ageb_caract AS a
 JOIN sub_socioeconomico.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
 JOIN auxiliar.dd_ageb_caract AS c ON c.nombre = 'av_inter';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ageb_caract_prom_hij;
 --Ingresando información de los campos
 INSERT INTO sub_socioeconomico.ageb_caract_prom_hij (cve_mun, cve_ageb, fol_ageb, acnl_id, serie, promedio, acph_id)
 SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.pro_hv_10, 1 AS acph_id
@@ -542,8 +430,6 @@ FROM auxiliar.bd_ageb_caract AS a
 JOIN sub_socioeconomico.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
 JOIN auxiliar.dd_ageb_caract AS c ON c.nombre = 'pro_hv_10';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ageb_caract_prom_esc;
 --Ingresando información de los campos
 INSERT INTO sub_socioeconomico.ageb_caract_prom_esc (cve_mun, cve_ageb, fol_ageb, acnl_id, serie, promedio, acpe_id)
 SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.acnl_id, c.año, a.a_g_esc, 1 AS acpe_id
@@ -551,8 +437,6 @@ FROM auxiliar.bd_ageb_caract AS a
 JOIN sub_socioeconomico.ct_ageb_caract_nom_loc AS b ON a.nom_loc = b.descripcion
 JOIN auxiliar.dd_ageb_caract AS c ON c.nombre = 'a_g_esc';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ageb_diag_pobr;
 --Ingresando información de los campos
 INSERT INTO sub_socioeconomico.ageb_diag_pobr (cve_mun, fol_ageb, serie, adpr_id, adpc_id, adp_id)
 SELECT a.cve_mun, a.fol_ageb, b.año, c.adpr_id, d.adpc_id, 1 AS adp_id
@@ -566,8 +450,6 @@ JOIN auxiliar.dd_ageb_diag_pobr AS b ON b.nombre = 'r_pobr_e'
 JOIN sub_socioeconomico.ct_ageb_diag_pobr_r AS c ON a.r_pobr_e = c.rango
 JOIN sub_socioeconomico.ct_ageb_diag_pobr_c AS d ON a.c_pobr_e = d.categoria;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.ageb_diag_rezago;
 --Ingresando información de los campos
 INSERT INTO sub_socioeconomico.ageb_diag_rezago (cve_mun, cve_ageb, fol_ageb, serie, habitantes, viviendas, adpc_id, adr_id)
 SELECT a.cve_mun, a.cve_ageb, a.fol_ageb, b.año, a.pobt_10, a.aviv_p_h, c.adpc_id, 1 AS adr_id
@@ -575,8 +457,6 @@ FROM auxiliar.bd_ageb_diag_rezago AS a
 JOIN auxiliar.dd_ageb_diag_rezago AS b ON b.nombre = 'pobt_10'
 JOIN sub_socioeconomico.ct_ageb_diag_pobr_c AS c ON TRIM(a.ag_rezs) = c.categoria;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.idp_grados;
 --Ingresando información de los campos
 INSERT INTO sub_socioeconomico.idp_grados (cve_mun, serie, grado, gidp_id)
 SELECT a.cve_mun, b.año, a.vgr, 1 AS gidp_id
@@ -589,8 +469,6 @@ UNION SELECT a.cve_mun, b.año, a.vgf, 3 AS gidp_id
 FROM auxiliar.bd_idp AS a
 JOIN auxiliar.dd_idp AS b ON b.nombre = 'vgf';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.idp;
 --Ingresando información de los campos
 INSERT INTO sub_socioeconomico.idp (cve_mun, serie, indice, cidp_id, idp_id)
 SELECT a.cve_mun, b.año, a.idp, c.cidp_id, 1 AS idp_id
@@ -598,24 +476,18 @@ FROM auxiliar.bd_idp AS a
 JOIN auxiliar.dd_idp AS b ON b.nombre = 'idp'
 JOIN sub_socioeconomico.ct_idp_categorias AS c ON a.idp_cat = c.categoria;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.idp_rtp;
 --Ingresando información de los campos
 INSERT INTO sub_socioeconomico.idp_rtp (cve_mun, serie, rtp, rtp_id)
 SELECT a.cve_mun, b.año, a.rtp, 1 AS rtp_id
 FROM auxiliar.bd_idp AS a
 JOIN auxiliar.dd_idp AS b ON b.nombre = 'rtp';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.habitantes;
 --Ingresando información de los campos
 INSERT INTO sub_socioeconomico.habitantes (cve_mun, serie, habitantes)
 SELECT a.cve_mun, b.año, a.pobtot
 FROM auxiliar.bd_idp AS a
 JOIN auxiliar.dd_idp AS b ON b.nombre = 'pobtot';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.pob_ind;
 --Ingresando información
 INSERT INTO sub_socioeconomico.pob_ind (cve_geo, cve_mun, serie, habitantes, pi_id)
 SELECT a.cve_geo, a.cve_mun, b.año, a.pob_ind_t, 1 AS pi_id
@@ -673,8 +545,6 @@ UNION SELECT a.cve_geo, a.cve_mun, b.año, a.ip_m2sm, 18 AS pi_id
 FROM auxiliar.bd_indigena AS a
 JOIN auxiliar.dd_indigena AS b ON b.nombre = 'ip_m2sm';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.viv_ind;
 --Ingresando información
 INSERT INTO sub_socioeconomico.viv_ind (cve_geo, cve_mun, serie, viviendas, vi_id)
 SELECT a.cve_geo, a.cve_mun, b.año, a.ivivph, 1 AS pi_id
@@ -705,16 +575,12 @@ UNION SELECT a.cve_geo, a.cve_mun, b.año, a.iv_leña, 9 AS pi_id
 FROM auxiliar.bd_indigena AS a
 JOIN auxiliar.dd_indigena AS b ON b.nombre = 'iv_leña';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.prop_pob_ind;
 --Ingresando información
 INSERT INTO sub_socioeconomico.prop_pob_ind (cve_geo, cve_mun, serie, porcentaje, ppis_id, pp_id)
 SELECT a.cve_geo, a.cve_mun, b.año, a.ipob_rel, a.subtipo, 1 AS pp_id
 FROM auxiliar.bd_indigena AS a
 JOIN auxiliar.dd_indigena AS b ON b.nombre = 'ipob_rel';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.mig_prop;
 --Ingresando información
 INSERT INTO sub_socioeconomico.mig_prop (cve_geo, cve_mun, serie, porcentaje, mp_id)
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob_ment, 1 AS mp_id
@@ -733,16 +599,12 @@ UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob_oten, 5 AS mp
 FROM auxiliar.bd_migracion AS a
 JOIN auxiliar.dd_migracion AS b ON b.nombre = 'pob_oten';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.mig_int;
 --Ingresando información
 INSERT INTO sub_socioeconomico.mig_int (cve_geo, cve_mun, serie, indice, mg_id)
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.iim_a100, LEFT(gim_2010,1)::SMALLINT
 FROM auxiliar.bd_migracion AS a
 JOIN auxiliar.dd_migracion AS b ON b.nombre = 'iim_a100';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.mig_mun_cat;
 --Ingresando información
 INSERT INTO sub_socioeconomico.mig_mun_cat (cve_geo, cve_mun, serie, cm_id)
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), c.cm_id
@@ -750,16 +612,12 @@ FROM auxiliar.bd_migracion AS a
 JOIN auxiliar.dd_migracion AS b ON b.nombre = 'catm_10'
 JOIN sub_socioeconomico.ct_mig_mun_cat AS c ON a.catm_10 = c.descripcion;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.mig_mun;
 --Ingresando información
 INSERT INTO sub_socioeconomico.mig_mun (cve_geo, cve_mun, serie, habitantes, gm_id)
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob5_mas, gpo_mun::SMALLINT
 FROM auxiliar.bd_migracion AS a
 JOIN auxiliar.dd_migracion AS b ON b.nombre = 'pob5_mas';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.pob_afrodesc;
 --Ingresando información de los campos
 INSERT INTO sub_socioeconomico.pob_afrodesc (cve_mun, serie, porcentaje, pa_id)
 SELECT a.cve_mun, CAST(c.año AS SMALLINT), a.afr_si, 1 AS pa_id
@@ -778,8 +636,6 @@ UNION SELECT a.cve_mun, CAST(c.año AS SMALLINT), a.afr_ne, 5 AS pa_id
 FROM auxiliar.bd_pob_afrodesc AS a
 JOIN auxiliar.dd_pob_afrodesc AS c ON c.nombre = 'afr_ne';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.pob_gpo_edad_quinq;
 --Ingresando información
 INSERT INTO sub_socioeconomico.pob_gpo_edad_quinq (cve_mun, serie, geq_id, cantidad, pgeq_id)
 WITH wo_total AS (
@@ -795,8 +651,6 @@ FROM wo_total AS d
 JOIN sub_socioeconomico.ct_gpo_edad_quinq AS e USING (gpo_quin)
 JOIN auxiliar.dd_pob_gpo_edad_quinq as f ON nombre = 'pobqf_15';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.socioec_caract_hab;
 --Ingresando información
 INSERT INTO sub_socioeconomico.socioec_caract_hab (cve_geo, cve_mun, serie, habitantes, sch_id)
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pob12_mas, 1 AS sch_id
@@ -812,8 +666,6 @@ UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.ocu_vpart, 4 AS s
 FROM auxiliar.bd_socioec_caract AS a
 JOIN auxiliar.dd_socioec_caract AS b ON b.nombre = 'ocu_vpart';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.socioec_caract_prc;
 --Ingresando información
 INSERT INTO sub_socioeconomico.socioec_caract_prc (cve_geo, cve_mun, serie, porcentaje, scp_id)
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_hif_10, 1 AS scp_id
@@ -928,8 +780,6 @@ UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.vi_res_qu, 37 AS 
 FROM auxiliar.bd_socioec_caract AS a
 JOIN auxiliar.dd_socioec_caract AS b ON b.nombre = 'vi_res_qu';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.socioec_caract_h;
 --Ingresando información
 INSERT INTO sub_socioeconomico.socioec_caract_h (cve_geo, cve_mun, serie, habitantes, sch_id)
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.pro_hv_10, 1 AS sch_id
@@ -939,40 +789,30 @@ UNION SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.hvi_10, 2 AS sch_
 FROM auxiliar.bd_socioec_caract AS a
 JOIN auxiliar.dd_socioec_caract AS b ON b.nombre = 'hvi_10';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.socioec_caract_iev;
 --Ingresando información
 INSERT INTO sub_socioeconomico.socioec_caract_iev (cve_geo, cve_mun, serie, indice, iev_id)
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.iesp_vid, 1 AS iev_id
 FROM auxiliar.bd_socioec_caract AS a
 JOIN auxiliar.dd_socioec_caract AS b ON b.nombre = 'iesp_vid';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.socioec_caract_tmacp;
 --Ingresando información
 INSERT INTO sub_socioeconomico.socioec_caract_tmacp (cve_geo, cve_mun, periodo, tasa, tmacp_id)
 SELECT a.cve_geo, a.cve_mun, TRIM(REPLACE(b.año, ', ', ' - ')) AS periodo, a.t_crecma, 1 AS tmacp_id
 FROM auxiliar.bd_socioec_caract AS a
 JOIN auxiliar.dd_socioec_caract AS b ON b.nombre = 't_crecma';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.socioec_caract_gpe;
 --Ingresando información
 INSERT INTO sub_socioeconomico.socioec_caract_gpe (cve_geo, cve_mun, serie, promedio, gpe_id)
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.esc_prom, 1 AS gpe_id
 FROM auxiliar.bd_socioec_caract AS a
 JOIN auxiliar.dd_socioec_caract AS b ON b.nombre = 'esc_prom';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.socioec_caract_viv;
 --Ingresando información
 INSERT INTO sub_socioeconomico.socioec_caract_viv (cve_geo, cve_mun, serie, viviendas, viv_id)
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.viv_p_hab, 1 AS viv_id
 FROM auxiliar.bd_socioec_caract AS a
 JOIN auxiliar.dd_socioec_caract AS b ON b.nombre = 'viv_p_hab';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.socioec_diagn_rz;
 --Ingresando información
 INSERT INTO sub_socioeconomico.socioec_diagn_rz (cve_geo, cve_mun, serie, indice, ctg_id, sdrz_id)
 SELECT a.cve_geo, a.cve_mun, b.año, a.irz_s_00, c.ctg_id, 1 AS sdrz_id
@@ -996,8 +836,6 @@ FROM auxiliar.bd_socioec_diagn AS a
 JOIN auxiliar.dd_socioec_diagn AS b ON b.nombre = 'marg_i_15'
 JOIN sub_socioeconomico.ct_grados AS c ON a.marg_g_15 = c.grado;
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.socioec_diagn_pb;
 --Ingresando información
 INSERT INTO sub_socioeconomico.socioec_diagn_pb (cve_geo, cve_mun, serie, porcentaje, habitantes, pb_id)
 SELECT a.cve_geo, a.cve_mun, b.año, a.p_vu_10, CAST(a.h_vu_10 AS INTEGER), 1 AS pb_id
@@ -1025,8 +863,6 @@ UNION SELECT a.cve_geo, a.cve_mun, b.año, a.p_pex_15, CAST(a.h_pex_15 AS INTEGE
 FROM auxiliar.bd_socioec_diagn AS a
 JOIN auxiliar.dd_socioec_diagn AS b ON b.nombre = 'p_pex_15';
 
---Borrando información para correr las instrucciones sql
-DELETE FROM sub_socioeconomico.socioec_diagn_prc;
 --Ingresando información
 INSERT INTO sub_socioeconomico.socioec_diagn_prc (cve_geo, cve_mun, serie, porcentaje, sdp_id)
 SELECT a.cve_geo, a.cve_mun, CAST(b.año AS SMALLINT), a.p_red_10, 1 AS scp_id

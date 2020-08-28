@@ -1,19 +1,13 @@
 --Esta sección es la información que se usa de manera general
 
---Borrando todos los datos de estados para correr el archivo sql
-DELETE FROM general.estados;
 --Ingresando información de los estados
 INSERT INTO general.estados(cve_ent, entidad_federativa)
 VALUES ('31','Yucatán');
 
---Borrando todos los datos de las regiones para correr el archivo sql
-DELETE FROM general.regiones;
 --Se realiza la segunda forma normal para las columnas id_region y region
 INSERT INTO general.regiones
 SELECT DISTINCT id_region, region FROM auxiliar.bd_usv_c2_mun;
 
---Borrando todos los datos de municipios para correr el archivo sql
-DELETE FROM general.municipios;
 --Ingresando información de los municipios
 INSERT INTO general.municipios(cve_mun, municipio, id_region, cve_ent) VALUES
 ('000','Resto de los municipios',NULL,'31'),
