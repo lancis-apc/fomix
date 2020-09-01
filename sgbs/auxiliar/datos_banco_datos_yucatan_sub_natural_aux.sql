@@ -8,7 +8,7 @@ FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/pro
 WITH DELIMITER ',' CSV HEADER;
 
 --Se colocan correctamente las claves de municipios
-UPDATE auxiliar.bd_usv_c2_mun SET cve_mun = RIGHT('00'||bd_usv_c2_mun.cve_mun,3);
+UPDATE auxiliar.bd_usv_c2_mun SET cve_mun = LPAD(bd_usv_c2_mun.cve_mun,3,'0');
 
 --Se colocan correctamente las claves cve_geo
 UPDATE auxiliar.bd_usv_c2_mun SET cve_geo = CONCAT(cve_ent,cve_mun);
@@ -26,7 +26,7 @@ FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/pro
 WITH DELIMITER ',' CSV HEADER;
 
 --Se colocan correctamente las claves de municipios
-UPDATE auxiliar.bd_anp_c2_mun SET cve_mun = RIGHT('00'||bd_anp_c2_mun.cve_mun,3);
+UPDATE auxiliar.bd_anp_c2_mun SET cve_mun = LPAD(bd_anp_c2_mun.cve_mun,3,'0');
 
 --Se colocan correctamente las claves cve_geo
 UPDATE auxiliar.bd_anp_c2_mun SET cve_geo = CONCAT(cve_ent,cve_mun);
@@ -44,7 +44,7 @@ FROM '/mnt/c/Dropbox (LANCIS)/FOMIX/fmx_insumos/fmx_estadisticas/banco_datos/pro
 WITH DELIMITER ',' CSV HEADER;
 
 --Se colocan correctamente las claves de municipios
-UPDATE auxiliar.bd_deg_c2_mun SET cve_mun = RIGHT('00'||bd_deg_c2_mun.cve_mun,3);
+UPDATE auxiliar.bd_deg_c2_mun SET cve_mun = LPAD(bd_deg_c2_mun.cve_mun,3,'0');
 
 --Se colocan correctamente las claves cve_geo
 UPDATE auxiliar.bd_deg_c2_mun SET cve_geo = CONCAT(cve_ent,cve_mun);

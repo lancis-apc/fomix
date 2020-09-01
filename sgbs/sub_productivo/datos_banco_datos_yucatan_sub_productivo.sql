@@ -100,13 +100,13 @@ VALUES
 */
 
 -- Se ingresa la información sobre la rama principal de cada municipio
-INSERT INTO sub_productivo.ramas_municipios(serie, cve_mun, act_ec_cod)
-SELECT serie, cve_mun, act_ec_cod FROM auxiliar.bd_activ_ec_principal;
+INSERT INTO sub_productivo.ramas_municipios(serie, cve_ent, cve_mun, act_ec_cod)
+SELECT serie, '31' AS cve_ent ,cve_mun, act_ec_cod FROM auxiliar.bd_activ_ec_principal;
 
 -- Se ingresan la información del archivo bd_coef_esp.csv
-INSERT INTO sub_productivo.coef_esp(cve_mun, serie, act_ec_cod, coeficiente, ce_id)
-SELECT cve_mun, serie, act_ec_cod, ce_pbt, 1 FROM auxiliar.bd_coef_esp UNION
-SELECT cve_mun, serie, act_ec_cod, ce_per_ocup, 2 FROM auxiliar.bd_coef_esp;
+INSERT INTO sub_productivo.coef_esp(cve_ent, cve_mun, serie, act_ec_cod, coeficiente, ce_id)
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, ce_pbt, 1 FROM auxiliar.bd_coef_esp UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, ce_per_ocup, 2 FROM auxiliar.bd_coef_esp;
 
 -- Se ingresan la información del archivo bd_coef_tec.csv
 INSERT INTO sub_productivo.coef_tec(sector, coeficiente, ct_id)
@@ -131,39 +131,39 @@ SELECT sector, ot_serv_coef, 18 FROM auxiliar.bd_coef_tec UNION
 SELECT sector, act_gub_coef, 19 FROM auxiliar.bd_coef_tec;
 
 -- Se ingresan la información del archivo bd_conc_indust.csv
-INSERT INTO sub_productivo.conc_indust(serie, cve_mun, cantidad, ci_id)
-SELECT serie, cve_mun, concen_ind, 1 FROM auxiliar.bd_conc_indust;
+INSERT INTO sub_productivo.conc_indust(serie, cve_ent, cve_mun, cantidad, ci_id)
+SELECT serie, '31' AS cve_ent ,cve_mun, concen_ind, 1 FROM auxiliar.bd_conc_indust;
 
 -- Se ingresan la información del archivo bd_denue_yuc_rama_wide.csv
-INSERT INTO sub_productivo.denue(cve_mun, serie, act_ec_cod, ue, denue_id)
-SELECT cve_mun, serie, act_ec_cod, de_0_a_5_personas, 1 FROM auxiliar.bd_denue_yuc_rama UNION
-SELECT cve_mun, serie, act_ec_cod, de_6_a_10_personas, 2 FROM auxiliar.bd_denue_yuc_rama UNION
-SELECT cve_mun, serie, act_ec_cod, de_11_a_30_personas, 3 FROM auxiliar.bd_denue_yuc_rama UNION
-SELECT cve_mun, serie, act_ec_cod, de_31_a_50_personas, 4 FROM auxiliar.bd_denue_yuc_rama UNION
-SELECT cve_mun, serie, act_ec_cod, de_51_a_100_personas, 5 FROM auxiliar.bd_denue_yuc_rama UNION
-SELECT cve_mun, serie, act_ec_cod, de_101_a_250_personas, 6 FROM auxiliar.bd_denue_yuc_rama UNION
-SELECT cve_mun, serie, act_ec_cod, de_250_y_mas_personas, 7 FROM auxiliar.bd_denue_yuc_rama;
+INSERT INTO sub_productivo.denue(cve_ent, cve_mun, serie, act_ec_cod, ue, denue_id)
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, de_0_a_5_personas, 1 FROM auxiliar.bd_denue_yuc_rama UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, de_6_a_10_personas, 2 FROM auxiliar.bd_denue_yuc_rama UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, de_11_a_30_personas, 3 FROM auxiliar.bd_denue_yuc_rama UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, de_31_a_50_personas, 4 FROM auxiliar.bd_denue_yuc_rama UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, de_51_a_100_personas, 5 FROM auxiliar.bd_denue_yuc_rama UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, de_101_a_250_personas, 6 FROM auxiliar.bd_denue_yuc_rama UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, de_250_y_mas_personas, 7 FROM auxiliar.bd_denue_yuc_rama;
 
 -- Se ingresan la información del archivo bd_mat_tc_muni.csv
-INSERT INTO sub_productivo.mat_tc_muni(cve_mun, serie, tasa, mt_id)
-SELECT cve_mun, serie, tc_inv_total_mun, 1 FROM auxiliar.bd_mat_tc_muni UNION
-SELECT cve_mun, serie, tc_per_ocupado_mun, 2 FROM auxiliar.bd_mat_tc_muni UNION
-SELECT cve_mun, serie, tc_prod_brut_tot_mun, 3 FROM auxiliar.bd_mat_tc_muni UNION
-SELECT cve_mun, serie, tc_ue_mun, 4 FROM auxiliar.bd_mat_tc_muni;
+INSERT INTO sub_productivo.mat_tc_muni(cve_ent, cve_mun, serie, tasa, mt_id)
+SELECT '31' AS cve_ent ,cve_mun, serie, tc_inv_total_mun, 1 FROM auxiliar.bd_mat_tc_muni UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, tc_per_ocupado_mun, 2 FROM auxiliar.bd_mat_tc_muni UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, tc_prod_brut_tot_mun, 3 FROM auxiliar.bd_mat_tc_muni UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, tc_ue_mun, 4 FROM auxiliar.bd_mat_tc_muni;
 
 -- Se ingresan la información del archivo bd_mat_tc_muni_rama.csv
-INSERT INTO sub_productivo.mat_tc_muni_rama(cve_mun, serie, act_ec_cod, tasa, mt_id)
-SELECT cve_mun, serie, act_ec_cod, tc_inv_total, 1 FROM auxiliar.bd_mat_tc_muni_rama UNION
-SELECT cve_mun, serie, act_ec_cod, tc_per_ocupado, 2 FROM auxiliar.bd_mat_tc_muni_rama UNION
-SELECT cve_mun, serie, act_ec_cod, tc_prod_brut_tot, 3 FROM auxiliar.bd_mat_tc_muni_rama UNION
-SELECT cve_mun, serie, act_ec_cod, tc_ue, 4 FROM auxiliar.bd_mat_tc_muni_rama;
+INSERT INTO sub_productivo.mat_tc_muni_rama(cve_ent, cve_mun, serie, act_ec_cod, tasa, mt_id)
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, tc_inv_total, 1 FROM auxiliar.bd_mat_tc_muni_rama UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, tc_per_ocupado, 2 FROM auxiliar.bd_mat_tc_muni_rama UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, tc_prod_brut_tot, 3 FROM auxiliar.bd_mat_tc_muni_rama UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_cod, tc_ue, 4 FROM auxiliar.bd_mat_tc_muni_rama;
 
 -- Se ingresan la información del archivo bd_mat_tc_muni_subsector.csv
-INSERT INTO sub_productivo.mat_tc_muni_subsector(cve_mun, serie, act_ec_sub_cod, tasa, mt_id)
-SELECT cve_mun, serie, act_ec_sub_cod, tc_inv_total_mun_subsector, 1 FROM auxiliar.bd_mat_tc_muni_subsector UNION
-SELECT cve_mun, serie, act_ec_sub_cod, tc_per_ocupado_mun_subsector, 2 FROM auxiliar.bd_mat_tc_muni_subsector UNION
-SELECT cve_mun, serie, act_ec_sub_cod, tc_prod_brut_tot_mun_subsector, 3 FROM auxiliar.bd_mat_tc_muni_subsector UNION
-SELECT cve_mun, serie, act_ec_sub_cod, tc_ue_mun_subsector, 4 FROM auxiliar.bd_mat_tc_muni_subsector;
+INSERT INTO sub_productivo.mat_tc_muni_subsector(cve_ent, cve_mun, serie, act_ec_sub_cod, tasa, mt_id)
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_sub_cod, tc_inv_total_mun_subsector, 1 FROM auxiliar.bd_mat_tc_muni_subsector UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_sub_cod, tc_per_ocupado_mun_subsector, 2 FROM auxiliar.bd_mat_tc_muni_subsector UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_sub_cod, tc_prod_brut_tot_mun_subsector, 3 FROM auxiliar.bd_mat_tc_muni_subsector UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, act_ec_sub_cod, tc_ue_mun_subsector, 4 FROM auxiliar.bd_mat_tc_muni_subsector;
 
 -- Se ingresan la información del archivo bd_mat_tc_rama.csv
 INSERT INTO sub_productivo.mat_tc_rama(act_ec_cod, serie, tasa, mt_id)
@@ -186,11 +186,11 @@ SELECT serie, pib_sec, 2 FROM auxiliar.bd_pib_yucatan UNION
 SELECT serie, pib_ter, 3 FROM auxiliar.bd_pib_yucatan;
 
 -- Se ingresa información de las dos primeras columnas del archivo bd_yuc_porcentajes_act_ec_muni.csv
-INSERT INTO sub_productivo.act_ec_valores(cve_mun, serie, act_ec_cod, millones_pesos, valor_id)
-SELECT cve_mun, serie, ct_rama_act_ec_cod, prod_brut_tot_valor, 1 FROM auxiliar.bd_yuc_porcentajes_act_ec_muni UNION
-SELECT cve_mun, serie, ct_rama_act_ec_cod, inv_total_valor, 2 FROM auxiliar.bd_yuc_porcentajes_act_ec_muni;
+INSERT INTO sub_productivo.act_ec_valores(cve_ent, cve_mun, serie, act_ec_cod, millones_pesos, valor_id)
+SELECT '31' AS cve_ent ,cve_mun, serie, ct_rama_act_ec_cod, prod_brut_tot_valor, 1 FROM auxiliar.bd_yuc_porcentajes_act_ec_muni UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, ct_rama_act_ec_cod, inv_total_valor, 2 FROM auxiliar.bd_yuc_porcentajes_act_ec_muni;
 
 -- Se ingresa información de las dos últimas columnas del archivo bd_yuc_porcentajes_act_ec_muni.csv
-INSERT INTO sub_productivo.act_ec_cantidades(cve_mun, serie, act_ec_cod, cantidad, cantidad_id)
-SELECT cve_mun, serie, ct_rama_act_ec_cod, per_ocupado_valor, 1 FROM auxiliar.bd_yuc_porcentajes_act_ec_muni UNION
-SELECT cve_mun, serie, ct_rama_act_ec_cod, ue_valor, 2 FROM auxiliar.bd_yuc_porcentajes_act_ec_muni;
+INSERT INTO sub_productivo.act_ec_cantidades(cve_ent, cve_mun, serie, act_ec_cod, cantidad, cantidad_id)
+SELECT '31' AS cve_ent ,cve_mun, serie, ct_rama_act_ec_cod, per_ocupado_valor, 1 FROM auxiliar.bd_yuc_porcentajes_act_ec_muni UNION
+SELECT '31' AS cve_ent ,cve_mun, serie, ct_rama_act_ec_cod, ue_valor, 2 FROM auxiliar.bd_yuc_porcentajes_act_ec_muni;
