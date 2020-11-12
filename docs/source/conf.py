@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Mapas de aptitud del territorio - FOMIX/YUCATÁN'
+project = 'Sistema de conocimiento para la gestión del Ordenamiento Ecológico del Territorio (OET) del estado de Yucatán'
 copyright = '2020, LANCIS APC'
 author = 'LANCIS APC'
 
