@@ -1,0 +1,37 @@
+.. Mapas de aptitud del territorio - FOMIX/YUCATÁN documentation master file, created by
+   sphinx-quickstart on Tue Nov 10 13:39:22 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Sistema de conocimiento para la gestión del Ordenamiento Ecológico del Territorio (OET) del estado de Yucatán
+===============================================================================================================
+
+Análisis de aptitud 
+#####################
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Ganaderia:
+
+   ga_silvopastoril
+
+
+
+.. Indices and tables
+.. ==================
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
+
+
+.. csv-table:: Tipo de suelo
+   :file: recursos/tabla_fv_cat_suelo_silvopastoril.csv
+   :header-rows: 1
+   :align: center
+   
+.. csv-table:: Cobertura
+   :file: recursos/tabla_fv_gbe_sil_bio_usv_inegi.csv
+   :header-rows: 1
+   :align: center
+   
