@@ -10,7 +10,7 @@ Análisis de aptitud
 #####################
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Ganaderia:
 
    ga_silvopastoril
