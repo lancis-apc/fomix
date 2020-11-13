@@ -11,7 +11,7 @@ Análisis de aptitud
 
 .. toctree::
    :maxdepth: 4
-   :caption: Ganaderia:
+   :caption: Ganadería Bovína:
 
    ga_silvopastoril
 
@@ -25,13 +25,3 @@ Análisis de aptitud
 .. * :ref:`search`
 
 
-.. .. csv-table:: Tipo de suelo
-..    :file: recursos/tabla_fv_cat_suelo_silvopastoril.csv
-..    :header-rows: 1
-..    :align: center
-   
-.. .. csv-table:: Cobertura
-..    :file: recursos/tabla_fv_gbe_sil_bio_usv_inegi.csv
-..    :header-rows: 1
-..    :align: center
-   
