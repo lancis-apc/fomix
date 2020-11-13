@@ -11,7 +11,7 @@ Análisis de aptitud
 
 .. toctree::
    :maxdepth: 4
-   :caption: Ganadería Bovína:
+   :caption: Ganadería bovína:
 
    ga_silvopastoril
 
