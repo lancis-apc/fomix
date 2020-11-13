@@ -27,7 +27,7 @@ Tipo de uso de suelo y vegetación que determina la carga animal y la biodiversi
 
 .. csv-table:: 
    :file: recursos/tabla_insumos_fv_gbe_sil_bio_usv_inegi.csv
-   :align: right
+   :align: left
 
 
 **Parámetros de la función de valor**
@@ -50,7 +50,7 @@ Temperatura ambiente máxima (promedio) que afecta el desempeño productivo de l
 
 .. csv-table:: 
    :file: recursos/tabla_insumos_fv_gbe_sil_bio_temp_max.csv
-   :align: right
+   :align: left
 
 **Parámetros de la función de valor**
 
@@ -69,7 +69,7 @@ Precipitación promedio, cantidad y distribución del agua de lluvia para manten
 
 .. csv-table:: 
    :file: recursos/tabla_insumos_fv_gbe_sil_bio_precipitacion.csv
-   :align: right
+   :align: left
 
 **Parámetros de la función de valor**
 
@@ -88,7 +88,7 @@ Características físicas (profundidad, pedregosidad) y químicas (MO, Nitrógen
 
 .. csv-table:: 
    :file: recursos/tabla_insumos_fv_gbe_sil_bio_t_suelo.csv
-   :align: right
+   :align: left
 
 **Parámetros de la función de valor**
 
@@ -110,7 +110,7 @@ Acceso a la posibilidad de extraer agua del acuífero para el consumo del ganado
 
 .. csv-table:: 
    :file: recursos/tabla_insumos_fv_gbe_sil_bio_d_acuifero.csv
-   :align: right
+   :align: left
 
 **Parámetros de la función de valor**
 
@@ -144,7 +144,7 @@ Distancia a puntos de venta local de becerros (Tizimín, Valladolid, Mérida y T
 
 .. csv-table:: 
    :file: recursos/tabla_insumos_fv_gbe_sil_socio_d_mercados_loc.csv
-   :align: right
+   :align: left
 
 **Parámetros de la función de valor**
 
@@ -162,7 +162,7 @@ Distancia a puntos de venta de carne (Campeche, Cancún, Playa del Carmen).
 
 .. csv-table:: 
    :file: recursos/tabla_insumos_fv_gbe_sil_socio_d_mercados_for.csv
-   :align: right
+   :align: left
 
 **Parámetros de la función de valor**
 
@@ -181,7 +181,7 @@ Población económicamente activa ocupada en el sector primario (%).
 
 .. csv-table:: 
    :file: recursos/tabla_insumos_fv_gbe_sil_socio_sec_primario.csv
-   :align: right  
+   :align: left  
 
 **Parámetros de la función de valor**
 
