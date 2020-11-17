@@ -191,14 +191,36 @@ Población económicamente activa ocupada en el sector primario (%).
 
 .. imagen:: /recursos/mapa_fv_gbe_sil_socio_sec_primario.png  
 
+Pesos globales del modelo de aptitud silvopastoril
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table::
+   :file: recursos/tabla_pesos_globales.csv
+   :header-rows: 1
+   :align: center
+
+Capa de exclusión
+^^^^^^^^^^^^^^^^^
+
+.. imagen:: /recursos/mapa_gbe_silvopastoril_exclusion.png  
+
 Mapa de aptitud silvopastoril
 =============================
 
 .. imagen:: /recursos/mapa_apt_gbe_silvopastoril.png  
 
+Área por categoría de aptitud
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. csv-table::
+   :file: recursos/tabla_areaskm2_porcentaje_aptitud_equidistante.csv
+   :header-rows: 1
+   :align: center
 
+Análisis de sensibilidad
+========================
 
+.. imagen:: /recursos/fi_analisis_sensibilidad_silvopastoril.png  
 
 
 
