@@ -13,7 +13,7 @@ Análisis de aptitud
    :maxdepth: 4
    :caption: Ganadería bovína:
 
-   ga_silvopastoril
+   ga_silvopastoril_pr
 
 
 

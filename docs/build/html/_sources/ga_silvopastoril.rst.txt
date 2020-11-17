@@ -202,6 +202,13 @@ Pesos globales del modelo de aptitud silvopastoril
 Capa de exclusión
 =================
 
+Tipos de coberturas no aptas
+
+.. csv-table::
+   :file: recursos/tabla_categorias_exclusion.csv
+   :header-rows: 1
+   :align: center
+
 .. imagen:: /recursos/mapa_gbe_silvopastoril_exclusion.png  
 
 Mapa de aptitud silvopastoril
@@ -211,6 +218,8 @@ Mapa de aptitud silvopastoril
 
 Área por categoría de aptitud
 -----------------------------
+
+
 
 .. csv-table::
    :file: recursos/tabla_areaskm2_porcentaje_aptitud_equidistante.csv
