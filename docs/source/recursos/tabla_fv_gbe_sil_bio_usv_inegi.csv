@@ -9,7 +9,7 @@
 8,Agricultura De Temporal Anual Y Permanente,Baja,0.56
 9,Agricultura De Temporal Permanente,Baja,0.56
 10,Agricultura De Temporal Semipermanente,Baja,0.56
-11,Cuerpo de agua,Moderada,0.70
+11,Cuerpo de agua,Nula,0.00
 12,Bosque Cultivado,Baja,0.56
 13,Manglar,Nula,0.00
 14,Palmar Inducido,Baja,0.56
@@ -21,10 +21,10 @@
 20,Selva Mediana Subcaducifolia,Muy alta,0.87
 21,Selva Mediana Subperennifolia,Muy alta,0.87
 22,Sin Vegetación Aparente,Nula,0.00
-23,Tular,Muy baja,0.33
+23,Tular,Nula,0.00
 24,Urbano Construido,Nula,0.00
-25,Vegetación De Dunas Costeras,Muy baja,0.33
-26,Vegetación De Petén,Muy baja,0.33
+25,Vegetación De Dunas Costeras,Nula,0.00
+26,Vegetación De Petén,Nula,0.00
 27,Vegetación Halófila Hidrófila,Nula,0.00
 28,Vegetación Secundaria Arbustiva De Manglar,Muy baja,0.33
 29,Vegetación Secundaria Arbustiva De Selva Baja Caducifolia,Alta,0.80
@@ -34,7 +34,7 @@
 33,Vegetación Secundaria Arbustiva De Selva Mediana Caducifolia,Alta,0.80
 34,Vegetación Secundaria Arbustiva De Selva Mediana Subcaducifolia,Alta,0.80
 35,Vegetación Secundaria Arbustiva De Selva Mediana Subperennifolia,Muy alta,0.87
-36,Vegetación Secundaria Arbórea De Manglar,Muy baja,0.33
+36,Vegetación Secundaria Arbórea De Manglar,Nula,0.00
 37,Vegetación Secundaria Arbórea De Selva Baja Caducifolia,Alta,0.80
 38,Vegetación Secundaria Arbórea De Selva Baja Espinosa Caducifolia,Moderada,0.70
 39,Vegetación Secundaria Arbórea De Selva Baja Espinosa Subperennifolia,Alta,0.80
@@ -45,4 +45,4 @@
 44,Vegetación Secundaria Herbácea De Selva Baja Caducifolia,Alta,0.80
 45,Vegetación Secundaria Herbácea De Selva Mediana Caducifolia,Alta,0.80
 46,Vegetación Secundaria Herbácea De Selva Mediana Subcaducifolia,Alta,0.80
-47,Área Desprovista De Vegetación,Baja,0.56
+47,Área Desprovista De Vegetación,Nula,0.00
