@@ -1,5 +1,7 @@
 # Silvopastoril
 
+<!-- Ruta de la documentación:
+CARPETAS_TRABAJO\vhernandez\aptitud_fomix_docs -->
 
 Sistema de producción bovina integrada a especies arbóreas, arbustivas con gramíneas forrajeras.
 
@@ -347,7 +349,7 @@ Disponibilidad de mano de obra | 0.15
 
 ## Capa de exclusión
 
-Coberturas no aptas de la capa de USV serie VI usadas como zonas de exclusión (Aptitud nula)
+Coberturas no aptas de la capa de uso del suelo y vegetación serie VI INEGI usadas como zonas de exclusión (Aptitud nula)
 
 
 ID | Categoría
