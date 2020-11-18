@@ -46,7 +46,7 @@ Unidades | Adimensional
 
 ID | Categoría | Expresión verbal | FV
 -- | -- | -- | --
-1 | Acuícola | Nula | 0
+1 | Acuícola | Nula | 0.00
 2 | Agricultura De Riego Anual | Baja | 0.56
 3 | Agricultura De Riego Anual Y Permanente | Baja | 0.56
 4 | Agricultura De Riego Permanente | Baja | 0.56
@@ -56,43 +56,43 @@ ID | Categoría | Expresión verbal | FV
 8 | Agricultura De Temporal Anual Y Permanente | Baja | 0.56
 9 | Agricultura De Temporal Permanente | Baja | 0.56
 10 | Agricultura De Temporal Semipermanente | Baja | 0.56
-11 | Cuerpo de agua | Nula | 0
+11 | Cuerpo de agua | Nula | 0.00
 12 | Bosque Cultivado | Baja | 0.56
-13 | Manglar | Nula | 0
+13 | Manglar | Nula | 0.00
 14 | Palmar Inducido | Baja | 0.56
-15 | Pastizal Cultivado | Extremadamente alta | 1
+15 | Pastizal Cultivado | Extremadamente alta | 1.00
 16 | Pastizal Halófilo | Muy baja | 0.33
-17 | Pastizal Inducido | Extremadamente alta | 1
+17 | Pastizal Inducido | Extremadamente alta | 1.00
 18 | Sabana | Muy baja | 0.33
-19 | Selva Baja Espinosa Subperennifolia | Moderada | 0.7
+19 | Selva Baja Espinosa Subperennifolia | Moderada | 0.70
 20 | Selva Mediana Subcaducifolia | Muy alta | 0.87
 21 | Selva Mediana Subperennifolia | Muy alta | 0.87
-22 | Sin Vegetación Aparente | Nula | 0
-23 | Tular | Nula | 0
-24 | Urbano Construido | Nula | 0
-25 | Vegetación De Dunas Costeras | Nula | 0
-26 | Vegetación De Petén | Nula | 0
-27 | Vegetación Halófila Hidrófila | Nula | 0
+22 | Sin Vegetación Aparente | Nula | 0.00
+23 | Tular | Nula | 0.00
+24 | Urbano Construido | Nula | 0.00
+25 | Vegetación De Dunas Costeras | Nula | 0.00
+26 | Vegetación De Petén | Nula | 0.00
+27 | Vegetación Halófila Hidrófila | Nula | 0.00
 28 | Vegetación Secundaria Arbustiva De Manglar | Muy baja | 0.33
-29 | Vegetación Secundaria Arbustiva De Selva Baja Caducifolia | Alta | 0.8
-30 | Vegetación Secundaria Arbustiva De Selva Baja Espinosa Caducifolia | Alta | 0.8
-31 | Vegetación Secundaria Arbustiva De Selva Baja Espinosa Subperennifolia | Alta | 0.8
-32 | Vegetación Secundaria Arbustiva De Selva Baja Subcaducifolia | Moderada | 0.7
-33 | Vegetación Secundaria Arbustiva De Selva Mediana Caducifolia | Alta | 0.8
-34 | Vegetación Secundaria Arbustiva De Selva Mediana Subcaducifolia | Alta | 0.8
+29 | Vegetación Secundaria Arbustiva De Selva Baja Caducifolia | Alta | 0.80
+30 | Vegetación Secundaria Arbustiva De Selva Baja Espinosa Caducifolia | Alta | 0.80
+31 | Vegetación Secundaria Arbustiva De Selva Baja Espinosa Subperennifolia | Alta | 0.80
+32 | Vegetación Secundaria Arbustiva De Selva Baja Subcaducifolia | Moderada | 0.70
+33 | Vegetación Secundaria Arbustiva De Selva Mediana Caducifolia | Alta | 0.80
+34 | Vegetación Secundaria Arbustiva De Selva Mediana Subcaducifolia | Alta | 0.80
 35 | Vegetación Secundaria Arbustiva De Selva Mediana Subperennifolia | Muy alta | 0.87
-36 | Vegetación Secundaria Arbórea De Manglar | Nula | 0
-37 | Vegetación Secundaria Arbórea De Selva Baja Caducifolia | Alta | 0.8
-38 | Vegetación Secundaria Arbórea De Selva Baja Espinosa Caducifolia | Moderada | 0.7
-39 | Vegetación Secundaria Arbórea De Selva Baja Espinosa Subperennifolia | Alta | 0.8
-40 | Vegetación Secundaria Arbórea De Selva Baja Subcaducifolia | Alta | 0.8
-41 | Vegetación Secundaria Arbórea De Selva Mediana Caducifolia | Alta | 0.8
+36 | Vegetación Secundaria Arbórea De Manglar | Nula | 0.00
+37 | Vegetación Secundaria Arbórea De Selva Baja Caducifolia | Alta | 0.80
+38 | Vegetación Secundaria Arbórea De Selva Baja Espinosa Caducifolia | Moderada | 0.70
+39 | Vegetación Secundaria Arbórea De Selva Baja Espinosa Subperennifolia | Alta | 0.80
+40 | Vegetación Secundaria Arbórea De Selva Baja Subcaducifolia | Alta | 0.80
+41 | Vegetación Secundaria Arbórea De Selva Mediana Caducifolia | Alta | 0.80
 42 | Vegetación Secundaria Arbórea De Selva Mediana Subcaducifolia | Muy alta | 0.87
 43 | Vegetación Secundaria Arbórea De Selva Mediana Subperennifolia | Muy alta | 0.87
-44 | Vegetación Secundaria Herbácea De Selva Baja Caducifolia | Alta | 0.8
-45 | Vegetación Secundaria Herbácea De Selva Mediana Caducifolia | Alta | 0.8
-46 | Vegetación Secundaria Herbácea De Selva Mediana Subcaducifolia | Alta | 0.8
-47 | Área Desprovista De Vegetación | Nula | 0
+44 | Vegetación Secundaria Herbácea De Selva Baja Caducifolia | Alta | 0.80
+45 | Vegetación Secundaria Herbácea De Selva Mediana Caducifolia | Alta | 0.80
+46 | Vegetación Secundaria Herbácea De Selva Mediana Subcaducifolia | Alta | 0.80
+47 | Área Desprovista De Vegetación | Nula | 0.00
 
 <!-- .. csv-table:: Cobertura
    :file: recursos/tabla_fv_gbe_sil_bio_usv_inegi.csv
@@ -101,7 +101,7 @@ ID | Categoría | Expresión verbal | FV
 
 **Función de valor de cobertura**
 
-![](/recursos/mapa_fv_gbe_sil_bio_usv_inegi.png)
+![](/recursos/mapa_fv_gbe_sil_bio_usv_inegi.PNG)
 
 #### Temperatura
 
@@ -257,7 +257,7 @@ Distancia a puntos de venta local de becerros (Tizimín, Valladolid, Mérida y T
 
 **Insumos**
 
-Capas | Distancia a localidades intraestatales
+Capa | Distancia a localidades intraestatales
 -- | --
 Fuente | Adaptado de: [1] Conjunto de datos vectoriales de información topográfica   por Entidad Federativa Serie VI. (Zonas urbanas) INEGI y [2] Red nacional de   caminos INEGI
 Año | 2019
@@ -347,7 +347,8 @@ Disponibilidad de mano de obra | 0.15
 
 ## Capa de exclusión
 
-Tipos de coberturas no aptas
+Coberturas no aptas de la capa de USV serie VI usadas como zonas de exclusión (Aptitud nula)
+
 
 ID | Categoría
 :--| --
@@ -387,7 +388,7 @@ Moderada | 4492.7 | 11
 Alta | 11615.5 | 30
 Muy alta | 19793.8 | 50
 
-## Análisis de sensibilidad
+## Sensibilidad de atributos
 
 
 ![](/recursos/fi_analisis_sensibilidad_silvopastoril.png)
