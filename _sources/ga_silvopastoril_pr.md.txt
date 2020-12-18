@@ -332,15 +332,15 @@ Unidades | Porcentaje
 ## Pesos globales del modelo de aptitud silvopastoril
 
 Criterio | Peso
--- | --:
-Cobertura | 0.20
+-- | --
 Disponibilidad de agua | 0.38
-Precipitación | 0.08
-temperatura | 0.02
-Tipo de suelo | 0.08
-Accesibilidad a mercados locales | 0.09
-Accesibilidad a mercados foráneos | 0.01
+Cobertura | 0.2
 Disponibilidad de mano de obra | 0.15
+Accesibilidad a mercados locales | 0.09
+Precipitación | 0.08
+Tipo de suelo | 0.08
+temperatura | 0.02
+Accesibilidad a mercados foráneos | 0.01
 
 <!-- .. csv-table::
    :file: recursos/tabla_pesos_globales.csv
@@ -357,12 +357,15 @@ ID | Categoría
 01 | Acuícola
 11 | Cuerpo de agua
 13 | Manglar
+14 | Palmar inducido
+16 | Paztizal halófilo
 22 | Sin Vegetación Aparente
 23 | Tular
 24 | Urbano Construido
 25 | Vegetación De Dunas Costeras
 26 | Vegetación De Petén
 27 | Vegetación Halófila Hidrófila
+28 | Vegetación Secundaria Arbustiva De Manglar
 36 | Vegetación Secundaria Arbórea De Manglar
 47 | Área Desprovista De Vegetación
 
@@ -394,5 +397,3 @@ Muy alta | 19793.8 | 50
 
 
 ![](/recursos/fi_analisis_sensibilidad_silvopastoril.png)
-
-
