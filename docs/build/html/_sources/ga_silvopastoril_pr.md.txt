@@ -386,12 +386,12 @@ ID | Categoría
 
 Categoria | km² | Porcentaje del estado
 :-- | --: | --:
-Nula | 2359.6 |  6
-Muy baja | 719.6 |  2
-Baja | 399.0 |  1
-Moderada | 4492.7 | 11
-Alta | 11615.5 | 30
-Muy alta | 19793.8 | 50
+Nula | 2538.1 |  6
+Muy baja | 702.2 |  2
+Baja | 397.2 |  1
+Moderada | 4300.0 | 11
+Alta | 11956.0 | 30
+Muy alta | 19486.6 | 49
 
 ## Sensibilidad de atributos
 
