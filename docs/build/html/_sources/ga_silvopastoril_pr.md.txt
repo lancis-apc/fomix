@@ -7,7 +7,7 @@ Sistema de producción bovina integrada a especies arbóreas, arbustivas con gra
 
 **Modelo AHP del sistema de alimentación silvopastoril**
 
-![](/recursos/silvopastoril.png)
+![](/recursos/silvopastoril/silvopastoril.png)
 
 ## Criterios
 

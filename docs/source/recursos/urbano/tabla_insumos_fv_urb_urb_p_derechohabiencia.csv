@@ -1,5 +1,5 @@
 ﻿Capa,Población derechohabiente a servicios de salud
-Fuente,[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Fuente,[1] Polígonos de localidades. Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
 Año,[1] 2019; [2] 2010
 Campo,"[2] POBTOT y PDER_SS	"
 Escala,Localidad

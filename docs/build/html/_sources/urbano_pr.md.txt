@@ -114,7 +114,7 @@ Adimensional | Porcentaje
 
 Criterio | Definición
 -- | --
-Tasa crecimiento | Tasa de crecimiento poblacional 10 años (2010-2020).
+Tasa crecimiento | Tasa de crecimiento poblacional 10 años (2005-2015).
 Población | Número de habitantes.
 Densidad | Número de habitantes por hectárea.
 Inmigración | Porcentaje de la población total nacida fuera de la entidad o país.
@@ -123,7 +123,7 @@ Población indígena | Porcentaje de la población índígena en el asentamiento
 
 ##### Tasa de crecimiento
 
-Tasa de crecimiento poblacional 10 años (2000-2010).
+Tasa de crecimiento poblacional 10 años (2005-2015).
 
 **Insumos**
 
