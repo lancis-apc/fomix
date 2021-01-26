@@ -11,9 +11,10 @@ Análisis de aptitud
 
 .. toctree::
    :maxdepth: 4
-   :caption: Ganadería bovína:
+   :caption: Sectores:
 
-   ga_silvopastoril_pr
+   industrial_pr
+   urbano_pr
 
 
 
