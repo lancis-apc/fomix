@@ -5,9 +5,18 @@
 
 Sistema de conocimiento para la gestión del Ordenamiento Ecológico del Territorio (OET) del estado de Yucatán
 ===============================================================================================================
+Análisis de aptitud sectorial
+################################
 
-Análisis de aptitud 
-#####################
+Objetivo
+---------
+
+Identificar y priorizar las áreas mas factibles para la realización de actividades de cada sector en el estado de Yucatán
+
+**Estos avances son el resultado de un esfuerzo de grupo a lo largo de cuatro sesiones y muestran el conocimiento,
+experiencia y preferencias de sus participantes, así como la información disponible para representarlos en mapas.
+Los productos de los talleres se actualizan conforme se obtienen resultados en las sesiones.**
+
 
 .. toctree::
    :maxdepth: 4
@@ -24,5 +33,3 @@ Análisis de aptitud
 .. * :ref:`genindex`
 .. * :ref:`modindex`
 .. * :ref:`search`
-
-

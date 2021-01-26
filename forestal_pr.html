@@ -81,6 +81,7 @@
             
               <p class="caption"><span class="caption-text">Sectores:</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="industrial_pr.html">Industrial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="urbano_pr.html">Urbano</a></li>
 </ul>
 
@@ -149,9 +150,19 @@
   <div class="section" id="forestal">
 <h1>Forestal<a class="headerlink" href="#forestal" title="Enlazar permanentemente con este título">¶</a></h1>
 <!-- Ruta de la documentación:
-FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><p>Sistema de producción bovina integrada a especies arbóreas, arbustivas con gramíneas forrajeras.</p>
-<p><strong>Modelo AHP del sector forestal</strong></p>
-<p><img alt="_images/silvopastoril.png" src="_images/silvopastoril.png" /></p>
+FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="section" id="meta">
+<h2>Meta<a class="headerlink" href="#meta" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Incorporar nuevas superficies y productores a la producción forestal maderable y no maderable, de tal manera que se represente una alternativa productiva y mejorar las capacidades técnicas y financieras de aprovechamiento de las áreas ya destinadas a la producción forestal maderable y no maderable.</p>
+</div>
+<div class="section" id="tipos-de-actividad-forestal">
+<h2>Tipos de actividad forestal<a class="headerlink" href="#tipos-de-actividad-forestal" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="maderable">
+<h3>Maderable<a class="headerlink" href="#maderable" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Especies con potencial de materias primas (madera en rollo, leña y leña para elaboración de carbón). Espacios del territorio para especies maderables con uso industrial.</p>
+<p><strong>Modelo AHP de la actividad maderable</strong></p>
+<p><img alt="_images/maderable.png" src="_images/maderable.png" /></p>
+</div>
+</div>
 <div class="section" id="criterios">
 <h2>Criterios<a class="headerlink" href="#criterios" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="biofisicos">
@@ -165,610 +176,39 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><p>Sistema de prod
 </thead>
 <tbody>
 <tr>
-<td>Cobertura</td>
-<td>Tipo de uso de suelo y vegetación que determina la carga animal y la   biodiversidad vegetal.</td>
-</tr>
-<tr>
-<td>Temperatura</td>
-<td>Temperatura ambiente máxima (promedio) que afecta el desempeño productivo   de los animales en pastoreo, aunque aumenta la productividad de pastoreo.</td>
-</tr>
-<tr>
-<td>Precipitación</td>
-<td>Precipitación promedio, cantidad y distribución del agua de lluvia para   mantener la producción de pasto o sustento para la nutrición de los animales</td>
+<td>Tipo de vegetación</td>
+<td> Uso de suelo y vegetación (cubierta vegetal).</td>
 </tr>
 <tr>
 <td>Tipo de suelo</td>
-<td>Características físicas (profundidad, pedregosidad) y químicas (MO,   Nitrógeno) del suelo para soportar la producción de pasto o sustento para la   nutrición de los animales.</td>
+<td></td>
 </tr>
 <tr>
-<td>Disponibilidad de agua</td>
-<td>Acceso a la posibilidad de extraer agua del acuífero para el consumo del   ganado (nivel piezométrico)</td>
+<td>Clima</td>
+<td></td>
+</tr>
+<tr>
+<td>Factores de riesgo</td>
+<td>Elementos del ambiente biofísico que impiden las actividades forestales maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios). </td>
 </tr>
 </tbody>
-</table>
-<!-- .. csv-table::
-   :file: recursos/tabla_c_biofisicos_silvopastoril.csv
-   :header-rows: 1
-   :align: center --><div class="section" id="cobertura">
-<h4>Cobertura<a class="headerlink" href="#cobertura" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Tipo de uso de suelo y vegetación que determina la carga animal y la biodiversidad vegetal.</p>
+</table><div class="section" id="tipo-de-vegetacion">
+<h4>Tipo de vegetación<a class="headerlink" href="#tipo-de-vegetacion" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Uso de suelo y vegetación (cubierta vegetal).</p>
 <p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Uso del suelo y vegetación</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2014</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>descripcio</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:250,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table><!-- .. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_bio_usv_inegi.csv
-   :align: left --><p><strong>Parámetros de la función de valor</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>ID</th>
-<th>Categoría</th>
-<th>Expresión verbal</th>
-<th>FV</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Acuícola</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Agricultura De Riego Anual</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Agricultura De Riego Anual Y Permanente</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Agricultura De Riego Permanente</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Agricultura De Riego Semipermanente</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Agricultura De Riego Semipermanente Y Permanente</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Agricultura De Temporal Anual</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>8</td>
-<td>Agricultura De Temporal Anual Y Permanente</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>9</td>
-<td>Agricultura De Temporal Permanente</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>10</td>
-<td>Agricultura De Temporal Semipermanente</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>11</td>
-<td>Cuerpo de agua</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>12</td>
-<td>Bosque Cultivado</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>13</td>
-<td>Manglar</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>14</td>
-<td>Palmar Inducido</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>15</td>
-<td>Pastizal Cultivado</td>
-<td>Extremadamente alta</td>
-<td>1.00</td>
-</tr>
-<tr>
-<td>16</td>
-<td>Pastizal Halófilo</td>
-<td>Muy baja</td>
-<td>0.33</td>
-</tr>
-<tr>
-<td>17</td>
-<td>Pastizal Inducido</td>
-<td>Extremadamente alta</td>
-<td>1.00</td>
-</tr>
-<tr>
-<td>18</td>
-<td>Sabana</td>
-<td>Muy baja</td>
-<td>0.33</td>
-</tr>
-<tr>
-<td>19</td>
-<td>Selva Baja Espinosa Subperennifolia</td>
-<td>Moderada</td>
-<td>0.70</td>
-</tr>
-<tr>
-<td>20</td>
-<td>Selva Mediana Subcaducifolia</td>
-<td>Muy alta</td>
-<td>0.87</td>
-</tr>
-<tr>
-<td>21</td>
-<td>Selva Mediana Subperennifolia</td>
-<td>Muy alta</td>
-<td>0.87</td>
-</tr>
-<tr>
-<td>22</td>
-<td>Sin Vegetación Aparente</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>23</td>
-<td>Tular</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>24</td>
-<td>Urbano Construido</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>25</td>
-<td>Vegetación De Dunas Costeras</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>26</td>
-<td>Vegetación De Petén</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>27</td>
-<td>Vegetación Halófila Hidrófila</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>28</td>
-<td>Vegetación Secundaria Arbustiva De Manglar</td>
-<td>Muy baja</td>
-<td>0.33</td>
-</tr>
-<tr>
-<td>29</td>
-<td>Vegetación Secundaria Arbustiva De Selva Baja Caducifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>30</td>
-<td>Vegetación Secundaria Arbustiva De Selva Baja Espinosa Caducifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>31</td>
-<td>Vegetación Secundaria Arbustiva De Selva Baja Espinosa Subperennifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>32</td>
-<td>Vegetación Secundaria Arbustiva De Selva Baja Subcaducifolia</td>
-<td>Moderada</td>
-<td>0.70</td>
-</tr>
-<tr>
-<td>33</td>
-<td>Vegetación Secundaria Arbustiva De Selva Mediana Caducifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>34</td>
-<td>Vegetación Secundaria Arbustiva De Selva Mediana Subcaducifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>35</td>
-<td>Vegetación Secundaria Arbustiva De Selva Mediana Subperennifolia</td>
-<td>Muy alta</td>
-<td>0.87</td>
-</tr>
-<tr>
-<td>36</td>
-<td>Vegetación Secundaria Arbórea De Manglar</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>37</td>
-<td>Vegetación Secundaria Arbórea De Selva Baja Caducifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>38</td>
-<td>Vegetación Secundaria Arbórea De Selva Baja Espinosa Caducifolia</td>
-<td>Moderada</td>
-<td>0.70</td>
-</tr>
-<tr>
-<td>39</td>
-<td>Vegetación Secundaria Arbórea De Selva Baja Espinosa Subperennifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>40</td>
-<td>Vegetación Secundaria Arbórea De Selva Baja Subcaducifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>41</td>
-<td>Vegetación Secundaria Arbórea De Selva Mediana Caducifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>42</td>
-<td>Vegetación Secundaria Arbórea De Selva Mediana Subcaducifolia</td>
-<td>Muy alta</td>
-<td>0.87</td>
-</tr>
-<tr>
-<td>43</td>
-<td>Vegetación Secundaria Arbórea De Selva Mediana Subperennifolia</td>
-<td>Muy alta</td>
-<td>0.87</td>
-</tr>
-<tr>
-<td>44</td>
-<td>Vegetación Secundaria Herbácea De Selva Baja Caducifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>45</td>
-<td>Vegetación Secundaria Herbácea De Selva Mediana Caducifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>46</td>
-<td>Vegetación Secundaria Herbácea De Selva Mediana Subcaducifolia</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>47</td>
-<td>Área Desprovista De Vegetación</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-</tbody>
-</table><!-- .. csv-table:: Cobertura
-   :file: recursos/tabla_fv_gbe_sil_bio_usv_inegi.csv
-   :header-rows: 1
-   :align: center --><p><strong>Función de valor de cobertura</strong></p>
-<p><img alt="_images/mapa_fv_gbe_sil_bio_usv_inegi.PNG" src="_images/mapa_fv_gbe_sil_bio_usv_inegi.PNG" /></p>
-</div>
-<div class="section" id="temperatura">
-<h4>Temperatura<a class="headerlink" href="#temperatura" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Temperatura ambiente máxima (promedio) que afecta el desempeño productivo de los animales en pastoreo, aunque aumenta la productividad de pastoreo.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Temperatura máxima promedio</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Adaptado de: Temperatura máxima promedio García, E. - CONABIO</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>1998</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>temp_mean</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:1,000,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>°C</td>
-</tr>
-</tbody>
-</table><!-- .. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_bio_temp_max.csv
-   :align: left --><p><strong>Parámetros de la función de valor</strong></p>
-<p><img alt="_images/fi_fv_gbe_sil_bio_temp_max.png" src="_images/fi_fv_gbe_sil_bio_temp_max.png" /></p>
-<p><strong>Función de valor de temperatura</strong></p>
-<p><img alt="_images/mapa_fv_gbe_sil_bio_temp_max.png" src="_images/mapa_fv_gbe_sil_bio_temp_max.png" /></p>
-<div class="section" id="precipitacion">
-<h5>Precipitación<a class="headerlink" href="#precipitacion" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Precipitación promedio, cantidad y distribución del agua de lluvia para mantener la producción de pasto o sustento para la nutrición de los animales.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Precipitación total anual</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Adaptado de: Precipitación total anual García, E. - CONABIO</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>1998</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>prec_mean</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:1,000,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Milímetros</td>
-</tr>
-</tbody>
-</table><!--
-.. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_bio_precipitacion.csv
-   :align: left --><p><strong>Parámetros de la función de valor</strong></p>
-<p><img alt="_images/fi_fv_gbe_sil_bio_precipitacion.png" src="_images/fi_fv_gbe_sil_bio_precipitacion.png" /></p>
-<p><strong>Función de valor de precipitación</strong></p>
-<p><img alt="_images/mapa_fv_gbe_sil_bio_precipitacion.png" src="_images/mapa_fv_gbe_sil_bio_precipitacion.png" /></p>
-</div>
 </div>
 <div class="section" id="tipo-de-suelo">
 <h4>Tipo de suelo<a class="headerlink" href="#tipo-de-suelo" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Características físicas (profundidad, pedregosidad) y químicas (MO, Nitrógeno) del suelo para soportar la producción de pasto o sustento para la nutrición de los animales.</p>
 <p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Edafología</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional)   INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2014</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>tipo_suelo</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:250,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table><!-- .. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_bio_t_suelo.csv
-   :align: left --><p><strong>Parámetros de la función de valor</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>ID</th>
-<th>Categoría</th>
-<th>Expresión verbal</th>
-<th>FV</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Arenosol</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Cambisol</td>
-<td>Moderada</td>
-<td>0.70</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Chernozem</td>
-<td>Moderada</td>
-<td>0.70</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Gleysol</td>
-<td>Moderada</td>
-<td>0.70</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Histosol</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Leptosol</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Luvisol</td>
-<td>Alta</td>
-<td>0.80</td>
-</tr>
-<tr>
-<td>8</td>
-<td>Nitosol</td>
-<td>Extremadamente alta</td>
-<td>1.00</td>
-</tr>
-<tr>
-<td>9</td>
-<td>Phaeozem</td>
-<td>Baja</td>
-<td>0.56</td>
-</tr>
-<tr>
-<td>10</td>
-<td>Regosol</td>
-<td>Moderada</td>
-<td>0.70</td>
-</tr>
-<tr>
-<td>11</td>
-<td>Solonchak</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>12</td>
-<td>Vertisol</td>
-<td>Moderada</td>
-<td>0.70</td>
-</tr>
-</tbody>
-</table><!-- .. csv-table:: Tipo de suelo
-   :file: recursos/tabla_fv_cat_suelo_silvopastoril.csv
-   :header-rows: 1
-   :align: center --><p><strong>Función de valor de tipo de suelo</strong></p>
-<p><img alt="_images/mapa_fv_gbe_sil_bio_t_suelo.png" src="_images/mapa_fv_gbe_sil_bio_t_suelo.png" /></p>
-<div class="section" id="disponibilidad-de-agua">
-<h5>Disponibilidad de agua<a class="headerlink" href="#disponibilidad-de-agua" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Acceso a la posibilidad de extraer agua del acuífero para el consumo del ganado (nivel piezométrico).</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Nivel freático</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Nivel freático POETY</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>n_freat_m</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Estatal</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Metros</td>
-</tr>
-</tbody>
-</table><!-- .. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_bio_d_acuifero.csv
-   :align: left --><p><strong>Parámetros de la función de valor</strong></p>
-<p><img alt="_images/fi_fv_gbe_sil_bio_d_acuifero.png" src="_images/fi_fv_gbe_sil_bio_d_acuifero.png" /></p>
-<p><strong>Función de valor de disponibilidad de agua</strong></p>
-<p><img alt="_images/mapa_fv_gbe_sil_bio_d_acuifero.png" src="_images/mapa_fv_gbe_sil_bio_d_acuifero.png" /></p>
 </div>
+<div class="section" id="clima">
+<h4>Clima<a class="headerlink" href="#clima" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="factores-de-riesgo">
+<h4>Factores de riesgo<a class="headerlink" href="#factores-de-riesgo" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Elementos del ambiente biofísico que impiden las actividades forestales maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios).</p>
+<p><strong>Insumos</strong></p>
 </div>
 </div>
 <div class="section" id="socioeconomicos">
@@ -782,327 +222,206 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><p>Sistema de prod
 </thead>
 <tbody>
 <tr>
-<td>Accesibilidad a mercados locales</td>
-<td>Distancia a puntos de venta local de becerros (Tizimín, Valladolid, Mérida y Tzucacab)</td>
+<td>Aprovechamiento</td>
+<td>Autorizaciones de aprovechamiento (activos e inactivos)</td>
 </tr>
 <tr>
-<td>Accesibilidad a mercados foráneos</td>
-<td>Distancia a puntos de venta de carne (Campeche, Cancún, Playa del Carmen).</td>
+<td>Mercados</td>
+<td>Distancia a puntos de venta</td>
 </tr>
 <tr>
-<td>Disponibilidad de mano de obra</td>
-<td>Población económicamente activa ocupada en el sector primario (%)</td>
+<td>Tenencia</td>
+<td>Zonas ejidales, tenencia de la tierra (RAN)</td>
 </tr>
 </tbody>
-</table><!-- .. csv-table::
-   :file: recursos/tabla_c_socioeconomico_silvopastoril.csv
-   :header-rows: 1
-   :align: center --><div class="section" id="accesibilidad-a-mercados">
-<h4>Accesibilidad a mercados<a class="headerlink" href="#accesibilidad-a-mercados" title="Enlazar permanentemente con este título">¶</a></h4>
+</table><div class="section" id="aprovechamiento">
+<h4>Aprovechamiento<a class="headerlink" href="#aprovechamiento" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Autorizaciones de aprovechamiento (activos e inactivos).</p>
+<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="mercados">
+<h4>Mercados<a class="headerlink" href="#mercados" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a puntos de venta.</p>
+<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="tenencia">
+<h4>Tenencia<a class="headerlink" href="#tenencia" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Zonas ejidales, tenencia de la tierra (RAN).</p>
+<p><strong>Insumos</strong></p>
+</div>
+</div>
+<div class="section" id="infraestructura">
+<h3>Infraestructura<a class="headerlink" href="#infraestructura" title="Enlazar permanentemente con este título">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>Criterio</th>
 <th>Definición</th>
-<th>FV</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Accesibilidad a mercados locales</td>
-<td>Distancia a puntos de venta local de becerros (Tizimín, Valladolid, Mérida y Tzucacab)</td>
-<td>0.87</td>
+<td>Abastecimiento</td>
+<td>Distancia a localidades: acceso a insumos para la producción (fuentes de   energía y combustible en localidades)</td>
 </tr>
 <tr>
-<td>Accesibilidad a mercados foráneos</td>
-<td>Distancia a puntos de venta de carne (Campeche, Cancún, Playa del Carmen).</td>
-<td>0.13</td>
+<td>Centros de almacenamiento</td>
+<td>Distancia a centros de almacenamiento y transformación</td>
+</tr>
+<tr>
+<td>Comunicación</td>
+<td>Distancia a carreteras, caminos rurales, veredas (red de caminos   primarios y secundarios)</td>
 </tr>
 </tbody>
-</table><!-- .. csv-table::
-   :file: recursos/tabla_c_socioeconomico_mercados.csv
-   :header-rows: 1
-   :align: center --><p><strong>Accesibilidad a mercados locales</strong></p>
-<p>Distancia a puntos de venta local de becerros (Tizimín, Valladolid, Mérida y Tzucacab).</p>
+</table><div class="section" id="abastecimiento">
+<h4>Abastecimiento<a class="headerlink" href="#abastecimiento" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a localidades: acceso a insumos para la producción (fuentes de energía y combustible en localidades).</p>
 <p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia a localidades intraestatales</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Adaptado de: [1] Conjunto de datos vectoriales de información topográfica   por Entidad Federativa Serie VI. (Zonas urbanas) INEGI y [2] Red nacional de   caminos INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2019</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>[1] 1:250,000; [2] Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table><!-- .. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_socio_d_mercados_loc.csv
-   :align: left --><p><strong>Parámetros de la función de valor</strong></p>
-<p><img alt="_images/fi_fv_gbe_sil_socio_d_mercados_loc.png" src="_images/fi_fv_gbe_sil_socio_d_mercados_loc.png" /></p>
-<p><strong>Función de valor de accesibilidad a mercados locales</strong></p>
-<p><img alt="_images/mapa_fv_gbe_sil_socio_d_mercados_loc.png" src="_images/mapa_fv_gbe_sil_socio_d_mercados_loc.png" /></p>
-<p><strong>Accesibilidad a mercados foráneos</strong></p>
-<p>Distancia a puntos de venta de carne (Campeche, Cancún, Playa del Carmen).</p>
+</div>
+<div class="section" id="centros-de-almacenamiento">
+<h4>Centros de almacenamiento<a class="headerlink" href="#centros-de-almacenamiento" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a centros de almacenamiento y transformación.</p>
 <p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia a localidades intraestatales</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Adaptado de: [1] Conjunto de datos vectoriales de información topográfica   por Entidad Federativa Serie VI. (Zonas urbanas) INEGI y [2] Red nacional de   caminos INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2019</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>[1] 1:250,000; [2]Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table><!-- .. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_socio_d_mercados_for.csv
-   :align: left --><p><strong>Parámetros de la función de valor</strong></p>
-<p><img alt="_images/fi_fv_gbe_sil_socio_d_mercados_for.png" src="_images/fi_fv_gbe_sil_socio_d_mercados_for.png" /></p>
-<p><strong>Función de valor de accesibilidad a mercados foráneos</strong></p>
-<p><img alt="_images/mapa_fv_gbe_sil_socio_d_mercados_for.png" src="_images/mapa_fv_gbe_sil_socio_d_mercados_for.png" /></p>
 </div>
-<div class="section" id="disponibilidad-de-mano-de-obra">
-<h4>Disponibilidad de mano de obra<a class="headerlink" href="#disponibilidad-de-mano-de-obra" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Población económicamente activa ocupada en el sector primario (%).</p>
+<div class="section" id="comunicacion">
+<h4>Comunicación<a class="headerlink" href="#comunicacion" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a carreteras, caminos rurales, veredas (red de caminos primarios y secundarios).</p>
 <p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Población económicamente activa en el sector primario</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Adaptado de: [1] Encuesta Intercensal INEGI y [2] División política municipal INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>[1] 2015; [2] 2018</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>[1] Sector de actividad económica primario</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>[2] 1:250,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Porcentaje</td>
-</tr>
-</tbody>
-</table><!-- .. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_socio_sec_primario.csv
-   :align: left   --><p><strong>Parámetros de la función de valor</strong></p>
-<p><img alt="_images/fi_fv_gbe_sil_socio_sec_primario.png" src="_images/fi_fv_gbe_sil_socio_sec_primario.png" /></p>
-<p><strong>Función de valor de disponibilidad de mano de obra</strong></p>
-<p><img alt="_images/mapa_fv_gbe_sil_socio_sec_primario.png" src="_images/mapa_fv_gbe_sil_socio_sec_primario.png" /></p>
 </div>
 </div>
+<div class="section" id="no-maderable">
+<h3>No maderable<a class="headerlink" href="#no-maderable" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La parte no leñosa de la vegetación de un ecosistema forestal, y susceptibles de aprovechamiento o uso, incluyendo líquenes, musgos, hongos y resinas, así como los suelos de terrenos forestales y preferentemente forestales.</p>
+<p><strong>Modelo AHP de la actividad no maderable</strong></p>
+<p><img alt="recursos/forestal/no_maderable.png" src="recursos/forestal/no_maderable.png" /></p>
 </div>
-<div class="section" id="pesos-globales-del-modelo-de-aptitud-silvopastoril">
-<h2>Pesos globales del modelo de aptitud silvopastoril<a class="headerlink" href="#pesos-globales-del-modelo-de-aptitud-silvopastoril" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="id1">
+<h2>Criterios<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="id2">
+<h3>Biofísicos<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>Criterio</th>
-<th>Peso</th>
+<th>Definición</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Disponibilidad de agua</td>
-<td>0.38</td>
+<td>Clima</td>
+<td> </td>
 </tr>
 <tr>
-<td>Cobertura</td>
-<td>0.2</td>
+<td>Tipo de vegetación</td>
+<td>Uso de suelo y vegetación (cubierta vegetal)</td>
 </tr>
 <tr>
-<td>Disponibilidad de mano de obra</td>
-<td>0.15</td>
-</tr>
-<tr>
-<td>Accesibilidad a mercados locales</td>
-<td>0.09</td>
-</tr>
-<tr>
-<td>Precipitación</td>
-<td>0.08</td>
+<td>Factores de riesgo</td>
+<td>Elementos del ambiente biofísico que impiden las actividades forestales   maderables (zonas con plagas y especies invasoras, zonas con incidencia de   incendios)</td>
 </tr>
 <tr>
 <td>Tipo de suelo</td>
-<td>0.08</td>
-</tr>
-<tr>
-<td>temperatura</td>
-<td>0.02</td>
-</tr>
-<tr>
-<td>Accesibilidad a mercados foráneos</td>
-<td>0.01</td>
+<td> </td>
 </tr>
 </tbody>
-</table><!-- .. csv-table::
-   :file: recursos/tabla_pesos_globales.csv
-   :header-rows: 1
-   :align: center --></div>
-<div class="section" id="capa-de-exclusion">
-<h2>Capa de exclusión<a class="headerlink" href="#capa-de-exclusion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Coberturas no aptas de la capa de uso del suelo y vegetación serie VI INEGI usadas como zonas de exclusión (Aptitud nula)</p>
+</table><div class="section" id="id3">
+<h4>Tipo de vegetación<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Uso de suelo y vegetación (cubierta vegetal).</p>
+<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="id4">
+<h4>Tipo de suelo<a class="headerlink" href="#id4" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="id5">
+<h4>Clima<a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="id6">
+<h4>Factores de riesgo<a class="headerlink" href="#id6" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Elementos del ambiente biofísico que impiden las actividades forestales maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios).</p>
+<p><strong>Insumos</strong></p>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>Socioeconómicos<a class="headerlink" href="#id7" title="Enlazar permanentemente con este título">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">ID</th>
-<th>Categoría</th>
+<th>Criterio</th>
+<th>Definición</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">01</td>
-<td>Acuícola</td>
+<td>Aprovechamiento</td>
+<td>Autorizaciones de aprovechamiento (activos e inactivos)</td>
 </tr>
 <tr>
-<td align="left">11</td>
-<td>Cuerpo de agua</td>
+<td>Mercados</td>
+<td>Distancia a puntos de venta</td>
 </tr>
 <tr>
-<td align="left">13</td>
-<td>Manglar</td>
-</tr>
-<tr>
-<td align="left">14</td>
-<td>Palmar inducido</td>
-</tr>
-<tr>
-<td align="left">16</td>
-<td>Paztizal halófilo</td>
-</tr>
-<tr>
-<td align="left">22</td>
-<td>Sin Vegetación Aparente</td>
-</tr>
-<tr>
-<td align="left">23</td>
-<td>Tular</td>
-</tr>
-<tr>
-<td align="left">24</td>
-<td>Urbano Construido</td>
-</tr>
-<tr>
-<td align="left">25</td>
-<td>Vegetación De Dunas Costeras</td>
-</tr>
-<tr>
-<td align="left">26</td>
-<td>Vegetación De Petén</td>
-</tr>
-<tr>
-<td align="left">27</td>
-<td>Vegetación Halófila Hidrófila</td>
-</tr>
-<tr>
-<td align="left">28</td>
-<td>Vegetación Secundaria Arbustiva De Manglar</td>
-</tr>
-<tr>
-<td align="left">36</td>
-<td>Vegetación Secundaria Arbórea De Manglar</td>
-</tr>
-<tr>
-<td align="left">47</td>
-<td>Área Desprovista De Vegetación</td>
+<td>Tenencia</td>
+<td>Zonas ejidales, tenencia de la tierra (RAN)</td>
 </tr>
 </tbody>
-</table><!-- .. csv-table::
-   :file: recursos/tabla_categorias_exclusion.csv
-   :header-rows: 1
-   :align: center --><p><img alt="_images/mapa_gbe_silvopastoril_exclusion.png" src="_images/mapa_gbe_silvopastoril_exclusion.png" /></p>
+</table><div class="section" id="id8">
+<h4>Aprovechamiento<a class="headerlink" href="#id8" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Autorizaciones de aprovechamiento (activos e inactivos).</p>
+<p><strong>Insumos</strong></p>
 </div>
-<div class="section" id="mapa-de-aptitud-silvopastoril">
-<h2>Mapa de aptitud silvopastoril<a class="headerlink" href="#mapa-de-aptitud-silvopastoril" title="Enlazar permanentemente con este título">¶</a></h2>
-<p><img alt="_images/mapa_apt_gbe_silvopastoril.png" src="_images/mapa_apt_gbe_silvopastoril.png" /></p>
-<div class="section" id="area-por-categoria-de-aptitud">
-<h3>Área por categoría de aptitud<a class="headerlink" href="#area-por-categoria-de-aptitud" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="id9">
+<h4>Mercados<a class="headerlink" href="#id9" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a puntos de venta.</p>
+<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="id10">
+<h4>Tenencia<a class="headerlink" href="#id10" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Zonas ejidales, tenencia de la tierra (RAN).</p>
+<p><strong>Insumos</strong></p>
+</div>
+</div>
+<div class="section" id="id11">
+<h3>Infraestructura<a class="headerlink" href="#id11" title="Enlazar permanentemente con este título">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="left">Categoria</th>
-<th align="right">km²</th>
-<th align="right">Porcentaje del estado</th>
+<th>Criterio</th>
+<th>Definición</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">Nula</td>
-<td align="right">2538.1</td>
-<td align="right">6</td>
+<td>Abastecimiento</td>
+<td>Distancia a localidades: acceso a insumos para la producción (fuentes de   energía y combustible en localidades)</td>
 </tr>
 <tr>
-<td align="left">Muy baja</td>
-<td align="right">702.2</td>
-<td align="right">2</td>
+<td>Centros de almacenamiento</td>
+<td>Distancia a centros de almacenamiento y transformación</td>
 </tr>
 <tr>
-<td align="left">Baja</td>
-<td align="right">397.2</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td align="left">Moderada</td>
-<td align="right">4300.0</td>
-<td align="right">11</td>
-</tr>
-<tr>
-<td align="left">Alta</td>
-<td align="right">11956.0</td>
-<td align="right">30</td>
-</tr>
-<tr>
-<td align="left">Muy alta</td>
-<td align="right">19486.6</td>
-<td align="right">49</td>
+<td>Comunicación</td>
+<td>Distancia a carreteras, caminos rurales, veredas (red de caminos   primarios y secundarios)</td>
 </tr>
 </tbody>
-</table></div>
+</table><div class="section" id="id12">
+<h4>Abastecimiento<a class="headerlink" href="#id12" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a localidades: acceso a insumos para la producción (fuentes de energía y combustible en localidades).</p>
+<p><strong>Insumos</strong></p>
 </div>
-<div class="section" id="sensibilidad-de-atributos">
-<h2>Sensibilidad de atributos<a class="headerlink" href="#sensibilidad-de-atributos" title="Enlazar permanentemente con este título">¶</a></h2>
-<p><img alt="_images/fi_analisis_sensibilidad_silvopastoril.png" src="_images/fi_analisis_sensibilidad_silvopastoril.png" /></p>
+<div class="section" id="id13">
+<h4>Centros de almacenamiento<a class="headerlink" href="#id13" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a centros de almacenamiento y transformación.</p>
+<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="id14">
+<h4>Comunicación<a class="headerlink" href="#id14" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a carreteras, caminos rurales, veredas (red de caminos primarios y secundarios).</p>
+<p><strong>Insumos</strong></p>
+</div>
+</div>
 </div>
 </div>
 
