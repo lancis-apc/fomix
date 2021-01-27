@@ -83,6 +83,7 @@
             
               <p class="caption"><span class="caption-text">Sectores:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="energia_pr.html">Energía</a></li>
 <li class="toctree-l1"><a class="reference internal" href="forestal_pr.html">Forestal</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Industrial</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#meta">Meta</a></li>
@@ -106,7 +107,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#tenencia">Tenencia</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#biofisicos">Biofísicos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#biofisicos">Biofísicos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#disponibilidad-de-agua">Disponibilidad de agua</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cobertura">Cobertura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dispersion-de-emisiones">Dispersión de emisiones</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -234,11 +240,70 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <h4>Energía<a class="headerlink" href="#energia" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Energía eléctrica: acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos).</p>
 <p><strong>Insumos</strong></p>
-</div>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia líneas de transmisión de energía   eléctrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Líneas de transmisión INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2012</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="distancia-a-agua">
 <h4>Distancia a agua<a class="headerlink" href="#distancia-a-agua" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Distancia a red de agua potable, plantas de tratamiento, cobertura.</p>
 <p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a agua</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Censo de Población y Vivienda 2010. Principales resultados por localidad   (ITER) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2010</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>VPH_AGUADV</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Localidad</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p>Capa	Distancia a plantas de tratamiento de agua residual
+Fuente	Datos vectoriales de las plantas municipales de tratamiento de aguas residuales en operación registradas en el inventario nacional CONAGUA
+Año	2017
+Escala	 1:250,000
+Unidades	Kilómetros</p>
 </div>
 <div class="section" id="conectividad">
 <h4>Conectividad<a class="headerlink" href="#conectividad" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -324,7 +389,32 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <h4>Distancia a residuos<a class="headerlink" href="#distancia-a-residuos" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Manejo de residuos: distancia a sitios de disposición final (basureros, rellenos sanitarios, disposición de residuos peligrosos).</p>
 <p><strong>Insumos</strong></p>
-</div>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a residuos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Sitios de disposición final de residuos INEGI-SEMARNAT</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="comunicacion">
 <h4>Comunicación<a class="headerlink" href="#comunicacion" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Telecomunicaciones: cobertura de red (IFETEL).</p>
@@ -347,7 +437,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Localidades</td>
-<td> </td>
+<td>Población total en localidades.</td>
 </tr>
 <tr>
 <td>Tenencia</td>
@@ -358,16 +448,96 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <h4>Industria instalada<a class="headerlink" href="#industria-instalada" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Centros urbanos con predominancia de actividad industrial, corredores industriales, servicios anexos – talleres, bodegas (fuente: INEGI - DNUE) y proyectos industriales autorizados (fuente: MIA).</p>
 <p><strong>Insumos</strong></p>
-</div>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Industria mediana y pesada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Localidad</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Número de unidades económicas</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="localidades">
 <h4>Localidades<a class="headerlink" href="#localidades" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Población total en localidades.</p>
 <p><strong>Insumos</strong></p>
-</div>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Tipo de localidades</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Censo de Población y Vivienda 2010. Principales resultados por localidad   (ITER) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2010</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>POBTOT</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Localidad</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Número de habitantes</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="tenencia">
 <h4>Tenencia<a class="headerlink" href="#tenencia" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Tenencia de la tierra: terrenos ejidales o propiedad privada.</p>
 <p><strong>Insumos</strong></p>
-</div>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Tenencia de la tierra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Zonas de Tierras Parceladas y [2] Tierra de uso común</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <div class="section" id="biofisicos">
 <h3>Biofísicos<a class="headerlink" href="#biofisicos" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -380,22 +550,37 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </thead>
 <tbody>
 <tr>
-<td>Cobertura</td>
-<td>Zonas urbanas, asentamientos humanos</td>
-</tr>
-<tr>
 <td>Disponibilidad de agua</td>
-<td>Disponibilidad de agua: factibilidad para el aprovechamiento directo- pozos: capacidad de extracción (distancia a manto freático) y calidad</td>
+<td>Distancia a manto freático.</td>
 </tr>
 <tr>
-<td>Emisiones</td>
-<td>Dispersión de emisiones: se cuenta con información de zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea (fuente: Atlas de peligros de Yucatán)</td>
+<td>Cobertura</td>
+<td>Zonas urbanas, asentamientos humanos.</td>
+</tr>
+<tr>
+<td>Dispersión de emisiones</td>
+<td>Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea.</td>
 </tr>
 </tbody>
-</table><!-- .. csv-table::
+</table><div class="section" id="disponibilidad-de-agua">
+<h4>Disponibilidad de agua<a class="headerlink" href="#disponibilidad-de-agua" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a manto freático.</p>
+<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="cobertura">
+<h4>Cobertura<a class="headerlink" href="#cobertura" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Zonas urbanas, asentamientos humanos.</p>
+<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="dispersion-de-emisiones">
+<h4>Dispersión de emisiones<a class="headerlink" href="#dispersion-de-emisiones" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea.</p>
+<p><strong>Insumos</strong></p>
+<!-- .. csv-table::
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv
    :header-rows: 1
    :align: center --></div>
+</div>
 </div>
 </div>
 
