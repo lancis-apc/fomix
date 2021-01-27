@@ -1,0 +1,48 @@
+﻿ID,Categoría,Expresión verbal,FV
+1,Acuícola,Nula,0.00
+2,Agricultura De Riego Anual,Baja,0.56
+3,Agricultura De Riego Anual Y Permanente,Baja,0.56
+4,Agricultura De Riego Permanente,Baja,0.56
+5,Agricultura De Riego Semipermanente,Baja,0.56
+6,Agricultura De Riego Semipermanente Y Permanente,Baja,0.56
+7,Agricultura De Temporal Anual,Baja,0.56
+8,Agricultura De Temporal Anual Y Permanente,Baja,0.56
+9,Agricultura De Temporal Permanente,Baja,0.56
+10,Agricultura De Temporal Semipermanente,Baja,0.56
+11,Cuerpo de agua,Nula,0.00
+12,Bosque Cultivado,Baja,0.56
+13,Manglar,Nula,0.00
+14,Palmar Inducido,Baja,0.56
+15,Pastizal Cultivado,Extremadamente alta ,1.00
+16,Pastizal Halófilo,Muy baja,0.33
+17,Pastizal Inducido,Extremadamente alta ,1.00
+18,Sabana,Muy baja,0.33
+19,Selva Baja Espinosa Subperennifolia,Moderada,0.70
+20,Selva Mediana Subcaducifolia,Muy alta,0.87
+21,Selva Mediana Subperennifolia,Muy alta,0.87
+22,Sin Vegetación Aparente,Nula,0.00
+23,Tular,Nula,0.00
+24,Urbano Construido,Nula,0.00
+25,Vegetación De Dunas Costeras,Nula,0.00
+26,Vegetación De Petén,Nula,0.00
+27,Vegetación Halófila Hidrófila,Nula,0.00
+28,Vegetación Secundaria Arbustiva De Manglar,Muy baja,0.33
+29,Vegetación Secundaria Arbustiva De Selva Baja Caducifolia,Alta,0.80
+30,Vegetación Secundaria Arbustiva De Selva Baja Espinosa Caducifolia,Alta,0.80
+31,Vegetación Secundaria Arbustiva De Selva Baja Espinosa Subperennifolia,Alta,0.80
+32,Vegetación Secundaria Arbustiva De Selva Baja Subcaducifolia,Moderada,0.70
+33,Vegetación Secundaria Arbustiva De Selva Mediana Caducifolia,Alta,0.80
+34,Vegetación Secundaria Arbustiva De Selva Mediana Subcaducifolia,Alta,0.80
+35,Vegetación Secundaria Arbustiva De Selva Mediana Subperennifolia,Muy alta,0.87
+36,Vegetación Secundaria Arbórea De Manglar,Nula,0.00
+37,Vegetación Secundaria Arbórea De Selva Baja Caducifolia,Alta,0.80
+38,Vegetación Secundaria Arbórea De Selva Baja Espinosa Caducifolia,Moderada,0.70
+39,Vegetación Secundaria Arbórea De Selva Baja Espinosa Subperennifolia,Alta,0.80
+40,Vegetación Secundaria Arbórea De Selva Baja Subcaducifolia,Alta,0.80
+41,Vegetación Secundaria Arbórea De Selva Mediana Caducifolia,Alta,0.80
+42,Vegetación Secundaria Arbórea De Selva Mediana Subcaducifolia,Muy alta,0.87
+43,Vegetación Secundaria Arbórea De Selva Mediana Subperennifolia,Muy alta,0.87
+44,Vegetación Secundaria Herbácea De Selva Baja Caducifolia,Alta,0.80
+45,Vegetación Secundaria Herbácea De Selva Mediana Caducifolia,Alta,0.80
+46,Vegetación Secundaria Herbácea De Selva Mediana Subcaducifolia,Alta,0.80
+47,Área Desprovista De Vegetación,Nula,0.00
