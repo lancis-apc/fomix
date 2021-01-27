@@ -40,11 +40,33 @@ Energía eléctrica: acceso y calidad/capacidad de infraestructura eléctrica (C
 
 **Insumos**
 
+Capa | Distancia líneas de transmisión de energía   eléctrica
+-- | --
+Fuente | Líneas de transmisión INEGI
+Año | 2012
+Escala | 1:50,000
+Unidades | Kilómetros
+
 ##### Distancia a agua
 
 Distancia a red de agua potable, plantas de tratamiento, cobertura.
 
 **Insumos**
+
+Capa | Distancia a agua
+-- | --
+Fuente | Censo de Población y Vivienda 2010. Principales resultados por localidad   (ITER) INEGI
+Año | 2010
+Campo | VPH_AGUADV
+Escala | Localidad
+Unidades | Kilómetros
+
+Capa	Distancia a plantas de tratamiento de agua residual
+Fuente	Datos vectoriales de las plantas municipales de tratamiento de aguas residuales en operación registradas en el inventario nacional CONAGUA
+Año	2017
+Escala	 1:250,000
+Unidades	Kilómetros
+
 
 ##### Conectividad
 
@@ -80,6 +102,14 @@ Manejo de residuos: distancia a sitios de disposición final (basureros, relleno
 
 **Insumos**
 
+Capa | Distancia a residuos
+-- | --
+Fuente | Sitios de disposición final de residuos INEGI-SEMARNAT
+Año | 2017
+Escala | Sin dato
+Unidades | Kilómetros
+
+
 ##### Comunicación
 
 Telecomunicaciones: cobertura de red (IFETEL).
@@ -91,7 +121,7 @@ Telecomunicaciones: cobertura de red (IFETEL).
 Criterio | Definición
 -- | --
 Industria instalada | Centros urbanos con predominancia de actividad industrial, corredores industriales, servicios anexos – talleres, bodegas (fuente: INEGI - DNUE) y proyectos industriales autorizados (fuente: MIA).
-Localidades |  
+Localidades | Población total en localidades.
 Tenencia | Tenencia de la tierra: terrenos ejidales o propiedad privada.
 
 ##### Industria instalada
@@ -100,10 +130,27 @@ Centros urbanos con predominancia de actividad industrial, corredores industrial
 
 **Insumos**
 
+Capa | Industria mediana y pesada
+-- | --
+Fuente | Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
+Año | 2020
+Escala | Localidad
+Unidades | Número de unidades económicas
+
+
 ##### Localidades
 
+Población total en localidades.
 
 **Insumos**
+
+Capa | Tipo de localidades
+-- | --
+Fuente | Censo de Población y Vivienda 2010. Principales resultados por localidad   (ITER) INEGI
+Año | 2010
+Campo | POBTOT
+Escala | Localidad
+Unidades | Número de habitantes
 
 ##### Tenencia
 
@@ -111,13 +158,42 @@ Tenencia de la tierra: terrenos ejidales o propiedad privada.
 
 **Insumos**
 
+Capa | Tenencia de la tierra
+-- | --
+Fuente | [1] Zonas de Tierras Parceladas y [2] Tierra de uso común
+Año | 2020
+Escala | Sin dato
+Unidades | Adimensional
+
+
 ### Biofísicos
 
 Criterio | Definición
 -- | --
-Cobertura | Zonas urbanas, asentamientos humanos
-Disponibilidad de agua | Disponibilidad de agua: factibilidad para el aprovechamiento directo- pozos: capacidad de extracción (distancia a manto freático) y calidad
-Emisiones | Dispersión de emisiones: se cuenta con información de zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea (fuente: Atlas de peligros de Yucatán)
+Disponibilidad de agua | Distancia a manto freático.
+Cobertura | Zonas urbanas, asentamientos humanos.
+Dispersión de emisiones | Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea.
+
+##### Disponibilidad de agua
+
+Distancia a manto freático.
+
+**Insumos**
+
+
+##### Cobertura
+
+Zonas urbanas, asentamientos humanos.
+
+**Insumos**
+
+
+##### Dispersión de emisiones
+
+Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea.
+
+**Insumos**
+
 
 <!-- .. csv-table::
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv
