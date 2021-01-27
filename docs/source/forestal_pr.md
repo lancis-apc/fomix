@@ -143,12 +143,36 @@ Uso de suelo y vegetación (cubierta vegetal).
 
 **Insumos**
 
+Capa | Cobertura
+-- | --
+Fuente | Mapa de coberturas del suelo del estado de Yucatán CONAFOR
+Año | 2016
+Campo | DES_SAMOF
+Escala | Sin dato
+Unidades | Adimensional
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2014
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
 
 ##### Tipo de suelo
 
 
 
 **Insumos**
+
+Capa | Edafología
+-- | --
+Fuente | Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional)   INEGI
+Año | 2014
+Campo | tipo_suelo
+Escala | 1:250,000
+Unidades | Adimensional
 
 
 ##### Clima
@@ -157,12 +181,40 @@ Uso de suelo y vegetación (cubierta vegetal).
 
 **Insumos**
 
+Capa | Climas
+-- | --
+Fuente | Climas CONAGUA
+Año | 2001
+Campo | Clima_tipo
+Escala | 1:1,000,000
+Unidades | Adimensional
+
 
 ##### Factores de riesgo
 
 Elementos del ambiente biofísico que impiden las actividades forestales maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios).
 
 **Insumos**
+
+Capa	Riesgos para la actividad forestal (plaga)
+Fuente	Riesgo estatal para Escarabajos Ambrosiales Exóticos SIVICOFF
+Año	2020
+Escala	Sin dato
+Unidades	Adimensional
+
+Capa | Riesgos para la actividad forestal (incendios)
+-- | --
+Fuente | Áreas prioritarias de protección contra incendios forestales SNIGF CONAFOR
+Año | 2020
+Escala | Sin dato
+Unidades | Adimensional
+
+Capa | Riesgos para la actividad forestal (plaga)
+-- | --
+Fuente | Riesgo estatal por Sinoxylon unidentatum SIVICOFF
+Año | 2020
+Escala | Sin dato
+Unidades | Adimensional
 
 
 ### Socioeconómicos
@@ -187,12 +239,26 @@ Distancia a puntos de venta.
 
 **Insumos**
 
+Capa | Tamaño poblacional
+-- | --
+Fuente | [1] Polígonos de localidades. Conjunto de datos vectoriales de   información topográfica por Entidad Federativa Serie VI (localidad250_a)   INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales   resultados por localidad (ITER) INEGI
+Año | [1] 2019; [2] 2010
+Campo | [2] POBTOT
+Escala | Localidad
+Unidades | Número de habitantes
+
 
 ##### Tenencia
 
 Zonas ejidales, tenencia de la tierra (RAN).
 
 **Insumos**
+
+Capa	Tenencia de la tierra
+Fuente	[1] Zonas de Tierras Parceladas y [2] Tierra de uso común
+Año	2020
+Escala	Sin dato
+Unidades	Adimensional
 
 
 ### Infraestructura
@@ -210,6 +276,21 @@ Distancia a localidades: acceso a insumos para la producción (fuentes de energ�
 
 **Insumos**
 
+Capa | Distancia líneas de transmisión de energía   eléctrica
+-- | --
+Fuente | Líneas de transmisión INEGI
+Año | 2012
+Escala | 1:50,000
+Unidades | Kilómetros
+
+Capa | Tamaño poblacional
+-- | --
+Fuente | [1] Polígonos de localidades. Conjunto de datos vectoriales de   información topográfica por Entidad Federativa Serie VI (localidad250_a)   INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales   resultados por localidad (ITER) INEGI
+Año | [1] 2019; [2] 2010
+Campo | [2] POBTOT
+Escala | Localidad
+Unidades | Número de habitantes
+
 
 ##### Centros de almacenamiento
 
@@ -223,3 +304,10 @@ Distancia a centros de almacenamiento y transformación.
 Distancia a carreteras, caminos rurales, veredas (red de caminos primarios y secundarios).
 
 **Insumos**
+
+Capa | Distancia a la red vial
+-- | --
+Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | 2019
+Escala | Sin dato
+Unidades | Kilómetros

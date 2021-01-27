@@ -22,7 +22,9 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    :maxdepth: 4
    :caption: Sectores:
 
+   forestal_pr
    industrial_pr
+   ga_silvopastoril_pr
    urbano_pr
 
 
