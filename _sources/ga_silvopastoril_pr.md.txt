@@ -103,7 +103,7 @@ ID | Categoría | Expresión verbal | FV
 
 **Función de valor de cobertura**
 
-![](/recursos/mapa_fv_gbe_sil_bio_usv_inegi.PNG)
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_usv_inegi.PNG)
 
 #### Temperatura
 
@@ -125,11 +125,11 @@ Unidades | °C
 
 **Parámetros de la función de valor**
 
-![](/recursos/fi_fv_gbe_sil_bio_temp_max.png)
+![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_temp_max.png)
 
 **Función de valor de temperatura**
 
-![](/recursos/mapa_fv_gbe_sil_bio_temp_max.png)
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_temp_max.png)
 
 ##### Precipitación
 
@@ -152,11 +152,11 @@ Unidades | Milímetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/fi_fv_gbe_sil_bio_precipitacion.png)  
+![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_precipitacion.png)  
 
 **Función de valor de precipitación**
 
-![](/recursos/mapa_fv_gbe_sil_bio_precipitacion.png)
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_precipitacion.png)
 
 #### Tipo de suelo
 
@@ -200,7 +200,7 @@ ID | Categoría | Expresión verbal | FV
 
 **Función de valor de tipo de suelo**
 
-![](/recursos/mapa_fv_gbe_sil_bio_t_suelo.png)    
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_t_suelo.png)    
 
 ##### Disponibilidad de agua
 
@@ -222,11 +222,11 @@ Unidades | Metros
 
 **Parámetros de la función de valor**
 
-![](/recursos/fi_fv_gbe_sil_bio_d_acuifero.png)
+![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_d_acuifero.png)
 
 **Función de valor de disponibilidad de agua**
 
-![](/recursos/mapa_fv_gbe_sil_bio_d_acuifero.png)   
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_d_acuifero.png)   
 
 ### Socioeconómicos
 
@@ -272,11 +272,11 @@ Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
-![](/recursos/fi_fv_gbe_sil_socio_d_mercados_loc.png)
+![](/recursos/silvopastoril/fi_fv_gbe_sil_socio_d_mercados_loc.png)
 
 **Función de valor de accesibilidad a mercados locales**
 
-![](/recursos/mapa_fv_gbe_sil_socio_d_mercados_loc.png)
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_d_mercados_loc.png)
 
 **Accesibilidad a mercados foráneos**
 
@@ -297,11 +297,11 @@ Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
-![](/recursos/fi_fv_gbe_sil_socio_d_mercados_for.png)
+![](/recursos/silvopastoril/fi_fv_gbe_sil_socio_d_mercados_for.png)
 
 **Función de valor de accesibilidad a mercados foráneos**
 
-![](/recursos/mapa_fv_gbe_sil_socio_d_mercados_for.png)  
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_d_mercados_for.png)  
 
 #### Disponibilidad de mano de obra
 
@@ -323,11 +323,11 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/fi_fv_gbe_sil_socio_sec_primario.png)  
+![](/recursos/silvopastoril/fi_fv_gbe_sil_socio_sec_primario.png)  
 
 **Función de valor de disponibilidad de mano de obra**
 
-![](/recursos/mapa_fv_gbe_sil_socio_sec_primario.png)  
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_sec_primario.png)  
 
 ## Pesos globales del modelo de aptitud silvopastoril
 
@@ -374,12 +374,12 @@ ID | Categoría
    :header-rows: 1
    :align: center -->
 
-![](/recursos/mapa_gbe_silvopastoril_exclusion.png)  
+![](/recursos/silvopastoril/mapa_gbe_silvopastoril_exclusion.png)  
 
 ## Mapa de aptitud silvopastoril
 
 
-![](/recursos/mapa_apt_gbe_silvopastoril.png)  
+![](/recursos/silvopastoril/mapa_apt_gbe_silvopastoril.png)  
 
 ### Área por categoría de aptitud
 
@@ -396,4 +396,4 @@ Muy alta | 19486.6 | 49
 ## Sensibilidad de atributos
 
 
-![](/recursos/fi_analisis_sensibilidad_silvopastoril.png)
+![](/recursos/silvopastoril/fi_analisis_sensibilidad_silvopastoril.png)
