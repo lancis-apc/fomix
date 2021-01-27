@@ -44,17 +44,14 @@ Consumo y almacenamiento de hidrocarburos líquidos. Plantas que utilizan diesel
 Transporte de gas natural por gasoductos y vehículos terrestres. Terminales de almacenamiento y centrales eléctricas. Uso de gas comprimido por empresas.
 
 
-
 ##### Solar
 
 Instalaciones industriales que aprovechan la irradiación solar como fuente de energía.
 
 
-
 ##### Eolica
 
 Instalaciones de generación de energía, mayores a 0.5 MW.
-
 
 
 ##### Biomasa industrial
