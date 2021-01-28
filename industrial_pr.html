@@ -95,9 +95,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#criterios">Criterios</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#infraestructura">Infraestructura</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#energia">Energía</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#distancia-a-agua">Distancia a agua</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#acceso-a-agua">Acceso a agua</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#conectividad">Conectividad</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#distancia-a-residuos">Distancia a residuos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#manejo-de-residuos">Manejo de residuos</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#comunicacion">Comunicación</a></li>
 </ul>
 </li>
@@ -217,10 +217,10 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Energía</td>
-<td>Energía eléctrica: acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos).</td>
+<td>Acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos).</td>
 </tr>
 <tr>
-<td>Distacia a agua</td>
+<td>Acceso a agua</td>
 <td>Distancia a red de agua potable, plantas de tratamiento, cobertura.</td>
 </tr>
 <tr>
@@ -228,8 +228,8 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Capacidad de hacer conexiones a centros de abastecimiento de mano de obra y distribución de productos.</td>
 </tr>
 <tr>
-<td>Distancia a residuos</td>
-<td>Manejo de residuos: distancia a sitios de disposición final (basureros, rellenos sanitarios, disposición de residuos peligrosos).</td>
+<td>Manejo de residuos</td>
+<td>Sitios de disposición final.</td>
 </tr>
 <tr>
 <td>Comunicación</td>
@@ -238,7 +238,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tbody>
 </table><div class="section" id="energia">
 <h4>Energía<a class="headerlink" href="#energia" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Energía eléctrica: acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos).</p>
+<p>Acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos).</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -266,8 +266,8 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 </tbody>
 </table></div>
-<div class="section" id="distancia-a-agua">
-<h4>Distancia a agua<a class="headerlink" href="#distancia-a-agua" title="Enlazar permanentemente con este título">¶</a></h4>
+<div class="section" id="acceso-a-agua">
+<h4>Acceso a agua<a class="headerlink" href="#acceso-a-agua" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Distancia a red de agua potable, plantas de tratamiento, cobertura.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
@@ -308,7 +308,52 @@ Unidades	Kilómetros</p>
 <div class="section" id="conectividad">
 <h4>Conectividad<a class="headerlink" href="#conectividad" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Capacidad de hacer conexiones a centros de abastecimiento de mano de obra y distribución de productos.</p>
-<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Subcriterio</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carreteras</td>
+<td>Tipo de carreteras a las que se tiene acceso, carreteras de un carril o más de dos carriles.</td>
+</tr>
+<tr>
+<td>Puertos</td>
+<td>Distancia a puertos.</td>
+</tr>
+<tr>
+<td>Caminos ferroviarios</td>
+<td>Distancia a caminos ferroviarios.</td>
+</tr>
+<tr>
+<td>Aeropuertos</td>
+<td>Distancia a aeropuertos.</td>
+</tr>
+</tbody>
+</table><div class="section" id="carreteras">
+<h5>Carreteras<a class="headerlink" href="#carreteras" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Tipo de carreteras a las que se tiene acceso, carreteras de un carril o más de dos carriles.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Subcriterio</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Un carril</td>
+<td>Carreteras de un solo carril</td>
+</tr>
+<tr>
+<td>Varios carriles</td>
+<td>Carreteras de dos o más carriles</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -334,7 +379,12 @@ Unidades	Kilómetros</p>
 <td>Kilómetros</td>
 </tr>
 </tbody>
-</table><table border="1" class="docutils">
+</table></div>
+<div class="section" id="puertos">
+<h5>Puertos<a class="headerlink" href="#puertos" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a puertos.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
 <thead>
 <tr>
 <th>Capa</th>
@@ -359,7 +409,12 @@ Unidades	Kilómetros</p>
 <td>Kilómetros</td>
 </tr>
 </tbody>
-</table><table border="1" class="docutils">
+</table></div>
+<div class="section" id="caminos-ferroviarios">
+<h5>Caminos ferroviarios<a class="headerlink" href="#caminos-ferroviarios" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a caminos ferroviarios.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
 <thead>
 <tr>
 <th>Capa</th>
@@ -385,10 +440,32 @@ Unidades	Kilómetros</p>
 </tr>
 </tbody>
 </table></div>
-<div class="section" id="distancia-a-residuos">
-<h4>Distancia a residuos<a class="headerlink" href="#distancia-a-residuos" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Manejo de residuos: distancia a sitios de disposición final (basureros, rellenos sanitarios, disposición de residuos peligrosos).</p>
-<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="manejo-de-residuos">
+<h4>Manejo de residuos<a class="headerlink" href="#manejo-de-residuos" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Sitios de disposición final.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Subcriterio</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plantas de aguas residuales</td>
+<td>Distania a plantas de tratamiento de aguas residuales.</td>
+</tr>
+<tr>
+<td>Rellenos sanitarios</td>
+<td>Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.</td>
+</tr>
+<tr>
+<td>Basureros</td>
+<td>Distancia a  bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -418,7 +495,6 @@ Unidades	Kilómetros</p>
 <div class="section" id="comunicacion">
 <h4>Comunicación<a class="headerlink" href="#comunicacion" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Telecomunicaciones: cobertura de red (IFETEL).</p>
-<p><strong>Insumos</strong></p>
 </div>
 </div>
 <div class="section" id="socioeconomicos">
@@ -433,20 +509,20 @@ Unidades	Kilómetros</p>
 <tbody>
 <tr>
 <td>Industria instalada</td>
-<td>Centros urbanos con predominancia de actividad industrial, corredores industriales, servicios anexos – talleres, bodegas (fuente: INEGI - DNUE) y proyectos industriales autorizados (fuente: MIA).</td>
+<td>Unidades económicas industriales instaladas.</td>
 </tr>
 <tr>
 <td>Localidades</td>
-<td>Población total en localidades.</td>
+<td>Población total en las localidades</td>
 </tr>
 <tr>
 <td>Tenencia</td>
-<td>Tenencia de la tierra: terrenos ejidales o propiedad privada.</td>
+<td>Tenencia de la tierra: terrenos ejidales o propiedad privada</td>
 </tr>
 </tbody>
 </table><div class="section" id="industria-instalada">
 <h4>Industria instalada<a class="headerlink" href="#industria-instalada" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Centros urbanos con predominancia de actividad industrial, corredores industriales, servicios anexos – talleres, bodegas (fuente: INEGI - DNUE) y proyectos industriales autorizados (fuente: MIA).</p>
+<p>Unidades económicas industriales instaladas.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -476,7 +552,7 @@ Unidades	Kilómetros</p>
 </table></div>
 <div class="section" id="localidades">
 <h4>Localidades<a class="headerlink" href="#localidades" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Población total en localidades.</p>
+<p>Población total en las localidades.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -551,15 +627,15 @@ Unidades	Kilómetros</p>
 <tbody>
 <tr>
 <td>Disponibilidad de agua</td>
-<td>Distancia a manto freático.</td>
+<td>Distancia a manto freático</td>
 </tr>
 <tr>
 <td>Cobertura</td>
-<td>Zonas urbanas, asentamientos humanos.</td>
+<td>Zonas urbanas, asentamientos humanos</td>
 </tr>
 <tr>
 <td>Dispersión de emisiones</td>
-<td>Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea.</td>
+<td>Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea</td>
 </tr>
 </tbody>
 </table><div class="section" id="disponibilidad-de-agua">
