@@ -5,13 +5,16 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Incorporar nuevas superficies y productores a la producción forestal maderable y no maderable, de tal manera que se represente una alternativa productiva y mejorar las capacidades técnicas y financieras de aprovechamiento de las áreas ya destinadas a la producción forestal maderable y no maderable.
+Incorporar nuevas superficies y productores a la producción forestal maderable y no maderable, de tal manera que represente una alternativa productiva, y mejorar las capacidades técnicas y financieras de aprovechamiento de las áreas ya destinadas a la producción forestal.
+Fomentar las plantaciones forestales en superficies preferentemente forestales.
+Orientar la producción al aprovechamiento sostenible, que garantice que los ecosistemas se mantengan.
+Minimizar los riesgos del sector forestal.
 
 ## Subsectores
 
 ### Maderable
 
-Espacios del territorio para especies maderables con uso industrial (madera en rollo, leña y leña para elaboración de carbón).
+Aprovechamiento de los recursos forestales constituidos por vegetación leñosa susceptibles de aprovechamiento o uso.
 
 **Modelo AHP de la actividad maderable**
 
@@ -26,7 +29,7 @@ Criterio | Definición
 Tipo de vegetación | Uso de suelo y vegetación (cubierta vegetal).
 Edafología | Tipo de suelo.
 Clima | Tipo de clima.
-Factores de riesgo | Elementos del ambiente bioísico que impiden las actividades forestales maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios).
+Factores de riesgo | Elementos del ambiente biofísico que impiden las actividades forestales maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios).
 
 ##### Tipo de vegetación
 
@@ -45,25 +48,26 @@ Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
-Id | Categoría | Importancia | FV
+ID | Categoría | Importancia | FV
 -- | -- | -- | --
-5 | Bosque cultivado/Palmar inducido | Máxima | 1
-10 | Selva mediana | Máxima | 1
+5 | Bosque cultivado | Máxima | 1
+11 | Selva mediana | Máxima | 1
 2 | Agricultura de riego | Moderada | 0.7
-8 | Pastizal | Moderada | 0.7
-9 | Selva baja | Moderada | 0.7
+9 | Pastizal | Moderada | 0.7
+10 | Selva baja | Moderada | 0.7
 3 | Agricultura de temporal | Baja | 0.56
-12 | Sábana | Muy baja | 0.33
+8 | Palmar inducido | Baja | 0.56
+13 | Sábana | Muy baja | 0.33
 1 | Acuícola | Nula | 0
 4 | Asentamiento humano | Nula | 0
 6 | Cuerpo de agua | Nula | 0
 7 | Manglar | Nula | 0
-11 | Sin vegetación | Nula | 0
-13 | Tular | Nula | 0
-14 | Vegetación de duna costera | Nula | 0
-15 | Vegetación de petén | Nula | 0
-16 | Vegetación halófila hidrófila | Nula | 0
-17 | ND | Nula | 0
+12 | Sin vegetación | Nula | 0
+14 | Tular | Nula | 0
+15 | Vegetación de duna costera | Nula | 0
+16 | Vegetación de petén | Nula | 0
+17 | Vegetación halófila hidrófila | Nula | 0
+18 | NA | Nula | 0
 
 
 ##### Edafología
@@ -164,7 +168,7 @@ Escala | Sin dato
 Unidades | Adimensional
 
 
-**Parámetros de la función de valor**
+**Parámetros de la función de valor de incendios**
 
 Id | Categoría | Importancia | FV
 -- | -- | -- | --
@@ -224,7 +228,7 @@ Escala	Sin dato
 Unidades	Adimensional
 
 
-**Parámetros de la función de valor**
+**Parámetros de la función de valor versión 1**
 
 ID | Categoría | Importancia | FV
 -- | -- | -- | --
@@ -232,12 +236,12 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.8
 3 | No ejidal | Baja | 0.56
 
-**Función de valor de tenencia 1**
+**Función de valor de tenencia versión 1**
 
 ![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra.png)
 
 
-**Parámetros de la función de valor**
+**Parámetros de la función de valor versión 2**
 
 ID | Categoría | Importancia | FV
 -- | -- | -- | --
@@ -245,7 +249,7 @@ ID | Categoría | Importancia | FV
 3 | No ejidal | Máxima | 1
 2 | Zona de tierras parceladas | Alta | 0.8
 
-**Función de valor de tenencia 2**
+**Función de valor de tenencia versión 2**
 
 ![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra_v2.png)
 
@@ -306,7 +310,7 @@ Unidades | Kilómetros
 
 ### No maderable
 
-La parte no leñosa de la vegetación de un ecosistema forestal, y susceptibles de aprovechamiento o uso, incluyendo líquenes, musgos, hongos y resinas, así como los suelos de terrenos forestales y preferentemente forestales.
+Aprovechamiento de los recursos constituidos por la parte no leñosa de la vegetación de un ecosistema forestal, y susceptibles de aprovechamiento o uso, incluyendo líquenes, musgos, hongos y resinas, así como los suelos de terrenos forestales y preferentemente forestales.
 
 **Modelo AHP de la actividad no maderable**
 
@@ -321,7 +325,7 @@ Criterio | Definición
 Tipo de vegetación | Uso de suelo y vegetación (cubierta vegetal).
 Edafología | Tipo de suelo.
 Clima | Tipo de clima.
-Factores de riesgo | Elementos del ambiente bioísico que impiden las actividades forestales no maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios).
+Factores de riesgo | Elementos del ambiente biofísico que impiden las actividades forestales no maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios).
 
 ##### Tipo de vegetación
 
@@ -335,6 +339,63 @@ Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetació
 Año | 2014
 Campo | descripcio
 Escala | 1:250,000
+Unidades | Adimensional
+
+
+##### Edafología
+
+Tipo de suelo.
+
+**Insumos**
+
+Capa | Edafología
+-- | --
+Fuente | Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI
+Año | 2014
+Campo | tipo_suelo
+Escala | 1:250,000
+Unidades | Adimensional
+
+
+##### Clima
+
+Tipo de clima.
+
+**Insumos**
+
+Capa | Climas
+-- | --
+Fuente | Climas CONAGUA
+Año | 2001
+Campo | Clima_tipo
+Escala | 1:1,000,000
+Unidades | Adimensional
+
+
+##### Factores de riesgo
+
+Elementos del ambiente biofísico que impiden las actividades forestales no maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios).
+
+**Insumos**
+
+Capa	Riesgos para la actividad forestal (plaga)
+Fuente	Riesgo estatal para Escarabajos Ambrosiales Exóticos SIVICOFF
+Año	2020
+Escala	Sin dato
+Unidades	Adimensional
+
+Capa | Riesgos para la actividad forestal (incendios)
+-- | --
+Fuente | Áreas prioritarias de protección contra incendios forestales SNIGF CONAFOR
+Año | 2020
+Escala | Sin dato
+Unidades | Adimensional
+
+Capa | Riesgos para la actividad forestal (plaga)
+-- | --
+Fuente | Riesgo estatal por Sinoxylon unidentatum SIVICOFF
+Año | 2020
+Escala | Sin dato
 Unidades | Adimensional
 
 
