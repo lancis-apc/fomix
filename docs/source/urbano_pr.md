@@ -43,14 +43,6 @@ Año | [1]2019; [2] 2020
 Escala | Localidad
 Unidades | Número
 
-Capa | Población ocupada
--- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | [1] 2019; [2] 2010
-Campo | [2] POBTOT y POCUPADA
-Escala | Localidad
-Unidades | Porcentaje
-
 
 **Parámetros de la función de valor**
 
@@ -123,14 +115,6 @@ Unidades | Porcentaje
 Número total de centros de salud.
 
 **Insumos**
-
-Capa | Población derechohabiente a servicios de salud
--- | --
-Fuente | Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | 2010
-Campo | [1] POBTOT; [2] PDER_SS
-Escala | Localidad
-Unidades | Porcentaje
 
 Capa | Unidades económicas de centros de salud
 -- | --
@@ -325,12 +309,12 @@ Fuentes de empleo | 0.295
 Infraestructura | 0.208
 Tasa de crecimiento | 0.158
 Población | 0.089
-Conectividad | 0.08
+Conectividad | 0.080
 Escuelas | 0.057
 Densidad | 0.043
-Inmigración | 0.03
+Inmigración | 0.030
 Centros de salud | 0.024
-Población indígena | 0.01
+Población indígena | 0.010
 Edificios administrativos | 0.006
 
 
