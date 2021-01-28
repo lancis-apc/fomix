@@ -27,16 +27,16 @@ Industria pesada y mediana (incluye agroindustria y manufactura como las princip
 
 Criterio | Definición
 -- | --
-Energía | Energía eléctrica: acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos).
-Distacia a agua | Distancia a red de agua potable, plantas de tratamiento, cobertura.
+Energía | Acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos).
+Acceso a agua | Distancia a red de agua potable, plantas de tratamiento, cobertura.
 Conectividad | Capacidad de hacer conexiones a centros de abastecimiento de mano de obra y distribución de productos.
-Distancia a residuos | Manejo de residuos: distancia a sitios de disposición final (basureros, rellenos sanitarios, disposición de residuos peligrosos).
+Manejo de residuos | Sitios de disposición final.
 Comunicación | Telecomunicaciones: cobertura de red (IFETEL).
 
 
 ##### Energía
 
-Energía eléctrica: acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos).
+Acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos).
 
 **Insumos**
 
@@ -47,7 +47,8 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
-##### Distancia a agua
+
+##### Acceso a agua
 
 Distancia a red de agua potable, plantas de tratamiento, cobertura.
 
@@ -72,6 +73,22 @@ Unidades	Kilómetros
 
 Capacidad de hacer conexiones a centros de abastecimiento de mano de obra y distribución de productos.
 
+Subcriterio | Definición
+-- | --
+Carreteras | Tipo de carreteras a las que se tiene acceso, carreteras de un carril o más de dos carriles.
+Puertos | Distancia a puertos.
+Caminos ferroviarios | Distancia a caminos ferroviarios.
+Aeropuertos | Distancia a aeropuertos.
+
+###### Carreteras
+
+Tipo de carreteras a las que se tiene acceso, carreteras de un carril o más de dos carriles.
+
+Subcriterio | Definición
+-- | --
+Un carril | Carreteras de un solo carril
+Varios carriles | Carreteras de dos o más carriles
+
 **Insumos**
 
 Capa | Distancia a carreteras
@@ -81,12 +98,24 @@ Año | 2019
 Escala | [1] 1:250,000; [2]Sin dato
 Unidades | Kilómetros
 
+###### Puertos
+
+Distancia a puertos.
+
+**Insumos**
+
 Capa | Distancia a puertos
 -- | --
 Fuente | Ubicación de los principales puertos de el estado de Yucatán POETY
 Año | 2002
 Escala | Sin dato
 Unidades | Kilómetros
+
+###### Caminos ferroviarios
+
+Distancia a caminos ferroviarios.
+
+**Insumos**
 
 Capa | Distancia a red ferroviaria
 -- | --
@@ -96,9 +125,15 @@ Escala | 1:50,000
 Unidades | Kilómetros
 
 
-##### Distancia a residuos
+##### Manejo de residuos
 
-Manejo de residuos: distancia a sitios de disposición final (basureros, rellenos sanitarios, disposición de residuos peligrosos).
+Sitios de disposición final.
+
+Subcriterio | Definición
+-- | --
+Plantas de aguas residuales | Distania a plantas de tratamiento de aguas residuales.
+Rellenos sanitarios | Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.
+Basureros | Distancia a  bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.
 
 **Insumos**
 
@@ -114,19 +149,19 @@ Unidades | Kilómetros
 
 Telecomunicaciones: cobertura de red (IFETEL).
 
-**Insumos**
 
 ### Socioeconómicos
 
 Criterio | Definición
 -- | --
-Industria instalada | Centros urbanos con predominancia de actividad industrial, corredores industriales, servicios anexos – talleres, bodegas (fuente: INEGI - DNUE) y proyectos industriales autorizados (fuente: MIA).
-Localidades | Población total en localidades.
-Tenencia | Tenencia de la tierra: terrenos ejidales o propiedad privada.
+Industria instalada | Unidades económicas industriales instaladas.
+Localidades | Población total en las localidades
+Tenencia | Tenencia de la tierra: terrenos ejidales o propiedad privada
+
 
 ##### Industria instalada
 
-Centros urbanos con predominancia de actividad industrial, corredores industriales, servicios anexos – talleres, bodegas (fuente: INEGI - DNUE) y proyectos industriales autorizados (fuente: MIA).
+Unidades económicas industriales instaladas.
 
 **Insumos**
 
@@ -140,7 +175,7 @@ Unidades | Número de unidades económicas
 
 ##### Localidades
 
-Población total en localidades.
+Población total en las localidades.
 
 **Insumos**
 
@@ -151,6 +186,7 @@ Año | 2010
 Campo | POBTOT
 Escala | Localidad
 Unidades | Número de habitantes
+
 
 ##### Tenencia
 
@@ -170,9 +206,10 @@ Unidades | Adimensional
 
 Criterio | Definición
 -- | --
-Disponibilidad de agua | Distancia a manto freático.
-Cobertura | Zonas urbanas, asentamientos humanos.
-Dispersión de emisiones | Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea.
+Disponibilidad de agua | Distancia a manto freático
+Cobertura | Zonas urbanas, asentamientos humanos
+Dispersión de emisiones | Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea
+
 
 ##### Disponibilidad de agua
 
