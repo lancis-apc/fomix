@@ -319,6 +319,20 @@ Unidades | Porcentaje
 
 ## Pesos globales del modelo de aptitud urbano
 
+Criterio | Peso
+-- | --
+Fuentes de empleo | 0.295
+Infraestructura | 0.208
+Tasa de crecimiento | 0.158
+Población | 0.089
+Conectividad | 0.08
+Escuelas | 0.057
+Densidad | 0.043
+Inmigración | 0.03
+Centros de salud | 0.024
+Población indígena | 0.01
+Edificios administrativos | 0.006
+
 
 <!-- .. csv-table::
    :file: recursos/tabla_insumos_fv_gbe_sil_bio_usv_inegi.csv

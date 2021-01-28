@@ -114,17 +114,20 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#id1">Criterios</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Biofísicos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">Socioeconómicos</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id4">Aprovechamiento</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">Mercados</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id6">Tenencia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Biofísicos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Tipo de vegetación</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">Infraestructura</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id8">Abastecimiento</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id9">Centros de almacenamiento</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id10">Comunicación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Socioeconómicos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Aprovechamiento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Mercados</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Tenencia</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Infraestructura</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Abastecimiento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Centros de almacenamiento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">Comunicación</a></li>
 </ul>
 </li>
 </ul>
@@ -209,7 +212,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <h2>Subsectores<a class="headerlink" href="#subsectores" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="maderable">
 <h3>Maderable<a class="headerlink" href="#maderable" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Especies con potencial de materias primas (madera en rollo, leña y leña para elaboración de carbón). Espacios del territorio para especies maderables con uso industrial.</p>
+<p>Espacios del territorio para especies maderables con uso industrial (madera en rollo, leña y leña para elaboración de carbón).</p>
 <p><strong>Modelo AHP de la actividad maderable</strong></p>
 <p><img alt="_images/maderable.png" src="_images/maderable.png" /></p>
 </div>
@@ -251,35 +254,6 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <thead>
 <tr>
 <th>Capa</th>
-<th>Cobertura</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Mapa de coberturas del suelo del estado de Yucatán CONAFOR</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2016</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>DES_SAMOF</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
 <th>Uso del suelo y vegetación</th>
 </tr>
 </thead>
@@ -303,6 +277,120 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tr>
 <td>Unidades</td>
 <td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Id</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>Bosque cultivado/Palmar inducido</td>
+<td>Máxima</td>
+<td>1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Selva mediana</td>
+<td>Máxima</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Agricultura de riego</td>
+<td>Moderada</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Pastizal</td>
+<td>Moderada</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Selva baja</td>
+<td>Moderada</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Agricultura de temporal</td>
+<td>Baja</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Sábana</td>
+<td>Muy baja</td>
+<td>0.33</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Sin vegetación</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ND</td>
+<td>Nula</td>
+<td>0</td>
 </tr>
 </tbody>
 </table></div>
@@ -339,7 +427,99 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>Luvisol</td>
+<td>Máxima</td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nitosol</td>
+<td>Máxima</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Chernozem</td>
+<td>Alta</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Histosol</td>
+<td>Alta</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Cambisol</td>
+<td>Moderada</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Leptosol</td>
+<td>Moderada</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Phaeozem</td>
+<td>Moderada</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Regosol</td>
+<td>Moderada</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Gleysol</td>
+<td>Baja</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Vertisol</td>
+<td>Baja</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Arenosol</td>
+<td>Muy baja</td>
+<td>0.33</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Solonchak</td>
+<td>Muy baja</td>
+<td>0.33</td>
+</tr>
+<tr>
+<td>13</td>
+<td>No aplica</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de edafología</strong></p>
+<p><img alt="_images/mapa_fv_for_mad_bio_t_suelo.png" src="_images/mapa_fv_for_mad_bio_t_suelo.png" /></p>
+</div>
 <div class="section" id="clima">
 <h4>Clima<a class="headerlink" href="#clima" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Tipo de clima.</p>
@@ -373,7 +553,69 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Id</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>Aw2(x')</td>
+<td>Máxima</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Aw1</td>
+<td>Muy alta</td>
+<td>0.87</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Aw1(x')</td>
+<td>Muy alta</td>
+<td>0.87</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Awo</td>
+<td>Alta</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Awo(x')</td>
+<td>Alta</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>6</td>
+<td>BS1(h')w</td>
+<td>Baja</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>7</td>
+<td>BSo(h')(x')</td>
+<td>Muy baja</td>
+<td>0.33</td>
+</tr>
+<tr>
+<td>8</td>
+<td>NA</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de climas</strong></p>
+<p><img alt="_images/mapa_fv_for_mad_bio_climas.png" src="_images/mapa_fv_for_mad_bio_climas.png" /></p>
+</div>
 <div class="section" id="factores-de-riesgo">
 <h4>Factores de riesgo<a class="headerlink" href="#factores-de-riesgo" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Elementos del ambiente biofísico que impiden las actividades forestales maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios).</p>
@@ -433,7 +675,57 @@ Unidades	Adimensional</p>
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Id</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>Muy Alta</td>
+<td>Máxima</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Alta</td>
+<td>Alta</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Media</td>
+<td>Moderada</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Baja</td>
+<td>Baja</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Muy Baja</td>
+<td>Muy baja</td>
+<td>0.33</td>
+</tr>
+<tr>
+<td>6</td>
+<td>NA</td>
+<td>Nula</td>
+<td>0</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de incendios</strong></p>
+<p><img alt="_images/mapa_fv_for_mad_bio_incendios.png" src="_images/mapa_fv_for_mad_bio_incendios.png" /></p>
+</div>
 </div>
 <div class="section" id="socioeconomicos">
 <h3>Socioeconómicos<a class="headerlink" href="#socioeconomicos" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -506,6 +798,70 @@ Fuente	[1] Zonas de Tierras Parceladas y [2] Tierra de uso común
 Año	2020
 Escala	Sin dato
 Unidades	Adimensional</p>
+<p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Tierra de uso común</td>
+<td>Máxima</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Zona de tierras parceladas</td>
+<td>Alta</td>
+<td>0.8</td>
+</tr>
+<tr>
+<td>3</td>
+<td>No ejidal</td>
+<td>Baja</td>
+<td>0.56</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de tenencia 1</strong></p>
+<p><img alt="_images/mapa_fv_for_mad_socio_tenencia_tierra.png" src="_images/mapa_fv_for_mad_socio_tenencia_tierra.png" /></p>
+<p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Tierra de uso común</td>
+<td>Máxima</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>No ejidal</td>
+<td>Máxima</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Zona de tierras parceladas</td>
+<td>Alta</td>
+<td>0.8</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de tenencia 2</strong></p>
+<p><img alt="_images/mapa_fv_for_mad_socio_tenencia_tierra_v2.png" src="_images/mapa_fv_for_mad_socio_tenencia_tierra_v2.png" /></p>
 </div>
 </div>
 <div class="section" id="infraestructura">
@@ -536,31 +892,6 @@ Unidades	Adimensional</p>
 <p>Acceso a insumos para la producción (fuentes de energía y combustible en localidades).</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia líneas de transmisión de energía eléctrica</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Líneas de transmisión INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2012</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:50,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
 <thead>
 <tr>
 <th>Capa</th>
@@ -624,7 +955,11 @@ Unidades	Adimensional</p>
 <td>Kilómetros</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_for_mad_infra_d_caminos.png" src="_images/fi_fv_for_mad_infra_d_caminos.png" /></p>
+<p><strong>Función de valor de comunicación</strong></p>
+<p><img alt="_images/mapa_fv_for_mad_infra_d_caminos.png" src="_images/mapa_fv_for_mad_infra_d_caminos.png" /></p>
+</div>
 </div>
 <div class="section" id="no-maderable">
 <h3>No maderable<a class="headerlink" href="#no-maderable" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -662,9 +997,43 @@ Unidades	Adimensional</p>
 <td>Elementos del ambiente bioísico que impiden las actividades forestales no maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios).</td>
 </tr>
 </tbody>
+</table><div class="section" id="id3">
+<h4>Tipo de vegetación<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Uso de suelo y vegetación (cubierta vegetal).</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
 </table></div>
-<div class="section" id="id3">
-<h3>Socioeconómicos<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+<div class="section" id="id4">
+<h3>Socioeconómicos<a class="headerlink" href="#id4" title="Enlazar permanentemente con este título">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -675,35 +1044,35 @@ Unidades	Adimensional</p>
 <tbody>
 <tr>
 <td>Aprovechamiento</td>
-<td>Autorizaciones de aprovechamiento (activos e inactivos)</td>
+<td>Autorizaciones de aprovechamiento (activos e inactivos).</td>
 </tr>
 <tr>
 <td>Mercados</td>
-<td>Distancia a puntos de venta</td>
+<td>Distancia a puntos de venta.</td>
 </tr>
 <tr>
 <td>Tenencia</td>
-<td>Zonas ejidales, tenencia de la tierra (RAN)</td>
+<td>Tenencia de la tierra por zonas ejidales, no ejidales y tierras de uso común.</td>
 </tr>
 </tbody>
-</table><div class="section" id="id4">
-<h4>Aprovechamiento<a class="headerlink" href="#id4" title="Enlazar permanentemente con este título">¶</a></h4>
+</table><div class="section" id="id5">
+<h4>Aprovechamiento<a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Autorizaciones de aprovechamiento (activos e inactivos).</p>
 <p><strong>Insumos</strong></p>
 </div>
-<div class="section" id="id5">
-<h4>Mercados<a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h4>
+<div class="section" id="id6">
+<h4>Mercados<a class="headerlink" href="#id6" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Distancia a puntos de venta.</p>
 <p><strong>Insumos</strong></p>
 </div>
-<div class="section" id="id6">
-<h4>Tenencia<a class="headerlink" href="#id6" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Zonas ejidales, tenencia de la tierra (RAN).</p>
+<div class="section" id="id7">
+<h4>Tenencia<a class="headerlink" href="#id7" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Tenencia de la tierra por zonas ejidales, no ejidales y tierras de uso común.</p>
 <p><strong>Insumos</strong></p>
 </div>
 </div>
-<div class="section" id="id7">
-<h3>Infraestructura<a class="headerlink" href="#id7" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="id8">
+<h3>Infraestructura<a class="headerlink" href="#id8" title="Enlazar permanentemente con este título">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -714,29 +1083,29 @@ Unidades	Adimensional</p>
 <tbody>
 <tr>
 <td>Abastecimiento</td>
-<td>Distancia a localidades: acceso a insumos para la producción (fuentes de   energía y combustible en localidades)</td>
+<td>Acceso a insumos para la producción (fuentes de energía y combustible en localidades).</td>
 </tr>
 <tr>
 <td>Centros de almacenamiento</td>
-<td>Distancia a centros de almacenamiento y transformación</td>
+<td>Distancia a centros de almacenamiento y transformación.</td>
 </tr>
 <tr>
 <td>Comunicación</td>
-<td>Distancia a carreteras, caminos rurales, veredas (red de caminos   primarios y secundarios)</td>
+<td>Distancia a carreteras, caminos rurales, veredas (red de caminos primarios y secundarios).</td>
 </tr>
 </tbody>
-</table><div class="section" id="id8">
-<h4>Abastecimiento<a class="headerlink" href="#id8" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Distancia a localidades: acceso a insumos para la producción (fuentes de energía y combustible en localidades).</p>
-<p><strong>Insumos</strong></p>
-</div>
-<div class="section" id="id9">
-<h4>Centros de almacenamiento<a class="headerlink" href="#id9" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Distancia a centros de almacenamiento y transformación.</p>
+</table><div class="section" id="id9">
+<h4>Abastecimiento<a class="headerlink" href="#id9" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Acceso a insumos para la producción (fuentes de energía y combustible en localidades).</p>
 <p><strong>Insumos</strong></p>
 </div>
 <div class="section" id="id10">
-<h4>Comunicación<a class="headerlink" href="#id10" title="Enlazar permanentemente con este título">¶</a></h4>
+<h4>Centros de almacenamiento<a class="headerlink" href="#id10" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a centros de almacenamiento y transformación.</p>
+<p><strong>Insumos</strong></p>
+</div>
+<div class="section" id="id11">
+<h4>Comunicación<a class="headerlink" href="#id11" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Distancia a carreteras, caminos rurales, veredas (red de caminos primarios y secundarios).</p>
 <p><strong>Insumos</strong></p>
 </div>

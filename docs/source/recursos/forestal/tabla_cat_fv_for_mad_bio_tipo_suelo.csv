@@ -1,0 +1,14 @@
+﻿ID,Categoría,Importancia,FV
+7,Luvisol,Máxima ,1.00
+8,Nitosol,Máxima ,1.00
+3,Chernozem,Alta,0.80
+5,Histosol,Alta,0.80
+2,Cambisol,Moderada,0.70
+6,Leptosol,Moderada,0.70
+9,Phaeozem,Moderada,0.70
+10,Regosol,Moderada,0.70
+4,Gleysol,Baja,0.56
+12,Vertisol,Baja,0.56
+1,Arenosol,Muy baja,0.33
+11,Solonchak,Muy baja,0.33
+13,No aplica,Nula,0.00

@@ -1,0 +1,19 @@
+﻿ID,Categoría,Expresión verbal,FV
+1,Acuícola,Nula,0.00
+2,Agricultura de riego,Moderada,0.70
+3,Agricultura de temporal,Baja,0.56
+4,Asentamiento humano,Nula,0.00
+5,Bosque cultivado,Máxima ,1.00
+6,Cuerpo de agua,Nula,0.00
+7,Manglar,Nula,0.00
+8,Pastizal,Moderada,0.70
+9,Palmar inducido,Baja,0.56
+10,Selva baja,Moderada,0.70
+11,Selva mediana,Máxima ,1.00
+12,Sin vegetación,Nula,0.00
+13,Sábana,Muy baja,0.33
+14,Tular,Nula,0.00
+15,Vegetación de duna costera,Nula,0.00
+16,Vegetación de petén,Nula,0.00
+17,Vegetación halófila hidrófila,Nula,0.00
+18,ND,Nula,0.00

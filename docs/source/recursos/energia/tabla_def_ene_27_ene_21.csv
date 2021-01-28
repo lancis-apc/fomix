@@ -1,42 +1,43 @@
-﻿Sector,Definición
-Energía,
-,
-Meta,Definición
-,"Consolidar al Estado de Yucatán como productor de energía limpia y confiable para asegurar la suficiencia energética mediante criterios de uso sostenible del territorio, certidumbre jurídica y desarrollo ordenado e incluyente del sector, que permitan aprovechar los recursos para crear un valor económico, ambiental y social."
-,
-Energía industrial,Fuentes de energía a escala industrial.
-Criterio,Definición
-Hidrocarburos líquidos,Consumo y almacenamiento de hidrocarburos líquidos. Plantas que utilizan diesel o combustóleo para generar energía. Terminales de almacenamiento y reparto.
-Gas natural,Transporte de gas natural por gasoductos y vehículos terrestres. Terminales de almacenamiento y centrales eléctricas. Uso de gas comprimido por empresas.
-Solar,Instalaciones industriales que aprovechan la irradiación solar como fuente de energía.
-Eólico,"Instalaciones de generación de energía, mayores a 0.5 MW."
-Biomasa industrial,"Proyectos diseñados que utilizan material biológico, para conversion en energía utilizable. Incluye los desechos de granjas porcícolas para producir energía eléctrica."
-,
-Energía comunitaria,Fuentes de energía utilizadas en las comunidades.
-Criterio,Definición
-Biomasa comunitaria,"Leña, carbón vegetal"
-Eólica  comunitaria,
-Solar comunitaria,
-,
-,
-,
-Hidrocarburos líquidos,
-Atributos,Definición
-Distancia a carreteras,Distancia a carreteras
-Distancia a poblaciones,Distancia a a asentamientos humanos
-Ductos,Red de ductos
-Puerto,Puerto Progreso
-Vías férreas,Red de vías férreas
-,
-Gas natural,
-Atributos,Definición
-Distancia a poblaciones,Distancia a a asentamientos humanos.
-Ductos,Red de ductos.
-Zonas industriales,Zonas industriales que demandan gas natural.
-,
-,
-Solar,
-Atributos,Definición
-Tipo de cobertura,Tipo de uso de suelo y vegetación que determina la carga animal y la   biodiversidad vegetal.
-Tipo de tenencia,Áreas ejidales (comunitaria o parcelada) y no ejidales.
-Redes eléctricas,Líneas de transmisión y subestaciones.
+﻿Sector,Definición,
+Energía,,
+,,
+Meta,Definición,
+,"Consolidar al Estado de Yucatán como productor de energía limpia y confiable para asegurar la suficiencia energética mediante criterios de uso sostenible del territorio, certidumbre jurídica y desarrollo ordenado e incluyente del sector, que permitan aprovechar los recursos para crear un valor económico, ambiental y social.",
+,,
+Subsector,,
+Energía industrial,Fuentes de energía a escala industrial.,
+Energía comunitaria,Fuentes de energía utilizadas en las comunidades.,
+,,
+Energía industrial,,
+Criterio,Definición,
+Hidrocarburos líquidos,Consumo y almacenamiento de hidrocarburos líquidos. Plantas que utilizan diesel o combustóleo para generar energía. Terminales de almacenamiento y reparto.,0.53
+Gas natural,Transporte de gas natural por gasoductos y vehículos terrestres. Terminales de almacenamiento y centrales eléctricas. Uso de gas comprimido por empresas.,0.26
+Solar,Instalaciones industriales que aprovechan la irradiación solar como fuente de energía.,0.1
+Eólica,"Instalaciones de generación de energía mediante el viento, mayores a 0.5 MW.",0.08
+Biomasa,Proyectos diseñados que utilizan material biológico para conversión en energía utilizable. Incluye los desechos de granjas porcícolas para producir energía eléctrica.,0.03
+,,
+Energía comunitaria,,
+Criterio,Definición,
+Biomasa comunitaria,Uso de leña y carbón vegetal como combustible,
+Eólica  comunitaria,"Generación de energía en las comunidades, a través de la energía del viento.",
+Solar comunitaria,"Generación distribuída de energía en las comunidades, a través de la energía solar.",
+,,
+Hidrocarburos líquidos,,
+Atributos,Definición,
+Distancia a carreteras,Distancia a carreteras,0.45
+Distancia a poblaciones,Distancia a asentamientos humanos,0.25
+Ductos,Red de ductos para transportar hidrocarburos líquidos.,0.14
+Distancia a vías férreas,Distancia a vías férreas.,0.08
+Puerto,Puerto Progreso,0.08
+,,
+Gas natural,,
+Atributos,Definición,
+Ductos,Red de ductos para transportar hidrocarburos líquidos.,0.48
+Zonas industriales,Zonas industriales que demandan gas natural.,0.42
+Distancia a poblaciones,Distancia a asentamientos humanos.,0.1
+,,
+Solar,,
+Atributos,Definición,
+Distancia a red eléctrica,Distancia a líneas de transmisión y subestaciones.,0.71
+Tipo de cobertura,Tipo de vegetación.,0.14
+Tipo de tenencia,Áreas ejidales (comunitaria o parcelada) y no ejidales.,0.14
