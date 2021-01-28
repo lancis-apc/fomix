@@ -6,23 +6,23 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Contener la expansión urbana y aprovechar las zonas con infraestructura en Mérida(?).
-Fomentar la descentralización en Yucatán.
-Generar las condiciones en todas sus vertientes para el desarrollo urbano en todo el estado.
+Generar las condiciones, en todas sus vertientes, para el desarrollo urbano en Yucatán, de manera que se fomente la descentralización, se aprovechen las zonas con infraestructura y se contenga la expansión urbana en la zona metropolitana de Mérida.
 
 **Modelo AHP del sector urbano**
 
 ![](/recursos/urbano/urbano.png)
 
-## Criterios
+## Atributos
 
-### Atributos funcionales urbanos
+### Funcionales urbanos
 
-Criterio | Definición
+Atributos funcionales urbanos que determinan el crecimiento de asentamientos humanos.
+
+Atributos | Definición
 -- | --
 Fuente de empleo | Distancia a las fuentes de empleo.
 Infraestructura | Cobertura de las redes de agua potable y energía eléctrica.
-Equipamiento | Elementos que pueden dar servicios a la población (centros de salud, escuelas, administrativo gubernamental).
+Equipamiento | Elementos que pueden dar servicios a la población: centros de salud, escuelas, edificios administrativos, transportes, correos y almacenamiento.
 Conectividad | Vinculación de asentamientos a través de la infraestructura vial.
 
 <!-- .. csv-table::
@@ -52,6 +52,15 @@ Escala | Localidad
 Unidades | Porcentaje
 
 
+**Parámetros de la función de valor**
+
+![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_precipitacion.png)  
+
+**Función de valor de precipitación**
+
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_precipitacion.png)
+
+
 ##### Infraestructura
 
 Cobertura de las redes de agua potable y energía eléctrica.
@@ -67,9 +76,24 @@ Escala | Localidad
 Unidades | Porcentaje
 
 
+**Parámetros de la función de valor**
+
+![](/recursos/urbano/fi_fv_urb_dem_tasa_tasa_crecimiento_anual.png)  
+
+**Función de valor de precipitación**
+
+![](/recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png)
+
+
 ##### Equipamiento
 
-Elementos que pueden dar servicios a la población (centros de salud, escuelas, administrativo gubernamental).
+Elementos que pueden dar servicios a la población: centros de salud, escuelas, edificios administrativos, transportes, correos y almacenamiento.
+
+Atributo | Definición
+-- | --
+Escuelas | Número total de instituciones educativas de nivel medio técnico, medio   superior y superior.
+Centros de salud | Número total de centros de salud.
+Edificios administrativos | Unidades totales, incluye actividades legislativas gubernamentales.
 
 **Insumos**
 
@@ -109,12 +133,11 @@ Campo | [2] POBTOT
 Adimensional | Porcentaje
 
 
-
 ### Demográficos
 
-Criterio | Definición
+Atributos | Definición
 -- | --
-Tasa crecimiento | Tasa de crecimiento poblacional 10 años (2005-2015).
+Tasa crecimiento | Tasa de crecimiento poblacional 10 años (2000-2010).
 Población | Número de habitantes.
 Densidad | Número de habitantes por hectárea.
 Inmigración | Porcentaje de la población total nacida fuera de la entidad o país.
@@ -123,7 +146,7 @@ Población indígena | Porcentaje de la población índígena en el asentamiento
 
 ##### Tasa de crecimiento
 
-Tasa de crecimiento poblacional 10 años (2005-2015).
+Tasa de crecimiento poblacional 10 años (2000-2010).
 
 **Insumos**
 
@@ -134,6 +157,15 @@ Año | [1] 2019; [2] 2000 y 2010
 Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Porcentaje
+
+
+**Parámetros de la función de valor**
+
+![](/recursos/urbano/fi_fv_urb_dem_tasa_tasa_crecimiento_anual.png)  
+
+**Función de valor de precipitación**
+
+![](/recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png)
 
 
 ##### Población
@@ -151,6 +183,15 @@ Escala | Localidad
 Unidades | Número de habitantes
 
 
+**Parámetros de la función de valor**
+
+![](/recursos/urbano/fi_fv_urb_dem_pob_tam_poblacional.png)  
+
+**Función de valor de precipitación**
+
+![](/recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png)
+
+
 ##### Densidad
 
 Número de habitantes por hectárea.
@@ -164,6 +205,15 @@ Año | [1] 2019; [2] 2010
 Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Número de habitantes/hectárea
+
+
+**Parámetros de la función de valor**
+
+![](/recursos/urbano/fi_fv_urb_dem_den_densidad_ha.png)  
+
+**Función de valor de precipitación**
+
+![](/recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png)
 
 
 ##### Inmigración
@@ -181,6 +231,15 @@ Escala | Localidad
 Unidades | Porcentaje
 
 
+**Parámetros de la función de valor**
+
+![](/recursos/urbano/fi_fv_urb_dem_inmi_inmigracion.png)  
+
+**Función de valor de precipitación**
+
+![](/recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png)
+
+
 ##### Población indígena
 
 Porcentaje de la población índígena en el asentamiento.
@@ -194,6 +253,15 @@ Año | [1] 2019; [2] 2010
 Campo | [2] POBTOT y P3YM_HLI
 Escala | Localidad
 Unidades | Porcentaje
+
+
+**Parámetros de la función de valor**
+
+![](/recursos/urbano/fi_fv_urb_dem_indi_por_pob_indigena.png)  
+
+**Función de valor de precipitación**
+
+![](/recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png)
 
 
 <!-- .. csv-table::

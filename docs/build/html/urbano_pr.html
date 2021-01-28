@@ -88,8 +88,8 @@
 <li class="toctree-l1"><a class="reference internal" href="ga_silvopastoril_pr.html">Silvopastoril</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Urbano</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#meta">Meta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#criterios">Criterios</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#atributos-funcionales-urbanos">Atributos funcionales urbanos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#atributos">Atributos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#funcionales-urbanos">Funcionales urbanos</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#fuente-de-empleo">Fuente de empleo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#infraestructura">Infraestructura</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#equipamiento">Equipamiento</a></li>
@@ -177,20 +177,19 @@
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="section" id="meta">
 <h2>Meta<a class="headerlink" href="#meta" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Contener la expansión urbana y aprovechar las zonas con infraestructura en Mérida(?).
-Fomentar la descentralización en Yucatán.
-Generar las condiciones en todas sus vertientes para el desarrollo urbano en todo el estado.</p>
+<p>Generar las condiciones, en todas sus vertientes, para el desarrollo urbano en Yucatán, de manera que se fomente la descentralización, se aprovechen las zonas con infraestructura y se contenga la expansión urbana en la zona metropolitana de Mérida.</p>
 <p><strong>Modelo AHP del sector urbano</strong></p>
 <p><img alt="_images/urbano.png" src="_images/urbano.png" /></p>
 </div>
-<div class="section" id="criterios">
-<h2>Criterios<a class="headerlink" href="#criterios" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="section" id="atributos-funcionales-urbanos">
-<h3>Atributos funcionales urbanos<a class="headerlink" href="#atributos-funcionales-urbanos" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="atributos">
+<h2>Atributos<a class="headerlink" href="#atributos" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="funcionales-urbanos">
+<h3>Funcionales urbanos<a class="headerlink" href="#funcionales-urbanos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Atributos funcionales urbanos que determinan el crecimiento de asentamientos humanos.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>Criterio</th>
+<th>Atributos</th>
 <th>Definición</th>
 </tr>
 </thead>
@@ -205,7 +204,7 @@ Generar las condiciones en todas sus vertientes para el desarrollo urbano en tod
 </tr>
 <tr>
 <td>Equipamiento</td>
-<td>Elementos que pueden dar servicios a la población (centros de salud, escuelas, administrativo gubernamental).</td>
+<td>Elementos que pueden dar servicios a la población: centros de salud, escuelas, edificios administrativos, transportes, correos y almacenamiento.</td>
 </tr>
 <tr>
 <td>Conectividad</td>
@@ -273,7 +272,11 @@ Generar las condiciones en todas sus vertientes para el desarrollo urbano en tod
 <td>Porcentaje</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_gbe_sil_bio_precipitacion1.png" src="_images/fi_fv_gbe_sil_bio_precipitacion1.png" /></p>
+<p><strong>Función de valor de precipitación</strong></p>
+<p><img alt="_images/mapa_fv_gbe_sil_bio_precipitacion1.png" src="_images/mapa_fv_gbe_sil_bio_precipitacion1.png" /></p>
+</div>
 <div class="section" id="infraestructura">
 <h4>Infraestructura<a class="headerlink" href="#infraestructura" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Cobertura de las redes de agua potable y energía eléctrica.</p>
@@ -307,11 +310,36 @@ Generar las condiciones en todas sus vertientes para el desarrollo urbano en tod
 <td>Porcentaje</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_urb_dem_tasa_tasa_crecimiento_anual.png" src="_images/fi_fv_urb_dem_tasa_tasa_crecimiento_anual.png" /></p>
+<p><strong>Función de valor de precipitación</strong></p>
+<p><img alt="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" src="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" /></p>
+</div>
 <div class="section" id="equipamiento">
 <h4>Equipamiento<a class="headerlink" href="#equipamiento" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Elementos que pueden dar servicios a la población (centros de salud, escuelas, administrativo gubernamental).</p>
-<p><strong>Insumos</strong></p>
+<p>Elementos que pueden dar servicios a la población: centros de salud, escuelas, edificios administrativos, transportes, correos y almacenamiento.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Escuelas</td>
+<td>Número total de instituciones educativas de nivel medio técnico, medio   superior y superior.</td>
+</tr>
+<tr>
+<td>Centros de salud</td>
+<td>Número total de centros de salud.</td>
+</tr>
+<tr>
+<td>Edificios administrativos</td>
+<td>Unidades totales, incluye actividades legislativas gubernamentales.</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -428,14 +456,14 @@ Generar las condiciones en todas sus vertientes para el desarrollo urbano en tod
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>Criterio</th>
+<th>Atributos</th>
 <th>Definición</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Tasa crecimiento</td>
-<td>Tasa de crecimiento poblacional 10 años (2005-2015).</td>
+<td>Tasa de crecimiento poblacional 10 años (2000-2010).</td>
 </tr>
 <tr>
 <td>Población</td>
@@ -456,7 +484,7 @@ Generar las condiciones en todas sus vertientes para el desarrollo urbano en tod
 </tbody>
 </table><div class="section" id="tasa-de-crecimiento">
 <h4>Tasa de crecimiento<a class="headerlink" href="#tasa-de-crecimiento" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Tasa de crecimiento poblacional 10 años (2005-2015).</p>
+<p>Tasa de crecimiento poblacional 10 años (2000-2010).</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -487,7 +515,11 @@ Generar las condiciones en todas sus vertientes para el desarrollo urbano en tod
 <td>Porcentaje</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_urb_dem_tasa_tasa_crecimiento_anual.png" src="_images/fi_fv_urb_dem_tasa_tasa_crecimiento_anual.png" /></p>
+<p><strong>Función de valor de precipitación</strong></p>
+<p><img alt="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" src="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" /></p>
+</div>
 <div class="section" id="poblacion">
 <h4>Población<a class="headerlink" href="#poblacion" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Número de habitantes.</p>
@@ -521,7 +553,11 @@ Generar las condiciones en todas sus vertientes para el desarrollo urbano en tod
 <td>Número de habitantes</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_urb_dem_pob_tam_poblacional.png" src="_images/fi_fv_urb_dem_pob_tam_poblacional.png" /></p>
+<p><strong>Función de valor de precipitación</strong></p>
+<p><img alt="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" src="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" /></p>
+</div>
 <div class="section" id="densidad">
 <h4>Densidad<a class="headerlink" href="#densidad" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Número de habitantes por hectárea.</p>
@@ -555,7 +591,11 @@ Generar las condiciones en todas sus vertientes para el desarrollo urbano en tod
 <td>Número de habitantes/hectárea</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_urb_dem_den_densidad_ha.png" src="_images/fi_fv_urb_dem_den_densidad_ha.png" /></p>
+<p><strong>Función de valor de precipitación</strong></p>
+<p><img alt="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" src="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" /></p>
+</div>
 <div class="section" id="inmigracion">
 <h4>Inmigración<a class="headerlink" href="#inmigracion" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Porcentaje de la población total nacida fuera de la entidad o país.</p>
@@ -589,7 +629,11 @@ Generar las condiciones en todas sus vertientes para el desarrollo urbano en tod
 <td>Porcentaje</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_urb_dem_inmi_inmigracion.png" src="_images/fi_fv_urb_dem_inmi_inmigracion.png" /></p>
+<p><strong>Función de valor de precipitación</strong></p>
+<p><img alt="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" src="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" /></p>
+</div>
 <div class="section" id="poblacion-indigena">
 <h4>Población indígena<a class="headerlink" href="#poblacion-indigena" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Porcentaje de la población índígena en el asentamiento.</p>
@@ -623,7 +667,11 @@ Generar las condiciones en todas sus vertientes para el desarrollo urbano en tod
 <td>Porcentaje</td>
 </tr>
 </tbody>
-</table><!-- .. csv-table::
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_urb_dem_indi_por_pob_indigena.png" src="_images/fi_fv_urb_dem_indi_por_pob_indigena.png" /></p>
+<p><strong>Función de valor de precipitación</strong></p>
+<p><img alt="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" src="recursos/urbano/mapa_fv_gbe_sil_bio_precipitacion.png" /></p>
+<!-- .. csv-table::
    :file: recursos/tabla_insumos_fv_gbe_sil_bio_usv_inegi.csv
    :align: left --></div>
 </div>
