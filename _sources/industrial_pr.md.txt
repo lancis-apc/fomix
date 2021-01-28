@@ -5,17 +5,17 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Incrementar la productividad considerando los elementos de producción, las actividades e infraestructura de producción, almacenamiento y centro de distribución y de logística y comercialización de productos terminados. Disminuir el impacto ambiental: consumo de suelo y recursos, y generación de residuos.
+Incrementar la productividad considerando los elementos de producción, las actividades e infraestructura de producción, almacenamiento y centro de distribución y de logística y comercialización de productos terminados.
 
 ## Tipos de industria
 
-### Industria ligera
+### Ligera
 
 Industria ligera (tecnología y actividades de apoyo a la industria mediana y pesada: almacenamiento).
 
-### Industria mediana y pesada
+### Pesada y mediana
 
-Industria mediana y pesada (incluye agroindustria y manufactura como las principales).
+Industria pesada y mediana (incluye agroindustria y manufactura como las principales).
 
 **Modelo AHP del tipo de industria mediana y pesada**
 
@@ -40,7 +40,7 @@ Energía eléctrica: acceso y calidad/capacidad de infraestructura eléctrica (C
 
 **Insumos**
 
-Capa | Distancia líneas de transmisión de energía   eléctrica
+Capa | Distancia líneas de transmisión de energía eléctrica
 -- | --
 Fuente | Líneas de transmisión INEGI
 Año | 2012
@@ -180,6 +180,14 @@ Distancia a manto freático.
 
 **Insumos**
 
+Capa | Nivel freático
+-- | --
+Fuente | Nivel freático POETY
+Año | Sin dato
+Campo | n_freat_m
+Escala | Estatal
+Unidades | Metros
+
 
 ##### Cobertura
 
@@ -187,12 +195,34 @@ Zonas urbanas, asentamientos humanos.
 
 **Insumos**
 
+Capa | Cobertura (zonas urbanas)
+-- | --
+Fuente | Conjunto de datos vectoriales de información topográfica por Entidad   Federativa Serie VI. (localidad_250a) INEGI
+Año | 2019
+Escala | 1:250,000
+Unidades | Adimensional
+
+Capa | Cobertura (zonas urbanas)
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2014
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
 
 ##### Dispersión de emisiones
 
 Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea.
 
 **Insumos**
+
+Capa | Vulnerabilidad del acuífero
+-- | --
+Fuente | Vulnerabilidad intrínseca del acuífero en el Estado de Yucatán, Batllori   Sampedro y Canto Mendiburu
+Año | 2019
+Escala | Sin dato
+Unidades | Adimensional
 
 
 <!-- .. csv-table::

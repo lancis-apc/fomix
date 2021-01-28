@@ -88,8 +88,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Industrial</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#meta">Meta</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tipos-de-industria">Tipos de industria</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#industria-ligera">Industria ligera</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#industria-mediana-y-pesada">Industria mediana y pesada</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ligera">Ligera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pesada-y-mediana">Pesada y mediana</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#criterios">Criterios</a><ul>
@@ -188,17 +188,17 @@
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="section" id="meta">
 <h2>Meta<a class="headerlink" href="#meta" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Incrementar la productividad considerando los elementos de producción, las actividades e infraestructura de producción, almacenamiento y centro de distribución y de logística y comercialización de productos terminados. Disminuir el impacto ambiental: consumo de suelo y recursos, y generación de residuos.</p>
+<p>Incrementar la productividad considerando los elementos de producción, las actividades e infraestructura de producción, almacenamiento y centro de distribución y de logística y comercialización de productos terminados.</p>
 </div>
 <div class="section" id="tipos-de-industria">
 <h2>Tipos de industria<a class="headerlink" href="#tipos-de-industria" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="section" id="industria-ligera">
-<h3>Industria ligera<a class="headerlink" href="#industria-ligera" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="ligera">
+<h3>Ligera<a class="headerlink" href="#ligera" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Industria ligera (tecnología y actividades de apoyo a la industria mediana y pesada: almacenamiento).</p>
 </div>
-<div class="section" id="industria-mediana-y-pesada">
-<h3>Industria mediana y pesada<a class="headerlink" href="#industria-mediana-y-pesada" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Industria mediana y pesada (incluye agroindustria y manufactura como las principales).</p>
+<div class="section" id="pesada-y-mediana">
+<h3>Pesada y mediana<a class="headerlink" href="#pesada-y-mediana" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Industria pesada y mediana (incluye agroindustria y manufactura como las principales).</p>
 <p><strong>Modelo AHP del tipo de industria mediana y pesada</strong></p>
 <p><img alt="_images/industria_pesada.png" src="_images/industria_pesada.png" /></p>
 </div>
@@ -244,7 +244,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <thead>
 <tr>
 <th>Capa</th>
-<th>Distancia líneas de transmisión de energía   eléctrica</th>
+<th>Distancia líneas de transmisión de energía eléctrica</th>
 </tr>
 </thead>
 <tbody>
@@ -566,17 +566,125 @@ Unidades	Kilómetros</p>
 <h4>Disponibilidad de agua<a class="headerlink" href="#disponibilidad-de-agua" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Distancia a manto freático.</p>
 <p><strong>Insumos</strong></p>
-</div>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Nivel freático</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Nivel freático POETY</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>n_freat_m</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Estatal</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Metros</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="cobertura">
 <h4>Cobertura<a class="headerlink" href="#cobertura" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Zonas urbanas, asentamientos humanos.</p>
 <p><strong>Insumos</strong></p>
-</div>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Cobertura (zonas urbanas)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de información topográfica por Entidad   Federativa Serie VI. (localidad_250a) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Cobertura (zonas urbanas)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="dispersion-de-emisiones">
 <h4>Dispersión de emisiones<a class="headerlink" href="#dispersion-de-emisiones" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea.</p>
 <p><strong>Insumos</strong></p>
-<!-- .. csv-table::
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Vulnerabilidad del acuífero</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Vulnerabilidad intrínseca del acuífero en el Estado de Yucatán, Batllori   Sampedro y Canto Mendiburu</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><!-- .. csv-table::
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv
    :header-rows: 1
    :align: center --></div>
