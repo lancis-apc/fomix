@@ -5,10 +5,10 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Incorporar nuevas superficies y productores a la producción forestal maderable y no maderable, de tal manera que represente una alternativa productiva, y mejorar las capacidades técnicas y financieras de aprovechamiento de las áreas ya destinadas a la producción forestal.
-Fomentar las plantaciones forestales en superficies preferentemente forestales.
-Orientar la producción al aprovechamiento sostenible, que garantice que los ecosistemas se mantengan.
-Minimizar los riesgos del sector forestal.
+* Incorporar nuevas superficies y productores a la producción forestal maderable y no maderable, de tal manera que represente una  alternativa productiva, y mejorar las capacidades técnicas y financieras de aprovechamiento de las áreas ya destinadas a la producción forestal.
+* Fomentar las plantaciones forestales en superficies preferentemente forestales.
+* Orientar la producción al aprovechamiento sostenible, que garantice que los ecosistemas se mantengan.
+* Minimizar los riesgos del sector forestal.
 
 ## Aprovechamiento
 

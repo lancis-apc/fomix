@@ -1,0 +1,32 @@
+Meta,Definici贸n
+,"Incrementar la productividad considerando los elementos de producci贸n, las actividades e infraestructura de producci贸n, almacenamiento y centro de distribuci贸n y de log铆stica y comercializaci贸n de productos terminados. "
+,
+Tipo de industria,
+Pesada y mediana,Industria mediana y pesada (incluye agroindustria y manufactura como las principales)
+,
+Infraestructura,
+Criterio,Definici贸n
+Energ铆a,Energ铆a el茅ctrica: acceso y calidad/capacidad de infraestructura el茅ctrica (CENACE capacidad de carga en nodos)
+Acceso a agua,"Distancia a red de agua potable, plantas de tratamiento, cobertura"
+Conectividad,Capacidad de hacer conexiones a centros de abastecimiento de mano de obra y distribuci贸n de productos
+Manejo residuos,"Sitios de disposici贸n final (basureros, rellenos sanitarios, centros de acopio, tiraderos)"
+Comunicaci贸n,Telecomunicaciones: cobertura de red (IFETEL)
+,
+Conectividad,
+Subcriterio,Definici贸n
+Tipo de carreteras,"Tipo de carreteras a las que se tiene acceso, carreteras de un carril o m谩s de dos carriles"
+Distancia a puertos,Distancia a puertos
+Distancia ferroviaria,Distancia a caminos ferroviarios
+Distancia a aeropuertos,Distancia a aeropuertos
+,
+Socioecon贸micos,
+Criterio,Definici贸n
+Industria instalada,Unidades econ贸micas industriales instaladas
+Localidades,Poblaci贸n total en las localidades
+Tenencia,Tenencia de la tierra: terrenos ejidales o propiedad privada
+,
+Biof铆sicos,
+Criterio,Definici髇
+Disponibilidad de agua  ,Distancia a manto fre醫ico
+Cobertura  ,"Zonas urbanas, asentamientos humanos"
+Dispersi髇 de emisiones,"Zonas con mayor dispersi髇 de contaminantes al aire, con base en datos obtenidos en casetas de medici髇 y de vulnerabilidad por movimiento de contaminantes en agua subterr醤ea "

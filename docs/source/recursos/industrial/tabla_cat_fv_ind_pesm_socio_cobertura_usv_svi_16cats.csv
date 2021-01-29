@@ -1,0 +1,18 @@
+﻿ID,Categoría,Importancia,FV
+4,Asentamiento humano,Máxima ,1.00
+11,Sin vegetación,Máxima ,1.00
+1,Acuícola,Alta,0.80
+2,Agricultura de riego,Alta,0.80
+5,Bosque cultivado/Palmar inducido,Alta,0.80
+3,Agricultura de temporal,Moderada,0.70
+8,Pastizal,Moderada,0.70
+9,Selva baja,Moderada,0.70
+10,Selva mediana,Moderada,0.70
+12,Sábana,Moderada,0.70
+6,Cuerpo de agua,Nula,0.00
+7,Manglar,Nula,0.00
+13,Tular,Nula,0.00
+14,Vegetación de duna costera,Nula,0.00
+15,Vegetación de petén,Nula,0.00
+16,Vegetación halófila hidrófila,Nula,0.00
+17,ND,Nula,0.00
