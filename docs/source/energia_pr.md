@@ -10,7 +10,7 @@ Consolidar al Estado de Yucatán como productor de energía limpia y confiable p
 **Modelo AHP del sector energía**
 
 ![](/recursos/energia/energia.png)
-**Nota** Valores en morado son los pesos o importancias ya realizadas. Valores en azul son las fuentes de energía que faltan por ponderar.
+**Nota. Valores en morado son los pesos o importancias ya realizadas. Valores en azul son las fuentes de energía que faltan por ponderar.**
 
 ## Subsectores
 

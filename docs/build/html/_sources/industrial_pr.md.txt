@@ -5,7 +5,10 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Incrementar la productividad considerando los elementos de producción, las actividades e infraestructura de producción, almacenamiento y centro de distribución y de logística y comercialización de productos terminados.
+* Incrementar la productividad y diversificar las actividades en sector industrial, considerando las actividades e infraestructura de: (1) producción, (2) almacenamiento y centros de distribución y de logística, y (3) comercialización de insumos y productos terminados
+* Disminuir el impacto ambiental, en cuanto al consumo de recursos y suelo y generación de residuos
+* Promover la producción en el sector industrial mediante el favorecimiento de economía circular
+* Promover la descentralización de la actividad industrial hacia la zona sur y oriente
 
 ## Tipos de industria
 
