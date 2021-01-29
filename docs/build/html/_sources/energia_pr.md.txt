@@ -10,6 +10,7 @@ Consolidar al Estado de Yucatán como productor de energía limpia y confiable p
 **Modelo AHP del sector energía**
 
 ![](/recursos/energia/energia.png)
+**Nota** Valores en morado son los pesos o importancias ya realizadas. Valores en azul son las fuentes de energía que faltan por ponderar.
 
 ## Subsectores
 
@@ -40,11 +41,11 @@ Consumo y almacenamiento de hidrocarburos líquidos. Plantas que utilizan diesel
 
 Atributos | Definición
 -- | --
-Distancia a carreteras | Distancia a carreteras.
-Distancia a poblaciones | Distancia a asentamientos humanos.
+Carreteras | Distancia a carreteras.
+Poblaciones | Distancia a asentamientos humanos.
 Ductos | Red de ductos para transportar hidrocarburos líquidos.
-Distancia a vías férreas | Distancia a vías férreas.
-Puerto | Puerto Progreso
+Vías férreas | Distancia a vías férreas.
+Puerto Progreso | Terminal marítima
 
 ###### Carreteras
 
@@ -62,9 +63,7 @@ Red de ductos para transportar hidrocarburos líquidos.
 
 Distancia a vías férreas.
 
-###### Puerto
-
-Puerto Progreso
+###### Puerto Progreso
 
 
 ##### Gas natural
@@ -75,7 +74,7 @@ Atributos | Definición
 -- | --
 Ductos | Red de ductos para transportar hidrocarburos líquidos.
 Zonas industriales | Zonas industriales que demandan gas natural.
-Distancia a poblaciones | Distancia a asentamientos humanos.
+Poblaciones | Distancia a asentamientos humanos.
 
 ###### Ductos
 
@@ -85,7 +84,7 @@ Red de ductos para transportar hidrocarburos líquidos.
 
 Zonas industriales que demandan gas natural.
 
-###### Distancia a poblaciones
+###### Poblaciones
 
 Distancia a asentamientos humanos.
 
@@ -97,18 +96,18 @@ Instalaciones industriales que aprovechan la irradiación solar como fuente de e
 Atributos | Definición
 -- | --
 Distancia a red eléctrica | Distancia a líneas de transmisión y subestaciones.
-Tipo de cobertura | Tipo de vegetación.
-Tipo de tenencia | Áreas ejidales (comunitaria o parcelada) y no ejidales.
+Cobertura | Tipo de vegetación.
+Tenencia | Áreas ejidales (comunitaria o parcelada) y no ejidales.
 
 ###### Distancia a red eléctrica
 
 Distancia a líneas de transmisión y subestaciones.
 
-###### Tipo de cobertura
+###### Cobertura
 
 Tipo de vegetación.
 
-###### Tipo de tenencia
+###### Tenencia
 
 Áreas ejidales (comunitaria o parcelada) y no ejidales.
 
@@ -127,10 +126,21 @@ Proyectos diseñados que utilizan material biológico, para conversion en energ�
 
 Criterio | Definición
 -- | --
-Biomasa comunitaria | Leña, carbón vegetal
-Eólica  comunitaria
-Solar   comunitaria
+Biomasa comunitaria | Uso de leña y carbón vegetal como combustible.
+Eólica comunitaria | Generación de energía en las comunidades, a través de la energía del viento.
+Solar comunitaria | Generación distribuída de energía en las comunidades, a través de la energía solar.
 
+##### Biomasa comunitaria
+
+Uso de leña y carbón vegetal como combustible.
+
+##### Eólica comunitaria
+
+Generación de energía en las comunidades, a través de la energía del viento.
+
+##### Solar comunitaria
+
+Generación distribuída de energía en las comunidades, a través de la energía solar.
 
 
 <!-- .. csv-table::
