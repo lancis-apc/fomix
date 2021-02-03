@@ -1,0 +1,19 @@
+﻿ID,Categoría,Importancia,FV
+10,Selva baja,Máxima ,1.00
+11,Selva mediana,Máxima ,1.00
+8,Palmar inducido,Alta,0.80
+2,Agricultura de riego,Moderada,0.70
+9,Pastizal,Moderada,0.70
+3,Agricultura de temporal,Baja,0.56
+15,Vegetación de duna costera,Baja,0.56
+17,Vegetación halófila hidrófila,Baja,0.56
+5,Bosque cultivado,Muy baja,0.33
+7,Manglar,Muy baja,0.33
+13,Sábana,Muy baja,0.33
+14,Tular,Muy baja,0.33
+1,Acuícola,Nula,0.00
+4,Asentamiento humano,Nula,0.00
+6,Cuerpo de agua,Nula,0.00
+12,Sin vegetación,Nula,0.00
+16,Vegetación de petén,Nula,0.00
+18,NA,Nula,0.00

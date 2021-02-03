@@ -87,7 +87,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#meta">Meta</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#subsectores">Subsectores</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#energia-industrial">Energía industrial</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#energia-comunitaria">Energía comunitaria</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#fuentes">Fuentes</a><ul>
@@ -95,11 +94,14 @@
 <li class="toctree-l4"><a class="reference internal" href="#hidrocarburos-liquidos">Hidrocarburos líquidos</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#gas-natural">Gas natural</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#solar">Solar</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#eolica">Eolica</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#biomasa-industrial">Biomasa industrial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#eolica">Eólica</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">Energía comunitaria</a><ul>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aprovechamiento-actual-de-energia-industrial">Aprovechamiento actual de energía industrial</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#biomasa-industrial">Biomasa industrial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#energia-comunitaria">Energía comunitaria</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#biomasa-comunitaria">Biomasa comunitaria</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#eolica-comunitaria">Eólica&nbsp;comunitaria</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#solar-comunitaria">Solar comunitaria</a></li>
@@ -183,19 +185,14 @@
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="section" id="meta">
 <h2>Meta<a class="headerlink" href="#meta" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Consolidar al Estado de Yucatán como productor de energía limpia y confiable para asegurar la suficiencia energética mediante criterios de uso sostenible del territorio, certidumbre jurídica y desarrollo ordenado e incluyente del sector, que permitan aprovechar los recursos para crear un valor económico, ambiental y social.</p>
-<p><strong>Modelo AHP del sector energía</strong></p>
-<p><img alt="_images/energia.png" src="_images/energia.png" />
-<strong>Nota</strong> Valores en morado son los pesos o importancias ya realizadas. Valores en azul son las fuentes de energía que faltan por ponderar.</p>
 </div>
 <div class="section" id="subsectores">
 <h2>Subsectores<a class="headerlink" href="#subsectores" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="energia-industrial">
 <h3>Energía industrial<a class="headerlink" href="#energia-industrial" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Fuentes de energía a escala industrial.</p>
-</div>
-<div class="section" id="energia-comunitaria">
-<h3>Energía comunitaria<a class="headerlink" href="#energia-comunitaria" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Fuentes de energía utilizadas en las comunidades.</p>
+<p><strong>Modelo AHP del subsector energía industrial</strong></p>
+<p><img alt="_images/energia_industrial_v1.png" src="_images/energia_industrial_v1.png" /></p>
 </div>
 </div>
 <div class="section" id="fuentes">
@@ -247,20 +244,8 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Distancia a carreteras.</td>
 </tr>
 <tr>
-<td>Poblaciones</td>
+<td>Localidades</td>
 <td>Distancia a asentamientos humanos.</td>
-</tr>
-<tr>
-<td>Poliductos</td>
-<td>Red de ductos para transportar hidrocarburos líquidos.</td>
-</tr>
-<tr>
-<td>Vías férreas</td>
-<td>Distancia a vías férreas.</td>
-</tr>
-<tr>
-<td>Puerto Progreso</td>
-<td>Terminal marítima</td>
 </tr>
 </tbody>
 </table><div class="section" id="carreteras">
@@ -292,9 +277,13 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Kilómetros</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="poblaciones">
-<h5>Poblaciones<a class="headerlink" href="#poblaciones" title="Enlazar permanentemente con este título">¶</a></h5>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_ene_ind_hidro_d_carreteras.png" src="_images/fi_fv_ene_ind_hidro_d_carreteras.png" /></p>
+<p><strong>Función de valor de carreteras</strong></p>
+<p><img alt="_images/mapa_fv_ene_ind_hidro_d_carreteras.png" src="_images/mapa_fv_ene_ind_hidro_d_carreteras.png" /></p>
+</div>
+<div class="section" id="localidades">
+<h5>Localidades<a class="headerlink" href="#localidades" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia a asentamientos humanos.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
@@ -307,112 +296,26 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Red Nacional de Caminos (RNC) Red vial - INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>2019</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>[1] 1:250,000; [2]Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table></div>
-<div class="section" id="poliductos">
-<h5>Poliductos<a class="headerlink" href="#poliductos" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Red de ductos para transportar hidrocarburos líquidos.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Poliducto Progreso - Mérida</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Infraestructura Nacional de Almacenamiento y Transporte por Ducto de Petrolíferos</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>Sin dato</td>
+<td>[1] 2020; [2] 2019</td>
 </tr>
 <tr>
 <td>Escala</td>
 <td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table></div>
-<div class="section" id="vias-ferreas">
-<h5>Vías férreas<a class="headerlink" href="#vias-ferreas" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Distancia a vías férreas.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia a red ferroviaria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Red ferroviaria INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2012</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:50,000</td>
 </tr>
 <tr>
 <td>Unidades</td>
 <td>Kilómetros</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="puerto-progreso">
-<h5>Puerto Progreso<a class="headerlink" href="#puerto-progreso" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Terminal marítima</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Puerto de Progreso</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Ubicación de los principales puertos de el estado de Yucatán POETY</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2002</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_ene_ind_hidro_d_localidades.png" src="_images/fi_fv_ene_ind_hidro_d_localidades.png" /></p>
+<p><strong>Función de valor de localidades</strong></p>
+<p><img alt="_images/mapa_fv_ene_ind_hidro_d_localidades.png" src="_images/mapa_fv_ene_ind_hidro_d_localidades.png" /></p>
+</div>
 </div>
 <div class="section" id="gas-natural">
 <h4>Gas natural<a class="headerlink" href="#gas-natural" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -426,108 +329,82 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </thead>
 <tbody>
 <tr>
-<td>Gasoductos</td>
-<td>Red de ductos para transportar hidrocarburos líquidos.</td>
-</tr>
-<tr>
-<td>Zonas industriales</td>
+<td>Distancia del gasoducto a zonas industriales</td>
 <td>Zonas industriales que demandan gas natural.</td>
 </tr>
 <tr>
-<td>Poblaciones</td>
+<td>Distancia del gasoducto a localidades</td>
 <td>Distancia a asentamientos humanos.</td>
 </tr>
 </tbody>
-</table><div class="section" id="gasoductos">
-<h5>Gasoductos<a class="headerlink" href="#gasoductos" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Red de ductos para transportar hidrocarburos líquidos.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Gasoductos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Gasoductos GeoComunes</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table></div>
-<div class="section" id="zonas-industriales">
-<h5>Zonas industriales<a class="headerlink" href="#zonas-industriales" title="Enlazar permanentemente con este título">¶</a></h5>
+</table><div class="section" id="distancia-del-gasoducto-a-zonas-industriales">
+<h5>Distancia del gasoducto a zonas industriales<a class="headerlink" href="#distancia-del-gasoducto-a-zonas-industriales" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Zonas industriales que demandan gas natural.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>Capa</th>
-<th>Parques industriales</th>
+<th>Distancia del gasoducto a los parques   industriales</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>?</td>
+<td>[1] ?; [2] Gasoductos GeoComunes</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>?</td>
+<td>[1] ?; [2] 2020</td>
 </tr>
 <tr>
 <td>Escala</td>
-<td>?</td>
+<td>[1] ? ; [2] Sin dato</td>
 </tr>
 <tr>
 <td>Unidades</td>
-<td>Adimensional</td>
+<td>Kilómetros</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="id2">
-<h5>Poblaciones<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h5>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_ene_ind_gas_d_gasoducto_parques_industriales.png" src="_images/fi_fv_ene_ind_gas_d_gasoducto_parques_industriales.png" /></p>
+<p><strong>Función de valor de distancia del gasoducto a zonas industriales</strong></p>
+<p><img alt="_images/mapa_fv_ene_ind_gas_d_gasoducto_parques_industriales.png" src="_images/mapa_fv_ene_ind_gas_d_gasoducto_parques_industriales.png" /></p>
+</div>
+<div class="section" id="distancia-del-gasoducto-a-localidades">
+<h5>Distancia del gasoducto a localidades<a class="headerlink" href="#distancia-del-gasoducto-a-localidades" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia a asentamientos humanos.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>Capa</th>
-<th>Distancia a localidades</th>
+<th>Distancia de localidades al gasoducto</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI  y [2] Gasoductos   GeoComunes</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>2019</td>
+<td>2020</td>
 </tr>
 <tr>
 <td>Escala</td>
-<td>[1] 1:250,000; [2]Sin dato</td>
+<td>Sin dato</td>
 </tr>
 <tr>
 <td>Unidades</td>
-<td>Adimensional</td>
+<td>Kilómetros</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_ene_ind_gas_d_localidades_gasoducto.png" src="_images/fi_fv_ene_ind_gas_d_localidades_gasoducto.png" /></p>
+<p><strong>Función de valor de distancia del gasoducto a localidades</strong></p>
+<p><img alt="_images/mapa_fv_ene_ind_gas_d_localidades_gasoducto.png" src="_images/mapa_fv_ene_ind_gas_d_localidades_gasoducto.png" /></p>
+</div>
 </div>
 <div class="section" id="solar">
 <h4>Solar<a class="headerlink" href="#solar" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -582,7 +459,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Kilómetros</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_ene_ind_sol_d_lineas_transmision.png" src="_images/fi_fv_ene_ind_sol_d_lineas_transmision.png" /></p>
+<p><strong>Función de valor de distancia a red eléctrica</strong></p>
+<p><img alt="_images/mapa_fv_ene_ind_sol_d_lineas_transmision.png" src="_images/mapa_fv_ene_ind_sol_d_lineas_transmision.png" /></p>
+</div>
 <div class="section" id="cobertura">
 <h5>Cobertura<a class="headerlink" href="#cobertura" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Tipo de vegetación.</p>
@@ -616,7 +497,105 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Cobertura</th>
+<th>fv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>Agricultura de riego</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Agricultura de temporal</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bosque cultivado/Palmar inducido</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Pastizal</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Sin vegetación</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+<td>0.70</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Selva baja</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Selva mediana</td>
+<td>0.56</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Sábana</td>
+<td>0.33</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ND</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de cobertura</strong></p>
+<p><img alt="_images/mapa_fv_ene_ind_sol_cobertura_usv_svi_16cats.png" src="_images/mapa_fv_ene_ind_sol_cobertura_usv_svi_16cats.png" /></p>
+</div>
 <div class="section" id="tenencia">
 <h5>Tenencia<a class="headerlink" href="#tenencia" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Áreas ejidales (comunitaria o parcelada) y no ejidales.</p>
@@ -646,12 +625,57 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>No ejidal</td>
+<td>0.58</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Zona de tierras parceladas</td>
+<td>0.31</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Tierra de uso común</td>
+<td>0.11</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de tenencia</strong></p>
+<p><img alt="_images/mapa_fv_ene_ind_sol_tenencia_tierra.png" src="_images/mapa_fv_ene_ind_sol_tenencia_tierra.png" /></p>
+</div>
 </div>
 <div class="section" id="eolica">
-<h4>Eolica<a class="headerlink" href="#eolica" title="Enlazar permanentemente con este título">¶</a></h4>
+<h4>Eólica<a class="headerlink" href="#eolica" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Instalaciones de generación de energía, mayores a 0.5 MW.</p>
-<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Atributos</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Densidad</td>
+<td>Densidad de potencial eólica a diferentes alturas, determina sitios ideales para colocar dispositivos de conversión de energía eólica a eléctrica.</td>
+</tr>
+<tr>
+<td>Velocidad</td>
+<td>Velocidad del viento, determina sitios ideales para colocar dispositivos de conversión de energía eólica a eléctrica.</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -677,14 +701,127 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
+</table><div class="section" id="densidad">
+<h5>Densidad<a class="headerlink" href="#densidad" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Densidad de potencial eólica a diferentes alturas, determina sitios ideales para colocar dispositivos de conversión de energía eólica a eléctrica.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Atributos</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Densidad a 30 m</td>
+<td>Densidad de potencia eólica a 30 metros.</td>
+</tr>
+<tr>
+<td>Densidad a 50 m</td>
+<td>Densidad de potencia eólica a 50 metros.</td>
+</tr>
+<tr>
+<td>Densidad a 80 m</td>
+<td>Densidad de potencia eólica a 80 metros.</td>
+</tr>
+<tr>
+<td>Densidad a 120 m</td>
+<td>Densidad de potencia eólica a 120 metros.</td>
+</tr>
+</tbody>
 </table></div>
-<div class="section" id="biomasa-industrial">
-<h4>Biomasa industrial<a class="headerlink" href="#biomasa-industrial" title="Enlazar permanentemente con este título">¶</a></h4>
+<div class="section" id="velocidad">
+<h5>Velocidad<a class="headerlink" href="#velocidad" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Velocidad del viento, determina sitios ideales para colocar dispositivos de conversión de energía eólica a eléctrica.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Atributos</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Velocidad a 30 m</td>
+<td>Velocidad del viento a 30 m de altura.</td>
+</tr>
+<tr>
+<td>Velocidad a 50 m</td>
+<td>Velocidad del viento a 50 m de altura.</td>
+</tr>
+<tr>
+<td>Velocidad a 80 m</td>
+<td>Velocidad del viento a 80 m de altura.</td>
+</tr>
+<tr>
+<td>Velocidad a 120 m</td>
+<td>Velocidad del viento a 120 m de altura.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="section" id="aprovechamiento-actual-de-energia-industrial">
+<h2>Aprovechamiento actual de energía industrial<a class="headerlink" href="#aprovechamiento-actual-de-energia-industrial" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>[1] Centrales eléctricas de combustóleo y de   gas; [2] Poliducto Progreso - Mérida; [3] Gasoducto; [4] Parques solares y   [5] Parques eólicos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Mapas de Infraestructura Energética y Recursos Renovables SENER; [2]   Infraestructura Nacional de Almacenamiento y Transporte por Ducto de   Petrolíferos; [3] Gasoductos GeoComunes; [4] Parques solares en México   GeoComunes; [5] Parques eólicos en México GeoComunes</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2016; [2] ?; [3], [4], [5] 2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>[1], [3], [4], [5] Sin dato; [2] ?</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><div class="section" id="biomasa-industrial">
+<h3>Biomasa industrial<a class="headerlink" href="#biomasa-industrial" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Proyectos diseñados que utilizan material biológico, para conversion en energía utilizable. Incluye los desechos de granjas porcícolas para producir energía eléctrica.</p>
-</div>
-</div>
-<div class="section" id="id3">
-<h3>Energía comunitaria<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h3>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Atributos</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cultivos</td>
+<td>Cultivos especializados, destinados a la producción biocombustibles líquidos bioetanol y biodiesel.</td>
+</tr>
+<tr>
+<td>Residuos urbanos</td>
+<td>Biomasa de origen urbano procedente de las actividades urbanas cotidianas. Incluye sitios de disposición final de residuos sólidos urbanos y a los influentes de plantas de tratamiento de aguas residuales.</td>
+</tr>
+<tr>
+<td>Residuos vegetales</td>
+<td>Biomasa agrícola y forestal. Incluye los residuos que se generan durante la cosecha de los principales cultivos. Los residuos forestales incluyen los centros de transformación y almacenamiento de recurso maderero con permiso   vigente para el aprovechamiento y transporte de la madera.</td>
+</tr>
+<tr>
+<td>Tala sustentable</td>
+<td>Material vegetal producto de la tala sustentable, con potencial para generación de energía.</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="energia-comunitaria">
+<h3>Energía comunitaria<a class="headerlink" href="#energia-comunitaria" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Fuentes de energía utilizadas en las comunidades.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>

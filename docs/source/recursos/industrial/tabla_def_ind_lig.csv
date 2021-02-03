@@ -1,4 +1,4 @@
-﻿Meta,Definición
+Meta,Definición
 ,"Incrementar la productividad y diversificar las actividades en sector industrial, considerando las actividades e infraestructura de: (1) producción, (2) almacenamiento y centros de distribución y de logística, y (3) comercialización de insumos y productos terminados"
 ,"Disminuir el impacto ambiental, en cuanto al consumo de recursos y suelo y generación de residuos"
 ,Promover la producción en el sector industrial mediante el favorecimiento de economía circular
@@ -9,10 +9,10 @@ Ligera,"La industria ligera incluye desarrollo de tecnología, actividades de ap
 ,
 Infraestructura,
 Criterio,Definición
-Acceso a agua,Acceso a agua potable en las localidades
 Comunicación,Telecomunicaciones por vía internet en las localidades
 Conectividad,Capacidad de hacer conexiones a centros de abastecimiento de mano de obra y distribución de productos
 Energía,Acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos)
+Acceso a agua,Acceso a agua potable en las localidades
 Manejo de residuos,Sitios de disposición final 
 ,
 Conectividad,
@@ -29,7 +29,7 @@ Varios carriles,Carreteras de dos o más carriles
 ,
 Manejo residuos,
 Subcriterio,Definición
-Plantas de aguas residuales,Distania a plantas de tratamiento de aguas residuales
+Plantas de aguas residuales,Distancia a plantas de tratamiento de aguas residuales
 Rellenos sanitarios,Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial
 Basureros,"Distancia a  bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos"
 ,

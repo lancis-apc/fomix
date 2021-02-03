@@ -1,5 +1,5 @@
 ﻿Capa,Distancia a localidades
-Fuente,[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Red Nacional de Caminos (RNC) Red vial - INEGI
-Año,2019
-Escala,"[1] 1:250,000; [2]Sin dato"
-Unidades,Adimensional
+Fuente,[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Red Nacional de Caminos (RNC) Red vial - INEGI
+Año,[1] 2020; [2] 2019
+Escala,Sin dato
+Unidades,Kilómetros

@@ -7,23 +7,23 @@ Meta,Definición
 , Minimizar los riesgos del sector forestal y fomentar las plantaciones forestales en superficies preferentemente forestales.
 ,
 Tipo,Definición
-Maderable,"Espacios del territorio para especies maderables con uso industrial (madera en rollo, leña y leña para elaboración de carbón)"
+Aprovechamiento forestal maderable,Aprovechamiento de los recursos forestales constituidos por vegetación leñosa susceptibles de aprovechamiento o uso.
 ,
 Biofísicos,
 Criterio,Definición
-Tipo de vegetación,Uso de suelo y vegetación (cubierta vegetal)
-Edafología,Tipo de suelo 
-Clima,Tipo de clima
-Factores de riesgo,"Elementos del ambiente bioísico que impiden las actividades forestales maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios)"
+Tipo de vegetación,Tipos de vegetación y usos de suelo.
+Edafología,Tipo de suelo.
+Clima,Tipo de clima.
+Factores de riesgo,Elementos del ambiente biofísico que ponen en riesgo las actividades de aprovechamiento forestal maderable (zonas con plagas y zonas con incidencia de incendios).
 ,
 Socioeconómicos,
 Criterio,Definición
-Aprovechamiento,Autorizaciones de aprovechamiento (activos e inactivos)
-Mercados,Distancia a localidades con puntos de venta
-Tenencia,"Tenencia de la tierra por zonas ejidales, no ejidales y tierras de uso común"
+Aprovechamiento,Autorizaciones de aprovechamiento forestal vigentes.
+Tenencia,Tenencia de la tierra 
+Mercados,Cercanía a las principales localidades en las que se venden los recursos maderables.
 ,
 Infraestructura,
 Criterio,Definición
-Abastecimiento,Acceso a insumos para la producción (fuentes de energía y combustible en localidades)
-Centros de almacenamiento,Distancia a centros de almacenamiento y transformación
-Comunicación,"Distancia a carreteras, caminos rurales y veredas (red de caminos primarios y secundarios)"
+Abastecimiento,Cercanía a localidades como centro de acceso a insumos para la actividad forestal.
+Centros de almacenamiento,Distancia a centros de almacenamiento y transformación.
+Comunicación,"Distancia a carreteras, caminos rurales y veredas (red de caminos primarios y secundarios)."
