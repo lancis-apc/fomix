@@ -107,12 +107,10 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#biofisicos">Biofísicos</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#disponibilidad-de-agua">Disponibilidad de agua</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cobertura">Cobertura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#dispersion-de-emisiones">Dispersión de emisiones</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#pesada-y-mediana">Pesada y mediana</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mediana-y-pesada">Mediana y pesada</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#id1">Criterios</a><ul>
@@ -120,20 +118,20 @@
 <li class="toctree-l4"><a class="reference internal" href="#id3">Energía</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id4">Acceso a agua</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id5">Conectividad</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id8">Manejo de residuos</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id9">Comunicación</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Manejo de residuos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id14">Comunicación</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id10">Socioeconómicos</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id11">Industria instalada</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id12">Localidades</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id13">Tenencia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Socioeconómicos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id16">Industria instalada</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id17">Localidades</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18">Tenencia</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id14">Biofísicos</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id15">Disponibilidad de agua</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id16">Cobertura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id17">Dispersión de emisiones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">Biofísicos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#disponibilidad-de-agua">Disponibilidad de agua</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id20">Cobertura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dispersion-de-emisiones">Dispersión de emisiones</a></li>
 </ul>
 </li>
 </ul>
@@ -304,12 +302,12 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </thead>
 <tbody>
 <tr>
-<td>Un carril</td>
-<td>Carreteras de un solo carril.</td>
-</tr>
-<tr>
 <td>Varios carriles</td>
 <td>Carreteras de dos o más carriles.</td>
+</tr>
+<tr>
+<td>Un carril</td>
+<td>Carreteras de un solo carril.</td>
 </tr>
 </tbody>
 </table><p><strong>Insumos</strong></p>
@@ -436,7 +434,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </table></div>
 <div class="section" id="acceso-a-agua">
 <h4>Acceso a agua<a class="headerlink" href="#acceso-a-agua" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Distancia a red de agua potable, plantas de tratamiento, cobertura.</p>
+<p>Distancia a localidades con cobertura de red de agua potable.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -489,10 +487,43 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Basureros</td>
-<td>Distancia a  bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.</td>
+<td>Distancia a bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.</td>
 </tr>
 </tbody>
-</table><p><strong>Insumos</strong></p>
+</table><div class="section" id="plantas-de-aguas-residuales">
+<h5>Plantas de aguas residuales<a class="headerlink" href="#plantas-de-aguas-residuales" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a plantas de tratamiento de aguas residuales.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a plantas de tratamiento de agua residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Datos vectoriales de las plantas municipales de tratamiento de aguas residuales en operación registradas en el inventario nacional CONAGUA</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="rellenos-sanitarios">
+<h5>Rellenos sanitarios<a class="headerlink" href="#rellenos-sanitarios" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.</p>
+<p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -518,11 +549,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Kilómetros</td>
 </tr>
 </tbody>
-</table><p>Capa	Distancia a plantas de tratamiento de agua residual
-Fuente	Datos vectoriales de las plantas municipales de tratamiento de aguas residuales en operación registradas en el inventario nacional CONAGUA
-Año	2017
-Escala	 1:250,000
-Unidades	Kilómetros</p>
+</table></div>
+<div class="section" id="basureros">
+<h5>Basureros<a class="headerlink" href="#basureros" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a&nbsp;bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.</p>
+</div>
 </div>
 </div>
 <div class="section" id="socioeconomicos">
@@ -537,26 +568,26 @@ Unidades	Kilómetros</p>
 <tbody>
 <tr>
 <td>Industria instalada</td>
-<td>Unidades económicas industriales instaladas.</td>
+<td>Localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en las categorías (334) Fabricación de equipo de computación, comunicación, medición y de otros equipos, componentes y accesorios electrónicos y (493) Servicios de almacenamiento, así como el Parque Científico Tecnológico de Yucatán.</td>
 </tr>
 <tr>
 <td>Localidades</td>
-<td>Población total en las localidades</td>
+<td>Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.</td>
 </tr>
 <tr>
 <td>Tenencia</td>
-<td>Tenencia de la tierra: terrenos ejidales o propiedad privada</td>
+<td>Tenencia de la tierra.</td>
 </tr>
 </tbody>
 </table><div class="section" id="industria-instalada">
 <h4>Industria instalada<a class="headerlink" href="#industria-instalada" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Unidades económicas industriales instaladas.</p>
+<p>Localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en las categorías (334) Fabricación de equipo de computación, comunicación, medición y de otros equipos, componentes y accesorios electrónicos y (493) Servicios de almacenamiento, así como el Parque Científico Tecnológico de Yucatán.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>Capa</th>
-<th>Industria mediana y pesada</th>
+<th>Industria instalada ligera y almacenamiento</th>
 </tr>
 </thead>
 <tbody>
@@ -580,7 +611,7 @@ Unidades	Kilómetros</p>
 </table></div>
 <div class="section" id="localidades">
 <h4>Localidades<a class="headerlink" href="#localidades" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Población total en las localidades.</p>
+<p>Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -592,7 +623,7 @@ Unidades	Kilómetros</p>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Censo de Población y Vivienda 2010. Principales resultados por localidad   (ITER) INEGI</td>
+<td>Censo de Población y Vivienda 2010. Principales resultados por localidad (ITER) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
@@ -614,7 +645,7 @@ Unidades	Kilómetros</p>
 </table></div>
 <div class="section" id="tenencia">
 <h4>Tenencia<a class="headerlink" href="#tenencia" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Tenencia de la tierra: terrenos ejidales o propiedad privada.</p>
+<p>Tenencia de la tierra.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -656,13 +687,13 @@ Unidades	Kilómetros</p>
 <td>3</td>
 <td>No ejidal</td>
 <td>Máxima</td>
-<td>1</td>
+<td>1.00</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Zona de tierras parceladas</td>
 <td>Alta</td>
-<td>0.8</td>
+<td>0.80</td>
 </tr>
 <tr>
 <td>1</td>
@@ -684,96 +715,29 @@ Unidades	Kilómetros</p>
 </thead>
 <tbody>
 <tr>
-<td>Disponibilidad de agua</td>
-<td>Distancia a manto freático</td>
-</tr>
-<tr>
 <td>Cobertura</td>
-<td>Zonas urbanas, asentamientos humanos</td>
-</tr>
-<tr>
-<td>Dispersión de emisiones</td>
-<td>Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea</td>
+<td>Uso de suelo y vegetación.</td>
 </tr>
 </tbody>
-</table><div class="section" id="disponibilidad-de-agua">
-<h4>Disponibilidad de agua<a class="headerlink" href="#disponibilidad-de-agua" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Distancia a manto freático.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Nivel freático</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Nivel freático POETY</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>n_freat_m</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Estatal</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Metros</td>
-</tr>
-</tbody>
-</table></div>
-<div class="section" id="cobertura">
+</table><div class="section" id="cobertura">
 <h4>Cobertura<a class="headerlink" href="#cobertura" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Zonas urbanas, asentamientos humanos.</p>
+<p>Uso de suelo y vegetación.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>Capa</th>
-<th>Cobertura (zonas urbanas)</th>
+<th>Uso del suelo y vegetación</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Conjunto de datos vectoriales de información topográfica por Entidad   Federativa Serie VI. (localidad_250a) INEGI</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>2019</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:250,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Cobertura (zonas urbanas)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2014</td>
+<td>2017</td>
 </tr>
 <tr>
 <td>Campo</td>
@@ -803,140 +767,110 @@ Unidades	Kilómetros</p>
 <td>4</td>
 <td>Asentamiento humano</td>
 <td>Máxima</td>
-<td>1</td>
+<td>1.00</td>
 </tr>
 <tr>
 <td>11</td>
 <td>Sin vegetación</td>
 <td>Máxima</td>
-<td>1</td>
+<td>1.00</td>
 </tr>
 <tr>
 <td>1</td>
 <td>Acuícola</td>
 <td>Alta</td>
-<td>0.8</td>
+<td>0.80</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Agricultura de riego</td>
 <td>Alta</td>
-<td>0.8</td>
+<td>0.80</td>
 </tr>
 <tr>
 <td>5</td>
 <td>Bosque cultivado/Palmar inducido</td>
 <td>Alta</td>
-<td>0.8</td>
+<td>0.80</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Agricultura de temporal</td>
 <td>Moderada</td>
-<td>0.7</td>
+<td>0.70</td>
 </tr>
 <tr>
 <td>8</td>
 <td>Pastizal</td>
 <td>Moderada</td>
-<td>0.7</td>
+<td>0.70</td>
 </tr>
 <tr>
 <td>9</td>
 <td>Selva baja</td>
 <td>Moderada</td>
-<td>0.7</td>
+<td>0.70</td>
 </tr>
 <tr>
 <td>10</td>
 <td>Selva mediana</td>
 <td>Moderada</td>
-<td>0.7</td>
+<td>0.70</td>
 </tr>
 <tr>
 <td>12</td>
 <td>Sábana</td>
 <td>Moderada</td>
-<td>0.7</td>
+<td>0.70</td>
 </tr>
 <tr>
 <td>6</td>
 <td>Cuerpo de agua</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>7</td>
 <td>Manglar</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>13</td>
 <td>Tular</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>14</td>
 <td>Vegetación de duna costera</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>15</td>
 <td>Vegetación de petén</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>16</td>
 <td>Vegetación halófila hidrófila</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>17</td>
 <td>ND</td>
 <td>Nula</td>
-<td>0</td>
-</tr>
-</tbody>
-</table></div>
-<div class="section" id="dispersion-de-emisiones">
-<h4>Dispersión de emisiones<a class="headerlink" href="#dispersion-de-emisiones" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Vulnerabilidad del acuífero</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Vulnerabilidad intrínseca del acuífero en el Estado de Yucatán, Batllori   Sampedro y Canto Mendiburu</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2019</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
+<td>0.00</td>
 </tr>
 </tbody>
 </table></div>
 </div>
-<div class="section" id="pesada-y-mediana">
-<h3>Pesada y mediana<a class="headerlink" href="#pesada-y-mediana" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Industria pesada y mediana (incluye agroindustria y manufactura como las principales).</p>
+<div class="section" id="mediana-y-pesada">
+<h3>Mediana y pesada<a class="headerlink" href="#mediana-y-pesada" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La industria mediana y pesada incluye agroindustria y manufactura, como las principales.</p>
 <p><strong>Modelo AHP del tipo de industria mediana y pesada</strong></p>
 <p><img alt="_images/industria_pesada.png" src="_images/industria_pesada.png" /></p>
 </div>
@@ -955,28 +889,28 @@ Unidades	Kilómetros</p>
 <tbody>
 <tr>
 <td>Energía</td>
-<td>Acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos).</td>
+<td>Distancia a líneas de transmisión eléctrica de 230 KV y 400 KV y a gasoductos.</td>
 </tr>
 <tr>
 <td>Acceso a agua</td>
-<td>Distancia a red de agua potable, plantas de tratamiento, cobertura.</td>
+<td>Distancia a localidades con cobertura de red de agua potable.</td>
 </tr>
 <tr>
 <td>Conectividad</td>
-<td>Capacidad de hacer conexiones a centros de abastecimiento de mano de obra y distribución de productos.</td>
+<td>Distancia a vías de comunicación que permiten el movimiento de trabajadores y la distribución de insumos y productos.</td>
 </tr>
 <tr>
 <td>Manejo de residuos</td>
-<td>Sitios de disposición final.</td>
+<td>Distancia a sitios de disposición final de residuos solidos y agua residual.</td>
 </tr>
 <tr>
 <td>Comunicación</td>
-<td>Telecomunicaciones: cobertura de red (IFETEL).</td>
+<td>Distancia a localidades con cobertura de internet.</td>
 </tr>
 </tbody>
 </table><div class="section" id="id3">
 <h4>Energía<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos).</p>
+<p>Distancia a líneas de transmisión eléctrica de 230 KV y 400 KV y a gasoductos.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -1006,7 +940,7 @@ Unidades	Kilómetros</p>
 </table></div>
 <div class="section" id="id4">
 <h4>Acceso a agua<a class="headerlink" href="#id4" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Distancia a red de agua potable, plantas de tratamiento, cobertura.</p>
+<p>Distancia a localidades con cobertura de red de agua potable.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -1037,15 +971,10 @@ Unidades	Kilómetros</p>
 <td>Kilómetros</td>
 </tr>
 </tbody>
-</table><p>Capa	Distancia a plantas de tratamiento de agua residual
-Fuente	Datos vectoriales de las plantas municipales de tratamiento de aguas residuales en operación registradas en el inventario nacional CONAGUA
-Año	2017
-Escala	 1:250,000
-Unidades	Kilómetros</p>
-</div>
+</table></div>
 <div class="section" id="id5">
 <h4>Conectividad<a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Capacidad de hacer conexiones a centros de abastecimiento de mano de obra y distribución de productos.</p>
+<p>Distancia a vías de comunicación que permiten el movimiento de trabajadores y la distribución de insumos y productos.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1056,15 +985,15 @@ Unidades	Kilómetros</p>
 <tbody>
 <tr>
 <td>Carreteras</td>
-<td>Tipo de carreteras a las que se tiene acceso, carreteras de un carril o más de dos carriles.</td>
+<td>Distancia a carreteras.</td>
 </tr>
 <tr>
 <td>Puertos</td>
 <td>Distancia a puertos.</td>
 </tr>
 <tr>
-<td>Caminos ferroviarios</td>
-<td>Distancia a caminos ferroviarios.</td>
+<td>Red ferroviaria</td>
+<td>Distancia a red ferroviaria.</td>
 </tr>
 <tr>
 <td>Aeropuertos</td>
@@ -1073,7 +1002,7 @@ Unidades	Kilómetros</p>
 </tbody>
 </table><div class="section" id="id6">
 <h5>Carreteras<a class="headerlink" href="#id6" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Tipo de carreteras a las que se tiene acceso, carreteras de un carril o más de dos carriles.</p>
+<p>Distancia a carreteras.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1083,12 +1012,12 @@ Unidades	Kilómetros</p>
 </thead>
 <tbody>
 <tr>
-<td>Un carril</td>
-<td>Carreteras de un solo carril</td>
+<td>Varios carriles</td>
+<td>Carreteras de dos o más carriles.</td>
 </tr>
 <tr>
-<td>Varios carriles</td>
-<td>Carreteras de dos o más carriles</td>
+<td>Un carril</td>
+<td>Carreteras de un solo carril.</td>
 </tr>
 </tbody>
 </table><p><strong>Insumos</strong></p>
@@ -1148,9 +1077,9 @@ Unidades	Kilómetros</p>
 </tr>
 </tbody>
 </table></div>
-<div class="section" id="caminos-ferroviarios">
-<h5>Caminos ferroviarios<a class="headerlink" href="#caminos-ferroviarios" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Distancia a caminos ferroviarios.</p>
+<div class="section" id="id8">
+<h5>Red ferroviaria<a class="headerlink" href="#id8" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a red ferroviaria.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -1178,10 +1107,15 @@ Unidades	Kilómetros</p>
 </tr>
 </tbody>
 </table></div>
+<div class="section" id="id9">
+<h5>Aeropuertos<a class="headerlink" href="#id9" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a aeropuertos.</p>
+<p><strong>Insumos</strong></p>
 </div>
-<div class="section" id="id8">
-<h4>Manejo de residuos<a class="headerlink" href="#id8" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Sitios de disposición final.</p>
+</div>
+<div class="section" id="id10">
+<h4>Manejo de residuos<a class="headerlink" href="#id10" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a sitios de disposición final de residuos solidos y agua residual.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1200,10 +1134,43 @@ Unidades	Kilómetros</p>
 </tr>
 <tr>
 <td>Basureros</td>
-<td>Distancia a  bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.</td>
+<td>Distancia a bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.</td>
 </tr>
 </tbody>
-</table><p><strong>Insumos</strong></p>
+</table><div class="section" id="id11">
+<h5>Plantas de aguas residuales<a class="headerlink" href="#id11" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a plantas de tratamiento de aguas residuales.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a plantas de tratamiento de agua residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Datos vectoriales de las plantas municipales de tratamiento de aguas residuales en operación registradas en el inventario nacional CONAGUA</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id12">
+<h5>Rellenos sanitarios<a class="headerlink" href="#id12" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.</p>
+<p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1230,13 +1197,18 @@ Unidades	Kilómetros</p>
 </tr>
 </tbody>
 </table></div>
-<div class="section" id="id9">
-<h4>Comunicación<a class="headerlink" href="#id9" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Telecomunicaciones: cobertura de red (IFETEL).</p>
+<div class="section" id="id13">
+<h5>Basureros<a class="headerlink" href="#id13" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a&nbsp;bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.</p>
 </div>
 </div>
-<div class="section" id="id10">
-<h3>Socioeconómicos<a class="headerlink" href="#id10" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="id14">
+<h4>Comunicación<a class="headerlink" href="#id14" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a localidades con cobertura de internet.</p>
+</div>
+</div>
+<div class="section" id="id15">
+<h3>Socioeconómicos<a class="headerlink" href="#id15" title="Enlazar permanentemente con este título">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1247,20 +1219,20 @@ Unidades	Kilómetros</p>
 <tbody>
 <tr>
 <td>Industria instalada</td>
-<td>Unidades económicas industriales instaladas.</td>
+<td>Parques industriales y localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en la categoría (31-33). Industrias manufactureras excepto la categoría (334).</td>
 </tr>
 <tr>
 <td>Localidades</td>
-<td>Población total en las localidades</td>
+<td>Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.</td>
 </tr>
 <tr>
 <td>Tenencia</td>
-<td>Tenencia de la tierra: terrenos ejidales o propiedad privada</td>
+<td>Tenencia de la tierra.</td>
 </tr>
 </tbody>
-</table><div class="section" id="id11">
-<h4>Industria instalada<a class="headerlink" href="#id11" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Unidades económicas industriales instaladas.</p>
+</table><div class="section" id="id16">
+<h4>Industria instalada<a class="headerlink" href="#id16" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Parques industriales y localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en la categoría (31-33). Industrias manufactureras excepto la categoría (334).</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -1288,9 +1260,9 @@ Unidades	Kilómetros</p>
 </tr>
 </tbody>
 </table></div>
-<div class="section" id="id12">
-<h4>Localidades<a class="headerlink" href="#id12" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Población total en las localidades.</p>
+<div class="section" id="id17">
+<h4>Localidades<a class="headerlink" href="#id17" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -1302,7 +1274,7 @@ Unidades	Kilómetros</p>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Censo de Población y Vivienda 2010. Principales resultados por localidad   (ITER) INEGI</td>
+<td>Censo de Población y Vivienda 2010. Principales resultados por localidad (ITER) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
@@ -1322,9 +1294,9 @@ Unidades	Kilómetros</p>
 </tr>
 </tbody>
 </table></div>
-<div class="section" id="id13">
-<h4>Tenencia<a class="headerlink" href="#id13" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Tenencia de la tierra: terrenos ejidales o propiedad privada.</p>
+<div class="section" id="id18">
+<h4>Tenencia<a class="headerlink" href="#id18" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Tenencia de la tierra.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -1366,13 +1338,13 @@ Unidades	Kilómetros</p>
 <td>3</td>
 <td>No ejidal</td>
 <td>Máxima</td>
-<td>1</td>
+<td>1.00</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Zona de tierras parceladas</td>
 <td>Alta</td>
-<td>0.8</td>
+<td>0.80</td>
 </tr>
 <tr>
 <td>1</td>
@@ -1383,8 +1355,8 @@ Unidades	Kilómetros</p>
 </tbody>
 </table></div>
 </div>
-<div class="section" id="id14">
-<h3>Biofísicos<a class="headerlink" href="#id14" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="id19">
+<h3>Biofísicos<a class="headerlink" href="#id19" title="Enlazar permanentemente con este título">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1395,19 +1367,19 @@ Unidades	Kilómetros</p>
 <tbody>
 <tr>
 <td>Disponibilidad de agua</td>
-<td>Distancia a manto freático</td>
+<td>Distancia a manto freático.</td>
 </tr>
 <tr>
 <td>Cobertura</td>
-<td>Zonas urbanas, asentamientos humanos</td>
+<td>Uso de suelo y vegetación.</td>
 </tr>
 <tr>
 <td>Dispersión de emisiones</td>
-<td>Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea</td>
+<td>Vulnerabilidad del acuífero a la contaminación.</td>
 </tr>
 </tbody>
-</table><div class="section" id="id15">
-<h4>Disponibilidad de agua<a class="headerlink" href="#id15" title="Enlazar permanentemente con este título">¶</a></h4>
+</table><div class="section" id="disponibilidad-de-agua">
+<h4>Disponibilidad de agua<a class="headerlink" href="#disponibilidad-de-agua" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Distancia a manto freático.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
@@ -1440,9 +1412,9 @@ Unidades	Kilómetros</p>
 </tr>
 </tbody>
 </table></div>
-<div class="section" id="id16">
-<h4>Cobertura<a class="headerlink" href="#id16" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Zonas urbanas, asentamientos humanos.</p>
+<div class="section" id="id20">
+<h4>Cobertura<a class="headerlink" href="#id20" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Uso de suelo y vegetación.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -1454,36 +1426,11 @@ Unidades	Kilómetros</p>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Conjunto de datos vectoriales de información topográfica por Entidad   Federativa Serie VI. (localidad_250a) INEGI</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>2019</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:250,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table><table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Cobertura (zonas urbanas)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2014</td>
+<td>2017</td>
 </tr>
 <tr>
 <td>Campo</td>
@@ -1513,109 +1460,109 @@ Unidades	Kilómetros</p>
 <td>4</td>
 <td>Asentamiento humano</td>
 <td>Máxima</td>
-<td>1</td>
+<td>1.00</td>
 </tr>
 <tr>
 <td>11</td>
 <td>Sin vegetación</td>
 <td>Máxima</td>
-<td>1</td>
+<td>1.00</td>
 </tr>
 <tr>
 <td>1</td>
 <td>Acuícola</td>
 <td>Alta</td>
-<td>0.8</td>
+<td>0.80</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Agricultura de riego</td>
 <td>Alta</td>
-<td>0.8</td>
+<td>0.80</td>
 </tr>
 <tr>
 <td>5</td>
 <td>Bosque cultivado/Palmar inducido</td>
 <td>Alta</td>
-<td>0.8</td>
+<td>0.80</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Agricultura de temporal</td>
 <td>Moderada</td>
-<td>0.7</td>
+<td>0.70</td>
 </tr>
 <tr>
 <td>8</td>
 <td>Pastizal</td>
 <td>Moderada</td>
-<td>0.7</td>
+<td>0.70</td>
 </tr>
 <tr>
 <td>9</td>
 <td>Selva baja</td>
 <td>Moderada</td>
-<td>0.7</td>
+<td>0.70</td>
 </tr>
 <tr>
 <td>10</td>
 <td>Selva mediana</td>
 <td>Moderada</td>
-<td>0.7</td>
+<td>0.70</td>
 </tr>
 <tr>
 <td>12</td>
 <td>Sábana</td>
 <td>Moderada</td>
-<td>0.7</td>
+<td>0.70</td>
 </tr>
 <tr>
 <td>6</td>
 <td>Cuerpo de agua</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>7</td>
 <td>Manglar</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>13</td>
 <td>Tular</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>14</td>
 <td>Vegetación de duna costera</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>15</td>
 <td>Vegetación de petén</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>16</td>
 <td>Vegetación halófila hidrófila</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 <tr>
 <td>17</td>
 <td>ND</td>
 <td>Nula</td>
-<td>0</td>
+<td>0.00</td>
 </tr>
 </tbody>
 </table></div>
-<div class="section" id="id17">
-<h4>Dispersión de emisiones<a class="headerlink" href="#id17" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea.</p>
+<div class="section" id="dispersion-de-emisiones">
+<h4>Dispersión de emisiones<a class="headerlink" href="#dispersion-de-emisiones" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Vulnerabilidad del acuífero a la contaminación.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -1627,7 +1574,7 @@ Unidades	Kilómetros</p>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Vulnerabilidad intrínseca del acuífero en el Estado de Yucatán, Batllori   Sampedro y Canto Mendiburu</td>
+<td>Vulnerabilidad intrínseca del acuífero en el Estado de Yucatán, Batllori Sampedro y Canto Mendiburu</td>
 </tr>
 <tr>
 <td>Año</td>

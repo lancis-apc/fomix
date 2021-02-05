@@ -223,17 +223,17 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <thead>
 <tr>
 <th>Capa</th>
-<th>Unidades económicas totales</th>
+<th>Unidades económicas totales (excepto agricultura y minería)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>[1]2019; [2] 2020</td>
+<td>2020</td>
 </tr>
 <tr>
 <td>Escala</td>
@@ -257,17 +257,17 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <thead>
 <tr>
 <th>Capa</th>
-<th>Viviendas totales con agua entubada, drenaje y energía eléctrica</th>
+<th>Viviendas totales con agua entubada, drenaje   y energía eléctrica</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>[1] 2019; [2] 2010</td>
+<td>2020</td>
 </tr>
 <tr>
 <td>Campo</td>
@@ -319,13 +319,13 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <thead>
 <tr>
 <th>Capa</th>
-<th>Número de unidades económicas de escuelas totales</th>
+<th>Unidades económicas de escuelas</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI</td>
+<td>[1]Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de   Unidades Económicas (DENUE) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
@@ -337,7 +337,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Unidades</td>
-<td>Porcentaje</td>
+<td>Número</td>
 </tr>
 </tbody>
 </table><p><strong>Parámetros de la función de valor</strong></p>
@@ -359,11 +359,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de   Unidades Económicas (DENUE) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>[1]2019; [2] 2020</td>
+<td>2020</td>
 </tr>
 <tr>
 <td>Escala</td>
@@ -396,29 +396,61 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <thead>
 <tr>
 <th>Capa</th>
-<th>Inverso del índice de dispersión poblacional municipal trasladado a localidades</th>
+<th>Conectividad</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a y carretera_l) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Carreteras: Conjunto de datos vectoriales de información   topográfica por Entidad Federativa Serie V (carretera_l) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>[1] 2019; [2] 2010</td>
+<td>[1]2020; [2]2018</td>
 </tr>
 <tr>
-<td>Campo</td>
-<td>[2] POBTOT</td>
-</tr>
-<tr>
+<td>Unidades</td>
 <td>Adimensional</td>
-<td>Porcentaje</td>
 </tr>
 </tbody>
 </table><p><strong>Método para obtener los parámetros de la función de valor</strong></p>
-<p><strong>Función de valor de conectividad</strong></p>
+<p>El atributo de conectividad se calculó con base en los siguientes indicadores:</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Indicador</th>
+<th>Definición</th>
+<th>Conectividad</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Localidades   cercanas a ciudades</td>
+<td>Ubicadas   a &lt;= 5 km de una localidad de &lt;= 15 mil habitantes</td>
+<td>Muy   alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>Localidades   cercanas a centros de población mixtos o en transición</td>
+<td>Ubicadas   a &lt;= 2.5 km de una localidad de entre 2,500 y 15 mil habitantes</td>
+<td>Moderada</td>
+<td>0.66</td>
+</tr>
+<tr>
+<td>Localidades   cercanas a carreteras</td>
+<td>Ubicadas   a &lt;= 3 km de un camino transitable todo el año</td>
+<td>Baja</td>
+<td>0.33</td>
+</tr>
+<tr>
+<td>Localidades   aisladas</td>
+<td>El   resto de las localidades</td>
+<td>Muy   baja</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de conectividad</strong></p>
 <p><img alt="_images/mapa_fv_urb_urb_conec_conectividad.png" src="_images/mapa_fv_urb_urb_conec_conectividad.png" /></p>
 </div>
 </div>
@@ -467,11 +499,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censos de Población y Vivienda. Principales resultados por localidad (ITER) INEGI</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censos de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>[1] 2019; [2] 2000 y 2010</td>
+<td>[1] 2020; [2] 2010 y 2020</td>
 </tr>
 <tr>
 <td>Campo</td>
@@ -495,36 +527,13 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <h4>Población<a class="headerlink" href="#poblacion" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Número de habitantes.</p>
 <p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Tamaño poblacional</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>[1] 2019; [2] 2010</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>[2] POBTOT</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Localidad</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Número de habitantes</td>
-</tr>
-</tbody>
-</table><p><strong>Parámetros de la función de valor</strong></p>
+<p>Capa	Tamaño poblacional
+Fuente	[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año	2020
+Campo	[2] POBTOT
+Escala	Localidad
+Unidades	Número de habitantes</p>
+<p><strong>Parámetros de la función de valor</strong></p>
 <p><img alt="_images/fi_fv_urb_dem_pob_tam_poblacional.png" src="_images/fi_fv_urb_dem_pob_tam_poblacional.png" /></p>
 <p><strong>Función de valor de población</strong></p>
 <p><img alt="_images/mapa_fv_urb_dem_pob_tam_poblacional.png" src="_images/mapa_fv_urb_dem_pob_tam_poblacional.png" /></p>
@@ -533,36 +542,13 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <h4>Densidad<a class="headerlink" href="#densidad" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Número de habitantes por hectárea.</p>
 <p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Densidad de población</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>[1] 2019; [2] 2010</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>[2] POBTOT</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Localidad</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Número de habitantes/hectárea</td>
-</tr>
-</tbody>
-</table><p><strong>Parámetros de la función de valor</strong></p>
+<p>Capa	Densidad de población
+Fuente	[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año	2020
+Campo	[2] POBTOT
+Escala	Localidad
+Unidades	Número de habitantes/hectárea</p>
+<p><strong>Parámetros de la función de valor</strong></p>
 <p><img alt="_images/fi_fv_urb_dem_den_densidad_ha.png" src="_images/fi_fv_urb_dem_den_densidad_ha.png" /></p>
 <p><strong>Función de valor de densidad</strong></p>
 <p><img alt="_images/mapa_fv_urb_dem_den_densidad_ha.png" src="_images/mapa_fv_urb_dem_den_densidad_ha.png" /></p>
@@ -581,11 +567,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>[1] 2019; [2] 2010</td>
+<td>2020</td>
 </tr>
 <tr>
 <td>Campo</td>
@@ -619,11 +605,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>[1] 2019; [2] 2010</td>
+<td>2020</td>
 </tr>
 <tr>
 <td>Campo</td>

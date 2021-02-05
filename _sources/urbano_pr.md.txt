@@ -36,10 +36,10 @@ Distancia a las fuentes de empleo.
 
 **Insumos**
 
-Capa | Unidades económicas totales
+Capa | Unidades económicas totales (excepto agricultura y minería)
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
-Año | [1]2019; [2] 2020
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
+Año | 2020
 Escala | Localidad
 Unidades | Número
 
@@ -59,10 +59,10 @@ Cobertura de las redes de agua potable y energía eléctrica.
 
 **Insumos**
 
-Capa | Viviendas totales con agua entubada, drenaje y energía eléctrica
+Capa | Viviendas totales con agua entubada, drenaje   y energía eléctrica
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | [1] 2019; [2] 2010
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Año | 2020
 Campo | [2] VIVTOT y VPH_C_SERV
 Escala | Localidad
 Unidades | Porcentaje
@@ -93,12 +93,12 @@ Número total de instituciones educativas de nivel medio técnico, medio superio
 
 **Insumos**
 
-Capa | Número de unidades económicas de escuelas totales
+Capa | Unidades económicas de escuelas
 -- | --
-Fuente | Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
+Fuente | [1]Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de   Unidades Económicas (DENUE) INEGI
 Año | 2020
 Escala | Localidad
-Unidades | Porcentaje
+Unidades | Número
 
 
 **Parámetros de la función de valor**
@@ -118,8 +118,8 @@ Número total de centros de salud.
 
 Capa | Unidades económicas de centros de salud
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
-Año | [1]2019; [2] 2020
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de   Unidades Económicas (DENUE) INEGI
+Año | 2020
 Escala | Localidad
 Unidades | Número
 
@@ -153,16 +153,23 @@ Vinculación de asentamientos a través de la infraestructura vial.
 
 **Insumos**
 
-Capa | Inverso del índice de dispersión poblacional municipal trasladado a localidades
+Capa | Conectividad
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a y carretera_l) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | [1] 2019; [2] 2010
-Campo | [2] POBTOT
-Adimensional | Porcentaje
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Carreteras: Conjunto de datos vectoriales de información   topográfica por Entidad Federativa Serie V (carretera_l) INEGI
+Año | [1]2020; [2]2018
+Unidades | Adimensional
 
 
 **Método para obtener los parámetros de la función de valor**
 
+El atributo de conectividad se calculó con base en los siguientes indicadores:
+
+Indicador | Definición | Conectividad | FV
+-- | -- | -- | --
+Localidades   cercanas a ciudades | Ubicadas   a <= 5 km de una localidad de <= 15 mil habitantes | Muy   alta | 1.00
+Localidades   cercanas a centros de población mixtos o en transición | Ubicadas   a <= 2.5 km de una localidad de entre 2,500 y 15 mil habitantes | Moderada | 0.66
+Localidades   cercanas a carreteras | Ubicadas   a <= 3 km de un camino transitable todo el año | Baja | 0.33
+Localidades   aisladas | El   resto de las localidades | Muy   baja | 0.00
 
 
 **Función de valor de conectividad**
@@ -189,8 +196,8 @@ Tasa de crecimiento poblacional 10 años (2000-2010).
 
 Capa | Tasa de crecimiento
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censos de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | [1] 2019; [2] 2000 y 2010
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censos de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Año | [1] 2020; [2] 2010 y 2020
 Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Porcentaje
@@ -211,13 +218,12 @@ Número de habitantes.
 
 **Insumos**
 
-Capa | Tamaño poblacional
--- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | [1] 2019; [2] 2010
-Campo | [2] POBTOT
-Escala | Localidad
-Unidades | Número de habitantes
+Capa	Tamaño poblacional
+Fuente	[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año	2020
+Campo	[2] POBTOT
+Escala	Localidad
+Unidades	Número de habitantes
 
 
 **Parámetros de la función de valor**
@@ -235,13 +241,12 @@ Número de habitantes por hectárea.
 
 **Insumos**
 
-Capa | Densidad de población
--- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | [1] 2019; [2] 2010
-Campo | [2] POBTOT
-Escala | Localidad
-Unidades | Número de habitantes/hectárea
+Capa	Densidad de población
+Fuente	[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año	2020
+Campo	[2] POBTOT
+Escala	Localidad
+Unidades	Número de habitantes/hectárea
 
 
 **Parámetros de la función de valor**
@@ -261,8 +266,8 @@ Porcentaje de la población total nacida fuera de la entidad o país.
 
 Capa | Inmigración
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | [1] 2019; [2] 2010
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Año | 2020
 Campo | [2] POBTOT y PNACOE
 Escala | Localidad
 Unidades | Porcentaje
@@ -285,8 +290,8 @@ Porcentaje de la población índígena en el asentamiento.
 
 Capa | Población indígena
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI (localidad250_a) INEGI y [2] Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | [1] 2019; [2] 2010
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Año | 2020
 Campo | [2] POBTOT y P3YM_HLI
 Escala | Localidad
 Unidades | Porcentaje
