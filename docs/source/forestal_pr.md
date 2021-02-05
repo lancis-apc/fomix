@@ -10,9 +10,9 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 * Orientar la producción al aprovechamiento sostenible, que garantice que los ecosistemas se mantengan.
 * Minimizar los riesgos del sector forestal.
 
-## Aprovechamiento
+## Subsector
 
-### Maderable
+### Forestal maderable
 
 Aprovechamiento de los recursos forestales constituidos por vegetación leñosa susceptibles de aprovechamiento o uso.
 
@@ -50,24 +50,24 @@ Unidades | Adimensional
 
 ID | Categoría | Importancia | FV
 -- | -- | -- | --
-5 | Bosque cultivado | Máxima | 1
-11 | Selva mediana | Máxima | 1
-2 | Agricultura de riego | Moderada | 0.7
-9 | Pastizal | Moderada | 0.7
-10 | Selva baja | Moderada | 0.7
+5 | Bosque cultivado | Máxima | 1.00
+11 | Selva mediana | Máxima | 1.00
+2 | Agricultura de riego | Moderada | 0.70
+9 | Pastizal | Moderada | 0.70
+10 | Selva baja | Moderada | 0.70
 3 | Agricultura de temporal | Baja | 0.56
 8 | Palmar inducido | Baja | 0.56
 13 | Sábana | Muy baja | 0.33
-1 | Acuícola | Nula | 0
-4 | Asentamiento humano | Nula | 0
-6 | Cuerpo de agua | Nula | 0
-7 | Manglar | Nula | 0
-12 | Sin vegetación | Nula | 0
-14 | Tular | Nula | 0
-15 | Vegetación de duna costera | Nula | 0
-16 | Vegetación de petén | Nula | 0
-17 | Vegetación halófila hidrófila | Nula | 0
-18 | NA | Nula | 0
+1 | Acuícola | Nula | 0.00
+4 | Asentamiento humano | Nula | 0.00
+6 | Cuerpo de agua | Nula | 0.00
+7 | Manglar | Nula | 0.00
+12 | Sin vegetación | Nula | 0.00
+14 | Tular | Nula | 0.00
+15 | Vegetación de duna costera | Nula | 0.00
+16 | Vegetación de petén | Nula | 0.00
+17 | Vegetación halófila hidrófila | Nula | 0.00
+18 | NA | Nula | 0.00
 
 **Función de valor de tipo de vegetación**
 
@@ -93,19 +93,19 @@ Unidades | Adimensional
 
 ID | Categoría | Importancia | FV
 -- | -- | -- | --
-7 | Luvisol | Máxima | 1
-8 | Nitosol | Máxima | 1
-3 | Chernozem | Alta | 0.8
-5 | Histosol | Alta | 0.8
-2 | Cambisol | Moderada | 0.7
-6 | Leptosol | Moderada | 0.7
-9 | Phaeozem | Moderada | 0.7
-10 | Regosol | Moderada | 0.7
+7 | Luvisol | Máxima | 1.00
+8 | Nitosol | Máxima | 1.00
+3 | Chernozem | Alta | 0.80
+5 | Histosol | Alta | 0.80
+2 | Cambisol | Moderada | 0.70
+6 | Leptosol | Moderada | 0.70
+9 | Phaeozem | Moderada | 0.70
+10 | Regosol | Moderada | 0.70
 4 | Gleysol | Baja | 0.56
 12 | Vertisol | Baja | 0.56
 1 | Arenosol | Muy baja | 0.33
 11 | Solonchak | Muy baja | 0.33
-13 | No aplica | Nula | 0
+13 | No aplica | Nula | 0.00
 
 **Función de valor de edafología**
 
@@ -131,14 +131,14 @@ Unidades | Adimensional
 
 Id | Categoría | Importancia | FV
 -- | -- | -- | --
-3 | Aw2(x') | Máxima | 1
+3 | Aw2(x') | Máxima | 1.00
 1 | Aw1 | Muy alta | 0.87
 2 | Aw1(x') | Muy alta | 0.87
-4 | Awo | Alta | 0.8
-5 | Awo(x') | Alta | 0.8
+4 | Awo | Alta | 0.80
+5 | Awo(x') | Alta | 0.80
 6 | BS1(h')w | Baja | 0.56
 7 | BSo(h')(x') | Muy baja | 0.33
-8 | NA | Nula | 0
+8 | NA | Nula | 0.00
 
 **Función de valor de climas**
 
@@ -163,12 +163,12 @@ Unidades | Adimensional
 
 Id | Categoría | Importancia | FV
 -- | -- | -- | --
-5 | Muy Alta | Máxima | 1
-4 | Alta | Alta | 0.8
-3 | Media | Moderada | 0.7
+5 | Muy Alta | Máxima | 1.00
+4 | Alta | Alta | 0.80
+3 | Media | Moderada | 0.70
 2 | Baja | Baja | 0.56
 1 | Muy Baja | Muy baja | 0.33
-6 | NA | Nula | 0
+6 | NA | Nula | 0.00
 
 **Función de valor de factores de riesgo**
 
@@ -220,19 +220,20 @@ Tenencia de la tierra.
 
 **Insumos**
 
-Capa	Tenencia de la tierra
-Fuente	[1] Zonas de Tierras Parceladas y [2] Tierra de uso común
-Año	2020
-Escala	Sin dato
-Unidades	Adimensional
+Capa | Tenencia de la tierra
+-- | --
+Fuente | [1] Zonas de Tierras Parceladas y [2] Tierra de uso común
+Año | 2020
+Escala | Sin dato
+Unidades | Adimensional
 
 
 **Parámetros de la función de valor versión 1**
 
 ID | Categoría | Importancia | FV
 -- | -- | -- | --
-1 | Tierra de uso común | Máxima | 1
-2 | Zona de tierras parceladas | Alta | 0.8
+1 | Tierra de uso común | Máxima | 1.00
+2 | Zona de tierras parceladas | Alta | 0.80
 3 | No ejidal | Baja | 0.56
 
 **Función de valor de tenencia versión 1**
@@ -244,8 +245,8 @@ ID | Categoría | Importancia | FV
 
 ID | Categoría | Importancia | FV
 -- | -- | -- | --
-1 | Tierra de uso común | Máxima | 1
-3 | No ejidal | Máxima | 1
+1 | Tierra de uso común | Máxima | 1.0
+3 | No ejidal | Máxima | 1.0
 2 | Zona de tierras parceladas | Alta | 0.8
 
 **Función de valor de tenencia versión 2**
@@ -306,7 +307,7 @@ Unidades | Kilómetros
 ![](/recursos/forestal/mapa_fv_for_mad_infra_d_caminos.png)
 
 
-### No maderable
+### Forestal no maderable
 
 Aprovechamiento de los recursos constituidos por la parte no leñosa de la vegetación de un ecosistema forestal, y susceptibles de aprovechamiento o uso, incluyendo líquenes, musgos, hongos y resinas, así como los suelos de terrenos forestales y preferentemente forestales.
 

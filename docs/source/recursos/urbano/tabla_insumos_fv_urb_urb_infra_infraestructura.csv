@@ -1,0 +1,6 @@
+﻿Capa,"Viviendas totales con agua entubada, drenaje y energía eléctrica"
+Fuente,[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año,2020
+Campo,[2] VIVTOT y VPH_C_SERV
+Escala,Localidad
+Unidades,Porcentaje 

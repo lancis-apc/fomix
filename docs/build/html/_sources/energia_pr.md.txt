@@ -16,7 +16,7 @@ Fuentes de energía a escala industrial.
 
 **Modelo AHP del subsector energía industrial**
 
-![](/recursos/energia/energia_industrial_v1.png)
+![](/recursos/energia/energia_industrial_v2.png)
 
 ## Fuentes
 
