@@ -12,7 +12,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Subsector
 
-### Forestal maderable
+### Aprovechamiento forestal maderable
 
 Aprovechamiento de los recursos forestales constituidos por vegetación leñosa susceptibles de aprovechamiento o uso.
 
@@ -307,7 +307,7 @@ Unidades | Kilómetros
 ![](/recursos/forestal/mapa_fv_for_mad_infra_d_caminos.png)
 
 
-### Forestal no maderable
+### Aprovechamiento forestal no maderable
 
 Aprovechamiento de los recursos constituidos por la parte no leñosa de la vegetación de un ecosistema forestal, y susceptibles de aprovechamiento o uso, incluyendo líquenes, musgos, hongos y resinas, así como los suelos de terrenos forestales y preferentemente forestales.
 
