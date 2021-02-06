@@ -1,5 +1,4 @@
-﻿Capa,Industria mediana y pesada
-Fuente,"Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI	"
-Año,2020
-Escala,Localidad
-Unidades,Número de unidades económicas
+﻿Capa,Industria mediana y pesada instalada
+Fuente,"[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI, [2] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI y [3] Parques industriales"
+Año,[1][2] 2020; [3] ?
+Unidades,Adimensional
