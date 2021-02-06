@@ -21,7 +21,7 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
 
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 6
    :caption: Sectores:
 
    energia_pr
