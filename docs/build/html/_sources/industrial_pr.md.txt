@@ -10,19 +10,23 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 * Promover la producción en el sector industrial mediante el favorecimiento de economía circular
 * Promover la descentralización de la actividad industrial hacia la zona sur y oriente
 
-## Subsectores
 
-### Ligera
+
+## 1. Industria ligera 
 
 La industria ligera incluye desarrollo de tecnología,  actividades de apoyo a la industria mediana y pesada, y almacenamiento.
 
-**Modelo AHP del tipo de industria ligera**
+### 1.1 Modelo de decisión 
 
 ![](/recursos/industrial/industria_ligera.png)
 
-## Criterios
 
-### Infraestructura
+
+
+
+### 1.2 Criterios
+
+#### 1.2.1 Infraestructura
 
 Criterio | Definición
 -- | --
@@ -32,11 +36,11 @@ Energía | Distancia a líneas de transmisión eléctrica.
 Acceso a agua | Distancia a localidades con cobertura de red de agua potable.
 Manejo de residuos | Distancia a sitios de disposición final de residuos solidos y agua residual.
 
-##### Comunicación
+##### 1.2.1.1 Comunicación
 
 Distancia a localidades con cobertura de internet.
 
-##### Conectividad
+##### 1.2.1.2 Conectividad
 
 Distancia a vías de comunicación que permiten el movimiento de trabajadores y la distribución de insumos y productos.
 
@@ -47,7 +51,7 @@ Aeropuertos | Distancia a aeropuertos.
 Puertos | Distancia a puertos.
 Red ferroviaria | Distancia a red ferroviaria.
 
-###### Carreteras
+###### 1.2.1.2.1 Carreteras
 
 Distancia a carreteras.
 
@@ -66,12 +70,12 @@ Escala | [1] 1:250,000; [2]Sin dato
 Unidades | Kilómetros
 
 
-###### Aeropuertos
+###### 1.2.1.2.2 Aeropuertos
 
 Distancia a aeropuertos.
 
 
-###### Puertos
+###### 1.2.1.2.3 Puertos
 
 Distancia a puertos.
 
@@ -84,7 +88,7 @@ Año | 2002
 Escala | Sin dato
 Unidades | Kilómetros
 
-###### Red ferroviaria
+###### 1.2.1.2.4 Red ferroviaria
 
 Distancia a red ferroviaria.
 
@@ -98,7 +102,7 @@ Escala | 1:50,000
 Unidades | Kilómetros
 
 
-##### Energía
+##### 1.2.1.3 Energía
 
 Distancia a líneas de transmisión eléctrica.
 
@@ -112,7 +116,7 @@ Escala | 1:50,000
 Unidades | Kilómetros
 
 
-##### Acceso a agua
+##### 1.2.1.4 Acceso a agua
 
 Distancia a localidades con cobertura de red de agua potable.
 
@@ -127,7 +131,7 @@ Escala | Localidad
 Unidades | Kilómetros
 
 
-##### Manejo de residuos
+##### 1.2.1.5 Manejo de residuos
 
 Distancia a sitios de disposición final de residuos solidos y agua residual.
 
@@ -138,7 +142,7 @@ Rellenos sanitarios | Distancia a infraestructura que involucra métodos y obras
 Basureros | Distancia a bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.
 
 
-###### Plantas de aguas residuales
+###### 1.2.1.5.1 Plantas de aguas residuales
 
 Distancia a plantas de tratamiento de aguas residuales.
 
@@ -152,7 +156,7 @@ Escala | 1:250,000
 Unidades | Kilómetros
 
 
-###### Rellenos sanitarios
+###### 1.2.1.5.2 Rellenos sanitarios
 
 Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.
 
@@ -166,12 +170,12 @@ Escala | Sin dato
 Unidades | Kilómetros
 
 
-###### Basureros
+###### 1.2.1.5.3 Basureros
 
 Distancia a bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.
 
 
-### Socioeconómicos
+#### 1.2.2 Socioeconómicos
 
 Criterio | Definición
 -- | --
@@ -180,7 +184,7 @@ Localidades | Distancia a localidades donde se tiene acceso a capital social, se
 Tenencia | Tenencia de la tierra.
 
 
-##### Industria instalada
+##### 1.2.2.1 Industria instalada
 
 Localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en las categorías (334) Fabricación de equipo de computación, comunicación, medición y de otros equipos, componentes y accesorios electrónicos y (493) Servicios de almacenamiento, así como el Parque Científico Tecnológico de Yucatán.
 
@@ -194,7 +198,7 @@ Escala | Localidad
 Unidades | Número de unidades económicas
 
 
-##### Localidades
+##### 1.2.2.2 Localidades
 
 Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.
 
@@ -209,7 +213,7 @@ Escala | Localidad
 Unidades | Número de habitantes
 
 
-##### Tenencia
+##### 1.2.2.3 Tenencia
 
 Tenencia de la tierra.
 
@@ -232,14 +236,14 @@ ID | Categoría | Importancia | FV
 1 | Tierra de uso común | Muy Baja | 0.33
 
 
-### Biofísicos
+#### 1.2.3 Biofísicos
 
 Criterio | Definición
 -- | --
 Cobertura | Uso de suelo y vegetación.
 
 
-##### Cobertura
+##### 1.2.3.1 Cobertura
 
 Uso de suelo y vegetación.
 
@@ -276,8 +280,20 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+### 1.3 Mapa de aptitud
 
-### Mediana y pesada
+#### 1.3.1 Aprovechamiento actual
+
+#### 1.3.2 Zonas de exclusión
+
+#### 1.3.3 Mapa de aptitud de industria ligera
+
+**Pesos Globales de los atributos ambientales de industria ligera**
+
+#### 1.3.4 Sensibilidad de atributos de industria ligera
+
+
+## 2. Industria mediana y pesada
 
 La industria mediana y pesada incluye agroindustria y manufactura, como las principales.
 
@@ -285,7 +301,8 @@ La industria mediana y pesada incluye agroindustria y manufactura, como las prin
 
 ![](/recursos/industrial/industria_pesada.png)
 
-## Criterios
+<!-- 
+**Criterios**
 
 ### Infraestructura
 
@@ -298,7 +315,7 @@ Manejo de residuos | Distancia a sitios de disposición final de residuos solido
 Comunicación | Distancia a localidades con cobertura de internet.
 
 
-##### Energía
+#### Energía
 
 Distancia a líneas de transmisión eléctrica de 230 KV y 400 KV y a gasoductos.
 
@@ -312,7 +329,7 @@ Escala | 1:50,000
 Unidades | Kilómetros
 
 
-##### Acceso a agua
+#### Acceso a agua
 
 Distancia a localidades con cobertura de red de agua potable.
 
@@ -327,7 +344,7 @@ Escala | Localidad
 Unidades | Kilómetros
 
 
-##### Conectividad
+#### Conectividad
 
 Distancia a vías de comunicación que permiten el movimiento de trabajadores y la distribución de insumos y productos.
 
@@ -339,7 +356,7 @@ Red ferroviaria | Distancia a red ferroviaria.
 Aeropuertos | Distancia a aeropuertos.
 
 
-###### Carreteras
+##### Carreteras
 
 Distancia a carreteras.
 
@@ -357,7 +374,7 @@ Año | 2019
 Escala | [1] 1:250,000; [2]Sin dato
 Unidades | Kilómetros
 
-###### Puertos
+##### Puertos
 
 Distancia a puertos.
 
@@ -370,7 +387,7 @@ Año | 2002
 Escala | Sin dato
 Unidades | Kilómetros
 
-###### Red ferroviaria
+##### Red ferroviaria
 
 Distancia a red ferroviaria.
 
@@ -384,14 +401,14 @@ Escala | 1:50,000
 Unidades | Kilómetros
 
 
-###### Aeropuertos
+##### Aeropuertos
 
 Distancia a aeropuertos.
 
 **Insumos**
 
 
-##### Manejo de residuos
+#### Manejo de residuos
 
 Distancia a sitios de disposición final de residuos solidos y agua residual.
 
@@ -402,7 +419,7 @@ Rellenos sanitarios | Distancia a infraestructura que involucra métodos y obras
 Basureros | Distancia a bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.
 
 
-###### Plantas de aguas residuales
+##### Plantas de aguas residuales
 
 Distancia a plantas de tratamiento de aguas residuales.
 
@@ -416,7 +433,7 @@ Escala | 1:250,000
 Unidades | Kilómetros
 
 
-###### Rellenos sanitarios
+##### Rellenos sanitarios
 
 Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.
 
@@ -430,12 +447,12 @@ Escala | Sin dato
 Unidades | Kilómetros
 
 
-###### Basureros
+##### Basureros
 
 Distancia a bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.
 
 
-##### Comunicación
+#### Comunicación
 
 Distancia a localidades con cobertura de internet.
 
@@ -449,7 +466,7 @@ Localidades | Distancia a localidades donde se tiene acceso a capital social, se
 Tenencia | Tenencia de la tierra.
 
 
-##### Industria instalada
+#### Industria instalada
 
 Parques industriales y localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en la categoría (31-33). Industrias manufactureras excepto la categoría (334).
 
@@ -463,7 +480,7 @@ Escala | Localidad
 Unidades | Número de unidades económicas
 
 
-##### Localidades
+#### Localidades
 
 Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.
 
@@ -478,7 +495,7 @@ Escala | Localidad
 Unidades | Número de habitantes
 
 
-##### Tenencia
+#### Tenencia
 
 Tenencia de la tierra.
 
@@ -510,7 +527,7 @@ Cobertura | Uso de suelo y vegetación.
 Dispersión de emisiones | Vulnerabilidad del acuífero a la contaminación.
 
 
-##### Disponibilidad de agua
+#### Disponibilidad de agua
 
 Distancia a manto freático.
 
@@ -525,7 +542,7 @@ Escala | Estatal
 Unidades | Metros
 
 
-##### Cobertura
+#### Cobertura
 
 Uso de suelo y vegetación.
 
@@ -563,7 +580,7 @@ ID | Categoría | Importancia | FV
 17 | ND | Nula | 0.00
 
 
-##### Dispersión de emisiones
+#### Dispersión de emisiones
 
 Vulnerabilidad del acuífero a la contaminación.
 
@@ -580,4 +597,4 @@ Unidades | Adimensional
 <!-- .. csv-table::
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv
    :header-rows: 1
-   :align: center -->
+   :align: center --> -->
