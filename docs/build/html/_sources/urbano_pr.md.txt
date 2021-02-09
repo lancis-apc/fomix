@@ -8,13 +8,13 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 Generar las condiciones, en todas sus vertientes, para el desarrollo urbano en Yucatán, de manera que se fomente la descentralización, se aprovechen las zonas con infraestructura y se contenga la expansión urbana en la zona metropolitana de Mérida.
 
-**Modelo AHP del sector urbano**
+### 1.1 Modelo de decisión
 
 ![](/recursos/urbano/urbano.png)
 
-## Atributos
+### Atributos
 
-### Funcionales urbanos
+#### Funcionales urbanos
 
 Atributos funcionales urbanos que determinan el crecimiento de asentamientos humanos.
 
