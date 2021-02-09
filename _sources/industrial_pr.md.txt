@@ -1,4 +1,4 @@
-# Industrial
+# Industrial-En proceso de actualización
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -10,19 +10,15 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 * Promover la producción en el sector industrial mediante el favorecimiento de economía circular
 * Promover la descentralización de la actividad industrial hacia la zona sur y oriente
 
+Lista de participantes
 
+## 1. Industria ligera
 
-## 1. Industria ligera 
+La industria ligera incluye desarrollo de tecnología, actividades de apoyo a la industria mediana y pesada, y almacenamiento.
 
-La industria ligera incluye desarrollo de tecnología,  actividades de apoyo a la industria mediana y pesada, y almacenamiento.
-
-### 1.1 Modelo de decisión 
+### 1.1 Modelo de decisión
 
 ![](/recursos/industrial/industria_ligera.png)
-
-
-
-
 
 ### 1.2 Criterios
 
@@ -39,6 +35,15 @@ Manejo de residuos | Distancia a sitios de disposición final de residuos solido
 ##### 1.2.1.1 Comunicación
 
 Distancia a localidades con cobertura de internet.
+
+**Insumos**
+
+Capa | Viviendas con internet por localidad
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] VIVTOT y VPH_INTER
+Unidades | Adimensional
 
 ##### 1.2.1.2 Conectividad
 
@@ -60,20 +65,46 @@ Subcriterio | Definición
 Varios carriles | Carreteras de dos o más carriles.
 Un carril | Carreteras de un solo carril.
 
+###### 1.2.1.2.1.1 Varios carriles
+
+Carreteras de dos o más carriles.
+
 **Insumos**
 
-Capa | Distancia a carreteras
+Campo | Distancia a carreteras de dos o más carriles
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI. (localidad_250a) INEGI y [2] Red nacional de caminos   INEGI
+Fuente | Red Nacional de Caminos (RNC) INEGI
 Año | 2019
-Escala | [1] 1:250,000; [2]Sin dato
+Campo | CARRILES
+Escala | Sin dato
 Unidades | Kilómetros
 
+###### 1.2.1.2.1.2 Un carril
+
+Carreteras de un solo carril.
+
+**Insumos**
+
+Capa | Distancia a carreteras de un carril
+-- | --
+Fuente | Red Nacional de Caminos (RNC) INEGI
+Año | 2019
+Campo | CARRILES
+Escala | Sin dato
+Unidades | Kilómetros
 
 ###### 1.2.1.2.2 Aeropuertos
 
 Distancia a aeropuertos.
 
+**Insumos**
+
+Capa | Distancia a aeropuertos
+-- | --
+Fuente | Aeródromos, aeropuertos y pistas de aterrizaje SENEAM
+Año | 2017
+Escala | 1:1,000,000
+Unidades | Kilómetros
 
 ###### 1.2.1.2.3 Puertos
 
@@ -94,13 +125,12 @@ Distancia a red ferroviaria.
 
 **Insumos**
 
-Capa | Distancia a red ferroviaria
+Capa | Distancia a vías ferroviarias
 -- | --
 Fuente | Red ferroviaria INEGI
 Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
-
 
 ##### 1.2.1.3 Energía
 
@@ -115,21 +145,18 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
-
 ##### 1.2.1.4 Acceso a agua
 
 Distancia a localidades con cobertura de red de agua potable.
 
 **Insumos**
 
-Capa | Distancia a agua
+Capa | Viviendas con acceso a agua potable por   localidad
 -- | --
-Fuente | Censo de Población y Vivienda 2010. Principales resultados por localidad (ITER) INEGI
-Año | 2010
-Campo | VPH_AGUADV
-Escala | Localidad
-Unidades | Kilómetros
-
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] VIVTOT y VPH_AEASP
+Unidades | Adimensional
 
 ##### 1.2.1.5 Manejo de residuos
 
@@ -140,7 +167,6 @@ Subcriterio | Definición
 Plantas de aguas residuales | Distancia a plantas de tratamiento de aguas residuales.
 Rellenos sanitarios | Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.
 Basureros | Distancia a bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.
-
 
 ###### 1.2.1.5.1 Plantas de aguas residuales
 
@@ -155,25 +181,31 @@ Año | 2017
 Escala | 1:250,000
 Unidades | Kilómetros
 
-
 ###### 1.2.1.5.2 Rellenos sanitarios
 
 Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.
 
 **Insumos**
 
-Capa | Distancia a residuos
+Capa | Distancia a rellenos sanitarios
 -- | --
 Fuente | Sitios de disposición final de residuos INEGI-SEMARNAT
 Año | 2017
 Escala | Sin dato
 Unidades | Kilómetros
 
-
 ###### 1.2.1.5.3 Basureros
 
 Distancia a bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.
 
+**Insumos**
+
+Capa | Distancia a basureros
+-- | --
+Fuente | Sitios de disposición final de residuos INEGI-SEMARNAT
+Año | 2017
+Escala | Sin dato
+Unidades | Kilómetros
 
 #### 1.2.2 Socioeconómicos
 
@@ -190,13 +222,11 @@ Localidades con unidades económicas registradas en el Directorio Estadístico N
 
 **Insumos**
 
-Capa | Industria instalada ligera y almacenamiento
+Capa | Industria ligera instalada por localidad
 -- | --
-Fuente | Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
-Año | 2020
-Escala | Localidad
-Unidades | Número de unidades económicas
-
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI, [2] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI y [3] Polígono del Parque Científico Tecnológico de Yucatán. Parques industriales
+Año | [1][2] 2020; [3] ?
+Unidades | Adimensional
 
 ##### 1.2.2.2 Localidades
 
@@ -204,14 +234,11 @@ Distancia a localidades donde se tiene acceso a capital social, servicios y merc
 
 **Insumos**
 
-Capa | Tipo de localidades
+Capa | Distancia a localidades
 -- | --
-Fuente | Censo de Población y Vivienda 2010. Principales resultados por localidad (ITER) INEGI
-Año | 2010
-Campo | POBTOT
-Escala | Localidad
-Unidades | Número de habitantes
-
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
+Año | 2020
+Unidades | Kilómetros
 
 ##### 1.2.2.3 Tenencia
 
@@ -221,11 +248,10 @@ Tenencia de la tierra.
 
 Capa | Tenencia de la tierra
 -- | --
-Fuente | [1] Zonas de Tierras Parceladas y [2] Tierra de uso común
+Fuente | [1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN
 Año | 2020
 Escala | Sin dato
 Unidades | Adimensional
-
 
 **Parámetros de la función de valor**
 
@@ -235,13 +261,11 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.80
 1 | Tierra de uso común | Muy Baja | 0.33
 
-
 #### 1.2.3 Biofísicos
 
 Criterio | Definición
 -- | --
 Cobertura | Uso de suelo y vegetación.
-
 
 ##### 1.2.3.1 Cobertura
 
@@ -256,7 +280,6 @@ Año | 2017
 Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
-
 
 **Parámetros de la función de valor**
 
@@ -297,14 +320,13 @@ ID | Categoría | Importancia | FV
 
 La industria mediana y pesada incluye agroindustria y manufactura, como las principales.
 
-**Modelo AHP del tipo de industria mediana y pesada**
+### 2.1 Modelo de decisión
 
 ![](/recursos/industrial/industria_pesada.png)
 
-<!-- 
-**Criterios**
+### 2.2 Criterios
 
-### Infraestructura
+#### 2.2.1 Infraestructura
 
 Criterio | Definición
 -- | --
@@ -314,8 +336,7 @@ Conectividad | Distancia a vías de comunicación que permiten el movimiento de 
 Manejo de residuos | Distancia a sitios de disposición final de residuos solidos y agua residual.
 Comunicación | Distancia a localidades con cobertura de internet.
 
-
-#### Energía
+##### 2.2.1.1 Energía
 
 Distancia a líneas de transmisión eléctrica de 230 KV y 400 KV y a gasoductos.
 
@@ -328,23 +349,20 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
-
-#### Acceso a agua
+##### 2.2.1.2 Acceso a agua
 
 Distancia a localidades con cobertura de red de agua potable.
 
 **Insumos**
 
-Capa | Distancia a agua
+Capa | Viviendas con acceso a agua potable por localidad
 -- | --
-Fuente | Censo de Población y Vivienda 2010. Principales resultados por localidad   (ITER) INEGI
-Año | 2010
-Campo | VPH_AGUADV
-Escala | Localidad
-Unidades | Kilómetros
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] VIVTOT y VPH_AEASP
+Unidades | Adimensional
 
-
-#### Conectividad
+##### 2.2.1.3 Conectividad
 
 Distancia a vías de comunicación que permiten el movimiento de trabajadores y la distribución de insumos y productos.
 
@@ -355,8 +373,7 @@ Puertos | Distancia a puertos.
 Red ferroviaria | Distancia a red ferroviaria.
 Aeropuertos | Distancia a aeropuertos.
 
-
-##### Carreteras
+###### 2.2.1.3.1 Carreteras
 
 Distancia a carreteras.
 
@@ -365,16 +382,35 @@ Subcriterio | Definición
 Varios carriles | Carreteras de dos o más carriles.
 Un carril | Carreteras de un solo carril.
 
+###### 2.2.1.3.1.1 Varios carriles
+
+Carreteras de dos o más carriles.
+
 **Insumos**
 
-Capa | Distancia a carreteras
+Campo | Distancia a carreteras de dos o más carriles
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de información topográfica por Entidad   Federativa Serie VI. (localidad_250a) INEGI y [2] Red nacional de caminos   INEGI
+Fuente | Red Nacional de Caminos (RNC) INEGI
 Año | 2019
-Escala | [1] 1:250,000; [2]Sin dato
+Campo | CARRILES
+Escala | Sin dato
 Unidades | Kilómetros
 
-##### Puertos
+###### 2.2.1.3.1.2 Un carril
+
+Carreteras de un solo carril.
+
+**Insumos**
+
+Capa | Distancia a carreteras de un carril
+-- | --
+Fuente | Red Nacional de Caminos (RNC) INEGI
+Año | 2019
+Campo | CARRILES
+Escala | Sin dato
+Unidades | Kilómetros
+
+###### 2.2.1.3.2 Puertos
 
 Distancia a puertos.
 
@@ -387,28 +423,33 @@ Año | 2002
 Escala | Sin dato
 Unidades | Kilómetros
 
-##### Red ferroviaria
+###### 2.2.1.3.3 Red ferroviaria
 
 Distancia a red ferroviaria.
 
 **Insumos**
 
-Capa | Distancia a red ferroviaria
+Capa | Distancia a vías ferroviarias
 -- | --
 Fuente | Red ferroviaria INEGI
 Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
-
-##### Aeropuertos
+###### 2.2.1.3.3 Aeropuertos
 
 Distancia a aeropuertos.
 
 **Insumos**
 
+Capa | Distancia a aeropuertos
+-- | --
+Fuente | Aeródromos, aeropuertos y pistas de aterrizaje SENEAM
+Año | 2017
+Escala | 1:1,000,000
+Unidades | Kilómetros
 
-#### Manejo de residuos
+##### 2.2.1.4 Manejo de residuos
 
 Distancia a sitios de disposición final de residuos solidos y agua residual.
 
@@ -418,8 +459,7 @@ Plantas de aguas residuales | Distania a plantas de tratamiento de aguas residua
 Rellenos sanitarios | Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.
 Basureros | Distancia a bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.
 
-
-##### Plantas de aguas residuales
+###### 2.2.1.4.1 Plantas de aguas residuales
 
 Distancia a plantas de tratamiento de aguas residuales.
 
@@ -432,32 +472,46 @@ Año | 2017
 Escala | 1:250,000
 Unidades | Kilómetros
 
-
-##### Rellenos sanitarios
+###### 2.2.1.4.2 Rellenos sanitarios
 
 Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.
 
 **Insumos**
 
-Capa | Distancia a residuos
+Capa | Distancia a rellenos sanitarios
 -- | --
 Fuente | Sitios de disposición final de residuos INEGI-SEMARNAT
 Año | 2017
 Escala | Sin dato
 Unidades | Kilómetros
 
-
-##### Basureros
+###### 2.2.1.4.3 Basureros
 
 Distancia a bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.
 
+**Insumos**
 
-#### Comunicación
+Capa | Distancia a basureros
+-- | --
+Fuente | Sitios de disposición final de residuos INEGI-SEMARNAT
+Año | 2017
+Escala | Sin dato
+Unidades | Kilómetros
+
+##### 2.2.1.5 Comunicación
 
 Distancia a localidades con cobertura de internet.
 
+**Insumos**
 
-### Socioeconómicos
+Capa | Viviendas con internet por localidad
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] VIVTOT y VPH_INTER
+Unidades | Adimensional
+
+#### 2.2.2 Socioeconómicos
 
 Criterio | Definición
 -- | --
@@ -465,37 +519,31 @@ Industria instalada | Parques industriales y localidades con unidades económica
 Localidades | Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.
 Tenencia | Tenencia de la tierra.
 
-
-#### Industria instalada
+##### 2.2.2.1 Industria instalada
 
 Parques industriales y localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en la categoría (31-33). Industrias manufactureras excepto la categoría (334).
 
 **Insumos**
 
-Capa | Industria mediana y pesada
+Capa | Industria mediana y pesada instalada
 -- | --
-Fuente | Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
-Año | 2020
-Escala | Localidad
-Unidades | Número de unidades económicas
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI, [2] Datos de indicador. Directorio Estadístico Nacional de   Unidades Económicas (DENUE) INEGI y [3] Parques industriales
+Año | [1][2] 2020; [3] ?
+Unidades | Adimensional
 
-
-#### Localidades
+##### 2.2.2.2 Localidades
 
 Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.
 
 **Insumos**
 
-Capa | Tipo de localidades
+Capa | Distancia a localidades
 -- | --
-Fuente | Censo de Población y Vivienda 2010. Principales resultados por localidad (ITER) INEGI
-Año | 2010
-Campo | POBTOT
-Escala | Localidad
-Unidades | Número de habitantes
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
+Año | 2020
+Unidades | Kilómetros
 
-
-#### Tenencia
+##### 2.2.2.3 Tenencia
 
 Tenencia de la tierra.
 
@@ -503,11 +551,10 @@ Tenencia de la tierra.
 
 Capa | Tenencia de la tierra
 -- | --
-Fuente | [1] Zonas de Tierras Parceladas y [2] Tierra de uso común
+Fuente | [1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN
 Año | 2020
 Escala | Sin dato
 Unidades | Adimensional
-
 
 **Parámetros de la función de valor**
 
@@ -517,8 +564,7 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.80
 1 | Tierra de uso común | Muy Baja | 0.33
 
-
-### Biofísicos
+#### 2.2.3 Biofísicos
 
 Criterio | Definición
 -- | --
@@ -526,8 +572,7 @@ Disponibilidad de agua | Distancia a manto freático.
 Cobertura | Uso de suelo y vegetación.
 Dispersión de emisiones | Vulnerabilidad del acuífero a la contaminación.
 
-
-#### Disponibilidad de agua
+##### 2.2.3.1 Disponibilidad de agua
 
 Distancia a manto freático.
 
@@ -541,21 +586,19 @@ Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
 
-
-#### Cobertura
+##### 2.2.3.2 Cobertura
 
 Uso de suelo y vegetación.
 
 **Insumos**
 
-Capa | Cobertura (zonas urbanas)
+Capa | Cobertura
 -- | --
 Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
 Año | 2017
 Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
-
 
 **Parámetros de la función de valor**
 
@@ -579,8 +622,7 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
-
-#### Dispersión de emisiones
+##### 2.2.3.3 Dispersión de emisiones
 
 Vulnerabilidad del acuífero a la contaminación.
 
