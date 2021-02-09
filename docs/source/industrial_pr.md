@@ -10,7 +10,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 * Promover la producción en el sector industrial mediante el favorecimiento de economía circular
 * Promover la descentralización de la actividad industrial hacia la zona sur y oriente
 
-**Lista de participantes**
+[Lista de participantes](https://www.dropbox.com/s/d0mffzikrg22raf/lista_asistencia_industrial.pdf?dl=0)
 
 ## 1. Industria ligera
 

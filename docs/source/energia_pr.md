@@ -7,6 +7,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 Consolidar al Estado de Yucatán como productor de energía limpia y confiable para asegurar la suficiencia energética mediante criterios de uso sostenible del territorio, certidumbre jurídica y desarrollo ordenado e incluyente del sector, que permitan aprovechar los recursos para crear un valor económico, ambiental y social.
 
+[Lista de participantes](https://www.dropbox.com/s/dtqqr653cni8915/lista_asistencia_energia.pdf?dl=0)
 
 ## Subsectores
 
