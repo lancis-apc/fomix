@@ -1,4 +1,4 @@
-# Urbano
+# Urbano-En proceso de actualización
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -8,13 +8,15 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 Generar las condiciones, en todas sus vertientes, para el desarrollo urbano en Yucatán, de manera que se fomente la descentralización, se aprovechen las zonas con infraestructura y se contenga la expansión urbana en la zona metropolitana de Mérida.
 
+**Lista de participantes**
+
 ### 1.1 Modelo de decisión
 
 ![](/recursos/urbano/urbano.png)
 
-### Atributos
+### 1.2 Atributos
 
-#### Funcionales urbanos
+#### 1.2.1 Funcionales urbanos
 
 Atributos funcionales urbanos que determinan el crecimiento de asentamientos humanos.
 
@@ -30,7 +32,7 @@ Conectividad | Vinculación de asentamientos a través de la infraestructura via
    :header-rows: 1
    :align: center -->
 
-##### Fuente de empleo
+##### 1.2.1.1 Fuente de empleo
 
 Distancia a las fuentes de empleo.
 
@@ -43,7 +45,6 @@ Año | 2020
 Escala | Localidad
 Unidades | Número
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/urbano/fi_fv_urb_urb_empleo_fuentes_empleo.png)  
@@ -52,8 +53,7 @@ Unidades | Número
 
 ![](/recursos/urbano/mapa_fv_urb_urb_empleo_fuentes_empleo.png)
 
-
-##### Infraestructura
+##### 1.2.1.2 Infraestructura
 
 Cobertura de las redes de agua potable y energía eléctrica.
 
@@ -67,7 +67,6 @@ Campo | [2] VIVTOT y VPH_C_SERV
 Escala | Localidad
 Unidades | Porcentaje
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/urbano/fi_fv_urb_urb_infra_infraestructura.png)  
@@ -76,8 +75,7 @@ Unidades | Porcentaje
 
 ![](/recursos/urbano/mapa_fv_urb_urb_infra_infraestructura.png)
 
-
-##### Equipamiento
+##### 1.2.1.3 Equipamiento
 
 Elementos que pueden dar servicios a la población: centros de salud, escuelas, edificios administrativos, transportes, correos y almacenamiento.
 
@@ -87,7 +85,7 @@ Escuelas | Número total de instituciones educativas de nivel medio técnico, me
 Centros de salud | Número total de centros de salud.
 Edificios administrativos | Unidades totales, incluye actividades legislativas gubernamentales.
 
-###### Escuelas
+###### 1.2.1.3.1 Escuelas
 
 Número total de instituciones educativas de nivel medio técnico, medio superior y superior.
 
@@ -100,7 +98,6 @@ Año | 2020
 Escala | Localidad
 Unidades | Número
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/urbano/fi_fv_urb_urb_equi_equipamiento_escuelas.png)  
@@ -109,8 +106,7 @@ Unidades | Número
 
 ![](/recursos/urbano/mapa_fv_urb_urb_equi_equipamiento_escuelas.png)
 
-
-###### Centros de salud
+###### 1.2.1.3.2 Centros de salud
 
 Número total de centros de salud.
 
@@ -123,7 +119,6 @@ Año | 2020
 Escala | Localidad
 Unidades | Número
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/urbano/fi_fv_urb_urb_equi_equipamiento_salud.png)  
@@ -132,11 +127,9 @@ Unidades | Número
 
 ![](/recursos/urbano/mapa_fv_urb_urb_equi_equipamiento_salud.png)
 
-
-###### Edificios administrativos
+###### 1.2.1.3.3 Edificios administrativos
 
 Unidades totales, incluye actividades legislativas gubernamentales.
-
 
 **Parámetros de la función de valor**
 
@@ -146,8 +139,7 @@ Unidades totales, incluye actividades legislativas gubernamentales.
 
 ![](/recursos/urbano/mapa_fv_urb_urb_equi_equipamiento_admin.png)
 
-
-##### Conectividad
+##### 1.2.1.4 Conectividad
 
 Vinculación de asentamientos a través de la infraestructura vial.
 
@@ -158,7 +150,6 @@ Capa | Conectividad
 Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Carreteras: Conjunto de datos vectoriales de información   topográfica por Entidad Federativa Serie V (carretera_l) INEGI
 Año | [1]2020; [2]2018
 Unidades | Adimensional
-
 
 **Método para obtener los parámetros de la función de valor**
 
@@ -171,13 +162,11 @@ Localidades   cercanas a centros de población mixtos o en transición | Ubicada
 Localidades   cercanas a carreteras | Ubicadas   a <= 3 km de un camino transitable todo el año | Baja | 0.33
 Localidades   aisladas | El   resto de las localidades | Muy   baja | 0.00
 
-
 **Función de valor de conectividad**
 
 ![](/recursos/urbano/mapa_fv_urb_urb_conec_conectividad.png)
 
-
-### Demográficos
+#### 1.2.2 Demográficos
 
 Atributos | Definición
 -- | --
@@ -187,8 +176,7 @@ Densidad | Número de habitantes por hectárea.
 Inmigración | Porcentaje de la población total nacida fuera de la entidad o país.
 Población indígena | Porcentaje de la población índígena en el asentamiento.
 
-
-##### Tasa de crecimiento
+##### 1.2.2.1 Tasa de crecimiento
 
 Tasa de crecimiento poblacional 10 años (2000-2010).
 
@@ -202,7 +190,6 @@ Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Porcentaje
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/urbano/fi_fv_urb_dem_tasa_tasa_crecimiento_anual.png)  
@@ -211,8 +198,7 @@ Unidades | Porcentaje
 
 ![](/recursos/urbano/mapa_fv_urb_dem_tasa_tasa_crecimiento_anual.png)
 
-
-##### Población
+##### 1.2.2.2 Población
 
 Número de habitantes.
 
@@ -225,7 +211,6 @@ Campo	[2] POBTOT
 Escala	Localidad
 Unidades	Número de habitantes
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/urbano/fi_fv_urb_dem_pob_tam_poblacional.png)  
@@ -234,8 +219,7 @@ Unidades	Número de habitantes
 
 ![](/recursos/urbano/mapa_fv_urb_dem_pob_tam_poblacional.png)
 
-
-##### Densidad
+##### 1.2.2.3 Densidad
 
 Número de habitantes por hectárea.
 
@@ -248,7 +232,6 @@ Campo	[2] POBTOT
 Escala	Localidad
 Unidades	Número de habitantes/hectárea
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/urbano/fi_fv_urb_dem_den_densidad_ha.png)  
@@ -257,8 +240,7 @@ Unidades	Número de habitantes/hectárea
 
 ![](/recursos/urbano/mapa_fv_urb_dem_den_densidad_ha.png)
 
-
-##### Inmigración
+##### 1.2.2.4 Inmigración
 
 Porcentaje de la población total nacida fuera de la entidad o país.
 
@@ -272,7 +254,6 @@ Campo | [2] POBTOT y PNACOE
 Escala | Localidad
 Unidades | Porcentaje
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/urbano/fi_fv_urb_dem_inmi_inmigracion.png)  
@@ -281,8 +262,7 @@ Unidades | Porcentaje
 
 ![](/recursos/urbano/mapa_fv_urb_dem_inmi_inmigracion.png)
 
-
-##### Población indígena
+##### 1.2.2.5 Población indígena
 
 Porcentaje de la población índígena en el asentamiento.
 
@@ -296,7 +276,6 @@ Campo | [2] POBTOT y P3YM_HLI
 Escala | Localidad
 Unidades | Porcentaje
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/urbano/fi_fv_urb_dem_indi_por_pob_indigena.png)  
@@ -305,8 +284,34 @@ Unidades | Porcentaje
 
 ![](/recursos/urbano/mapa_fv_urb_dem_indi_por_pob_indigena.png)
 
+### 1.3 Mapa de aptitud
 
-## Pesos globales del modelo de aptitud urbano
+#### 1.3.1 Priorización de polos de crecimiento
+
+![](/recursos/urbano/mapa_polos_crecimiento.png)
+
+#### 1.3.2 Crecimiento urbano orgánico
+
+**Insumo**
+
+**Parámetros de la función de valor**
+
+**Función de valor de crecimiento urbano orgánico**
+
+![](/recursos/urbano/mapa_fv_urbano_crecimiento.png)
+
+#### 1.3.3 Zonas de exclusión
+
+
+Este mapa se actualizará para incluir como aptitud muy alta los póligonos de reserva territorial incluidos en los programas de desarrollo urbano y vivienda del estado.
+
+#### 1.3.4 Reservas territoriales urbanas
+
+#### 1.3.5 Mapa de aptitud urbano
+
+![](/recursos/urbano/mapa_aptitud_urb.png)
+
+**Pesos globales del modelo de aptitud urbano**
 
 Criterio | Peso
 -- | --
@@ -321,6 +326,11 @@ Inmigración | 0.030
 Centros de salud | 0.024
 Población indígena | 0.010
 Edificios administrativos | 0.006
+
+#### 1.3.6 Sensibilidad de atributos ambientales
+
+
+
 
 
 <!-- .. csv-table::
