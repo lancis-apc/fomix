@@ -8,7 +8,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 Generar las condiciones, en todas sus vertientes, para el desarrollo urbano en Yucatán, de manera que se fomente la descentralización, se aprovechen las zonas con infraestructura y se contenga la expansión urbana en la zona metropolitana de Mérida.
 
-**Lista de participantes**
+[Lista de participantes](https://www.dropbox.com/s/w8n4xk5laee6pfh/lista_asistencia_urbano.pdf?dl=0)
 
 ### 1.1 Modelo de decisión
 
