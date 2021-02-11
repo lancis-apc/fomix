@@ -111,7 +111,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="forestal_pr.html">Forestal-En proceso de actualización</a></li>
 <li class="toctree-l1"><a class="reference internal" href="industrial_pr.html">Industrial-En proceso de actualización</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ga_silvopastoril_pr.html">Silvopastoril</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ga_silvopastoril_pr.html">Pecuario silvopastoril-En proceso de actualización</a></li>
 <li class="toctree-l1"><a class="reference internal" href="urbano_pr.html">Urbano-En proceso de actualización</a></li>
 </ul>
 
@@ -262,11 +262,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+<td>Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>[1] 2020; [2] 2019</td>
+<td>2020</td>
 </tr>
 <tr>
 <td>Escala</td>
@@ -764,10 +764,70 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <div class="section" id="distancia-a-caminos">
 <h5>1.2.4.4 Distancia a caminos<a class="headerlink" href="#distancia-a-caminos" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia a carreteras.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a carreteras</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Red Nacional de Caminos (RNC) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_ene_ind_eol_d_carreteras.png" src="_images/fi_fv_ene_ind_eol_d_carreteras.png" /></p>
+<p><strong>Función de valor de distancia a carreteras</strong></p>
+<p><img alt="_images/mapa_fv_ene_ind_eol_d_carreteras.png" src="_images/mapa_fv_ene_ind_eol_d_carreteras.png" /></p>
 </div>
 <div class="section" id="distancia-a-localidades">
 <h5>1.2.4.5 Distancia a localidades<a class="headerlink" href="#distancia-a-localidades" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia de asentamientos humanos a los aerogeneradores, excluye a las localidades.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a localidades</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_ene_ind_eol_d_localidades.png" src="_images/fi_fv_ene_ind_eol_d_localidades.png" /></p>
+<p><strong>Función de valor de distancia a localidades</strong></p>
+<p><img alt="_images/mapa_fv_ene_ind_eol_d_localidades.png" src="_images/mapa_fv_ene_ind_eol_d_localidades.png" /></p>
 </div>
 </div>
 <div class="section" id="biomasa">
@@ -865,6 +925,40 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <div class="section" id="residuos-vegetales">
 <h5>1.2.5.3 Residuos vegetales<a class="headerlink" href="#residuos-vegetales" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Residuos agrícolas y forestales.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Residuos agrícolas forestales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Residuos agrícolas forestales (municipal) SENER-CFE</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2013</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>POTENER</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>TJ/a</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_ene_ind_bio_potencial_biomasa_residuos_agricolas_forestales.png" src="_images/fi_fv_ene_ind_bio_potencial_biomasa_residuos_agricolas_forestales.png" /></p>
+<p><strong>Función de valor de residuos vegetales</strong></p>
+<p><img alt="_images/mapa_fv_ene_ind_bio_potencial_biomasa_residuos_agricolas_forestales.png" src="_images/mapa_fv_ene_ind_bio_potencial_biomasa_residuos_agricolas_forestales.png" /></p>
 </div>
 </div>
 </div>
@@ -1086,62 +1180,77 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tr>
 <td>Gas natural</td>
 <td>Distancia del gasoducto a las    zonas industriales</td>
-<td>0.27</td>
+<td>0.274</td>
 </tr>
 <tr>
 <td>Hidrocarburos líquidos</td>
 <td>Distancia a carreteras</td>
-<td>0.26</td>
+<td>0.256</td>
 </tr>
 <tr>
 <td>Hidrocarburos líquidos</td>
 <td>Distancia a localidades</td>
-<td>0.14</td>
+<td>0.138</td>
 </tr>
 <tr>
 <td>Solar</td>
 <td>Distancia a red eléctrica</td>
-<td>0.09</td>
+<td>0.091</td>
 </tr>
 <tr>
 <td>Gas natural</td>
 <td>Distancia de localidades al gasoducto</td>
-<td>0.06</td>
+<td>0.065</td>
 </tr>
 <tr>
 <td>Eólica</td>
 <td>Velocidad a 120 m de altura</td>
-<td>0.06</td>
+<td>0.057</td>
 </tr>
 <tr>
 <td>Biomasa</td>
 <td>Distancia a sitios de disposición final</td>
-<td>0.03</td>
+<td>0.026</td>
 </tr>
 <tr>
 <td>Eólica</td>
 <td>Distancia a la red eléctrica</td>
-<td>0.02</td>
+<td>0.020</td>
 </tr>
 <tr>
 <td>Solar</td>
 <td>Tipo de cobertura</td>
-<td>0.02</td>
+<td>0.018</td>
 </tr>
 <tr>
 <td>Solar</td>
 <td>Tenencia de la tierra</td>
-<td>0.02</td>
+<td>0.018</td>
 </tr>
 <tr>
 <td>Eólica</td>
 <td>Tipo de cobertura</td>
-<td>0.01</td>
+<td>0.012</td>
 </tr>
 <tr>
 <td>Biomasa</td>
 <td>Distancia a granjas porcícolas</td>
-<td>0.01</td>
+<td>0.010</td>
+</tr>
+<tr>
+<td>Eólica</td>
+<td>Distancia a localidades</td>
+<td>0.004</td>
+</tr>
+<tr>
+<td>Eólica</td>
+<td>Distancia a carreteras</td>
+<td>0.004</td>
+</tr>
+<tr>
+<td>Biomasa</td>
+<td>Residuos agrícolas forestales</td>
+<td>0.002</td>
 </tr>
 </tbody>
 </table></div>
