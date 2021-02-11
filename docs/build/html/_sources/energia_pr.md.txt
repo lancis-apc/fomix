@@ -5,34 +5,21 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Consolidar al Estado de Yucatán como productor de energía limpia y confiable para asegurar la suficiencia energética mediante criterios de uso sostenible del territorio, certidumbre jurídica y desarrollo ordenado e incluyente del sector, que permitan aprovechar los recursos para crear un valor económico, ambiental y social.
+Garantizar el aprovechamiento sostenible de los recursos energéticos del estado de Yucatán, para asegurar que la población y los sectores productivos tengan acceso a energía asequible, sostenible, confiable y de calidad, en un marco de justicia ambiental que considere criterios de uso sostenible del territorio, certidumbre jurídica y contribuya a una mayor democracia en la gestión de los recursos energéticos públicos y comunes.
 
 [Lista de participantes](https://www.dropbox.com/s/dtqqr653cni8915/lista_asistencia_energia.pdf?dl=0)
 
-## Subsectores
-
-### Energía industrial
+## 1. Energía industrial
 
 Fuentes de energía a escala industrial.
 
-**Modelo AHP del subsector energía industrial**
+### 1.1 Modelo de decisión
 
-![](/recursos/energia/energia_industrial_v2.png)
+![](/recursos/energia/energia_industrial_v3.png)
 
-## Fuentes
+### 1.2 Fuentes
 
-### Energía industrial
-
-Criterio | Definición
--- | --
-Hidrocarburos líquidos | Consumo y almacenamiento de hidrocarburos líquidos. Plantas que utilizan diesel o combustóleo para generar energía. Terminales de almacenamiento y reparto.
-Gas natural | Transporte de gas natural por gasoductos y vehículos terrestres. Terminales de almacenamiento y centrales eléctricas. Uso de gas comprimido por empresas.
-Solar | Instalaciones industriales que aprovechan la irradiación solar como fuente de energía.
-Eólica | Instalaciones de generación de energía, mayores a 0.5 MW.
-Biomasa | Proyectos diseñados que utilizan material biológico, para conversion en energía utilizable. Incluye los desechos de granjas porcícolas para producir energía eléctrica.
-
-
-##### Hidrocarburos líquidos
+#### 1.2.1 Hidrocarburos líquidos
 
 Consumo y almacenamiento de hidrocarburos líquidos. Plantas que utilizan diesel o combustóleo para generar energía. Terminales de almacenamiento y reparto.
 
@@ -41,8 +28,7 @@ Atributos | Definición
 Carreteras | Distancia a carreteras.
 Localidades | Distancia a asentamientos humanos.
 
-
-###### Carreteras
+##### 1.2.1.1 Carreteras
 
 Distancia a carreteras.
 
@@ -55,7 +41,6 @@ Año | 2019
 Escala | Sin dato
 Unidades | Kilómetros
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/energia/fi_fv_ene_ind_hidro_d_carreteras.png)  
@@ -64,8 +49,7 @@ Unidades | Kilómetros
 
 ![](/recursos/energia/mapa_fv_ene_ind_hidro_d_carreteras.png)
 
-
-###### Localidades
+##### 1.2.1.2 Localidades
 
 Distancia a asentamientos humanos.
 
@@ -78,7 +62,6 @@ Año | [1] 2020; [2] 2019
 Escala | Sin dato
 Unidades | Kilómetros
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/energia/fi_fv_ene_ind_hidro_d_localidades.png)  
@@ -87,8 +70,7 @@ Unidades | Kilómetros
 
 ![](/recursos/energia/mapa_fv_ene_ind_hidro_d_localidades.png)
 
-
-##### Gas natural
+#### 1.2.2 Gas natural
 
 Transporte de gas natural por gasoductos y vehículos terrestres. Terminales de almacenamiento y centrales eléctricas. Uso de gas comprimido por empresas.
 
@@ -97,8 +79,7 @@ Atributos | Definición
 Distancia del gasoducto a zonas industriales | Zonas industriales que demandan gas natural.
 Distancia del gasoducto a localidades | Distancia a asentamientos humanos.
 
-
-###### Distancia del gasoducto a zonas industriales
+##### 1.2.2.1  Distancia del gasoducto a zonas industriales
 
 Zonas industriales que demandan gas natural.
 
@@ -111,7 +92,6 @@ Año | [1] ?; [2] 2020
 Escala | [1] ? ; [2] Sin dato
 Unidades | Kilómetros
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/energia/fi_fv_ene_ind_gas_d_gasoducto_parques_industriales.png)  
@@ -120,8 +100,7 @@ Unidades | Kilómetros
 
 ![](/recursos/energia/mapa_fv_ene_ind_gas_d_gasoducto_parques_industriales.png)
 
-
-###### Distancia del gasoducto a localidades
+##### 1.2.2.2 Distancia del gasoducto a localidades
 
 Distancia a asentamientos humanos.
 
@@ -129,7 +108,7 @@ Distancia a asentamientos humanos.
 
 Capa | Distancia de localidades al gasoducto
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI  y [2] Gasoductos   GeoComunes
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Gasoductos GeoComunes
 Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
@@ -142,8 +121,7 @@ Unidades | Kilómetros
 
 ![](/recursos/energia/mapa_fv_ene_ind_gas_d_localidades_gasoducto.png)
 
-
-##### Solar
+#### 1.2.3 Solar
 
 Instalaciones industriales que aprovechan la irradiación solar como fuente de energía.
 
@@ -151,9 +129,9 @@ Atributos | Definición
 -- | --
 Distancia a red eléctrica | Distancia a líneas de transmisión y subestaciones.
 Cobertura | Tipo de vegetación.
-Tenencia | Áreas ejidales (comunitaria o parcelada) y no ejidales.
+Tenencia de la tierra | Áreas ejidales (comunitaria o parcelada) y no ejidales.
 
-###### Distancia a red eléctrica
+##### 1.2.3.1 Distancia a red eléctrica
 
 Distancia a líneas de transmisión y subestaciones.
 
@@ -166,7 +144,6 @@ Año | 2010
 Escala | Sin dato
 Unidades | Kilómetros
 
-
 **Parámetros de la función de valor**
 
 ![](/recursos/energia/fi_fv_ene_ind_sol_d_lineas_transmision.png)   
@@ -175,8 +152,7 @@ Unidades | Kilómetros
 
 ![](/recursos/energia/mapa_fv_ene_ind_sol_d_lineas_transmision.png)
 
-
-###### Cobertura
+##### 1.2.3.2 Cobertura
 
 Tipo de vegetación.
 
@@ -189,7 +165,6 @@ Año | 2017
 Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
-
 
 **Parámetros de la función de valor**
 
@@ -213,13 +188,11 @@ ID | Cobertura | fv
 16 | Vegetación halófila hidrófila | 0.00
 17 | ND | 0.00
 
-
 **Función de valor de cobertura**
 
 ![](/recursos/energia/mapa_fv_ene_ind_sol_cobertura_usv_svi_16cats.png)
 
-
-###### Tenencia
+##### 1.2.3.3 Tenencia de la tierra
 
 Áreas ejidales (comunitaria o parcelada) y no ejidales.
 
@@ -227,11 +200,10 @@ ID | Cobertura | fv
 
 Capa | Tenencia de la tierra
 -- | --
-Fuente | [1] Zonas de Tierras Parceladas y [2] Tierra de uso común
+Fuente | [1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN
 Año | 2020
 Escala | Sin dato
 Unidades | Adimensional
-
 
 **Parámetros de la función de valor**
 
@@ -241,79 +213,286 @@ ID | Categoría | FV
 2 | Zona de tierras parceladas | 0.31
 1 | Tierra de uso común | 0.11
 
-
 **Función de valor de tenencia**
 
 ![](/recursos/energia/mapa_fv_ene_ind_sol_tenencia_tierra.png)
 
-
-##### Eólica
+#### 1.2.4 Eólica
 
 Instalaciones de generación de energía, mayores a 0.5 MW.
 
 Atributos | Definición
 -- | --
-Densidad | Densidad de potencial eólica a diferentes alturas, determina sitios ideales para colocar dispositivos de conversión de energía eólica a eléctrica.
-Velocidad | Velocidad del viento, determina sitios ideales para colocar dispositivos de conversión de energía eólica a eléctrica.
+Velocidad | Velocidad del viento en m/s a 120 m de altura, para colocar dispositivos de conversión de energía eólica a eléctrica.
+Distancia a red eléctrica | Distancia a líneas de transmisión y subestaciones.
+Cobertura | Tipo de vegetación.
+Distancia a caminos | Distancia a carreteras.
+Distancia a localidades | Distancia de asentamientos humanos a los aerogeneradores, excluye a las localidades.
+
+##### 1.2.4.1 Velocidad
+
+Velocidad del viento en m/s a 120 m de altura, para colocar dispositivos de conversión de energía eólica a eléctrica.
 
 **Insumos**
 
-Capa | Parques eólicos
+Capa | Velocidad del viento a 120 metros de altura
 -- | --
-Fuente | Parques eólicos en México. GeoComunes
+Fuente | Velocidad de viento a 120 metros de altura (anual) SENER-CFE
+Año | 2014
+Campo | Velocidad
+Escala | 7 km
+Unidades | m/s
+
+**Parámetros de la función de valor**
+
+![](/recursos/energia/fi_fv_ene_ind_eol_velocidad_viento_120m.png)
+
+**Función de valor de velocidad**
+
+![](/recursos/energia/mapa_fv_ene_ind_eol_velocidad_viento_120m.png)
+
+##### 1.2.4.2 Distancia a red eléctrica
+
+Distancia a líneas de transmisión y subestaciones.
+
+**Insumos**
+
+Capa | Distancia a líneas de transmisión de energía   eléctrica
+-- | --
+Fuente | Líneas de transmisión en México. GeoComunes con datos de CFE
 Año | 2020
 Escala | Sin dato
-Unidades | Adimensional
+Unidades | Kilómetros
 
-###### Densidad
+**Parámetros de la función de valor**
 
-Densidad de potencial eólica a diferentes alturas, determina sitios ideales para colocar dispositivos de conversión de energía eólica a eléctrica.
+![](/recursos/energia/fi_fv_ene_ind_eol_d_lineas_transmision.png)
 
-Atributos | Definición
--- | --
-Densidad a 30 m | Densidad de potencia eólica a 30 metros.
-Densidad a 50 m | Densidad de potencia eólica a 50 metros.
-Densidad a 80 m | Densidad de potencia eólica a 80 metros.
-Densidad a 120 m | Densidad de potencia eólica a 120 metros.
+**Función de valor de distancia a red eléctrica**
 
+![](/recursos/energia/mapa_fv_ene_ind_eol_d_lineas_transmision.png)
 
-###### Velocidad
+##### 1.2.4.3 Cobertura
 
-Velocidad del viento, determina sitios ideales para colocar dispositivos de conversión de energía eólica a eléctrica.
-
-Atributos | Definición
--- | --
-Velocidad a 30 m | Velocidad del viento a 30 m de altura.
-Velocidad a 50 m | Velocidad del viento a 50 m de altura.
-Velocidad a 80 m | Velocidad del viento a 80 m de altura.
-Velocidad a 120 m | Velocidad del viento a 120 m de altura.
-
-
-## Aprovechamiento actual de energía industrial
+Tipo de vegetación.
 
 **Insumos**
 
-Capa | [1] Centrales eléctricas de combustóleo y de   gas; [2] Poliducto Progreso - Mérida; [3] Gasoducto; [4] Parques solares y   [5] Parques eólicos
+Capa | Uso del suelo y vegetación
 -- | --
-Fuente | [1] Mapas de Infraestructura Energética y Recursos Renovables SENER; [2]   Infraestructura Nacional de Almacenamiento y Transporte por Ducto de   Petrolíferos; [3] Gasoductos GeoComunes; [4] Parques solares en México   GeoComunes; [5] Parques eólicos en México GeoComunes
-Año | [1] 2016; [2] ?; [3], [4], [5] 2020
-Escala | [1], [3], [4], [5] Sin dato; [2] ?
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
 Unidades | Adimensional
 
+**Función de valor de cobertura**
 
-##### Biomasa industrial
+![](/recursos/energia/mapa_fv_ene_ind_eol_cobertura_usv_svi_16cats.png)
+
+##### 1.2.4.4 Distancia a caminos
+
+Distancia a carreteras.
+
+##### 1.2.4.5 Distancia a localidades
+
+Distancia de asentamientos humanos a los aerogeneradores, excluye a las localidades.
+
+#### 1.2.5 Biomasa
 
 Proyectos diseñados que utilizan material biológico, para conversion en energía utilizable. Incluye los desechos de granjas porcícolas para producir energía eléctrica.
 
 Atributos | Definición
 -- | --
-Cultivos | Cultivos especializados, destinados a la producción biocombustibles líquidos bioetanol y biodiesel.
-Residuos urbanos | Biomasa de origen urbano procedente de las actividades urbanas cotidianas. Incluye sitios de disposición final de residuos sólidos urbanos y a los influentes de plantas de tratamiento de aguas residuales.
-Residuos vegetales | Biomasa agrícola y forestal. Incluye los residuos que se generan durante la cosecha de los principales cultivos. Los residuos forestales incluyen los centros de transformación y almacenamiento de recurso maderero con permiso   vigente para el aprovechamiento y transporte de la madera.
-Tala sustentable | Material vegetal producto de la tala sustentable, con potencial para generación de energía.
+Residuos urbanos | Distancia a los sitios de disposición final de residuos urbanos
+Distancia a granjas porcícolas | Distancia a granjas porcícolas
+Residuos vegetales | Residuos agrícolas y forestales
 
+##### 1.2.5.1 Residuos urbanos
 
-### Energía comunitaria
+Distancia a los sitios de disposición final de residuos urbanos.
+
+**Insumos**
+
+Capa | Distancia a sitios de disposición final
+-- | --
+Fuente | Sitios de disposición final de residuos INEGI-SEMARNAT
+Año | 2017
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/energia/fi_fv_ene_ind_bio_d_sitios_disp_residuos.png)   
+
+**Función de valor de residuos urbanos**
+
+![](/recursos/energia/mapa_fv_ene_ind_bio_d_sitios_disp_residuos.png)
+
+##### 1.2.5.2 Distancia a granjas porcícolas
+
+Distancia a granjas porcícolas.
+
+**Insumos**
+
+Capa | Distancia a granjas porcinas
+-- | --
+Fuente | Granjas porcinas y avícolas en la Península de Yucatán GeoComunes
+Año | 2019
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/energia/fi_fv_ene_ind_bio_d_granjas_porcinas.png)   
+
+**Función de valor de distancia a granjas porcícolas**
+
+![](/recursos/energia/mapa_fv_ene_ind_bio_d_granjas_porcinas.png)
+
+##### 1.2.5.3 Residuos vegetales
+
+Residuos agrícolas y forestales.
+
+### 1.3 Mapa de aptitud
+
+#### 1.3.1 Mapa de aptitud de fuente hidrocarburos líquidos
+
+##### 1.3.1.1 Zonas de aprovechamiento actual de hidrocarburos líquidos
+
+**Insumos**
+
+Capa | Poliducto Progreso - Mérida y centrales eléctricas de combustóleo
+-- | --
+Fuente | [1] Infraestructura Nacional de Almacenamiento y Transporte por Ducto de Petrolíferos y [2] Mapas de Infraestructura Energética y Recursos Renovables SENER
+Año | [1] ?; [2] 2016
+Escala | [1] ?; [2] Sin dato
+Unidades | Adimensional
+
+![](/recursos/energia/mapa_aprov_actual_hidrocarburos.png)
+
+##### 1.3.1.2 Zonas de exclusión actual de hidrocarburos líquidos
+
+![](/recursos/energia/mapa_exclusion.png)
+
+##### 1.3.1.3 Mapa de aptitud de energía de fuente hidrocarburos líquidos
+
+![](/recursos/energia/mapa_aptitud_hidrocarburos.png)
+
+#### 1.3.2 Mapa de aptitud de fuente gas natural
+
+##### 1.3.2.1 Zonas de aprovechamiento actual de gas natural
+
+**Insumos**
+
+Capa | [1] Centrales eléctricas de gas; [2]   Gasoducto
+-- | --
+Fuente | [1] Mapas de Infraestructura Energética y Recursos Renovables SENER;  [2] Gasoductos GeoComunes
+Año | [1] 2016; [2] 2020
+Escala | Sin dato
+Unidades | Adimensional
+
+![](/recursos/energia/mapa_aprov_actual_gas.png)
+
+##### 1.3.2.2 Zonas de exclusión actual de gas natural
+
+![](/recursos/energia/mapa_exclusion.png)
+
+##### 1.3.2.3 Mapa de aptitud de energía de fuente gas natural
+
+![](/recursos/energia/mapa_aptitud_gas.png)
+
+#### 1.3.3 Mapa de aptitud de energía solar
+
+##### 1.3.3.1 Zonas de aprovechamiento actual de energía solar
+
+**Insumos**
+
+Capa | Parques solares
+-- | --
+Fuente | Parques solares en México GeoComunes
+Año | 2020
+Escala | Sin dato
+Unidades | Adimensional
+
+![](/recursos/energia/mapa_aprov_actual_solar.png)
+
+##### 1.3.3.2 Zonas de exclusión actual de energía solar
+
+![](/recursos/energia/mapa_exclusion_solar.png)
+
+##### 1.3.3.3 Mapa de aptitud de energía solar
+
+![](/recursos/energia/mapa_aptitud_solar.png)
+
+#### 1.3.4 Mapa de aptitud de energía eólica
+
+##### 1.3.4.1 Zonas de aprovechamiento actual de energía eólica
+
+**Insumos**
+
+Capa | Parques eólicos
+-- | --
+Fuente | Parques eólicos en México GeoComunes
+Año | 2020
+Escala | Sin dato
+Unidades | Adimensional
+
+![](/recursos/energia/mapa_aprov_actual_eolica.png)
+
+##### 1.3.4.2 Zonas de exclusión actual de energía eólica
+
+![](/recursos/energia/mapa_exclusion.png)
+
+##### 1.3.4.3 Mapa de aptitud de energía eólica
+
+![](/recursos/energia/mapa_aptitud_eolica.png)
+
+#### 1.3.5 Mapa de aptitud de energía de fuente biomasa
+
+##### 1.3.5.1 Zonas de aprovechamiento actual de energía fuente biomasa
+
+**Insumos**
+
+Capa | Granjas porcinas
+-- | --
+Fuente | Granjas porcinas y avícolas en la Península de Yucatán GeoComunes
+Año | 2019
+Escala | Sin dato
+Unidades | Adimensional
+
+![](/recursos/energia/mapa_aprov_actual_biomasa.png)
+
+##### 1.3.5.2 Zonas de exclusión actual de energía fuente biomasa
+
+![](/recursos/energia/mapa_exclusion.png)
+
+##### 1.3.5.3 Mapa de aptitud de energía de fuente biomasa
+
+![](/recursos/energia/mapa_aptitud_biomasa.png)
+
+**Pesos globales de los atributos del sector energía industrial**
+
+Fuente de energía | Criterio | Peso
+-- | -- | --
+Gas natural | Distancia del gasoducto a las    zonas industriales | 0.27
+Hidrocarburos líquidos | Distancia a carreteras | 0.26
+Hidrocarburos líquidos | Distancia a localidades | 0.14
+Solar | Distancia a red eléctrica | 0.09
+Gas natural | Distancia de localidades al gasoducto | 0.06
+Eólica | Velocidad a 120 m de altura | 0.06
+Biomasa | Distancia a sitios de disposición final | 0.03
+Eólica | Distancia a la red eléctrica | 0.02
+Solar | Tipo de cobertura | 0.02
+Solar | Tenencia de la tierra | 0.02
+Eólica | Tipo de cobertura | 0.01
+Biomasa | Distancia a granjas porcícolas | 0.01
+
+#### 1.3.6 Mapa de aptitud de energía industrial
+
+#### 1.3.7 Sensibilidad de atributos ambientales del sector energía industrial
+
+<!--### Energía comunitaria
 
 Fuentes de energía utilizadas en las comunidades.
 

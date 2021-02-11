@@ -1,7 +1,7 @@
 ﻿Sector,Definición,
-Energía industrial,"Garantizar el aprovechamiento sostenible de los recursos energéticos del estado de Yucatán, para asegurar que la población y los sectores productivos tengan acceso a energía asequible, sostenible, confiable y de calidad, en un marco de justicia ambiental que considere criterios de uso sostenible del territorio, certidumbre jurídica y contribuya a una mayor democracia en la gestión de los recursos energéticos públicos y comunes.",
+Energía industrial,,
 ,,
-Meta,Definición,
+Meta,"Garantizar el aprovechamiento sostenible de los recursos energéticos del estado de Yucatán, para asegurar que la población y los sectores productivos tengan acceso a energía asequible, sostenible, confiable y de calidad, en un marco de justicia ambiental que considere criterios de uso sostenible del territorio, certidumbre jurídica y contribuya a una mayor democracia en la gestión de los recursos energéticos públicos y comunes.",
 ,,
 Fuente ,Tipo de fuente de energía,
 Criterio,Definición,
@@ -14,34 +14,34 @@ Biomasa,Proyectos que utilizan material biológico para conversión en energía 
 Hidrocarburos líquidos,,
 Atributos,Definición,
 Carreteras,Distancia a carreteras,0.64
-Poblaciones,"Distancia a asentamientos humanos, excluye a las localidades.",0.36
+Localidades,"Distancia a asentamientos humanos, excluye a las localidades.",0.36
 ,,
 ,,
 Gas natural,,
 Atributos,Definición,
-Zonas industriales,Distancia del gasoducto a zonas industriales que demandan gas natural.,0.81
-Poblaciones,"Distancia de asentamientos humanos al gasoducto, excluye a las localidades.",0.19
+Distancia del gasoducto a zonas industriales,Zonas industriales que demandan gas natural,0.81
+Distancia del gasoducto a localidades,Distancia a asentamientos humanos,0.19
 ,,
 Solar,,
 Atributos,Definición,
-Red eléctrica,Distancia a líneas de transmisión y subestaciones.,0.714
+Distancia a red eléctrica,Distancia a líneas de transmisión y subestaciones.,0.714
 Cobertura,Tipo de vegetación.,0.143
-Tenencia,Tipo de tenencia de la tierra: Áreas ejidales (comunitaria o parcelada) y no ejidales.,0.143
+Tenencia de la tierra,Tipo de tenencia de la tierra: Áreas ejidales (comunitaria o parcelada) y no ejidales.,0.143
 ,,
 ,,
 Eólica,,
 Atributos,Definición,
 Velocidad,"Velocidad del viento en m/s a 120 m de altura, para colocar dispositivos de conversión de energía eólica a eléctrica.",0.583
-Red eléctrica,Distancia a líneas de transmisión y subestaciones.,0.211
+Distancia a red eléctrica,Distancia a líneas de transmisión y subestaciones.,0.211
 Cobertura,Tipo de vegetación.,0.126
-Caminos,Distancia a carreteras,0.042
-Poblaciones,"Distancia de asentamientos humanos a los aerogeneradores, excluye a las localidades.",0.039
+Distancia a caminos,Distancia a carreteras,0.042
+Distancia a localidades,"Distancia de asentamientos humanos a los aerogeneradores, excluye a las localidades.",0.039
 ,,
 ,, 
 Biomasa,, 
 Atributos,Definición, 
 Residuos urbanos,Distancia a los sitios de disposición final de residuos urbanos ,0.669
-Granjas porcícolas,Distancia a granjas porcícolas,0.267
+Distancia a granjas porcícolas,Distancia a granjas porcícolas,0.267
 Residuos vegetales,Residuos agrícolas y forestales,0.064
 ,,
 ,, 

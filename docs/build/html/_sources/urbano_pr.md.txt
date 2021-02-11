@@ -131,6 +131,15 @@ Unidades | Número
 
 Unidades totales, incluye actividades legislativas gubernamentales.
 
+**Insumos**
+
+Capa | Unidades económicas de edificios administrativos
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
+Año | 2020
+Escala | Localidad
+Unidades | Número
+
 **Parámetros de la función de valor**
 
 ![](/recursos/urbano/fi_fv_urb_urb_equi_equipamiento_admin.png)  
@@ -204,12 +213,13 @@ Número de habitantes.
 
 **Insumos**
 
-Capa	Tamaño poblacional
-Fuente	[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año	2020
-Campo	[2] POBTOT
-Escala	Localidad
-Unidades	Número de habitantes
+Capa | Tamaño poblacional
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] POBTOT
+Escala | Localidad
+Unidades | Número de habitantes
 
 **Parámetros de la función de valor**
 
@@ -225,12 +235,13 @@ Número de habitantes por hectárea.
 
 **Insumos**
 
-Capa	Densidad de población
-Fuente	[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año	2020
-Campo	[2] POBTOT
-Escala	Localidad
-Unidades	Número de habitantes/hectárea
+Capa | Densidad de población
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] POBTOT
+Escala | Localidad
+Unidades | Número de habitantes/hectárea
 
 **Parámetros de la función de valor**
 
@@ -270,7 +281,7 @@ Porcentaje de la población índígena en el asentamiento.
 
 Capa | Población indígena
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] POBTOT y P3YM_HLI
 Escala | Localidad
@@ -294,7 +305,16 @@ Unidades | Porcentaje
 
 **Insumo**
 
+Capa | Distancia a localidades
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | [1] 2020; [2] 2019
+Escala | Sin dato
+Unidades | Kilómetros
+
 **Parámetros de la función de valor**
+
+![](/recursos/urbano/fi_fv_crecimiento_urbano_organico.png)
 
 **Función de valor de crecimiento urbano orgánico**
 
