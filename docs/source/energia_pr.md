@@ -57,8 +57,8 @@ Distancia a asentamientos humanos.
 
 Capa | Distancia a localidades
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Red Nacional de Caminos (RNC) Red vial - INEGI
-Año | [1] 2020; [2] 2019
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
 
@@ -294,9 +294,43 @@ Unidades | Adimensional
 
 Distancia a carreteras.
 
+**Insumos**
+
+Capa | Distancia a carreteras
+-- | --
+Fuente | Red Nacional de Caminos (RNC) INEGI
+Año | 2019
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/energia/fi_fv_ene_ind_eol_d_carreteras.png)
+
+**Función de valor de distancia a carreteras**
+
+![](/recursos/energia/mapa_fv_ene_ind_eol_d_carreteras.png)
+
 ##### 1.2.4.5 Distancia a localidades
 
 Distancia de asentamientos humanos a los aerogeneradores, excluye a las localidades.
+
+**Insumos**
+
+Capa | Distancia a localidades
+-- | --
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | 2020
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/energia/fi_fv_ene_ind_eol_d_localidades.png)
+
+**Función de valor de distancia a localidades**
+
+![](/recursos/energia/mapa_fv_ene_ind_eol_d_localidades.png)
 
 #### 1.2.5 Biomasa
 
@@ -353,6 +387,24 @@ Unidades | Kilómetros
 ##### 1.2.5.3 Residuos vegetales
 
 Residuos agrícolas y forestales.
+
+**Insumos**
+
+Capa | Residuos agrícolas forestales
+-- | --
+Fuente | Residuos agrícolas forestales (municipal) SENER-CFE
+Año | 2013
+Campo | POTENER
+Escala | 1:50,000
+Unidades | TJ/a
+
+**Parámetros de la función de valor**
+
+![](/recursos/energia/fi_fv_ene_ind_bio_potencial_biomasa_residuos_agricolas_forestales.png)
+
+**Función de valor de residuos vegetales**
+
+![](/recursos/energia/mapa_fv_ene_ind_bio_potencial_biomasa_residuos_agricolas_forestales.png)
 
 ### 1.3 Mapa de aptitud
 
@@ -475,18 +527,21 @@ Unidades | Adimensional
 
 Fuente de energía | Criterio | Peso
 -- | -- | --
-Gas natural | Distancia del gasoducto a las    zonas industriales | 0.27
-Hidrocarburos líquidos | Distancia a carreteras | 0.26
-Hidrocarburos líquidos | Distancia a localidades | 0.14
-Solar | Distancia a red eléctrica | 0.09
-Gas natural | Distancia de localidades al gasoducto | 0.06
-Eólica | Velocidad a 120 m de altura | 0.06
-Biomasa | Distancia a sitios de disposición final | 0.03
-Eólica | Distancia a la red eléctrica | 0.02
-Solar | Tipo de cobertura | 0.02
-Solar | Tenencia de la tierra | 0.02
-Eólica | Tipo de cobertura | 0.01
-Biomasa | Distancia a granjas porcícolas | 0.01
+Gas natural | Distancia del gasoducto a las    zonas industriales | 0.274
+Hidrocarburos líquidos | Distancia a carreteras | 0.256
+Hidrocarburos líquidos | Distancia a localidades | 0.138
+Solar | Distancia a red eléctrica | 0.091
+Gas natural | Distancia de localidades al gasoducto | 0.065
+Eólica | Velocidad a 120 m de altura | 0.057
+Biomasa | Distancia a sitios de disposición final | 0.026
+Eólica | Distancia a la red eléctrica | 0.020
+Solar | Tipo de cobertura | 0.018
+Solar | Tenencia de la tierra | 0.018
+Eólica | Tipo de cobertura | 0.012
+Biomasa | Distancia a granjas porcícolas | 0.010
+Eólica | Distancia a localidades | 0.004
+Eólica | Distancia a carreteras | 0.004
+Biomasa | Residuos agrícolas forestales | 0.002
 
 #### 1.3.6 Mapa de aptitud de energía industrial
 

@@ -45,6 +45,14 @@ Año | 2020
 Campo | [2] VIVTOT y VPH_INTER
 Unidades | Adimensional
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_loc_internet.png)  
+
+**Función de valor de comunicación**
+
+![](/recursos/industrial/mapa_fv_lig_infra_loc_internet.png)
+
 ##### 1.2.1.2 Conectividad
 
 Distancia a vías de comunicación que permiten el movimiento de trabajadores y la distribución de insumos y productos.
@@ -79,6 +87,14 @@ Campo | CARRILES
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_carreteras_2mcarril.png)  
+
+**Función de valor de varios carriles**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_carreteras_2mcarril.png)
+
 ###### 1.2.1.2.1.2 Un carril
 
 Carreteras de un solo carril.
@@ -93,6 +109,14 @@ Campo | CARRILES
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_carreteras_1carril.png)  
+
+**Función de valor de un carril**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_carreteras_1carril.png)
+
 ###### 1.2.1.2.2 Aeropuertos
 
 Distancia a aeropuertos.
@@ -105,6 +129,14 @@ Fuente | Aeródromos, aeropuertos y pistas de aterrizaje SENEAM
 Año | 2017
 Escala | 1:1,000,000
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_aeropuertos.png)  
+
+**Función de valor de aeropuertos**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_aeropuertos.png)
 
 ###### 1.2.1.2.3 Puertos
 
@@ -119,6 +151,14 @@ Año | 2002
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_puertos.png)  
+
+**Función de valor de puertos**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_puertos.png)
+
 ###### 1.2.1.2.4 Red ferroviaria
 
 Distancia a red ferroviaria.
@@ -131,6 +171,14 @@ Fuente | Red ferroviaria INEGI
 Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_red_ferroviaria.png)  
+
+**Función de valor de red ferroviaria**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_red_ferroviaria.png)
 
 ##### 1.2.1.3 Energía
 
@@ -145,6 +193,14 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_lineas_electricas.png)  
+
+**Función de valor de energía**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_lineas_electricas.png)
+
 ##### 1.2.1.4 Acceso a agua
 
 Distancia a localidades con cobertura de red de agua potable.
@@ -157,6 +213,14 @@ Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Poblaci�
 Año | 2020
 Campo | [2] VIVTOT y VPH_AEASP
 Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_loc_acceso_agua.png)  
+
+**Función de valor de acceso a agua**
+
+![](/recursos/industrial/mapa_fv_lig_infra_loc_acceso_agua.png)
 
 ##### 1.2.1.5 Manejo de residuos
 
@@ -181,6 +245,14 @@ Año | 2017
 Escala | 1:250,000
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_plantas_agua_residual.png)  
+
+**Función de valor de plantas de aguas residuales**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_plantas_agua_residual.png)
+
 ###### 1.2.1.5.2 Rellenos sanitarios
 
 Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.
@@ -194,6 +266,14 @@ Año | 2017
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_relleno_sanitario.png)  
+
+**Función de valor de rellenos sanitarios**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_relleno_sanitario.png)
+
 ###### 1.2.1.5.3 Basureros
 
 Distancia a bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos.
@@ -206,6 +286,14 @@ Fuente | Sitios de disposición final de residuos INEGI-SEMARNAT
 Año | 2017
 Escala | Sin dato
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_basureros.png)  
+
+**Función de valor de basureros**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_basureros.png)
 
 #### 1.2.2 Socioeconómicos
 
@@ -228,6 +316,10 @@ Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Poblaci�
 Año | [1][2] 2020; [3] ?
 Unidades | Adimensional
 
+**Función de valor de industria instalada**
+
+![](/recursos/industrial/mapa_fv_lig_socio_ind_instalada.png)
+
 ##### 1.2.2.2 Localidades
 
 Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.
@@ -239,6 +331,14 @@ Capa | Distancia a localidades
 Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
 Año | 2020
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_socio_d_localidades.png)  
+
+**Función de valor de localidades**
+
+![](/recursos/industrial/mapa_fv_lig_socio_d_localidades.png)
 
 ##### 1.2.2.3 Tenencia
 
@@ -260,6 +360,10 @@ ID | Categoría | Importancia | FV
 3 | No ejidal | Máxima | 1.00
 2 | Zona de tierras parceladas | Alta | 0.80
 1 | Tierra de uso común | Muy Baja | 0.33
+
+**Función de valor de tenencia**
+
+![](/recursos/industrial/mapa_fv_lig_socio_tenencia_tierra.png)
 
 #### 1.2.3 Biofísicos
 
@@ -302,6 +406,10 @@ ID | Categoría | Importancia | FV
 15 | Vegetación de petén | Nula | 0.00
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
+
+**Función de valor de cobertura**
+
+![](/recursos/industrial/mapa_fv_lig_bio_usv_16cats.png)
 
 ### 1.3 Mapa de aptitud
 
@@ -349,6 +457,14 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_pesm_infra_d_lineas_electricas_gas.png)  
+
+**Función de valor de energía**
+
+![](/recursos/industrial/mapa_fv_pesm_infra_d_lineas_electricas_gas.png)
+
 ##### 2.2.1.2 Acceso a agua
 
 Distancia a localidades con cobertura de red de agua potable.
@@ -361,6 +477,14 @@ Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Poblaci�
 Año | 2020
 Campo | [2] VIVTOT y VPH_AEASP
 Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_loc_acceso_agua.png)  
+
+**Función de valor de acceso a agua**
+
+![](/recursos/industrial/mapa_fv_lig_infra_loc_acceso_agua.png)
 
 ##### 2.2.1.3 Conectividad
 
@@ -396,6 +520,14 @@ Campo | CARRILES
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_carreteras_2mcarril.png)  
+
+**Función de valor de varios carriles**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_carreteras_2mcarril.png)
+
 ###### 2.2.1.3.1.2 Un carril
 
 Carreteras de un solo carril.
@@ -410,6 +542,14 @@ Campo | CARRILES
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_carreteras_1carril.png)  
+
+**Función de valor de un carril**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_carreteras_1carril.png)
+
 ###### 2.2.1.3.2 Puertos
 
 Distancia a puertos.
@@ -422,6 +562,12 @@ Fuente | Ubicación de los principales puertos de el estado de Yucatán POETY
 Año | 2002
 Escala | Sin dato
 Unidades | Kilómetros
+
+![](/recursos/industrial/fi_fv_lig_infra_d_puertos.png)  
+
+**Función de valor de puertos**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_puertos.png)
 
 ###### 2.2.1.3.3 Red ferroviaria
 
@@ -436,6 +582,14 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_red_ferroviaria.png)  
+
+**Función de valor de red ferroviaria**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_red_ferroviaria.png)
+
 ###### 2.2.1.3.3 Aeropuertos
 
 Distancia a aeropuertos.
@@ -448,6 +602,14 @@ Fuente | Aeródromos, aeropuertos y pistas de aterrizaje SENEAM
 Año | 2017
 Escala | 1:1,000,000
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_aeropuertos.png)  
+
+**Función de valor de aeropuertos**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_aeropuertos.png)
 
 ##### 2.2.1.4 Manejo de residuos
 
@@ -472,6 +634,14 @@ Año | 2017
 Escala | 1:250,000
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_plantas_agua_residual.png)  
+
+**Función de valor de plantas de aguas residuales**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_plantas_agua_residual.png)
+
 ###### 2.2.1.4.2 Rellenos sanitarios
 
 Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.
@@ -484,6 +654,14 @@ Fuente | Sitios de disposición final de residuos INEGI-SEMARNAT
 Año | 2017
 Escala | Sin dato
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_relleno_sanitario.png)  
+
+**Función de valor de rellenos sanitarios**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_relleno_sanitario.png)
 
 ###### 2.2.1.4.3 Basureros
 
@@ -498,6 +676,14 @@ Año | 2017
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_d_basureros.png)  
+
+**Función de valor de basureros**
+
+![](/recursos/industrial/mapa_fv_lig_infra_d_basureros.png)
+
 ##### 2.2.1.5 Comunicación
 
 Distancia a localidades con cobertura de internet.
@@ -510,6 +696,14 @@ Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Poblaci�
 Año | 2020
 Campo | [2] VIVTOT y VPH_INTER
 Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_infra_loc_internet.png)  
+
+**Función de valor de comunicación**
+
+![](/recursos/industrial/mapa_fv_lig_infra_loc_internet.png)
 
 #### 2.2.2 Socioeconómicos
 
@@ -531,6 +725,10 @@ Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Poblaci�
 Año | [1][2] 2020; [3] ?
 Unidades | Adimensional
 
+**Función de valor de industria instalada**
+
+![](/recursos/industrial/mapa_fv_pesm_socio_ind_instalada.png)
+
 ##### 2.2.2.2 Localidades
 
 Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.
@@ -542,6 +740,14 @@ Capa | Distancia a localidades
 Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
 Año | 2020
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/industrial/fi_fv_lig_socio_d_localidades.png)  
+
+**Función de valor de localidades**
+
+![](/recursos/industrial/mapa_fv_pesm_socio_d_localidades.png)
 
 ##### 2.2.2.3 Tenencia
 
@@ -564,6 +770,10 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.80
 1 | Tierra de uso común | Muy Baja | 0.33
 
+**Función de valor de tenencia**
+
+![](/recursos/industrial/mapa_fv_lig_socio_tenencia_tierra.png)
+
 #### 2.2.3 Biofísicos
 
 Criterio | Definición
@@ -585,6 +795,23 @@ Año | Sin dato
 Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+4 | 10 m | Máxima | 1.00
+5 | 20 m | Muy alta | 0.87
+1 | 1 m | Baja | 0.56
+2 | 2 m | Baja | 0.56
+3 | 4 m | Baja | 0.56
+6 | 40 m | Nula | 0.00
+7 | 60 m | Nula | 0.00
+8 | 100 m | Nula | 0.00
+
+**Función de valor de disponibilidad de agua**
+
+![](/recursos/industrial/mapa_fv_pesm_bio_d_manto_freatico.png)
 
 ##### 2.2.3.2 Cobertura
 
@@ -622,6 +849,10 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+**Función de valor de cobertura**
+
+![](/recursos/industrial/mapa_fv_lig_bio_usv_16cats.png)
+
 ##### 2.2.3.3 Dispersión de emisiones
 
 Vulnerabilidad del acuífero a la contaminación.
@@ -635,6 +866,20 @@ Año | 2019
 Escala | Sin dato
 Unidades | Adimensional
 
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+1 | Baja | Máxima | 1.00
+2 | Media | Moderada | 0.70
+3 | Alta | Baja | 0.56
+4 | Muy alta | Muy baja | 0.33
+5 | Extrema | Nula | 0.00
+6 | NA | Nula | 0.00
+
+**Función de valor de dispersión de emisiones**
+
+![](/recursos/industrial/mapa_fv_pesm_bio_vul_acuifero.png)
 
 <!-- .. csv-table::
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv

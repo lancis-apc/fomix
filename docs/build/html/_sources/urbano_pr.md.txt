@@ -322,10 +322,9 @@ Unidades | Kilómetros
 
 #### 1.3.3 Zonas de exclusión
 
+#### 1.3.4 Reservas territoriales urbanas
 
 Este mapa se actualizará para incluir como aptitud muy alta los póligonos de reserva territorial incluidos en los programas de desarrollo urbano y vivienda del estado.
-
-#### 1.3.4 Reservas territoriales urbanas
 
 #### 1.3.5 Mapa de aptitud urbano
 
