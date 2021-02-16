@@ -286,6 +286,28 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
+**Parámetros de la función de valor**
+
+ID | Cobertura | Importancia | FV
+-- | -- | -- | --
+2 | Agricultura de riego | Máxima | 1.00
+3 | Agricultura de temporal | Máxima | 1.00
+5 | Bosque cultivado/Palmar inducido | Máxima | 1.00
+8 | Pastizal | Máxima | 1.00
+11 | Sin vegetación | Máxima | 1.00
+9 | Selva baja | Baja | 0.56
+10 | Selva mediana | Baja | 0.56
+12 | Sábana | Muy baja | 0.33
+15 | Vegetación de petén | Muy baja | 0.33
+1 | Acuícola | Nula | 0.00
+4 | Asentamiento humano | Nula | 0.00
+6 | Cuerpo de agua | Nula | 0.00
+7 | Manglar | Nula | 0.00
+13 | Tular | Nula | 0.00
+14 | Vegetación de duna costera | Nula | 0.00
+16 | Vegetación halófila hidrófila | Nula | 0.00
+17 | ND | Nula | 0.00
+
 **Función de valor de cobertura**
 
 ![](/recursos/energia/mapa_fv_ene_ind_eol_cobertura_usv_svi_16cats.png)
@@ -435,6 +457,17 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
+**Tabla de exclusión general del sector energía**
+
+ID | Cobertura
+-- | --
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
+
 ![](/recursos/energia/mapa_exclusion.png)
 
 ##### 1.3.1.3 Mapa de aptitud de energía de fuente hidrocarburos líquidos
@@ -467,6 +500,17 @@ Año | 2017
 Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
+
+**Tabla de exclusión general del sector energía**
+
+ID | Cobertura
+-- | --
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
 
 ![](/recursos/energia/mapa_exclusion.png)
 
@@ -501,6 +545,8 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
+
+
 ![](/recursos/energia/mapa_exclusion_solar.png)
 
 ##### 1.3.3.3 Mapa de aptitud de energía solar
@@ -534,6 +580,17 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
+**Tabla de exclusión general del sector energía**
+
+ID | Cobertura
+-- | --
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
+
 ![](/recursos/energia/mapa_exclusion.png)
 
 ##### 1.3.4.3 Mapa de aptitud de energía eólica
@@ -566,6 +623,17 @@ Año | 2017
 Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
+
+**Tabla de exclusión general del sector energía**
+
+ID | Cobertura
+-- | --
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
 
 ![](/recursos/energia/mapa_exclusion.png)
 
