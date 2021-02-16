@@ -38,7 +38,7 @@ Distancia a las fuentes de empleo.
 
 **Insumos**
 
-Capa | Unidades económicas totales (excepto agricultura y minería)
+Capa | Unidades económicas totales
 -- | --
 Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
 Año | 2020

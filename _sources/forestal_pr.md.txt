@@ -190,8 +190,8 @@ Cercanía a las principales localidades en las que se venden los recursos madera
 
 Capa | Distancia a mercados
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Red nacional de caminos INEGI
-Año | [1] 2020 y [2] 2019
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
 
@@ -232,6 +232,8 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tenencia versión 1**
 
+![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra.png)
+
 <!--![](/recursos/forestal/.png)--->
 
 Versión 2. Visión de impulsar los proyectos forestales en las comunidades. Los proponentes de esta visión exponen que, aunque es más sencillo ponerse de acuerdo con una o pocas personas, el criterio de la versión 1 impulsa los beneficios individuales por encima de los colectivos. Por ello, las tierras de uso común deberían ser más importantes debido que el beneficio es para toda la comunidad.
@@ -247,6 +249,8 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.8
 
 **Función de valor de tenencia versión 2**
+
+![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra_v2.png)
 
 <!--!![](/recursos/forestal/.png)--->
 
@@ -266,10 +270,14 @@ Cercanía a localidades como centro de acceso a insumos para la actividad forest
 
 Capa | Distancia a localidades
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Red nacional de caminos INEGI
-Año | [1] 2020 y [2] 2019
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
+Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/forestal/fi_fv_mad_infra_infra_d_localidades.png)
 
 ##### 1.2.3.2 Centros de almacenamiento
 
@@ -480,10 +488,18 @@ Cercanía a las principales localidades en las que se venden los recursos no mad
 
 Capa | Distancia a mercados
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Red nacional de caminos INEGI
-Año | [1] 2020 y [2] 2019
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/forestal/fi_fv_for_mad_socio_d_mercados.png)
+
+**Función de valor de mercados**
+
+![](/recursos/forestal/mapa_fv_for_mad_socio_d_mercados.png)
 
 ##### 2.2.2.3 Tenencia
 
@@ -514,6 +530,8 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tenencia versión 1**
 
+![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra.png)
+
 <!--!![](/recursos/forestal/.png)--->
 
 Versión 2. Visión de impulsar los proyectos forestales en las comunidades. Los proponentes de esta visión exponen que, aunque es más sencillo ponerse de acuerdo con una o pocas personas, el criterio de la versión 1 impulsa los beneficios individuales por encima de los colectivos. Por ello, las tierras de uso común deberían ser más importantes debido que el beneficio es para toda la comunidad.
@@ -529,6 +547,8 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.8
 
 **Función de valor de tenencia versión 2**
+
+![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra_v2.png)
 
 <!--!![](/recursos/forestal/.png)--->
 
@@ -548,10 +568,14 @@ Cercanía a localidades como centro de acceso a insumos para la actividad forest
 
 Capa | Distancia a localidades
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Red nacional de caminos INEGI
-Año | [1] 2020 y [2] 2019
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
+Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/forestal/fi_fv_mad_infra_infra_d_localidades.png)
 
 ##### 2.2.3.2 Centros de almacenamiento
 
@@ -571,3 +595,11 @@ Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
 Año | 2019
 Escala | Sin dato
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/forestal/fi_fv_for_mad_infra_d_caminos.png)  
+
+**Función de valor de comunicación**
+
+![](/recursos/forestal/mapa_fv_for_mad_infra_d_caminos.png)

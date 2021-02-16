@@ -168,25 +168,25 @@ Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
-ID | Cobertura | fv
--- | -- | --
-2 | Agricultura de riego | 1.00
-3 | Agricultura de temporal | 1.00
-5 | Bosque cultivado/Palmar inducido | 1.00
-8 | Pastizal | 1.00
-11 | Sin vegetación | 1.00
-4 | Asentamiento humano | 0.70
-9 | Selva baja | 0.56
-10 | Selva mediana | 0.56
-12 | Sábana | 0.33
-1 | Acuícola | 0.00
-6 | Cuerpo de agua | 0.00
-7 | Manglar | 0.00
-13 | Tular | 0.00
-14 | Vegetación de duna costera | 0.00
-15 | Vegetación de petén | 0.00
-16 | Vegetación halófila hidrófila | 0.00
-17 | ND | 0.00
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+2 | Agricultura de riego | Máxima | 1.00
+3 | Agricultura de temporal | Máxima | 1.00
+5 | Bosque cultivado/Palmar inducido | Máxima | 1.00
+8 | Pastizal | Máxima | 1.00
+11 | Sin vegetación | Máxima | 1.00
+4 | Asentamiento humano | Moderada | 0.70
+9 | Selva baja | Baja | 0.56
+10 | Selva mediana | Baja | 0.56
+12 | Sábana | Muy baja | 0.33
+1 | Acuícola | Nula | 0.00
+6 | Cuerpo de agua | Nula | 0.00
+7 | Manglar | Nula | 0.00
+13 | Tular | Nula | 0.00
+14 | Vegetación de duna costera | Nula | 0.00
+15 | Vegetación de petén | Nula | 0.00
+16 | Vegetación halófila hidrófila | Nula | 0.00
+17 | ND | Nula | 0.00
 
 **Función de valor de cobertura**
 
@@ -207,11 +207,11 @@ Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
-ID | Categoría | FV
+ID | Categoria | FV
 -- | -- | --
-3 | No ejidal | 0.58
-2 | Zona de tierras parceladas | 0.31
-1 | Tierra de uso común | 0.11
+3 | No ejidal | 1.00
+2 | Zona de tierras parceladas | 0.52
+1 | Tierra de uso común | 0.19
 
 **Función de valor de tenencia**
 
@@ -425,6 +425,16 @@ Unidades | Adimensional
 
 ##### 1.3.1.2 Zonas de exclusión actual de hidrocarburos líquidos
 
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
 ![](/recursos/energia/mapa_exclusion.png)
 
 ##### 1.3.1.3 Mapa de aptitud de energía de fuente hidrocarburos líquidos
@@ -447,6 +457,16 @@ Unidades | Adimensional
 ![](/recursos/energia/mapa_aprov_actual_gas.png)
 
 ##### 1.3.2.2 Zonas de exclusión actual de gas natural
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
 
 ![](/recursos/energia/mapa_exclusion.png)
 
@@ -471,6 +491,16 @@ Unidades | Adimensional
 
 ##### 1.3.3.2 Zonas de exclusión actual de energía solar
 
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
 ![](/recursos/energia/mapa_exclusion_solar.png)
 
 ##### 1.3.3.3 Mapa de aptitud de energía solar
@@ -494,6 +524,16 @@ Unidades | Adimensional
 
 ##### 1.3.4.2 Zonas de exclusión actual de energía eólica
 
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
 ![](/recursos/energia/mapa_exclusion.png)
 
 ##### 1.3.4.3 Mapa de aptitud de energía eólica
@@ -516,6 +556,16 @@ Unidades | Adimensional
 ![](/recursos/energia/mapa_aprov_actual_biomasa.png)
 
 ##### 1.3.5.2 Zonas de exclusión actual de energía fuente biomasa
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
 
 ![](/recursos/energia/mapa_exclusion.png)
 
@@ -542,6 +592,15 @@ Biomasa | Distancia a granjas porcícolas | 0.010
 Eólica | Distancia a localidades | 0.004
 Eólica | Distancia a carreteras | 0.004
 Biomasa | Residuos agrícolas forestales | 0.002
+
+REGLAMENTO DE LA LEY GENERAL DEL EQUILIBRIO ECOLÓGICO Y LA PROTECCIÓN
+AL AMBIENTE EN MATERIA DE ORDENAMIENTO ECOLÓGICO
+Artículo 37.- Para la suscripción de los convenios de coordinación a que se refiere el artículo 20 BIS 2 de la Ley, la Secretaría deberá observar los criterios contenidos en el presente Reglamento y los instrumentos jurídicos que deriven del mismo.
+Artículo 38.- Los convenios que suscriba la Secretaría con los estados y el Distrito Federal, con la
+participación que corresponda a los municipios y delegaciones, respectivamente, para la formulación de
+los programas de ordenamiento ecológico a que se refiere el artículo 20 BIS 2 de la Ley, además de los
+requisitos señalados en el artículo 8o. de este Reglamento, deberán establecer, entre otros aspectos:
+Las materias y actividades que constituyen el objeto del convenio respectivo. No podrán ser objeto de estos convenios las actividades que permiten el desarrollo de la industria de hidrocarburos, ni las actividades a que se refiere el artículo 3o., fracción XI de la Ley de la Agencia Nacional de Seguridad Industrial y de Protección al Medio Ambiente del Sector Hidrocarburos, conforme lo previsto en el artículo 95 de la Ley de Hidrocarburos.
 
 #### 1.3.6 Mapa de aptitud de energía industrial
 

@@ -450,11 +450,11 @@ Distancia a líneas de transmisión eléctrica de 230 KV y 400 KV y a gasoductos
 
 **Insumos**
 
-Capa | Distancia líneas de transmisión de energía eléctrica
+Capa | Distancia a líneas de transmisión de energía eléctrica y gasoducto
 -- | --
-Fuente | Líneas de transmisión INEGI
-Año | 2012
-Escala | 1:50,000
+Fuente | [1] Líneas de transmisión en México. GeoComunes con datos de CFE y [2] Gasoducto GeoComunes
+Año | 2020
+Escala | Sin dato
 Unidades | Kilómetros
 
 **Parámetros de la función de valor**
