@@ -24,9 +24,13 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    :maxdepth: 6
    :caption: Sectores:
 
+   agricultura_pr
    energia_pr
    forestal_pr
    industrial_pr
+   milpa_apic_pr
+   pec_bovino_pr
+   pec_porcino_pr
    ga_silvopastoril_pr
    urbano_pr
 

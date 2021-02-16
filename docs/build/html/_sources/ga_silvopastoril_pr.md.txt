@@ -1,18 +1,17 @@
-# Pecuario silvopastoril-En proceso de actualización
+# Pecuario silvopastoril
 
 <!-- Ruta de la documentación:
 CARPETAS_TRABAJO\vhernandez\aptitud_fomix_docs -->
 
 Sistema de producción bovina integrada a especies arbóreas, arbustivas con gramíneas forrajeras.
 
-**Modelo AHP del sistema de alimentación silvopastoril**
+### 1.1 Modelo de decisión
 
 ![](/recursos/silvopastoril/silvopastoril.png)
 
-## Criterios
+### 1.2 Criterios
 
-
-### Biofísicos
+#### 1.2.1 Biofísicos
 
 Criterio | Definición
 -- | --
@@ -26,7 +25,7 @@ Disponibilidad de agua | Acceso a la posibilidad de extraer agua del acuífero p
    :header-rows: 1
    :align: center -->
 
-##### Cobertura
+##### 1.2.1.1 Cobertura
 
 Tipo de uso de suelo y vegetación que determina la carga animal y la biodiversidad vegetal.
 
@@ -105,7 +104,7 @@ ID | Categoría | Expresión verbal | FV
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_usv_inegi.PNG)
 
-#### Temperatura
+##### 1.2.1.2 Temperatura
 
 Temperatura ambiente máxima (promedio) que afecta el desempeño productivo de los animales en pastoreo, aunque aumenta la productividad de pastoreo.
 
@@ -131,7 +130,7 @@ Unidades | °C
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_temp_max.png)
 
-##### Precipitación
+##### 1.2.1.3 Precipitación
 
 Precipitación promedio, cantidad y distribución del agua de lluvia para mantener la producción de pasto o sustento para la nutrición de los animales.
 
@@ -158,7 +157,7 @@ Unidades | Milímetros
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_precipitacion.png)
 
-#### Tipo de suelo
+##### 1.2.1.4 Tipo de suelo
 
 Características físicas (profundidad, pedregosidad) y químicas (MO, Nitrógeno) del suelo para soportar la producción de pasto o sustento para la nutrición de los animales.
 
@@ -202,7 +201,7 @@ ID | Categoría | Expresión verbal | FV
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_t_suelo.png)    
 
-##### Disponibilidad de agua
+##### 1.2.1.5 Disponibilidad de agua
 
 Acceso a la posibilidad de extraer agua del acuífero para el consumo del ganado (nivel piezométrico).
 
@@ -228,7 +227,7 @@ Unidades | Metros
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_d_acuifero.png)   
 
-### Socioeconómicos
+#### 1.2.2 Socioeconómicos
 
 Criterio | Definición
 -- | --
@@ -241,7 +240,7 @@ Disponibilidad de mano de obra | Población económicamente activa ocupada en el
    :header-rows: 1
    :align: center -->
 
-#### Accesibilidad a mercados
+##### 1.2.2.1 Accesibilidad a mercados
 
 Criterio | Definición | FV
 -- | -- | --
@@ -253,7 +252,7 @@ Accesibilidad a mercados foráneos | Distancia a puntos de venta de carne (Campe
    :header-rows: 1
    :align: center -->
 
-**Accesibilidad a mercados locales**
+###### 1.2.2.1.1 Accesibilidad a mercados locales**
 
 Distancia a puntos de venta local de becerros (Tizimín, Valladolid, Mérida y Tzucacab).
 
@@ -278,7 +277,7 @@ Unidades | Adimensional
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_d_mercados_loc.png)
 
-**Accesibilidad a mercados foráneos**
+###### 1.2.2.1.2 Accesibilidad a mercados foráneos**
 
 Distancia a puntos de venta de carne (Campeche, Cancún, Playa del Carmen).  
 
@@ -303,7 +302,7 @@ Unidades | Adimensional
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_d_mercados_for.png)  
 
-#### Disponibilidad de mano de obra
+##### 1.2.2.2 Disponibilidad de mano de obra
 
 Población económicamente activa ocupada en el sector primario (%).
 
@@ -329,28 +328,11 @@ Unidades | Porcentaje
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_sec_primario.png)  
 
-## Pesos globales del modelo de aptitud silvopastoril
+### 1.3 Mapa de aptitud
 
-Criterio | Peso
--- | --
-Disponibilidad de agua | 0.38
-Cobertura | 0.2
-Disponibilidad de mano de obra | 0.15
-Accesibilidad a mercados locales | 0.09
-Precipitación | 0.08
-Tipo de suelo | 0.08
-temperatura | 0.02
-Accesibilidad a mercados foráneos | 0.01
-
-<!-- .. csv-table::
-   :file: recursos/tabla_pesos_globales.csv
-   :header-rows: 1
-   :align: center -->
-
-## Capa de exclusión
+#### 1.3.1 Capa de exclusión
 
 Coberturas no aptas de la capa de uso del suelo y vegetación serie VI INEGI usadas como zonas de exclusión (Aptitud nula)
-
 
 ID | Categoría
 :--| --
@@ -376,13 +358,29 @@ ID | Categoría
 
 ![](/recursos/silvopastoril/mapa_gbe_silvopastoril_exclusion.png)  
 
-## Mapa de aptitud silvopastoril
+#### 1.3.2 Mapa de aptitud silvopastoril
 
+![](/recursos/silvopastoril/mapa_apt_gbe_silvopastoril.png)
 
-![](/recursos/silvopastoril/mapa_apt_gbe_silvopastoril.png)  
+**Pesos globales del modelo de aptitud silvopastoril**
 
-### Área por categoría de aptitud
+Criterio | Peso
+-- | --
+Disponibilidad de agua | 0.38
+Cobertura | 0.2
+Disponibilidad de mano de obra | 0.15
+Accesibilidad a mercados locales | 0.09
+Precipitación | 0.08
+Tipo de suelo | 0.08
+temperatura | 0.02
+Accesibilidad a mercados foráneos | 0.01
 
+<!-- .. csv-table::
+   :file: recursos/tabla_pesos_globales.csv
+   :header-rows: 1
+   :align: center -->
+
+**Área por categoría de aptitud**
 
 Categoria | km² | Porcentaje del estado
 :-- | --: | --:
@@ -393,7 +391,6 @@ Moderada | 4300.0 | 11
 Alta | 11956.0 | 30
 Muy alta | 19486.6 | 49
 
-## Sensibilidad de atributos
-
+#### 1.3.3 Sensibilidad de atributos
 
 ![](/recursos/silvopastoril/fi_analisis_sensibilidad_silvopastoril.png)
