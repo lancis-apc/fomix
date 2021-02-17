@@ -11,7 +11,7 @@ Aumentar la capacidad de producción bovina a largo plazo, minimizando el crecim
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/milpa_apic/fi_bovino.png)
+![](/recursos/pec_bovino/fi_bovino.png)
 
 ### 1.2 Criterios
 
