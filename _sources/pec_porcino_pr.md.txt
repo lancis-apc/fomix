@@ -11,7 +11,7 @@ Fomentar el desarrollo, el crecimiento y la descentralización de empresas porc�
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/milpa_apic/fi_porcino.png)
+![](/recursos/pec_porcino/fi_porcino.png)
 
 ### 1.2 Atributos
 
