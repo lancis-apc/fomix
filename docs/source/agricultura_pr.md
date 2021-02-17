@@ -129,13 +129,6 @@ Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
 
-Capa | Distancia a pozos
--- | --
-Fuente | Registro Público de Derechos de Agua (REPDA) CONAGUA
-Año | 2018
-Escala | Sin dato
-Unidades | Kilómetros
-
 ##### 1.2.2.4 Precipitación
 
 lluvia anual
@@ -160,6 +153,15 @@ Tenencia | Tenencia de la tierra.
 ##### 1.2.3.1 Distancia a mercados
 
 Distancia a las principales localidades en las que se venden los productos agrícolas.
+
+**Insumos**
+
+Capa | Distancia a localidades con centrales de abasto y almacenes agrícolas
+-- | --
+Fuente | Adaptado de: Infraestructura del Sector Agroalimentario almacenes y/o centrales de abasto SIAP
+Año | Sin dato
+Escala | Sin dato
+Unidades | Kilómetros
 
 ##### 1.2.3.2 Disponibilidad de mano de obra
 

@@ -672,7 +672,20 @@ Las materias y actividades que constituyen el objeto del convenio respectivo. No
 
 #### 1.3.6 Mapa de aptitud de energía industrial
 
+**Área por categoría de aptitud**
+
+Categoría | Km² | Porcentaje del estado
+-- | -- | --
+Muy alta | 617.2 | 2
+Alta | 2080.0 | 5
+Moderada | 9211.1 | 23
+Baja | 17249.7 | 44
+Muy baja | 7959.2 | 20
+Nula | 2419.4 | 6
+
 #### 1.3.7 Sensibilidad de atributos ambientales del sector energía industrial
+
+![](/recursos/energia/fi_analisis_sensibilidad_energia.png)
 
 <!--### Energía comunitaria
 
