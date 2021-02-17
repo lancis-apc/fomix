@@ -346,6 +346,17 @@ Centros de salud | 0.024
 Población indígena | 0.010
 Edificios administrativos | 0.006
 
+**Área por categoria de aptitud**
+
+Categoría | Km² | Porcentaje del estado
+-- | -- | --
+Muy alta | 1060.3 | 3
+Alta | 0.0 | 0
+Moderada | 192.4 | 0
+Baja | 2230.0 | 6
+Muy baja | 34032.4 | 86
+Nula | 2021.5 | 5
+
 #### 1.3.6 Sensibilidad de atributos ambientales
 
 
