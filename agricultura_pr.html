@@ -200,10 +200,6 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </thead>
 <tbody>
 <tr>
-<td>Vías de comunicación</td>
-<td>Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.</td>
-</tr>
-<tr>
 <td>Hidroagrícola</td>
 <td>Distrito de riego y unidades de riego.</td>
 </tr>
@@ -211,39 +207,13 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Energía</td>
 <td>Distancia a red de transmisión eléctrica.</td>
 </tr>
-</tbody>
-</table><div class="section" id="vias-de-comunicacion">
-<h5>1.2.1.1 Vías de comunicación<a class="headerlink" href="#vias-de-comunicacion" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
 <tr>
-<th>Capa</th>
-<th>Distancia a la red vial</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2019</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
+<td>Vías de comunicación</td>
+<td>Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="hidroagricola">
-<h5>1.2.1.2 Hidroagrícola<a class="headerlink" href="#hidroagricola" title="Enlazar permanentemente con este título">¶</a></h5>
+</table><div class="section" id="hidroagricola">
+<h5>1.2.1.1 Hidroagrícola<a class="headerlink" href="#hidroagricola" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distrito de riego y unidades de riego.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
@@ -271,9 +241,41 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Distrito de riego</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Unidad de riego</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>NA</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de hidroagrícola</strong></p>
+<p><img alt="_images/mapa_fv_agrie_infra_hidro_unidades_distritos_riego.png" src="_images/mapa_fv_agrie_infra_hidro_unidades_distritos_riego.png" /></p>
+</div>
 <div class="section" id="energia">
-<h5>1.2.1.3 Energía<a class="headerlink" href="#energia" title="Enlazar permanentemente con este título">¶</a></h5>
+<h5>1.2.1.2 Energía<a class="headerlink" href="#energia" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia a red de transmisión eléctrica.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
@@ -301,7 +303,45 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Kilómetros</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_agrie_infra_ene_d_lineas_electricas.png" src="_images/fi_fv_agrie_infra_ene_d_lineas_electricas.png" /></p>
+<p><strong>Función de valor de energía</strong></p>
+<p><img alt="_images/mapa_fv_agrie_infra_ene_d_lineas_electricas.png" src="_images/mapa_fv_agrie_infra_ene_d_lineas_electricas.png" /></p>
+</div>
+<div class="section" id="vias-de-comunicacion">
+<h5>1.2.1.3 Vías de comunicación<a class="headerlink" href="#vias-de-comunicacion" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a la red vial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_agrie_infra_com_d_carreteras_caminos.png" src="_images/fi_fv_agrie_infra_com_d_carreteras_caminos.png" /></p>
+<p><strong>Función de valor de vías de comunicación</strong></p>
+<p><img alt="_images/mapa_fv_agrie_infra_com_d_carreteras_caminos.png" src="_images/mapa_fv_agrie_infra_com_d_carreteras_caminos.png" /></p>
+</div>
 </div>
 <div class="section" id="biofisicos">
 <h4>1.2.2 Biofísicos<a class="headerlink" href="#biofisicos" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -314,60 +354,93 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </thead>
 <tbody>
 <tr>
-<td>Tipo de cobertura</td>
-<td>Tipos de vegetación y usos de suelo.</td>
+<td>Disponibilidad de agua</td>
+<td>Posibilidad de extraer agua subterránea considerando el nivel piezométrico.</td>
+</tr>
+<tr>
+<td>Pendiente</td>
+<td>Elevación del terreno.</td>
 </tr>
 <tr>
 <td>Tipo de suelo</td>
 <td>Edafología.</td>
 </tr>
 <tr>
-<td>Pendiente</td>
-<td> </td>
-</tr>
-<tr>
-<td>Disponibilidad de agua</td>
-<td>Posibilidad de extraer agua subterránea, considerando el nivel piezométrico.</td>
-</tr>
-<tr>
-<td>Precipitación</td>
-<td>lluvia anual</td>
+<td>Tipo de cobertura</td>
+<td>Tipos de vegetación y usos de suelo.</td>
 </tr>
 </tbody>
-</table><div class="section" id="tipo-de-cobertura">
-<h5>1.2.2.1 Tipo de cobertura<a class="headerlink" href="#tipo-de-cobertura" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Tipos de vegetación y usos de suelo.</p>
+</table><div class="section" id="disponibilidad-de-agua">
+<h5>1.2.2.1 Disponibilidad de agua<a class="headerlink" href="#disponibilidad-de-agua" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Posibilidad de extraer agua subterránea, considerando el nivel piezométrico.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>Capa</th>
-<th>Uso del suelo y vegetación</th>
+<th>Nivel freático</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+<td>Nivel freático POETY</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>2017</td>
+<td>Sin dato</td>
 </tr>
 <tr>
 <td>Campo</td>
-<td>descripcio</td>
+<td>n_freat_m</td>
 </tr>
 <tr>
 <td>Escala</td>
-<td>1:250,000</td>
+<td>Estatal</td>
 </tr>
 <tr>
 <td>Unidades</td>
-<td>Adimensional</td>
+<td>Metros</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_agrie_bio_agua_d_manto_freatico.png" src="_images/fi_fv_agrie_bio_agua_d_manto_freatico.png" /></p>
+<p><strong>Función de valor de disponibilidad de agua</strong></p>
+<p><img alt="_images/mapa_fv_agrie_bio_agua_d_manto_freatico.png" src="_images/mapa_fv_agrie_bio_agua_d_manto_freatico.png" /></p>
+</div>
+<div class="section" id="pendiente">
+<h5>1.2.2.2 Pendiente<a class="headerlink" href="#pendiente" title="Enlazar permanentemente con este título">¶</a></h5>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Pendiente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Adaptado de: Continuo de Elevaciones Mexicano (CEM) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2013</td>
+</tr>
+<tr>
+<td>Resolución</td>
+<td>15 m x 15 m</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Grados</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_agrie_bio_pend_pendiente_grados.png" src="_images/fi_fv_agrie_bio_pend_pendiente_grados.png" /></p>
+<p><strong>Función de valor de pendiente</strong></p>
+<p><img alt="_images/mapa_fv_agrie_bio_pend_pendiente_grados.png" src="_images/mapa_fv_agrie_bio_pend_pendiente_grados.png" /></p>
+</div>
 <div class="section" id="tipo-de-suelo">
 <h5>1.2.2.2 Tipo de suelo<a class="headerlink" href="#tipo-de-suelo" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Edafología.</p>
@@ -401,100 +474,249 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="pendiente">
-<h5>1.2.2.3 Pendiente<a class="headerlink" href="#pendiente" title="Enlazar permanentemente con este título">¶</a></h5>
-<p><strong>Insumos</strong></p>
+</table><p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>Capa</th>
-<th>Pendiente</th>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Fuente</td>
-<td>Adaptado de: Continuo de Elevaciones Mexicano (CEM) INEGI</td>
+<td>7</td>
+<td>Luvisol</td>
+<td>Muy alta</td>
+<td>1.00</td>
 </tr>
 <tr>
-<td>Año</td>
-<td>2013</td>
+<td>8</td>
+<td>Nitosol</td>
+<td>Muy alta</td>
+<td>1.00</td>
 </tr>
 <tr>
-<td>Resolución</td>
-<td>15 m x 15 m</td>
+<td>2</td>
+<td>Cambisol</td>
+<td>Alta</td>
+<td>0.75</td>
 </tr>
 <tr>
-<td>Unidades</td>
-<td>Grados</td>
+<td>3</td>
+<td>Chernozem</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Histosol</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Gleysol</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Phaeozem</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Vertisol</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Arenosol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Leptosol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Regosol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Solonchak</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>No aplica</td>
+<td>Nula</td>
+<td>0.00</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="disponibilidad-de-agua">
-<h5>1.2.2.4 Disponibilidad de agua<a class="headerlink" href="#disponibilidad-de-agua" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Posibilidad de extraer agua subterránea, considerando el nivel piezométrico.</p>
+</table><p><strong>Función de valor de tipo de suelo</strong></p>
+<p><img alt="_images/mapa_fv_agrie_bio_suelo_tipo_suelo.png" src="_images/mapa_fv_agrie_bio_suelo_tipo_suelo.png" /></p>
+</div>
+<div class="section" id="tipo-de-cobertura">
+<h5>1.2.2.1 Tipo de cobertura<a class="headerlink" href="#tipo-de-cobertura" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Tipos de vegetación y usos de suelo.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>Capa</th>
-<th>Nivel freático</th>
+<th>Uso del suelo y vegetación</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Nivel freático POETY</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>Sin dato</td>
+<td>2017</td>
 </tr>
 <tr>
 <td>Campo</td>
-<td>n_freat_m</td>
+<td>descripcio</td>
 </tr>
 <tr>
 <td>Escala</td>
-<td>Estatal</td>
+<td>1:250,000</td>
 </tr>
 <tr>
 <td>Unidades</td>
-<td>Metros</td>
+<td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="precipitacion">
-<h5>1.2.2.4 Precipitación<a class="headerlink" href="#precipitacion" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>lluvia anual</p>
-<p><strong>Insumos</strong></p>
+</table><p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>Capa</th>
-<th>Precipitación</th>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Fuente</td>
-<td>Adaptado de: Precipitación acumulada anual SGM</td>
+<td>2</td>
+<td>Agricultura de riego</td>
+<td>Muy alta</td>
+<td>1.00</td>
 </tr>
 <tr>
-<td>Año</td>
-<td>2013</td>
+<td>3</td>
+<td>Agricultura de temporal</td>
+<td>Alta</td>
+<td>0.75</td>
 </tr>
 <tr>
-<td>Escala</td>
-<td>Sin dato</td>
+<td>8</td>
+<td>Pastizal</td>
+<td>Moderada</td>
+<td>0.50</td>
 </tr>
 <tr>
-<td>Unidades</td>
-<td>mm</td>
+<td>9</td>
+<td>Selva baja</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Selva mediana</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Sin vegetación</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Sábana</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bosque cultivado/Palmar inducido</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ND</td>
+<td>Nula</td>
+<td>0.00</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de tipo de cobertura</strong></p>
+<p><img alt="_images/mapa_fv_agrie_bio_cober_cobertura_usv_svi_16cats.png" src="_images/mapa_fv_agrie_bio_cober_cobertura_usv_svi_16cats.png" /></p>
+</div>
 </div>
 <div class="section" id="socioeconomicos">
 <h4>1.2.3 Socioeconómicos<a class="headerlink" href="#socioeconomicos" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -507,20 +729,20 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </thead>
 <tbody>
 <tr>
-<td>Distancia a mercados</td>
-<td>Distancia a las principales localidades en las que se venden los productos agrícolas.</td>
+<td>Mercados</td>
+<td>Distancia a las localidades en las que se ubican centros de almacenamiento y centrales de abasto.</td>
 </tr>
 <tr>
-<td>Disponibilidad de mano de obra</td>
-<td>Distancia a localidades/municipios donde existe un mayor porcentaje de población económicamente activa ocupada en el sector primario.</td>
+<td>Mano de obra</td>
+<td>Distancia a localidades/municipios  donde existe un mayor porcentaje de población económicamente activa ocupada en el sector primario.</td>
 </tr>
 <tr>
 <td>Tenencia</td>
 <td>Tenencia de la tierra.</td>
 </tr>
 </tbody>
-</table><div class="section" id="distancia-a-mercados">
-<h5>1.2.3.1 Distancia a mercados<a class="headerlink" href="#distancia-a-mercados" title="Enlazar permanentemente con este título">¶</a></h5>
+</table><div class="section" id="mercados">
+<h5>1.2.3.1 Mercados<a class="headerlink" href="#mercados" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia a las principales localidades en las que se venden los productos agrícolas.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
@@ -549,8 +771,8 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 </tbody>
 </table></div>
-<div class="section" id="disponibilidad-de-mano-de-obra">
-<h5>1.2.3.2 Disponibilidad de mano de obra<a class="headerlink" href="#disponibilidad-de-mano-de-obra" title="Enlazar permanentemente con este título">¶</a></h5>
+<div class="section" id="mano-de-obra">
+<h5>1.2.3.2 Mano de obra<a class="headerlink" href="#mano-de-obra" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia a localidades/municipios&nbsp;donde existe un mayor porcentaje de población económicamente activa ocupada en el sector primario.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
@@ -582,7 +804,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Porcentaje</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_agrie_socio_pea_pea_sector_primario.png" src="_images/fi_fv_agrie_socio_pea_pea_sector_primario.png" /></p>
+<p><strong>Función de valor de mano de obra</strong></p>
+<p><img alt="_images/mapa_fv_agrie_socio_pea_pea_sector_primario.png" src="_images/mapa_fv_agrie_socio_pea_pea_sector_primario.png" /></p>
+</div>
 <div class="section" id="tenencia">
 <h5>1.2.3.3 Tenencia<a class="headerlink" href="#tenencia" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Tenencia de la tierra.</p>
@@ -612,7 +838,39 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Tierra de uso común</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Zona de tierras parceladas</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>3</td>
+<td>No ejidal</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de tenencia</strong></p>
+<p><img alt="_images/mapa_fv_agrie_socio_tene_tenencia_tierra.png" src="_images/mapa_fv_agrie_socio_tene_tenencia_tierra.png" /></p>
+</div>
 </div>
 </div>
 </div>
