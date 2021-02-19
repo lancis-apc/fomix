@@ -671,7 +671,7 @@ Biomasa | Residuos agrícolas forestales | 0.002
 **Área por categoría de aptitud**
 
 Categoría | Km² | Porcentaje del estado
--- | -- | --
+-- | --: | --:
 Muy alta | 617.2 | 2
 Alta | 2080.0 | 5
 Moderada | 9211.1 | 23
