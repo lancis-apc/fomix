@@ -93,8 +93,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#meta">Meta</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#modelo-de-decision">1.1 Modelo de decisión</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#atributos">1.2 Atributos</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#biofisicos">1.2.1 Biofísicos</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#infraestructura">1.2.2 Infraestructura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#infraestructura">1.2.1 Infraestructura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#biofisicos">1.2.2 Biofísicos</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#social">1.2.3 Social</a></li>
 </ul>
 </li>
@@ -181,54 +181,268 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </div>
 <div class="section" id="atributos">
 <h3>1.2 Atributos<a class="headerlink" href="#atributos" title="Enlazar permanentemente con este título">¶</a></h3>
-<div class="section" id="biofisicos">
-<h4>1.2.1 Biofísicos<a class="headerlink" href="#biofisicos" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Atributo | Definición
-Cobertura | Vegetación o uso de suelo actual.
-Profundidad del acuífero | Distancia al acuifero o nivel piezométrico.</p>
-<div class="section" id="cobertura">
-<h5>1.2.1.1 Cobertura<a class="headerlink" href="#cobertura" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Vegetación o uso de suelo actual.</p>
-</div>
-<div class="section" id="profundidad-del-acuifero">
-<h5>1.2.1.2 Profundidad del acuífero<a class="headerlink" href="#profundidad-del-acuifero" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Distancia al acuifero o nivel piezométrico.</p>
-</div>
-</div>
 <div class="section" id="infraestructura">
-<h4>1.2.2 Infraestructura<a class="headerlink" href="#infraestructura" title="Enlazar permanentemente con este título">¶</a></h4>
+<h4>1.2.1 Infraestructura<a class="headerlink" href="#infraestructura" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Atributo | Definición
 Caminos | Distancia a carreteras pavimentadas de 2 carriles y secundarias
 Puerto Progreso | Distancia a Puerto Progreso.
 Distancia a rastro y empacadora | Infraestructura industrial complementaria (incluye establecimientos de inspección federal, plantas transformadoras de productos y empacadoras). Distancia a rastros y empacadoras porcinos y avícolas.
 Distancia a redes eléctricas | Distancia a redes eléctricas CFE.</p>
 <div class="section" id="caminos">
-<h5>1.2.2.1 Caminos<a class="headerlink" href="#caminos" title="Enlazar permanentemente con este título">¶</a></h5>
+<h5>1.2.1.1 Caminos<a class="headerlink" href="#caminos" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia a carreteras pavimentadas de 2 carriles y secundarias.</p>
 <p>Atributo | Definición
 Distancia a carreteras | Distancia a carreteras y prolongación
 Distancia a caminos y veredas | Distancia a caminos y veredas.</p>
 <div class="section" id="distancia-a-carreteras">
-<h6>1.2.2.1.1 Distancia a carreteras<a class="headerlink" href="#distancia-a-carreteras" title="Enlazar permanentemente con este título">¶</a></h6>
+<h6>1.2.1.1.1 Distancia a carreteras<a class="headerlink" href="#distancia-a-carreteras" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a carreteras y prolongación.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a carreteras y prolongaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>TIPO_VIAL</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_por_infra_cam_d_carretera_prolongacion.png" src="_images/fi_fv_por_infra_cam_d_carretera_prolongacion.png" /></p>
+<p><strong>Función de valor de distancia a carreteras</strong></p>
+<p><img alt="_images/mapa_fv_por_infra_cam_d_carretera_prolongacion.png" src="_images/mapa_fv_por_infra_cam_d_carretera_prolongacion.png" /></p>
 </div>
 <div class="section" id="distancia-a-caminos-y-veredas">
-<h6>1.2.2.1.2 Distancia a caminos y veredas<a class="headerlink" href="#distancia-a-caminos-y-veredas" title="Enlazar permanentemente con este título">¶</a></h6>
+<h6>1.2.1.1.2 Distancia a caminos y veredas<a class="headerlink" href="#distancia-a-caminos-y-veredas" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a caminos y veredas.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a veredas y caminos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>TIPO_VIAL</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_por_infra_cam_d_caminos_veredas.png" src="_images/fi_fv_por_infra_cam_d_caminos_veredas.png" /></p>
+<p><strong>Función de valor de distancia a caminos y veredas</strong></p>
+<p><img alt="_images/mapa_fv_por_infra_cam_d_caminos_veredas.png" src="_images/mapa_fv_por_infra_cam_d_caminos_veredas.png" /></p>
 </div>
-</div>
-<div class="section" id="puerto-progreso">
-<h5>1.2.2.2 Puerto Progreso<a class="headerlink" href="#puerto-progreso" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Distancia a Puerto Progreso.</p>
-</div>
-<div class="section" id="distancia-a-rastro-y-empacadora">
-<h5>1.2.2.3 Distancia a rastro y empacadora<a class="headerlink" href="#distancia-a-rastro-y-empacadora" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Infraestructura industrial complementaria (incluye establecimientos de inspección federal, plantas transformadoras de productos y empacadoras). Distancia a rastros y empacadoras porcinos y avícolas.</p>
 </div>
 <div class="section" id="distancia-a-redes-electricas">
-<h5>1.2.2.4 Distancia a redes eléctricas<a class="headerlink" href="#distancia-a-redes-electricas" title="Enlazar permanentemente con este título">¶</a></h5>
+<h5>1.2.1.2 Distancia a redes eléctricas<a class="headerlink" href="#distancia-a-redes-electricas" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia a redes eléctricas CFE.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia líneas de transmisión de energía   eléctrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Líneas de transmisión INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2012</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_por_infra_elec_d_lineas_electricas.png" src="_images/fi_fv_por_infra_elec_d_lineas_electricas.png" /></p>
+<p><strong>Función de valor de distancia a redes eléctricas</strong></p>
+<p><img alt="_images/mapa_fv_por_infra_elec_d_lineas_electricas.png" src="_images/mapa_fv_por_infra_elec_d_lineas_electricas.png" /></p>
 </div>
+<div class="section" id="distancia-a-rastro-y-empacadora">
+<h5>1.2.1.3 Distancia a rastro y empacadora<a class="headerlink" href="#distancia-a-rastro-y-empacadora" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Infraestructura industrial complementaria (incluye establecimientos de inspección federal, plantas transformadoras de productos y empacadoras). Distancia a rastros y empacadoras porcinos y avícolas.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a rastros, sitios de empacado y   procesamiento de ganado porcino y avícola</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Infraestructura del sector Agroalimentario centros de sacrificio y   TIF; [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [3] Datos de indicador. Directorio Estadístico Nacional de   Unidades Económicas (DENUE) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] Sin dato; [2] [3] 2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Localidad</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="puerto-progreso">
+<h5>1.2.1.4 Puerto Progreso<a class="headerlink" href="#puerto-progreso" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a Puerto Progreso.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a Puerto Progreso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Ubicación de los principales puertos de el estado de Yucatán POETY y   [2] Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2002; [2] 2019</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>[2] TIPO_VIAL</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_por_infra_puer_d_puerto_progreso_con_carreteras.png" src="_images/fi_fv_por_infra_puer_d_puerto_progreso_con_carreteras.png" /></p>
+<p><strong>Función de valor de Puerto Progreso</strong></p>
+<p><img alt="_images/mapa_fv_por_infra_puer_d_puerto_progreso_con_carreteras.png" src="_images/mapa_fv_por_infra_puer_d_puerto_progreso_con_carreteras.png" /></p>
+</div>
+</div>
+<div class="section" id="biofisicos">
+<h4>1.2.2 Biofísicos<a class="headerlink" href="#biofisicos" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Atributo | Definición
+Cobertura | Vegetación o uso de suelo actual.
+Profundidad del acuífero | Distancia al acuifero o nivel piezométrico.</p>
+<div class="section" id="profundidad-del-acuifero">
+<h5>1.2.2.1 Profundidad del acuífero<a class="headerlink" href="#profundidad-del-acuifero" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia al acuifero o nivel piezométrico.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Nivel freático</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Nivel freático POETY</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>n_freat_m</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Estatal</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Metros</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="cobertura">
+<h5>1.2.2.2 Cobertura<a class="headerlink" href="#cobertura" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Vegetación o uso de suelo actual.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <div class="section" id="social">
 <h4>1.2.3 Social<a class="headerlink" href="#social" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -244,15 +458,105 @@ Urbanos | Distancia a localidades urbanas &gt;= 15,000 habitantes.</p>
 <div class="section" id="rural-urbano">
 <h6>1.2.3.1.1 Rural-Urbano<a class="headerlink" href="#rural-urbano" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a localidades rurales-urbanas =&gt; 2500 y &lt;15,000 habitantes.</p>
-</div>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a localidades rurales - urbanas   (entre 2,500 y 15,000 habitantes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>[2] POBTOT</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Localidad</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="rurales">
 <h6>1.2.3.1.2 Rurales<a class="headerlink" href="#rurales" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia localidades rurales &lt; 2,500 habitantes.</p>
-</div>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a localidades rurales (menos de   2,500 habitantes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>[2] POBTOT</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Localidad</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="urbanos">
 <h6>1.2.3.1.3 Urbanos<a class="headerlink" href="#urbanos" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a localidades urbanas &gt;= 15,000 habitantes.</p>
-</div>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a localidades urbanas (mayor o igual a 15,000 habitantes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>[2] POBTOT</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Localidad</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
 </div>

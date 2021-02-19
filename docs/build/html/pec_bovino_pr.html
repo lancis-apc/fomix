@@ -172,7 +172,9 @@
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="section" id="meta">
 <h2>Meta<a class="headerlink" href="#meta" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Aumentar la capacidad de producción bovina a largo plazo, minimizando el crecimiento de la superficie destinada a esta actividad y haciendo más eficiente el uso del área actual.</p>
+<p>Aumentar la capacidad de producción bovina a largo plazo, minimizando el crecimiento de la superficie destinada a esta actividad y haciendo más eficiente el uso del área actual.
+Incrementar sustentablemente la eficiencia y resiliencia de la actividad, a través de la restauración de paisajes y la protección de la biodiversidad, así como la implementación de innovaciones en el sistema de producción.
+Mantener y restaurar la fertilidad de suelo para obtener suficiente cantidad de biomasa que permita hacer más eficiente la actividad para que la producción por superficie sea rentable en el largo plazo, así como la diversificación de la actividad a sistemas agroforestales u otras actividades.</p>
 <p><a class="reference external" href="#">Lista de participantes</a></p>
 <div class="section" id="modelo-de-decision">
 <h3>1.1 Modelo de decisión<a class="headerlink" href="#modelo-de-decision" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -191,14 +193,6 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </thead>
 <tbody>
 <tr>
-<td>Tipo de cobertura</td>
-<td>Tipos de vegetación y usos de suelo.</td>
-</tr>
-<tr>
-<td>Tipo de suelo</td>
-<td>Edafología.</td>
-</tr>
-<tr>
 <td>Disponibilidad de agua</td>
 <td>Posibilidad de extraer agua subterránea, considerando el nivel piezométrico.</td>
 </tr>
@@ -206,77 +200,17 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Precipitación</td>
 <td>Lluvia anual promedio.</td>
 </tr>
-</tbody>
-</table><div class="section" id="tipo-de-cobertura">
-<h5>1.2.1.1 Tipo de cobertura<a class="headerlink" href="#tipo-de-cobertura" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Tipos de vegetación y usos de suelo.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
 <tr>
-<th>Capa</th>
-<th>Uso del suelo y vegetación</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+<td>Tipo de suelo</td>
+<td>Edafología.</td>
 </tr>
 <tr>
-<td>Año</td>
-<td>2017</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>descripcio</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:250,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
+<td>Tipo de cobertura</td>
+<td>Tipos de vegetación y usos de suelo.</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="tipo-de-suelo">
-<h5>1.2.1.2 Tipo de suelo<a class="headerlink" href="#tipo-de-suelo" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Edafología.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Edafología</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2014</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>tipo_suelo</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:250,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table></div>
-<div class="section" id="disponibilidad-de-agua">
-<h5>1.2.1.3 Disponibilidad de agua<a class="headerlink" href="#disponibilidad-de-agua" title="Enlazar permanentemente con este título">¶</a></h5>
+</table><div class="section" id="disponibilidad-de-agua">
+<h5>1.2.1.1 Disponibilidad de agua<a class="headerlink" href="#disponibilidad-de-agua" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Posibilidad de extraer agua subterránea, considerando el nivel piezométrico.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
@@ -308,9 +242,13 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Metros</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_bov_bio_d_manto_freatico.png" src="_images/fi_fv_bov_bio_d_manto_freatico.png" /></p>
+<p><strong>Función de valor de disponibilidad de agua</strong></p>
+<p><img alt="_images/mapa_fv_bov_bio_d_manto_freatico.png" src="_images/mapa_fv_bov_bio_d_manto_freatico.png" /></p>
+</div>
 <div class="section" id="precipitacion">
-<h5>1.2.1.4 Precipitación<a class="headerlink" href="#precipitacion" title="Enlazar permanentemente con este título">¶</a></h5>
+<h5>1.2.1.2 Precipitación<a class="headerlink" href="#precipitacion" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Lluvia anual promedio.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
@@ -323,7 +261,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Adaptado de: Precipitación acumulada anual SGM</td>
+<td>Adaptado de: Precipitación acumulada anual. Atlas de Peligros por Fenómenos Naturales del Estado de Yucatán. Servicio Geológico Mexicano</td>
 </tr>
 <tr>
 <td>Año</td>
@@ -338,7 +276,327 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>mm</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>e) 1081-1233 mm</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>d) 930-1081 mm</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>3</td>
+<td>c) 778-930 mm</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>1</td>
+<td>a) 551-626 mm</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>2</td>
+<td>b) 626-778 mm</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de precipitación</strong></p>
+<p><img alt="_images/mapa_fv_bov_bio_precipitacion.png" src="_images/mapa_fv_bov_bio_precipitacion.png" /></p>
+</div>
+<div class="section" id="tipo-de-suelo">
+<h5>1.2.1.3 Tipo de suelo<a class="headerlink" href="#tipo-de-suelo" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Edafología.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Edafología</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>tipo_suelo</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>Luvisol</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nitosol</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Cambisol</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Chernozem</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Histosol</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Vertisol</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Gleysol</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Leptosol</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Phaeozem</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Regosol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Arenosol</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Solonchak</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>No aplica</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de tipo de suelo</strong></p>
+<p><img alt="_images/mapa_fv_bov_bio_tipo_suelo.png" src="_images/mapa_fv_bov_bio_tipo_suelo.png" /></p>
+</div>
+<div class="section" id="tipo-de-cobertura">
+<h5>1.2.1.4 Tipo de cobertura<a class="headerlink" href="#tipo-de-cobertura" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Tipos de vegetación y usos de suelo.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>Agricultura de riego</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Pastizal</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Agricultura de temporal</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Selva baja</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Selva mediana</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bosque cultivado/Palmar inducido</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Sin vegetación</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Sábana</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ND</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de tipo de cobertura</strong></p>
+<p><img alt="_images/mapa_fv_bov_bio_cobertura_usv_svi_16cats.png" src="_images/mapa_fv_bov_bio_cobertura_usv_svi_16cats.png" /></p>
+</div>
 </div>
 <div class="section" id="infraestructura">
 <h4>1.2.2 Infraestructura<a class="headerlink" href="#infraestructura" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -351,6 +609,10 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </thead>
 <tbody>
 <tr>
+<td>Energía</td>
+<td>Distancia a red de transmisión eléctrica.</td>
+</tr>
+<tr>
 <td>Vías de comunicación</td>
 <td>Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.</td>
 </tr>
@@ -362,77 +624,9 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Rastros</td>
 <td>Distancia a localidades con rastros o centros de sacrificio.</td>
 </tr>
-<tr>
-<td>Energía</td>
-<td>Distancia a red de transmisión eléctrica.</td>
-</tr>
 </tbody>
-</table><div class="section" id="vias-de-comunicacion">
-<h5>1.2.2.1 Vías de comunicación<a class="headerlink" href="#vias-de-comunicacion" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia a la red vial</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2019</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
-</tr>
-</tbody>
-</table></div>
-<div class="section" id="centros-de-acopio">
-<h5>1.2.2.2 Centros de acopio<a class="headerlink" href="#centros-de-acopio" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Distancia a localidades con centros de acopio y de comercialización de ganado (subastas).</p>
-</div>
-<div class="section" id="rastros">
-<h5>1.2.2.3 Rastros<a class="headerlink" href="#rastros" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Distancia a localidades con rastros o centros de sacrificio.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia a rastros, sitios de empacado y procesamiento de ganado</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>[1] Infraestructura del sector Agroalimentario centros de sacrificio y TIF; [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [3] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>[1] Sin dato; [2] [3] 2020</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Localidad</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
-</tr>
-</tbody>
-</table></div>
-<div class="section" id="energia">
-<h5>1.2.2.4 Energía<a class="headerlink" href="#energia" title="Enlazar permanentemente con este título">¶</a></h5>
+</table><div class="section" id="energia">
+<h5>1.2.2.1 Energía<a class="headerlink" href="#energia" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia a red de transmisión eléctrica.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
@@ -460,7 +654,87 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Kilómetros</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_bov_infra_d_lineas_electricas.png" src="_images/fi_fv_bov_infra_d_lineas_electricas.png" /></p>
+<p><strong>Función de valor de energía</strong></p>
+<p><img alt="_images/mapa_fv_bov_infra_d_lineas_electricas.png" src="_images/mapa_fv_bov_infra_d_lineas_electricas.png" /></p>
+</div>
+<div class="section" id="vias-de-comunicacion">
+<h5>1.2.2.2 Vías de comunicación<a class="headerlink" href="#vias-de-comunicacion" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a la red vial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_bov_infra_d_carreteras_caminos.png" src="_images/fi_fv_bov_infra_d_carreteras_caminos.png" /></p>
+<p><strong>Función de valor de vías de comunicación</strong></p>
+<p><img alt="_images/mapa_fv_bov_infra_d_carreteras_caminos.png" src="_images/mapa_fv_bov_infra_d_carreteras_caminos.png" /></p>
+</div>
+<div class="section" id="centros-de-acopio">
+<h5>1.2.2.3 Centros de acopio<a class="headerlink" href="#centros-de-acopio" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a localidades con centros de acopio y de comercialización de ganado (subastas).</p>
+<p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_bov_infra_d_centros_acopio_bov.png" src="_images/fi_fv_bov_infra_d_centros_acopio_bov.png" /></p>
+<p><strong>Función de valor de centros de acopio</strong></p>
+<p><img alt="_images/mapa_fv_bov_infra_d_centros_acopio_bov.png" src="_images/mapa_fv_bov_infra_d_centros_acopio_bov.png" /></p>
+</div>
+<div class="section" id="rastros">
+<h5>1.2.2.4 Rastros<a class="headerlink" href="#rastros" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a localidades con rastros o centros de sacrificio.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a rastros, sitios de empacado y procesamiento de ganado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Infraestructura del sector Agroalimentario centros de sacrificio y TIF; [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [3] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] Sin dato; [2] [3] 2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Localidad</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_bov_infra_d_rastros_bov.png" src="_images/fi_fv_bov_infra_d_rastros_bov.png" /></p>
+<p><strong>Función de valor de rastros</strong></p>
+<p><img alt="_images/mapa_fv_bov_infra_d_rastros_bov.png" src="_images/mapa_fv_bov_infra_d_rastros_bov.png" /></p>
+</div>
 </div>
 </div>
 </div>
