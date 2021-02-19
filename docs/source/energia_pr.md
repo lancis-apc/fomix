@@ -10,8 +10,8 @@ Garantizar el aprovechamiento sostenible de los recursos energéticos del estado
 [Lista de participantes](https://www.dropbox.com/s/dtqqr653cni8915/lista_asistencia_energia.pdf?dl=0)
 
 ### Nota aclaratoria
-**Con base en el Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en Materia de Ordenamiento Ecológico**
-La Secretaría deberá observar los criterios contenidos en el presente Reglamento y los instrumentos jurídicos que deriven del mismo (Art. 37). Los convenios que suscriba la Secretaría con los estados, ..., para la formulación de los programas de ordenamiento ecológico a que se refiere el artículo 20 BIS 2 de la Ley, además de los requisitos señalados en el artículo 8o. de este Reglamento, deberán establecer, entre otros aspectos:
+**Con base en el Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en Materia de Ordenamiento Ecológico,** la Secretaría deberá observar los criterios contenidos en el presente Reglamento y los instrumentos jurídicos que deriven del mismo (Art. 37). <br />
+Los convenios que suscriba la Secretaría con los estados, ..., para la formulación de los programas de ordenamiento ecológico a que se refiere el artículo 20 BIS 2 de la Ley, además de los requisitos señalados en el artículo 8o. de este Reglamento, deberán establecer, entre otros aspectos:<br />
 **No podrán ser objeto de estos convenios las actividades que permiten el desarrollo de la industria de hidrocarburos**, ni las actividades a que se refiere el artículo 3o., fracción XI de la Ley de la Agencia Nacional de Seguridad Industrial y de Protección al Medio Ambiente del Sector Hidrocarburos, conforme lo previsto en el artículo 95 de la Ley de Hidrocarburos (Art.38).
 
 ## 1. Energía industrial
