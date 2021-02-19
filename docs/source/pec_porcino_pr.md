@@ -5,7 +5,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Fomentar el desarrollo, el crecimiento y la descentralización de empresas porcícolas y avícolas para que su operación se realice manera de ordenada y sustentable, promueva modelos de producción no convencionales a partir de porcinos y aves localmente adaptados e incorpore esquemas tecnológicos para reducir y mitigar impactos, de manera que se incremente la sostenibilidad ambiental y contribuya a mejorar la salud pública.
+Fomentar el desarrollo, el crecimiento y la descentralización de empresas porcícolas y avícolas para que su operación se realice de manera de ordenada y sustentable, promueva modelos de producción no convencionales a partir de porcinos y aves localmente adaptados e incorpore esquemas tecnológicos para reducir y mitigar impactos, de manera que se incremente la sostenibilidad   ambiental y contribuya a mejorar la salud pública.
 
 [Lista de participantes]()
 
@@ -18,10 +18,11 @@ Fomentar el desarrollo, el crecimiento y la descentralización de empresas porc�
 #### 1.2.1 Infraestructura
 
 Atributo | Definición
+-- | --
 Caminos | Distancia a carreteras pavimentadas de 2 carriles y secundarias
-Puerto Progreso | Distancia a Puerto Progreso.
+Distancia a redes eléctricas: | Distancia a redes eléctricas CFE.
 Distancia a rastro y empacadora | Infraestructura industrial complementaria (incluye establecimientos de inspección federal, plantas transformadoras de productos y empacadoras). Distancia a rastros y empacadoras porcinos y avícolas.
-Distancia a redes eléctricas | Distancia a redes eléctricas CFE.
+Puerto Progreso | Distancia a Puerto Progreso.
 
 ##### 1.2.1.1 Caminos
 
@@ -133,12 +134,13 @@ Unidades | Kilómetros
 #### 1.2.2 Biofísicos
 
 Atributo | Definición
-Cobertura | Vegetación o uso de suelo actual.
-Profundidad del acuífero | Distancia al acuifero o nivel piezométrico.
+-- | --
+Disponibilidad de agua | Distancia al acuífero o nivel piezométrico. Costo de extracción de agua del acuífero
+Cobertura | Vegetación o uso de suelo actual
 
-##### 1.2.2.1 Profundidad del acuífero
+##### 1.2.2.1 Disponibilidad de agua
 
-Distancia al acuifero o nivel piezométrico.
+Distancia al acuifero o nivel piezométrico. Costo de extracción de agua del acuífero.
 
 **Insumos**
 
@@ -164,21 +166,15 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
-#### 1.2.3 Social
+#### 1.2.3 Mano de obra
 
 Atributo | Definición
-Asentamientos | Distancia a diferentes tipos de asentamientos humanos.
-
-##### 1.2.3.1 Asentamientos
-
-Distancia a diferentes tipos de asentamientos humanos.
-
-Atributo | Definición
+-- | --
 Rural-Urbano | Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.
 Rurales | Distancia localidades rurales < 2,500 habitantes.
 Urbanos | Distancia a localidades urbanas >= 15,000 habitantes.
 
-###### 1.2.3.1.1 Rural-Urbano
+##### 1.2.3.1 Rural-Urbano
 
 Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.
 
@@ -192,7 +188,7 @@ Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Kilómetros
 
-###### 1.2.3.1.2 Rurales
+##### 1.2.3.2 Rurales
 
 Distancia localidades rurales < 2,500 habitantes.
 
@@ -206,7 +202,7 @@ Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Kilómetros
 
-###### 1.2.3.1.3 Urbanos
+##### 1.2.3.3 Urbanos
 
 Distancia a localidades urbanas >= 15,000 habitantes.
 
