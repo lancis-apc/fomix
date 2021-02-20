@@ -29,6 +29,7 @@ Puerto Progreso | Distancia a Puerto Progreso.
 Distancia a carreteras pavimentadas de 2 carriles y secundarias.
 
 Atributo | Definición
+-- | --
 Distancia a carreteras | Distancia a carreteras y prolongación
 Distancia a caminos y veredas | Distancia a caminos y veredas.
 
@@ -102,9 +103,9 @@ Infraestructura industrial complementaria (incluye establecimientos de inspecci�
 
 **Insumos**
 
-Capa | Distancia a rastros, sitios de empacado y   procesamiento de ganado porcino y avícola
+Capa | Distancia a rastros, sitios de empacado y procesamiento de ganado porcino y avícola
 -- | --
-Fuente | [1] Infraestructura del sector Agroalimentario centros de sacrificio y   TIF; [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [3] Datos de indicador. Directorio Estadístico Nacional de   Unidades Económicas (DENUE) INEGI
+Fuente | [1] Infraestructura del sector Agroalimentario centros de sacrificio y TIF; [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [3] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
 Año | [1] Sin dato; [2] [3] 2020
 Escala | Localidad
 Unidades | Kilómetros
@@ -117,7 +118,7 @@ Distancia a Puerto Progreso.
 
 Capa | Distancia a Puerto Progreso
 -- | --
-Fuente | [1] Ubicación de los principales puertos de el estado de Yucatán POETY y   [2] Red Nacional de Caminos (RNC) Red vial - INEGI
+Fuente | [1] Ubicación de los principales puertos de el estado de Yucatán POETY y [2] Red Nacional de Caminos (RNC) Red vial - INEGI
 Año | [1] 2002; [2] 2019
 Campo | [2] TIPO_VIAL
 Escala | Sin dato

@@ -105,8 +105,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#mapa-de-aptitud-de-energia-solar">1.3.3 Mapa de aptitud de energía solar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#mapa-de-aptitud-de-energia-eolica">1.3.4 Mapa de aptitud de energía eólica</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#mapa-de-aptitud-de-energia-de-fuente-biomasa">1.3.5 Mapa de aptitud de energía de fuente biomasa</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#mapa-de-aptitud-de-energia-industrial">1.3.6 Mapa de aptitud de energía industrial</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sensibilidad-de-atributos-ambientales-del-sector-energia-industrial">1.3.7 Sensibilidad de atributos ambientales del sector energía industrial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zona-de-aprovechamiento-actual-del-sector-urbano">1.3.6 Zona de aprovechamiento actual del sector urbano</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zonas-de-exclusion">1.3.7 Zonas de exclusión</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mapa-de-aptitud-de-energia-industrial">1.3.8 Mapa de aptitud de energía industrial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sensibilidad-de-atributos-ambientales-del-sector-energia-industrial">1.3.9 Sensibilidad de atributos ambientales del sector energía industrial</a></li>
 </ul>
 </li>
 </ul>
@@ -770,7 +772,7 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
@@ -1173,7 +1175,7 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table><p><strong>Tabla de exclusión general del sector energía</strong></p>
+</table><p><strong>Tabla de exclusión del sector energía de fuente hidrocarburos líquidos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1182,6 +1184,10 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+</tr>
 <tr>
 <td>4</td>
 <td>Asentamiento humano</td>
@@ -1199,8 +1205,8 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <td>Tular</td>
 </tr>
 <tr>
-<td>15</td>
-<td>Vegetación de petén</td>
+<td>14</td>
+<td>Vegetación de duna costera</td>
 </tr>
 <tr>
 <td>16</td>
@@ -1223,13 +1229,13 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <thead>
 <tr>
 <th>Capa</th>
-<th>[1] Centrales eléctricas de gas; [2]   Gasoducto</th>
+<th>[1] Centrales eléctricas de gas; [2] Gasoducto</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Mapas de Infraestructura Energética y Recursos Renovables SENER;  [2] Gasoductos GeoComunes</td>
+<td>[1] Mapas de Infraestructura Energética y Recursos Renovables SENER; [2] Gasoductos GeoComunes</td>
 </tr>
 <tr>
 <td>Año</td>
@@ -1278,7 +1284,7 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table><p><strong>Tabla de exclusión general del sector energía</strong></p>
+</table><p><strong>Tabla de exclusión del sector energía de fuente gas natural</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1287,6 +1293,10 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+</tr>
 <tr>
 <td>4</td>
 <td>Asentamiento humano</td>
@@ -1304,8 +1314,8 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <td>Tular</td>
 </tr>
 <tr>
-<td>15</td>
-<td>Vegetación de petén</td>
+<td>14</td>
+<td>Vegetación de duna costera</td>
 </tr>
 <tr>
 <td>16</td>
@@ -1383,6 +1393,44 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <td>Adimensional</td>
 </tr>
 </tbody>
+</table><p><strong>Tabla de exclusión del sector energía de fuente solar</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Cobertura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+</tr>
+</tbody>
 </table><p><img alt="_images/mapa_exclusion_solar.png" src="_images/mapa_exclusion_solar.png" /></p>
 </div>
 <div class="section" id="id3">
@@ -1454,7 +1502,7 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table><p><strong>Tabla de exclusión general del sector energía</strong></p>
+</table><p><strong>Tabla de exclusión del sector energía de fuente energía eólica</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1463,6 +1511,10 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+</tr>
 <tr>
 <td>4</td>
 <td>Asentamiento humano</td>
@@ -1480,8 +1532,8 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <td>Tular</td>
 </tr>
 <tr>
-<td>15</td>
-<td>Vegetación de petén</td>
+<td>14</td>
+<td>Vegetación de duna costera</td>
 </tr>
 <tr>
 <td>16</td>
@@ -1559,7 +1611,58 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table><p><strong>Tabla de exclusión general del sector energía</strong></p>
+</table><p><strong>Tabla de exclusión del sector energía de fuente biomasa</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Cobertura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+</tr>
+</tbody>
+</table><p><img alt="_images/mapa_exclusion.png" src="_images/mapa_exclusion.png" /></p>
+</div>
+<div class="section" id="id5">
+<h5>1.3.5.3 Mapa de aptitud de energía de fuente biomasa<a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h5>
+<p><img alt="_images/mapa_aptitud_biomasa.png" src="_images/mapa_aptitud_biomasa.png" /></p>
+</div>
+</div>
+<div class="section" id="zona-de-aprovechamiento-actual-del-sector-urbano">
+<h4>1.3.6 Zona de aprovechamiento actual del sector urbano<a class="headerlink" href="#zona-de-aprovechamiento-actual-del-sector-urbano" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><img alt="_images/mapa_aprov_energia.png" src="_images/mapa_aprov_energia.png" /></p>
+</div>
+<div class="section" id="zonas-de-exclusion">
+<h4>1.3.7 Zonas de exclusión<a class="headerlink" href="#zonas-de-exclusion" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><strong>Tabla de exclusión general del sector energía industrial</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1593,11 +1696,11 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <td>Vegetación halófila hidrófila</td>
 </tr>
 </tbody>
-</table><p><img alt="_images/mapa_exclusion.png" src="_images/mapa_exclusion.png" /></p>
+</table><p><img alt="_images/mapa_exclusion_energia.png" src="_images/mapa_exclusion_energia.png" /></p>
 </div>
-<div class="section" id="id5">
-<h5>1.3.5.3 Mapa de aptitud de energía de fuente biomasa<a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h5>
-<p><img alt="_images/mapa_aptitud_biomasa.png" src="_images/mapa_aptitud_biomasa.png" /></p>
+<div class="section" id="mapa-de-aptitud-de-energia-industrial">
+<h4>1.3.8 Mapa de aptitud de energía industrial<a class="headerlink" href="#mapa-de-aptitud-de-energia-industrial" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><img alt="_images/mapa_aptitud_energia.png" src="_images/mapa_aptitud_energia.png" /></p>
 <p><strong>Pesos globales de los atributos del sector energía industrial</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -1684,11 +1787,7 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 <td>0.002</td>
 </tr>
 </tbody>
-</table></div>
-</div>
-<div class="section" id="mapa-de-aptitud-de-energia-industrial">
-<h4>1.3.6 Mapa de aptitud de energía industrial<a class="headerlink" href="#mapa-de-aptitud-de-energia-industrial" title="Enlazar permanentemente con este título">¶</a></h4>
-<p><strong>Área por categoría de aptitud</strong></p>
+</table><p><strong>Área por categoría de aptitud</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1731,7 +1830,7 @@ Los convenios que suscriba la Secretaría con los estados, …, para la formulac
 </tbody>
 </table></div>
 <div class="section" id="sensibilidad-de-atributos-ambientales-del-sector-energia-industrial">
-<h4>1.3.7 Sensibilidad de atributos ambientales del sector energía industrial<a class="headerlink" href="#sensibilidad-de-atributos-ambientales-del-sector-energia-industrial" title="Enlazar permanentemente con este título">¶</a></h4>
+<h4>1.3.9 Sensibilidad de atributos ambientales del sector energía industrial<a class="headerlink" href="#sensibilidad-de-atributos-ambientales-del-sector-energia-industrial" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><img alt="_images/fi_analisis_sensibilidad_energia.png" src="_images/fi_analisis_sensibilidad_energia.png" /></p>
 <!--### Energía comunitaria
 

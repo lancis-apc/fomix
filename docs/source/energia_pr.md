@@ -285,7 +285,7 @@ Tipo de vegetación.
 
 Capa | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
 Año | 2017
 Campo | descripcio
 Escala | 1:250,000
@@ -462,15 +462,16 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
-**Tabla de exclusión general del sector energía**
+**Tabla de exclusión del sector energía de fuente hidrocarburos líquidos**
 
 ID | Cobertura
 -- | --
+1 | Acuícola
 4 | Asentamiento humano
 6 | Cuerpo de agua
 7 | Manglar
 13 | Tular
-15 | Vegetación de petén
+14 | Vegetación de duna costera
 16 | Vegetación halófila hidrófila
 
 ![](/recursos/energia/mapa_exclusion.png)
@@ -485,9 +486,9 @@ ID | Cobertura
 
 **Insumos**
 
-Capa | [1] Centrales eléctricas de gas; [2]   Gasoducto
+Capa | [1] Centrales eléctricas de gas; [2] Gasoducto
 -- | --
-Fuente | [1] Mapas de Infraestructura Energética y Recursos Renovables SENER;  [2] Gasoductos GeoComunes
+Fuente | [1] Mapas de Infraestructura Energética y Recursos Renovables SENER; [2] Gasoductos GeoComunes
 Año | [1] 2016; [2] 2020
 Escala | Sin dato
 Unidades | Adimensional
@@ -506,15 +507,16 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
-**Tabla de exclusión general del sector energía**
+**Tabla de exclusión del sector energía de fuente gas natural**
 
 ID | Cobertura
 -- | --
+1 | Acuícola
 4 | Asentamiento humano
 6 | Cuerpo de agua
 7 | Manglar
 13 | Tular
-15 | Vegetación de petén
+14 | Vegetación de duna costera
 16 | Vegetación halófila hidrófila
 
 ![](/recursos/energia/mapa_exclusion.png)
@@ -550,7 +552,17 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
+**Tabla de exclusión del sector energía de fuente solar**
 
+ID | Cobertura
+-- | --
+1 | Acuícola
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+14 | Vegetación de duna costera
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
 
 ![](/recursos/energia/mapa_exclusion_solar.png)
 
@@ -585,15 +597,16 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
-**Tabla de exclusión general del sector energía**
+**Tabla de exclusión del sector energía de fuente energía eólica**
 
 ID | Cobertura
 -- | --
+1 | Acuícola
 4 | Asentamiento humano
 6 | Cuerpo de agua
 7 | Manglar
 13 | Tular
-15 | Vegetación de petén
+14 | Vegetación de duna costera
 16 | Vegetación halófila hidrófila
 
 ![](/recursos/energia/mapa_exclusion.png)
@@ -629,7 +642,31 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
-**Tabla de exclusión general del sector energía**
+**Tabla de exclusión del sector energía de fuente biomasa**
+
+ID | Cobertura
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+14 | Vegetación de duna costera
+16 | Vegetación halófila hidrófila
+
+![](/recursos/energia/mapa_exclusion.png)
+
+##### 1.3.5.3 Mapa de aptitud de energía de fuente biomasa
+
+![](/recursos/energia/mapa_aptitud_biomasa.png)
+
+#### 1.3.6 Zona de aprovechamiento actual del sector urbano
+
+![](/recursos/energia/mapa_aprov_energia.png)
+
+#### 1.3.7 Zonas de exclusión
+
+**Tabla de exclusión general del sector energía industrial**
 
 ID | Cobertura
 -- | --
@@ -640,11 +677,11 @@ ID | Cobertura
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
 
-![](/recursos/energia/mapa_exclusion.png)
+![](/recursos/energia/mapa_exclusion_energia.png)
 
-##### 1.3.5.3 Mapa de aptitud de energía de fuente biomasa
+#### 1.3.8 Mapa de aptitud de energía industrial
 
-![](/recursos/energia/mapa_aptitud_biomasa.png)
+![](/recursos/energia/mapa_aptitud_energia.png)
 
 **Pesos globales de los atributos del sector energía industrial**
 
@@ -666,8 +703,6 @@ Eólica | Distancia a localidades | 0.004
 Eólica | Distancia a carreteras | 0.004
 Biomasa | Residuos agrícolas forestales | 0.002
 
-#### 1.3.6 Mapa de aptitud de energía industrial
-
 **Área por categoría de aptitud**
 
 Categoría | Km² | Porcentaje del estado
@@ -679,7 +714,7 @@ Baja | 17249.7 | 44
 Muy baja | 7959.2 | 20
 Nula | 2419.4 | 6
 
-#### 1.3.7 Sensibilidad de atributos ambientales del sector energía industrial
+#### 1.3.9 Sensibilidad de atributos ambientales del sector energía industrial
 
 ![](/recursos/energia/fi_analisis_sensibilidad_energia.png)
 
