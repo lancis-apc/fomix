@@ -320,13 +320,37 @@ Unidades | Kilómetros
 
 ![](/recursos/urbano/mapa_fv_urbano_crecimiento.png)
 
-#### 1.3.3 Zonas de exclusión
+#### 1.3.3 Zona de aprovechamiento actual del sector urbano
 
-#### 1.3.4 Reservas territoriales urbanas
+**Insumos**
+
+Capa | Asentamientos humanos y polígonos de localidades urbanas
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | [1] 2020; [2] 2017
+Escala | [1] Sin dato; [2] 1:250,000
+Unidades | Adimensional
+
+![](/recursos/urbano/mapa_aprov_urbano.png)
+
+#### 1.3.4 Zonas de exclusión
+
+**Insumos**
+
+Capa | Humedales y cenotes
+-- | --
+Fuente | [1] Modelo Cartográfico de Humedales INEGI; [2] Censo de cenotes y grutas SDS y [3] Cenotes POETY
+Año | [1] 2014; [2] [3] Sin dato
+Escala | [1] 1:50,000; [2] [3] Sin dato
+Unidades | Adimensional
+
+![](/recursos/urbano/mapa_exclusion_urb.png)
+
+#### 1.3.5 Reservas territoriales urbanas
 
 Este mapa se actualizará para incluir como aptitud muy alta los póligonos de reserva territorial incluidos en los programas de desarrollo urbano y vivienda del estado.
 
-#### 1.3.5 Mapa de aptitud urbano
+#### 1.3.6 Mapa de aptitud urbano
 
 ![](/recursos/urbano/mapa_aptitud_urb.png)
 
@@ -357,9 +381,9 @@ Baja | 2230.0 | 6
 Muy baja | 34032.4 | 86
 Nula | 2021.5 | 5
 
-#### 1.3.6 Sensibilidad de atributos ambientales
+#### 1.3.7 Sensibilidad de atributos ambientales
 
-
+![](/recursos/urbano/fi_analisis_sensibilidad_urbano.png)
 
 
 
