@@ -344,6 +344,23 @@ Año | [1] 2014; [2] [3] Sin dato
 Escala | [1] 1:50,000; [2] [3] Sin dato
 Unidades | Adimensional
 
+**Tabla de exclusión del sector urbano**
+
+ID | Categoría
+-- | --
+1 | Cenote
+2 | Charca
+3 | Depresión húmeda
+4 | Estanque artificial
+5 | Estanque de acuicultura
+6 | Estero
+7 | Excavación
+8 | Lago
+9 | Laguna costera
+10 | Laguna húmeda
+11 | Llanura inundada
+12 | Marisma
+
 ![](/recursos/urbano/mapa_exclusion_urb.png)
 
 #### 1.3.5 Reservas territoriales urbanas

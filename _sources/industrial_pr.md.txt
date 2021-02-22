@@ -417,12 +417,28 @@ ID | Categoría | Importancia | FV
 
 #### 1.3.2 Zonas de exclusión
 
+![](/recursos/industrial/mapa_exclusion_lig.png)
+
 #### 1.3.3 Mapa de aptitud de industria ligera
+
+![](/recursos/industrial/mapa_aptitud_lig.png)
 
 **Pesos Globales de los atributos ambientales de industria ligera**
 
+**Área por categoria de aptitud**
+
+Categoría | Km² | Porcentaje del   estado
+-- | -- | --:
+Muy alta | 517 | 1
+Alta | 1415.7 | 4
+Moderada | 6897.1 | 17
+Baja | 25415.6 | 64
+Muy baja | 2874.9 | 7
+Nula | 2416.2 | 6
+
 #### 1.3.4 Sensibilidad de atributos de industria ligera
 
+![](/recursos/industrial/fi_analisis_sensibilidad_industria_ligera.png)
 
 ## 2. Industria mediana y pesada
 
@@ -880,6 +896,35 @@ ID | Categoría | Importancia | FV
 **Función de valor de dispersión de emisiones**
 
 ![](/recursos/industrial/mapa_fv_pesm_bio_vul_acuifero.png)
+
+### 2.3 Mapa de aptitud
+
+#### 2.3.1 Aprovechamiento actual
+
+#### 2.3.2 Zonas de exclusión
+
+![](/recursos/industrial/mapa_exclusion_pesm.png)
+
+#### 2.3.3 Mapa de aptitud de industria mediana y pesada
+
+![](/recursos/industrial/mapa_aptitud_pesm.png)
+
+**Pesos Globales de los atributos ambientales de industria ligera**
+
+**Área por categoria de aptitud**
+
+Categoría | Km² | Porcentaje del estado
+-- | -- | --:
+Muy alta | 1529.5 | 4
+Alta | 2570.8 | 7
+Moderada | 10017.6 | 25
+Baja | 17272.4 | 44
+Muy baja | 5730.1 | 14
+Nula | 2416.2 | 6
+
+#### 2.3.4 Sensibilidad de atributos de industria mediana y pesada
+
+![](/recursos/industrial/fi_analisis_sensibilidad_industria_pesada.png)
 
 <!-- .. csv-table::
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv

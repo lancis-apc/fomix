@@ -9,9 +9,9 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 [Lista de participantes]()
 
-## 1. Agricultura de riego
+## 1. Agricultura tecnificada de riego
 
-
+ Agricultura comercial que se desarrolla en grandes extensiones, utiliza infraestructura para el riego de los cultivos e incorpora diversas tecnologías y soluciones (maquinaria, aplicación de agroquímicos, semillas mejoradas, entre otros) para mejorar la eficiencia y aumentar la producción.
 
 ### 1.1 Modelo de decisión
 
@@ -21,11 +21,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 #### 1.2.1 Infraestructura
 
-Criterio|Definición
--- | -- 
+Criterio | Definición
+-- | --
 Hidroagrícola | Distrito de riego y unidades de riego.
 Energía | Distancia a red de transmisión eléctrica.
-Vías de comunicación | Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.
+Vías de comunicación | Distancia a caminos y carreteras para el transporte de insumos y productos.
 
 ##### 1.2.1.1 Hidroagrícola
 
@@ -96,10 +96,10 @@ Unidades | Kilómetros
 
 #### 1.2.2 Biofísicos
 
-Criterio|Definición|
- -- | -- |
-Disponibilidad de agua | Posibilidad de extraer agua subterránea considerando el nivel piezométrico.
-Pendiente| Elevación del terreno.
+Criterio | Definición
+-- | --
+Disponibilidad de agua | Posibilidad de extraer agua subterránea, considerando el nivel piezométrico.
+Pendiente | Elevación del terreno.
 Tipo de suelo | Edafología.
 Tipo de cobertura | Tipos de vegetación y usos de suelo.
 
@@ -222,10 +222,10 @@ ID | Categoría | Importancia | FV
 
 #### 1.2.3 Socioeconómicos
 
-Criterio|Definición|
--- | -- |
-Mercados | Distancia a las localidades en las que se ubican centros de almacenamiento y centrales de abasto.
-Mano de obra | Distancia a localidades/municipios  donde existe un mayor porcentaje de población económicamente activa ocupada en el sector primario.
+Criterio | Definición
+-- | --
+Mercados | Distancia a las principales localidades en las que se venden los productos agrícolas.
+Mano de obra | Municipios con mayor porcentaje de población económicamente activa ocupada en el sector primario.
 Tenencia | Tenencia de la tierra.
 
 ##### 1.2.3.1 Mercados
@@ -288,12 +288,130 @@ ID | Categoría | Importancia | FV
 
 ![](/recursos/agricultura/mapa_fv_agrie_socio_tene_tenencia_tierra.png)
 
-## 2. Agricultura de temporal
+## 2. Agricultura tecnificada de temporal
 
-
+Agricultura comercial que se desarrolla en grandes extensiones, depende de la precipitación pluvial e incorpora diversas tecnologías y soluciones (maquinaria, aplicación de agroquímicos, semillas mejoradas, entre otros) para mejorar la eficiencia y aumentar la producción.
 
 ### 2.1 Modelo de decisión
 
 ![](/recursos/agricultura/a_temporal.png)
 
 ### 2.2 Criterios
+
+#### 2.2.1 Biofísicos
+
+Criterio | Definición
+-- | --
+Precipitación | Lluvia acumulada anual.
+Tipo de suelo | Edafología.
+Pendiente | Elevación del terreno.
+Tipo de cobertura | Tipos de vegetación y usos de suelo. 
+
+##### 2.2.1.1 Precipitación
+
+Lluvia acumulada anual.
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+5 | e) 1081-1233 mm | Muy alta | 1.00
+4 | d) 930-1081 mm | Alta | 0.75
+3 | c) 778-930 mm | Moderada | 0.50
+1 | a) 551-626 mm | Baja | 0.25
+2 | b) 626-778 mm | Baja | 0.25
+
+##### 2.2.1.2 Tipo de suelo
+
+Edafología.
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+7 | Luvisol | Muy alta | 1.00
+8 | Nitosol | Muy alta | 1.00
+2 | Cambisol | Alta | 0.75
+3 | Chernozem | Alta | 0.75
+5 | Histosol | Alta | 0.75
+4 | Gleysol | Moderada | 0.50
+9 | Phaeozem | Moderada | 0.50
+12 | Vertisol | Moderada | 0.50
+1 | Arenosol | Baja | 0.25
+6 | Leptosol | Baja | 0.25
+10 | Regosol | Baja | 0.25
+11 | Solonchak | Nula | 0.00
+13 | No aplica | Nula | 0.00
+
+##### 2.2.1.3 Pendiente
+
+Elevación del terreno.
+
+##### 2.2.1.4 Tipo de cobertura
+
+Tipos de vegetación y usos de suelo.
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+3 | Agricultura de temporal | Muy alta | 1.00
+2 | Agricultura de riego | Alta | 0.75
+8 | Pastizal | Moderada | 0.50
+9 | Selva baja | Moderada | 0.50
+10 | Selva mediana | Moderada | 0.50
+11 | Sin vegetación | Baja | 0.25
+12 | Sábana | Baja | 0.25
+1 | Acuícola | Nula | 0.00
+4 | Asentamiento humano | Nula | 0.00
+5 | Bosque cultivado/Palmar inducido | Nula | 0.00
+6 | Cuerpo de agua | Nula | 0.00
+7 | Manglar | Nula | 0.00
+13 | Tular | Nula | 0.00
+14 | Vegetación de duna costera | Nula | 0.00
+15 | Vegetación de petén | Nula | 0.00
+16 | Vegetación halófila hidrófila | Nula | 0.00
+17 | ND | Nula | 0.00
+
+#### 2.2.2 Socioeconómicos
+
+Criterio | Definición
+-- | --
+Mercados | Distancia a las principales localidades en las que se venden los productos agrícolas.
+Mano de obra | Municipios con mayor porcentaje de población económicamente activa ocupada en el sector primario.
+Tenencia | Tenencia de la tierra.
+
+##### 2.2.2.1 Mercados
+
+Distancia a las principales localidades en las que se venden los productos agrícolas.
+
+##### 2.2.2.2 Mano de obra
+
+Municipios con mayor porcentaje de población económicamente activa ocupada en el sector primario.
+
+##### 2.2.2.3 Tenencia
+
+Tenencia de la tierra.
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+3 | No ejidal | Muy alta | 1.00
+2 | Zona de tierras parceladas | Alta | 0.75
+1 | Tierra de uso común | Baja | 0.25
+
+#### 2.2.3 Infraestructura
+
+Criterio | Definición
+-- | --
+Vías de comunicación | Distancia a caminos y carreteras para el transporte de insumos y productos.
+Combustible | Distancia a centros de abastecimiento de gasolina y diesel al por menor.
+
+##### 2.2.3.1 Vías de comunicación
+
+Distancia a caminos y carreteras para el transporte de insumos y productos.
+
+##### 2.2.3.2 Combustible
+
+Distancia a centros de abastecimiento de gasolina y diesel al por menor.
