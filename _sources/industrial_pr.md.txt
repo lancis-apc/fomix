@@ -428,8 +428,8 @@ ID | Categoría | Importancia | FV
 **Área por categoria de aptitud**
 
 Categoría | Km² | Porcentaje del   estado
--- | -- | --:
-Muy alta | 517 | 1
+-- | --: | --:
+Muy alta | 517.0 | 1
 Alta | 1415.7 | 4
 Moderada | 6897.1 | 17
 Baja | 25415.6 | 64
@@ -914,7 +914,7 @@ ID | Categoría | Importancia | FV
 **Área por categoria de aptitud**
 
 Categoría | Km² | Porcentaje del estado
--- | -- | --:
+-- | --: | --:
 Muy alta | 1529.5 | 4
 Alta | 2570.8 | 7
 Moderada | 10017.6 | 25
