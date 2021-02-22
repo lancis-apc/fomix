@@ -279,6 +279,10 @@ Unidades | Kilómetros
 
 ![](/recursos/forestal/fi_fv_mad_infra_infra_d_localidades.png)
 
+**Función de valor de abastecimiento**
+
+![](/recursos/forestal/mapa_fv_mad_infra_infra_d_localidades.png)
+
 ##### 1.2.3.2 Centros de almacenamiento
 
 Distancia a centros de almacenamiento y transformación.
@@ -576,6 +580,10 @@ Unidades | Kilómetros
 **Parámetros de la función de valor**
 
 ![](/recursos/forestal/fi_fv_mad_infra_infra_d_localidades.png)
+
+**Función de valor de abastecimiento**
+
+![](/recursos/forestal/mapa_fv_for_nomad_infra_infra_d_localidades)
 
 ##### 2.2.3.2 Centros de almacenamiento
 
