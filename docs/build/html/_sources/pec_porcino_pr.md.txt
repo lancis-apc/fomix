@@ -110,6 +110,14 @@ Año | [1] Sin dato; [2] [3] 2020
 Escala | Localidad
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/pec_porcino/fi_fv_por_infra_tif_d_rastros_porcinos_avicolas.png)
+
+**Función de valor de distancia a rastro y empacadora**
+
+![](/recursos/pec_porcino/mapa_fv_por_infra_tif_d_rastros_porcinos_avicolas.png)
+
 ##### 1.2.1.4 Puerto Progreso
 
 Distancia a Puerto Progreso.
@@ -153,19 +161,31 @@ Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
 
+**Parámetros de la función de valor**
+
+![](/recursos/pec_porcino/fi_fv_por_bio_agua_d_manto_freatico.png)
+
+**Función de valor de disponibilidad de agua**
+
+![](/recursos/pec_porcino/mapa_fv_por_bio_agua_d_manto_freatico.png)
+
 ##### 1.2.2.2 Cobertura
 
 Vegetación o uso de suelo actual.
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Capa | Cobertura del suelo
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | Mapa de coberturas del suelo del estado de Yucatán al año base 2016 CONAFOR
+Año | 2020
+Campo | Desc_SAMOF
+Escala | Sin dato
 Unidades | Adimensional
+
+**Función de valor de cobertura**
+
+![](/recursos/pec_porcino/mapa_fv_por_bio_usv_usv_cobertura_conafor.png)
 
 #### 1.2.3 Mano de obra
 
@@ -181,13 +201,21 @@ Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.
 
 **Insumos**
 
-Capa | Distancia a localidades rurales - urbanas   (entre 2,500 y 15,000 habitantes)
+Capa | Distancia a localidades rurales - urbanas (entre 2,500 y 15,000 habitantes)
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/pec_porcino/fi_fv_por_socio_loca_d_localidades_2500_15k_exc.png)
+
+**Función de valor de rural-urbano**
+
+![](/recursos/pec_porcino/mapa_fv_por_socio_loca_d_localidades_2500_15k_exc.png)
 
 ##### 1.2.3.2 Rurales
 
@@ -195,13 +223,21 @@ Distancia localidades rurales < 2,500 habitantes.
 
 **Insumos**
 
-Capa | Distancia a localidades rurales (menos de   2,500 habitantes)
+Capa | Distancia a localidades rurales (menos de 2,500 habitantes)
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/pec_porcino/fi_fv_por_socio_loca_d_localidades_2500_exc.png)
+
+**Función de valor de rurales**
+
+![](/recursos/pec_porcino/mapa_fv_por_socio_loca_d_localidades_2500_exc.png)
 
 ##### 1.2.3.3 Urbanos
 
@@ -216,3 +252,85 @@ Año | 2020
 Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/pec_porcino/fi_fv_por_socio_loca_d_localidades_15k_exc.png)
+
+**Función de valor de urbanos**
+
+![](/recursos/pec_porcino/mapa_fv_por_socio_loca_d_localidades_15k_exc.png)
+
+### 1.3 Mapa de aptitud
+
+#### 1.3.1 Zona de aprovechamiento actual del sector pecuario porcino
+
+**Insumos**
+
+Capa | Granjas porcinas
+-- | --
+Fuente | Granjas porcinas y avícolas en la Península de Yucatán GeoComunes
+Año | 2019
+Escala | Sin dato
+Unidades | Adimensional
+
+![](/recursos/pec_porcino/mapa_por_aprov_actual.png)
+
+#### 1.3.2 Zona de exclusión
+
+**Insumos**
+
+Capa | Cobertura del suelo
+-- | --
+Fuente | Mapa de coberturas del suelo del estado de Yucatán al año base 2016 CONAFOR
+Año | 2020
+Campo | Desc_SAMOF
+Escala | Sin dato
+Unidades | Adimensional
+
+**Tabla de exclusión del sector pecuario porcíno y avícola**
+
+ID | Categoría
+-- | --
+1 | Agua (H2O, PRE y ACUI)
+3 | Manglar y Petén (VM y VP)
+12 | Tular (VT)
+13 | Urbano y Construido (ZU y AH)
+14 | Vegetación Halófila Hidrófila (VHH)
+15 | Vegetación de Dunas Costeras (VU)
+
+![](/recursos/pec_porcino/mapa_por_exclusion.png)
+
+#### 1.3.3 Mapa de aptitud del sector pecuario porcino y avícola
+
+![](/recursos/pec_porcino/mapa_por_aptitud.png)
+
+**Tabla de pesos globales**
+
+Criterio | Peso
+-- | --
+Distancia a carreteras y prolongación | 0.265
+Profundidad del acuífero | 0.232
+Distancia a redes eléctricas | 0.161
+Distancia a rastro y empacadora | 0.087
+Distancia a caminos y veredas | 0.066
+Asentamiento rural-urbano | 0.053
+Puerto Progreso | 0.047
+Cobertura | 0.046
+Asentamiento rural | 0.030
+Asentamiento urbano | 0.012
+
+**Área por categoria de aptitud**
+
+Categoría | Km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 6792.6 | 17
+Alta | 14471.5 | 37
+Moderada | 10005.6 | 25
+Baja | 3724.9 | 9
+Muy baja | 1471.0 | 4
+Nula | 3071.1 | 8
+
+#### 1.3.4 Sensibilidad de atributos ambientales
+
+![](/recursos/pec_porcino/fi_analisis_sensibilidad_porcino_avicola.png)

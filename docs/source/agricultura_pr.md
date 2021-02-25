@@ -241,6 +241,14 @@ Año | Sin dato
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/agricultura/fi_fv_agrie_socio_merca_almacen_central_abasto_agricola.png)
+
+**Función de valor de mercados**
+
+![](/recursos/agricultura/mapa_fv_agrie_socio_merca_almacen_central_abasto_agricola.png)
+
 ##### 1.2.3.2 Mano de obra
 
 Distancia a localidades/municipios donde existe un mayor porcentaje de población económicamente activa ocupada en el sector primario.
@@ -311,6 +319,15 @@ Tipo de cobertura | Tipos de vegetación y usos de suelo. 
 
 Lluvia acumulada anual.
 
+**Insumos**
+
+Capa | Precipitación
+-- | --
+Fuente | Adaptado de: Precipitación acumulada anual. Atlas de Peligros por Fenómenos Naturales del Estado de Yucatán. Servicio Geológico Mexicano
+Año | 1960-2000
+Escala | Sin dato
+Unidades | mm
+
 **Parámetros de la función de valor**
 
 ID | Categoría | Importancia | FV
@@ -321,9 +338,23 @@ ID | Categoría | Importancia | FV
 1 | a) 551-626 mm | Baja | 0.25
 2 | b) 626-778 mm | Baja | 0.25
 
+**Función de valor de precipitación**
+
+![](/recursos/agricultura/mapa_fv_agtem_bio_prec_precipitacion.png)
+
 ##### 2.2.1.2 Tipo de suelo
 
 Edafología.
+
+**Insumos**
+
+Capa | Edafología
+-- | --
+Fuente | Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI
+Año | 2014
+Campo | tipo_suelo
+Escala | 1:250,000
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -343,13 +374,44 @@ ID | Categoría | Importancia | FV
 11 | Solonchak | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+**Función de valor de tipo de suelo**
+
+![](/recursos/agricultura/mapa_fv_agtem_bio_suelo_tipo_suelo.png)
+
 ##### 2.2.1.3 Pendiente
 
 Elevación del terreno.
 
+**Insumos**
+
+Capa | Pendiente
+-- | --
+Fuente | Adaptado de: Continuo de Elevaciones Mexicano (CEM) INEGI
+Año | 2013
+Resolución | 15 m x 15 m
+Unidades | Grados
+
+**Parámetros de la función de valor**
+
+![](/recursos/agricultura/fi_fv_agtem_bio_pend_pendiente_grados.png)
+
+**Función de valor de pendiente**
+
+![](/recursos/agricultura/mapa_fv_agtem_bio_pend_pendiente_grados.png)
+
 ##### 2.2.1.4 Tipo de cobertura
 
 Tipos de vegetación y usos de suelo.
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -373,6 +435,10 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+**Función de valor de tipo de cobertura**
+
+![](/recursos/agricultura/mapa_fv_agtem_bio_cober_cobertura_usv_svi_16cats.png)
+
 #### 2.2.2 Socioeconómicos
 
 Criterio | Definición
@@ -385,13 +451,57 @@ Tenencia | Tenencia de la tierra.
 
 Distancia a las principales localidades en las que se venden los productos agrícolas.
 
+**Insumos**
+
+Capa | Distancia a localidades con centrales de abasto y almacenes agrícolas
+-- | --
+Fuente | Adaptado de: Infraestructura del Sector Agroalimentario: Almacenes y centrales de abasto. Servicio de Información Agroalimentaria y Pesquera - SADER
+Año | Sin dato
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/agricultura/fi_fv_agtem_socio_merca_almacen_central_abasto_agricola.png)
+
+**Función de valor de mercados**
+
+![](/recursos/agricultura/mapa_fv_agtem_socio_merca_almacen_central_abasto_agricola.png)
+
 ##### 2.2.2.2 Mano de obra
 
 Municipios con mayor porcentaje de población económicamente activa ocupada en el sector primario.
 
+**Insumos**
+
+Capa | Población económicamente activa en el sector primario
+-- | --
+Fuente | Adaptado de: [1] Encuesta Intercensal INEGI y [2] División política municipal INEGI
+Año | [1] 2015; [2] 2018
+Campo | [1] Sector de actividad económica primario
+Escala | [2] 1:250,000
+Unidades | Porcentaje
+
+**Parámetros de la función de valor**
+
+![](/recursos/agricultura/fi_fv_agtem_socio_pea_pea_sector_primario.png)
+
+**Función de valor de mano de obra**
+
+![](/recursos/agricultura/mapa_fv_agtem_socio_pea_pea_sector_primario.png)
+
 ##### 2.2.2.3 Tenencia
 
 Tenencia de la tierra.
+
+**Insumos**
+
+Capa | Tenencia de la tierra
+-- | --
+Fuente | [1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN
+Año | 2020
+Escala | Sin dato
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -412,6 +522,40 @@ Combustible | Distancia a centros de abastecimiento de gasolina y diesel al por 
 
 Distancia a caminos y carreteras para el transporte de insumos y productos.
 
+**Insumos**
+
+Capa | Distancia a la red vial
+-- | --
+Fuente | Red Nacional de Caminos (RNC) Red vial INEGI
+Año | 2019
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/agricultura/fi_fv_agtem_infra_com_d_carreteras_caminos.png)
+
+**Función de valor de vías de comunicación**
+
+![](/recursos/agricultura/mapa_fv_agtem_infra_com_d_carreteras_caminos.png)
+
 ##### 2.2.3.2 Combustible
 
 Distancia a centros de abastecimiento de gasolina y diesel al por menor.
+
+**Insumos**
+
+Capa | Distancia a centros de abastecimiento de gasolina y diesel
+-- | --
+Fuente | [1]Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
+Año | 2020
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/agricultura/fi_fv_agtem_infra_ene_gasolina.png)
+
+**Función de valor de combustible**
+
+![](/recursos/agricultura/mapa_fv_agtem_infra_ene_gasolina.png)

@@ -43,7 +43,7 @@ Capa | Viviendas con internet por localidad
 Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] VIVTOT y VPH_INTER
-Unidades | Adimensional
+Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
@@ -207,12 +207,12 @@ Distancia a localidades con cobertura de red de agua potable.
 
 **Insumos**
 
-Capa | Viviendas con acceso a agua potable por   localidad
+Capa | Viviendas con acceso a agua potable por localidad
 -- | --
 Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] VIVTOT y VPH_AEASP
-Unidades | Adimensional
+Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
@@ -300,7 +300,7 @@ Unidades | Kilómetros
 Criterio | Definición
 -- | --
 Industria instalada | Localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en las categorías (334) Fabricación de equipo de computación, comunicación, medición y de otros equipos, componentes y accesorios electrónicos y (493) Servicios de almacenamiento, así como el Parque Científico Tecnológico de Yucatán.
-Localidades | Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.
+Localidades | Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.  Se asigna un mayor peso de importancia a las localidades donde hay universidades e instituciones de educación superior con carreras en el campo de informática, computación, sistemas o afines.
 Tenencia | Tenencia de la tierra.
 
 
@@ -322,7 +322,7 @@ Unidades | Adimensional
 
 ##### 1.2.2.2 Localidades
 
-Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.
+Distancia a localidades donde se tiene acceso a capital social, servicios y mercado. Se asigna un mayor peso de importancia a las localidades donde hay universidades e instituciones de educación superior con carreras en el campo de informática, computación, sistemas o afines.
 
 **Insumos**
 
@@ -330,11 +330,14 @@ Capa | Distancia a localidades
 -- | --
 Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
 Año | 2020
-Unidades | Kilómetros
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_socio_d_localidades.png)  
+Categoría | Importancia | FV
+-- | -- | --:
+Distancia de 5 kms a localidades que   cuentan con universidades con carreras de computación o afines | Muy alta | 1.00
+Distancia de 5 kms a localidades | Baja | 0.25  
 
 **Función de valor de localidades**
 
@@ -398,7 +401,7 @@ ID | Categoría | Importancia | FV
 8 | Pastizal | Moderada | 0.70
 9 | Selva baja | Moderada | 0.70
 10 | Selva mediana | Moderada | 0.70
-12 | Sábana | Moderada | 0.70
+12 | Sabana | Moderada | 0.70
 6 | Cuerpo de agua | Nula | 0.00
 7 | Manglar | Nula | 0.00
 13 | Tular | Nula | 0.00
@@ -416,6 +419,27 @@ ID | Categoría | Importancia | FV
 #### 1.3.1 Aprovechamiento actual
 
 #### 1.3.2 Zonas de exclusión
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión del subsector energía ligera**
+
+ID | Categoría
+-- | --
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+14 | Vegetación de duna costera
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
 
 ![](/recursos/industrial/mapa_exclusion_lig.png)
 
@@ -468,7 +492,7 @@ Distancia a líneas de transmisión eléctrica de 230 KV y 400 KV y a gasoductos
 
 Capa | Distancia a líneas de transmisión de energía eléctrica y gasoducto
 -- | --
-Fuente | [1] Líneas de transmisión en México. GeoComunes con datos de CFE y [2] Gasoducto GeoComunes
+Fuente | [1] Líneas de transmisión en México. GeoComunes con datos de CFE y [2] Gasoducto GeoComunes con datos de CRE, SEMARNAT, ASEA y CFE
 Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
@@ -492,7 +516,7 @@ Capa | Viviendas con acceso a agua potable por localidad
 Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] VIVTOT y VPH_AEASP
-Unidades | Adimensional
+Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
@@ -711,7 +735,7 @@ Capa | Viviendas con internet por localidad
 Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] VIVTOT y VPH_INTER
-Unidades | Adimensional
+Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
@@ -856,7 +880,7 @@ ID | Categoría | Importancia | FV
 8 | Pastizal | Moderada | 0.70
 9 | Selva baja | Moderada | 0.70
 10 | Selva mediana | Moderada | 0.70
-12 | Sábana | Moderada | 0.70
+12 | Sabana | Moderada | 0.70
 6 | Cuerpo de agua | Nula | 0.00
 7 | Manglar | Nula | 0.00
 13 | Tular | Nula | 0.00
@@ -902,6 +926,27 @@ ID | Categoría | Importancia | FV
 #### 2.3.1 Aprovechamiento actual
 
 #### 2.3.2 Zonas de exclusión
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión del subsector energía mediana y pesada**
+
+ID | Categoría
+-- | --
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+14 | Vegetación de duna costera
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
 
 ![](/recursos/industrial/mapa_exclusion_pesm.png)
 

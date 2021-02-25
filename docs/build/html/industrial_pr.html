@@ -272,7 +272,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Unidades</td>
-<td>Adimensional</td>
+<td>Porcentaje</td>
 </tr>
 </tbody>
 </table><p><strong>Parámetros de la función de valor</strong></p>
@@ -550,7 +550,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <thead>
 <tr>
 <th>Capa</th>
-<th>Viviendas con acceso a agua potable por   localidad</th>
+<th>Viviendas con acceso a agua potable por localidad</th>
 </tr>
 </thead>
 <tbody>
@@ -568,7 +568,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Unidades</td>
-<td>Adimensional</td>
+<td>Porcentaje</td>
 </tr>
 </tbody>
 </table><p><strong>Parámetros de la función de valor</strong></p>
@@ -720,7 +720,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Localidades</td>
-<td>Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.</td>
+<td>Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.  Se asigna un mayor peso de importancia a las localidades donde hay universidades e instituciones de educación superior con carreras en el campo de informática, computación, sistemas o afines.</td>
 </tr>
 <tr>
 <td>Tenencia</td>
@@ -757,7 +757,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </div>
 <div class="section" id="localidades">
 <h5>1.2.2.2 Localidades<a class="headerlink" href="#localidades" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.</p>
+<p>Distancia a localidades donde se tiene acceso a capital social, servicios y mercado. Se asigna un mayor peso de importancia a las localidades donde hay universidades e instituciones de educación superior con carreras en el campo de informática, computación, sistemas o afines.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -777,12 +777,31 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Unidades</td>
-<td>Kilómetros</td>
+<td>Adimensional</td>
 </tr>
 </tbody>
 </table><p><strong>Parámetros de la función de valor</strong></p>
-<p><img alt="_images/fi_fv_lig_socio_d_localidades.png" src="_images/fi_fv_lig_socio_d_localidades.png" /></p>
-<p><strong>Función de valor de localidades</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Importancia</th>
+<th align="right">FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distancia de 5 kms a localidades que   cuentan con universidades con carreras de computación o afines</td>
+<td>Muy alta</td>
+<td align="right">1.00</td>
+</tr>
+<tr>
+<td>Distancia de 5 kms a localidades</td>
+<td>Baja</td>
+<td align="right">0.25</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de localidades</strong></p>
 <p><img alt="_images/mapa_fv_lig_socio_d_localidades.png" src="_images/mapa_fv_lig_socio_d_localidades.png" /></p>
 </div>
 <div class="section" id="tenencia">
@@ -963,7 +982,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>12</td>
-<td>Sábana</td>
+<td>Sabana</td>
 <td>Moderada</td>
 <td>0.70</td>
 </tr>
@@ -1022,7 +1041,71 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </div>
 <div class="section" id="zonas-de-exclusion">
 <h4>1.3.2 Zonas de exclusión<a class="headerlink" href="#zonas-de-exclusion" title="Enlazar permanentemente con este título">¶</a></h4>
-<p><img alt="_images/mapa_exclusion_lig.png" src="_images/mapa_exclusion_lig.png" /></p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Tabla de exclusión del subsector energía ligera</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+</tr>
+</tbody>
+</table><p><img alt="_images/mapa_exclusion_lig.png" src="_images/mapa_exclusion_lig.png" /></p>
 </div>
 <div class="section" id="mapa-de-aptitud-de-industria-ligera">
 <h4>1.3.3 Mapa de aptitud de industria ligera<a class="headerlink" href="#mapa-de-aptitud-de-industria-ligera" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -1130,7 +1213,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Líneas de transmisión en México. GeoComunes con datos de CFE y [2] Gasoducto GeoComunes</td>
+<td>[1] Líneas de transmisión en México. GeoComunes con datos de CFE y [2] Gasoducto GeoComunes con datos de CRE, SEMARNAT, ASEA y CFE</td>
 </tr>
 <tr>
 <td>Año</td>
@@ -1176,7 +1259,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Unidades</td>
-<td>Adimensional</td>
+<td>Porcentaje</td>
 </tr>
 </tbody>
 </table><p><strong>Parámetros de la función de valor</strong></p>
@@ -1564,7 +1647,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Unidades</td>
-<td>Adimensional</td>
+<td>Porcentaje</td>
 </tr>
 </tbody>
 </table><p><strong>Parámetros de la función de valor</strong></p>
@@ -1936,7 +2019,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>12</td>
-<td>Sábana</td>
+<td>Sabana</td>
 <td>Moderada</td>
 <td>0.70</td>
 </tr>
@@ -2075,7 +2158,71 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </div>
 <div class="section" id="id26">
 <h4>2.3.2 Zonas de exclusión<a class="headerlink" href="#id26" title="Enlazar permanentemente con este título">¶</a></h4>
-<p><img alt="_images/mapa_exclusion_pesm.png" src="_images/mapa_exclusion_pesm.png" /></p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Tabla de exclusión del subsector energía mediana y pesada</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+</tr>
+</tbody>
+</table><p><img alt="_images/mapa_exclusion_pesm.png" src="_images/mapa_exclusion_pesm.png" /></p>
 </div>
 <div class="section" id="mapa-de-aptitud-de-industria-mediana-y-pesada">
 <h4>2.3.3 Mapa de aptitud de industria mediana y pesada<a class="headerlink" href="#mapa-de-aptitud-de-industria-mediana-y-pesada" title="Enlazar permanentemente con este título">¶</a></h4>

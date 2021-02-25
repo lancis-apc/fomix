@@ -5,9 +5,9 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Aumentar la capacidad de producción bovina a largo plazo, minimizando el crecimiento de la superficie destinada a esta actividad y haciendo más eficiente el uso del área actual.
-Incrementar sustentablemente la eficiencia y resiliencia de la actividad, a través de la restauración de paisajes y la protección de la biodiversidad, así como la implementación de innovaciones en el sistema de producción.
-Mantener y restaurar la fertilidad de suelo para obtener suficiente cantidad de biomasa que permita hacer más eficiente la actividad para que la producción por superficie sea rentable en el largo plazo, así como la diversificación de la actividad a sistemas agroforestales u otras actividades.
+* Aumentar la capacidad de producción bovina a largo plazo, minimizando el crecimiento de la superficie destinada a esta actividad y haciendo más eficiente el uso del área actual.
+* Incrementar sustentablemente la eficiencia y resiliencia de la actividad, a través de la restauración de paisajes y la protección de la biodiversidad, así como la implementación de innovaciones en el sistema de producción.
+* Mantener y restaurar la fertilidad de suelo para obtener suficiente cantidad de biomasa que permita hacer más eficiente la actividad para que la producción por superficie sea rentable en el largo plazo, así como la diversificación de la actividad a sistemas agroforestales u otras actividades.
 
 [Lista de participantes]()
 
@@ -206,6 +206,15 @@ Unidades | Kilómetros
 
 Distancia a localidades con centros de acopio y de comercialización de ganado (subastas).
 
+**Insumos**
+
+Capa | Distancia a centros de acopio y subasta ganadera
+-- | --
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | 2020
+Escala | Localidad
+Unidades | Kilómetros
+
 **Parámetros de la función de valor**
 
 ![](/recursos/pec_bovino/fi_fv_bov_infra_d_centros_acopio_bov.png)
@@ -234,3 +243,22 @@ Unidades | Kilómetros
 **Función de valor de rastros**
 
 ![](/recursos/pec_bovino/mapa_fv_bov_infra_d_rastros_bov.png)
+
+### 1.3 Mapa de aptitud
+
+#### 1.3.1 Zona de exclusión
+
+#### 1.3.2 Mapa de aptitud del sector pecuario bovino
+
+**Área por categoria de aptitud**
+
+Categoría | Km² | Porcentaje del estado
+-- | --: | --:
+Muy alta | 3679.0 | 9
+Alta | 21901.9 | 55
+Moderada | 10084.4 | 26
+Baja | 258.8 | 1
+Muy baja | 804.5 | 2
+Nula | 2808.0 | 7
+
+#### 1.3.3 Sensibilidad de criterios ambientales
