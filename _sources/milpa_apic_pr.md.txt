@@ -63,6 +63,10 @@ ID | Categoria | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+**Función de valor de cobertura**
+
+![](/recursos/milpa_apic/mapa_fv_mil_bio_usv_cobertura_usv_svi_16cats.png)
+
 ##### 1.2.1.2 Tipo de suelo
 
 Tipo de suelo (Edafología).
@@ -95,6 +99,10 @@ ID | Categoría | Importancia | FV
 11 | Solonchak | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+**Función de valor de tipo de suelo**
+
+![](/recursos/milpa_apic/mapa_fv_mil_bio_suelo_tipo_suelo.png)
+
 ##### 1.2.1.3 Disponibilidad de agua
 
 Fuentes de acceso al agua.
@@ -115,6 +123,14 @@ Fuente | Adaptado de: Precipitación mensual, periodo: 2000 (1980-2009) Institut
 Año | 2019
 Resolución | 1000 m x 1000 m
 Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_mil_bio_agua_precipitacion_prom_may_jun_jul.png)
+
+**Función de valor de precipitación**
+
+![](/recursos/milpa_apic/mapa_fv_mil_bio_agua_precipitacion_prom_may_jun_jul.png)
 
 #### 1.2.2 Sociales
 
@@ -137,6 +153,14 @@ Campo | [2] POBTOT y P3YM_HLI
 Escala | Municipal
 Unidades | Porcentaje
 
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_mil_soc_indi_porcentaje_indigena_municipal.png)
+
+**Función de valor de población indígena**
+
+![](/recursos/milpa_apic/mapa_fv_mil_soc_indi_porcentaje_indigena_municipal.png)
+
 ##### 1.2.2.2 Tenencia de la tierra
 
 Zonas de área común, parcelas y áreas no ejidales.
@@ -149,6 +173,10 @@ Fuente | [1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN
 Año | 2020
 Escala | Sin dato
 Unidades | Adimensional
+
+**Función de valor de tenencia de la tierra**
+
+![](/recursos/milpa_apic/mapa_fv_mil_soc_ejido_tenencia_tierra.png)
 
 #### 1.2.3 Infraestructura
 
@@ -179,6 +207,14 @@ Año | 2019
 Campo | TIPO_VIAL
 Escala | Sin dato
 
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_mil_infra_cam_d_carretera_prolongacion.png)
+
+**Función de valor de carreteras**
+
+![](/recursos/milpa_apic/mapa_fv_mil_infra_cam_d_carretera_prolongacion.png)
+
 ###### 1.2.3.1.2 Veredas
 
 Distancia a caminos y veredas.
@@ -192,6 +228,14 @@ Año | 2019
 Campo | TIPO_VIAL
 Escala | Sin dato
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_mil_infra_cam_d_caminos_veredas.png)
+
+**Función de valor de veredas**
+
+![](/recursos/milpa_apic/mapa_fv_mil_infra_cam_d_caminos_veredas.png)
 
 ##### 1.2.3.2 Distancia a centros de acopio
 
@@ -216,6 +260,14 @@ Año | 2020
 Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_mil_infra_merc_d_localidades_2500.png)
+
+**Función de valor de distancia a localidades rurales**
+
+![](/recursos/milpa_apic/mapa_fv_mil_infra_merc_d_localidades_2500.png)
 
 ###### 1.2.3.2.2 Distancia a localidades rurales-urbanas
 
@@ -245,6 +297,21 @@ Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Kilómetros
 
+### 1.3 Mapa de aptitud
+
+#### 1.3.1 Mapa de aptitud de milpa maya
+
+##### 1.3.1.1 Zonas de aprovechamiento actual de milpa maya
+
+**Insumos**
+
+Capa | Milpa de subsistencia
+-- | --
+Fuente | Mapa de distribución de las áreas de milpa de subsistencia y mecanizada SEDUMA con información de Ellis, E. Romero, A. Hernández, I.
+Año | 2015
+Escala | Sin dato
+Unidades | Adimensional
+
 ## 2. Apicultura
 
 ### 2.1 Modelo de decisión
@@ -258,7 +325,7 @@ Unidades | Kilómetros
 Atributo | Definición
 -- | --
 Cobertura | Vegetación o uso de suelo actual
-Disponibilidad de agua | Fuentes de acceso al agua
+Precipitación | Precipitación de marzo (estiaje)
 
 ##### 2.2.1.1 Cobertura
 
@@ -276,48 +343,258 @@ Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
-ID | Categoria | Importancia | FV
+ID | Categoría | Importancia | FV
 -- | -- | -- | --
 3 | Agricultura de temporal | Muy alta | 1.00
 9 | Selva baja | Muy alta | 1.00
 10 | Selva mediana | Muy alta | 1.00
+13 | Tular | Alta | 0.75
+5 | Bosque cultivado/Palmar inducido | Moderada | 0.50
+12 | Sábana | Moderada | 0.50
+14 | Vegetación de duna costera | Moderada | 0.50
+15 | Vegetación de petén | Moderada | 0.50
 2 | Agricultura de riego | Baja | 0.25
+7 | Manglar | Baja | 0.25
 8 | Pastizal | Baja | 0.25
 11 | Sin vegetación | Baja | 0.25
 1 | Acuícola | Nula | 0.00
 4 | Asentamiento humano | Nula | 0.00
-5 | Bosque cultivado/Palmar inducido | Nula | 0.00
 6 | Cuerpo de agua | Nula | 0.00
-7 | Manglar | Nula | 0.00
-12 | Sábana | Nula | 0.00
-13 | Tular | Nula | 0.00
-14 | Vegetación de duna costera | Nula | 0.00
-15 | Vegetación de petén | Nula | 0.00
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
-##### 2.2.1.2 Disponibilidad de agua
+**Función de valor de cobertura**
 
-Fuentes de acceso al agua.
-<!--
-Atributo | Definición
--- | --
-Precipitación | Precipitación promedio de mayo, junio y julio.
+![](/recursos/milpa_apic/mapa_fv_api_bio_usv_cobertura_usv_svi_16cats.png)
 
-###### 1.2.1.3.1 Precipitación
+##### 2.2.1.2 Precipitación
 
-Precipitación promedio de mayo, junio y julio.
+Precipitación de marzo (estiaje)
 
 **Insumos**
 
-Capa | Precipitación promedio de mayo, junio y julio
+Capa | Precipitación promedio de marzo
 -- | --
-Fuente | Adaptado de: Precipitación mensual, periodo: 2000 (1980-2009) Instituto de Biología, UNAM
+Fuente | Precipitación mensual, periodo: 2000 (1980-2009) Instituto de Biología, UNAM
 Año | 2019
 Resolución | 1000 m x 1000 m
 Unidades | Adimensional
 
-#### 1.2.2 Sociales
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_api_bio_agua_precipitacion_marzo.png)
+
+**Función de valor de precipitación**
+
+![](/recursos/milpa_apic/mapa_fv_api_bio_agua_precipitacion_marzo.png)
+
+
+#### 2.2.2 Infraestructura
+
+Atributo | Definición
+-- | --
+Distancia a caminos | Distancia a caminos principales, brechas, terracerías
+Distancia a localidades | Distancia a poblaciones principales donde se ubican los centros de acopio. Existencia de grupos organizados de mercado.
+
+##### 2.2.2.1 Distancia a caminos
+
+Distancia a caminos principales, brechas, terracerías.
+
+Atributo | Definición
+-- | --
+Carreteras | Distancia a carreteras y prolongación
+Veredas | Distancia a caminos y veredas.
+
+###### 2.2.2.1.1 Carreteras
+
+Distancia a carreteras y prolongación.
+
+**Insumos**
+
+Capa | Distancia a carreteras y prolongaciones
+-- | --
+Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | 2019
+Campo | TIPO_VIAL
+Escala | Sin dato
+
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_api_infra_cam_d_carretera_prolongacion.png)
+
+**Función de valor de carreteras**
+
+![](/recursos/milpa_apic/mapa_fv_api_infra_cam_d_carretera_prolongacion.png)
+
+###### 2.2.2.1.2 Veredas
+
+Distancia a caminos y veredas.
+
+**Insumos**
+
+Capa | Distancia a veredas y caminos
+-- | --
+Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | 2019
+Campo | TIPO_VIAL
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_api_infra_cam_d_caminos_veredas.png)
+
+**Función de valor de veredas**
+
+![](/recursos/milpa_apic/mapa_fv_api_infra_cam_d_caminos_veredas.png)
+
+##### 2.2.2.2 Distancia a localidades
+
+Distancia a poblaciones principales donde se ubican los centros de acopio. Existencia de grupos organizados de mercado.
+
+Atributo | Definición
+-- | --
+Distancia a localidades rurales | Distancia localidades rurales < 2,500 habitantes.
+Distancia a localidades rurales-urbanas | Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.
+Distancia a localidades urbanas | Distancia a localidades urbanas >= 15,000 habitantes.
+
+###### 2.2.2.2.1 Distancia a localidades rurales
+
+Distancia localidades rurales < 2,500 habitantes.
+
+**Insumos**
+
+Capa | Distancia a localidades rurales (menos de 2,500 habitantes)
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] POBTOT
+Escala | Localidad
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_api_infra_merc_d_localidades_2500.png)
+
+**Función de valor de distancia a localidades rurales**
+
+![](/recursos/milpa_apic/mapa_fv_api_infra_merc_d_localidades_2500.png)
+
+###### 2.2.2.2.2 Distancia a localidades rurales-urbanas
+
+**Insumos**
+
+Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.
+
+Capa | Distancia a localidades rurales - urbanas (entre 2,500 y 15,000 habitantes)
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] POBTOT
+Escala | Localidad
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_api_infra_merc_d_localidades_2500_15k.png)
+
+**Función de valor de distancia a localidades rurales-urbanas**
+
+![](/recursos/milpa_apic/mapa_fv_api_infra_merc_d_localidades_2500_15k.png)
+
+###### 2.2.2.2.3 Distancia a localidades urbanas
+
+Distancia a localidades urbanas >= 15,000 habitantes.
+
+**Insumos**
+
+Capa | Distancia a localidades urbanas (mayor o igual a 15,000 habitantes)
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] POBTOT
+Escala | Localidad
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_api_infra_merc_d_localidades_15k.png)
+
+**Función de valor de distancia a localidades urbanas**
+
+![](/recursos/milpa_apic/mapa_fv_api_infra_merc_d_localidades_15k.png)
+
+#### 2.2.3 Sociales
+
+Atributo | Definición
+-- | --
+Tenencia de la tierra | Zonas de área común, parcelas y áreas no ejidales.
+Población indígena | Porcentaje de la población de 3 años y más que habla una lengua indígena en el municipio.
+
+##### 2.2.3.1 Tenencia de la tierra
+
+Zonas de área común, parcelas y áreas no ejidales.
+
+**Insumos**
+
+Capa | Tenencia de la tierra
+-- | --
+Fuente | [1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN
+Año | 2020
+Escala | Sin dato
+Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+1 | Tierra de uso común | Muy alta | 1.00
+2 | Zona de tierras parceladas | Moderada | 0.50
+3 | No ejidal | Baja | 0.25
+
+**Función de valor de tenencia de la tierra**
+
+![](/recursos/milpa_apic/mapa_fv_api_soc_ejido_tenencia_tierra.png)
+
+##### 2.2.3.2 Población indígena
+
+Porcentaje de la población de 3 años y más que habla una lengua indígena en el municipio.
+
+**Insumos**
+
+Capa | Población indígena
+-- | --
+Fuente | [1] Polígonos de municipios. División política municipal INEGI y [2] Datos de indicador. Censo de Población y Vivienda INEGI
+Año | [1] 2018 y [2] 2020
+Campo | [2] POBTOT y P3YM_HLI
+Escala | Municipal
+Unidades | Porcentaje
+
+**Parámetros de la función de valor**
+
+![](/recursos/milpa_apic/fi_fv_api_soc_indi_porpob_indigena_municipal.png)
+
+**Función de valor de población indígena**
+
+![](/recursos/milpa_apic/mapa_fv_api_soc_indi_porpob_indigena_municipal.png)
+
+### 2.3 Mapa de aptitud
+
+#### 2.3.1 Mapa de aptitud de milpa maya
+
+##### 2.3.1.1 Zonas de aprovechamiento actual de milpa maya
+
+**Insumos**
+
+Capa | Apiarios
+-- | --
+Fuente | Apiarios producción de miel SEDUMA con datos del Registro y Credencialización Apícola. Secretaría de Desarrollo Rural
+Año | 2005
+Escala | Sin dato
+Unidades | Adimensional
+
+
+<!--
 
 Atributo | Definición
 -- | --

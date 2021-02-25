@@ -57,7 +57,7 @@ ID | Categoría | Importancia | FV
 10 | Selva baja | Moderada | 0.70
 3 | Agricultura de temporal | Baja | 0.56
 8 | Palmar inducido | Baja | 0.56
-13 | Sábana | Muy baja | 0.33
+13 | Sabana | Muy baja | 0.33
 1 | Acuícola | Nula | 0.00
 4 | Asentamiento humano | Nula | 0.00
 6 | Cuerpo de agua | Nula | 0.00
@@ -148,7 +148,7 @@ Elementos del ambiente biofísico que ponen en riesgo las actividades de aprovec
 
 Capa | Riesgos para la actividad forestal
 -- | --
-Fuente | [1] Mapa de Áreas Prioritarias de Manejo del Fuego CONAFOR y [2) Áreas de atención prioritaria de sanidad forestal. Riesgo de plagas forestales
+Fuente | [1] Mapa de Áreas Prioritarias de Manejo del Fuego CONAFOR y [2) Áreas de atención prioritaria de sanidad forestal. Riesgo de plagas forestales CONAFOR
 Año | 2021
 Escala | [1] 1:250,000,000 ; [2] Sin dato
 Unidades | Adimensional
@@ -362,7 +362,7 @@ ID | Categoría | Importancia | FV
 17 | Vegetación halófila hidrófila | Baja | 0.56
 5 | Bosque cultivado | Muy baja | 0.33
 7 | Manglar | Muy baja | 0.33
-13 | Sábana | Muy baja | 0.33
+13 | Sabana | Muy baja | 0.33
 14 | Tular | Muy baja | 0.33
 1 | Acuícola | Nula | 0.00
 4 | Asentamiento humano | Nula | 0.00
@@ -450,7 +450,7 @@ Elementos del ambiente biofísico que ponen en riesgo las actividades de aprovec
 
 Capa | Riesgos para la actividad forestal
 -- | --
-Fuente | [1] Mapa de Áreas Prioritarias de Manejo del Fuego CONAFOR y [2) Áreas de atención prioritaria de sanidad forestal. Riesgo de plagas forestales
+Fuente | [1] Mapa de Áreas Prioritarias de Manejo del Fuego CONAFOR y [2) Áreas de atención prioritaria de sanidad forestal. Riesgo de plagas forestales CONAFOR
 Año | 2021
 Escala | [1] 1:250,000,000 ; [2] Sin dato
 Unidades | Adimensional

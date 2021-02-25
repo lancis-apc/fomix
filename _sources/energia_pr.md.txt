@@ -8,11 +8,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 Garantizar el aprovechamiento sostenible de los recursos energéticos del estado de Yucatán, para asegurar que la población y los sectores productivos tengan acceso a energía asequible, sostenible, confiable y de calidad, en un marco de justicia ambiental que considere criterios de uso sostenible del territorio, certidumbre jurídica y contribuya a una mayor democracia en la gestión de los recursos energéticos públicos y comunes.
 
 [Lista de participantes](https://www.dropbox.com/s/dtqqr653cni8915/lista_asistencia_energia.pdf?dl=0)
-
+<!--
 ### Nota aclaratoria
 **Con base en el Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en Materia de Ordenamiento Ecológico,** la Secretaría deberá observar los criterios contenidos en el presente Reglamento y los instrumentos jurídicos que deriven del mismo (Art. 37). <br />
 Los convenios que suscriba la Secretaría con los estados, ..., para la formulación de los programas de ordenamiento ecológico a que se refiere el artículo 20 BIS 2 de la Ley, además de los requisitos señalados en el artículo 8o. de este Reglamento, deberán establecer, entre otros aspectos:<br />
-**No podrán ser objeto de estos convenios las actividades que permiten el desarrollo de la industria de hidrocarburos**, ni las actividades a que se refiere el artículo 3o., fracción XI de la Ley de la Agencia Nacional de Seguridad Industrial y de Protección al Medio Ambiente del Sector Hidrocarburos, conforme lo previsto en el artículo 95 de la Ley de Hidrocarburos (Art.38).
+**No podrán ser objeto de estos convenios las actividades que permiten el desarrollo de la industria de hidrocarburos**, ni las actividades a que se refiere el artículo 3o., fracción XI de la Ley de la Agencia Nacional de Seguridad Industrial y de Protección al Medio Ambiente del Sector Hidrocarburos, conforme lo previsto en el artículo 95 de la Ley de Hidrocarburos (Art.38). -->
 
 ## 1. Energía industrial
 
@@ -92,7 +92,7 @@ Zonas industriales que demandan gas natural.
 
 Capa | Distancia del gasoducto a los parques   industriales
 -- | --
-Fuente | [1] ?; [2] Gasoductos GeoComunes
+Fuente | [1] ?; [2] Gasoductos GeoComunes con datos de CRE, SEMARNAT, ASEA y CFE
 Año | [1] ?; [2] 2020
 Escala | [1] ? ; [2] Sin dato
 Unidades | Kilómetros
@@ -113,7 +113,7 @@ Distancia a asentamientos humanos.
 
 Capa | Distancia de localidades al gasoducto
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Gasoductos GeoComunes
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Gasoductos GeoComunes con datos de CRE, SEMARNAT, ASEA y CFE
 Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
@@ -183,7 +183,7 @@ ID | Categoría | Importancia | FV
 4 | Asentamiento humano | Moderada | 0.70
 9 | Selva baja | Baja | 0.56
 10 | Selva mediana | Baja | 0.56
-12 | Sábana | Muy baja | 0.33
+12 | Sabana | Muy baja | 0.33
 1 | Acuícola | Nula | 0.00
 6 | Cuerpo de agua | Nula | 0.00
 7 | Manglar | Nula | 0.00
@@ -302,7 +302,7 @@ ID | Cobertura | Importancia | FV
 11 | Sin vegetación | Máxima | 1.00
 9 | Selva baja | Baja | 0.56
 10 | Selva mediana | Baja | 0.56
-12 | Sábana | Muy baja | 0.33
+12 | Sabana | Muy baja | 0.33
 15 | Vegetación de petén | Muy baja | 0.33
 1 | Acuícola | Nula | 0.00
 4 | Asentamiento humano | Nula | 0.00
@@ -398,7 +398,7 @@ Distancia a granjas porcícolas.
 
 Capa | Distancia a granjas porcinas
 -- | --
-Fuente | Granjas porcinas y avícolas en la Península de Yucatán GeoComunes
+Fuente | Granjas porcinas y avícolas en la Península de Yucatán GeoComunes con datos de SAGARPA SIAP
 Año | 2019
 Escala | Sin dato
 Unidades | Kilómetros
@@ -488,7 +488,7 @@ ID | Cobertura
 
 Capa | [1] Centrales eléctricas de gas; [2] Gasoducto
 -- | --
-Fuente | [1] Mapas de Infraestructura Energética y Recursos Renovables SENER; [2] Gasoductos GeoComunes
+Fuente | [1] Mapas de Infraestructura Energética y Recursos Renovables SENER; [2] Gasoductos GeoComunes con datos de CRE, SEMARNAT, ASEA y CFE
 Año | [1] 2016; [2] 2020
 Escala | Sin dato
 Unidades | Adimensional
@@ -533,7 +533,7 @@ ID | Cobertura
 
 Capa | Parques solares
 -- | --
-Fuente | Parques solares en México GeoComunes
+Fuente | Parques solares en México GeoComunes con datos de coordenadas en MIAs
 Año | 2020
 Escala | Sin dato
 Unidades | Adimensional
@@ -578,7 +578,7 @@ ID | Cobertura
 
 Capa | Parques eólicos
 -- | --
-Fuente | Parques eólicos en México GeoComunes
+Fuente | Parques eólicos en México GeoComunes con datos de coordenadas en MIAs
 Año | 2020
 Escala | Sin dato
 Unidades | Adimensional
@@ -623,7 +623,7 @@ ID | Cobertura
 
 Capa | Granjas porcinas
 -- | --
-Fuente | Granjas porcinas y avícolas en la Península de Yucatán GeoComunes
+Fuente | Granjas porcinas y avícolas en la Península de Yucatán GeoComunes con datos de SAGARPA SIAP
 Año | 2019
 Escala | Sin dato
 Unidades | Adimensional
@@ -660,7 +660,7 @@ ID | Cobertura
 
 ![](/recursos/energia/mapa_aptitud_biomasa.png)
 
-#### 1.3.6 Zona de aprovechamiento actual del sector urbano
+#### 1.3.6 Zona de aprovechamiento actual del sector energía industrial
 
 ![](/recursos/energia/mapa_aprov_energia.png)
 
@@ -687,7 +687,7 @@ ID | Cobertura
 
 Fuente de energía | Criterio | Peso
 -- | -- | --
-Gas natural | Distancia del gasoducto a las    zonas industriales | 0.274
+Gas natural | Distancia del gasoducto a las zonas industriales | 0.274
 Hidrocarburos líquidos | Distancia a carreteras | 0.256
 Hidrocarburos líquidos | Distancia a localidades | 0.138
 Solar | Distancia a red eléctrica | 0.091

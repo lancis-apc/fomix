@@ -5,6 +5,8 @@ CARPETAS_TRABAJO\vhernandez\aptitud_fomix_docs -->
 
 Sistema de producción bovina integrada a especies arbóreas, arbustivas con gramíneas forrajeras.
 
+[Lista de participantes]()
+
 ### 1.1 Modelo de decisión
 
 ![](/recursos/silvopastoril/silvopastoril.png)

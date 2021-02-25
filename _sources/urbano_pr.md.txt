@@ -59,7 +59,7 @@ Cobertura de las redes de agua potable y energía eléctrica.
 
 **Insumos**
 
-Capa | Viviendas totales con agua entubada, drenaje   y energía eléctrica
+Capa | Viviendas totales con agua entubada, drenaje y energía eléctrica
 -- | --
 Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
 Año | 2020
@@ -93,7 +93,7 @@ Número total de instituciones educativas de nivel medio técnico, medio superio
 
 Capa | Unidades económicas de escuelas
 -- | --
-Fuente | [1]Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de   Unidades Económicas (DENUE) INEGI
+Fuente | [1]Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
 Año | 2020
 Escala | Localidad
 Unidades | Número
@@ -114,7 +114,7 @@ Número total de centros de salud.
 
 Capa | Unidades económicas de centros de salud
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de   Unidades Económicas (DENUE) INEGI
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
 Año | 2020
 Escala | Localidad
 Unidades | Número
@@ -156,7 +156,7 @@ Vinculación de asentamientos a través de la infraestructura vial.
 
 Capa | Conectividad
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Carreteras: Conjunto de datos vectoriales de información   topográfica por Entidad Federativa Serie V (carretera_l) INEGI
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Carreteras: Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie V (carretera_l) INEGI
 Año | [1]2020; [2]2018
 Unidades | Adimensional
 
@@ -179,7 +179,7 @@ Localidades   aisladas | El   resto de las localidades | Muy   baja | 0.00
 
 Atributos | Definición
 -- | --
-Tasa crecimiento | Tasa de crecimiento poblacional 10 años (2000-2010).
+Tasa crecimiento | Tasa de crecimiento poblacional 10 años (2010-2020).
 Población | Número de habitantes.
 Densidad | Número de habitantes por hectárea.
 Inmigración | Porcentaje de la población total nacida fuera de la entidad o país.
@@ -187,13 +187,13 @@ Población indígena | Porcentaje de la población índígena en el asentamiento
 
 ##### 1.2.2.1 Tasa de crecimiento
 
-Tasa de crecimiento poblacional 10 años (2000-2010).
+Tasa de crecimiento poblacional 10 años (2010-2020).
 
 **Insumos**
 
 Capa | Tasa de crecimiento
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censos de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censos de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
 Año | [1] 2020; [2] 2010 y 2020
 Campo | [2] POBTOT
 Escala | Localidad
@@ -259,7 +259,7 @@ Porcentaje de la población total nacida fuera de la entidad o país.
 
 Capa | Inmigración
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] POBTOT y PNACOE
 Escala | Localidad
@@ -301,6 +301,8 @@ Unidades | Porcentaje
 
 ![](/recursos/urbano/mapa_polos_crecimiento.png)
 
+[Tabla de priorización de polos de crecimiento](https://www.dropbox.com/scl/fi/wadhkv34yots24w3nt99r/polos_de_crecimiento_2020.xlsx?dl=0&rlkey=cg6yizcd20fmvxmjxqhcz42qb)
+
 #### 1.3.2 Crecimiento urbano orgánico
 
 **Insumo**
@@ -337,35 +339,26 @@ Unidades | Adimensional
 
 **Insumos**
 
-Capa | Humedales y cenotes
+Capa | Humedales
 -- | --
-Fuente | [1] Modelo Cartográfico de Humedales INEGI; [2] Censo de cenotes y grutas SDS y [3] Cenotes POETY
-Año | [1] 2014; [2] [3] Sin dato
-Escala | [1] 1:50,000; [2] [3] Sin dato
+Fuente | Modelo Cartográfico de Humedales INEGI
+Año | 2014
+Escala | 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del sector urbano**
 
-ID | Categoría
+ID | Cobertura
 -- | --
-1 | Cenote
-2 | Charca
-3 | Depresión húmeda
-4 | Estanque artificial
-5 | Estanque de acuicultura
 6 | Estero
-7 | Excavación
-8 | Lago
 9 | Laguna costera
-10 | Laguna húmeda
-11 | Llanura inundada
 12 | Marisma
 
 ![](/recursos/urbano/mapa_exclusion_urb.png)
 
 #### 1.3.5 Reservas territoriales urbanas
 
-Este mapa se actualizará para incluir como aptitud muy alta los póligonos de reserva territorial incluidos en los programas de desarrollo urbano y vivienda del estado.
+**Este mapa se actualizará para incluir como aptitud muy alta los póligonos de reserva territorial incluidos en los programas de desarrollo urbano y vivienda del estado.**
 
 #### 1.3.6 Mapa de aptitud urbano
 
