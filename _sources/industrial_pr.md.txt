@@ -26,15 +26,15 @@ La industria ligera incluye desarrollo de tecnología, actividades de apoyo a la
 
 Criterio | Definición
 -- | --
-Comunicación | Distancia a localidades con cobertura de internet.
+Comunicación | Distancia de 5 km a localidades que se evaluaron con base en el porcentaje de viviendas con internet.
 Conectividad | Distancia a vías de comunicación que permiten el movimiento de trabajadores y la distribución de insumos y productos.
 Energía | Distancia a líneas de transmisión eléctrica.
-Acceso a agua | Distancia a localidades con cobertura de red de agua potable.
+Acceso a agua | Distancia de 5 km a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
 Manejo de residuos | Distancia a sitios de disposición final de residuos solidos y agua residual.
 
 ##### 1.2.1.1 Comunicación
 
-Distancia a localidades con cobertura de internet.
+Distancia de 5 km a localidades que se evaluaron con base en el porcentaje de viviendas con internet.
 
 **Insumos**
 
@@ -203,16 +203,16 @@ Unidades | Kilómetros
 
 ##### 1.2.1.4 Acceso a agua
 
-Distancia a localidades con cobertura de red de agua potable.
+Distancia de 5 km a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
 
 **Insumos**
 
-Capa | Viviendas con acceso a agua potable por localidad
+Capa | Viviendas que disponen de agua entubada por localidad
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] VIVTOT y VPH_AEASP
-Unidades | Porcentaje
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -299,14 +299,14 @@ Unidades | Kilómetros
 
 Criterio | Definición
 -- | --
-Industria instalada | Localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en las categorías (334) Fabricación de equipo de computación, comunicación, medición y de otros equipos, componentes y accesorios electrónicos y (493) Servicios de almacenamiento, así como el Parque Científico Tecnológico de Yucatán.
-Localidades | Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.  Se asigna un mayor peso de importancia a las localidades donde hay universidades e instituciones de educación superior con carreras en el campo de informática, computación, sistemas o afines.
+Industria instalada | Distancia de 5 km a localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en las categorías (334) Fabricación de equipo de computación, comunicación, medición y de otros equipos, componentes y accesorios electrónicos y (493) Servicios de almacenamiento, así como el Parque Científico Tecnológico de Yucatán.
+Localidades | Distancia de 5 km a localidades donde se tiene acceso a capital social, servicios y mercado. Se asigna un mayor peso de importancia a las localidades donde hay universidades e instituciones de educación superior con carreras en el campo de informática, computación, sistemas o afines.
 Tenencia | Tenencia de la tierra.
 
 
 ##### 1.2.2.1 Industria instalada
 
-Localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en las categorías (334) Fabricación de equipo de computación, comunicación, medición y de otros equipos, componentes y accesorios electrónicos y (493) Servicios de almacenamiento, así como el Parque Científico Tecnológico de Yucatán.
+Distancia de 5 km a localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en las categorías (334) Fabricación de equipo de computación, comunicación, medición y de otros equipos, componentes y accesorios electrónicos y (493) Servicios de almacenamiento, así como el Parque Científico Tecnológico de Yucatán.
 
 **Insumos**
 
@@ -322,7 +322,7 @@ Unidades | Adimensional
 
 ##### 1.2.2.2 Localidades
 
-Distancia a localidades donde se tiene acceso a capital social, servicios y mercado. Se asigna un mayor peso de importancia a las localidades donde hay universidades e instituciones de educación superior con carreras en el campo de informática, computación, sistemas o afines.
+Distancia de 5 km a localidades donde se tiene acceso a capital social, servicios y mercado. Se asigna un mayor peso de importancia a las localidades donde hay universidades e instituciones de educación superior con carreras en el campo de informática, computación, sistemas o afines.
 
 **Insumos**
 
@@ -336,8 +336,8 @@ Unidades | Adimensional
 
 Categoría | Importancia | FV
 -- | -- | --:
-Distancia de 5 kms a localidades que   cuentan con universidades con carreras de computación o afines | Muy alta | 1.00
-Distancia de 5 kms a localidades | Baja | 0.25  
+Distancia de 5 km a localidades que cuentan con universidades con carreras de computación o afines | Muy alta | 1.00
+Distancia de 5 km a localidades | Baja | 0.25  
 
 **Función de valor de localidades**
 
@@ -416,9 +416,7 @@ ID | Categoría | Importancia | FV
 
 ### 1.3 Mapa de aptitud
 
-#### 1.3.1 Aprovechamiento actual
-
-#### 1.3.2 Zonas de exclusión
+#### 1.3.1 Zonas de exclusión
 
 **Insumos**
 
@@ -443,7 +441,7 @@ ID | Categoría
 
 ![](/recursos/industrial/mapa_exclusion_lig.png)
 
-#### 1.3.3 Mapa de aptitud de industria ligera
+#### 1.3.2 Mapa de aptitud de industria ligera
 
 ![](/recursos/industrial/mapa_aptitud_lig.png)
 
@@ -460,7 +458,7 @@ Baja | 25415.6 | 64
 Muy baja | 2874.9 | 7
 Nula | 2416.2 | 6
 
-#### 1.3.4 Sensibilidad de atributos de industria ligera
+#### 1.3.3 Sensibilidad de atributos de industria ligera
 
 ![](/recursos/industrial/fi_analisis_sensibilidad_industria_ligera.png)
 
@@ -479,10 +477,10 @@ La industria mediana y pesada incluye agroindustria y manufactura, como las prin
 Criterio | Definición
 -- | --
 Energía | Distancia a líneas de transmisión eléctrica de 230 KV y 400 KV y a gasoductos.
-Acceso a agua | Distancia a localidades con cobertura de red de agua potable.
+Acceso a agua | Distancia de 5 km a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
 Conectividad | Distancia a vías de comunicación que permiten el movimiento de trabajadores y la distribución de insumos y productos.
 Manejo de residuos | Distancia a sitios de disposición final de residuos solidos y agua residual.
-Comunicación | Distancia a localidades con cobertura de internet.
+Comunicación | Distancia de 5 km a localidades que se evaluaron con base en el porcentaje de viviendas con internet.
 
 ##### 2.2.1.1 Energía
 
@@ -507,16 +505,16 @@ Unidades | Kilómetros
 
 ##### 2.2.1.2 Acceso a agua
 
-Distancia a localidades con cobertura de red de agua potable.
+Distancia de 5 km a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
 
 **Insumos**
 
-Capa | Viviendas con acceso a agua potable por localidad
+Capa | Viviendas que disponen de agua entubada por localidad
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] VIVTOT y VPH_AEASP
-Unidades | Porcentaje
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -726,7 +724,7 @@ Unidades | Kilómetros
 
 ##### 2.2.1.5 Comunicación
 
-Distancia a localidades con cobertura de internet.
+Distancia de 5 km a localidades que se evaluaron con base en el porcentaje de viviendas con internet.
 
 **Insumos**
 
@@ -749,13 +747,13 @@ Unidades | Porcentaje
 
 Criterio | Definición
 -- | --
-Industria instalada | Parques industriales y localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en la categoría (31-33). Industrias manufactureras excepto la categoría (334).
+Industria instalada | Distancia de 5 km a parques industriales y localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en la categoría (31-33). Industrias manufactureras excepto la categoría (334).
 Localidades | Distancia a localidades donde se tiene acceso a capital social, servicios y mercado.
 Tenencia | Tenencia de la tierra.
 
 ##### 2.2.2.1 Industria instalada
 
-Parques industriales y localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en la categoría (31-33). Industrias manufactureras excepto la categoría (334).
+Distancia de 5 km a parques industriales y localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en la categoría (31-33). Industrias manufactureras excepto la categoría (334).
 
 **Insumos**
 
@@ -923,9 +921,7 @@ ID | Categoría | Importancia | FV
 
 ### 2.3 Mapa de aptitud
 
-#### 2.3.1 Aprovechamiento actual
-
-#### 2.3.2 Zonas de exclusión
+#### 2.3.1 Zonas de exclusión
 
 **Insumos**
 
@@ -950,7 +946,7 @@ ID | Categoría
 
 ![](/recursos/industrial/mapa_exclusion_pesm.png)
 
-#### 2.3.3 Mapa de aptitud de industria mediana y pesada
+#### 2.3.2 Mapa de aptitud de industria mediana y pesada
 
 ![](/recursos/industrial/mapa_aptitud_pesm.png)
 
@@ -967,7 +963,7 @@ Baja | 17272.4 | 44
 Muy baja | 5730.1 | 14
 Nula | 2416.2 | 6
 
-#### 2.3.4 Sensibilidad de atributos de industria mediana y pesada
+#### 2.3.3 Sensibilidad de atributos de industria mediana y pesada
 
 ![](/recursos/industrial/fi_analisis_sensibilidad_industria_pesada.png)
 

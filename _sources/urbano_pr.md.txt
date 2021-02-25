@@ -1,4 +1,4 @@
-# Urbano-En proceso de actualización
+# Urbano-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -8,7 +8,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 Generar las condiciones, en todas sus vertientes, para el desarrollo urbano en Yucatán, de manera que se fomente la descentralización, se aprovechen las zonas con infraestructura y se contenga la expansión urbana en la zona metropolitana de Mérida.
 
-[Lista de participantes](https://www.dropbox.com/s/w8n4xk5laee6pfh/lista_asistencia_urbano.pdf?dl=0)
+[Lista de participantes](https://www.dropbox.com/s/pagmraesp1jict7/lista_asistencia%20urbano.pdf?dl=0)
 
 ### 1.1 Modelo de decisión
 
@@ -386,10 +386,10 @@ Categoría | Km² | Porcentaje del estado
 -- | --: | --:
 Muy alta | 1060.3 | 3
 Alta | 0.0 | 0
-Moderada | 192.4 | 0
-Baja | 2230.0 | 6
-Muy baja | 34032.4 | 86
-Nula | 2021.5 | 5
+Moderada | 192.6 | 0
+Baja | 2232.1 | 6
+Muy baja | 34359.5 | 87
+Nula | 1692.2 | 4
 
 #### 1.3.7 Sensibilidad de atributos ambientales
 
