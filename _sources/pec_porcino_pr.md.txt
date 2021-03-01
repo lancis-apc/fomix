@@ -1,4 +1,4 @@
-# Pecuario porcino y avícola-En proceso de actualización
+# Pecuario porcino y avícola-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -7,7 +7,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 Fomentar el desarrollo, el crecimiento y la descentralización de empresas porcícolas y avícolas para que su operación se realice de manera ordenada y sustentable, promueva modelos de producción no convencionales a partir de porcinos y aves seleccionados, especializados o localmente adaptados e incorpore esquemas tecnológicos para reducir y mitigar impactos socioambientales, de manera que se incremente la sostenibilidad ambiental y contribuya a mejorar la salud pública.
 
-[Lista de participantes]()
+[Lista de participantes](https://www.dropbox.com/s/cifalc2f4lo3kgn/lista_asistencia_porcino.pdf?dl=0)
 
 ### 1.1 Modelo de decisión
 
@@ -264,7 +264,7 @@ Unidades | Kilómetros
 
 ### 1.3 Mapa de aptitud
 
-#### 1.3.1 Zona de aprovechamiento actual del sector pecuario porcino
+#### 1.3.1 Zona de aprovechamiento actual del sector pecuario porcino y avícola
 
 **Insumos**
 
@@ -289,7 +289,7 @@ Campo | Desc_SAMOF
 Escala | Sin dato
 Unidades | Adimensional
 
-**Tabla de exclusión del sector pecuario porcíno y avícola**
+**Tabla de exclusión del sector pecuario porcino y avícola**
 
 ID | Categoría
 -- | --
@@ -306,7 +306,7 @@ ID | Categoría
 
 ![](/recursos/pec_porcino/mapa_por_aptitud.png)
 
-**Tabla de pesos globales**
+**Tabla de pesos globales de los atributos ambientales del sector percuario porcino y avícola**
 
 Criterio | Peso
 -- | --
@@ -332,6 +332,6 @@ Baja | 3724.9 | 9
 Muy baja | 1471.0 | 4
 Nula | 3071.1 | 8
 
-#### 1.3.4 Sensibilidad de atributos ambientales
+#### 1.3.4 Sensibilidad de atributos ambientales del sector percuario porcino y avícola
 
 ![](/recursos/pec_porcino/fi_analisis_sensibilidad_porcino_avicola.png)

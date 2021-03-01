@@ -1,11 +1,11 @@
-# Pecuario silvopastoril
+# Pecuario silvopastoril-Final
 
 <!-- Ruta de la documentación:
 CARPETAS_TRABAJO\vhernandez\aptitud_fomix_docs -->
 
 Sistema de producción bovina integrada a especies arbóreas, arbustivas con gramíneas forrajeras.
 
-[Lista de participantes]()
+[Lista de participantes](https://www.dropbox.com/s/uqmvq4qrembvk9e/lista_asistencia_silvopastoril.pdf?dl=0)
 
 ### 1.1 Modelo de decisión
 
