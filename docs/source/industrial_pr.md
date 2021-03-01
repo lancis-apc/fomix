@@ -1,4 +1,4 @@
-# Industrial-En proceso de actualización
+# Industrial-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -445,7 +445,25 @@ ID | Categoría
 
 ![](/recursos/industrial/mapa_aptitud_lig.png)
 
-**Pesos Globales de los atributos ambientales de industria ligera**
+**Pesos globales de los atributos ambientales de industria ligera**
+
+Criterio | Peso
+-- | --
+Industria instalada | 0.228
+Comunicación | 0.162
+Energía | 0.140
+Cobertura | 0.090
+Carreteras de varios carriles | 0.082
+Localidades | 0.081
+Acceso a agua | 0.073
+Tenencia | 0.042
+Aeropuertos | 0.041
+Puertos | 0.019
+Rellenos sanitarios | 0.011
+Plantas de aguas residuales | 0.011
+Carreteras de un carril | 0.009
+Red ferroviaria | 0.006
+Basureros | 0.006
 
 **Área por categoria de aptitud**
 
@@ -950,7 +968,27 @@ ID | Categoría
 
 ![](/recursos/industrial/mapa_aptitud_pesm.png)
 
-**Pesos Globales de los atributos ambientales de industria ligera**
+**Pesos globales de los atributos ambientales de industria mediana y pesada**
+
+Criterio | Peso
+-- | --
+Energía | 0.246
+Industria instalada | 0.228
+Acceso a agua | 0.146
+Localidades | 0.081
+Disponibilidad de agua | 0.056
+Carreteras de varios carriles | 0.052
+Tenencia | 0.042
+Puertos | 0.031
+Cobertura | 0.025
+Comunicación | 0.022
+Rellenos sanitarios | 0.016
+Plantas de agua residual | 0.016
+Red ferroviaria | 0.012
+Dispersión de emisiones | 0.008
+Basureros | 0.008
+Aeropuertos | 0.006
+Carreteras de un carril | 0.006
 
 **Área por categoria de aptitud**
 
@@ -970,4 +1008,4 @@ Nula | 2416.2 | 6
 <!-- .. csv-table::
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv
    :header-rows: 1
-   :align: center --> -->
+   :align: center -->

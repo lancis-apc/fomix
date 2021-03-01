@@ -136,7 +136,7 @@ ID | Categoría | Importancia | FV
 10 | Selva mediana | Moderada | 0.50
 5 | Bosque cultivado/Palmar inducido | Baja | 0.25
 11 | Sin vegetación | Baja | 0.25
-12 | Sábana | Baja | 0.25
+12 | Sabana | Baja | 0.25
 1 | Acuícola | Nula | 0.00
 4 | Asentamiento humano | Nula | 0.00
 6 | Cuerpo de agua | Nula | 0.00
@@ -231,7 +231,7 @@ Distancia a localidades con rastros o centros de sacrificio.
 
 Capa | Distancia a rastros, sitios de empacado y procesamiento de ganado
 -- | --
-Fuente | [1] Infraestructura del sector Agroalimentario centros de sacrificio y TIF; [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [3] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
+Fuente | [1] Infraestructura del sector Agroalimentario centros de sacrificio y TIF SAGARPA SIAP; [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [3] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
 Año | [1] Sin dato; [2] [3] 2020
 Escala | Localidad
 Unidades | Kilómetros
@@ -248,7 +248,34 @@ Unidades | Kilómetros
 
 #### 1.3.1 Zona de exclusión
 
+**Insumos**
+
+Capa | Uso del suelo y vegetación y localidades
+-- | --
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2020
+Campo | [1] descripcio
+Escala | [1] 1:250,000; [2] Sin dato
+Unidades | Adimensional
+
+**Tabla de exclusión del sector pecuario bovino**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+14 | Vegetación de duna costera
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
+
+![](/recursos/pec_bovino/mapa_bov_exclusion.png)
+
 #### 1.3.2 Mapa de aptitud del sector pecuario bovino
+
+![](/recursos/pec_bovino/mapa_bov_aptitud.png)
 
 **Área por categoria de aptitud**
 

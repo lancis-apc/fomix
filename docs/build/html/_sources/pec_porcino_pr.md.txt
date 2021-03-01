@@ -5,7 +5,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Fomentar el desarrollo, el crecimiento y la descentralización de empresas porcícolas y avícolas para que su operación se realice de manera de ordenada y sustentable, promueva modelos de producción no convencionales a partir de porcinos y aves localmente adaptados e incorpore esquemas tecnológicos para reducir y mitigar impactos, de manera que se incremente la sostenibilidad   ambiental y contribuya a mejorar la salud pública.
+Fomentar el desarrollo, el crecimiento y la descentralización de empresas porcícolas y avícolas para que su operación se realice de manera ordenada y sustentable, promueva modelos de producción no convencionales a partir de porcinos y aves seleccionados, especializados o localmente adaptados e incorpore esquemas tecnológicos para reducir y mitigar impactos socioambientales, de manera que se incremente la sostenibilidad ambiental y contribuya a mejorar la salud pública.
 
 [Lista de participantes]()
 
@@ -45,6 +45,7 @@ Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
 Año | 2019
 Campo | TIPO_VIAL
 Escala | Sin dato
+Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
@@ -105,7 +106,7 @@ Infraestructura industrial complementaria (incluye establecimientos de inspecci�
 
 Capa | Distancia a rastros, sitios de empacado y procesamiento de ganado porcino y avícola
 -- | --
-Fuente | [1] Infraestructura del sector Agroalimentario centros de sacrificio y TIF; [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [3] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
+Fuente | [1] Infraestructura del sector Agroalimentario centros de sacrificio y TIF SAGARPA SIAP; [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [3] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
 Año | [1] Sin dato; [2] [3] 2020
 Escala | Localidad
 Unidades | Kilómetros
@@ -144,12 +145,12 @@ Unidades | Kilómetros
 
 Atributo | Definición
 -- | --
-Disponibilidad de agua | Distancia al acuífero o nivel piezométrico. Costo de extracción de agua del acuífero
+Profundidad del acuífero | Distancia al acuífero o nivel piezométrico. Costo de extracción de agua del acuífero
 Cobertura | Vegetación o uso de suelo actual
 
-##### 1.2.2.1 Disponibilidad de agua
+##### 1.2.2.1 Profundidad del acuífero
 
-Distancia al acuifero o nivel piezométrico. Costo de extracción de agua del acuífero.
+Distancia al acuífero o nivel piezométrico. Costo de extracción de agua del acuífero.
 
 **Insumos**
 
@@ -267,9 +268,9 @@ Unidades | Kilómetros
 
 **Insumos**
 
-Capa | Granjas porcinas
+Capa | Granjas porcinas y avícolas
 -- | --
-Fuente | Granjas porcinas y avícolas en la Península de Yucatán GeoComunes
+Fuente | Granjas porcinas y avícolas en la Península de Yucatán GeoComunes con datos de SAGARPA SIAP
 Año | 2019
 Escala | Sin dato
 Unidades | Adimensional

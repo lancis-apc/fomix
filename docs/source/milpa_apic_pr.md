@@ -25,7 +25,7 @@ Atributo | Definición
 -- | --
 Cobertura | Vegetación o uso de suelo actual
 Tipo de suelo | Tipo de suelo (Edafología)
-Disponibilidad de agua | Fuentes de acceso al agua
+Precipitación | Precipitación promedio de mayo, junio y julio.
 
 ##### 1.2.1.1 Cobertura
 
@@ -56,7 +56,7 @@ ID | Categoria | Importancia | FV
 5 | Bosque cultivado/Palmar inducido | Nula | 0.00
 6 | Cuerpo de agua | Nula | 0.00
 7 | Manglar | Nula | 0.00
-12 | Sábana | Nula | 0.00
+12 | Sabana | Nula | 0.00
 13 | Tular | Nula | 0.00
 14 | Vegetación de duna costera | Nula | 0.00
 15 | Vegetación de petén | Nula | 0.00
@@ -103,9 +103,9 @@ ID | Categoría | Importancia | FV
 
 ![](/recursos/milpa_apic/mapa_fv_mil_bio_suelo_tipo_suelo.png)
 
-##### 1.2.1.3 Disponibilidad de agua
+##### 1.2.1.3 Precipitación
 
-Fuentes de acceso al agua.
+Precipitación promedio de mayo, junio y julio.
 
 Atributo | Definición
 -- | --
@@ -130,7 +130,7 @@ Unidades | Adimensional
 
 **Función de valor de precipitación**
 
-![](/recursos/milpa_apic/mapa_fv_mil_bio_agua_precipitacion_prom_may_jun_jul.png)
+![](/recursos/milpa_apic/mapa_fv_mil_bio_agua_precipitacion_promedio_may_jun_jul.png)
 
 #### 1.2.2 Sociales
 
@@ -183,7 +183,7 @@ Unidades | Adimensional
 Atributo | Definición
 -- | --
 Distancia a caminos | Distancia a caminos principales, brechas, terracerías
-Distancia a centros de acopio | Distancia a poblaciones principales. Existencia de grupos organizados de mercado.
+Distancia a localidades rurales | Distancia a localidades rurales (<2,500 habitantes) como centros de vivienda, fuentes de acceso a insumos, a centros de acopio y comercio.
 
 ##### 1.2.3.1 Distancia a caminos
 
@@ -191,31 +191,10 @@ Distancia a caminos principales, brechas, terracerías.
 
 Atributo | Definición
 -- | --
-Carreteras | Distancia a carreteras y prolongación   
-Veredas | Distancia a caminos y veredas
+Veredas | Distancia a caminos y veredas.
+Carreteras | Distancia a carreteras y prolongación.
 
-###### 1.2.3.1.1 Carreteras
-
-Distancia a carreteras y prolongación.
-
-**Insumos**
-
-Capa | Distancia a carreteras y prolongaciones
--- | --
-Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
-Año | 2019
-Campo | TIPO_VIAL
-Escala | Sin dato
-
-**Parámetros de la función de valor**
-
-![](/recursos/milpa_apic/fi_fv_mil_infra_cam_d_carretera_prolongacion.png)
-
-**Función de valor de carreteras**
-
-![](/recursos/milpa_apic/mapa_fv_mil_infra_cam_d_carretera_prolongacion.png)
-
-###### 1.2.3.1.2 Veredas
+###### 1.2.3.1.1 Veredas
 
 Distancia a caminos y veredas.
 
@@ -237,19 +216,30 @@ Unidades | Kilómetros
 
 ![](/recursos/milpa_apic/mapa_fv_mil_infra_cam_d_caminos_veredas.png)
 
-##### 1.2.3.2 Distancia a centros de acopio
+###### 1.2.3.1.2 Carreteras
 
-Distancia a poblaciones principales. Existencia de grupos organizados de mercado.
+Distancia a carreteras y prolongación.
 
-Atributo | Definición
+**Insumos**
+
+Capa | Distancia a carreteras y prolongaciones
 -- | --
-Distancia a localidades rurales | Distancia localidades rurales < 2,500 habitantes.   
-Distancia a localidades rurales-urbanas | Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.   
-Distancia a localidades urbanas | Distancia a localidades urbanas >= 15,000 habitantes.   
+Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | 2019
+Campo | TIPO_VIAL
+Escala | Sin dato
 
-###### 1.2.3.2.1 Distancia a localidades rurales
+**Parámetros de la función de valor**
 
-Distancia localidades rurales < 2,500 habitantes.  
+![](/recursos/milpa_apic/fi_fv_mil_infra_cam_d_carretera_prolongacion.png)
+
+**Función de valor de carreteras**
+
+![](/recursos/milpa_apic/mapa_fv_mil_infra_cam_d_carretera_prolongacion.png)
+
+##### 1.2.3.2 Distancia a localidades rurales
+
+Distancia a localidades rurales (<2,500 habitantes) como centros de vivienda, fuentes de acceso a insumos, a centros de acopio y comercio.
 
 **Insumos**
 
@@ -269,39 +259,9 @@ Unidades | Kilómetros
 
 ![](/recursos/milpa_apic/mapa_fv_mil_infra_merc_d_localidades_2500.png)
 
-###### 1.2.3.2.2 Distancia a localidades rurales-urbanas
-
-Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.
-
-**Insumos**
-
-Capa | Distancia a localidades rurales - urbanas (entre 2,500 y 15,000 habitantes)
--- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | 2020
-Campo | [2] POBTOT
-Escala | Localidad
-Unidades | Kilómetros
-
-###### 1.2.3.2.3 Distancia a localidades urbanas
-
-Distancia a localidades urbanas >= 15,000 habitantes.   
-
-**Insumos**
-
-Capa | Distancia a localidades urbanas (con 15,000 habitantes o más)
--- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | 2020
-Campo | [2] POBTOT
-Escala | Localidad
-Unidades | Kilómetros
-
 ### 1.3 Mapa de aptitud
 
-#### 1.3.1 Mapa de aptitud de milpa maya
-
-##### 1.3.1.1 Zonas de aprovechamiento actual de milpa maya
+#### 1.3.1 Zonas de aprovechamiento actual de milpa maya
 
 **Insumos**
 
@@ -311,6 +271,53 @@ Fuente | Mapa de distribución de las áreas de milpa de subsistencia y mecaniza
 Año | 2015
 Escala | Sin dato
 Unidades | Adimensional
+
+![](/recursos/milpa_apic/mapa_mil_aprov_actual.png)
+
+#### 1.3.2 Zona de exclusión
+
+**Insumos**
+
+Capa | Uso de suelo y vegetación y localidades con 2,500 habitantes o más
+-- | --
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y   vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2020
+Campo | [1] descripcio
+Escala | [1] 1:250,000; [2] Sin dato
+Unidades | Adimensional
+
+**Tabla de exclusión de milpa maya**
+
+ID | Categoria
+-- | --
+1 | Acuícola
+5 | Bosque cultivado/Palmar inducido
+6 | Cuerpo de agua
+7 | Manglar
+12 | Sabana
+13 | Tular
+14 | Vegetación de duna costera
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
+
+![](/recursos/milpa_apic/mapa_mil_exclusion.png)
+
+#### 1.3.3 Mapa de aptitud de milpa maya
+
+![](/recursos/milpa_apic/mapa_mil_aptitud.png)
+
+**Área por categoria de aptitud**
+
+Categoría | Km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 16624.6 | 42
+Alta | 12812.6 | 32
+Moderada | 6700.0 | 17
+Baja | 841.6 | 2
+Muy baja | 144.4 | 0
+Nula | 2413.4 | 6
+
+![](/recursos/milpa_apic/fi_analisis_sensibilidad_milpa_maya.png)
 
 ## 2. Apicultura
 
@@ -350,7 +357,7 @@ ID | Categoría | Importancia | FV
 10 | Selva mediana | Muy alta | 1.00
 13 | Tular | Alta | 0.75
 5 | Bosque cultivado/Palmar inducido | Moderada | 0.50
-12 | Sábana | Moderada | 0.50
+12 | Sabana | Moderada | 0.50
 14 | Vegetación de duna costera | Moderada | 0.50
 15 | Vegetación de petén | Moderada | 0.50
 2 | Agricultura de riego | Baja | 0.25
@@ -388,13 +395,12 @@ Unidades | Adimensional
 
 ![](/recursos/milpa_apic/mapa_fv_api_bio_agua_precipitacion_marzo.png)
 
-
 #### 2.2.2 Infraestructura
 
 Atributo | Definición
 -- | --
 Distancia a caminos | Distancia a caminos principales, brechas, terracerías
-Distancia a localidades | Distancia a poblaciones principales donde se ubican los centros de acopio. Existencia de grupos organizados de mercado.
+Distancia a localidades | Distancia a poblaciones para el acceso a insumos, recursos, herramientas y centros de acopio. Existencia de grupos organizados de mercado.
 
 ##### 2.2.2.1 Distancia a caminos
 
@@ -450,7 +456,7 @@ Unidades | Kilómetros
 
 ##### 2.2.2.2 Distancia a localidades
 
-Distancia a poblaciones principales donde se ubican los centros de acopio. Existencia de grupos organizados de mercado.
+Distancia a poblaciones para el acceso a insumos, recursos, herramientas y centros de acopio. Existencia de grupos organizados de mercado.
 
 Atributo | Definición
 -- | --
@@ -580,9 +586,7 @@ Unidades | Porcentaje
 
 ### 2.3 Mapa de aptitud
 
-#### 2.3.1 Mapa de aptitud de milpa maya
-
-##### 2.3.1.1 Zonas de aprovechamiento actual de milpa maya
+#### 2.3.1 Zonas de aprovechamiento actual de apicultura
 
 **Insumos**
 
@@ -593,7 +597,48 @@ Año | 2005
 Escala | Sin dato
 Unidades | Adimensional
 
+ ![](/recursos/milpa_apic/mapa_api_aprov_actual.png)
 
+#### 2.3.2 Zona de exclusión
+
+**Insumos**
+
+Capa | Uso de suelo y vegetación y localidades con 2,500 habitantes o más
+-- | --
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y   vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2020
+Campo | [1] descripcio
+Escala | [1] 1:250,000; [2] Sin dato
+Unidades | Adimensional
+
+**Tabla de exclusión de apicultura**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+6 | Cuerpo de agua
+16 | Vegetación halófila hidrófila
+
+![](/recursos/milpa_apic/mapa_api_exclusion.png)
+
+#### 2.3.3 Mapa de aptitud de apicultura
+
+![](/recursos/milpa_apic/mapa_api_aptitud.png)
+
+**Área por categoria de aptitud**
+
+Categoría | Km² | Porcentaje del estado
+-- | --: | --:
+Muy alta | 22439.4 | 57
+Alta | 5488.2 | 14
+Moderada | 4453.8 | 11
+Baja | 5645.0 | 14
+Muy baja | 524.2 | 1
+Nula | 985.9 | 2
+
+#### 2.3.4 Sensibilidad de atributos de apicultura
+
+![](/recursos/milpa_apic/fi_analisis_sensibilidad_apicultura.png)
 <!--
 
 Atributo | Definición
