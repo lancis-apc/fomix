@@ -35,8 +35,8 @@ Distrito de riego y unidades de riego.
 
 Capa | Unidades y distritos de riego
 -- | --
-Fuente | [1] Datos vectoriales de los distritos de riego a nivel nacional CONAGUA y [2] Unidades de riego agrupadas por Región Hidrológico-Administrativa CONAGUA
-Año | [1] 2018-2019; [2] 2017-2018
+Fuente | [1] Datos vectoriales de los distritos de riego a nivel nacional CONAGUA   2018-2019 y [2] Unidades de riego agrupadas por Región   Hidrológico-Administrativa CONAGUA 2017-2018
+Año | 2020
 Escala | [1] 1:250,000; [2] Sin dato
 Unidades | Adimensional
 
@@ -204,7 +204,7 @@ ID | Categoría | Importancia | FV
 9 | Selva baja | Moderada | 0.50
 10 | Selva mediana | Baja | 0.25
 11 | Sin vegetación | Baja | 0.25
-12 | Sábana | Baja | 0.25
+12 | Sabana | Baja | 0.25
 1 | Acuícola | Nula | 0.00
 4 | Asentamiento humano | Nula | 0.00
 5 | Bosque cultivado/Palmar inducido | Nula | 0.00
@@ -225,7 +225,7 @@ ID | Categoría | Importancia | FV
 Criterio | Definición
 -- | --
 Mercados | Distancia a las principales localidades en las que se venden los productos agrícolas.
-Mano de obra | Municipios con mayor porcentaje de población económicamente activa ocupada en el sector primario.
+Mano de obra | Municipios con mayor porcentaje de población económicamente activa ocupada en el sector primario.
 Tenencia | Tenencia de la tierra.
 
 ##### 1.2.3.1 Mercados
@@ -234,11 +234,11 @@ Distancia a las principales localidades en las que se venden los productos agrí
 
 **Insumos**
 
-Capa | Distancia a localidades con centrales de abasto y almacenes agrícolas
+Capa | Distancia a localidades con centrales de   abasto y almacenes agrícolas
 -- | --
-Fuente | Adaptado de: Infraestructura del Sector Agroalimentario almacenes y/o centrales de abasto SIAP
-Año | Sin dato
-Escala | Sin dato
+Fuente | Adaptado de: [1] Polígonos de localidades. Marco Geoestadístico. Censo de   Población y Vivienda INEGI y [2] Infraestructura del Sector Agroalimentario   almacenes y centrales de abasto SIAP
+Año | [1] 2020; [2] Sin dato
+Escala | Localidad
 Unidades | Kilómetros
 
 **Parámetros de la función de valor**
@@ -251,7 +251,7 @@ Unidades | Kilómetros
 
 ##### 1.2.3.2 Mano de obra
 
-Distancia a localidades/municipios donde existe un mayor porcentaje de población económicamente activa ocupada en el sector primario.
+Municipios con mayor porcentaje de población económicamente activa ocupada en el sector primario.
 
 **Insumos**
 
@@ -295,6 +295,57 @@ ID | Categoría | Importancia | FV
 **Función de valor de tenencia**
 
 ![](/recursos/agricultura/mapa_fv_agrie_socio_tene_tenencia_tierra.png)
+
+### 1.3 Mapa de aptitud
+
+#### 1.3.1 Zonas de exclusión
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación y localidades
+-- | --
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y   vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2020
+Campo | [1] descripcio
+Escala | [1] 1:250,000; [2] Sin dato
+Unidades | Adimensional
+
+**Tabla de exclusión del subsector agricultura tecnificada de riego**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+5 | Bosque cultivado/Palmar inducido
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+14 | Vegetación de duna costera
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
+
+![](/recursos/agricultura/mapa_agrie_exclusion.png)
+
+#### 1.3.2 Mapa de aptitud de agricultura tecnificada de riego
+
+![](/recursos/agricultura/mapa_agrie_aptitud.png)
+
+**Pesos Globales de los atributos ambientales de agricultura tecnificada de riego**
+
+**Área por categoria de aptitud**
+
+Categoría | Km² | Porcentaje del estado
+-- | --: | --:
+Muy alta | 502.5 | 1
+Alta | 19395.3 | 49
+Moderada | 14850.5 | 38
+Baja | 1785.1 | 5
+Muy baja | 297.2 | 1
+Nula | 2594.7 | 7
+
+#### 1.3.3 Sensibilidad de atributos de agricultura tecnificada de riego
+
+
 
 ## 2. Agricultura tecnificada de temporal
 
@@ -423,7 +474,7 @@ ID | Categoría | Importancia | FV
 9 | Selva baja | Moderada | 0.50
 10 | Selva mediana | Moderada | 0.50
 11 | Sin vegetación | Baja | 0.25
-12 | Sábana | Baja | 0.25
+12 | Sabana | Baja | 0.25
 1 | Acuícola | Nula | 0.00
 4 | Asentamiento humano | Nula | 0.00
 5 | Bosque cultivado/Palmar inducido | Nula | 0.00
@@ -455,9 +506,9 @@ Distancia a las principales localidades en las que se venden los productos agrí
 
 Capa | Distancia a localidades con centrales de abasto y almacenes agrícolas
 -- | --
-Fuente | Adaptado de: Infraestructura del Sector Agroalimentario: Almacenes y centrales de abasto. Servicio de Información Agroalimentaria y Pesquera - SADER
-Año | Sin dato
-Escala | Sin dato
+Fuente | Adaptado de: [1] Polígonos de localidades. Marco Geoestadístico. Censo de   Población y Vivienda INEGI y [2] Infraestructura del Sector Agroalimentario   almacenes y centrales de abasto SIAP
+Año | [1] 2020; [2] Sin dato
+Escala | Localidad
 Unidades | Kilómetros
 
 **Parámetros de la función de valor**
@@ -559,3 +610,52 @@ Unidades | Kilómetros
 **Función de valor de combustible**
 
 ![](/recursos/agricultura/mapa_fv_agtem_infra_ene_gasolina.png)
+
+### 2.3 Mapa de aptitud
+
+#### 2.3.1 Zonas de exclusión
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación y localidades
+-- | --
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y   vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2020
+Campo | [1] descripcio
+Escala | [1] 1:250,000; [2] Sin dato
+Unidades | Adimensional
+
+**Tabla de exclusión del subsector agricultura tecnificada de temporal**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+5 | Bosque cultivado/Palmar inducido
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+14 | Vegetación de duna costera
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
+
+![](/recursos/agricultura/mapa_agtem_exclusion.png)
+
+#### 2.3.2 Mapa de aptitud de agricultura tecnificada de temporal
+
+![](/recursos/agricultura/mapa_agtem_aptitud.png)
+
+**Pesos Globales de los atributos ambientales de agricultura tecnificada de temporal**
+
+**Área por categoria de aptitud**
+
+Categoría | Km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 6373.8 | 16
+Alta | 17818.7 | 45
+Moderada | 12031.5 | 31
+Baja | 605.7 | 2
+Muy baja | 0.9 | 0
+Nula | 2594.7 | 7
+
+#### 2.3.3 Sensibilidad de atributos de agricultura tecnificada de temporal
