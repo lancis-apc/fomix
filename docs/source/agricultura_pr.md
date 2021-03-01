@@ -1,13 +1,17 @@
-# Agricultura tecnificada-En proceso de actualización
+# Agricultura tecnificada-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
+* Fomentar la producción incorporando tecnologías, insumos, equipos y maquinaria avanzada, optimizando al máximo los procesos de manera eficiente y amigable con el medio ambiente y permitiendo un mayor rendimiento por unidad de superficie.
+* Aumentar en las zonas sur y oriente la producción tecnificada de pasto, maíz amarillo, sorgo y soya para cubrir la demanda del sector ganadero y reducir importaciones.
+* Incrementar rendimientos, a través de la recuperación de áreas agrícolas degradadas o abandonadas, mediante la agricultura de conservación (rotación de cultivos, manejo de rastrojo y cero labranza) y la restauración de suelos (uso de coberturas vegetales).
+* Diversificar tecnologías apropiadas para las condiciones del suelo y productos para promover la competitividad, la integración de pequeños productores y mujeres y la coexistencia con otros sistemas de producción como la milpa maya.
+* Reducir el impacto sobre los ecosistemas naturales.
 
-
-[Lista de participantes]()
+[Lista de participantes](https://www.dropbox.com/s/khqmidybelt295o/lista_asistencia_agricultura.pdf?dl=0)
 
 ## 1. Agricultura tecnificada de riego
 
@@ -330,7 +334,20 @@ ID | Categoría
 
 ![](/recursos/agricultura/mapa_agrie_aptitud.png)
 
-**Pesos Globales de los atributos ambientales de agricultura tecnificada de riego**
+**Pesos globales de los atributos ambientales de agricultura tecnificada de riego**
+
+Criterio | Peso
+-- | --
+Hidroagrícola | 0.270
+Energía | 0.252
+Disponibilidad de agua | 0.171
+Vías de comunicación | 0.078
+Pendiente | 0.066
+Mano de obra | 0.043
+Mercados | 0.043
+Tipo de suelo | 0.042
+Tipo de cobertura | 0.021
+Tenencia | 0.014
 
 **Área por categoria de aptitud**
 
@@ -345,7 +362,7 @@ Nula | 2594.7 | 7
 
 #### 1.3.3 Sensibilidad de atributos de agricultura tecnificada de riego
 
-
+![](/recursos/agricultura/fi_analisis_sensibilidad_agricultura_riego.png)
 
 ## 2. Agricultura tecnificada de temporal
 
@@ -374,7 +391,7 @@ Lluvia acumulada anual.
 
 Capa | Precipitación
 -- | --
-Fuente | Adaptado de: Precipitación acumulada anual. Atlas de Peligros por Fenómenos Naturales del Estado de Yucatán. Servicio Geológico Mexicano
+Fuente | Adaptado de: Precipitación acumulada anual periodo 1960-2000. Atlas de Peligros por Fenómenos Naturales del Estado de Yucatán. Servicio Geológico Mexicano.
 Año | 1960-2000
 Escala | Sin dato
 Unidades | mm
@@ -645,7 +662,19 @@ ID | Categoría
 
 ![](/recursos/agricultura/mapa_agtem_aptitud.png)
 
-**Pesos Globales de los atributos ambientales de agricultura tecnificada de temporal**
+**Pesos globales de los atributos ambientales de agricultura tecnificada de temporal**
+
+Criterio | Peso
+-- | --
+Precipitación | 0.314
+Tipo de suelo | 0.207
+Pendiente | 0.150
+Vías de comunicación | 0.108
+Mano de obra | 0.061
+Mercados | 0.061
+Tipo de cobertura | 0.043
+Combustible | 0.036
+Tenencia | 0.020
 
 **Área por categoria de aptitud**
 
@@ -659,3 +688,5 @@ Muy baja | 0.9 | 0
 Nula | 2594.7 | 7
 
 #### 2.3.3 Sensibilidad de atributos de agricultura tecnificada de temporal
+
+![](/recursos/agricultura/fi_analisis_sensibilidad_agricultura_temporal.png)

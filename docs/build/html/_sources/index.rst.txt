@@ -31,7 +31,6 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    milpa_apic_pr
    pec_bovino_pr
    pec_porcino_pr
-   ga_silvopastoril_pr
    urbano_pr
 
 

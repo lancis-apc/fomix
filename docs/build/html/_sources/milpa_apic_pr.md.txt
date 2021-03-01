@@ -1,4 +1,4 @@
-# Milpa maya y apicultura-En proceso de actualización
+# Milpa maya y apicultura-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -7,7 +7,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 Promover el fortalecimiento del sistema milpa maya tradicional y de la apicultura del Estado de Yucatán, para que la producción se realice de manera sustentable, promueva la conservación de la biodiversidad y del patrimonio biocultural y permita la innovación en la milpa maya, sin perder su esencia tradicional.
 
-[Lista de participantes]()
+[Lista de participantes](https://www.dropbox.com/s/glnxc868eav1ka7/lista_asistencia_milpa_apic.pdf?dl=0)
 
 ## 1. Milpa maya
 
@@ -122,7 +122,7 @@ Capa | Precipitación promedio de mayo, junio y julio
 Fuente | Adaptado de: Precipitación mensual, periodo: 2000 (1980-2009) Instituto de Biología, UNAM
 Año | 2019
 Resolución | 1000 m x 1000 m
-Unidades | Adimensional
+Unidades | Milímetros
 
 **Parámetros de la función de valor**
 
@@ -228,6 +228,7 @@ Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
 Año | 2019
 Campo | TIPO_VIAL
 Escala | Sin dato
+Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
@@ -306,6 +307,19 @@ ID | Categoria
 
 ![](/recursos/milpa_apic/mapa_mil_aptitud.png)
 
+**Pesos globales de los atributos ambientales de milpa maya**
+
+Criterio | Peso
+-- | --
+Cobertura | 0.297
+Tipo de suelo | 0.258
+Tenencia de la tierra | 0.130
+Población indígena | 0.130
+Precipitación | 0.079
+Veredas | 0.073
+Distancia a localidades rurales | 0.018
+Carreteras | 0.015
+
 **Área por categoria de aptitud**
 
 Categoría | Km² | Porcentaje del   estado
@@ -316,6 +330,8 @@ Moderada | 6700.0 | 17
 Baja | 841.6 | 2
 Muy baja | 144.4 | 0
 Nula | 2413.4 | 6
+
+#### 1.3.4 Sensibilidad de atributos ambientales de milpa maya
 
 ![](/recursos/milpa_apic/fi_analisis_sensibilidad_milpa_maya.png)
 
@@ -385,7 +401,7 @@ Capa | Precipitación promedio de marzo
 Fuente | Precipitación mensual, periodo: 2000 (1980-2009) Instituto de Biología, UNAM
 Año | 2019
 Resolución | 1000 m x 1000 m
-Unidades | Adimensional
+Unidades | Milímetros
 
 **Parámetros de la función de valor**
 
@@ -423,6 +439,7 @@ Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
 Año | 2019
 Campo | TIPO_VIAL
 Escala | Sin dato
+Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
@@ -625,6 +642,20 @@ ID | Categoría
 
 ![](/recursos/milpa_apic/mapa_api_aptitud.png)
 
+**Pesos globales de los atributos ambientales de apicultura**
+
+Criterio | Peso
+-- | --
+Cobertura | 0.544
+Precipitación | 0.136
+Tenencia de la tierra | 0.062
+Carreteras | 0.059
+Veredas | 0.059
+Distancia a localidades rurales | 0.055
+Distancia a localidades rurales-urbanas | 0.052
+Población indígena | 0.021
+Distancia a localidades urbanas | 0.012
+
 **Área por categoria de aptitud**
 
 Categoría | Km² | Porcentaje del estado
@@ -636,9 +667,10 @@ Baja | 5645.0 | 14
 Muy baja | 524.2 | 1
 Nula | 985.9 | 2
 
-#### 2.3.4 Sensibilidad de atributos de apicultura
+#### 2.3.4 Sensibilidad de atributos ambientales de apicultura
 
 ![](/recursos/milpa_apic/fi_analisis_sensibilidad_apicultura.png)
+
 <!--
 
 Atributo | Definición
