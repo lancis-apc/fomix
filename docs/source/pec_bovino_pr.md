@@ -1,4 +1,4 @@
-# Pecuario bovino-Final
+# Pecuario bovino-En proceso de actualización
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -250,7 +250,7 @@ Unidades | Kilómetros
 
 ### 1.3 Mapa de aptitud
 
-#### 1.3.1 Zona de exclusión
+#### 1.3.1 Zona de exclusión del subsector pecuario bovino
 
 **Insumos**
 
@@ -262,7 +262,7 @@ Campo | [1] descripcio
 Escala | [1] 1:250,000; [2] Sin dato
 Unidades | Adimensional
 
-**Tabla de exclusión del sector pecuario bovino**
+**Tabla de exclusión del subsector pecuario bovino**
 
 ID | Categoría
 -- | --
@@ -277,11 +277,11 @@ ID | Categoría
 
 ![](/recursos/pec_bovino/mapa_bov_exclusion.png)
 
-#### 1.3.2 Mapa de aptitud del sector pecuario bovino
+#### 1.3.2 Mapa de aptitud del subsector pecuario bovino
 
 ![](/recursos/pec_bovino/mapa_bov_aptitud.png)
 
-**Pesos globales de los atributos ambientales del sector pecuario bovino**
+**Pesos globales de los atributos ambientales del subsector pecuario bovino**
 
 Criterio | Peso
 -- | --
@@ -305,7 +305,7 @@ Baja | 258.8 | 1
 Muy baja | 804.5 | 2
 Nula | 2808.0 | 7
 
-#### 1.3.3 Sensibilidad de criterios ambientales
+#### 1.3.3 Sensibilidad de criterios ambientales del subsector pecuario bovino
 
 ![](/recursos/pec_bovino/fi_analisis_sensibilidad_bovino.png)
 
@@ -347,7 +347,7 @@ Tipo de uso de suelo y vegetación que determina la carga animal y la biodiversi
 Capa | Uso del suelo y vegetación
 -- | --
 Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
-Año | 2014
+Año | 2017
 Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
@@ -576,7 +576,7 @@ Capa | Distancia a localidades intraestatales
 Fuente | Adaptado de: [1] Conjunto de datos vectoriales de información topográfica   por Entidad Federativa Serie VI. (Zonas urbanas) INEGI y [2] Red nacional de   caminos INEGI
 Año | 2019
 Escala | [1] 1:250,000; [2] Sin dato
-Unidades | Adimensional
+Unidades | Kilómetros
 
 <!-- .. csv-table::
    :file: recursos/tabla_insumos_fv_gbe_sil_socio_d_mercados_loc.csv
@@ -601,7 +601,7 @@ Capa | Distancia a localidades intraestatales
 Fuente | Adaptado de: [1] Conjunto de datos vectoriales de información topográfica   por Entidad Federativa Serie VI. (Zonas urbanas) INEGI y [2] Red nacional de   caminos INEGI
 Año | 2019
 Escala | [1] 1:250,000; [2]Sin dato
-Unidades | Adimensional
+Unidades | Kilómetros
 
 <!-- .. csv-table::
    :file: recursos/tabla_insumos_fv_gbe_sil_socio_d_mercados_for.csv
@@ -643,7 +643,19 @@ Unidades | Porcentaje
 
 ### 2.3 Mapa de aptitud
 
-#### 2.3.1 Capa de exclusión
+#### 2.3.1 Capa de exclusión del subsector pecuario silvopastoril
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión del subsector pecuario silvopastoril**
 
 Coberturas no aptas de la capa de uso del suelo y vegetación serie VI INEGI usadas como zonas de exclusión (Aptitud nula)
 
@@ -671,11 +683,11 @@ ID | Categoría
 
 ![](/recursos/silvopastoril/mapa_gbe_silvopastoril_exclusion.png)  
 
-#### 2.3.2 Mapa de aptitud silvopastoril
+#### 2.3.2 Mapa de aptitud del subsector pecuario silvopastoril
 
 ![](/recursos/silvopastoril/mapa_apt_gbe_silvopastoril.png)
 
-**Pesos globales del modelo de aptitud silvopastoril**
+**Pesos globales del modelo de aptitud del subsector pecuario silvopastoril**
 
 Criterio | Peso
 -- | --
@@ -704,6 +716,6 @@ Moderada | 4300.0 | 11
 Alta | 11956.0 | 30
 Muy alta | 19486.6 | 49
 
-#### 2.3.3 Sensibilidad de atributos
+#### 2.3.3 Sensibilidad de criterios ambientales del subsector pecuario silvopastoril
 
 ![](/recursos/silvopastoril/fi_analisis_sensibilidad_silvopastoril.png)
