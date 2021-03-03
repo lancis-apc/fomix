@@ -1,4 +1,4 @@
-# Pecuario bovino-En proceso de actualización
+# Pecuario bovino-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -328,17 +328,44 @@ Sistema de producción bovina integrada a especies arbóreas, arbustivas con gra
 
 Criterio | Definición
 -- | --
+Disponibilidad de agua | Acceso a la posibilidad de extraer agua del acuífero para el consumo del ganado (nivel piezométrico)
 Cobertura | Tipo de uso de suelo y vegetación que determina la carga animal y la   biodiversidad vegetal.
+Tipo de suelo | Características físicas (profundidad, pedregosidad) y químicas (MO,   Nitrógeno) del suelo para soportar la producción de pasto o sustento para la nutrición de los animales.
+Precipitación | Precipitación promedio, cantidad y distribución del agua de lluvia para   mantener la producción de pasto o sustento para la nutrición de los animales.
 Temperatura | Temperatura ambiente máxima (promedio) que afecta el desempeño productivo   de los animales en pastoreo, aunque aumenta la productividad de pastoreo.
-Precipitación | Precipitación promedio, cantidad y distribución del agua de lluvia para   mantener la producción de pasto o sustento para la nutrición de los animales
-Tipo de suelo | Características físicas (profundidad, pedregosidad) y químicas (MO,   Nitrógeno) del suelo para soportar la producción de pasto o sustento para la   nutrición de los animales.
-Disponibilidad de agua | Acceso a la posibilidad de extraer agua del acuífero para el consumo del   ganado (nivel piezométrico)
+
 <!-- .. csv-table::
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv
    :header-rows: 1
    :align: center -->
 
-##### 2.2.1.1 Cobertura
+##### 2.2.1.1 Disponibilidad de agua
+
+Acceso a la posibilidad de extraer agua del acuífero para el consumo del ganado (nivel piezométrico).
+
+**Insumos**
+
+Capa | Nivel freático
+-- | --
+Fuente | Nivel freático POETY
+Año | Sin dato
+Campo | n_freat_m
+Escala | Estatal
+Unidades | Metros
+
+   <!-- .. csv-table::
+      :file: recursos/tabla_insumos_fv_gbe_sil_bio_d_acuifero.csv
+      :align: left -->
+
+**Parámetros de la función de valor**
+
+![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_d_acuifero.png)
+
+**Función de valor de disponibilidad de agua**
+
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_d_acuifero.png)   
+
+##### 2.2.1.2 Cobertura
 
 Tipo de uso de suelo y vegetación que determina la carga animal y la biodiversidad vegetal.
 
@@ -417,60 +444,7 @@ ID | Categoría | Expresión verbal | FV
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_usv_inegi.PNG)
 
-##### 2.2.1.2 Temperatura
-
-Temperatura ambiente máxima (promedio) que afecta el desempeño productivo de los animales en pastoreo, aunque aumenta la productividad de pastoreo.
-
-**Insumos**
-
-Capa | Temperatura máxima promedio
--- | --
-Fuente | Adaptado de: Temperatura máxima promedio García, E. - CONABIO
-Año | 1998
-Campo | temp_mean
-Escala | 1:1,000,000
-Unidades | °C
-
-<!-- .. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_bio_temp_max.csv
-   :align: left -->
-
-**Parámetros de la función de valor**
-
-![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_temp_max.png)
-
-**Función de valor de temperatura**
-
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_temp_max.png)
-
-##### 2.2.1.3 Precipitación
-
-Precipitación promedio, cantidad y distribución del agua de lluvia para mantener la producción de pasto o sustento para la nutrición de los animales.
-
-**Insumos**
-
-Capa | Precipitación total anual
--- | --
-Fuente | Adaptado de: Precipitación total anual García, E. - CONABIO
-Año | 1998
-Campo | prec_mean
-Escala | 1:1,000,000
-Unidades | Milímetros
-
-<!--
-.. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_bio_precipitacion.csv
-   :align: left -->
-
-**Parámetros de la función de valor**
-
-![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_precipitacion.png)  
-
-**Función de valor de precipitación**
-
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_precipitacion.png)
-
-##### 2.2.1.4 Tipo de suelo
+##### 2.2.1.3 Tipo de suelo
 
 Características físicas (profundidad, pedregosidad) y químicas (MO, Nitrógeno) del suelo para soportar la producción de pasto o sustento para la nutrición de los animales.
 
@@ -514,46 +488,99 @@ ID | Categoría | Expresión verbal | FV
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_t_suelo.png)    
 
-##### 2.2.1.5 Disponibilidad de agua
+##### 2.2.1.4 Precipitación
 
-Acceso a la posibilidad de extraer agua del acuífero para el consumo del ganado (nivel piezométrico).
+Precipitación promedio, cantidad y distribución del agua de lluvia para mantener la producción de pasto o sustento para la nutrición de los animales.
 
 **Insumos**
 
-Capa | Nivel freático
+Capa | Precipitación total anual
 -- | --
-Fuente | Nivel freático POETY
-Año | Sin dato
-Campo | n_freat_m
-Escala | Estatal
-Unidades | Metros
+Fuente | Adaptado de: Precipitación total anual García, E. - CONABIO
+Año | 1998
+Campo | prec_mean
+Escala | 1:1,000,000
+Unidades | Milímetros
 
-<!-- .. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_bio_d_acuifero.csv
+<!--
+.. csv-table::
+   :file: recursos/tabla_insumos_fv_gbe_sil_bio_precipitacion.csv
    :align: left -->
 
 **Parámetros de la función de valor**
 
-![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_d_acuifero.png)
+![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_precipitacion.png)  
 
-**Función de valor de disponibilidad de agua**
+**Función de valor de precipitación**
 
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_d_acuifero.png)   
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_precipitacion.png)
+
+##### 2.2.1.5 Temperatura
+
+Temperatura ambiente máxima (promedio) que afecta el desempeño productivo de los animales en pastoreo, aunque aumenta la productividad de pastoreo.
+
+**Insumos**
+
+Capa | Temperatura máxima promedio
+-- | --
+Fuente | Adaptado de: Temperatura máxima promedio García, E. - CONABIO
+Año | 1998
+Campo | temp_mean
+Escala | 1:1,000,000
+Unidades | °C
+
+<!-- .. csv-table::
+   :file: recursos/tabla_insumos_fv_gbe_sil_bio_temp_max.csv
+   :align: left -->
+
+**Parámetros de la función de valor**
+
+![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_temp_max.png)
+
+**Función de valor de temperatura**
+
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_temp_max.png)
 
 #### 2.2.2 Socioeconómicos
 
 Criterio | Definición
 -- | --
+Disponibilidad de mano de obra | Población económicamente activa ocupada en el sector primario (%)
 Accesibilidad a mercados locales | Distancia a puntos de venta local de becerros (Tizimín, Valladolid, Mérida y Tzucacab)
 Accesibilidad a mercados foráneos | Distancia a puntos de venta de carne (Campeche, Cancún, Playa del Carmen).
-Disponibilidad de mano de obra | Población económicamente activa ocupada en el sector primario (%)
 
 <!-- .. csv-table::
    :file: recursos/tabla_c_socioeconomico_silvopastoril.csv
    :header-rows: 1
    :align: center -->
 
-##### 2.2.2.1 Accesibilidad a mercados
+##### 2.2.2.1 Disponibilidad de mano de obra
+
+Población económicamente activa ocupada en el sector primario (%).
+
+**Insumos**
+
+Capa | Población económicamente activa en el sector primario
+-- | --
+Fuente | Adaptado de: [1] Encuesta Intercensal INEGI y [2] División política municipal INEGI
+Año | [1] 2015; [2] 2018
+Campo | [1] Sector de actividad económica primario
+Escala | [2] 1:250,000
+Unidades | Porcentaje
+
+   <!-- .. csv-table::
+      :file: recursos/tabla_insumos_fv_gbe_sil_socio_sec_primario.csv
+      :align: left   -->
+
+**Parámetros de la función de valor**
+
+![](/recursos/silvopastoril/fi_fv_gbe_sil_socio_sec_primario.png)  
+
+**Función de valor de disponibilidad de mano de obra**
+
+![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_sec_primario.png)  
+
+##### 2.2.2.2 Accesibilidad a mercados
 
 Criterio | Definición | FV
 -- | -- | --
@@ -565,7 +592,7 @@ Accesibilidad a mercados foráneos | Distancia a puntos de venta de carne (Campe
    :header-rows: 1
    :align: center -->
 
-###### 2.2.2.1.1 Accesibilidad a mercados locales**
+###### 2.2.2.2.1 Accesibilidad a mercados locales**
 
 Distancia a puntos de venta local de becerros (Tizimín, Valladolid, Mérida y Tzucacab).
 
@@ -590,7 +617,7 @@ Unidades | Kilómetros
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_d_mercados_loc.png)
 
-###### 2.2.2.1.2 Accesibilidad a mercados foráneos**
+###### 2.2.2.2.2 Accesibilidad a mercados foráneos**
 
 Distancia a puntos de venta de carne (Campeche, Cancún, Playa del Carmen).  
 
@@ -598,7 +625,7 @@ Distancia a puntos de venta de carne (Campeche, Cancún, Playa del Carmen).
 
 Capa | Distancia a localidades intraestatales
 -- | --
-Fuente | Adaptado de: [1] Conjunto de datos vectoriales de información topográfica   por Entidad Federativa Serie VI. (Zonas urbanas) INEGI y [2] Red nacional de   caminos INEGI
+Fuente | Adaptado de: [1] Conjunto de datos vectoriales de información topográfica por Entidad Federativa Serie VI. (Zonas urbanas) INEGI y [2] Red nacional de caminos INEGI
 Año | 2019
 Escala | [1] 1:250,000; [2]Sin dato
 Unidades | Kilómetros
@@ -614,32 +641,6 @@ Unidades | Kilómetros
 **Función de valor de accesibilidad a mercados foráneos**
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_d_mercados_for.png)  
-
-##### 2.2.2.2 Disponibilidad de mano de obra
-
-Población económicamente activa ocupada en el sector primario (%).
-
-**Insumos**
-
-Capa | Población económicamente activa en el sector primario
--- | --
-Fuente | Adaptado de: [1] Encuesta Intercensal INEGI y [2] División política municipal INEGI
-Año | [1] 2015; [2] 2018
-Campo | [1] Sector de actividad económica primario
-Escala | [2] 1:250,000
-Unidades | Porcentaje
-
-<!-- .. csv-table::
-   :file: recursos/tabla_insumos_fv_gbe_sil_socio_sec_primario.csv
-   :align: left   -->
-
-**Parámetros de la función de valor**
-
-![](/recursos/silvopastoril/fi_fv_gbe_sil_socio_sec_primario.png)  
-
-**Función de valor de disponibilidad de mano de obra**
-
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_sec_primario.png)  
 
 ### 2.3 Mapa de aptitud
 
