@@ -321,9 +321,9 @@ Cobertura | 0.046
 Asentamiento rural | 0.030
 Asentamiento urbano | 0.012
 
-**Área por categoria de aptitud**
+**Área por categoría de aptitud**
 
-Categoría | Km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del   estado
 -- | --: | --:
 Muy alta | 6792.6 | 17
 Alta | 14471.5 | 37

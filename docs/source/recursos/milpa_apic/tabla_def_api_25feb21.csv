@@ -12,7 +12,7 @@ Sociales,Atributos que describen características sociales del territorio.,0.08
 Biofísicos,,
 Atributo,Definición,Peso
 Cobertura,Vegetación o uso de suelo actual,0.8
-Precipitación,Precipitación de marzo (estiaje),0.2
+Precipitación,Precipitación promedio del mes de marzo (temporada de estiaje),0.2
 ,,
 Infraestructura,,
 Atributo,Definición,Peso
@@ -33,11 +33,4 @@ Distancia a localidades,,
 Atributo,Definición,Peso
 Distancia a localidades rurales,"Distancia localidades rurales < 2,500 habitantes.",0.46
 Distancia a localidades rurales-urbanas,"Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.",0.44
-Distancia a localidades urbanas,"Distancia a localidades urbanas >= 15,000 habitantes.",0.10
-,,
-,,
-,,
-,,
-,,
-,,
-,,
+Distancia a localidades urbanas,"Distancia a localidades urbanas >= 15,000 habitantes.",0.1

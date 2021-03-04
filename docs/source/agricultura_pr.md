@@ -349,9 +349,9 @@ Tipo de suelo | 0.042
 Tipo de cobertura | 0.021
 Tenencia | 0.014
 
-**Área por categoria de aptitud**
+**Área por categoría de aptitud**
 
-Categoría | Km² | Porcentaje del estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
 Muy alta | 502.5 | 1
 Alta | 19395.3 | 49
@@ -676,9 +676,9 @@ Tipo de cobertura | 0.043
 Combustible | 0.036
 Tenencia | 0.020
 
-**Área por categoria de aptitud**
+**Área por categoría de aptitud**
 
-Categoría | Km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del   estado
 -- | --: | --:
 Muy alta | 6373.8 | 16
 Alta | 17818.7 | 45

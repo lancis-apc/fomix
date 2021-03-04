@@ -990,9 +990,9 @@ Basureros | 0.008
 Aeropuertos | 0.006
 Carreteras de un carril | 0.006
 
-**Área por categoria de aptitud**
+**Área por categoría de aptitud**
 
-Categoría | Km² | Porcentaje del estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
 Muy alta | 1529.5 | 4
 Alta | 2570.8 | 7

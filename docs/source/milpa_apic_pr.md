@@ -320,9 +320,9 @@ Veredas | 0.073
 Distancia a localidades rurales | 0.018
 Carreteras | 0.015
 
-**Área por categoria de aptitud**
+**Área por categoría de aptitud**
 
-Categoría | Km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del   estado
 -- | --: | --:
 Muy alta | 16624.6 | 42
 Alta | 12812.6 | 32
@@ -656,9 +656,9 @@ Distancia a localidades rurales-urbanas | 0.052
 Población indígena | 0.021
 Distancia a localidades urbanas | 0.012
 
-**Área por categoria de aptitud**
+**Área por categoría de aptitud**
 
-Categoría | Km² | Porcentaje del estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
 Muy alta | 22439.4 | 57
 Alta | 5488.2 | 14
@@ -670,132 +670,3 @@ Nula | 985.9 | 2
 #### 2.3.4 Sensibilidad de atributos ambientales de apicultura
 
 ![](/recursos/milpa_apic/fi_analisis_sensibilidad_apicultura.png)
-
-<!--
-
-Atributo | Definición
--- | --
-Población indígena | Porcentaje de la población que habla una lengua indígena en el municipio.   
-Tenencia de la tierra | Zonas de área común, parcelas y áreas no ejidales.  
-
-##### 1.2.2.1 Población indígena
-
-Porcentaje de la población que habla una lengua indígena en el municipio.
-
-**Insumos**
-
-Capa | Población indígena
--- | --
-Fuente | [1] Polígonos de municipios. División política municipal INEGI y [2] Datos de indicador. Censo de Población y Vivienda INEGI
-Año | [1] 2018 y [2] 2020
-Campo | [2] POBTOT y P3YM_HLI
-Escala | Municipal
-Unidades | Porcentaje
-
-##### 1.2.2.2 Tenencia de la tierra
-
-Zonas de área común, parcelas y áreas no ejidales.
-
-**Insumos**
-
-Capa | Tenencia de la tierra
--- | --
-Fuente | [1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN
-Año | 2020
-Escala | Sin dato
-Unidades | Adimensional
-
-#### 1.2.3 Infraestructura
-
-Atributo | Definición
--- | --
-Distancia a caminos | Distancia a caminos principales, brechas, terracerías
-Distancia a centros de acopio | Distancia a poblaciones principales. Existencia de grupos organizados de mercado.
-
-##### 1.2.3.1 Distancia a caminos
-
-Distancia a caminos principales, brechas, terracerías.
-
-Atributo | Definición
--- | --
-Carreteras | Distancia a carreteras y prolongación   
-Veredas | Distancia a caminos y veredas
-
-###### 1.2.3.1.1 Carreteras
-
-Distancia a carreteras y prolongación.
-
-**Insumos**
-
-Capa | Distancia a carreteras y prolongaciones
--- | --
-Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
-Año | 2019
-Campo | TIPO_VIAL
-Escala | Sin dato
-
-###### 1.2.3.1.2 Veredas
-
-Distancia a caminos y veredas.
-
-**Insumos**
-
-Capa | Distancia a veredas y caminos
--- | --
-Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
-Año | 2019
-Campo | TIPO_VIAL
-Escala | Sin dato
-Unidades | Kilómetros
-
-##### 1.2.3.2 Distancia a centros de acopio
-
-Distancia a poblaciones principales. Existencia de grupos organizados de mercado.
-
-Atributo | Definición
--- | --
-Distancia a localidades rurales | Distancia localidades rurales < 2,500 habitantes.   
-Distancia a localidades rurales-urbanas | Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.   
-Distancia a localidades urbanas | Distancia a localidades urbanas >= 15,000 habitantes.   
-
-###### 1.2.3.2.1 Distancia a localidades rurales
-
-Distancia localidades rurales < 2,500 habitantes.  
-
-**Insumos**
-
-Capa | Distancia a localidades rurales (menos de 2,500 habitantes)
--- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | 2020
-Campo | [2] POBTOT
-Escala | Localidad
-Unidades | Kilómetros
-
-###### 1.2.3.2.2 Distancia a localidades rurales-urbanas
-
-Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.
-
-**Insumos**
-
-Capa | Distancia a localidades rurales - urbanas (entre 2,500 y 15,000 habitantes)
--- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | 2020
-Campo | [2] POBTOT
-Escala | Localidad
-Unidades | Kilómetros
-
-###### 1.2.3.2.3 Distancia a localidades urbanas
-
-Distancia a localidades urbanas >= 15,000 habitantes.   
-
-**Insumos**
-
-Capa | Distancia a localidades urbanas (con 15,000 habitantes o más)
--- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda. Principales resultados por localidad (ITER) INEGI
-Año | 2020
-Campo | [2] POBTOT
-Escala | Localidad
-Unidades | Kilómetros -->
