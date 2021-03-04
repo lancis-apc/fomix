@@ -25,6 +25,7 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    :caption: Sectores:
 
    agricultura_pr
+   conservacion_pr
    energia_pr
    forestal_pr
    industrial_pr

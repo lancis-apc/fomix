@@ -380,9 +380,9 @@ Centros de salud | 0.024
 Población indígena | 0.010
 Edificios administrativos | 0.006
 
-**Área por categoria de aptitud**
+**Área por categoría de aptitud**
 
-Categoría | Km² | Porcentaje del estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
 Muy alta | 1060.3 | 3
 Alta | 0.0 | 0
