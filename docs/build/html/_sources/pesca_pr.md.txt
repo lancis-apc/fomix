@@ -5,11 +5,33 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
+Fortalecer el sector pesquero para que desarrolle actividades pesqueras viables y sostenibles.
+Fortalecer la infraestructura de procesamiento actual en la zona costera y áreas circundantes, así como buscar espacios para el desarrollo de centros de acopio y plantas de procesamiento de subproductos de la pesca, que cumplan con la normatividad nacional e internacional.
+Asegurar espacios de refugio para embarcaciones pesqueras y definir espacios diferenciados para las embarcaciones de desarrollo turístico y pesca comercial.
 
 [Lista de participantes]()
 
 ### 1.1 Modelo de decisión
 
+![](/recursos/pesca/fi_pesca.png)
+
+### 1.2 Criterios
+
+#### 1.2.1 infraestructura
+
+Criterio|Definición
+--|--
+Agua potable| Distancia a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
+Internet| Distancia a localidades que se evaluaron con base en el porcentaje de viviendas con internet.
+Carreteras| Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.
+Electricidad| Distancia a red de transmisión eléctrica.
+
+#### 1.2.2 Socioeconómicos
+
+Criterio|Definición
+--|--
+Centros de distribución| Distancia a los puntos de distribución de productos: Progreso, Mérida, Valladolid, Tizimín, Hunucmá y Motul
+Localidades| Distancia a localidades de comunidades pesqueras: Celestún, Sisal, Chuburná, Yucalpetén, Progreso, Telchac, Chabihau, Dzilam de Bravo, San Felipe, Río Lagartos, Las Coloradas, El Cuyo, Chelem, Chicxulub, Santa Clara y San Crisanto.
 
 <!--
 ## 1. Energía industrial

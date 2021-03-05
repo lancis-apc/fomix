@@ -289,7 +289,7 @@ Unidades | Adimensional
 
 Capa | Uso de suelo y vegetación y localidades con 2,500 habitantes o más
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y   vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
 Año | [1] 2017; [2] 2020
 Campo | [1] descripcio
 Escala | [1] 1:250,000; [2] Sin dato
@@ -297,7 +297,9 @@ Unidades | Adimensional
 
 **Tabla de exclusión de milpa maya**
 
-ID | Categoria
+[1]
+
+ID | Categoría
 -- | --
 1 | Acuícola
 5 | Bosque cultivado/Palmar inducido
@@ -308,6 +310,8 @@ ID | Categoria
 14 | Vegetación de duna costera
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
+
+[2] Se seleccionaron las localidades con 2,500 habitantes o más.
 
 ![](/recursos/milpa_apic/mapa_mil_exclusion.png)
 
@@ -638,11 +642,15 @@ Unidades | Adimensional
 
 **Tabla de exclusión de apicultura**
 
+[1]
+
 ID | Categoría
 -- | --
 1 | Acuícola
 6 | Cuerpo de agua
 16 | Vegetación halófila hidrófila
+
+[2] Se seleccionaron las localidades con 2,500 habitantes o más.
 
 ![](/recursos/milpa_apic/mapa_api_exclusion.png)
 

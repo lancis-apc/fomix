@@ -24,6 +24,7 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    :maxdepth: 6
    :caption: Sectores:
 
+   acuacultura_pr
    agricultura_pr
    conservacion_pr
    energia_pr
@@ -32,6 +33,7 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    milpa_apic_pr
    pec_bovino_pr
    pec_porcino_pr
+   pesca_pr
    turismo_pr
    urbano_pr
 
