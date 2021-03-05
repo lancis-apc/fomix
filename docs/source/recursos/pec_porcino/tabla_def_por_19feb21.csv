@@ -20,7 +20,7 @@ Atributo,Definición,Peso
 Caminos,Distancia a carreteras pavimentadas de 2 carriles y secundarias,0.529
 Distancia a redes eléctricas: ,Distancia a redes eléctricas CFE.,0.257
 Distancia a rastro y empacadora ,"Infraestructura industrial complementaria (incluye establecimientos de inspección federal, plantas transformadoras de productos y empacadoras). Distancia a rastros y empacadoras porcinos y avícolas.",0.139
-Puerto Progreso ,Distancia a Puerto Progreso.,0.075
+Puerto Progreso ,Distancia a Puerto Progreso para recepción de insumos.,0.075
 ,,
 ,,
 Caminos,,
