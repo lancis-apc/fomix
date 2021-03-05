@@ -109,7 +109,7 @@ Precipitación promedio de mayo, junio y julio.
 
 Atributo | Definición
 -- | --
-Precipitación | Precipitación promedio de mayo, junio y julio.
+Precipitación | Precipitación promedio de los   meses de mayo, junio y julio (meses de inicio de siembra de la milpa).
 
 ###### 1.2.1.3.1 Precipitación
 
@@ -173,6 +173,14 @@ Fuente | [1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN
 Año | 2020
 Escala | Sin dato
 Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+1 | Tierra de uso común | Muy alta | 1.00
+2 | Zona de tierras parceladas | Moderada | 0.50
+3 | No ejidal | Baja | 0.25
 
 **Función de valor de tenencia de la tierra**
 
@@ -392,7 +400,7 @@ ID | Categoría | Importancia | FV
 
 ##### 2.2.1.2 Precipitación
 
-Precipitación de marzo (estiaje)
+Precipitación promedio del mes de marzo (temporada de estiaje).
 
 **Insumos**
 
