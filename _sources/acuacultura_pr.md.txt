@@ -1,37 +1,37 @@
-# Pesca-En proceso de actualización
+# Acuacultura-En proceso de actualización
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Fortalecer el sector pesquero para que desarrolle actividades pesqueras viables y sostenibles.
-Fortalecer la infraestructura de procesamiento actual en la zona costera y áreas circundantes, así como buscar espacios para el desarrollo de centros de acopio y plantas de procesamiento de subproductos de la pesca, que cumplan con la normatividad nacional e internacional.
-Asegurar espacios de refugio para embarcaciones pesqueras y definir espacios diferenciados para las embarcaciones de desarrollo turístico y pesca comercial.
+Promover el crecimiento de la producción acuícola de agua marina en la zona costera y de agua dulce al interior del estado, a partir de la capacitación del personal técnico, la construcción de granjas y la integración de la infraestructura ya existente a un estándar de sustentabilidad.
+Implementar en la granjas acuícolas infraestructura y tecnología para la mejora de los procesos de producción, como el uso de sistemas de recirculación del agua, sistemas acuapónicos y de generación de energía solar.
+Establecer y habilitar centros de acopio, laboratorios de producción de semilla, unidades de bioseguridad y centros de capacitación para la producción acuícola (proyecto de parque acuícola).
 
 [Lista de participantes]()
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/pesca/fi_pesca.png)
+![](/recursos/pesca/fi_acuacultura.png)
 
 ### 1.2 Criterios
 
-#### 1.2.1 infraestructura
+#### 1.2.1 Biofísicos
 
 Criterio|Definición
---|--
-Agua potable| Distancia a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
-Internet| Distancia a localidades que se evaluaron con base en el porcentaje de viviendas con internet.
+--|--|
+Acceso a agua| Posibilidad de extraer agua subterránea, considerando el nivel piezométrico.
+Salinidad| Interfase salina
+Vegetación| Tipos de vegetación y usos de suelo.
+
+#### 1.2.2 Infraestructura
+
+Criterio|Definición
+--|--|
 Carreteras| Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.
 Electricidad| Distancia a red de transmisión eléctrica.
-
-#### 1.2.2 Socioeconómicos
-
-Criterio|Definición
---|--
-Centros de distribución| Distancia a los puntos de distribución de productos: Progreso, Mérida, Valladolid, Tizimín, Hunucmá y Motul
-Localidades| Distancia a localidades de comunidades pesqueras: Celestún, Sisal, Chuburná, Yucalpetén, Progreso, Telchac, Chabihau, Dzilam de Bravo, San Felipe, Río Lagartos, Las Coloradas, El Cuyo, Chelem, Chicxulub, Santa Clara y San Crisanto.
+Localidades| Distancia a localidades de 2,500 habitantes o más, para mano de obra en las granjas acuícolas.
 
 <!--
 ## 1. Energía industrial

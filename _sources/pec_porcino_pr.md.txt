@@ -22,7 +22,7 @@ Atributo | Definición
 Caminos | Distancia a carreteras pavimentadas de 2 carriles y secundarias
 Distancia a redes eléctricas: | Distancia a redes eléctricas CFE.
 Distancia a rastro y empacadora | Infraestructura industrial complementaria (incluye establecimientos de inspección federal, plantas transformadoras de productos y empacadoras). Distancia a rastros y empacadoras porcinos y avícolas.
-Puerto Progreso | Distancia a Puerto Progreso.
+Puerto Progreso | Distancia a Puerto Progreso para recepción de insumos.
 
 ##### 1.2.1.1 Caminos
 
@@ -121,7 +121,7 @@ Unidades | Kilómetros
 
 ##### 1.2.1.4 Puerto Progreso
 
-Distancia a Puerto Progreso.
+Distancia a Puerto Progreso para recepción de insumos.
 
 **Insumos**
 
@@ -183,6 +183,27 @@ Año | 2020
 Campo | Desc_SAMOF
 Escala | Sin dato
 Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Preferencia del productor | FV
+-- | -- | -- | --
+4 | Pastizal Cultivado e Inducido (PC y PI) | Muy alta | 1.00
+5 | Pastizal Natural (PN, PY, PH, VW, VS y VSI) | Muy alta | 1.00
+6 | Selva Baja Caducifolia Subcaducifolia (SBC, SBK, SBS,MST y VPI   ) | Muy alta | 1.00
+7 | Selva Baja y Mediana Subperennifolia (SBQ, SBQP, SMQ, SG y   VPN) | Muy alta | 1.00
+9 | Suelo Desnudo (ADV y DV) | Muy alta | 1.00
+8 | Selva Mediana Caducifolia y Subcaducifolia (SMC y SMS) | Alta | 0.75
+10 | Tierra Agrícola Cultivo Anual (T, R y H) (A y S) | Alta | 0.75
+11 | Tierra Agrícola Cultivo Perenne (T, R y H) (P) | Alta | 0.75
+2 | Bosque Cultivado e Inducido (BC y BI) | Baja | 0.25
+1 | Agua (H2O, PRE y ACUI) | Nula | 0.00
+3 | Manglar y Petén (VM y VP) | Nula | 0.00
+12 | Tular (VT) | Nula | 0.00
+13 | Urbano y Construido (ZU y AH) | Nula | 0.00
+14 | Vegetación Halófila Hidrófila (VHH) | Nula | 0.00
+15 | Vegetación de Dunas Costeras (VU) | Nula | 0.00
+16 | NA | Nula | 0.00
 
 **Función de valor de cobertura**
 
