@@ -20,7 +20,7 @@ Establecer y habilitar centros de acopio, laboratorios de producción de semilla
 #### 1.2.1 Biofísicos
 
 Criterio|Definición
---|--|
+--|--
 Acceso a agua| Posibilidad de extraer agua subterránea, considerando el nivel piezométrico.
 Salinidad| Interfase salina
 Vegetación| Tipos de vegetación y usos de suelo.
@@ -28,7 +28,7 @@ Vegetación| Tipos de vegetación y usos de suelo.
 #### 1.2.2 Infraestructura
 
 Criterio|Definición
---|--|
+--|--
 Carreteras| Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.
 Electricidad| Distancia a red de transmisión eléctrica.
 Localidades| Distancia a localidades de 2,500 habitantes o más, para mano de obra en las granjas acuícolas.

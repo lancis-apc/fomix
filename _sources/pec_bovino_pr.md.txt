@@ -264,16 +264,19 @@ Unidades | Adimensional
 
 **Tabla de exclusión del subsector pecuario bovino**
 
+[1]
+
 ID | Categoría
 -- | --
 1 | Acuícola
-4 | Asentamiento humano
 6 | Cuerpo de agua
 7 | Manglar
 13 | Tular
 14 | Vegetación de duna costera
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
+
+[2] Se utilizaron todas las localidades (urbanas y rurales).
 
 ![](/recursos/pec_bovino/mapa_bov_exclusion.png)
 
@@ -666,7 +669,7 @@ ID | Categoría
 11 | Cuerpo de agua
 13 | Manglar
 14 | Palmar inducido
-16 | Paztizal halófilo
+16 | Pastizal halófilo
 22 | Sin Vegetación Aparente
 23 | Tular
 24 | Urbano Construido
