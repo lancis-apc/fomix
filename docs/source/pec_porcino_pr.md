@@ -1,4 +1,4 @@
-# Pecuario porcino y avícola-En proceso de actualización
+# Pecuario porcino y avícola-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -302,24 +302,27 @@ Unidades | Adimensional
 
 **Insumos**
 
-Capa | Cobertura del suelo
+Capa | Cobertura del suelo y localidades
 -- | --
-Fuente | Mapa de coberturas del suelo del estado de Yucatán al año base 2016 CONAFOR
+Fuente | [1] Mapa de coberturas del suelo del estado de Yucatán al año base 2016 CONAFOR y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
 Año | 2020
-Campo | Desc_SAMOF
+Campo | [1] Desc_SAMOF
 Escala | Sin dato
 Unidades | Adimensional
 
 **Tabla de exclusión del sector pecuario porcino y avícola**
+
+[1]
 
 ID | Categoría
 -- | --
 1 | Agua (H2O, PRE y ACUI)
 3 | Manglar y Petén (VM y VP)
 12 | Tular (VT)
-13 | Urbano y Construido (ZU y AH)
 14 | Vegetación Halófila Hidrófila (VHH)
 15 | Vegetación de Dunas Costeras (VU)
+
+[2] Se utilizaron todas las localidades (urbanas y rurales).
 
 ![](/recursos/pec_porcino/mapa_por_exclusion.png)
 
@@ -331,16 +334,16 @@ ID | Categoría
 
 Criterio | Peso
 -- | --
-Distancia a carreteras y prolongación | 0.265
+Carreteras | 0.265
 Profundidad del acuífero | 0.232
 Distancia a redes eléctricas | 0.161
-Distancia a rastro y empacadora | 0.087
-Distancia a caminos y veredas | 0.066
-Asentamiento rural-urbano | 0.053
+Distancia a rastro y empacadoras | 0.087
+Caminos y veredas | 0.066
+Rurales-Urbanas | 0.053
 Puerto Progreso | 0.047
 Cobertura | 0.046
-Asentamiento rural | 0.030
-Asentamiento urbano | 0.012
+Rurales | 0.030
+Urbanas | 0.012
 
 **Área por categoría de aptitud**
 

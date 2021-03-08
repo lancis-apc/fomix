@@ -1,4 +1,4 @@
-# Milpa maya y apicultura-En proceso de actualización
+# Milpa maya y apicultura-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->

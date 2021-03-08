@@ -11,6 +11,63 @@ Desarrollar y promocionar un modelo de turismo sustentable y diversificado, que 
 
 ### 1.1 Modelo de decisión
 
+![](/recursos/turismo/fi_turismo.png)
+
+### 1.2 Tipos
+
+#### 1.2.1 Sol y playa
+
+Turismo de sol y playa, segundas residencias y bodas.
+
+Atributos | Definición  
+-- | --
+Antropogénico | Atributos que describen las características antropogénicas del territorio.
+Físico | Atributos asociados a las propiedades físicas del suelo y del ambiente.
+Biológico | Atributos asociados a las propiedades biológicas del ambiente.
+
+#### 1.2.1.1 Antropogénico
+
+Atributos que describen las características antropogénicas del territorio.
+
+Atributos | Definición
+-- | --
+Asentamientos urbanos | Distancia a localidades urbanas >= 15,000 habitantes, vía carreteras.
+Tenencia de la tierra | Áreas ejidales (comunitaria o parcelada) y no ejidales.
+
+#### 1.2.1.2 Físico
+
+Atributos asociados a las propiedades físicas del suelo y del ambiente.
+
+Atributos | Definición
+-- | --
+Distancia al litoral | Distancia a zona costera
+Tipo de playa | Tipo de playa (rocosa o arenosa)
+Tipo de suelo | Tipo de suelo (edafología)
+
+#### 1.2.1.3 Biológico
+
+Atributos asociados a las propiedades biológicas del ambiente.
+
+Atributos | Definición
+-- | --
+Cobertura | Tipo de vegetación y uso del suelo
+
+#### 1.2.2 Naturaleza
+
+Turismo de naturaleza, incluye   turismo de aventura, ecoturismo, comunitario, rural, cultural, religioso e   histórico, aviturismo.
+
+#### 1.2.3 Urbano
+
+Convenciones, reuniones, negocios, médico, gastronómico, educativo.
+
+#### 1.2.4 Cruceros
+
+Cruceros.
+
+
+
+
+
 
 <!--
 ## 1. Energía industrial
@@ -21,7 +78,7 @@ Fuentes de energía a escala industrial.
 
 ![](/recursos/energia/energia_industrial_v3.png)
 
-### 1.2 Fuentes
+
 
 #### 1.2.1 Hidrocarburos líquidos
 

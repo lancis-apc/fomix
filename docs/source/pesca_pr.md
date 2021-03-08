@@ -17,7 +17,7 @@ Asegurar espacios de refugio para embarcaciones pesqueras y definir espacios dif
 
 ### 1.2 Criterios
 
-#### 1.2.1 infraestructura
+#### 1.2.1 Infraestructura
 
 Criterio|Definición
 --|--
