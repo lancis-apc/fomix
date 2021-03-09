@@ -23,7 +23,7 @@ Criterio|Definición
 --|--
 Agua potable| Distancia a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
 Internet| Distancia a localidades que se evaluaron con base en el porcentaje de viviendas con internet.
-Carreteras| Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.
+Vías de comunicación| Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.
 Electricidad| Distancia a red de transmisión eléctrica.
 
 #### 1.2.2 Socioeconómicos
