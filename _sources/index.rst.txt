@@ -31,6 +31,7 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    forestal_pr
    industrial_pr
    milpa_apic_pr
+   mineria_pr
    pec_bovino_pr
    pec_porcino_pr
    pesca_pr
