@@ -5,21 +5,74 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-
+Aumentar la apertura de bancos de materiales para cumplir con la demanda de productos químicos, de alimentación, así como de insumos en la construcción, en particular de desarrollos inmobiliarios, caminos y carreteras, que están en aumento por el crecimiento poblacional y la llegada de proyectos como el Tren Maya.
 
 [Lista de participantes]()
 
 ### 1.1 Modelo de decisión
 
+![](/recursos/mineria/fi_mineria.png)
+
+### 1.2 Criterios
+
+#### 1.2.1 Biofísicos
+
+Criterio|Definición
+--|--
+Nivel freático| Distancia al manto acuífero medido por el nivel piezométrico.
+Tipo de suelo| Edafología.
+Tipo de cobertura| Tipos de vegetación y usos de suelo.
+
+##### 1.2.1.1 Nivel freático
+
+Distancia al manto acuífero medido por el nivel piezométrico.
+
+##### 1.2.1.2 Tipo de suelo
+
+Edafología.
+
+##### 1.2.1.3 Tipo de Cobertura
+
+Tipos de vegetación y usos de suelo.
+
+#### 1.2.2 Infraestructura
+
+Criterio|Definición
+--|--|
+Caminos| Distancia a caminos y carreteras para transporte de los productos.
+Electricidad| Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.
+Minas| Distancia a sitios de explotación de yacimientos minerales
+
+##### 1.2.2.1 Caminos
+
+Distancia a caminos y carreteras para transporte de los productos.
+
+##### 1.2.2.2 Electricidad
+
+Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.
+
+##### 1.2.2.3 Minas
+
+Distancia a sitios de explotación de yacimientos minerales.
+
+#### 1.2.3 Socioeconómicos
+
+Criterio|Definición
+--|--|
+Localidades| Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.
+Oportunidades| Proyectos de construcción y ampliación de vías de comunicación.
+
+##### 1.2.3.1 Localidades
+
+Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.
+
+##### 1.2.3.2 Oportunidades
+
+Proyectos de construcción y ampliación de vías de comunicación.
+
+
 
 <!--
-## 1. Energía industrial
-
-Fuentes de energía a escala industrial.
-
-### 1.1 Modelo de decisión
-
-![](/recursos/energia/energia_industrial_v3.png)
 
 ### 1.2 Fuentes
 
