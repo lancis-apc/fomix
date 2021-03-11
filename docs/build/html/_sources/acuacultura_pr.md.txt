@@ -5,11 +5,15 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Promover el crecimiento de la producción acuícola de agua marina en la zona costera y de agua dulce al interior del estado, a partir de la capacitación del personal técnico, la construcción de granjas y la integración de la infraestructura ya existente a un estándar de sustentabilidad.
-Implementar en la granjas acuícolas infraestructura y tecnología para la mejora de los procesos de producción, como el uso de sistemas de recirculación del agua, sistemas acuapónicos y de generación de energía solar.
-Establecer y habilitar centros de acopio, laboratorios de producción de semilla, unidades de bioseguridad y centros de capacitación para la producción acuícola (proyecto de parque acuícola).
+* Promover el crecimiento de la producción acuícola de agua marina en la zona costera y de agua dulce al interior del estado, a partir de la capacitación del personal técnico, la construcción de granjas y la integración de la infraestructura ya existente a un estándar de sustentabilidad.
+* Implementar en la granjas acuícolas infraestructura y tecnología para la mejora de los procesos de producción, como el uso de sistemas de recirculación del agua, sistemas acuapónicos y de generación de energía solar.
+* Establecer y habilitar centros de acopio, laboratorios de producción de semilla, unidades de bioseguridad y centros de capacitación para la producción acuícola (proyecto de parque acuícola).
 
 [Lista de participantes]()
+
+## 1. Acuacultura salobre
+
+Acuacultura de especies de agua salobre y marina.
 
 ### 1.1 Modelo de decisión
 
@@ -21,17 +25,312 @@ Establecer y habilitar centros de acopio, laboratorios de producción de semilla
 
 Criterio|Definición
 --|--
-Acceso a agua| Posibilidad de extraer agua subterránea, considerando el nivel piezométrico.
-Salinidad| Interfase salina
+Acceso a agua| Posibilidad de extraer agua subterránea, considerando la Profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
+Salinidad| Ancho en metros de la columna de agua dulce, a partir del cual se puede encontrar agua salada.
 Vegetación| Tipos de vegetación y usos de suelo.
+
+##### 1.2.1.1 Acceso a agua
+
+Posibilidad de extraer agua subterránea, considerando la Profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
+
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_acuasal_bio_nivel_estatico.png)
+
+**Función de valor de acceso de agua**
+
+![](/recursos/pesca/mapa_fv_acuasal_bio_nivel_estatico.png)
+
+##### 1.2.1.2 Salinidad
+
+Ancho en metros de la columna de agua dulce, a partir del cual se puede encontrar agua salada.
+
+**Función de valor de salinidad**
+
+![](/recursos/pesca/mapa_fv_acuasal_bio_espesor_agua_salada.png)
+
+##### 1.2.1.3 Vegetación
+
+Tipos de vegetación y usos de suelo.
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+1 | Acuícola | Muy alta | 1.00
+11 | Sin vegetación | Muy alta | 1.00
+3 | Agricultura de temporal | Alta | 0.75
+8 | Pastizal | Alta | 0.75
+2 | Agricultura de riego | Moderada | 0.50
+5 | Bosque cultivado/Palmar inducido | Moderada | 0.50
+9 | Selva baja | Moderada | 0.50
+12 | Sábana | Moderada | 0.50
+7 | Manglar | Baja | 0.25
+10 | Selva mediana | Baja | 0.25
+13 | Tular | Baja | 0.25
+4 | Asentamiento humano | Nula | 0.00
+6 | Cuerpo de agua | Nula | 0.00
+14 | Vegetación de duna costera | Nula | 0.00
+15 | Vegetación de petén | Nula | 0.00
+16 | Vegetación halófila hidrófila | Nula | 0.00
+17 | ND | Nula | 0.00
+
+**Función de valor de vegetación**
+
+![](/recursos/pesca/ mapa_fv_acuasal_bio_cobertura_usv_svi_16cats.png)
 
 #### 1.2.2 Infraestructura
 
 Criterio|Definición
 --|--
-Carreteras| Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.
 Electricidad| Distancia a red de transmisión eléctrica.
-Localidades| Distancia a localidades de 2,500 habitantes o más, para mano de obra en las granjas acuícolas.
+Vías de comunicación| Distancia a caminos y carreteras para el transporte de insumos y productos.
+
+##### 1.2.2.1 Electricidad
+
+Distancia a red de transmisión eléctrica.
+
+**Insumos**
+
+Capa | Distancia líneas de transmisión de energía   eléctrica
+-- | --
+Fuente | Líneas de transmisión INEGI
+Año | 2012
+Escala | 1:50,000
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_acuasal_infra_d_lineas_electricas.png)
+
+**Función de valor de electricidad**
+
+![](/recursos/pesca/mapa_fv_acuasal_infra_d_lineas_electricas.png)
+
+##### 1.2.2.2 Vías de comunicación
+
+Distancia a caminos y carreteras para el transporte de insumos y productos.
+
+**Insumos**
+
+Capa | Distancia a la red vial
+-- | --
+Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | 2019
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_acuasal_infra_d_lineas_electricas.png)
+
+**Función de valor de vías de comunicación**
+
+![](/recursos/pesca/mapa_fv_acuasal_infra_d_lineas_electricas.png)
+
+#### 1.2.3 Socioeconómicos
+
+Criterio|Definición
+--|--
+Tenencia| Tenencia de la tierra.
+
+##### 1.2.3.1 Tenencia
+
+Tenencia de la tierra.
+
+**Insumos**
+
+Capa | Tenencia de la tierra
+-- | --
+Fuente | [1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN
+Año | 2020
+Escala | Sin dato
+Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+3 | No ejidal | Muy alta | 1.00
+2 | Zona de tierras parceladas | Alta | 0.75
+1 | Tierra de uso común | Baja | 0.25
+
+**Función de valor de tenencia**
+
+![](/recursos/pesca/mapa_fv_acuasal_socio_tenencia_tierra.png)
+
+## 2. Acuacultura dulce
+
+Acuacultura de especies de agua dulce.
+
+### 2.1 Modelo de decisión
+
+![](/recursos/pesca/fi_acuacultura_dulce.png)
+
+### 2.2 Criterios
+
+#### 2.2.1 Biofísicos
+
+Criterio|Definición
+--|--
+Acceso a agua| Posibilidad de extraer agua subterránea, considerando la Profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
+Salinidad| Ancho en metros de la columna de agua dulce, a partir del cual se puede encontrar agua salada.
+Vegetación| Tipos de vegetación y usos de suelo.
+
+##### 2.2.1.1 Acceso a agua
+
+Posibilidad de extraer agua subterránea, considerando la Profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
+
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_acuadul_bio_nivel_estatico.png)
+
+**Función de valor de acceso a agua**
+
+![](/recursos/pesca/mapa_fv_acuadul_bio_nivel_estatico.png)
+
+##### 2.2.1.2 Salinidad
+
+Ancho en metros de la columna de agua dulce, a partir del cual se puede encontrar agua salada.
+
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_acuadul_bio_espesor_agua_dulce.png)
+
+**Función de valor de acceso a agua**
+
+![](/recursos/pesca/mapa_fv_acuadul_bio_espesor_agua_dulce.png)
+
+##### 2.2.1.3 Vegetación
+
+Tipos de vegetación y usos de suelo.
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+1 | Acuícola | Muy alta | 1.00
+11 | Sin vegetación | Muy alta | 1.00
+3 | Agricultura de temporal | Alta | 0.75
+8 | Pastizal | Alta | 0.75
+2 | Agricultura de riego | Moderada | 0.50
+5 | Bosque cultivado/Palmar inducido | Moderada | 0.50
+9 | Selva baja | Moderada | 0.50
+12 | Sábana | Moderada | 0.50
+7 | Manglar | Baja | 0.25
+10 | Selva mediana | Baja | 0.25
+13 | Tular | Baja | 0.25
+4 | Asentamiento humano | Nula | 0.00
+6 | Cuerpo de agua | Nula | 0.00
+14 | Vegetación de duna costera | Nula | 0.00
+15 | Vegetación de petén | Nula | 0.00
+16 | Vegetación halófila hidrófila | Nula | 0.00
+17 | ND | Nula | 0.00
+
+**Función de valor de vegetación**
+
+![](/recursos/pesca/mapa_fv_acuadul_bio_cobertura_usv_svi_16cats.png)
+
+#### 2.2.2 Infraestructura
+
+Criterio|Definición
+--|--
+Electricidad| Distancia a red de transmisión eléctrica.
+Vías de comunicación| Distancia a caminos y carreteras para el transporte de insumos y productos.
+
+##### 2.2.2.1 Electricidad
+
+Distancia a red de transmisión eléctrica.
+
+**Insumos**
+
+Capa | Distancia líneas de transmisión de energía   eléctrica
+-- | --
+Fuente | Líneas de transmisión INEGI
+Año | 2012
+Escala | 1:50,000
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_acuadul_infra_d_lineas_electricas.png)
+
+**Función de valor de electricidad**
+
+![](/recursos/pesca/mapa_fv_acuadul_infra_d_lineas_electricas.png)
+
+##### 2.2.2.2 Vías de comunicación
+
+Distancia a caminos y carreteras para el transporte de insumos y productos.
+
+**Insumos**
+
+Capa | Distancia a la red vial
+-- | --
+Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | 2019
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_acuasal_infra_d_carreteras_caminos.png)
+
+**Función de valor de vías de comunicación**
+
+![](/recursos/pesca/mapa_fv_acuasal_infra_d_carreteras_caminos.png)
+
+#### 2.2.3 Socioeconómicos
+
+Criterio|Definición
+--|--
+Tenencia| Tenencia de la tierra.
+
+##### 2.2.3.1 Tenencia
+
+Tenencia de la tierra.
+
+**Insumos**
+
+Capa | Tenencia de la tierra
+-- | --
+Fuente | [1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN
+Año | 2020
+Escala | Sin dato
+Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+3 | No ejidal | Muy alta | 1.00
+2 | Zona de tierras parceladas | Alta | 0.75
+1 | Tierra de uso común | Baja | 0.25
+
+**Función de valor de tenencia**
+
+![](/recursos/pesca/mapa_fv_acuadul_socio_tenencia_tierra.png)
+
 
 <!--
 ## 1. Energía industrial
@@ -70,7 +369,7 @@ Unidades | Kilómetros
 
 ![](/recursos/energia/fi_fv_ene_ind_hidro_d_carreteras.png)
 
-**Función de valor de carreteras**
+
 
 ![](/recursos/energia/mapa_fv_ene_ind_hidro_d_carreteras.png)
 

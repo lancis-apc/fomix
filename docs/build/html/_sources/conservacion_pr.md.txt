@@ -42,7 +42,7 @@ Procesos ecológicos que mejoran o  hacen posible nuestra vida, tales como: mej
 
 Atributos | Definición
 -- | --
-Captura de Carbón | Captura de Carbón como indicador de calidad del aire.   
+Captura de Carbono | Captura de Carbón como indicador de calidad del aire.   
 Cobertura | Tipo de cobertura como indicador de productivida primaria.   
 Especies melíferas | Especies mielíferas como indicador del servicio ambiental de regulacion de polinización.
 Distribución de plagas | Incidencia de plagas, como indicador del servicio de regulacion de control de enfermedades y plagas.  
