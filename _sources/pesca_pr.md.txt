@@ -5,9 +5,9 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ## Meta
 
-Fortalecer el sector pesquero para que desarrolle actividades pesqueras viables y sostenibles.
-Fortalecer la infraestructura de procesamiento actual en la zona costera y áreas circundantes, así como buscar espacios para el desarrollo de centros de acopio y plantas de procesamiento de subproductos de la pesca, que cumplan con la normatividad nacional e internacional.
-Asegurar espacios de refugio para embarcaciones pesqueras y definir espacios diferenciados para las embarcaciones de desarrollo turístico y pesca comercial.
+* Fortalecer el sector pesquero para que desarrolle actividades pesqueras viables y sostenibles.
+* Fortalecer la infraestructura de procesamiento actual en la zona costera y áreas circundantes, así como buscar espacios para el desarrollo de centros de acopio y plantas de procesamiento de subproductos de la pesca, que cumplan con la normatividad nacional e internacional.
+* Asegurar espacios de refugio para embarcaciones pesqueras y definir espacios diferenciados para las embarcaciones de desarrollo turístico y pesca comercial.
 
 [Lista de participantes]()
 
@@ -21,28 +21,97 @@ Asegurar espacios de refugio para embarcaciones pesqueras y definir espacios dif
 
 Criterio|Definición
 --|--
-Agua potable| Distancia a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
-Internet| Distancia a localidades que se evaluaron con base en el porcentaje de viviendas con internet.
-Vías de comunicación| Distancia a caminos, brechas y carreteras para el transporte de insumos y productos.
+Agua potable| Requerimiento de agua potable para la producción de hielo. El atributo se representa con la distancia a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
 Electricidad| Distancia a red de transmisión eléctrica.
+Vías de comunicación| Distancia a caminos y carreteras para el transporte de insumos y productos.
+Comunicaciones| Acceso a  comunicación a través de internet y telefonía. El atributo se representa con la distancia a localidades que se evaluaron con base en el porcentaje de viviendas con internet, celular y teléfono.
+
+##### 1.2.1.1 Agua potable
+
+Requerimiento de agua potable para la producción de hielo. El atributo se representa con la distancia a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
+
+**Insumos**
+
+Capa | Viviendas que disponen de agua entubada por   localidad
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] VIVTOT y VPH_AEASP
+Unidades | Porcentaje
+
+##### 1.2.1.2 Electricidad
+
+Distancia a red de transmisión eléctrica.
+
+**Insumos**
+
+Capa | Distancia líneas de transmisión de energía   eléctrica
+-- | --
+Fuente | Líneas de transmisión INEGI
+Año | 2012
+Escala | 1:50,000
+Unidades | Kilómetros
+
+##### 1.2.1.3 Vías de comunicación
+
+Distancia a caminos y carreteras para el transporte de insumos y productos.
+
+**Insumos**
+
+Capa | Distancia a la red vial
+-- | --
+Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | 2019
+Escala | Sin dato
+Unidades | Kilómetros
+
+##### 1.2.1.4 Comunicaciones
+
+Acceso a  comunicación a través de internet y telefonía. El atributo se representa con la distancia a localidades que se evaluaron con base en el porcentaje de viviendas con internet, celular y teléfono.
+
+**Insumos**
+
+Capa | Viviendas con internet por localidad
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] VIVTOT y VPH_INTER
+Unidades | Porcentaje
 
 #### 1.2.2 Socioeconómicos
 
 Criterio|Definición
 --|--
-Centros de distribución| Distancia a los puntos de distribución de productos: Progreso, Mérida, Valladolid, Tizimín, Hunucmá y Motul
-Localidades| Distancia a localidades de comunidades pesqueras: Celestún, Sisal, Chuburná, Yucalpetén, Progreso, Telchac, Chabihau, Dzilam de Bravo, San Felipe, Río Lagartos, Las Coloradas, El Cuyo, Chelem, Chicxulub, Santa Clara y San Crisanto.
+Localidades| Distancia a localidades con comunidades pesqueras: Celestún, Sisal, Chuburná, Yucalpetén, Progreso, Telchac, Chabihau, Dzilam de Bravo, San Felipe, Río Lagartos, Las Coloradas, El Cuyo, Chelem, Chicxulub, Santa Clara y San Crisanto.
+Centros de distribución| Distancia a los puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá y Motul.
+
+##### 1.2.2.1 Localidades
+
+Distancia a localidades con comunidades pesqueras: Celestún, Sisal, Chuburná, Yucalpetén, Progreso, Telchac, Chabihau, Dzilam de Bravo, San Felipe, Río Lagartos, Las Coloradas, El Cuyo, Chelem, Chicxulub, Santa Clara y San Crisanto.
+
+**Insumos**
+
+Capa | Distancia a localidades pesqueras
+-- | --
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
+Año | 2020
+Escala | Sin dato
+Unidades | Kilómetros
+
+##### 1.2.2.2 Centros de distribución
+
+Distancia a los puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá y Motul.
+
+**Insumos**
+
+Capa | Distancia a localidades con centros de   distribución pesquera
+-- | --
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
+Año | 2020
+Escala | Sin dato
+Unidades | Kilómetros
 
 <!--
-## 1. Energía industrial
-
-Fuentes de energía a escala industrial.
-
-### 1.1 Modelo de decisión
-
-![](/recursos/energia/energia_industrial_v3.png)
-
-### 1.2 Fuentes
 
 #### 1.2.1 Hidrocarburos líquidos
 

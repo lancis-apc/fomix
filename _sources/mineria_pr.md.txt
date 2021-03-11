@@ -38,7 +38,7 @@ Tipos de vegetación y usos de suelo.
 #### 1.2.2 Infraestructura
 
 Criterio|Definición
---|--|
+--|--
 Caminos| Distancia a caminos y carreteras para transporte de los productos.
 Electricidad| Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.
 Minas| Distancia a sitios de explotación de yacimientos minerales
@@ -58,7 +58,7 @@ Distancia a sitios de explotación de yacimientos minerales.
 #### 1.2.3 Socioeconómicos
 
 Criterio|Definición
---|--|
+--|--
 Localidades| Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.
 Oportunidades| Proyectos de construcción y ampliación de vías de comunicación.
 
