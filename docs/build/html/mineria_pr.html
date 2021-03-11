@@ -93,10 +93,11 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Minería-En proceso de actualización</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#meta">Meta</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#modelo-de-decision">1.1 Modelo de decisión</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#criterios">1.2 Criterios</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#biofisicos">1.2.1 Biofísicos</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#infraestructura">1.2.2 Infraestructura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#socioeconomicos">1.2.3 Socioeconómicos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tipos">1.2 Tipos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mineria-de-arcillas">1.2.1 Minería de arcillas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mineria-de-arenas">1.2.2 Minería de arenas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mineria-de-rocas-con-extraccion-en-seco">1.2.3 Minería de rocas con extracción en seco</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mineria-de-rocas-con-extraccion-en-humedo">1.2.4 Minería de rocas con extracción en húmedo</a></li>
 </ul>
 </li>
 </ul>
@@ -182,11 +183,15 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <div class="section" id="modelo-de-decision">
 <h3>1.1 Modelo de decisión<a class="headerlink" href="#modelo-de-decision" title="Enlazar permanentemente con este título">¶</a></h3>
 <p><img alt="_images/fi_mineria.png" src="_images/fi_mineria.png" /></p>
+<p>Los participantes decidieron que se hiciera la distinción entre la minería de rocas, arenas y arcillas, con base en los tipos de suelo en los que es más viable desarrollar cada tipo de minería.
+Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes definieron dos funciones de valor para el atributo Nivel freático con el objeto de distinguir entre los sitios propicios para la extracción en seco y en húmedo. En el caso de la minería de arenas y arcillas únicamente se hace la extracción en seco.</p>
 </div>
-<div class="section" id="criterios">
-<h3>1.2 Criterios<a class="headerlink" href="#criterios" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="tipos">
+<h3>1.2 Tipos<a class="headerlink" href="#tipos" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="mineria-de-arcillas">
+<h4>1.2.1 Minería de arcillas<a class="headerlink" href="#mineria-de-arcillas" title="Enlazar permanentemente con este título">¶</a></h4>
 <div class="section" id="biofisicos">
-<h4>1.2.1 Biofísicos<a class="headerlink" href="#biofisicos" title="Enlazar permanentemente con este título">¶</a></h4>
+<h5>1.2.1.1 Biofísicos<a class="headerlink" href="#biofisicos" title="Enlazar permanentemente con este título">¶</a></h5>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -209,20 +214,224 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 </tbody>
 </table><div class="section" id="nivel-freatico">
-<h5>1.2.1.1 Nivel freático<a class="headerlink" href="#nivel-freatico" title="Enlazar permanentemente con este título">¶</a></h5>
+<h6>1.2.1.1.1 Nivel freático<a class="headerlink" href="#nivel-freatico" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia al manto acuífero medido por el nivel piezométrico.</p>
 </div>
 <div class="section" id="tipo-de-suelo">
-<h5>1.2.1.2 Tipo de suelo<a class="headerlink" href="#tipo-de-suelo" title="Enlazar permanentemente con este título">¶</a></h5>
+<h6>1.2.1.1.2 Tipo de suelo<a class="headerlink" href="#tipo-de-suelo" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Edafología.</p>
-</div>
+<p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>Luvisol</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nitosol</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Cambisol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Leptosol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Regosol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Vertisol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Arenosol</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Chernozem</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Gleysol</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Histosol</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Phaeozem</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Solonchak</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>No aplica</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="tipo-de-cobertura">
-<h5>1.2.1.3 Tipo de Cobertura<a class="headerlink" href="#tipo-de-cobertura" title="Enlazar permanentemente con este título">¶</a></h5>
+<h6>1.2.1.1.3 Tipo de Cobertura<a class="headerlink" href="#tipo-de-cobertura" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Tipos de vegetación y usos de suelo.</p>
-</div>
+<p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11</td>
+<td>Sin vegetación</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Agricultura de riego</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Agricultura de temporal</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Pastizal</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Selva baja</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bosque cultivado/Palmar inducido</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Selva mediana</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Sabana</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ND</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <div class="section" id="infraestructura">
-<h4>1.2.2 Infraestructura<a class="headerlink" href="#infraestructura" title="Enlazar permanentemente con este título">¶</a></h4>
+<h5>1.2.1.2 Infraestructura<a class="headerlink" href="#infraestructura" title="Enlazar permanentemente con este título">¶</a></h5>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -245,20 +454,20 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 </tbody>
 </table><div class="section" id="caminos">
-<h5>1.2.2.1 Caminos<a class="headerlink" href="#caminos" title="Enlazar permanentemente con este título">¶</a></h5>
+<h6>1.2.1.2.1 Caminos<a class="headerlink" href="#caminos" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a caminos y carreteras para transporte de los productos.</p>
 </div>
 <div class="section" id="electricidad">
-<h5>1.2.2.2 Electricidad<a class="headerlink" href="#electricidad" title="Enlazar permanentemente con este título">¶</a></h5>
+<h6>1.2.1.2.2 Electricidad<a class="headerlink" href="#electricidad" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.</p>
 </div>
 <div class="section" id="minas">
-<h5>1.2.2.3 Minas<a class="headerlink" href="#minas" title="Enlazar permanentemente con este título">¶</a></h5>
+<h6>1.2.1.2.3 Minas<a class="headerlink" href="#minas" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a sitios de explotación de yacimientos minerales.</p>
 </div>
 </div>
 <div class="section" id="socioeconomicos">
-<h4>1.2.3 Socioeconómicos<a class="headerlink" href="#socioeconomicos" title="Enlazar permanentemente con este título">¶</a></h4>
+<h5>1.2.1.3 Socioeconómicos<a class="headerlink" href="#socioeconomicos" title="Enlazar permanentemente con este título">¶</a></h5>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -277,333 +486,48 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 </tbody>
 </table><div class="section" id="localidades">
-<h5>1.2.3.1 Localidades<a class="headerlink" href="#localidades" title="Enlazar permanentemente con este título">¶</a></h5>
+<h6>1.2.1.3.1 Localidades<a class="headerlink" href="#localidades" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.</p>
 </div>
 <div class="section" id="oportunidades">
-<h5>1.2.3.2 Oportunidades<a class="headerlink" href="#oportunidades" title="Enlazar permanentemente con este título">¶</a></h5>
+<h6>1.2.1.3.2 Oportunidades<a class="headerlink" href="#oportunidades" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Proyectos de construcción y ampliación de vías de comunicación.</p>
-<!--
-
-### 1.2 Fuentes
-
-#### 1.2.1 Hidrocarburos líquidos
-
-Consumo y almacenamiento de hidrocarburos líquidos. Plantas que utilizan diesel o combustóleo para generar energía. Terminales de almacenamiento y reparto.
-
+</div>
+</div>
+</div>
+<div class="section" id="mineria-de-arenas">
+<h4>1.2.2 Minería de arenas<a class="headerlink" href="#mineria-de-arenas" title="Enlazar permanentemente con este título">¶</a></h4>
+<div class="section" id="id1">
+<h5>1.2.2.1 Biofísicos<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h5>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>Atributos</th>
+<th>Criterio</th>
 <th>Definición</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Carreteras</td>
-<td>Distancia a carreteras.</td>
+<td>Nivel freático</td>
+<td>Distancia al manto acuífero medido por el nivel piezométrico.</td>
 </tr>
 <tr>
-<td>Localidades</td>
-<td>Distancia a asentamientos humanos.</td>
+<td>Tipo de suelo</td>
+<td>Edafología.</td>
+</tr>
+<tr>
+<td>Tipo de cobertura</td>
+<td>Tipos de vegetación y usos de suelo.</td>
 </tr>
 </tbody>
-</table>
-
-##### 1.2.1.1 Carreteras
-
-Distancia a carreteras.
-
-**Insumos**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia a carreteras</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2019</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_hidro_d_carreteras.png)  
-
-**Función de valor de carreteras**
-
-![](/recursos/energia/mapa_fv_ene_ind_hidro_d_carreteras.png)
-
-##### 1.2.1.2 Localidades
-
-Distancia a asentamientos humanos.
-
-**Insumos**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia a localidades</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2020</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_hidro_d_localidades.png)  
-
-**Función de valor de localidades**
-
-![](/recursos/energia/mapa_fv_ene_ind_hidro_d_localidades.png)
-
-#### 1.2.2 Gas natural
-
-Transporte de gas natural por gasoductos y vehículos terrestres. Terminales de almacenamiento y centrales eléctricas. Uso de gas comprimido por empresas.
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Atributos</th>
-<th>Definición</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Distancia del gasoducto a zonas industriales</td>
-<td>Zonas industriales que demandan gas natural.</td>
-</tr>
-<tr>
-<td>Distancia del gasoducto a localidades</td>
-<td>Distancia a asentamientos humanos.</td>
-</tr>
-</tbody>
-</table>
-
-##### 1.2.2.1  Distancia del gasoducto a zonas industriales
-
-Zonas industriales que demandan gas natural.
-
-**Insumos**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia del gasoducto a los parques   industriales</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>[1] ?; [2] Gasoductos GeoComunes con datos de CRE, SEMARNAT, ASEA y CFE</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>[1] ?; [2] 2020</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>[1] ? ; [2] Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_gas_d_gasoducto_parques_industriales.png)  
-
-**Función de valor de distancia del gasoducto a zonas industriales**
-
-![](/recursos/energia/mapa_fv_ene_ind_gas_d_gasoducto_parques_industriales.png)
-
-##### 1.2.2.2 Distancia del gasoducto a localidades
-
-Distancia a asentamientos humanos.
-
-**Insumos**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia de localidades al gasoducto</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Gasoductos GeoComunes con datos de CRE, SEMARNAT, ASEA y CFE</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2020</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_gas_d_localidades_gasoducto.png)  
-
-**Función de valor de distancia del gasoducto a localidades**
-
-![](/recursos/energia/mapa_fv_ene_ind_gas_d_localidades_gasoducto.png)
-
-#### 1.2.3 Solar
-
-Instalaciones industriales que aprovechan la irradiación solar como fuente de energía.
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Atributos</th>
-<th>Definición</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Distancia a red eléctrica</td>
-<td>Distancia a líneas de transmisión y subestaciones.</td>
-</tr>
-<tr>
-<td>Cobertura</td>
-<td>Tipo de vegetación.</td>
-</tr>
-<tr>
-<td>Tenencia de la tierra</td>
-<td>Áreas ejidales (comunitaria o parcelada) y no ejidales.</td>
-</tr>
-</tbody>
-</table>
-
-##### 1.2.3.1 Distancia a red eléctrica
-
-Distancia a líneas de transmisión y subestaciones.
-
-**Insumos**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia líneas de transmisión de energía eléctrica</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Líneas de transmisión en México. GeoComunes con datos de CFE</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2010</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_sol_d_lineas_transmision.png)   
-
-**Función de valor de distancia a red eléctrica**
-
-![](/recursos/energia/mapa_fv_ene_ind_sol_d_lineas_transmision.png)
-
-##### 1.2.3.2 Cobertura
-
-Tipo de vegetación.
-
-**Insumos**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Uso del suelo y vegetación</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2017</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>descripcio</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:250,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
+</table><div class="section" id="id2">
+<h6>1.2.2.1.1 Nivel freático<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia al manto acuífero medido por el nivel piezométrico.</p>
+</div>
+<div class="section" id="id3">
+<h6>1.2.2.1.2 Tipo de suelo<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Edafología.</p>
+<p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -615,403 +539,152 @@ Tipo de vegetación.
 </thead>
 <tbody>
 <tr>
-<td>2</td>
-<td>Agricultura de riego</td>
-<td>Máxima</td>
+<td>1</td>
+<td>Arenosol</td>
+<td>Muy alta</td>
 <td>1.00</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Agricultura de temporal</td>
-<td>Máxima</td>
-<td>1.00</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Bosque cultivado/Palmar inducido</td>
-<td>Máxima</td>
-<td>1.00</td>
-</tr>
-<tr>
-<td>8</td>
-<td>Pastizal</td>
-<td>Máxima</td>
-<td>1.00</td>
-</tr>
-<tr>
-<td>11</td>
-<td>Sin vegetación</td>
-<td>Máxima</td>
-<td>1.00</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Asentamiento humano</td>
-<td>Moderada</td>
-<td>0.70</td>
-</tr>
-<tr>
-<td>9</td>
-<td>Selva baja</td>
-<td>Baja</td>
-<td>0.56</td>
 </tr>
 <tr>
 <td>10</td>
-<td>Selva mediana</td>
+<td>Regosol</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Solonchak</td>
 <td>Baja</td>
-<td>0.56</td>
+<td>0.25</td>
 </tr>
 <tr>
-<td>12</td>
-<td>Sabana</td>
-<td>Muy baja</td>
-<td>0.33</td>
+<td>2</td>
+<td>Cambisol</td>
+<td>Nula</td>
+<td>0.00</td>
 </tr>
 <tr>
-<td>1</td>
-<td>Acuícola</td>
+<td>3</td>
+<td>Chernozem</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Gleysol</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Histosol</td>
 <td>Nula</td>
 <td>0.00</td>
 </tr>
 <tr>
 <td>6</td>
-<td>Cuerpo de agua</td>
+<td>Leptosol</td>
 <td>Nula</td>
 <td>0.00</td>
 </tr>
 <tr>
 <td>7</td>
-<td>Manglar</td>
+<td>Luvisol</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nitosol</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Phaeozem</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Vertisol</td>
 <td>Nula</td>
 <td>0.00</td>
 </tr>
 <tr>
 <td>13</td>
-<td>Tular</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>14</td>
-<td>Vegetación de duna costera</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>15</td>
-<td>Vegetación de petén</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>16</td>
-<td>Vegetación halófila hidrófila</td>
-<td>Nula</td>
-<td>0.00</td>
-</tr>
-<tr>
-<td>17</td>
-<td>ND</td>
+<td>No aplica</td>
 <td>Nula</td>
 <td>0.00</td>
 </tr>
 </tbody>
-</table>
-
-**Función de valor de cobertura**
-
-![](/recursos/energia/mapa_fv_ene_ind_sol_cobertura_usv_svi_16cats.png)
-
-##### 1.2.3.3 Tenencia de la tierra
-
-Áreas ejidales (comunitaria o parcelada) y no ejidales.
-
-**Insumos**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Tenencia de la tierra</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>[1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2020</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
+</table></div>
+<div class="section" id="id4">
+<h6>1.2.2.1.3 Tipo de Cobertura<a class="headerlink" href="#id4" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Tipos de vegetación y usos de suelo.</p>
+<p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>ID</th>
-<th>Categoria</th>
-<th>FV</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3</td>
-<td>No ejidal</td>
-<td>1.00</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Zona de tierras parceladas</td>
-<td>0.52</td>
-</tr>
-<tr>
-<td>1</td>
-<td>Tierra de uso común</td>
-<td>0.19</td>
-</tr>
-</tbody>
-</table>
-
-**Función de valor de tenencia**
-
-![](/recursos/energia/mapa_fv_ene_ind_sol_tenencia_tierra.png)
-
-#### 1.2.4 Eólica
-
-Instalaciones de generación de energía, mayores a 0.5 MW.
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Atributos</th>
-<th>Definición</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Velocidad</td>
-<td>Velocidad del viento en m/s a 120 m de altura, para colocar dispositivos de conversión de energía eólica a eléctrica.</td>
-</tr>
-<tr>
-<td>Distancia a red eléctrica</td>
-<td>Distancia a líneas de transmisión y subestaciones.</td>
-</tr>
-<tr>
-<td>Cobertura</td>
-<td>Tipo de vegetación.</td>
-</tr>
-<tr>
-<td>Distancia a caminos</td>
-<td>Distancia a carreteras.</td>
-</tr>
-<tr>
-<td>Distancia a localidades</td>
-<td>Distancia de asentamientos humanos a los aerogeneradores, excluye a las localidades.</td>
-</tr>
-</tbody>
-</table>
-
-##### 1.2.4.1 Velocidad
-
-Velocidad del viento en m/s a 120 m de altura, para colocar dispositivos de conversión de energía eólica a eléctrica.
-
-**Insumos**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Velocidad del viento a 120 metros de altura</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Velocidad de viento a 120 metros de altura (anual) SENER-CFE</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2014</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>Velocidad</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>7 km</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>m/s</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_eol_velocidad_viento_120m.png)
-
-**Función de valor de velocidad**
-
-![](/recursos/energia/mapa_fv_ene_ind_eol_velocidad_viento_120m.png)
-
-##### 1.2.4.2 Distancia a red eléctrica
-
-Distancia a líneas de transmisión y subestaciones.
-
-**Insumos**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia a líneas de transmisión de energía   eléctrica</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Líneas de transmisión en México. GeoComunes con datos de CFE</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2020</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_eol_d_lineas_transmision.png)
-
-**Función de valor de distancia a red eléctrica**
-
-![](/recursos/energia/mapa_fv_ene_ind_eol_d_lineas_transmision.png)
-
-##### 1.2.4.3 Cobertura
-
-Tipo de vegetación.
-
-**Insumos**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Uso del suelo y vegetación</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2017</td>
-</tr>
-<tr>
-<td>Campo</td>
-<td>descripcio</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>1:250,000</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>ID</th>
-<th>Cobertura</th>
+<th>Categoría</th>
 <th>Importancia</th>
 <th>FV</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>11</td>
+<td>Sin vegetación</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
 <td>2</td>
 <td>Agricultura de riego</td>
-<td>Máxima</td>
-<td>1.00</td>
+<td>Alta</td>
+<td>0.75</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Agricultura de temporal</td>
-<td>Máxima</td>
-<td>1.00</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Bosque cultivado/Palmar inducido</td>
-<td>Máxima</td>
-<td>1.00</td>
+<td>Alta</td>
+<td>0.75</td>
 </tr>
 <tr>
 <td>8</td>
 <td>Pastizal</td>
-<td>Máxima</td>
-<td>1.00</td>
-</tr>
-<tr>
-<td>11</td>
-<td>Sin vegetación</td>
-<td>Máxima</td>
-<td>1.00</td>
+<td>Alta</td>
+<td>0.75</td>
 </tr>
 <tr>
 <td>9</td>
 <td>Selva baja</td>
-<td>Baja</td>
-<td>0.56</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bosque cultivado/Palmar inducido</td>
+<td>Moderada</td>
+<td>0.50</td>
 </tr>
 <tr>
 <td>10</td>
 <td>Selva mediana</td>
-<td>Baja</td>
-<td>0.56</td>
+<td>Moderada</td>
+<td>0.50</td>
 </tr>
 <tr>
 <td>12</td>
 <td>Sabana</td>
-<td>Muy baja</td>
-<td>0.33</td>
-</tr>
-<tr>
-<td>15</td>
-<td>Vegetación de petén</td>
-<td>Muy baja</td>
-<td>0.33</td>
+<td>Baja</td>
+<td>0.25</td>
 </tr>
 <tr>
 <td>1</td>
@@ -1044,8 +717,8 @@ Tipo de vegetación.
 <td>0.00</td>
 </tr>
 <tr>
-<td>14</td>
-<td>Vegetación de duna costera</td>
+<td>15</td>
+<td>Vegetación de petén</td>
 <td>Nula</td>
 <td>0.00</td>
 </tr>
@@ -1062,247 +735,686 @@ Tipo de vegetación.
 <td>0.00</td>
 </tr>
 </tbody>
-</table>
-
-**Función de valor de cobertura**
-
-![](/recursos/energia/mapa_fv_ene_ind_eol_cobertura_usv_svi_16cats.png)
-
-##### 1.2.4.4 Distancia a caminos
-
-Distancia a carreteras.
-
-**Insumos**
-
+</table></div>
+</div>
+<div class="section" id="id5">
+<h5>1.2.2.2 Infraestructura<a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h5>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>Capa</th>
-<th>Distancia a carreteras</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Red Nacional de Caminos (RNC) INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2019</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_eol_d_carreteras.png)
-
-**Función de valor de distancia a carreteras**
-
-![](/recursos/energia/mapa_fv_ene_ind_eol_d_carreteras.png)
-
-##### 1.2.4.5 Distancia a localidades
-
-Distancia de asentamientos humanos a los aerogeneradores, excluye a las localidades.
-
-**Insumos**
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Distancia a localidades</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2020</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
-</tr>
-</tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_eol_d_localidades.png)
-
-**Función de valor de distancia a localidades**
-
-![](/recursos/energia/mapa_fv_ene_ind_eol_d_localidades.png)
-
-#### 1.2.5 Biomasa
-
-Proyectos diseñados que utilizan material biológico, para conversion en energía utilizable. Incluye los desechos de granjas porcícolas para producir energía eléctrica.
-
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Atributos</th>
+<th>Criterio</th>
 <th>Definición</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Residuos urbanos</td>
-<td>Distancia a los sitios de disposición final de residuos urbanos</td>
+<td>Caminos</td>
+<td>Distancia a caminos y carreteras para transporte de los productos.</td>
 </tr>
 <tr>
-<td>Distancia a granjas porcícolas</td>
-<td>Distancia a granjas porcícolas</td>
+<td>Electricidad</td>
+<td>Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.</td>
 </tr>
 <tr>
-<td>Residuos vegetales</td>
-<td>Residuos agrícolas y forestales</td>
+<td>Minas</td>
+<td>Distancia a sitios de explotación de yacimientos minerales</td>
 </tr>
 </tbody>
-</table>
-
-##### 1.2.5.1 Residuos urbanos
-
-Distancia a los sitios de disposición final de residuos urbanos.
-
-**Insumos**
-
+</table><div class="section" id="id6">
+<h6>1.2.2.2.1 Caminos<a class="headerlink" href="#id6" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a caminos y carreteras para transporte de los productos.</p>
+</div>
+<div class="section" id="id7">
+<h6>1.2.2.2.2 Electricidad<a class="headerlink" href="#id7" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.</p>
+</div>
+<div class="section" id="id8">
+<h6>1.2.2.2.3 Minas<a class="headerlink" href="#id8" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a sitios de explotación de yacimientos minerales.</p>
+</div>
+</div>
+<div class="section" id="id9">
+<h5>1.2.2.3 Socioeconómicos<a class="headerlink" href="#id9" title="Enlazar permanentemente con este título">¶</a></h5>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>Capa</th>
-<th>Distancia a sitios de disposición final</th>
+<th>Criterio</th>
+<th>Definición</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Fuente</td>
-<td>Sitios de disposición final de residuos INEGI-SEMARNAT</td>
+<td>Localidades</td>
+<td>Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.</td>
 </tr>
 <tr>
-<td>Año</td>
-<td>2017</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
+<td>Oportunidades</td>
+<td>Proyectos de construcción y ampliación de vías de comunicación.</td>
 </tr>
 </tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_bio_d_sitios_disp_residuos.png)   
-
-**Función de valor de residuos urbanos**
-
-![](/recursos/energia/mapa_fv_ene_ind_bio_d_sitios_disp_residuos.png)
-
-##### 1.2.5.2 Distancia a granjas porcícolas
-
-Distancia a granjas porcícolas.
-
-**Insumos**
-
+</table><div class="section" id="id10">
+<h6>1.2.2.3.1 Localidades<a class="headerlink" href="#id10" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.</p>
+</div>
+<div class="section" id="id11">
+<h6>1.2.2.3.2 Oportunidades<a class="headerlink" href="#id11" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Proyectos de construcción y ampliación de vías de comunicación.</p>
+</div>
+</div>
+</div>
+<div class="section" id="mineria-de-rocas-con-extraccion-en-seco">
+<h4>1.2.3 Minería de rocas con extracción en seco<a class="headerlink" href="#mineria-de-rocas-con-extraccion-en-seco" title="Enlazar permanentemente con este título">¶</a></h4>
+<div class="section" id="id12">
+<h5>1.2.3.1 Biofísicos<a class="headerlink" href="#id12" title="Enlazar permanentemente con este título">¶</a></h5>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>Capa</th>
-<th>Distancia a granjas porcinas</th>
+<th>Criterio</th>
+<th>Definición</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Fuente</td>
-<td>Granjas porcinas y avícolas en la Península de Yucatán GeoComunes con datos de SAGARPA SIAP</td>
+<td>Nivel freático</td>
+<td>Distancia al manto acuífero medido por el nivel piezométrico.</td>
 </tr>
 <tr>
-<td>Año</td>
-<td>2019</td>
+<td>Tipo de suelo</td>
+<td>Edafología.</td>
 </tr>
 <tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Kilómetros</td>
+<td>Tipo de cobertura</td>
+<td>Tipos de vegetación y usos de suelo.</td>
 </tr>
 </tbody>
-</table>
-
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_bio_d_granjas_porcinas.png)   
-
-**Función de valor de distancia a granjas porcícolas**
-
-![](/recursos/energia/mapa_fv_ene_ind_bio_d_granjas_porcinas.png)
-
-##### 1.2.5.3 Residuos vegetales
-
-Residuos agrícolas y forestales.
-
-**Insumos**
-
+</table><div class="section" id="id13">
+<h6>1.2.3.1.1 Nivel freático<a class="headerlink" href="#id13" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia al manto acuífero medido por el nivel piezométrico.</p>
+</div>
+<div class="section" id="id14">
+<h6>1.2.3.1.2 Tipo de suelo<a class="headerlink" href="#id14" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Edafología.</p>
+<p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>Capa</th>
-<th>Residuos agrícolas forestales</th>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Fuente</td>
-<td>Residuos agrícolas forestales (municipal) SENER-CFE</td>
+<td>6</td>
+<td>Leptosol</td>
+<td>Muy alta</td>
+<td>1.00</td>
 </tr>
 <tr>
-<td>Año</td>
-<td>2013</td>
+<td>2</td>
+<td>Cambisol</td>
+<td>Alta</td>
+<td>0.75</td>
 </tr>
 <tr>
-<td>Campo</td>
-<td>POTENER</td>
+<td>10</td>
+<td>Regosol</td>
+<td>Moderada</td>
+<td>0.50</td>
 </tr>
 <tr>
-<td>Escala</td>
-<td>1:50,000</td>
+<td>1</td>
+<td>Arenosol</td>
+<td>Baja</td>
+<td>0.25</td>
 </tr>
 <tr>
-<td>Unidades</td>
-<td>TJ/a</td>
+<td>3</td>
+<td>Chernozem</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Luvisol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nitosol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Phaeozem</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Vertisol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Gleysol</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Histosol</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Solonchak</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>No aplica</td>
+<td>Nula</td>
+<td>0.00</td>
 </tr>
 </tbody>
-</table>
+</table></div>
+<div class="section" id="id15">
+<h6>1.2.3.1.3 Tipo de Cobertura<a class="headerlink" href="#id15" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Tipos de vegetación y usos de suelo.</p>
+<p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11</td>
+<td>Sin vegetación</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Agricultura de riego</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Agricultura de temporal</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Pastizal</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Selva baja</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bosque cultivado/Palmar inducido</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Selva mediana</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Sabana</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ND</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="section" id="id16">
+<h5>1.2.3.2 Infraestructura<a class="headerlink" href="#id16" title="Enlazar permanentemente con este título">¶</a></h5>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caminos</td>
+<td>Distancia a caminos y carreteras para transporte de los productos.</td>
+</tr>
+<tr>
+<td>Electricidad</td>
+<td>Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.</td>
+</tr>
+<tr>
+<td>Minas</td>
+<td>Distancia a sitios de explotación de yacimientos minerales</td>
+</tr>
+</tbody>
+</table><div class="section" id="id17">
+<h6>1.2.3.2.1 Caminos<a class="headerlink" href="#id17" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a caminos y carreteras para transporte de los productos.</p>
+</div>
+<div class="section" id="id18">
+<h6>1.2.3.2.2 Electricidad<a class="headerlink" href="#id18" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.</p>
+</div>
+<div class="section" id="id19">
+<h6>1.2.3.2.3 Minas<a class="headerlink" href="#id19" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a sitios de explotación de yacimientos minerales.</p>
+</div>
+</div>
+<div class="section" id="id20">
+<h5>1.2.3.3 Socioeconómicos<a class="headerlink" href="#id20" title="Enlazar permanentemente con este título">¶</a></h5>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Localidades</td>
+<td>Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.</td>
+</tr>
+<tr>
+<td>Oportunidades</td>
+<td>Proyectos de construcción y ampliación de vías de comunicación.</td>
+</tr>
+</tbody>
+</table><div class="section" id="id21">
+<h6>1.2.3.3.1 Localidades<a class="headerlink" href="#id21" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.</p>
+</div>
+<div class="section" id="id22">
+<h6>1.2.3.3.2 Oportunidades<a class="headerlink" href="#id22" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Proyectos de construcción y ampliación de vías de comunicación.</p>
+</div>
+</div>
+</div>
+<div class="section" id="mineria-de-rocas-con-extraccion-en-humedo">
+<h4>1.2.4 Minería de rocas con extracción en húmedo<a class="headerlink" href="#mineria-de-rocas-con-extraccion-en-humedo" title="Enlazar permanentemente con este título">¶</a></h4>
+<div class="section" id="id23">
+<h5>1.2.4.1 Biofísicos<a class="headerlink" href="#id23" title="Enlazar permanentemente con este título">¶</a></h5>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nivel freático</td>
+<td>Distancia al manto acuífero medido por el nivel piezométrico.</td>
+</tr>
+<tr>
+<td>Tipo de suelo</td>
+<td>Edafología.</td>
+</tr>
+<tr>
+<td>Tipo de cobertura</td>
+<td>Tipos de vegetación y usos de suelo.</td>
+</tr>
+</tbody>
+</table><div class="section" id="id24">
+<h6>1.2.4.1.1 Nivel freático<a class="headerlink" href="#id24" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia al manto acuífero medido por el nivel piezométrico.</p>
+</div>
+<div class="section" id="id25">
+<h6>1.2.4.1.2 Tipo de suelo<a class="headerlink" href="#id25" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Edafología.</p>
+<p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>Leptosol</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Cambisol</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Regosol</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Arenosol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Chernozem</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Luvisol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nitosol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Phaeozem</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Vertisol</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Gleysol</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Histosol</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Solonchak</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>No aplica</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id26">
+<h6>1.2.4.1.3 Tipo de Cobertura<a class="headerlink" href="#id26" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Tipos de vegetación y usos de suelo.</p>
+<p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11</td>
+<td>Sin vegetación</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Agricultura de riego</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Agricultura de temporal</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Pastizal</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Selva baja</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bosque cultivado/Palmar inducido</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Selva mediana</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Sabana</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ND</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="section" id="id27">
+<h5>1.2.4.2 Infraestructura<a class="headerlink" href="#id27" title="Enlazar permanentemente con este título">¶</a></h5>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caminos</td>
+<td>Distancia a caminos y carreteras para transporte de los productos.</td>
+</tr>
+<tr>
+<td>Electricidad</td>
+<td>Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.</td>
+</tr>
+<tr>
+<td>Minas</td>
+<td>Distancia a sitios de explotación de yacimientos minerales</td>
+</tr>
+</tbody>
+</table><div class="section" id="id28">
+<h6>1.2.4.2.1 Caminos<a class="headerlink" href="#id28" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a caminos y carreteras para transporte de los productos.</p>
+</div>
+<div class="section" id="id29">
+<h6>1.2.4.2.2 Electricidad<a class="headerlink" href="#id29" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.</p>
+</div>
+<div class="section" id="id30">
+<h6>1.2.4.2.3 Minas<a class="headerlink" href="#id30" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a sitios de explotación de yacimientos minerales.</p>
+</div>
+</div>
+<div class="section" id="id31">
+<h5>1.2.4.3 Socioeconómicos<a class="headerlink" href="#id31" title="Enlazar permanentemente con este título">¶</a></h5>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Localidades</td>
+<td>Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.</td>
+</tr>
+<tr>
+<td>Oportunidades</td>
+<td>Proyectos de construcción y ampliación de vías de comunicación.</td>
+</tr>
+</tbody>
+</table><div class="section" id="id32">
+<h6>1.2.4.3.1 Localidades<a class="headerlink" href="#id32" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.</p>
+</div>
+<div class="section" id="id33">
+<h6>1.2.4.3.2 Oportunidades<a class="headerlink" href="#id33" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Proyectos de construcción y ampliación de vías de comunicación.</p>
+<!--
 
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_bio_potencial_biomasa_residuos_agricolas_forestales.png)
-
-**Función de valor de residuos vegetales**
-
-![](/recursos/energia/mapa_fv_ene_ind_bio_potencial_biomasa_residuos_agricolas_forestales.png)
 
 ### 1.3 Mapa de aptitud
 
@@ -2119,6 +2231,7 @@ Generación distribuída de energía en las comunidades, a través de la energí
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv
    :header-rows: 1
    :align: center --></div>
+</div>
 </div>
 </div>
 </div>
