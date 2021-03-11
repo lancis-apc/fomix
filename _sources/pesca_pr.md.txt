@@ -24,7 +24,7 @@ Criterio|Definición
 Agua potable| Requerimiento de agua potable para la producción de hielo. El atributo se representa con la distancia a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
 Electricidad| Distancia a red de transmisión eléctrica.
 Vías de comunicación| Distancia a caminos y carreteras para el transporte de insumos y productos.
-Comunicaciones| Acceso a  comunicación a través de internet y telefonía. El atributo se representa con la distancia a localidades que se evaluaron con base en el porcentaje de viviendas con internet, celular y teléfono.
+Comunicaciones| Acceso a comunicaciones en localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet y celular.
 
 ##### 1.2.1.1 Agua potable
 
@@ -67,7 +67,7 @@ Unidades | Kilómetros
 
 ##### 1.2.1.4 Comunicaciones
 
-Acceso a  comunicación a través de internet y telefonía. El atributo se representa con la distancia a localidades que se evaluaron con base en el porcentaje de viviendas con internet, celular y teléfono.
+Acceso a comunicaciones en localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet y celular.
 
 **Insumos**
 
@@ -82,10 +82,10 @@ Unidades | Porcentaje
 
 Criterio|Definición
 --|--
-Localidades| Distancia a localidades con comunidades pesqueras: Celestún, Sisal, Chuburná, Yucalpetén, Progreso, Telchac, Chabihau, Dzilam de Bravo, San Felipe, Río Lagartos, Las Coloradas, El Cuyo, Chelem, Chicxulub, Santa Clara y San Crisanto.
+Localidades pesqueras| Distancia a localidades con comunidades pesqueras: Celestún, Sisal, Chuburná, Yucalpetén, Progreso, Telchac, Chabihau, Dzilam de Bravo, San Felipe, Río Lagartos, Las Coloradas, El Cuyo, Chelem, Chicxulub, Santa Clara y San Crisanto.
 Centros de distribución| Distancia a los puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá y Motul.
 
-##### 1.2.2.1 Localidades
+##### 1.2.2.1 Localidades pesqueras
 
 Distancia a localidades con comunidades pesqueras: Celestún, Sisal, Chuburná, Yucalpetén, Progreso, Telchac, Chabihau, Dzilam de Bravo, San Felipe, Río Lagartos, Las Coloradas, El Cuyo, Chelem, Chicxulub, Santa Clara y San Crisanto.
 
