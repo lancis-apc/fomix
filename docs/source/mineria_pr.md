@@ -34,9 +34,37 @@ Tipo de cobertura| Tipos de vegetación y usos de suelo.
 
 Distancia al manto acuífero medido por el nivel piezométrico.
 
+**Insumos**
+
+Capa | Nivel freático
+-- | --
+Fuente | Nivel freático POETY
+Año | Sin dato
+Campo | n_freat_m
+Escala | Estatal
+Unidades | Metros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arci_bio_d_manto_freatico.png)
+
+**Función de valor de nivel freático**
+
+![](/recursos/mineria/mapa_fv_min_arci_bio_d_manto_freatico.png)
+
 ###### 1.2.1.1.2 Tipo de suelo
 
 Edafología.
+
+**Insumos**
+
+Capa | Edafología
+-- | --
+Fuente | Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI
+Año | 2014
+Campo | tipo_suelo
+Escala | 1:250,000
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -56,9 +84,23 @@ ID | Categoría | Importancia | FV
 11 | Solonchak | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+**Función de valor de tipo de suelo**
+
+![](/recursos/mineria/mapa_fv_min_arci_bio_tipo_suelo.png)
+
 ###### 1.2.1.1.3 Tipo de Cobertura
 
 Tipos de vegetación y usos de suelo.
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -82,6 +124,10 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+**Función de valor de tipo de cobertura**
+
+![](/recursos/mineria/mapa_fv_min_arci_bio_cobertura_usv_svi_16cats.png)
+
 ##### 1.2.1.2 Infraestructura
 
 Criterio|Definición
@@ -94,13 +140,64 @@ Minas| Distancia a sitios de explotación de yacimientos minerales
 
 Distancia a caminos y carreteras para transporte de los productos.
 
+**Insumos**
+
+Capa | Distancia a la red vial
+-- | --
+Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | 2019
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arci_infra_d_carreteras_caminos.png)
+
+**Función de valor de caminos**
+
+![](/recursos/mineria/mapa_fv_min_arci_infra_d_carreteras_caminos.png)
+
 ###### 1.2.1.2.2 Electricidad
 
 Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.
 
+**Insumos**
+
+Capa | Distancia líneas de transmisión de energía   eléctrica
+-- | --
+Fuente | Líneas de transmisión INEGI
+Año | 2012
+Escala | 1:50,000
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arci_infra_d_lineas_electricas.png)
+
+**Función de valor de electricidad**
+
+![](/recursos/mineria/mapa_fv_min_arci_infra_d_lineas_electricas.png)
+
 ###### 1.2.1.2.3 Minas
 
 Distancia a sitios de explotación de yacimientos minerales.
+
+**Insumos**
+
+Capa | Distancia a minas y rocas dimensionables
+-- | --
+Fuente | [1] Yacimientos minerales - minas SGM y [2] Rocas dimensionables SGM
+Año | [1] Sin dato ; [2] 2011
+Escala | [1] 1:250,000 ;[2] 1:50,000
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arci_infra_rocas_banco_materiales.png)
+
+**Función de valor de minas**
+
+![](/recursos/mineria/mapa_fv_min_arci_infra_rocas_banco_materiales.png)
 
 ##### 1.2.1.3 Socioeconómicos
 
@@ -113,9 +210,29 @@ Oportunidades| Proyectos de construcción y ampliación de vías de comunicació
 
 Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.
 
+**Insumos**
+
+Capa | Distancia a localidades con mayor demanda de material minero
+-- | --
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
+Año | 2020
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arci_socio_d_localidades_min.png)
+
+**Función de valor de localidades**
+
+![](/recursos/mineria/mapa_fv_min_arci_socio_d_localidades_min.png)
+
 ###### 1.2.1.3.2 Oportunidades
 
 Proyectos de construcción y ampliación de vías de comunicación.
+
+**Insumos**
+
 
 #### 1.2.2 Minería de arenas
 
@@ -131,9 +248,37 @@ Tipo de cobertura| Tipos de vegetación y usos de suelo.
 
 Distancia al manto acuífero medido por el nivel piezométrico.
 
+**Insumos**
+
+Capa | Nivel freático
+-- | --
+Fuente | Nivel freático POETY
+Año | Sin dato
+Campo | n_freat_m
+Escala | Estatal
+Unidades | Metros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arena_bio_d_manto_freatico.png)
+
+**Función de valor de nivel freático**
+
+![](/recursos/mineria/mapa_fv_min_arena_bio_d_manto_freatico.png)
+
 ###### 1.2.2.1.2 Tipo de suelo
 
 Edafología.
+
+**Insumos**
+
+Capa | Edafología
+-- | --
+Fuente | Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI
+Año | 2014
+Campo | tipo_suelo
+Escala | 1:250,000
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -153,9 +298,23 @@ ID | Categoría | Importancia | FV
 12 | Vertisol | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+**Función de valor de tipo de suelo**
+
+![](/recursos/mineria/mapa_fv_min_arena_bio_tipo_suelo.png)
+
 ###### 1.2.2.1.3 Tipo de Cobertura
 
 Tipos de vegetación y usos de suelo.
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -179,6 +338,10 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+**Función de valor de tipo de cobertura**
+
+![](/recursos/mineria/mapa_fv_min_arena_bio_cobertura_usv_svi_16cats.png)
+
 ##### 1.2.2.2 Infraestructura
 
 Criterio|Definición
@@ -191,13 +354,64 @@ Minas| Distancia a sitios de explotación de yacimientos minerales
 
 Distancia a caminos y carreteras para transporte de los productos.
 
+**Insumos**
+
+Capa | Distancia a la red vial
+-- | --
+Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | 2019
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arena_infra_d_carreteras_caminos.png)
+
+**Función de valor de caminos**
+
+![](/recursos/mineria/mapa_fv_min_arena_infra_d_carreteras_caminos.png)
+
 ###### 1.2.2.2.2 Electricidad
 
 Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.
 
+**Insumos**
+
+Capa | Distancia líneas de transmisión de energía   eléctrica
+-- | --
+Fuente | Líneas de transmisión INEGI
+Año | 2012
+Escala | 1:50,000
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arena_infra_d_lineas_electricas.png)
+
+**Función de valor de electricidad**
+
+![](/recursos/mineria/mapa_fv_min_arena_infra_d_lineas_electricas.png)
+
 ###### 1.2.2.2.3 Minas
 
 Distancia a sitios de explotación de yacimientos minerales.
+
+**Insumos**
+
+Capa | Distancia a minas y rocas dimensionables
+-- | --
+Fuente | [1] Yacimientos minerales - minas SGM y [2] Rocas dimensionables SGM
+Año | [1] Sin dato ; [2] 2011
+Escala | [1] 1:250,000 ;[2] 1:50,000
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arena_infra_rocas_banco_materiales.png)
+
+**Función de valor de minas**
+
+![](/recursos/mineria/mapa_fv_min_arena_infra_rocas_banco_materiales.png)
 
 ##### 1.2.2.3 Socioeconómicos
 
@@ -209,6 +423,23 @@ Oportunidades| Proyectos de construcción y ampliación de vías de comunicació
 ###### 1.2.2.3.1 Localidades
 
 Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.
+
+**Insumos**
+
+Capa | Distancia a localidades con mayor demanda de material minero
+-- | --
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
+Año | 2020
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arena_socio_d_localidades_min.png)
+
+**Función de valor de localidades**
+
+![](/recursos/mineria/mapa_fv_min_arena_socio_d_localidades_min.png)
 
 ###### 1.2.2.3.2 Oportunidades
 
@@ -230,9 +461,37 @@ Tipo de cobertura| Tipos de vegetación y usos de suelo.
 
 Distancia al manto acuífero medido por el nivel piezométrico.
 
+**Insumos**
+
+Capa | Nivel freático
+-- | --
+Fuente | Nivel freático POETY
+Año | Sin dato
+Campo | n_freat_m
+Escala | Estatal
+Unidades | Metros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_rosec_bio_d_manto_freatico.png)
+
+**Función de valor de nivel freático**
+
+![](/recursos/mineria/mapa_fv_min_rosec_bio_d_manto_freatico.png)
+
 ###### 1.2.3.1.2 Tipo de suelo
 
 Edafología.
+
+**Insumos**
+
+Capa | Edafología
+-- | --
+Fuente | Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI
+Año | 2014
+Campo | tipo_suelo
+Escala | 1:250,000
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -252,9 +511,23 @@ ID | Categoría | Importancia | FV
 11 | Solonchak | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+**Función de valor de tipo de suelo**
+
+![](/recursos/mineria/mapa_fv_min_rosec_bio_tipo_suelo.png)
+
 ###### 1.2.3.1.3 Tipo de Cobertura
 
 Tipos de vegetación y usos de suelo.
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -278,6 +551,10 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+**Función de valor de tipo de cobertura**
+
+![](/recursos/mineria/mapa_fv_min_rosec_bio_cobertura_usv_svi_16cats.png)
+
 ##### 1.2.3.2 Infraestructura
 
 Criterio|Definición
@@ -290,13 +567,64 @@ Minas| Distancia a sitios de explotación de yacimientos minerales
 
 Distancia a caminos y carreteras para transporte de los productos.
 
+**Insumos**
+
+Capa | Distancia a la red vial
+-- | --
+Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | 2019
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_rosec_infra_d_carreteras_caminos.png)
+
+**Función de valor de caminos**
+
+![](/recursos/mineria/mapa_fv_min_rosec_infra_d_carreteras_caminos.png)
+
 ###### 1.2.3.2.2 Electricidad
 
 Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.
 
+**Insumos**
+
+Capa | Distancia líneas de transmisión de energía   eléctrica
+-- | --
+Fuente | Líneas de transmisión INEGI
+Año | 2012
+Escala | 1:50,000
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_rosec_infra_d_lineas_electricas.png)
+
+**Función de valor de electricidad**
+
+![](/recursos/mineria/mapa_fv_min_rosec_infra_d_lineas_electricas.png)
+
 ###### 1.2.3.2.3 Minas
 
 Distancia a sitios de explotación de yacimientos minerales.
+
+**Insumos**
+
+Capa | Distancia a minas y rocas dimensionables
+-- | --
+Fuente | [1] Yacimientos minerales - minas SGM y [2] Rocas dimensionables SGM
+Año | [1] Sin dato ; [2] 2011
+Escala | [1] 1:250,000 ;[2] 1:50,000
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_rosec_infra_rocas_banco_materiales.png)
+
+**Función de valor de minas**
+
+![](/recursos/mineria/mapa_fv_min_rosec_infra_rocas_banco_materiales.png)
 
 ##### 1.2.3.3 Socioeconómicos
 
@@ -308,6 +636,23 @@ Oportunidades| Proyectos de construcción y ampliación de vías de comunicació
 ###### 1.2.3.3.1 Localidades
 
 Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.
+
+**Insumos**
+
+Capa | Distancia a localidades con mayor demanda de material minero
+-- | --
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
+Año | 2020
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_rosec_socio_d_localidades_min.png)
+
+**Función de valor de localidades**
+
+![](/recursos/mineria/mapa_fv_min_rosec_socio_d_localidades_min.png)
 
 ###### 1.2.3.3.2 Oportunidades
 
@@ -329,9 +674,37 @@ Tipo de cobertura| Tipos de vegetación y usos de suelo.
 
 Distancia al manto acuífero medido por el nivel piezométrico.
 
+**Insumos**
+
+Capa | Nivel freático
+-- | --
+Fuente | Nivel freático POETY
+Año | Sin dato
+Campo | n_freat_m
+Escala | Estatal
+Unidades | Metros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_rohum_bio_d_manto_freatico.png)
+
+**Función de valor de nivel freático**
+
+![](/recursos/mineria/mapa_fv_min_rohum_bio_d_manto_freatico.png)
+
 ###### 1.2.4.1.2 Tipo de suelo
 
 Edafología.
+
+**Insumos**
+
+Capa | Edafología
+-- | --
+Fuente | Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI
+Año | 2014
+Campo | tipo_suelo
+Escala | 1:250,000
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -351,9 +724,23 @@ ID | Categoría | Importancia | FV
 11 | Solonchak | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+**Función de valor de tipo de suelo**
+
+![](/recursos/mineria/mapa_fv_min_rohum_bio_tipo_suelo.png)
+
 ###### 1.2.4.1.3 Tipo de Cobertura
 
 Tipos de vegetación y usos de suelo.
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -377,6 +764,10 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+**Función de valor de tipo de cobertura**
+
+![](/recursos/mineria/mapa_fv_min_rohum_bio_cobertura_usv_svi_16cats.png)
+
 ##### 1.2.4.2 Infraestructura
 
 Criterio|Definición
@@ -389,13 +780,64 @@ Minas| Distancia a sitios de explotación de yacimientos minerales
 
 Distancia a caminos y carreteras para transporte de los productos.
 
+**Insumos**
+
+Capa | Distancia a la red vial
+-- | --
+Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
+Año | 2019
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_rohum_infra_d_carreteras_caminos.png)
+
+**Función de valor de caminos**
+
+![](/recursos/mineria/mapa_fv_min_rohum_infra_d_carreteras_caminos.png)
+
 ###### 1.2.4.2.2 Electricidad
 
 Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.
 
+**Insumos**
+
+Capa | Distancia líneas de transmisión de energía   eléctrica
+-- | --
+Fuente | Líneas de transmisión INEGI
+Año | 2012
+Escala | 1:50,000
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_rohum_infra_d_lineas_electricas.png)
+
+**Función de valor de electricidad**
+
+![](/recursos/mineria/mapa_fv_min_rohum_infra_d_lineas_electricas.png)
+
 ###### 1.2.4.2.3 Minas
 
 Distancia a sitios de explotación de yacimientos minerales.
+
+**Insumos**
+
+Capa | Distancia a minas y rocas dimensionables
+-- | --
+Fuente | [1] Yacimientos minerales - minas SGM y [2] Rocas dimensionables SGM
+Año | [1] Sin dato ; [2] 2011
+Escala | [1] 1:250,000 ;[2] 1:50,000
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_rohum_infra_rocas_banco_materiales.png)
+
+**Función de valor de minas**
+
+![](/recursos/mineria/mapa_fv_min_rohum_infra_rocas_banco_materiales.png)
 
 ##### 1.2.4.3 Socioeconómicos
 
@@ -407,6 +849,23 @@ Oportunidades| Proyectos de construcción y ampliación de vías de comunicació
 ###### 1.2.4.3.1 Localidades
 
 Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.
+
+**Insumos**
+
+Capa | Distancia a localidades con mayor demanda de material minero
+-- | --
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
+Año | 2020
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_rohum_socio_d_localidades_min.png)
+
+**Función de valor de localidades**
+
+![](/recursos/mineria/mapa_fv_min_rohum_socio_d_localidades_min.png)
 
 ###### 1.2.4.3.2 Oportunidades
 

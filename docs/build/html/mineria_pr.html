@@ -216,11 +216,75 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="nivel-freatico">
 <h6>1.2.1.1.1 Nivel freático<a class="headerlink" href="#nivel-freatico" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia al manto acuífero medido por el nivel piezométrico.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Nivel freático</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Nivel freático POETY</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>n_freat_m</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Estatal</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Metros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_arci_bio_d_manto_freatico.png" src="_images/fi_fv_min_arci_bio_d_manto_freatico.png" /></p>
+<p><strong>Función de valor de nivel freático</strong></p>
+<p><img alt="_images/mapa_fv_min_arci_bio_d_manto_freatico.png" src="_images/mapa_fv_min_arci_bio_d_manto_freatico.png" /></p>
 </div>
 <div class="section" id="tipo-de-suelo">
 <h6>1.2.1.1.2 Tipo de suelo<a class="headerlink" href="#tipo-de-suelo" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Edafología.</p>
-<p><strong>Parámetros de la función de valor</strong></p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Edafología</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>tipo_suelo</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -310,11 +374,43 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 <td>0.00</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de tipo de suelo</strong></p>
+<p><img alt="_images/mapa_fv_min_arci_bio_tipo_suelo.png" src="_images/mapa_fv_min_arci_bio_tipo_suelo.png" /></p>
+</div>
 <div class="section" id="tipo-de-cobertura">
 <h6>1.2.1.1.3 Tipo de Cobertura<a class="headerlink" href="#tipo-de-cobertura" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Tipos de vegetación y usos de suelo.</p>
-<p><strong>Parámetros de la función de valor</strong></p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -428,7 +524,9 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 <td>0.00</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de tipo de cobertura</strong></p>
+<p><img alt="_images/mapa_fv_min_arci_bio_cobertura_usv_svi_16cats.png" src="_images/mapa_fv_min_arci_bio_cobertura_usv_svi_16cats.png" /></p>
+</div>
 </div>
 <div class="section" id="infraestructura">
 <h5>1.2.1.2 Infraestructura<a class="headerlink" href="#infraestructura" title="Enlazar permanentemente con este título">¶</a></h5>
@@ -456,14 +554,104 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="caminos">
 <h6>1.2.1.2.1 Caminos<a class="headerlink" href="#caminos" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a caminos y carreteras para transporte de los productos.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a la red vial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_arci_infra_d_carreteras_caminos.png" src="_images/fi_fv_min_arci_infra_d_carreteras_caminos.png" /></p>
+<p><strong>Función de valor de caminos</strong></p>
+<p><img alt="_images/mapa_fv_min_arci_infra_d_carreteras_caminos.png" src="_images/mapa_fv_min_arci_infra_d_carreteras_caminos.png" /></p>
 </div>
 <div class="section" id="electricidad">
 <h6>1.2.1.2.2 Electricidad<a class="headerlink" href="#electricidad" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia líneas de transmisión de energía   eléctrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Líneas de transmisión INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2012</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_arci_infra_d_lineas_electricas.png" src="_images/fi_fv_min_arci_infra_d_lineas_electricas.png" /></p>
+<p><strong>Función de valor de electricidad</strong></p>
+<p><img alt="_images/mapa_fv_min_arci_infra_d_lineas_electricas.png" src="_images/mapa_fv_min_arci_infra_d_lineas_electricas.png" /></p>
 </div>
 <div class="section" id="minas">
 <h6>1.2.1.2.3 Minas<a class="headerlink" href="#minas" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a sitios de explotación de yacimientos minerales.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a minas y rocas dimensionables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Yacimientos minerales - minas SGM y [2] Rocas dimensionables SGM</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] Sin dato ; [2] 2011</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>[1] 1:250,000 ;[2] 1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_arci_infra_rocas_banco_materiales.png" src="_images/fi_fv_min_arci_infra_rocas_banco_materiales.png" /></p>
+<p><strong>Función de valor de minas</strong></p>
+<p><img alt="_images/mapa_fv_min_arci_infra_rocas_banco_materiales.png" src="_images/mapa_fv_min_arci_infra_rocas_banco_materiales.png" /></p>
 </div>
 </div>
 <div class="section" id="socioeconomicos">
@@ -488,10 +676,41 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="localidades">
 <h6>1.2.1.3.1 Localidades<a class="headerlink" href="#localidades" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a localidades con mayor demanda de material minero</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_arci_socio_d_localidades_min.png" src="_images/fi_fv_min_arci_socio_d_localidades_min.png" /></p>
+<p><strong>Función de valor de localidades</strong></p>
+<p><img alt="_images/mapa_fv_min_arci_socio_d_localidades_min.png" src="_images/mapa_fv_min_arci_socio_d_localidades_min.png" /></p>
 </div>
 <div class="section" id="oportunidades">
 <h6>1.2.1.3.2 Oportunidades<a class="headerlink" href="#oportunidades" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Proyectos de construcción y ampliación de vías de comunicación.</p>
+<p><strong>Insumos</strong></p>
 </div>
 </div>
 </div>
@@ -523,11 +742,75 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="id2">
 <h6>1.2.2.1.1 Nivel freático<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia al manto acuífero medido por el nivel piezométrico.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Nivel freático</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Nivel freático POETY</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>n_freat_m</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Estatal</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Metros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_arena_bio_d_manto_freatico.png" src="_images/fi_fv_min_arena_bio_d_manto_freatico.png" /></p>
+<p><strong>Función de valor de nivel freático</strong></p>
+<p><img alt="_images/mapa_fv_min_arena_bio_d_manto_freatico.png" src="_images/mapa_fv_min_arena_bio_d_manto_freatico.png" /></p>
 </div>
 <div class="section" id="id3">
 <h6>1.2.2.1.2 Tipo de suelo<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Edafología.</p>
-<p><strong>Parámetros de la función de valor</strong></p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Edafología</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>tipo_suelo</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -617,11 +900,43 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 <td>0.00</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de tipo de suelo</strong></p>
+<p><img alt="_images/mapa_fv_min_arena_bio_tipo_suelo.png" src="_images/mapa_fv_min_arena_bio_tipo_suelo.png" /></p>
+</div>
 <div class="section" id="id4">
 <h6>1.2.2.1.3 Tipo de Cobertura<a class="headerlink" href="#id4" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Tipos de vegetación y usos de suelo.</p>
-<p><strong>Parámetros de la función de valor</strong></p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -735,7 +1050,9 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 <td>0.00</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de tipo de cobertura</strong></p>
+<p><img alt="_images/mapa_fv_min_arena_bio_cobertura_usv_svi_16cats.png" src="_images/mapa_fv_min_arena_bio_cobertura_usv_svi_16cats.png" /></p>
+</div>
 </div>
 <div class="section" id="id5">
 <h5>1.2.2.2 Infraestructura<a class="headerlink" href="#id5" title="Enlazar permanentemente con este título">¶</a></h5>
@@ -763,14 +1080,104 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="id6">
 <h6>1.2.2.2.1 Caminos<a class="headerlink" href="#id6" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a caminos y carreteras para transporte de los productos.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a la red vial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_arena_infra_d_carreteras_caminos.png" src="_images/fi_fv_min_arena_infra_d_carreteras_caminos.png" /></p>
+<p><strong>Función de valor de caminos</strong></p>
+<p><img alt="_images/mapa_fv_min_arena_infra_d_carreteras_caminos.png" src="_images/mapa_fv_min_arena_infra_d_carreteras_caminos.png" /></p>
 </div>
 <div class="section" id="id7">
 <h6>1.2.2.2.2 Electricidad<a class="headerlink" href="#id7" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia líneas de transmisión de energía   eléctrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Líneas de transmisión INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2012</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_arena_infra_d_lineas_electricas.png" src="_images/fi_fv_min_arena_infra_d_lineas_electricas.png" /></p>
+<p><strong>Función de valor de electricidad</strong></p>
+<p><img alt="_images/mapa_fv_min_arena_infra_d_lineas_electricas.png" src="_images/mapa_fv_min_arena_infra_d_lineas_electricas.png" /></p>
 </div>
 <div class="section" id="id8">
 <h6>1.2.2.2.3 Minas<a class="headerlink" href="#id8" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a sitios de explotación de yacimientos minerales.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a minas y rocas dimensionables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Yacimientos minerales - minas SGM y [2] Rocas dimensionables SGM</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] Sin dato ; [2] 2011</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>[1] 1:250,000 ;[2] 1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_arena_infra_rocas_banco_materiales.png" src="_images/fi_fv_min_arena_infra_rocas_banco_materiales.png" /></p>
+<p><strong>Función de valor de minas</strong></p>
+<p><img alt="_images/mapa_fv_min_arena_infra_rocas_banco_materiales.png" src="_images/mapa_fv_min_arena_infra_rocas_banco_materiales.png" /></p>
 </div>
 </div>
 <div class="section" id="id9">
@@ -795,6 +1202,36 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="id10">
 <h6>1.2.2.3.1 Localidades<a class="headerlink" href="#id10" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a localidades con mayor demanda de material minero</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_arena_socio_d_localidades_min.png" src="_images/fi_fv_min_arena_socio_d_localidades_min.png" /></p>
+<p><strong>Función de valor de localidades</strong></p>
+<p><img alt="_images/mapa_fv_min_arena_socio_d_localidades_min.png" src="_images/mapa_fv_min_arena_socio_d_localidades_min.png" /></p>
 </div>
 <div class="section" id="id11">
 <h6>1.2.2.3.2 Oportunidades<a class="headerlink" href="#id11" title="Enlazar permanentemente con este título">¶</a></h6>
@@ -830,11 +1267,75 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="id13">
 <h6>1.2.3.1.1 Nivel freático<a class="headerlink" href="#id13" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia al manto acuífero medido por el nivel piezométrico.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Nivel freático</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Nivel freático POETY</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>n_freat_m</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Estatal</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Metros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_rosec_bio_d_manto_freatico.png" src="_images/fi_fv_min_rosec_bio_d_manto_freatico.png" /></p>
+<p><strong>Función de valor de nivel freático</strong></p>
+<p><img alt="_images/mapa_fv_min_rosec_bio_d_manto_freatico.png" src="_images/mapa_fv_min_rosec_bio_d_manto_freatico.png" /></p>
 </div>
 <div class="section" id="id14">
 <h6>1.2.3.1.2 Tipo de suelo<a class="headerlink" href="#id14" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Edafología.</p>
-<p><strong>Parámetros de la función de valor</strong></p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Edafología</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>tipo_suelo</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -924,11 +1425,43 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 <td>0.00</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de tipo de suelo</strong></p>
+<p><img alt="_images/mapa_fv_min_rosec_bio_tipo_suelo.png" src="_images/mapa_fv_min_rosec_bio_tipo_suelo.png" /></p>
+</div>
 <div class="section" id="id15">
 <h6>1.2.3.1.3 Tipo de Cobertura<a class="headerlink" href="#id15" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Tipos de vegetación y usos de suelo.</p>
-<p><strong>Parámetros de la función de valor</strong></p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1042,7 +1575,9 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 <td>0.00</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de tipo de cobertura</strong></p>
+<p><img alt="_images/mapa_fv_min_rosec_bio_cobertura_usv_svi_16cats.png" src="_images/mapa_fv_min_rosec_bio_cobertura_usv_svi_16cats.png" /></p>
+</div>
 </div>
 <div class="section" id="id16">
 <h5>1.2.3.2 Infraestructura<a class="headerlink" href="#id16" title="Enlazar permanentemente con este título">¶</a></h5>
@@ -1070,14 +1605,104 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="id17">
 <h6>1.2.3.2.1 Caminos<a class="headerlink" href="#id17" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a caminos y carreteras para transporte de los productos.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a la red vial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_rosec_infra_d_carreteras_caminos.png" src="_images/fi_fv_min_rosec_infra_d_carreteras_caminos.png" /></p>
+<p><strong>Función de valor de caminos</strong></p>
+<p><img alt="_images/mapa_fv_min_rosec_infra_d_carreteras_caminos.png" src="_images/mapa_fv_min_rosec_infra_d_carreteras_caminos.png" /></p>
 </div>
 <div class="section" id="id18">
 <h6>1.2.3.2.2 Electricidad<a class="headerlink" href="#id18" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia líneas de transmisión de energía   eléctrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Líneas de transmisión INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2012</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_rosec_infra_d_lineas_electricas.png" src="_images/fi_fv_min_rosec_infra_d_lineas_electricas.png" /></p>
+<p><strong>Función de valor de electricidad</strong></p>
+<p><img alt="_images/mapa_fv_min_rosec_infra_d_lineas_electricas.png" src="_images/mapa_fv_min_rosec_infra_d_lineas_electricas.png" /></p>
 </div>
 <div class="section" id="id19">
 <h6>1.2.3.2.3 Minas<a class="headerlink" href="#id19" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a sitios de explotación de yacimientos minerales.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a minas y rocas dimensionables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Yacimientos minerales - minas SGM y [2] Rocas dimensionables SGM</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] Sin dato ; [2] 2011</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>[1] 1:250,000 ;[2] 1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_rosec_infra_rocas_banco_materiales.png" src="_images/fi_fv_min_rosec_infra_rocas_banco_materiales.png" /></p>
+<p><strong>Función de valor de minas</strong></p>
+<p><img alt="_images/mapa_fv_min_rosec_infra_rocas_banco_materiales.png" src="_images/mapa_fv_min_rosec_infra_rocas_banco_materiales.png" /></p>
 </div>
 </div>
 <div class="section" id="id20">
@@ -1102,6 +1727,36 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="id21">
 <h6>1.2.3.3.1 Localidades<a class="headerlink" href="#id21" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a localidades con mayor demanda de material minero</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_rosec_socio_d_localidades_min.png" src="_images/fi_fv_min_rosec_socio_d_localidades_min.png" /></p>
+<p><strong>Función de valor de localidades</strong></p>
+<p><img alt="_images/mapa_fv_min_rosec_socio_d_localidades_min.png" src="_images/mapa_fv_min_rosec_socio_d_localidades_min.png" /></p>
 </div>
 <div class="section" id="id22">
 <h6>1.2.3.3.2 Oportunidades<a class="headerlink" href="#id22" title="Enlazar permanentemente con este título">¶</a></h6>
@@ -1137,11 +1792,75 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="id24">
 <h6>1.2.4.1.1 Nivel freático<a class="headerlink" href="#id24" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia al manto acuífero medido por el nivel piezométrico.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Nivel freático</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Nivel freático POETY</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>n_freat_m</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Estatal</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Metros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_rohum_bio_d_manto_freatico.png" src="_images/fi_fv_min_rohum_bio_d_manto_freatico.png" /></p>
+<p><strong>Función de valor de nivel freático</strong></p>
+<p><img alt="_images/mapa_fv_min_rohum_bio_d_manto_freatico.png" src="_images/mapa_fv_min_rohum_bio_d_manto_freatico.png" /></p>
 </div>
 <div class="section" id="id25">
 <h6>1.2.4.1.2 Tipo de suelo<a class="headerlink" href="#id25" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Edafología.</p>
-<p><strong>Parámetros de la función de valor</strong></p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Edafología</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>tipo_suelo</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1231,11 +1950,43 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 <td>0.00</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de tipo de suelo</strong></p>
+<p><img alt="_images/mapa_fv_min_rohum_bio_tipo_suelo.png" src="_images/mapa_fv_min_rohum_bio_tipo_suelo.png" /></p>
+</div>
 <div class="section" id="id26">
 <h6>1.2.4.1.3 Tipo de Cobertura<a class="headerlink" href="#id26" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Tipos de vegetación y usos de suelo.</p>
-<p><strong>Parámetros de la función de valor</strong></p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1349,7 +2100,9 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 <td>0.00</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de tipo de cobertura</strong></p>
+<p><img alt="_images/mapa_fv_min_rohum_bio_cobertura_usv_svi_16cats.png" src="_images/mapa_fv_min_rohum_bio_cobertura_usv_svi_16cats.png" /></p>
+</div>
 </div>
 <div class="section" id="id27">
 <h5>1.2.4.2 Infraestructura<a class="headerlink" href="#id27" title="Enlazar permanentemente con este título">¶</a></h5>
@@ -1377,14 +2130,104 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="id28">
 <h6>1.2.4.2.1 Caminos<a class="headerlink" href="#id28" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a caminos y carreteras para transporte de los productos.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a la red vial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_rohum_infra_d_carreteras_caminos.png" src="_images/fi_fv_min_rohum_infra_d_carreteras_caminos.png" /></p>
+<p><strong>Función de valor de caminos</strong></p>
+<p><img alt="_images/mapa_fv_min_rohum_infra_d_carreteras_caminos.png" src="_images/mapa_fv_min_rohum_infra_d_carreteras_caminos.png" /></p>
 </div>
 <div class="section" id="id29">
 <h6>1.2.4.2.2 Electricidad<a class="headerlink" href="#id29" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a red de transmisión eléctrica. Requerimiento de electricidad para la operación de trituradoras.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia líneas de transmisión de energía   eléctrica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Líneas de transmisión INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2012</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_rohum_infra_d_lineas_electricas.png" src="_images/fi_fv_min_rohum_infra_d_lineas_electricas.png" /></p>
+<p><strong>Función de valor de electricidad</strong></p>
+<p><img alt="_images/mapa_fv_min_rohum_infra_d_lineas_electricas.png" src="_images/mapa_fv_min_rohum_infra_d_lineas_electricas.png" /></p>
 </div>
 <div class="section" id="id30">
 <h6>1.2.4.2.3 Minas<a class="headerlink" href="#id30" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a sitios de explotación de yacimientos minerales.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a minas y rocas dimensionables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Yacimientos minerales - minas SGM y [2] Rocas dimensionables SGM</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] Sin dato ; [2] 2011</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>[1] 1:250,000 ;[2] 1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_rohum_infra_rocas_banco_materiales.png" src="_images/fi_fv_min_rohum_infra_rocas_banco_materiales.png" /></p>
+<p><strong>Función de valor de minas</strong></p>
+<p><img alt="_images/mapa_fv_min_rohum_infra_rocas_banco_materiales.png" src="_images/mapa_fv_min_rohum_infra_rocas_banco_materiales.png" /></p>
 </div>
 </div>
 <div class="section" id="id31">
@@ -1409,6 +2252,36 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 </table><div class="section" id="id32">
 <h6>1.2.4.3.1 Localidades<a class="headerlink" href="#id32" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a localidades con mayor demanda de material minero</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_min_rohum_socio_d_localidades_min.png" src="_images/fi_fv_min_rohum_socio_d_localidades_min.png" /></p>
+<p><strong>Función de valor de localidades</strong></p>
+<p><img alt="_images/mapa_fv_min_rohum_socio_d_localidades_min.png" src="_images/mapa_fv_min_rohum_socio_d_localidades_min.png" /></p>
 </div>
 <div class="section" id="id33">
 <h6>1.2.4.3.2 Oportunidades<a class="headerlink" href="#id33" title="Enlazar permanentemente con este título">¶</a></h6>

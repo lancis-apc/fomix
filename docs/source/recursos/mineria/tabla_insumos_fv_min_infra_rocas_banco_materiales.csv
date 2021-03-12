@@ -1,6 +1,5 @@
-﻿Capa,Edafología
-Fuente,Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI
-Año,2014
-Campo,tipo_suelo
-Escala,"1:250,000 "
-Unidades,Adimensional
+﻿Capa,Distancia a minas y rocas dimensionables
+Fuente,[1] Yacimientos minerales - minas SGM y [2] Rocas dimensionables SGM
+Año,[1] Sin dato ; [2] 2011
+Escala,"[1] 1:250,000 ;[2] 1:50,000 "
+Unidades,Kilómetros
