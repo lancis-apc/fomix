@@ -316,10 +316,11 @@ Unidades | Adimensional
 
 **Tabla de exclusión del subsector agricultura tecnificada de riego**
 
+[1]
+
 ID | Categoría
 -- | --
 1 | Acuícola
-4 | Asentamiento humano
 5 | Bosque cultivado/Palmar inducido
 6 | Cuerpo de agua
 7 | Manglar
@@ -327,6 +328,8 @@ ID | Categoría
 14 | Vegetación de duna costera
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
+
+[2] Se utilizaron todas las localidades (urbanas y rurales).
 
 ![](/recursos/agricultura/mapa_agrie_exclusion.png)
 
@@ -392,7 +395,7 @@ Lluvia acumulada anual.
 Capa | Precipitación
 -- | --
 Fuente | Adaptado de: Precipitación acumulada anual periodo 1960-2000. Atlas de Peligros por Fenómenos Naturales del Estado de Yucatán. Servicio Geológico Mexicano.
-Año | 1960-2000
+Año | 2013
 Escala | Sin dato
 Unidades | mm
 
@@ -644,10 +647,11 @@ Unidades | Adimensional
 
 **Tabla de exclusión del subsector agricultura tecnificada de temporal**
 
+[1]
+
 ID | Categoría
 -- | --
 1 | Acuícola
-4 | Asentamiento humano
 5 | Bosque cultivado/Palmar inducido
 6 | Cuerpo de agua
 7 | Manglar
@@ -655,6 +659,8 @@ ID | Categoría
 14 | Vegetación de duna costera
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
+
+[2] Se utilizaron todas las localidades (urbanas y rurales).
 
 ![](/recursos/agricultura/mapa_agtem_exclusion.png)
 
