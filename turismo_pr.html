@@ -101,9 +101,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#cultural">1.2.1 Cultural</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#naturaleza">1.2.2 Naturaleza</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sol-y-playa">1.2.3 Sol y playa</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#antropogenico">1.2.3.1 Antropogénico</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#fisico">1.2.3.2 Físico</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#biologico">1.2.3.3 Biológico</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#urbano">1.2.4 Urbano</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cruceros">1.2.5 Cruceros</a></li>
 </ul>
@@ -192,7 +189,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <h3>1.2 Tipos<a class="headerlink" href="#tipos" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="section" id="cultural">
 <h4>1.2.1 Cultural<a class="headerlink" href="#cultural" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Viaje turístico para conocer, comprender y disfrutar el conjunto de rasgos y elementos distintivos, espirituales y materiales, intelectuales y afectivos que caracterizan a una sociedad o grupo social de un destino específico.</p>
+<p>Viaje turístico para conocer, comprender y disfrutar el conjunto de rasgos y elementos distintivos, espirituales y materiales, intelectuales y afectivos que caracterizan a una sociedad o grupo social de un destino específico. Incluye turismo rural.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -202,30 +199,347 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </thead>
 <tbody>
 <tr>
-<td>Cooperativas culturales</td>
-<td>Presencia de cooperativas que ofrecen servicios de turismo cultural.   </td>
-</tr>
-<tr>
-<td>Distancia a sitios arqueológicos</td>
-<td>Sitios con vestigios de civilizaciones o culturas antiguas, con posibilidad de ser visitados por los turistas.  </td>
-</tr>
-<tr>
 <td>Patrimonio edificado</td>
-<td>Conjunto de bienes edificados, heredados del pasado, con relevancia cultural, histórica, artística, identitaria, etc. (Distancia a Valladorid, Izamal, Dzilam, Maní, Motul, Buctzotz).   </td>
+<td>Número de registros de   patrimonio edificado por localidad (patrimonio heredado del pasado, con   relevancia cultural, histórica, artística, identitaria, etc. (Valladolid,   Izamal, Dzilam, Maní, Motul, Buctzotz).</td>
 </tr>
 <tr>
-<td>Población indígena</td>
-<td>Porcentaje de la población municipal de 3 años y más que son mayahablantes.  </td>
+<td>Distancia a sitios   arqueológicos</td>
+<td>Distancia a sitios arqueológicos   (Sitios con vestigios de civilizaciones o culturas antiguas, con posibilidad   de ser visitados por los turistas).</td>
 </tr>
 <tr>
 <td>Sitios gastronómicos</td>
-<td>Lugares con instalaciones y activades destinadas a dar a conocer la gastronomía típica.   </td>
+<td>Presencia de lugares con   instalaciones y activades destinadas a dar a conocer la gastronomía típica.</td>
+</tr>
+<tr>
+<td>Población indígena</td>
+<td>Porcentaje de la población   municipal de 3 años y más que son mayahablantes.</td>
+</tr>
+</tbody>
+</table><div class="section" id="patrimonio-edificado">
+<h5>1.2.1.1 Patrimonio edificado<a class="headerlink" href="#patrimonio-edificado" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Número de registros de patrimonio edificado por localidad (patrimonio heredado del pasado, con relevancia cultural, histórica, artística, identitaria, etc. (Valladolid, Izamal, Dzilam, Maní, Motul, Buctzotz).</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Patrimonio histórico por localidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Inventario de bienes inmuebles con carácter de patrimonio histórico   del estado de Yucatán SEDUMA y [2] Polígonos de localidades. Marco   Geoestadístico. Censo de Población y Vivienda INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] Sin dato; [2] 2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Número de edificaciones</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_tur_cul_atr_n_patrimonio_edificado.png" src="_images/fi_fv_tur_cul_atr_n_patrimonio_edificado.png" /></p>
+<p><strong>Función de valor de patrimonio edificado</strong></p>
+<p><img alt="_images/mapa_fv_tur_cul_atr_n_patrimonio_edificado.png" src="_images/mapa_fv_tur_cul_atr_n_patrimonio_edificado.png" /></p>
+</div>
+<div class="section" id="distancia-a-sitios-arqueologicos">
+<h5>1.2.1.2 Distancia a sitios arqueológicos<a class="headerlink" href="#distancia-a-sitios-arqueologicos" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Distancia a sitios arqueológicos (Sitios con vestigios de civilizaciones o culturas antiguas, con posibilidad de ser visitados por los turistas).</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a sitios arqueológicos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Sitios arqueológicos INAH; [2] Mapa turístico del estado de Yucatán Gobierno de Yucatán</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2012; [2] 2021</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_tur_cul_atr_d_sitios_arqueologicos.png" src="_images/fi_fv_tur_cul_atr_d_sitios_arqueologicos.png" /></p>
+<p><strong>Función de valor de distancia a sitios arqueológicos</strong></p>
+<p><img alt="_images/mapa_fv_tur_cul_atr_d_sitios_arqueologicos.png" src="_images/mapa_fv_tur_cul_atr_d_sitios_arqueologicos.png" /></p>
+</div>
+<div class="section" id="sitios-gastronomicos">
+<h5>1.2.1.3 Sitios gastronómicos<a class="headerlink" href="#sitios-gastronomicos" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Presencia de lugares con instalaciones y activades destinadas a dar a conocer la gastronomía típica.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Localidades con relevancia gastronómica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de sitios gastronómicos</strong></p>
+<p><img alt="_images/mapa_fv_tur_cul_atr_loc_gastronomia.png" src="_images/mapa_fv_tur_cul_atr_loc_gastronomia.png" /></p>
+</div>
+<div class="section" id="poblacion-indigena">
+<h5>1.2.1.4 Población indígena<a class="headerlink" href="#poblacion-indigena" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Porcentaje de la población municipal de 3 años y más que son mayahablantes.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Población indígena</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Polígonos de municipios.División política municipal INEGI y [2] Datos   de indicador. Censo de Población y Vivienda INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2018 y [2] 2020</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>[2] POBTOT y P3YM_HLI</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Municipal</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Porcentaje</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_tur_cul_atr_porcentaje_indigena_municipal.png" src="_images/fi_fv_tur_cul_atr_porcentaje_indigena_municipal.png" /></p>
+<p><strong>Función de valor de población indígena</strong></p>
+<p><img alt="_images/mapa_fv_tur_cul_atr_porcentaje_indigena_municipal.png" src="_images/mapa_fv_tur_cul_atr_porcentaje_indigena_municipal.png" /></p>
+</div>
+</div>
+<div class="section" id="naturaleza">
+<h4>1.2.2 Naturaleza<a class="headerlink" href="#naturaleza" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Viajes para realizar actividades recreativas en contacto directo con la naturaleza. Incluye turismo de aventura, ecoturismo, aviturismo, comunitario.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Atributos</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biofísicos</td>
+<td>Elementos o formaciones   geológicas con características únicas que satisfacen necesidades de   recreación y esparcimiento.</td>
+</tr>
+<tr>
+<td>Político-administrativo</td>
+<td>Atributos administrativos y de   gestión relacionados con el turismo de naturaleza.</td>
+</tr>
+<tr>
+<td>Infraestructura</td>
+<td>Atributos de infraestructura   asociados al turismo de naturaleza.</td>
+</tr>
+</tbody>
+</table><div class="section" id="biofisicos">
+<h5>1.2.2.1 Biofísicos<a class="headerlink" href="#biofisicos" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Elementos o formaciones geológicas con características únicas que satisfacen necesidades de recreación y esparcimiento.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Atributos</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cobertura</td>
+<td>Tipo de vegetación y uso de suelo</td>
+</tr>
+<tr>
+<td>Cenotes</td>
+<td>Presencia de cenotes</td>
+</tr>
+<tr>
+<td>Esteros</td>
+<td>Presencia de cuerpos de agua   costeros que no están incluidos en la capa de cobertura (lagunas costeras,   marismas y esteros).</td>
+</tr>
+<tr>
+<td>Grutas</td>
+<td>Presencia de grutas (cavidad que   se forma en las rocas por procesos erosivos, principalmente por disolución   causada por el agua de lluvia que se filtra entre rocas calcáreas y las   disuelve).</td>
+</tr>
+</tbody>
+</table><div class="section" id="cobertura">
+<h6>1.2.2.1.1 Cobertura<a class="headerlink" href="#cobertura" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Tipo de vegetación y uso de suelo.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de cobertura</strong></p>
+<p><img alt="_images/mapa_fv_tur_nat_bio_cobertura_usv_svi_16cats.png" src="_images/mapa_fv_tur_nat_bio_cobertura_usv_svi_16cats.png" /></p>
+</div>
+<div class="section" id="cenotes">
+<h6>1.2.2.1.2 Cenotes<a class="headerlink" href="#cenotes" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Presencia de cenotes.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a cenotes turísticos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Cenotes con potencial turístico SEDUMA</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
 </tr>
 </tbody>
 </table></div>
-<div class="section" id="naturaleza">
-<h4>1.2.2 Naturaleza<a class="headerlink" href="#naturaleza" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Viajes para realizar actividades recreativas en contacto directo con la naturaleza y las expresiones culturales que le envuelven con una actitud y compromiso de conocer, respetar, disfrutar y participar en la conservación de los recursos naturales y culturales. Comprende tres modalidades: Ecoturismo, Turismo de Aventura y Turismo Rural. (SECTUR 2003). Incluye  turismo de aventura, ecoturismo, aviturismo, comunitario, rural, cultural, religioso e histórico.</p>
+<div class="section" id="esteros">
+<h6>1.2.2.1.3 Esteros<a class="headerlink" href="#esteros" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Presencia de cuerpos de agua costeros que no están incluidos en la capa de cobertura (lagunas costeras, marismas y esteros).</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a lagunas costeras, esteros y   marismas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Modelo cartográfico de humedales INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>SUBCLASE</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="grutas">
+<h6>1.2.2.1.4 Grutas<a class="headerlink" href="#grutas" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Presencia de grutas (cavidad que se forma en las rocas por procesos erosivos, principalmente por disolución causada por el agua de lluvia que se filtra entre rocas calcáreas y las disuelve).</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a grutas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Cenotes y Grutas con infraestructura turística y posicionamiento   satelital  SEDUMA</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="section" id="politico-administrativo">
+<h5>1.2.2.2 Político-administrativo<a class="headerlink" href="#politico-administrativo" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Atributos administrativos y de gestión relacionados con el turismo de naturaleza.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -236,31 +550,85 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>ANP</td>
-<td>Presencia de áreas naturales protegidas de competencia federal, estatal o municipal.   </td>
+<td>Presencia de áreas naturales   protegidas de competencia federal, estatal o municipal.</td>
 </tr>
 <tr>
-<td>Atractivos naturales</td>
-<td>Elementos o formaciones geológicas con características únicas que satisfacen necesidades de recreacion y esparcimiento.  </td>
+<td>Tenencia de la tierra</td>
+<td>Tipo de tenencia de la tierra:   Áreas ejidales (comunitaria o parcelada) y no ejidales.</td>
 </tr>
 <tr>
-<td>Caminos</td>
-<td>Presencia de caminos principales, brechas, terracerías   </td>
-</tr>
-<tr>
-<td>Ciclovías</td>
-<td>Sistema de ciclovías fuera de zonas urbanas.   </td>
-</tr>
-<tr>
-<td>Cobertura</td>
-<td>Vegetación o uso de suelo actual  </td>
-</tr>
-<tr>
-<td>Cooperativas naturales</td>
-<td>Presencia de cooperativas que ofrecen servicios de turismo de naturaleza.   </td>
+<td>Cooperativas</td>
+<td>Número de cooperativas que   ofrecen servicios de turismo de naturaleza.</td>
 </tr>
 </tbody>
-</table><div class="section" id="atractivos-naturales">
-<h5>1.2.2.2 Atractivos naturales<a class="headerlink" href="#atractivos-naturales" title="Enlazar permanentemente con este título">¶</a></h5>
+</table><div class="section" id="anp">
+<h6>1.2.2.2.1 ANP<a class="headerlink" href="#anp" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Presencia de áreas naturales protegidas de competencia federal, estatal o municipal.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Áreas Naturales Protegidas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Áreas Naturales Protegidas SDS, [2] Áreas Naturales Protegidas   Federales de la República Mexicana CONANP y [3]  Áreas Naturales Protegidas Estatales,   Municipales, Ejidales y Privadas de México CONABIO</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2020; [2] 2017; [3] 2015</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="tenencia-de-la-tierra">
+<h6>1.2.2.2.2 Tenencia de la tierra<a class="headerlink" href="#tenencia-de-la-tierra" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Tipo de tenencia de la tierra: Áreas ejidales (comunitaria o parcelada) y no ejidales.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Tenencia de la tierra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="cooperativas">
+<h6>1.2.2.2.3 Cooperativas<a class="headerlink" href="#cooperativas" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Número de cooperativas que ofrecen servicios de turismo de naturaleza.</p>
+</div>
+</div>
+<div class="section" id="infraestructura">
+<h5>1.2.2.3 Infraestructura<a class="headerlink" href="#infraestructura" title="Enlazar permanentemente con este título">¶</a></h5>
+<p>Atributos de infraestructura asociados al turismo de naturaleza.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -270,19 +638,87 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </thead>
 <tbody>
 <tr>
-<td>Cenotes</td>
-<td>Pozo o estanque natural de agua dulce abastecido por un río subterráneo que se forma  por la erosión de los suelos.</td>
+<td>Caminos</td>
+<td>Presencia de caminos, brechas,   terracerías</td>
 </tr>
 <tr>
-<td>Esteros</td>
-<td>Lagunas costeras, marismas y esteros.</td>
+<td>Ciclovías</td>
+<td>Presencia de ciclovías</td>
 </tr>
 <tr>
-<td>Grutas</td>
-<td>Cavidad que se forma en las rocas por procesos erosivos, principalmente por disolución causada por el agua de lluvia que se filtra entre rocas calcáreas y las disuelve.</td>
+<td>Paradores   turísticos</td>
+<td>Presencia de paradores (lugares   que ofrecen instalaciones, servicios y posibilidades para que los turistas   disfruten su experiencia al máximo).</td>
+</tr>
+</tbody>
+</table><div class="section" id="caminos">
+<h6>1.2.2.3.1 Caminos<a class="headerlink" href="#caminos" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Presencia de caminos, brechas, terracerías.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Caminos y veredas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>TIPO_VIAL</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
 </tr>
 </tbody>
 </table></div>
+<div class="section" id="ciclovias">
+<h6>1.2.2.3.2 Ciclovías<a class="headerlink" href="#ciclovias" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Presencia de ciclovías.</p>
+</div>
+<div class="section" id="paradores-turisticos">
+<h6>1.2.2.3.3 Paradores turísticos<a class="headerlink" href="#paradores-turisticos" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Presencia de paradores (lugares que ofrecen instalaciones, servicios y posibilidades para que los turistas disfruten su experiencia al máximo).</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a paradores turísticos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Paradores turísticos SEFOTUR</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
+</div>
 </div>
 <div class="section" id="sol-y-playa">
 <h4>1.2.3 Sol y playa<a class="headerlink" href="#sol-y-playa" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -308,9 +744,8 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Atributos asociados a las propiedades biológicas del ambiente.</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="antropogenico">
-<h4>1.2.3.1 Antropogénico<a class="headerlink" href="#antropogenico" title="Enlazar permanentemente con este título">¶</a></h4>
+</table><div class="section" id="antropogenico">
+<h5>1.2.3.1 Antropogénico<a class="headerlink" href="#antropogenico" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Atributos que describen las características antropogénicas del territorio.</p>
 <table border="1" class="docutils">
 <thead>
@@ -329,9 +764,73 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Distancia a localidades urbanas &gt;= 15,000 habitantes, vía carreteras.</td>
 </tr>
 </tbody>
+</table><div class="section" id="id1">
+<h6>1.2.3.1.1 Tenencia de la tierra<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Áreas ejidales (comunitaria o parcelada) y no ejidales.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Tenencia de la tierra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Zonas de Tierras Parceladas RAN y [2] Tierra de uso común RAN</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
 </table></div>
+<div class="section" id="asentamientos-urbanos">
+<h6>1.2.3.1.2 Asentamientos urbanos<a class="headerlink" href="#asentamientos-urbanos" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a localidades urbanas &gt;= 15,000 habitantes, vía carreteras.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a localidades urbanas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2020; [2] 2019</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>[1] AMBITO; [2] TIPO_VIAL</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
+</div>
 <div class="section" id="fisico">
-<h4>1.2.3.2 Físico<a class="headerlink" href="#fisico" title="Enlazar permanentemente con este título">¶</a></h4>
+<h5>1.2.3.2 Físico<a class="headerlink" href="#fisico" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Atributos asociados a las propiedades físicas del suelo y del ambiente.</p>
 <table border="1" class="docutils">
 <thead>
@@ -347,16 +846,118 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Tipo de playa</td>
-<td>Tipo de playa (rocosa o arenosa)</td>
+<td>Tipo de playa, de acuerdo al sustrato (arenoso, artificial, lodoso,   vegetado).</td>
 </tr>
 <tr>
 <td>Tipo de suelo</td>
 <td>Tipo de suelo (edafología)</td>
 </tr>
 </tbody>
+</table><div class="section" id="distancia-al-litoral">
+<h6>1.2.3.2.1 Distancia al litoral<a class="headerlink" href="#distancia-al-litoral" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a zona costera.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia al litoral</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Litoral POETCY</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_tur_sol_fis_d_litoral.png" src="_images/fi_fv_tur_sol_fis_d_litoral.png" /></p>
+<p><strong>Función de valor de distancia al litoral</strong></p>
+<p><img alt="_images/mapa_fv_tur_sol_fis_d_litoral.png" src="_images/mapa_fv_tur_sol_fis_d_litoral.png" /></p>
+</div>
+<div class="section" id="tipo-de-playa">
+<h6>1.2.3.2.2 Tipo de playa<a class="headerlink" href="#tipo-de-playa" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Tipo de playa, de acuerdo al sustrato (arenoso, artificial, lodoso, vegetado).</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Tipo de litoral</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Tipo de litoral POETCY</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>TIPO</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
 </table></div>
+<div class="section" id="tipo-de-suelo">
+<h6>1.2.3.2.3 Tipo de suelo<a class="headerlink" href="#tipo-de-suelo" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Tipo de suelo (edafología).</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Edafología</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>tipo_suelo</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table></div>
+</div>
 <div class="section" id="biologico">
-<h4>1.2.3.3 Biológico<a class="headerlink" href="#biologico" title="Enlazar permanentemente con este título">¶</a></h4>
+<h5>1.2.3.3 Biológico<a class="headerlink" href="#biologico" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Atributos asociados a las propiedades biológicas del ambiente.</p>
 <table border="1" class="docutils">
 <thead>
@@ -372,18 +973,164 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Distancia a ANP</td>
-<td>Distancia a áreas naturales protegidas de competencia federal, estatal o municipal.</td>
+<td>Distancia a áreas naturales protegidas costeras.</td>
+</tr>
+</tbody>
+</table><div class="section" id="id2">
+<h6>1.2.3.3.1 Cobertura<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Tipo de vegetación y uso del suelo.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
 </tr>
 </tbody>
 </table></div>
+<div class="section" id="distancia-a-anp">
+<h6>1.2.3.3.2 Distancia a ANP<a class="headerlink" href="#distancia-a-anp" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia a áreas naturales protegidas costeras.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a Áreas Naturales Protegidas   costeras</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Áreas Naturales Protegidas SDS y [2] Áreas Naturales Protegidas   Federales de la República Mexicana CONANP</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2020; [2] 2017</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 <div class="section" id="urbano">
 <h4>1.2.4 Urbano<a class="headerlink" href="#urbano" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Viajes que se realizan al interior de las zonas urbanas. Comprende convenciones, reuniones, negocios, médico y educativo.</p>
-</div>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Hoteles por localidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Hoteles en la Península de Yucatán GeoComunes con datos de DENUE   INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de   Población y Vivienda INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2019: [2] 2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Número</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Unidades económicas de infraestructura   hospitalaria-médica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de   Unidades Económicas (DENUE) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Localidad</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Número</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="cruceros">
 <h4>1.2.5 Cruceros<a class="headerlink" href="#cruceros" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Actividad turística que se realiza a bordo de un barco o buque, el cual brinda todos los servicios y facilidades similares a los de un gran hotel o resort del mundo.</p>
-<!--
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a Puerto Progreso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Ubicación de los principales puertos de el estado de Yucatán POETY y   [2] Red Nacional de Caminos (RNC) Red vial - INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2002; [2] 2019</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>[2] TIPO_VIAL</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><!--
 
 #### 1.2.5 Biomasa
 
@@ -445,13 +1192,6 @@ Distancia a los sitios de disposición final de residuos urbanos.
 </tbody>
 </table>
 
-**Parámetros de la función de valor**
-
-![](/recursos/energia/fi_fv_ene_ind_bio_d_sitios_disp_residuos.png)   
-
-**Función de valor de residuos urbanos**
-
-![](/recursos/energia/mapa_fv_ene_ind_bio_d_sitios_disp_residuos.png)
 
 ##### 1.2.5.2 Distancia a granjas porcícolas
 

@@ -185,6 +185,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <div class="section" id="modelo-de-decision">
 <h3>1.1 Modelo de decisión<a class="headerlink" href="#modelo-de-decision" title="Enlazar permanentemente con este título">¶</a></h3>
 <p><img alt="_images/fi_pesca.png" src="_images/fi_pesca.png" /></p>
+<p>Debido a que la actividad pesquera en el estado es marina, el análisis se aplicó en la zona que abarca 100 km a partir de la línea de costa.</p>
 </div>
 <div class="section" id="criterios">
 <h3>1.2 Criterios<a class="headerlink" href="#criterios" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -200,7 +201,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Agua potable</td>
-<td>Requerimiento de agua potable para la producción de hielo. El atributo se representa con la distancia a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.</td>
+<td>Acceso a agua potable para la producción de hielo como distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas que disponen de agua entubada.</td>
 </tr>
 <tr>
 <td>Electricidad</td>
@@ -212,24 +213,24 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Comunicaciones</td>
-<td>Acceso a comunicaciones en localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet y celular.</td>
+<td>Acceso a comunicación a través de internet y telefonía.</td>
 </tr>
 </tbody>
 </table><div class="section" id="agua-potable">
 <h5>1.2.1.1 Agua potable<a class="headerlink" href="#agua-potable" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Requerimiento de agua potable para la producción de hielo. El atributo se representa con la distancia a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.</p>
+<p>Acceso a agua potable para la producción de hielo como distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas que disponen de agua entubada.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
 <th>Capa</th>
-<th>Viviendas que disponen de agua entubada por   localidad</th>
+<th>Viviendas que disponen de agua entubada por localidad</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI</td>
+<td>[1] Polígonos de localidades urbanas y pesqueras. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
@@ -307,7 +308,27 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </table></div>
 <div class="section" id="comunicaciones">
 <h5>1.2.1.4 Comunicaciones<a class="headerlink" href="#comunicaciones" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Acceso a comunicaciones en localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet y celular.</p>
+<p>Acceso a comunicación a través de internet y telefonía.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Internet</td>
+<td>Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet.</td>
+</tr>
+<tr>
+<td>Telefonía</td>
+<td>Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con celular.</td>
+</tr>
+</tbody>
+</table><div class="section" id="internet">
+<h6>1.2.1.4.1 Internet<a class="headerlink" href="#internet" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -319,7 +340,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI</td>
+<td>[1] Polígonos de localidades urbanas y pesqueras. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI</td>
 </tr>
 <tr>
 <td>Año</td>
@@ -335,6 +356,37 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 </tbody>
 </table></div>
+<div class="section" id="telefonia">
+<h6>1.2.1.4.2 Telefonía<a class="headerlink" href="#telefonia" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con celular.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Viviendas que disponen de teléfono celular por localidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Polígonos de localidades urbanas y pesqueras. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>[2] VIVTOT y VPH_CEL</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Porcentaje</td>
+</tr>
+</tbody>
+</table></div>
+</div>
 </div>
 <div class="section" id="socioeconomicos">
 <h4>1.2.2 Socioeconómicos<a class="headerlink" href="#socioeconomicos" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -352,7 +404,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Centros de distribución</td>
-<td>Distancia a los puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá y Motul.</td>
+<td>Distancia a localidades consideradas como puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá, Motul y Dzilam González.</td>
 </tr>
 </tbody>
 </table><div class="section" id="localidades-pesqueras">
@@ -387,7 +439,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </table></div>
 <div class="section" id="centros-de-distribucion">
 <h5>1.2.2.2 Centros de distribución<a class="headerlink" href="#centros-de-distribucion" title="Enlazar permanentemente con este título">¶</a></h5>
-<p>Distancia a los puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá y Motul.</p>
+<p>Distancia a localidades consideradas como puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá, Motul y Dzilam González.</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>

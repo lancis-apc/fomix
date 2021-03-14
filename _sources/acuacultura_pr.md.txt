@@ -25,13 +25,22 @@ Acuacultura de especies de agua salobre y marina.
 
 Criterio|Definición
 --|--
-Acceso a agua| Posibilidad de extraer agua subterránea, considerando la Profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
-Salinidad| Ancho en metros de la columna de agua dulce, a partir del cual se puede encontrar agua salada.
+Acceso a agua| Posibilidad de extraer agua subterránea, considerando la profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
+Salinidad| Profundidad a partir de la cual se puede encontrar agua salobre o salada, considerando el ancho en metros de la columna de agua dulce.
 Vegetación| Tipos de vegetación y usos de suelo.
 
 ##### 1.2.1.1 Acceso a agua
 
-Posibilidad de extraer agua subterránea, considerando la Profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
+Posibilidad de extraer agua subterránea, considerando la profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
+
+**Insumos**
+
+Capa | Nivel estático
+-- | --
+Fuente | Profundidad del nivel estático FAO-SEDER con datos de SARH (1988)
+Año | 2016
+Escala | Sin dato
+Unidades | Metros
 
 **Parámetros de la función de valor**
 
@@ -43,7 +52,16 @@ Posibilidad de extraer agua subterránea, considerando la Profundidad en metros,
 
 ##### 1.2.1.2 Salinidad
 
-Ancho en metros de la columna de agua dulce, a partir del cual se puede encontrar agua salada.
+Profundidad a partir de la cual se puede encontrar agua salobre o salada, considerando el ancho en metros de la columna de agua dulce.
+
+**Insumos**
+
+Capa | Curvas de espesor de agua dulce
+-- | --
+Fuente | Mapa con las curvas de espesor de agua dulce FAO-SEDER con datos de SARH (1988)
+Año | 2016
+Escala | Sin dato
+Unidades | Metros
 
 **Función de valor de salinidad**
 
@@ -183,13 +201,22 @@ Acuacultura de especies de agua dulce.
 
 Criterio|Definición
 --|--
-Acceso a agua| Posibilidad de extraer agua subterránea, considerando la Profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
-Salinidad| Ancho en metros de la columna de agua dulce, a partir del cual se puede encontrar agua salada.
+Acceso a agua| Posibilidad de extraer agua subterránea, considerando la profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
+Salinidad| Profundidad a partir de la cual se puede encontrar agua salobre o salada, considerando el ancho en metros de la columna de agua dulce.
 Vegetación| Tipos de vegetación y usos de suelo.
 
 ##### 2.2.1.1 Acceso a agua
 
-Posibilidad de extraer agua subterránea, considerando la Profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
+Posibilidad de extraer agua subterránea, considerando la profundidad en metros, a partir de la superficie del terreno, a la cual se encuentra el espejo de agua (acuífero).
+
+**Insumos**
+
+Capa | Nivel estático
+-- | --
+Fuente | Profundidad del nivel estático FAO-SEDER con datos de SARH (1988)
+Año | 2016
+Escala | Sin dato
+Unidades | Metros
 
 **Parámetros de la función de valor**
 
@@ -201,7 +228,16 @@ Posibilidad de extraer agua subterránea, considerando la Profundidad en metros,
 
 ##### 2.2.1.2 Salinidad
 
-Ancho en metros de la columna de agua dulce, a partir del cual se puede encontrar agua salada.
+Profundidad a partir de la cual se puede encontrar agua salobre o salada, considerando el ancho en metros de la columna de agua dulce.
+
+**Insumos**
+
+Capa | Curvas de espesor de agua dulce
+-- | --
+Fuente | Mapa con las curvas de espesor de agua dulce FAO-SEDER con datos de SARH (1988)
+Año | 2016
+Escala | Sin dato
+Unidades | Metros
 
 **Parámetros de la función de valor**
 
