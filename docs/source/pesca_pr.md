@@ -15,26 +15,28 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ![](/recursos/pesca/fi_pesca.png)
 
+Debido a que la actividad pesquera en el estado es marina, el análisis se aplicó en la zona que abarca 100 km a partir de la línea de costa.
+
 ### 1.2 Criterios
 
 #### 1.2.1 Infraestructura
 
 Criterio|Definición
 --|--
-Agua potable| Requerimiento de agua potable para la producción de hielo. El atributo se representa con la distancia a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
+Agua potable| Acceso a agua potable para la producción de hielo como distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas que disponen de agua entubada.
 Electricidad| Distancia a red de transmisión eléctrica.
 Vías de comunicación| Distancia a caminos y carreteras para el transporte de insumos y productos.
-Comunicaciones| Acceso a comunicaciones en localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet y celular.
+Comunicaciones| Acceso a comunicación a través de internet y telefonía.
 
 ##### 1.2.1.1 Agua potable
 
-Requerimiento de agua potable para la producción de hielo. El atributo se representa con la distancia a localidades que se evaluaron con base en el porcentaje de viviendas que disponen de agua entubada.
+Acceso a agua potable para la producción de hielo como distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas que disponen de agua entubada.
 
 **Insumos**
 
-Capa | Viviendas que disponen de agua entubada por   localidad
+Capa | Viviendas que disponen de agua entubada por localidad
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Fuente | [1] Polígonos de localidades urbanas y pesqueras. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] VIVTOT y VPH_AEASP
 Unidades | Porcentaje
@@ -67,15 +69,37 @@ Unidades | Kilómetros
 
 ##### 1.2.1.4 Comunicaciones
 
-Acceso a comunicaciones en localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet y celular.
+Acceso a comunicación a través de internet y telefonía.
+
+Criterio|Definición
+--|--
+Internet| Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet.
+Telefonía| Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con celular.
+
+###### 1.2.1.4.1 Internet
+
+Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet.
 
 **Insumos**
 
 Capa | Viviendas con internet por localidad
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Fuente | [1] Polígonos de localidades urbanas y pesqueras. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
 Año | 2020
 Campo | [2] VIVTOT y VPH_INTER
+Unidades | Porcentaje
+
+###### 1.2.1.4.2 Telefonía
+
+Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con celular.
+
+**Insumos**
+
+Capa | Viviendas que disponen de teléfono celular por localidad
+-- | --
+Fuente | [1] Polígonos de localidades urbanas y pesqueras. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Censo de Población y Vivienda.   Principales resultados por localidad (ITER) INEGI
+Año | 2020
+Campo | [2] VIVTOT y VPH_CEL
 Unidades | Porcentaje
 
 #### 1.2.2 Socioeconómicos
@@ -83,7 +107,7 @@ Unidades | Porcentaje
 Criterio|Definición
 --|--
 Localidades pesqueras| Distancia a localidades con comunidades pesqueras: Celestún, Sisal, Chuburná, Yucalpetén, Progreso, Telchac, Chabihau, Dzilam de Bravo, San Felipe, Río Lagartos, Las Coloradas, El Cuyo, Chelem, Chicxulub, Santa Clara y San Crisanto.
-Centros de distribución| Distancia a los puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá y Motul.
+Centros de distribución| Distancia a localidades consideradas como puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá, Motul y Dzilam González.
 
 ##### 1.2.2.1 Localidades pesqueras
 
@@ -100,7 +124,7 @@ Unidades | Kilómetros
 
 ##### 1.2.2.2 Centros de distribución
 
-Distancia a los puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá y Motul.
+Distancia a localidades consideradas como puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá, Motul y Dzilam González.
 
 **Insumos**
 
