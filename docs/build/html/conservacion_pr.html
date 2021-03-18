@@ -237,7 +237,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Biomasa aérea</td>
-<td>Biomasa vegetal que sobresale del suelo</td>
+<td>Biomasa vegetal arbórea</td>
 </tr>
 </tbody>
 </table><div class="section" id="zonas-de-recarga">
@@ -258,33 +258,183 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI</td>
+<td>[1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>2017</td>
+<td>[1] 2017; [2] 2021</td>
 </tr>
 <tr>
 <td>Campo</td>
-<td>descripcio</td>
+<td>[1] descripcio; [2] Descrip</td>
 </tr>
 <tr>
 <td>Escala</td>
-<td>1:250,000</td>
+<td>[1] 1:250,000; [2] 1:50,000</td>
 </tr>
 <tr>
 <td>Unidades</td>
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Selva baja</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Selva mediana</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Agricultura de temporal</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Sabana</td>
+<td>Moderada</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bosque cultivado/Palmar inducido</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Pastizal</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Sin vegetación</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Agricultura de riego</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ND</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de cobertura forestal</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_sop_cobertura_usv_svi_16cats.png" src="_images/mapa_fv_con_sa_sop_cobertura_usv_svi_16cats.png" /></p>
+</div>
 <div class="section" id="riqueza-forestal">
 <h6>1.2.1.1.3 Riqueza forestal<a class="headerlink" href="#riqueza-forestal" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Número de taxones como indicador de productividad primaria.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Composición total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Composición total CONAFOR  - predicción CONAFOR  (con datos del INFyS 2009-2014)</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Taxones/UMP</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_con_sa_sop_inf_composicion_total.png" src="_images/fi_fv_con_sa_sop_inf_composicion_total.png" /></p>
+<p><strong>Función de valor de riqueza forestal</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_sop_inf_composicion_total.png" src="_images/mapa_fv_con_sa_sop_inf_composicion_total.png" /></p>
 </div>
 <div class="section" id="biomasa-aerea">
 <h6>1.2.1.1.4 Biomasa aérea<a class="headerlink" href="#biomasa-aerea" title="Enlazar permanentemente con este título">¶</a></h6>
-<p>Biomasa vegetal que sobresale del suelo.</p>
+<p>Biomasa vegetal arbórea.</p>
+<p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_con_sa_sop_biomasa_aerea.png" src="_images/fi_fv_con_sa_sop_biomasa_aerea.png" /></p>
+<p><strong>Función de valor de biomasa aérea</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_sop_biomasa_aerea.png" src="_images/mapa_fv_con_sa_sop_biomasa_aerea.png" /></p>
 </div>
 </div>
 <div class="section" id="regulacion">
@@ -325,29 +475,175 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Fuente</td>
-<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+<td>[1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO</td>
 </tr>
 <tr>
 <td>Año</td>
-<td>2017</td>
+<td>[1] 2017; [2] 2021</td>
 </tr>
 <tr>
 <td>Campo</td>
-<td>descripcio</td>
+<td>[1] descripcio; [2] Descrip</td>
 </tr>
 <tr>
 <td>Escala</td>
-<td>1:250,000</td>
+<td>[1] 1:250,000; [2] 1:50,000</td>
 </tr>
 <tr>
 <td>Unidades</td>
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+<th>Importancia</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Selva baja</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Selva mediana</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+<td>Muy alta</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Sabana</td>
+<td>Alta</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Agricultura de riego</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Agricultura de temporal</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bosque cultivado/Palmar inducido</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Pastizal</td>
+<td>Baja</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Sin vegetación</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ND</td>
+<td>Nula</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de cobertura</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_reg_cobertura_usv_svi_16cats.png" src="_images/mapa_fv_con_sa_reg_cobertura_usv_svi_16cats.png" /></p>
+</div>
 <div class="section" id="captura-de-carbono">
 <h6>1.2.1.2.2 Captura de carbono<a class="headerlink" href="#captura-de-carbono" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Captura de carbono como indicador de calidad del aire.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Carbono almacenado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Carbono almacenado  - predicción CONAFOR  (con datos del INFyS 2009-2014)</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Toneladas/hectárea</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_con_sa_reg_inf_carbono_almacenado.png" src="_images/fi_fv_con_sa_reg_inf_carbono_almacenado.png" /></p>
+<p><strong>Función de valor de captura de carbono</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_reg_inf_carbono_almacenado.png" src="_images/mapa_fv_con_sa_reg_inf_carbono_almacenado.png" /></p>
 </div>
 <div class="section" id="especies-meliferas">
 <h6>1.2.1.2.3 Especies melíferas<a class="headerlink" href="#especies-meliferas" title="Enlazar permanentemente con este título">¶</a></h6>
@@ -378,7 +674,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Número de especies/sitio</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_con_sa_reg_riqueza_melifera.png" src="_images/fi_fv_con_sa_reg_riqueza_melifera.png" /></p>
+<p><strong>Función de valor de especies melíferas</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_reg_riqueza_melifera.png" src="_images/mapa_fv_con_sa_reg_riqueza_melifera.png" /></p>
+</div>
 </div>
 <div class="section" id="provision">
 <h5>1.2.1.3 Provisión<a class="headerlink" href="#provision" title="Enlazar permanentemente con este título">¶</a></h5>
@@ -397,14 +697,109 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Cuerpos de agua</td>
-<td>Distancia a cenotes y lagunas costera.   </td>
+<td>Presencia de cuerpos de agua no considerados en la capa de cobertura.   </td>
 </tr>
 <tr>
 <td>Parientes silvestres de cultivo</td>
-<td>Recursos genéticos.</td>
+<td>Frecuencia de las siete especies publicadas por CONABIO que se distribuyen potencialmente en menos del 50% del estado. A las áreas de distribución se le eliminaron las áreas de agricultura de riego, los asentamientos humanos y cuerpos de agua.</td>
+</tr>
+</tbody>
+</table><div class="section" id="id1">
+<h6>1.2.1.3.1 Cobertura<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Vegetación con posible uso o consumo, ya sea directamente o con previo procesamiento.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2017; [2] 2021</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>[1] descripcio; [2] Descrip</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>[1] 1:250,000; [2] 1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+</div>
+<div class="section" id="cuerpos-de-agua">
+<h6>1.2.1.3.2 Cuerpos de agua<a class="headerlink" href="#cuerpos-de-agua" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Presencia de cuerpos de agua no considerados en la capa de cobertura.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Cuerpos de agua no incluidos en el Serie VI de Uso del suelo y vegetación INEGI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Modelo cartográfico de humedales INEGI; [2] Cenotes POETY y [3] Censo de cenotes SDS</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2014; [2] Sin dato; [3] 2009</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>[1] 1:50,000; [2] [3] Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
 </tr>
 </tbody>
 </table></div>
+<div class="section" id="parientes-silvestres-de-cultivo">
+<h6>1.2.1.3.3 Parientes silvestres de cultivo<a class="headerlink" href="#parientes-silvestres-de-cultivo" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Frecuencia de las siete especies publicadas por CONABIO que se distribuyen potencialmente en menos del 50% del estado. A las áreas de distribución se le eliminaron las áreas de agricultura de riego, los asentamientos humanos y cuerpos de agua.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Parientes silvestres de cultivos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Capsicum rhomboideum. Distribución potencial de   chiles  CONABIO - UICN; [2] Physalis   angulata. Distribución potencial de tomates verdes  CONABIO - UICN; [3] Physalis gracilis.   Distribución potencial de tomates verdes CONABIO - UICN; [4] Physalis   lagascae. Distribución potencial de tomates verdes CONABIO - UICN; [5]   Physalis melanocystis. Distribución potencial de tomates verdes CONABIO -   UICN; [6] Tripsacum latifolium. Distribución potencial de maíces CONABIO -   UIC y [7] Vanilla odorata. Distribución potencial de vainillas CONABIO -UICN</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:1,000,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Número</td>
+</tr>
+</tbody>
+</table></div>
+</div>
 <div class="section" id="culturales">
 <h5>1.2.1.4 Culturales<a class="headerlink" href="#culturales" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Valores o beneficios no materiales que se obtienen de la naturaleza a través del enriquecimiento personal o espiritual, el desarrollo cognitivo, la reflexión, el disfrute de la naturaleza, los placeres estéticos que ofrecen los propios ecosistemas. La diversidad de los ecosistemas es uno de los factores determinantes en la diversidad cultural de un territorio. Muchos ecosistemas son una fuente de inspiración para el arte, el folklore, los símbolos nacionales y regionales, la arquitectura y la publicidad.</p>
@@ -438,7 +833,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <tbody>
 <tr>
 <td>Cenotes y grutas</td>
-<td>Cavidades que se forman de manera natural en la tierra o roca, por erosión que provoca la disolución de rocas calcáreas.</td>
+<td>Presencia de cenotes y grutas (Cavidades que se forman de manera natural en la tierra o roca, por erosión que provoca la disolución de rocas calcáreas).</td>
 </tr>
 <tr>
 <td>Población indígena</td>
@@ -446,13 +841,41 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tr>
 <tr>
 <td>Zonas arqueológicas</td>
-<td>Sitios con vestigios de civilizaciones o culturas antiguas.</td>
+<td>Presencia de sitios arqueológicos (lugares con vestigios de civilizaciones o culturas antiguas).</td>
 </tr>
 </tbody>
 </table></div>
 <div class="section" id="cenotes-y-grutas">
 <h6>1.2.1.4.1.1 Cenotes y grutas<a class="headerlink" href="#cenotes-y-grutas" title="Enlazar permanentemente con este título">¶</a></h6>
-<p>Cavidades que se forman de manera natural en la tierra o roca, por erosión que provoca la disolución de rocas calcáreas.</p>
+<p>Presencia de cenotes y grutas (Cavidades que se forman de manera natural en la tierra o roca, por erosión que provoca la disolución de rocas calcáreas).</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Cenotes y grutas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Cenotes POETY; [2] Censo de cenotes SDS; [3] Cenotes y Grutas con   infraestructura turística y posicionamiento satelital  SEDUMA</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] [3]  Sin dato; [2] 2009</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de cenotes y grutas</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_cul_cenotes_grutas.png" src="_images/mapa_fv_con_sa_cul_cenotes_grutas.png" /></p>
 </div>
 <div class="section" id="poblacion-indigena">
 <h6>1.2.1.4.1.2 Población indígena<a class="headerlink" href="#poblacion-indigena" title="Enlazar permanentemente con este título">¶</a></h6>
@@ -487,10 +910,14 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Porcentaje</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_con_sa_cul_porcentaje_indigena_municipal.png" src="_images/fi_fv_con_sa_cul_porcentaje_indigena_municipal.png" /></p>
+<p><strong>Función de valor de población indígena</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_cul_porcentaje_indigena_municipal.png" src="_images/mapa_fv_con_sa_cul_porcentaje_indigena_municipal.png" /></p>
+</div>
 <div class="section" id="zonas-arqueologicas">
 <h6>1.2.1.4.1.3 Zonas arqueológicas<a class="headerlink" href="#zonas-arqueologicas" title="Enlazar permanentemente con este título">¶</a></h6>
-<p>Sitios con vestigios de civilizaciones o culturas antiguas.</p>
+<p>Presencia de sitios arqueológicos (lugares con vestigios de civilizaciones o culturas antiguas).</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -517,7 +944,9 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de zonas arqueológicas</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_cul_sitios_arqueologicos.png" src="_images/mapa_fv_con_sa_cul_sitios_arqueologicos.png" /></p>
+</div>
 <div class="section" id="administrativo">
 <h6>1.2.1.4.2 Administrativo<a class="headerlink" href="#administrativo" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Atributos administrativos y de gestión relacionados con los servicios ambientales culturales.</p>
@@ -534,12 +963,12 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Presencia de áreas naturales protegidas con enfoque biocultural</td>
 </tr>
 <tr>
-<td>Áreas de uso común</td>
-<td>Presencia de áreas ejidales de uso común</td>
-</tr>
-<tr>
 <td>ADVC</td>
 <td>Presencia de Áreas Destinadas Voluntariamente a la Conservación (ADVC).</td>
+</tr>
+<tr>
+<td>Áreas de uso común</td>
+<td>Presencia de áreas ejidales de uso común</td>
 </tr>
 <tr>
 <td>UMA</td>
@@ -580,39 +1009,11 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
-<div class="section" id="areas-de-uso-comun">
-<h6>1.2.1.4.2.2 Áreas de uso común<a class="headerlink" href="#areas-de-uso-comun" title="Enlazar permanentemente con este título">¶</a></h6>
-<p>Presencia de áreas ejidales de uso común.</p>
-<p><strong>Insumos</strong></p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Capa</th>
-<th>Tenencia de la tierra - tierra de uso común</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fuente</td>
-<td>Tierra de uso común RAN</td>
-</tr>
-<tr>
-<td>Año</td>
-<td>2020</td>
-</tr>
-<tr>
-<td>Escala</td>
-<td>Sin dato</td>
-</tr>
-<tr>
-<td>Unidades</td>
-<td>Adimensional</td>
-</tr>
-</tbody>
-</table></div>
+</table><p><strong>Función de valor de ANP bioculturales</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_cul_anp_puuc_kabah_tabi.png" src="_images/mapa_fv_con_sa_cul_anp_puuc_kabah_tabi.png" /></p>
+</div>
 <div class="section" id="advc">
-<h6>1.2.1.4.2.3 ADVC<a class="headerlink" href="#advc" title="Enlazar permanentemente con este título">¶</a></h6>
+<h6>1.2.1.4.2.2 ADVC<a class="headerlink" href="#advc" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Presencia de Áreas Destinadas Voluntariamente a la Conservación (ADVC).</p>
 <p><strong>Insumos</strong></p>
 <table border="1" class="docutils">
@@ -640,10 +1041,46 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de ADVC</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_cul_advc.png" src="_images/mapa_fv_con_sa_cul_advc.png" /></p>
+</div>
+<div class="section" id="areas-de-uso-comun">
+<h6>1.2.1.4.2.3 Áreas de uso común<a class="headerlink" href="#areas-de-uso-comun" title="Enlazar permanentemente con este título">¶</a></h6>
+<p>Presencia de áreas ejidales de uso común.</p>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Tenencia de la tierra - tierra de uso común</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Tierra de uso común RAN</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de áreas de uso común</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_cul_ran_uso_comun.png" src="_images/mapa_fv_con_sa_cul_ran_uso_comun.png" /></p>
+</div>
 <div class="section" id="uma">
 <h6>1.2.1.4.2.4 UMA<a class="headerlink" href="#uma" title="Enlazar permanentemente con este título">¶</a></h6>
 <p>Presencia de Unidades de Manejo Ambiental (UMA).</p>
+<p><strong>Función de valor de UMA</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_cul_uma.png" src="_images/mapa_fv_con_sa_cul_uma.png" /></p>
 </div>
 <div class="section" id="psa">
 <h6>1.2.1.4.2.5 PSA<a class="headerlink" href="#psa" title="Enlazar permanentemente con este título">¶</a></h6>
@@ -674,7 +1111,9 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table></div>
+</table><p><strong>Función de valor de PSA</strong></p>
+<p><img alt="_images/mapa_fv_con_sa_cul_psa.png" src="_images/mapa_fv_con_sa_cul_psa.png" /></p>
+</div>
 </div>
 </div>
 <div class="section" id="funcionalidad-ecosistemica">
@@ -704,15 +1143,324 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </table><div class="section" id="fragilidad-ecosistemica">
 <h5>1.2.2.1 Fragilidad ecosistémica<a class="headerlink" href="#fragilidad-ecosistemica" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Estado de conservación y salud de los ecosistemas y su capacidad de resiliencia.</p>
-</div>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Atributos</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Integridad ecológica</td>
+<td>Índice de Integridad ecológica.  </td>
+</tr>
+<tr>
+<td>Degradación ecológica</td>
+<td>Índice de degradación ecológica.   </td>
+</tr>
+<tr>
+<td>Distancia a ANP y sitios Ramsar</td>
+<td>Distancia con ANP, incluye las ANP  </td>
+</tr>
+<tr>
+<td>AICAS</td>
+<td>Presencia de AICAS fuera de ANP   y sitios RAMSAR.</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Índice de integridad ecológica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Índice de integridad ecológica (IIE) CONABIO</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2018</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Índice de degradación ecológica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Índice de degradación ecológica (IDE) CONABIO</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2018</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a Áreas Naturales Protegidas y   sitios RAMSAR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Áreas Naturales Protegidas SDS, [2] Áreas Naturales Protegidas   Federales de la República Mexicana CONANP; [3]  Áreas Naturales Protegidas Estatales,   Municipales, Ejidales y Privadas de México CONABIO Y [4] Sitios RAMSAR de   México CONANP</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2020; [2] 2017; [3] 2015; [4] 2016</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>AICAS fuera de Áreas Naturales Protegidas y   sitios RAMSAR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Áreas de importancia para la conservación de las aves (AICAS) CIPAMEX -   CONABIO</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2015</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="vulnerabilidad-hidrica">
 <h5>1.2.2.2 Vulnerabilidad hídrica<a class="headerlink" href="#vulnerabilidad-hidrica" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Vulnerabilidad del recurso hídríco ante agentes externos como contaminación, intrusión salina, sobreexplotación.</p>
-</div>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Atributos</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vulnerabilidad intrínseca</td>
+<td>Vulnerabilidad intrínseca a la contaminación del acuífero kárstico.   </td>
+</tr>
+<tr>
+<td>Cenotes</td>
+<td>Presencia de cenotes.   </td>
+</tr>
+<tr>
+<td>Humedales</td>
+<td>Presencia de cuerpos de agua, excluye cenotes y estanques artificiales.  </td>
+</tr>
+<tr>
+<td>Reforestación</td>
+<td>Zonas cuyo uso de suelo cambió   en los últimos 15 años, potenciales a ser reforestadas.  </td>
+</tr>
+<tr>
+<td>Zonas de recarga</td>
+<td>Zonas de recarga de acuífero.</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Vulnerabilidad del acuífero</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Vulnerabilidad intrínseca del acuífero en el Estado de Yucatán, Batllori   Sampedro y Canto Mendiburu</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2019</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Cenotes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Cenotes POETY y [2] Censo de cenotes SDS</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] Sin dato; [2] 2009</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Humedales (sin cenotes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Modelo cartográfico de humedales INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2014</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:50,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table></div>
 <div class="section" id="fragilidad-karstica">
 <h5>1.2.2.2 Fragilidad kárstica<a class="headerlink" href="#fragilidad-karstica" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Vulnerabilidad del suelo de ser afectado por alguna actividad del hombre o por sus efectos, como la erosión. Vulnerabilidad de los ecosistemas kársticos derivada de su nivel de desarrollo y fragilidad ante impactos externos.</p>
-</div>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Atributos</th>
+<th>Definición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cenotes</td>
+<td>Presencia de cenotes  </td>
+</tr>
+<tr>
+<td>Densidad de dolinas</td>
+<td>Número de dolinas por hectárea</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Densidad de dolinas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Densidad de dolinas. Atlas de Peligros por Fenómenos del Estado de   Yucatán. Servicio Geológico Mexicano</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2013</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>GRADO</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Cenotes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Cenotes POETY y [2] Censo de cenotes SDS</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] Sin dato; [2] 2009</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 </div>
 </div>
