@@ -105,7 +105,7 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de vegetación**
 
-![](/recursos/pesca/ mapa_fv_acuasal_bio_cobertura_usv_svi_16cats.png)
+![](/recursos/pesca/mapa_fv_acuasal_bio_cobertura_usv_svi_16cats.png)
 
 #### 1.2.2 Infraestructura
 
@@ -186,6 +186,19 @@ ID | Categoría | Importancia | FV
 **Función de valor de tenencia**
 
 ![](/recursos/pesca/mapa_fv_acuasal_socio_tenencia_tierra.png)
+
+### 1.3 Mapa de aptitud
+
+**Pesos globales de los atributos ambientales de acuacultura salobre**
+
+Criterio | Peso
+-- | --
+Electricidad | 0.394
+Acceso a agua | 0.320
+Salinidad | 0.104
+Tenencia | 0.100
+Vías de comunicación | 0.056
+Vegetación | 0.027
 
 ## 2. Acuacultura dulce
 
@@ -367,6 +380,18 @@ ID | Categoría | Importancia | FV
 
 ![](/recursos/pesca/mapa_fv_acuadul_socio_tenencia_tierra.png)
 
+### 2.3 Mapa de aptitud
+
+**Pesos globales de los atributos ambientales de acuacultura dulce**
+
+Criterio | Peso
+-- | --
+Electricidad | 0.394
+Acceso a agua | 0.320
+Salinidad | 0.104
+Tenencia | 0.100
+Vías de comunicación | 0.056
+Vegetación | 0.027
 
 <!--
 ## 1. Energía industrial
