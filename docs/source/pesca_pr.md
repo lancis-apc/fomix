@@ -41,6 +41,14 @@ Año | 2020
 Campo | [2] VIVTOT y VPH_AEASP
 Unidades | Porcentaje
 
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_pes_infra_d_loc_urb_pes_acceso_agua.png)
+
+**Función de valor de agua potable**
+
+![](/recursos/pesca/mapa_fv_pes_infra_d_loc_urb_pes_acceso_agua.png)
+
 ##### 1.2.1.2 Electricidad
 
 Distancia a red de transmisión eléctrica.
@@ -54,6 +62,14 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_pes_infra_d_lineas_electricas.png)
+
+**Función de valor de electricidad**
+
+![](/recursos/pesca/mapa_fv_pes_infra_d_lineas_electricas.png)
+
 ##### 1.2.1.3 Vías de comunicación
 
 Distancia a caminos y carreteras para el transporte de insumos y productos.
@@ -66,6 +82,14 @@ Fuente | Red Nacional de Caminos (RNC) Red vial - INEGI
 Año | 2019
 Escala | Sin dato
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_pes_infra_d_carreteras_caminos.png)
+
+**Función de valor de vías de comunicación**
+
+![](/recursos/pesca/mapa_fv_pes_infra_d_carreteras_caminos.png)
 
 ##### 1.2.1.4 Comunicaciones
 
@@ -89,6 +113,14 @@ Año | 2020
 Campo | [2] VIVTOT y VPH_INTER
 Unidades | Porcentaje
 
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_pes_infra_loc_urb_pes_internet.png)
+
+**Función de valor de internet**
+
+![](/recursos/pesca/mapa_fv_pes_infra_loc_urb_pes_internet.png)
+
 ###### 1.2.1.4.2 Telefonía
 
 Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con celular.
@@ -101,6 +133,14 @@ Fuente | [1] Polígonos de localidades urbanas y pesqueras. Marco Geoestadístic
 Año | 2020
 Campo | [2] VIVTOT y VPH_CEL
 Unidades | Porcentaje
+
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_pes_infra_loc_urb_pes_celular.png)
+
+**Función de valor de telefonía**
+
+![](/recursos/pesca/mapa_fv_pes_infra_loc_urb_pes_celular.png)
 
 #### 1.2.2 Socioeconómicos
 
@@ -122,6 +162,14 @@ Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_pes_socio_d_localidades_pesca.png)
+
+**Función de valor de centros de localidades pesqueras**
+
+![](/recursos/pesca/mapa_fv_pes_socio_d_localidades_pesca.png)
+
 ##### 1.2.2.2 Centros de distribución
 
 Distancia a localidades consideradas como puntos de distribución de productos pesqueros: Progreso, Mérida, Valladolid, Tizimín, Hunucmá, Motul y Dzilam González.
@@ -134,6 +182,28 @@ Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y
 Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_pes_socio_d_centros_distribucion_pesca.png)
+
+**Función de valor de centros de distribución**
+
+![](/recursos/pesca/mapa_fv_pes_socio_d_centros_distribucion_pesca.png)
+
+### 1.3 Mapa de aptitud
+
+**Pesos globales de los atributos ambientales de pesca**
+
+Criterio | Peso
+-- | --
+Agua potable | 0.344
+Electricidad | 0.241
+Vías de comunicación | 0.155
+Centros de distribución | 0.096
+Internet | 0.088
+Telefonía | 0.046
+Localidades pesqueras | 0.024
 
 <!--
 

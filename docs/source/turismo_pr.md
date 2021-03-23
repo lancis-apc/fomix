@@ -55,8 +55,8 @@ Distancia a sitios arqueológicos (Sitios con vestigios de civilizaciones o cult
 
 Capa | Distancia a sitios arqueológicos
 -- | --
-Fuente | [1] Sitios arqueológicos INAH; [2] Mapa turístico del estado de Yucatán Gobierno de Yucatán
-Año | [1] 2012; [2] 2021
+Fuente | [1] Sitios arqueológicos INAH; [2] Mapa turístico del estado de Yucatán Gobierno de Yucatán; [3] Patrimonio arqueológico IMDUT con datos del INAH e INEGI
+Año | [1] 2012; [2] 2021: [3] Sin dato
 Escala | Sin dato
 Unidades | Kilómetros
 
@@ -142,6 +142,28 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+7 | Manglar | Muy alta | 1.00
+10 | Selva mediana | Muy alta | 1.00
+13 | Tular | Muy alta | 1.00
+15 | Vegetación de petén | Muy alta | 1.00
+16 | Vegetación halófila hidrófila | Muy alta | 1.00
+9 | Selva baja | Alta | 0.75
+14 | Vegetación de duna costera | Alta | 0.75
+3 | Agricultura de temporal | Moderada | 0.50
+2 | Agricultura de riego | Baja | 0.25
+4 | Asentamiento humano | Baja | 0.25
+5 | Bosque cultivado/Palmar inducido | Baja | 0.25
+8 | Pastizal | Baja | 0.25
+12 | Sabana | Baja | 0.25
+1 | Acuícola | Nula | 0.00
+6 | Cuerpo de agua | Nula | 0.00
+11 | Sin vegetación | Nula | 0.00
+17 | ND | Nula | 0.00
+
 **Función de valor de cobertura**
 
 ![](/recursos/turismo/mapa_fv_tur_nat_bio_cobertura_usv_svi_16cats.png)
@@ -152,12 +174,16 @@ Presencia de cenotes.
 
 **Insumos**
 
-Capa | Distancia a cenotes turísticos
+Capa | Cenotes turísticos
 -- | --
 Fuente | Cenotes con potencial turístico SEDUMA
 Año | Sin dato
 Escala | Sin dato
-Unidades | Kilómetros
+Unidades | Adimensional
+
+**Función de valor de cenotes**
+
+![](/recursos/turismo/mapa_fv_tur_nat_bio_cenotes_turisticos_presencia.png)
 
 ###### 1.2.2.1.3 Esteros
 
@@ -165,13 +191,17 @@ Presencia de cuerpos de agua costeros que no están incluidos en la capa de cobe
 
 **Insumos**
 
-Capa | Distancia a lagunas costeras, esteros y   marismas
+Capa | Lagunas costeras, esteros y marismas
 -- | --
 Fuente | Modelo cartográfico de humedales INEGI
 Año | 2014
 Campo | SUBCLASE
 Escala | 1:50,000
-Unidades | Kilómetros
+Unidades | Adimensional
+
+**Función de valor de esteros**
+
+![](/recursos/turismo/mapa_fv_tur_nat_bio_lagunas_esteros_marismas.png)
 
 ###### 1.2.2.1.4 Grutas
 
@@ -179,12 +209,17 @@ Presencia de grutas (cavidad que se forma en las rocas por procesos erosivos, pr
 
 **Insumos**
 
-Capa | Distancia a grutas
+Capa | Grutas
 -- | --
-Fuente | Cenotes y Grutas con infraestructura turística y posicionamiento   satelital  SEDUMA
+Fuente | Cenotes y Grutas con infraestructura turística y posicionamiento satelital SEDUMA
 Año | Sin dato
+Campo | GRUTAS
 Escala | Sin dato
-Unidades | Kilómetros
+Unidades | Adimensional
+
+**Función de valor de grutas**
+
+![](/recursos/turismo/mapa_fv_tur_nat_bio_grutas_presencia.png)
 
 ##### 1.2.2.2 Político-administrativo
 
@@ -209,6 +244,12 @@ Año | [1] 2020; [2] 2017; [3] 2015
 Escala | Sin dato
 Unidades | Adimensional
 
+**Parámetros de la función de valor**
+
+**Función de valor de ANP**
+
+![](/recursos/turismo/mapa_fv_tur_nat_admin_anp.png)
+
 ###### 1.2.2.2.2 Tenencia de la tierra
 
 Tipo de tenencia de la tierra: Áreas ejidales (comunitaria o parcelada) y no ejidales.
@@ -222,9 +263,29 @@ Año | 2020
 Escala | Sin dato
 Unidades | Adimensional
 
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+3 | No ejidal | Muy alta | 1.00
+1 | Tierra de uso común | Moderada | 0.50
+2 | Zona de tierras parceladas | Baja | 0.25
+
+**Función de valor de tenencia de la tierra**
+
+![](/recursos/turismo/mapa_fv_tur_nat_admin_tenencia_tierra.png)
+
 ###### 1.2.2.2.3 Cooperativas
 
 Número de cooperativas que ofrecen servicios de turismo de naturaleza.
+
+**Parámetros de la función de valor**
+
+![](/recursos/turismo/fi_fv_tur_nat_admin_n_cooperativas.png)
+
+**Función de valor de cooperativas**
+
+![](/recursos/turismo/mapa_fv_tur_nat_admin_n_cooperativas.png)
 
 ##### 1.2.2.3 Infraestructura
 
@@ -250,6 +311,10 @@ Campo | TIPO_VIAL
 Escala | Sin dato
 Unidades | Adimensional
 
+**Función de valor de caminos**
+
+![](/recursos/turismo/mapa_fv_tur_nat_infra_caminos_veredas.png)
+
 ###### 1.2.2.3.2 Ciclovías
 
 Presencia de ciclovías.
@@ -260,12 +325,16 @@ Presencia de paradores (lugares que ofrecen instalaciones, servicios y posibilid
 
 **Insumos**
 
-Capa | Distancia a paradores turísticos
+Capa | Paradores turísticos
 -- | --
 Fuente | Paradores turísticos SEFOTUR
 Año | Sin dato
 Escala | Sin dato
-Unidades | Kilómetros
+Unidades | Adimensional
+
+**Función de valor de paradores turísticos**
+
+![](/recursos/turismo/mapa_fv_tur_nat_infra_paradores_turisticos_presencia.png)
 
 #### 1.2.3 Sol y playa
 
@@ -299,6 +368,18 @@ Año | 2020
 Escala | Sin dato
 Unidades | Adimensional
 
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+3 | No ejidal | Muy alta | 1.00
+1 | Tierra de uso común | Alta | 0.75
+2 | Zona de tierras parceladas | Moderada | 0.50
+
+**Función de valor de tenencia de la tierra**
+
+![](/recursos/turismo/mapa_fv_tur_sol_ant_tenencia_tierra.png)
+
 ###### 1.2.3.1.2 Asentamientos urbanos
 
 Distancia a localidades urbanas >= 15,000 habitantes, vía carreteras.
@@ -313,6 +394,14 @@ Campo | [1] AMBITO; [2] TIPO_VIAL
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/turismo/fi_fv_tur_sol_ant_d_loc_urbanas_carreteras_prolongacion.png)
+
+**Función de valor de asentamientos urbanos**
+
+![](/recursos/turismo/mapa_fv_tur_sol_ant_d_loc_urbanas_carreteras_prolongacion.png)
+
 ##### 1.2.3.2 Físico
 
 Atributos asociados a las propiedades físicas del suelo y del ambiente.
@@ -320,8 +409,7 @@ Atributos asociados a las propiedades físicas del suelo y del ambiente.
 Atributos | Definición
 -- | --
 Distancia al litoral | Distancia a zona costera
-Tipo de playa | Tipo de playa, de acuerdo al sustrato (arenoso, artificial, lodoso,   vegetado).
-Tipo de suelo | Tipo de suelo (edafología)
+Tipo de playa | Tipo de playa, de acuerdo al sustrato (arenoso, artificial, lodoso, vegetado).
 
 ###### 1.2.3.2.1 Distancia al litoral
 
@@ -358,19 +446,19 @@ Campo | TIPO
 Escala | Sin dato
 Unidades | Adimensional
 
-###### 1.2.3.2.3 Tipo de suelo
+**Parámetros de la función de valor**
 
-Tipo de suelo (edafología).
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+1 | ARENOSO | Muy alta | 1.00
+4 | VEGETADO | Alta | 0.75
+2 | ARTIFICIAL | Moderada | 0.50
+3 | LODOSO | Moderada | 0.50
+5 | NA | Nula | 0.00
 
-**Insumos**
+**Función de valor de tipo de playa**
 
-Capa | Edafología
--- | --
-Fuente | Conjunto de datos vectoriales edafológico. Serie II (Continuo Nacional) INEGI
-Año | 2014
-Campo | tipo_suelo
-Escala | 1:250,000
-Unidades | Adimensional
+![](/recursos/turismo/mapa_fv_tur_sol_fis_tipo_playa.png)
 
 ##### 1.2.3.3 Biológico
 
@@ -395,6 +483,32 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+14 | Vegetación de duna costera | Muy alta | 1.00
+4 | Asentamiento humano | Alta | 0.75
+11 | Sin vegetación | Alta | 0.75
+1 | Acuícola | Moderada | 0.50
+3 | Agricultura de temporal | Moderada | 0.50
+5 | Bosque cultivado/Palmar inducido | Moderada | 0.50
+10 | Selva mediana | Moderada | 0.50
+12 | Sabana | Moderada | 0.50
+2 | Agricultura de riego | Baja | 0.25
+7 | Manglar | Baja | 0.25
+8 | Pastizal | Baja | 0.25
+9 | Selva baja | Baja | 0.25
+13 | Tular | Baja | 0.25
+15 | Vegetación de petén | Baja | 0.25
+16 | Vegetación halófila hidrófila | Baja | 0.25
+6 | Cuerpo de agua | Nula | 0.00
+17 | ND | Nula | 0.00
+
+**Función de valor de cobertura**
+
+![](/recursos/turismo/mapa_fv_tur_sol_bio_cobertura_usv_svi_16cats.png)
+
 ###### 1.2.3.3.2 Distancia a ANP
 
 Distancia a áreas naturales protegidas costeras.
@@ -408,9 +522,32 @@ Año | [1] 2020; [2] 2017
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
+
+![](/recursos/turismo/fi_fv_tur_sol_bio_d_anp_costeras.png)
+
+**Función de valor de distancia a ANP**
+
+![](/recursos/turismo/mapa_fv_tur_sol_bio_d_anp_costeras.png)
+
 #### 1.2.4 Urbano
 
 Viajes que se realizan al interior de las zonas urbanas. Comprende convenciones, reuniones, negocios, médico y educativo.
+
+Atributos | Definición
+-- | --
+Centro de convenciones | Presencia de centros de convenciones.
+Número de cuartos de hotel | Número de habitaciones de hotel en las localidades.
+Haciendas | Distancia de haciendas.
+Número de hospitales privados | Número de hospitales privados en las localidades.
+
+##### 1.2.4.1 Centro de convenciones
+
+Presencia de centros de convenciones.
+
+##### 1.2.4.2 Número de cuartos de hotel
+
+Número de habitaciones de hotel en las localidades.
 
 **Insumos**
 
@@ -421,16 +558,67 @@ Año | [1] 2019: [2] 2020
 Escala | Sin dato
 Unidades | Número
 
-Capa | Unidades económicas de infraestructura   hospitalaria-médica
+**Parámetros de la función de valor**
+
+![](/recursos/turismo/fi_fv_tur_ur_atr_n_habitaciones.png)
+
+**Función de valor de número de cuartos de hotel**
+
+![](/recursos/turismo/mapa_fv_tur_ur_atr_n_habitaciones.png)
+
+##### 1.2.4.3 Haciendas
+
+Distancia de haciendas.
+
+**Insumos**
+
+Capa | Distancia a haciendas
 -- | --
-Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de   Unidades Económicas (DENUE) INEGI
+Fuente | Haciendas de Yucatán SEFOTUR
+Año | Sin dato
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/turismo/fi_fv_tur_ur_atr_d_haciendas.png)
+
+**Función de valor de haciendas**
+
+![](/recursos/turismo/mapa_fv_tur_ur_atr_d_haciendas.png)
+
+##### 1.2.4.4 Número de hospitales privados
+
+Número de hospitales privados en las localidades.
+
+**Insumos**
+
+Capa | Unidades económicas de infraestructura hospitalaria-médica
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Datos de indicador. Directorio Estadístico Nacional de Unidades Económicas (DENUE) INEGI
 Año | 2020
 Escala | Localidad
 Unidades | Número
 
+**Parámetros de la función de valor**
+
+![](/recursos/turismo/fi_fv_tur_ur_atr_n_hospitales.png)
+
+**Función de valor de número de hospitales privados**
+
+![](/recursos/turismo/mapa_fv_tur_ur_atr_n_hospitales.png)
+
 #### 1.2.5 Cruceros
 
 Actividad turística que se realiza a bordo de un barco o buque, el cual brinda todos los servicios y facilidades similares a los de un gran hotel o resort del mundo.
+
+Atributos | Definición
+-- | --
+Puerto Progreso | Distancia a Puerto Progreso vía carreteras y prolongaciones.
+
+##### 1.2.5.1 Puerto Progreso
+
+Distancia a Puerto Progreso vía carreteras y prolongaciones.
 
 **Insumos**
 
@@ -442,7 +630,13 @@ Campo | [2] TIPO_VIAL
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Parámetros de la función de valor**
 
+![](/recursos/turismo/fi_fv_tur_cru_atr_d_puerto_progreso_carretera_prolongacion.png)
+
+**Función de valor de Puerto Progreso**
+
+![](/recursos/turismo/mapa_fv_tur_cru_atr_d_puerto_progreso_carretera_prolongacion.png)
 
 
 
