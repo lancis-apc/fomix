@@ -114,6 +114,15 @@ Unidades | Taxones/UMP
 
 Biomasa vegetal arbórea.
 
+**Insumos**
+
+Capa | Biomasa aérea
+-- | --
+Fuente | Biomasa aérea promedio - predicción CONAFOR  (con datos del INFyS 2009-2014)
+Año | 2014
+Escala | Sin dato
+Unidades | Toneladas/hectárea
+
 **Parámetros de la función de valor**
 
 ![](/recursos/conservacion/fi_fv_con_sa_sop_biomasa_aerea.png)
@@ -270,12 +279,16 @@ Presencia de cuerpos de agua no considerados en la capa de cobertura.
 
 **Insumos**
 
-Capa | Cuerpos de agua no incluidos en el Serie VI de Uso del suelo y vegetación INEGI
+Capa | Cuerpos de agua no incluidos en la Serie VI de Uso del suelo y vegetación INEGI
 -- | --
 Fuente | [1] Modelo cartográfico de humedales INEGI; [2] Cenotes POETY y [3] Censo de cenotes SDS
 Año | [1] 2014; [2] Sin dato; [3] 2009
 Escala | [1] 1:50,000; [2] [3] Sin dato
 Unidades | Adimensional
+
+**Función de valor de cuerpos de agua**
+
+![](/recursos/conservacion/mapa_fv_con_sa_pro_cuerpos_agua_serie6_exc_presencia.png)
 
 ###### 1.2.1.3.3 Parientes silvestres de cultivo
 
@@ -289,6 +302,14 @@ Fuente |  [1] Capsicum rhomboideum. Distribución potencial de   chiles  CONABI
 Año | 2020
 Escala | 1:1,000,000
 Unidades | Número
+
+**Parámetros de la función de valor**
+
+![](/recursos/conservacion/fi_fv_con_sa_pro_parientes_silvestres.png)
+
+**Función de valor de parientes silvestres de cultivo**
+
+![](/recursos/conservacion/mapa_fv_con_sa_pro_parientes_silvestres.png)
 
 ##### 1.2.1.4 Culturales
 
@@ -486,6 +507,14 @@ Año | 2018
 Escala | 1:250,000
 Unidades | Adimensional
 
+**Parámetros de la función de valor**
+
+![](/recursos/conservacion/fi_fv_con_fun_eco_ind_integridad_ecologica.png)
+
+**Función de valor de integridad ecológica**
+
+![](/recursos/conservacion/mapa_fv_con_fun_eco_ind_integridad_ecologica.png)
+
 ###### 1.2.2.1.2 Distancia a ANP y sitios Ramsar
 
 Distancia con ANP, incluye las ANP.
@@ -499,6 +528,10 @@ Año | [1] 2020; [2] 2017; [3] 2015; [4] 2016
 Escala | Sin dato
 Unidades | Kilómetros
 
+**Función de valor de distancia a ANP y sitios Ramsar**
+
+![](/recursos/conservacion/mapa_fv_con_fun_eco_d_anp_ramsar.png)
+
 ###### 1.2.2.1.3 AICAS
 
 Presencia de AICAS fuera de ANP y sitios RAMSAR.
@@ -511,6 +544,10 @@ Fuente | Áreas de importancia para la conservación de las aves (AICAS) CIPAMEX
 Año | 2015
 Escala | 1:250,000
 Unidades | Adimensional
+
+**Función de valor de AICAS**
+
+![](/recursos/conservacion/mapa_fv_con_fun_eco_aicas.png)
 
 ##### 1.2.2.2 Vulnerabilidad hídrica
 
@@ -548,9 +585,21 @@ ID | Categoría | Importancia | FV
 1 | a) Baja | Baja | 0.25
 6 | NA | Nula | 0.00
 
+**Función de valor de vulnerabilidad intrínseca**
+
+![](/recursos/conservacion/mapa_fv_con_fun_hid_vul_acuifero.png)
+
 ###### 1.2.2.2.2 Zonas de recarga
 
 Zonas de recarga de acuífero.
+
+**Parámetros de la función de valor**
+
+![](/recursos/conservacion/fi_fv_con_fun_hid_recarga_acuifero.png)
+
+**Función de valor de zonas de recarga**
+
+![](/recursos/conservacion/mapa_fv_con_fun_hid_recarga_acuifero.png)
 
 ###### 1.2.2.2.3 Humedales
 
@@ -565,22 +614,40 @@ Año | 2014
 Escala | 1:50,000
 Unidades | Adimensional
 
+**Función de valor de humedales**
+
+![](/recursos/conservacion/mapa_fv_con_fun_hid_humedales_sin_cenotes.png)
+
 ###### 1.2.2.2.4 Cenotes
 
 Presencia de cenotes.
 
 **Insumos**
 
-Capa | Cenotes
+Capa | Depresiones kársticas
 -- | --
-Fuente | [1] Cenotes POETY y [2] Censo de cenotes SDS
-Año | [1] Sin dato; [2] 2009
+Fuente | Aguilar, Y., Bautista, F., Mendoza, M. E., Frausto, O., & Ihl, T. (2016). Density of karst depressions in Yucatán state, Mexico. Journal of Cave and Karst Studies, 78(2), 51–60. https://doi.org/10.4311/2015ES0124
+Año | 2016
 Escala | Sin dato
 Unidades | Adimensional
+
+**Función de valor de cenotes**
+
+![](/recursos/conservacion/mapa_fv_con_fun_hid_depresiones_presencia.png)
 
 ###### 1.2.2.2.5 Reforestación
 
 Zonas cuyo uso de suelo cambió en los últimos 12 años, potenciales a ser reforestadas.
+
+**Insumos**
+
+Capa | Cambio de cobertura
+-- | --
+Fuente | Cambio de cobertura en el estado de Yucatán 2002 - 2014 LANCIS, con datos de las Series de Suelo y Vegetación III y VI de INEGI
+Año | 2020
+Campo | cambio
+Escala | Sin dato
+Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
@@ -595,6 +662,10 @@ ID | Categoría | Importancia | FV
 8 | Sin cambio dentro de uso antrópico | Baja | 0.25
 5 | Falso cambio | Nula | 0.00
 9 | Sin datos | Nula | 0.00
+
+**Función de valor de reforestación**
+
+![](/recursos/conservacion/mapa_fv_con_fun_hid_cambio_cob_s3_s6.png)
 
 ##### 1.2.2.3 Fragilidad kárstica
 
@@ -613,11 +684,19 @@ Número de dolinas por hectárea.
 
 Capa | Densidad de dolinas
 -- | --
-Fuente | Densidad de dolinas. Atlas de Peligros por Fenómenos del Estado de   Yucatán. Servicio Geológico Mexicano
+Fuente | Densidad de dolinas. Atlas de Peligros por Fenómenos Naturales del Estado de Yucatán. Servicio Geológico Mexicano
 Año | 2013
 Campo | GRADO
 Escala | Sin dato
 Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+![](/recursos/conservacion/fi_fv_con_fun_kar_densidad_dolinas.png)
+
+**Función de valor de densidad de dolinas**
+
+![](/recursos/conservacion/mapa_fv_con_fun_kar_densidad_dolinas.png)
 
 ###### 1.2.2.3.2 Cenotes
 
@@ -625,9 +704,34 @@ Presencia de cenotes.
 
 **Insumos**
 
-Capa | Cenotes
+Capa | Depresiones kársticas
 -- | --
-Fuente | [1] Cenotes POETY y [2] Censo de cenotes SDS
-Año | [1] Sin dato; [2] 2009
+Fuente | Aguilar, Y., Bautista, F., Mendoza, M. E., Frausto, O., & Ihl, T. (2016). Density of karst depressions in Yucatán state, Mexico. Journal of Cave and Karst Studies, 78(2), 51–60. https://doi.org/10.4311/2015ES0124
+Año | 2016
 Escala | Sin dato
 Unidades | Adimensional
+
+**Función de valor de cenotes**
+
+![](/recursos/conservacion/mapa_fv_con_fun_kar_depresiones_presencia.png)
+
+### 1.3 Mapa de aptitud
+
+#### 1.3.1 Mapa de aptitud de conservación
+
+![](/recursos/conservacion/.png)
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del estado
+-- | --: | --:
+Muy alta | 4104.4 | 10
+Alta | 16926.3 | 43
+Moderada | 8037.8 | 20
+Baja | 8404.9 | 21
+Muy baja | 2040.4 | 5
+Nula | 0.0 | 0
+
+#### 1.3.2 Sensibilidad de atributos ambientales del sector conservación
+
+![](/recursos/conservacion/fi_analisis_sensibilidad_conservacion.png)

@@ -20,39 +20,15 @@ Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes
 
 #### 1.2.1 Minería de arcillas
 
-
-
 ##### 1.2.1.1 Biofísicos
 
 Criterio|Definición
 --|--
-Nivel freático| Distancia al manto acuífero medido por el nivel piezométrico.
 Tipo de suelo| Edafología.
+Nivel freático| Distancia al manto acuífero medido por el nivel piezométrico.
 Tipo de cobertura| Tipos de vegetación y usos de suelo.
 
-###### 1.2.1.1.1 Nivel freático
-
-Distancia al manto acuífero medido por el nivel piezométrico.
-
-**Insumos**
-
-Capa | Nivel freático
--- | --
-Fuente | Nivel freático POETY
-Año | Sin dato
-Campo | n_freat_m
-Escala | Estatal
-Unidades | Metros
-
-**Parámetros de la función de valor**
-
-![](/recursos/mineria/fi_fv_min_arci_bio_d_manto_freatico.png)
-
-**Función de valor de nivel freático**
-
-![](/recursos/mineria/mapa_fv_min_arci_bio_d_manto_freatico.png)
-
-###### 1.2.1.1.2 Tipo de suelo
+###### 1.2.1.1.1 Tipo de suelo
 
 Edafología.
 
@@ -87,6 +63,28 @@ ID | Categoría | Importancia | FV
 **Función de valor de tipo de suelo**
 
 ![](/recursos/mineria/mapa_fv_min_arci_bio_tipo_suelo.png)
+
+###### 1.2.1.1.2 Nivel freático
+
+Distancia al manto acuífero medido por el nivel piezométrico.
+
+**Insumos**
+
+Capa | Nivel freático
+-- | --
+Fuente | Nivel freático POETY
+Año | Sin dato
+Campo | n_freat_m
+Escala | Estatal
+Unidades | Metros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arci_bio_d_manto_freatico.png)
+
+**Función de valor de nivel freático**
+
+![](/recursos/mineria/mapa_fv_min_arci_bio_d_manto_freatico.png)
 
 ###### 1.2.1.1.3 Tipo de Cobertura
 
@@ -204,7 +202,6 @@ Unidades | Kilómetros
 Criterio|Definición
 --|--
 Localidades| Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.
-Oportunidades| Proyectos de construcción y ampliación de vías de comunicación.
 
 ###### 1.2.1.3.1 Localidades
 
@@ -227,46 +224,17 @@ Unidades | Kilómetros
 
 ![](/recursos/mineria/mapa_fv_min_arci_socio_d_localidades_min.png)
 
-###### 1.2.1.3.2 Oportunidades
-
-Proyectos de construcción y ampliación de vías de comunicación.
-
-**Insumos**
-
-
 #### 1.2.2 Minería de arenas
 
 ##### 1.2.2.1 Biofísicos
 
 Criterio|Definición
 --|--
-Nivel freático| Distancia al manto acuífero medido por el nivel piezométrico.
 Tipo de suelo| Edafología.
+Nivel freático| Distancia al manto acuífero medido por el nivel piezométrico.
 Tipo de cobertura| Tipos de vegetación y usos de suelo.
 
-###### 1.2.2.1.1 Nivel freático
-
-Distancia al manto acuífero medido por el nivel piezométrico.
-
-**Insumos**
-
-Capa | Nivel freático
--- | --
-Fuente | Nivel freático POETY
-Año | Sin dato
-Campo | n_freat_m
-Escala | Estatal
-Unidades | Metros
-
-**Parámetros de la función de valor**
-
-![](/recursos/mineria/fi_fv_min_arena_bio_d_manto_freatico.png)
-
-**Función de valor de nivel freático**
-
-![](/recursos/mineria/mapa_fv_min_arena_bio_d_manto_freatico.png)
-
-###### 1.2.2.1.2 Tipo de suelo
+###### 1.2.2.1.1 Tipo de suelo
 
 Edafología.
 
@@ -301,6 +269,28 @@ ID | Categoría | Importancia | FV
 **Función de valor de tipo de suelo**
 
 ![](/recursos/mineria/mapa_fv_min_arena_bio_tipo_suelo.png)
+
+###### 1.2.2.1.2 Nivel freático
+
+Distancia al manto acuífero medido por el nivel piezométrico.
+
+**Insumos**
+
+Capa | Nivel freático
+-- | --
+Fuente | Nivel freático POETY
+Año | Sin dato
+Campo | n_freat_m
+Escala | Estatal
+Unidades | Metros
+
+**Parámetros de la función de valor**
+
+![](/recursos/mineria/fi_fv_min_arena_bio_d_manto_freatico.png)
+
+**Función de valor de nivel freático**
+
+![](/recursos/mineria/mapa_fv_min_arena_bio_d_manto_freatico.png)
 
 ###### 1.2.2.1.3 Tipo de Cobertura
 
@@ -418,7 +408,6 @@ Unidades | Kilómetros
 Criterio|Definición
 --|--
 Localidades| Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.
-Oportunidades| Proyectos de construcción y ampliación de vías de comunicación.
 
 ###### 1.2.2.3.1 Localidades
 
@@ -441,13 +430,7 @@ Unidades | Kilómetros
 
 ![](/recursos/mineria/mapa_fv_min_arena_socio_d_localidades_min.png)
 
-###### 1.2.2.3.2 Oportunidades
-
-Proyectos de construcción y ampliación de vías de comunicación.
-
 #### 1.2.3 Minería de rocas con extracción en seco
-
-
 
 ##### 1.2.3.1 Biofísicos
 
@@ -654,13 +637,7 @@ Unidades | Kilómetros
 
 ![](/recursos/mineria/mapa_fv_min_rosec_socio_d_localidades_min.png)
 
-###### 1.2.3.3.2 Oportunidades
-
-Proyectos de construcción y ampliación de vías de comunicación.
-
 #### 1.2.4 Minería de rocas con extracción en húmedo
-
-
 
 ##### 1.2.4.1 Biofísicos
 
@@ -867,9 +844,6 @@ Unidades | Kilómetros
 
 ![](/recursos/mineria/mapa_fv_min_rohum_socio_d_localidades_min.png)
 
-###### 1.2.4.3.2 Oportunidades
-
-Proyectos de construcción y ampliación de vías de comunicación.
 
 
 
