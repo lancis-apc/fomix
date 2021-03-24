@@ -41,6 +41,14 @@ Biomasa aérea | Biomasa vegetal arbórea
 
 Zonas de recarga de acuífero.
 
+**Parámetros de la función de valor**
+
+![](/recursos/conservacion/fi_fv_con_sa_sop_recarga_acuifero.png)
+
+**Función de valor de zonas de recarga**
+
+![](/recursos/conservacion/mapa_fv_con_sa_sop_recarga_acuifero.png)
+
 ###### 1.2.1.1.2 Cobertura forestal
 
 Tipo de cobertura forestal como indicador de productividad primaria.
@@ -122,7 +130,7 @@ Atributos | Definición
 -- | --
 Cobertura | Tipo de cobertura como indicador de productividad primaria.
 Captura de carbono | Captura de carbono como indicador de calidad del aire.
-Especies melíferas | Concentración de especies melíferas como indicador del servicio ambiental de regulación de polinización.
+Especies melíferas | Distribución agregada de especies melíferas como indicador del servicio ambiental de regulación de polinización.
 
 ###### 1.2.1.2.1 Cobertura
 
@@ -187,7 +195,7 @@ Unidades | Toneladas/hectárea
 
 ###### 1.2.1.2.3 Especies melíferas
 
-Concentración de especies melíferas como indicador del servicio ambiental de regulación de polinización.
+Distribución agregada de especies melíferas como indicador del servicio ambiental de regulación de polinización.
 
 **Insumos**
 
@@ -231,6 +239,30 @@ Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+6 | Cuerpo de agua | Muy alta | 1.00
+7 | Manglar | Muy alta | 1.00
+9 | Selva baja | Muy alta | 1.00
+10 | Selva mediana | Muy alta | 1.00
+13 | Tular | Muy alta | 1.00
+15 | Vegetación de petén | Muy alta | 1.00
+16 | Vegetación halófila hidrófila | Muy alta | 1.00
+12 | Sabana | Alta | 0.75
+14 | Vegetación de duna costera | Alta | 0.75
+1 | Acuícola | Moderada | 0.50
+3 | Agricultura de temporal | Moderada | 0.50
+2 | Agricultura de riego | Baja | 0.25
+5 | Bosque cultivado/Palmar inducido | Baja | 0.25
+8 | Pastizal | Baja | 0.25
+4 | Asentamiento humano | Nula | 0.00
+11 | Sin vegetación | Nula | 0.00
+17 | ND | Nula | 0.00
+
+**Función de valor de zonas de cobertura**
+
+![](/recursos/conservacion/mapa_fv_con_sa_pro_cobertura_usv_svi_16cats_costa_manglar.png)
 
 ###### 1.2.1.3.2 Cuerpos de agua
 
@@ -438,9 +470,12 @@ Estado de conservación y salud de los ecosistemas y su capacidad de resiliencia
 Atributos | Definición
 -- | --
 Integridad ecológica | Índice de Integridad ecológica.  
-Degradación ecológica | Índice de degradación ecológica.   
 Distancia a ANP y sitios Ramsar | Distancia con ANP, incluye las ANP  
-AICAS | Presencia de AICAS fuera de ANP   y sitios RAMSAR.
+AICAS | Presencia de AICAS fuera de ANP y sitios RAMSAR.
+
+###### 1.2.2.1.1 Integridad ecológica
+
+Índice de Integridad ecológica.
 
 **Insumos**
 
@@ -451,27 +486,26 @@ Año | 2018
 Escala | 1:250,000
 Unidades | Adimensional
 
-**Insumos**
+###### 1.2.2.1.2 Distancia a ANP y sitios Ramsar
 
-Capa | Índice de degradación ecológica
--- | --
-Fuente | Índice de degradación ecológica (IDE) CONABIO
-Año | 2018
-Escala | 1:250,000
-Unidades | Adimensional
+Distancia con ANP, incluye las ANP.
 
 **Insumos**
 
-Capa | Distancia a Áreas Naturales Protegidas y   sitios RAMSAR
+Capa | Distancia a Áreas Naturales Protegidas y sitios RAMSAR
 -- | --
 Fuente | [1] Áreas Naturales Protegidas SDS, [2] Áreas Naturales Protegidas   Federales de la República Mexicana CONANP; [3]  Áreas Naturales Protegidas Estatales,   Municipales, Ejidales y Privadas de México CONABIO Y [4] Sitios RAMSAR de   México CONANP
 Año | [1] 2020; [2] 2017; [3] 2015; [4] 2016
 Escala | Sin dato
 Unidades | Kilómetros
 
+###### 1.2.2.1.3 AICAS
+
+Presencia de AICAS fuera de ANP y sitios RAMSAR.
+
 **Insumos**
 
-Capa | AICAS fuera de Áreas Naturales Protegidas y   sitios RAMSAR
+Capa | AICAS fuera de Áreas Naturales Protegidas y sitios RAMSAR
 -- | --
 Fuente | Áreas de importancia para la conservación de las aves (AICAS) CIPAMEX -   CONABIO
 Año | 2015
@@ -485,10 +519,14 @@ Vulnerabilidad del recurso hídríco ante agentes externos como contaminación, 
 Atributos | Definición
 -- | --
 Vulnerabilidad intrínseca | Vulnerabilidad intrínseca a la contaminación del acuífero kárstico.   
-Cenotes | Presencia de cenotes.   
-Humedales | Presencia de cuerpos de agua, excluye cenotes y estanques artificiales.  
-Reforestación | Zonas cuyo uso de suelo cambió   en los últimos 15 años, potenciales a ser reforestadas.  
 Zonas de recarga | Zonas de recarga de acuífero.
+Humedales | Presencia de cuerpos de agua, excluye cenotes y estanques artificiales.  
+Cenotes | Presencia de cenotes.   
+Reforestación | Zonas cuyo uso de suelo cambió en los últimos 12 años, potenciales a ser reforestadas.
+
+###### 1.2.2.2.1 Vulnerabilidad intrínseca
+
+Vulnerabilidad intrínseca a la contaminación del acuífero kárstico.  
 
 **Insumos**
 
@@ -499,14 +537,24 @@ Año | 2019
 Escala | Sin dato
 Unidades | Adimensional
 
-**Insumos**
+**Parámetros de la función de valor**
 
-Capa | Cenotes
--- | --
-Fuente | [1] Cenotes POETY y [2] Censo de cenotes SDS
-Año | [1] Sin dato; [2] 2009
-Escala | Sin dato
-Unidades | Adimensional
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+5 | e) Extrema | Muy alta | 1.00
+4 | d) Muy alta | Muy alta | 1.00
+3 | c) Alta | Alta | 0.75
+2 | b) Media | Moderada | 0.50
+1 | a) Baja | Baja | 0.25
+6 | NA | Nula | 0.00
+
+###### 1.2.2.2.2 Zonas de recarga
+
+Zonas de recarga de acuífero.
+
+###### 1.2.2.2.3 Humedales
+
+Presencia de cuerpos de agua, excluye cenotes y estanques artificiales.  
 
 **Insumos**
 
@@ -517,14 +565,49 @@ Año | 2014
 Escala | 1:50,000
 Unidades | Adimensional
 
-##### 1.2.2.2 Fragilidad kárstica
+###### 1.2.2.2.4 Cenotes
+
+Presencia de cenotes.
+
+**Insumos**
+
+Capa | Cenotes
+-- | --
+Fuente | [1] Cenotes POETY y [2] Censo de cenotes SDS
+Año | [1] Sin dato; [2] 2009
+Escala | Sin dato
+Unidades | Adimensional
+
+###### 1.2.2.2.5 Reforestación
+
+Zonas cuyo uso de suelo cambió en los últimos 12 años, potenciales a ser reforestadas.
+
+**Parámetros de la función de valor**
+
+ID | Categoría | Importancia | FV
+-- | -- | -- | --
+1 | Conservado | Muy alta | 1.00
+4 | Dentro de cobertura natural | Muy alta | 1.00
+7 | Revegetado | Alta | 0.75
+2 | Deforestado | Moderada | 0.50
+3 | Degradado | Moderada | 0.50
+6 | Por actividad productiva | Baja | 0.25
+8 | Sin cambio dentro de uso antrópico | Baja | 0.25
+5 | Falso cambio | Nula | 0.00
+9 | Sin datos | Nula | 0.00
+
+##### 1.2.2.3 Fragilidad kárstica
 
 Vulnerabilidad del suelo de ser afectado por alguna actividad del hombre o por sus efectos, como la erosión. Vulnerabilidad de los ecosistemas kársticos derivada de su nivel de desarrollo y fragilidad ante impactos externos.
 
 Atributos | Definición
 -- | --
-Cenotes | Presencia de cenotes  
 Densidad de dolinas | Número de dolinas por hectárea
+Cenotes | Presencia de cenotes  
+
+###### 1.2.2.3.1 Densidad de dolinas
+
+Número de dolinas por hectárea.
 
 **Insumos**
 
@@ -535,6 +618,10 @@ Año | 2013
 Campo | GRADO
 Escala | Sin dato
 Unidades | Adimensional
+
+###### 1.2.2.3.2 Cenotes
+
+Presencia de cenotes.
 
 **Insumos**
 
