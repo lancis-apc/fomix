@@ -7,7 +7,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 Aumentar la apertura de bancos de materiales para cumplir con la demanda de productos químicos, de alimentación, así como de insumos en la construcción, en particular de desarrollos inmobiliarios, caminos y carreteras, que están en aumento por el crecimiento poblacional y la llegada de proyectos como el Tren Maya.
 
-[Lista de participantes]()
+[Lista de participantes](https://www.dropbox.com/s/lxqdnpxi3kjv4hq/lista_asistencia_mineria.pdf?dl=0)
 
 ### 1.1 Modelo de decisión
 
@@ -15,6 +15,8 @@ Aumentar la apertura de bancos de materiales para cumplir con la demanda de prod
 
 Los participantes decidieron que se hiciera la distinción entre la minería de rocas, arenas y arcillas, con base en los tipos de suelo en los que es más viable desarrollar cada tipo de minería.
 Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes definieron dos funciones de valor para el atributo Nivel freático con el objeto de distinguir entre los sitios propicios para la extracción en seco y en húmedo. En el caso de la minería de arenas y arcillas únicamente se hace la extracción en seco.
+*Versión 1 corresponde a los pesos resultantes de las ponderaciones de los atributos biofísicos para minería de rocas con extracción en seco y húmedo.
+*Versión 2 corresponde a los pesos resultantes de las ponderaciones de los atributos biofísicos para minería de arcillas y arenas.
 
 ### 1.2 Tipos
 
@@ -844,321 +846,244 @@ Unidades | Kilómetros
 
 ![](/recursos/mineria/mapa_fv_min_rohum_socio_d_localidades_min.png)
 
-
-
-
-<!--
-
-
 ### 1.3 Mapa de aptitud
 
-#### 1.3.1 Mapa de aptitud de fuente hidrocarburos líquidos
+#### 1.3.1 Mapa de aptitud de minería de arcillas
 
-##### 1.3.1.1 Zonas de aprovechamiento actual de hidrocarburos líquidos
-
-**Insumos**
-
-Capa | Poliducto Progreso - Mérida y centrales eléctricas de combustóleo
--- | --
-Fuente | [1] Infraestructura Nacional de Almacenamiento y Transporte por Ducto de Petrolíferos y [2] Mapas de Infraestructura Energética y Recursos Renovables SENER
-Año | [1] ?; [2] 2016
-Escala | [1] ?; [2] Sin dato
-Unidades | Adimensional
-
-![](/recursos/energia/mapa_aprov_actual_hidrocarburos.png)
-
-##### 1.3.1.2 Zonas de exclusión actual de hidrocarburos líquidos
+#### 1.3.1.1 Zonas de exclusión de minería de arcillas
 
 **Insumos**
 
 Capa | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
 Año | 2017
 Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
-**Tabla de exclusión del sector energía de fuente hidrocarburos líquidos**
+**Tabla de exclusión del sector minería**
 
-ID | Cobertura
+ID | Categoría
 -- | --
 1 | Acuícola
-4 | Asentamiento humano
-6 | Cuerpo de agua
-7 | Manglar
-13 | Tular
-14 | Vegetación de duna costera
-16 | Vegetación halófila hidrófila
-
-![](/recursos/energia/mapa_exclusion.png)
-
-##### 1.3.1.3 Mapa de aptitud de energía de fuente hidrocarburos líquidos
-
-![](/recursos/energia/mapa_aptitud_hidrocarburos.png)
-
-#### 1.3.2 Mapa de aptitud de fuente gas natural
-
-##### 1.3.2.1 Zonas de aprovechamiento actual de gas natural
-
-**Insumos**
-
-Capa | [1] Centrales eléctricas de gas; [2] Gasoducto
--- | --
-Fuente | [1] Mapas de Infraestructura Energética y Recursos Renovables SENER; [2] Gasoductos GeoComunes con datos de CRE, SEMARNAT, ASEA y CFE
-Año | [1] 2016; [2] 2020
-Escala | Sin dato
-Unidades | Adimensional
-
-![](/recursos/energia/mapa_aprov_actual_gas.png)
-
-##### 1.3.2.2 Zonas de exclusión actual de gas natural
-
-**Insumos**
-
-Capa | Uso del suelo y vegetación
--- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
-Unidades | Adimensional
-
-**Tabla de exclusión del sector energía de fuente gas natural**
-
-ID | Cobertura
--- | --
-1 | Acuícola
-4 | Asentamiento humano
-6 | Cuerpo de agua
-7 | Manglar
-13 | Tular
-14 | Vegetación de duna costera
-16 | Vegetación halófila hidrófila
-
-![](/recursos/energia/mapa_exclusion.png)
-
-##### 1.3.2.3 Mapa de aptitud de energía de fuente gas natural
-
-![](/recursos/energia/mapa_aptitud_gas.png)
-
-#### 1.3.3 Mapa de aptitud de energía solar
-
-##### 1.3.3.1 Zonas de aprovechamiento actual de energía solar
-
-**Insumos**
-
-Capa | Parques solares
--- | --
-Fuente | Parques solares en México GeoComunes con datos de coordenadas en MIAs
-Año | 2020
-Escala | Sin dato
-Unidades | Adimensional
-
-![](/recursos/energia/mapa_aprov_actual_solar.png)
-
-##### 1.3.3.2 Zonas de exclusión actual de energía solar
-
-**Insumos**
-
-Capa | Uso del suelo y vegetación
--- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
-Unidades | Adimensional
-
-**Tabla de exclusión del sector energía de fuente solar**
-
-ID | Cobertura
--- | --
-1 | Acuícola
-6 | Cuerpo de agua
-7 | Manglar
-13 | Tular
-14 | Vegetación de duna costera
-15 | Vegetación de petén
-16 | Vegetación halófila hidrófila
-
-![](/recursos/energia/mapa_exclusion_solar.png)
-
-##### 1.3.3.3 Mapa de aptitud de energía solar
-
-![](/recursos/energia/mapa_aptitud_solar.png)
-
-#### 1.3.4 Mapa de aptitud de energía eólica
-
-##### 1.3.4.1 Zonas de aprovechamiento actual de energía eólica
-
-**Insumos**
-
-Capa | Parques eólicos
--- | --
-Fuente | Parques eólicos en México GeoComunes con datos de coordenadas en MIAs
-Año | 2020
-Escala | Sin dato
-Unidades | Adimensional
-
-![](/recursos/energia/mapa_aprov_actual_eolica.png)
-
-##### 1.3.4.2 Zonas de exclusión actual de energía eólica
-
-**Insumos**
-
-Capa | Uso del suelo y vegetación
--- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
-Unidades | Adimensional
-
-**Tabla de exclusión del sector energía de fuente energía eólica**
-
-ID | Cobertura
--- | --
-1 | Acuícola
-4 | Asentamiento humano
-6 | Cuerpo de agua
-7 | Manglar
-13 | Tular
-14 | Vegetación de duna costera
-16 | Vegetación halófila hidrófila
-
-![](/recursos/energia/mapa_exclusion.png)
-
-##### 1.3.4.3 Mapa de aptitud de energía eólica
-
-![](/recursos/energia/mapa_aptitud_eolica.png)
-
-#### 1.3.5 Mapa de aptitud de energía de fuente biomasa
-
-##### 1.3.5.1 Zonas de aprovechamiento actual de energía fuente biomasa
-
-**Insumos**
-
-Capa | Granjas porcinas
--- | --
-Fuente | Granjas porcinas y avícolas en la Península de Yucatán GeoComunes con datos de SAGARPA SIAP
-Año | 2019
-Escala | Sin dato
-Unidades | Adimensional
-
-![](/recursos/energia/mapa_aprov_actual_biomasa.png)
-
-##### 1.3.5.2 Zonas de exclusión actual de energía fuente biomasa
-
-**Insumos**
-
-Capa | Uso del suelo y vegetación
--- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
-Unidades | Adimensional
-
-**Tabla de exclusión del sector energía de fuente biomasa**
-
-ID | Cobertura
--- | --
-1 | Acuícola
-4 | Asentamiento humano
-6 | Cuerpo de agua
-7 | Manglar
-13 | Tular
-14 | Vegetación de duna costera
-16 | Vegetación halófila hidrófila
-
-![](/recursos/energia/mapa_exclusion.png)
-
-##### 1.3.5.3 Mapa de aptitud de energía de fuente biomasa
-
-![](/recursos/energia/mapa_aptitud_biomasa.png)
-
-#### 1.3.6 Zona de aprovechamiento actual del sector energía industrial
-
-![](/recursos/energia/mapa_aprov_energia.png)
-
-#### 1.3.7 Zonas de exclusión
-
-**Tabla de exclusión general del sector energía industrial**
-
-ID | Cobertura
--- | --
 4 | Asentamiento humano
 6 | Cuerpo de agua
 7 | Manglar
 13 | Tular
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
+17 | ND
 
-![](/recursos/energia/mapa_exclusion_energia.png)
+![](/recursos/mineria/mapa_exclusion_min.png)
 
-#### 1.3.8 Mapa de aptitud de energía industrial
+#### 1.3.1.2 Mapa de aptitud de minería de arcillas
 
-![](/recursos/energia/mapa_aptitud_energia.png)
+![](/recursos/mineria/mapa_aptitud_min_arcilla.png)
 
-**Pesos globales de los atributos del sector energía industrial**
+**Pesos globales de los atributos de minería de arcillas**
 
-Fuente de energía | Criterio | Peso
--- | -- | --
-Gas natural | Distancia del gasoducto a las zonas industriales | 0.274
-Hidrocarburos líquidos | Distancia a carreteras | 0.256
-Hidrocarburos líquidos | Distancia a localidades | 0.138
-Solar | Distancia a red eléctrica | 0.091
-Gas natural | Distancia de localidades al gasoducto | 0.065
-Eólica | Velocidad a 120 m de altura | 0.057
-Biomasa | Distancia a sitios de disposición final | 0.026
-Eólica | Distancia a la red eléctrica | 0.020
-Solar | Tipo de cobertura | 0.018
-Solar | Tenencia de la tierra | 0.018
-Eólica | Tipo de cobertura | 0.012
-Biomasa | Distancia a granjas porcícolas | 0.010
-Eólica | Distancia a localidades | 0.004
-Eólica | Distancia a carreteras | 0.004
-Biomasa | Residuos agrícolas forestales | 0.002
+Criterio | Peso
+-- | --
+Tipo de suelo | 0.335
+Nivel freático | 0.223
+Localidades | 0.140
+Caminos | 0.107
+Electricidad | 0.092
+Tipo de cobertura | 0.062
+Minas | 0.040
 
 **Área por categoría de aptitud**
 
-Categoría | Km² | Porcentaje del estado
+Categoría | km² | Porcentaje del   estado
 -- | --: | --:
-Muy alta | 617.2 | 2
-Alta | 2080.0 | 5
-Moderada | 9211.1 | 23
-Baja | 17249.7 | 44
-Muy baja | 7959.2 | 20
-Nula | 2419.4 | 6
+Muy alta | 2003.2 | 5
+Alta | 14019.6 | 35
+Moderada | 15223.6 | 39
+Baja | 5674.9 | 14
+Muy baja | 189.3 | 0
+Nula | 2426.0 | 6
 
-#### 1.3.9 Sensibilidad de atributos ambientales del sector energía industrial
+#### 1.3.2 Sensibilidad de atributos ambientales de minería de arcillas
 
-![](/recursos/energia/fi_analisis_sensibilidad_energia.png) --->
+![](/recursos/mineria/fi_analisis_sensibilidad_mineria_arcilla.png)
 
-<!--### Energía comunitaria
+#### 1.3.3 Mapa de aptitud de minería de arenas
 
-Fuentes de energía utilizadas en las comunidades.
+#### 1.3.3.1 Zonas de exclusión de minería de arenas
 
-Criterio | Definición
+**Insumos**
+
+Capa | Uso del suelo y vegetación
 -- | --
-Biomasa comunitaria | Uso de leña y carbón vegetal como combustible.
-Eólica comunitaria | Generación de energía en las comunidades, a través de la energía del viento.
-Solar comunitaria | Generación distribuída de energía en las comunidades, a través de la energía solar.
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
 
-##### Biomasa comunitaria
+**Tabla de exclusión del sector minería**
 
-Uso de leña y carbón vegetal como combustible.
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
+17 | ND
 
-##### Eólica comunitaria
+![](/recursos/mineria/mapa_exclusion_min.png)
 
-Generación de energía en las comunidades, a través de la energía del viento.
+#### 1.3.3.2 Mapa de aptitud de minería de arenas
 
-##### Solar comunitaria
+![](/recursos/mineria/mapa_aptitud_min_arena.png)
 
-Generación distribuída de energía en las comunidades, a través de la energía solar.
+**Pesos globales de los atributos de minería de arenas**
 
+Criterio | Peso
+-- | --
+Tipo de suelo | 0.335
+Nivel freático | 0.223
+Localidades | 0.140
+Caminos | 0.107
+Electricidad | 0.092
+Tipo de cobertura | 0.062
+Minas | 0.040
 
-<!-- .. csv-table::
-   :file: recursos/tabla_c_biofisicos_silvopastoril.csv
-   :header-rows: 1
-   :align: center -->
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 2208.4 | 6
+Alta | 18923.7 | 48
+Moderada | 13549.8 | 34
+Baja | 2411.8 | 6
+Muy baja | 16.9 | 0
+Nula | 2426.0 | 6
+
+#### 1.3.4 Sensibilidad de atributos ambientales de minería de arenas
+
+![](/recursos/mineria/fi_analisis_sensibilidad_mineria_arena.png)
+
+#### 1.3.5 Mapa de aptitud de minería de rocas con extracción en seco
+
+#### 1.3.5.1 Zonas de exclusión de minería de rocas con extracción en seco
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión del sector minería**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
+17 | ND
+
+![](/recursos/mineria/mapa_exclusion_min.png)
+
+#### 1.3.5.2 Mapa de aptitud de minería de rocas con extracción en seco
+
+![](/recursos/mineria/mapa_aptitud_min_rosec.png)
+
+**Pesos globales de los atributos de minería de rocas con extracción en seco**
+
+Criterio | Peso
+-- | --
+Nivel freático | 0.387
+Tipo de suelo | 0.174
+Localidades | 0.140
+Caminos | 0.107
+Electricidad | 0.092
+Tipo de cobertura | 0.058
+Minas | 0.040
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 5777.1 | 15
+Alta | 14206.0 | 36
+Moderada | 13048.0 | 33
+Baja | 4038.6 | 10
+Muy baja | 40.9 | 0
+Nula | 2426.0 | 6
+
+#### 1.3.6 Sensibilidad de atributos ambientales de rocas con extracción en seco
+
+![](/recursos/mineria/fi_analisis_sensibilidad_mineria_rocas_secas.png)
+
+#### 1.3.7 Mapa de aptitud de minería de rocas con extracción en húmedo
+
+#### 1.3.7.1 Zonas de exclusión de minería de rocas con extracción en húmedo
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión del sector minería**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
+17 | ND
+
+![](/recursos/mineria/mapa_exclusion_min.png)
+
+#### 1.3.7.2 Mapa de aptitud de minería de rocas con extracción en húmedo
+
+![](/recursos/mineria/mapa_aptitud_min_rohum.png)
+
+**Pesos globales de los atributos de minería de rocas con extracción en húmedo**
+
+Criterio | Peso
+-- | --
+Nivel freático | 0.387
+Tipo de suelo | 0.174
+Localidades | 0.140
+Caminos | 0.107
+Electricidad | 0.092
+Tipo de cobertura | 0.058
+Minas | 0.040
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 13851.9 | 35
+Alta | 12137.3 | 31
+Moderada | 1897.6 | 5
+Baja | 5476.0 | 14
+Muy baja | 3747.8 | 9
+Nula | 2426.0 | 6
+
+#### 1.3.8 Sensibilidad de atributos ambientales de rocas con extracción en húmedo
+
+![](/recursos/mineria/fi_analisis_sensibilidad_mineria_rocas_humedas.png)
