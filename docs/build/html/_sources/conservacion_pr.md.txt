@@ -219,10 +219,10 @@ Distribución agregada de especies melíferas como indicador del servicio ambien
 
 Capa | Riqueza melífera
 -- | --
-Fuente | Riqueza melífera SEDUMA, con información de la base de datos de especies   de flora integrada para el Estudio de Biodiversidad y Desarrollo Humano en   Yucatán. CICY, PPD-FMAM, CONABIO y SEDUMA
+Fuente | Riqueza melífera SEDUMA, con información de la base de datos de especies de flora integrada para el Estudio de Biodiversidad y Desarrollo Humano en Yucatán. CICY, PPD-FMAM, CONABIO y SEDUMA
 Año | 2005
 Escala | Sin dato
-Unidades | Número de especies/sitio
+Unidades | Número de especies
 
 **Parámetros de la función de valor**
 

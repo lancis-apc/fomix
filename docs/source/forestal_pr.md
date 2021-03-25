@@ -182,6 +182,45 @@ Autorizaciones de aprovechamiento forestal vigentes.
 
 **Insumos**
 
+Capa | Aprovechamiento de recursos forestales  maderables
+-- | --
+Fuente | [1] Polígonos de municipios. División política municipal INEGI; [2] Datos   de indicador. Aprovechamientos forestales maderables y no maderables vigentes   en el estado de Yucatán y [3] Conjunto de datos vectoriales de la carta de   Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | [1] 2018; [2] 2021; [3] 2017
+Escala | [1] [3] 1:250,000
+Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+Municipio | FV
+-- | --
+Tekax | 1.00
+Tetiz | 0.50
+Tzucacab | 0.50
+Yaxcabá | 0.50
+Cantamayec | 0.25
+Chichimilá | 0.25
+Cenotillo | 0.25
+Tizimín | 0.25
+Calotmul | 0.25
+Tinum | 0.25
+Kaua | 0.25
+Muna | 0.25
+Halachó | 0.25
+Dzitás | 0.25
+Santa Elena | 0.25
+Kopomá | 0.25
+Valladolid | 0.25
+Tunkás | 0.25
+Maxcanú | 0.25
+Peto | 0.25
+Chocholá | 0.25
+Sotuta | 0.25
+Sudzal | 0.25
+
+**Función de valor de aprovechamiento**
+
+![](/recursos/forestal/mapa_fv_mad_socio_aprovechamiento.png)
+
 ##### 1.2.2.2 Mercados
 
 Cercanía a las principales localidades en las que se venden los recursos maderables.
@@ -289,6 +328,21 @@ Distancia a centros de almacenamiento y transformación.
 
 **Insumos**
 
+Capa | Distancia a centros de almacenamiento
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Centros de almacenamiento y transformación de materias   primas forestales CATMPF en Yucatán con información en el Sistema Nacional de   Gestión Forestal SEMARNAT
+Año | [1] 2020; [2] 2021
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/forestal/fi_fv_mad_infra_d_centros_almacenamiento.png)
+
+**Función de valor de centros de almacenamiento**
+
+![](/recursos/forestal/mapa_fv_mad_infra_d_centros_almacenamiento.png)
+
 ##### 1.2.3.3 Comunicación
 
 Distancia a carreteras, caminos rurales, veredas (red de caminos primarios y secundarios).
@@ -309,6 +363,70 @@ Unidades | Kilómetros
 **Función de valor de comunicación**
 
 ![](/recursos/forestal/mapa_fv_for_mad_infra_d_caminos.png)
+
+### 1.3 Mapa de aptitud
+
+#### 1.3.1 Mapa de aptitud de aprovechamiento forestal versión 1
+
+#### 1.3.1.1 Zonas de exclusión de aprovechamiento forestal versión 1
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión del aprovechamiento forestal **
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+12 | Sin vegetación
+14 | Tular
+15 | Vegetación de duna costera
+16 | Vegetación de petén
+17 | Vegetación halófila hidrófila
+18 | NA
+
+![](/recursos/mineria/mapa_exclusion_min.png)
+
+#### 1.3.1.2 Mapa de aptitud de minería de arcillas
+
+![](/recursos/mineria/mapa_aptitud_min_arcilla.png)
+
+**Pesos globales de los atributos de minería de arcillas**
+
+Criterio | Peso
+-- | --
+Tipo de suelo | 0.335
+Nivel freático | 0.223
+Localidades | 0.140
+Caminos | 0.107
+Electricidad | 0.092
+Tipo de cobertura | 0.062
+Minas | 0.040
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 2003.2 | 5
+Alta | 14019.6 | 35
+Moderada | 15223.6 | 39
+Baja | 5674.9 | 14
+Muy baja | 189.3 | 0
+Nula | 2426.0 | 6
+
+#### 1.3.2 Sensibilidad de atributos ambientales de minería de arcillas
+
+![](/recursos/mineria/fi_analisis_sensibilidad_mineria_arcilla.png)
 
 ## 2. Aprovechamiento forestal no maderable
 
@@ -484,6 +602,26 @@ Autorizaciones de aprovechamiento forestal vigentes.
 
 **Insumos**
 
+Capa | Aprovechamiento de recursos forestales no   maderables
+-- | --
+Fuente | [1] Polígonos de municipios. División política municipal INEGI; [2] Datos   de indicador. Aprovechamientos forestales maderables y no maderables vigentes   en el estado de Yucatán y [3] Conjunto de datos vectoriales de la carta de   Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | [1] 2018; [2] 2021; [3] 2017
+Escala | [1] [3] 1:250,000
+Unidades | Adimensional
+
+**Parámetros de la función de valor**
+
+Municipio | FV
+-- | --
+Kinchil | 1.00
+Tekax | 0.50
+Halachó | 0.25
+Tzucacab | 0.25
+
+**Función de valor de aprovechamiento**
+
+![](/recursos/forestal/mapa_fv_nomad_socio_aprovechamiento.png)
+
 ##### 2.2.2.2 Mercados
 
 Cercanía a las principales localidades en las que se venden los recursos no maderables.
@@ -583,13 +721,28 @@ Unidades | Kilómetros
 
 **Función de valor de abastecimiento**
 
-![](/recursos/forestal/mapa_fv_for_nomad_infra_infra_d_localidades)
+![](/recursos/forestal/mapa_fv_for_nomad_infra_infra_d_localidades.png)
 
 ##### 2.2.3.2 Centros de almacenamiento
 
 Distancia a centros de almacenamiento y transformación.
 
 **Insumos**
+
+Capa | Distancia a centros de almacenamiento
+-- | --
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Centros de almacenamiento y transformación de materias   primas forestales CATMPF en Yucatán con información en el Sistema Nacional de   Gestión Forestal SEMARNAT
+Año | [1] 2020; [2] 2021
+Escala | Sin dato
+Unidades | Kilómetros
+
+**Parámetros de la función de valor**
+
+![](/recursos/forestal/fi_fv_nomad_infra_d_centros_almacenamiento.png)
+
+**Función de valor de centros de almacenamiento**
+
+![](/recursos/forestal/mapa_fv_nomad_infra_d_centros_almacenamiento.png)
 
 ##### 2.2.3.3 Comunicación
 
