@@ -97,6 +97,13 @@
 <li class="toctree-l4"><a class="reference internal" href="#infraestructura">1.2.3 Infraestructura</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#mapa-de-aptitud">1.3 Mapa de aptitud</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mapa-de-aptitud-de-aprovechamiento-forestal-version-1">1.3.1 Mapa de aptitud de aprovechamiento forestal versión 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zonas-de-exclusion-de-aprovechamiento-forestal-version-1">1.3.1.1 Zonas de exclusión de aprovechamiento forestal versión 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mapa-de-aptitud-de-mineria-de-arcillas">1.3.1.2 Mapa de aptitud de minería de arcillas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sensibilidad-de-atributos-ambientales-de-mineria-de-arcillas">1.3.2 Sensibilidad de atributos ambientales de minería de arcillas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#aprovechamiento-forestal-no-maderable">2. Aprovechamiento forestal no maderable</a><ul>
@@ -719,6 +726,135 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <h5>1.2.2.1 Aprovechamiento<a class="headerlink" href="#aprovechamiento" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Autorizaciones de aprovechamiento forestal vigentes.</p>
 <p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Aprovechamiento de recursos forestales  maderables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Polígonos de municipios. División política municipal INEGI; [2] Datos   de indicador. Aprovechamientos forestales maderables y no maderables vigentes   en el estado de Yucatán y [3] Conjunto de datos vectoriales de la carta de   Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2018; [2] 2021; [3] 2017</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>[1] [3] 1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Municipio</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tekax</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>Tetiz</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>Tzucacab</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>Yaxcabá</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>Cantamayec</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Chichimilá</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Cenotillo</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Tizimín</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Calotmul</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Tinum</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Kaua</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Muna</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Halachó</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Dzitás</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Santa Elena</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Kopomá</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Valladolid</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Tunkás</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Maxcanú</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Peto</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Chocholá</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Sotuta</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Sudzal</td>
+<td>0.25</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de aprovechamiento</strong></p>
+<p><img alt="_images/mapa_fv_mad_socio_aprovechamiento.png" src="_images/mapa_fv_mad_socio_aprovechamiento.png" /></p>
 </div>
 <div class="section" id="mercados">
 <h5>1.2.2.2 Mercados<a class="headerlink" href="#mercados" title="Enlazar permanentemente con este título">¶</a></h5>
@@ -915,6 +1051,35 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <h5>1.2.3.2 Centros de almacenamiento<a class="headerlink" href="#centros-de-almacenamiento" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia a centros de almacenamiento y transformación.</p>
 <p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a centros de almacenamiento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Centros de almacenamiento y transformación de materias   primas forestales CATMPF en Yucatán con información en el Sistema Nacional de   Gestión Forestal SEMARNAT</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2020; [2] 2021</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_mad_infra_d_centros_almacenamiento.png" src="_images/fi_fv_mad_infra_d_centros_almacenamiento.png" /></p>
+<p><strong>Función de valor de centros de almacenamiento</strong></p>
+<p><img alt="_images/mapa_fv_mad_infra_d_centros_almacenamiento.png" src="_images/mapa_fv_mad_infra_d_centros_almacenamiento.png" /></p>
 </div>
 <div class="section" id="comunicacion">
 <h5>1.2.3.3 Comunicación<a class="headerlink" href="#comunicacion" title="Enlazar permanentemente con este título">¶</a></h5>
@@ -950,6 +1115,183 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <p><strong>Función de valor de comunicación</strong></p>
 <p><img alt="_images/mapa_fv_for_mad_infra_d_caminos.png" src="_images/mapa_fv_for_mad_infra_d_caminos.png" /></p>
 </div>
+</div>
+</div>
+<div class="section" id="mapa-de-aptitud">
+<h3>1.3 Mapa de aptitud<a class="headerlink" href="#mapa-de-aptitud" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="mapa-de-aptitud-de-aprovechamiento-forestal-version-1">
+<h4>1.3.1 Mapa de aptitud de aprovechamiento forestal versión 1<a class="headerlink" href="#mapa-de-aptitud-de-aprovechamiento-forestal-version-1" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="zonas-de-exclusion-de-aprovechamiento-forestal-version-1">
+<h4>1.3.1.1 Zonas de exclusión de aprovechamiento forestal versión 1<a class="headerlink" href="#zonas-de-exclusion-de-aprovechamiento-forestal-version-1" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>2017</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>descripcio</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p>**Tabla de exclusión del aprovechamiento forestal **</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Acuícola</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Sin vegetación</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Tular</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de duna costera</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación de petén</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Vegetación halófila hidrófila</td>
+</tr>
+<tr>
+<td>18</td>
+<td>NA</td>
+</tr>
+</tbody>
+</table><p><img alt="_images/mapa_exclusion_min.png" src="_images/mapa_exclusion_min.png" /></p>
+</div>
+<div class="section" id="mapa-de-aptitud-de-mineria-de-arcillas">
+<h4>1.3.1.2 Mapa de aptitud de minería de arcillas<a class="headerlink" href="#mapa-de-aptitud-de-mineria-de-arcillas" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><img alt="_images/mapa_aptitud_min_arcilla.png" src="_images/mapa_aptitud_min_arcilla.png" /></p>
+<p><strong>Pesos globales de los atributos de minería de arcillas</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tipo de suelo</td>
+<td>0.335</td>
+</tr>
+<tr>
+<td>Nivel freático</td>
+<td>0.223</td>
+</tr>
+<tr>
+<td>Localidades</td>
+<td>0.140</td>
+</tr>
+<tr>
+<td>Caminos</td>
+<td>0.107</td>
+</tr>
+<tr>
+<td>Electricidad</td>
+<td>0.092</td>
+</tr>
+<tr>
+<td>Tipo de cobertura</td>
+<td>0.062</td>
+</tr>
+<tr>
+<td>Minas</td>
+<td>0.040</td>
+</tr>
+</tbody>
+</table><p><strong>Área por categoría de aptitud</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Categoría</th>
+<th align="right">km²</th>
+<th align="right">Porcentaje del   estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Muy alta</td>
+<td align="right">2003.2</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td>Alta</td>
+<td align="right">14019.6</td>
+<td align="right">35</td>
+</tr>
+<tr>
+<td>Moderada</td>
+<td align="right">15223.6</td>
+<td align="right">39</td>
+</tr>
+<tr>
+<td>Baja</td>
+<td align="right">5674.9</td>
+<td align="right">14</td>
+</tr>
+<tr>
+<td>Muy baja</td>
+<td align="right">189.3</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>Nula</td>
+<td align="right">2426.0</td>
+<td align="right">6</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="sensibilidad-de-atributos-ambientales-de-mineria-de-arcillas">
+<h4>1.3.2 Sensibilidad de atributos ambientales de minería de arcillas<a class="headerlink" href="#sensibilidad-de-atributos-ambientales-de-mineria-de-arcillas" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><img alt="_images/fi_analisis_sensibilidad_mineria_arcilla.png" src="_images/fi_analisis_sensibilidad_mineria_arcilla.png" /></p>
 </div>
 </div>
 </div>
@@ -1478,6 +1820,59 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <h5>2.2.2.1 Aprovechamiento<a class="headerlink" href="#id9" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Autorizaciones de aprovechamiento forestal vigentes.</p>
 <p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Aprovechamiento de recursos forestales no   maderables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Polígonos de municipios. División política municipal INEGI; [2] Datos   de indicador. Aprovechamientos forestales maderables y no maderables vigentes   en el estado de Yucatán y [3] Conjunto de datos vectoriales de la carta de   Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2018; [2] 2021; [3] 2017</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>[1] [3] 1:250,000</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Municipio</th>
+<th>FV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kinchil</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>Tekax</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>Halachó</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Tzucacab</td>
+<td>0.25</td>
+</tr>
+</tbody>
+</table><p><strong>Función de valor de aprovechamiento</strong></p>
+<p><img alt="_images/mapa_fv_nomad_socio_aprovechamiento.png" src="_images/mapa_fv_nomad_socio_aprovechamiento.png" /></p>
 </div>
 <div class="section" id="id10">
 <h5>2.2.2.2 Mercados<a class="headerlink" href="#id10" title="Enlazar permanentemente con este título">¶</a></h5>
@@ -1668,12 +2063,41 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </table><p><strong>Parámetros de la función de valor</strong></p>
 <p><img alt="_images/fi_fv_mad_infra_infra_d_localidades.png" src="_images/fi_fv_mad_infra_infra_d_localidades.png" /></p>
 <p><strong>Función de valor de abastecimiento</strong></p>
-<p><img alt="recursos/forestal/mapa_fv_for_nomad_infra_infra_d_localidades" src="recursos/forestal/mapa_fv_for_nomad_infra_infra_d_localidades" /></p>
+<p><img alt="_images/mapa_fv_for_nomad_infra_infra_d_localidades.png" src="_images/mapa_fv_for_nomad_infra_infra_d_localidades.png" /></p>
 </div>
 <div class="section" id="id14">
 <h5>2.2.3.2 Centros de almacenamiento<a class="headerlink" href="#id14" title="Enlazar permanentemente con este título">¶</a></h5>
 <p>Distancia a centros de almacenamiento y transformación.</p>
 <p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Distancia a centros de almacenamiento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Centros de almacenamiento y transformación de materias   primas forestales CATMPF en Yucatán con información en el Sistema Nacional de   Gestión Forestal SEMARNAT</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2020; [2] 2021</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Kilómetros</td>
+</tr>
+</tbody>
+</table><p><strong>Parámetros de la función de valor</strong></p>
+<p><img alt="_images/fi_fv_nomad_infra_d_centros_almacenamiento.png" src="_images/fi_fv_nomad_infra_d_centros_almacenamiento.png" /></p>
+<p><strong>Función de valor de centros de almacenamiento</strong></p>
+<p><img alt="_images/mapa_fv_nomad_infra_d_centros_almacenamiento.png" src="_images/mapa_fv_nomad_infra_d_centros_almacenamiento.png" /></p>
 </div>
 <div class="section" id="id15">
 <h5>2.2.3.3 Comunicación<a class="headerlink" href="#id15" title="Enlazar permanentemente con este título">¶</a></h5>
