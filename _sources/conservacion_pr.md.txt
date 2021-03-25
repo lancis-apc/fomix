@@ -7,7 +7,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 Promover la conservación, la protección y el aprovechamiento sustentable de los elementos biofísicos y bioculturales; la preservación de sitios prioritarios y la restauración de sitios degradados; para garantizar la funcionalidad y conectividad de los ecosistemas y la provisión de servicios ambientales, respetando los usos y costumbres de las comunidades indígenas mediante el fomento de mejores prácticas y la participación de comunidades locales.
 
-[Lista de participantes]()
+[Lista de participantes](https://www.dropbox.com/s/d67uabsa4we9daj/lista_asistencia_conservaci%C3%B3n.pdf?dl=0)
 
 ### 1.1 Modelo de decisión
 
@@ -40,6 +40,15 @@ Biomasa aérea | Biomasa vegetal arbórea
 ###### 1.2.1.1.1 Zonas de recarga
 
 Zonas de recarga de acuífero.
+
+**Insumos**
+
+Capa | Recarga del acuífero
+-- | --
+Fuente | Recarga del acuífero Yucatán. Amigos de Sian Kaan - Aarón Siller
+Año | ?
+Escala | ?
+Unidades | Milímetros
 
 **Parámetros de la función de valor**
 
@@ -118,10 +127,10 @@ Biomasa vegetal arbórea.
 
 Capa | Biomasa aérea
 -- | --
-Fuente | Biomasa aérea promedio - predicción CONAFOR  (con datos del INFyS 2009-2014)
-Año | 2014
-Escala | Sin dato
-Unidades | Toneladas/hectárea
+Fuente | Biomasa aérea CICY - José Luis Hernández Stefanoni
+Año | 2021
+Escala | ?
+Unidades | Megagramos/hectárea
 
 **Parámetros de la función de valor**
 
@@ -377,8 +386,8 @@ Presencia de sitios arqueológicos (lugares con vestigios de civilizaciones o cu
 
 Capa | Sitios arqueológicos
 -- | --
-Fuente | [1] Sitios arqueológicos INAH; [2] Mapa turístico del estado de Yucatán   Gobierno de Yucatán
-Año | [1] 2012; [2] 2021
+Fuente | [1] Sitios arqueológicos INAH; [2] Mapa turístico del estado de Yucatán   Gobierno de Yucatán; [3] Sitios de patrimonio arqueológico IMDUT con datos   del INAH e INEGI
+Año | [1] 2012; [2] 2021; [3] Sin dato
 Escala | Sin dato
 Unidades | Adimensional
 
@@ -452,6 +461,15 @@ Unidades | Adimensional
 ###### 1.2.1.4.2.4 UMA
 
 Presencia de Unidades de Manejo Ambiental (UMA).
+
+**Insumos**
+
+Capa | Unidades de Manejo Ambiental (UMAS)
+-- | --
+Fuente | Características de las UMAS
+Año | ?
+Escala | Sin dato
+Unidades | Adimensional
 
 **Función de valor de UMA**
 
@@ -593,6 +611,15 @@ ID | Categoría | Importancia | FV
 
 Zonas de recarga de acuífero.
 
+**Insumos**
+
+Capa | Recarga del acuífero
+-- | --
+Fuente | Recarga del acuífero Yucatán. Amigos de Sian Kaan - Aarón Siller
+Año | ?
+Escala | ?
+Unidades | Milímetros
+
 **Parámetros de la función de valor**
 
 ![](/recursos/conservacion/fi_fv_con_fun_hid_recarga_acuifero.png)
@@ -717,9 +744,62 @@ Unidades | Adimensional
 
 ### 1.3 Mapa de aptitud
 
-#### 1.3.1 Mapa de aptitud de conservación
+#### 1.3.1 Mapa de aptitud de servicios ambientales de soporte
 
-![](/recursos/conservacion/.png)
+![](/recursos/conservacion/mapa_aptitud_con_sa_soporte.png)
+
+#### 1.3.2 Mapa de aptitud de servicios ambientales de regulación
+
+![](/recursos/conservacion/mapa_aptitud_con_sa_regulacion.png)
+
+#### 1.3.3 Mapa de aptitud de servicios ambientales de provisión
+
+![](/recursos/conservacion/mapa_aptitud_con_sa_provision.png)
+
+#### 1.3.4 Mapa de aptitud de servicios ambientales culturales
+
+![](/recursos/conservacion/mapa_aptitud_con_sa_culturales.png)
+
+#### 1.3.5 Mapa de aptitud de funcionalidad ecosistémica
+
+![](/recursos/conservacion/mapa_aptitud_funcionalidad_ecosistemica.png)
+
+#### 1.3.6 Mapa de aptitud de conservación
+
+![](/recursos/conservacion/mapa_aptitud_con.png)
+
+**Pesos globales de los atributos del sector conservación**
+
+Criterio | Subcriterio | Peso
+-- | -- | --
+Fragilidad ecosistémica | Integridad ecológica | 0.136
+Regulación | Cobertura forestal | 0.112
+Soporte | Zonas de recarga | 0.087
+Vulnerabilidad hídrica | Vulnerabilidad intrínseca | 0.075
+Fragilidad kárstica | Densidad de dolinas | 0.074
+Soporte | Cobertura forestal | 0.065
+Vulnerabilidad hídrica | Zonas de recarga | 0.061
+Provisión | Cobertura | 0.055
+Regulación | Captura de carbono | 0.050
+Fragilidad ecosistémica | Distancia a ANP y sitios Ramsar | 0.046
+Soporte | Riqueza forestal | 0.030
+Vulnerabilidad hídrica | Humedales | 0.025
+Fragilidad kárstica | Cenotes | 0.025
+Vulnerabilidad hídrica | Cenotes | 0.024
+Fragilidad ecosistémica | AICAS | 0.021
+Provisión | Cuerpos de agua | 0.018
+Provisión | Parientes silvestres de cultivo | 0.018
+Regulación | Especies melíferas | 0.016
+Soporte | Biomasa aérea | 0.016
+Vulnerabilidad hídrica | Reforestación | 0.013
+Culturales - biofísicos sociales | Cenotes y grutas | 0.008
+Culturales - biofísicos sociales | Población indígena | 0.008
+Culturales - biofísicos sociales | Zonas arqueológicas | 0.008
+Culturales - político administrativo | ANP bioculturales | 0.002
+Culturales - político administrativo | ADVC | 0.002
+Culturales - político administrativo | Áreas de uso común | 0.001
+Culturales - político administrativo | UMA | 0.001
+Culturales - político administrativo | PSA | 0.001
 
 **Área por categoría de aptitud**
 
