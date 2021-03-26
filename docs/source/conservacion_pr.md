@@ -130,7 +130,7 @@ Capa | Biomasa aérea
 Fuente | Biomasa aérea CICY - José Luis Hernández Stefanoni
 Año | 2021
 Escala | ?
-Unidades | Megagramos/hectárea
+Unidades | Toneladas/hectárea
 
 **Parámetros de la función de valor**
 
@@ -711,11 +711,11 @@ Número de dolinas por hectárea.
 
 Capa | Densidad de dolinas
 -- | --
-Fuente | Densidad de dolinas. Atlas de Peligros por Fenómenos Naturales del Estado de Yucatán. Servicio Geológico Mexicano
+Fuente | Densidad de dolinas. Atlas de Peligros por Fenómenos del Estado de   Yucatán. Servicio Geológico Mexicano
 Año | 2013
 Campo | GRADO
 Escala | Sin dato
-Unidades | Adimensional
+Unidades | Número de dolinas/hectárea
 
 **Parámetros de la función de valor**
 
