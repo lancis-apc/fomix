@@ -320,7 +320,7 @@ Unidades | Kilómetros
 
 **Función de valor de abastecimiento**
 
-![](/recursos/forestal/mapa_fv_mad_infra_infra_d_localidades.png)
+![](/recursos/forestal/mapa_fv_for_mad_infra_infra_d_localidades.png)
 
 ##### 1.2.3.2 Centros de almacenamiento
 
