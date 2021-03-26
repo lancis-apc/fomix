@@ -32,14 +32,14 @@ Procesos ecológicos necesarios para los otros tres tipos de servicios ambiental
 
 Atributos | Definición
 -- | --
-Zonas de recarga | Zonas de recarga de acuífero.
+Zonas de recarga | Zonas de recarga de acuífero como indicador de ciclo del agua.
 Cobertura forestal | Tipo de cobertura forestal como indicador de productividad primaria.
-Riqueza forestal | Número de taxones como indicador de productividad primaria.
-Biomasa aérea | Biomasa vegetal arbórea
+Riqueza forestal | Número de taxones forestales como indicador de productividad primaria.
+Biomasa aérea | Biomasa vegetal arbórea como indicador de productividad primaria.
 
 ###### 1.2.1.1.1 Zonas de recarga
 
-Zonas de recarga de acuífero.
+Zonas de recarga de acuífero como indicador de ciclo del agua.
 
 **Insumos**
 
@@ -100,7 +100,7 @@ ID | Categoría | Importancia | FV
 
 ###### 1.2.1.1.3 Riqueza forestal
 
-Número de taxones como indicador de productividad primaria.
+Número de taxones forestales como indicador de productividad primaria.
 
 **Insumos**
 
@@ -121,7 +121,7 @@ Unidades | Taxones/UMP
 
 ###### 1.2.1.1.4 Biomasa aérea
 
-Biomasa vegetal arbórea.
+Biomasa vegetal arbórea como indicador de productividad primaria.
 
 **Insumos**
 
@@ -146,13 +146,13 @@ Procesos ecológicos que mejoran o  hacen posible nuestra vida, tales como: mej
 
 Atributos | Definición
 -- | --
-Cobertura | Tipo de cobertura como indicador de productividad primaria.
-Captura de carbono | Captura de carbono como indicador de calidad del aire.
-Especies melíferas | Distribución agregada de especies melíferas como indicador del servicio ambiental de regulación de polinización.
+Cobertura | Tipo de cobertura como indicador   de mantenimiento de fertilidad del suelo, control de la erosión, control de   enfermedades y reducción de daños ante catástrofes naturales.
+Captura de carbono | Captura de carbono como   indicador de regulación del clima.
+Especies melíferas | Distribución agregada de   especies melíferas como indicador  de   polinización.
 
 ###### 1.2.1.2.1 Cobertura
 
-Tipo de cobertura como indicador de productividad primaria.
+Tipo de cobertura como indicador   de mantenimiento de fertilidad del suelo, control de la erosión, control de   enfermedades y reducción de daños ante catástrofes naturales.
 
 **Insumos**
 
@@ -192,7 +192,7 @@ ID | Categoría | Importancia | FV
 
 ###### 1.2.1.2.2 Captura de carbono
 
-Captura de carbono como indicador de calidad del aire.
+Captura de carbono como indicador de regulación del clima.
 
 **Insumos**
 
@@ -213,7 +213,7 @@ Unidades | Toneladas/hectárea
 
 ###### 1.2.1.2.3 Especies melíferas
 
-Distribución agregada de especies melíferas como indicador del servicio ambiental de regulación de polinización.
+Distribución agregada de especies melíferas como indicador de polinización.
 
 **Insumos**
 
@@ -238,13 +238,13 @@ Productos obtenidos de la naturaleza para su consumo o utilización, ya sea de m
 
 Atributos | Definición
 -- | --
-Cobertura | Vegetación con posible uso o consumo, ya sea directamente o con previo procesamiento.   
-Cuerpos de agua | Presencia de cuerpos de agua no considerados en la capa de cobertura.   
-Parientes silvestres de cultivo | Frecuencia de las siete especies publicadas por CONABIO que se distribuyen potencialmente en menos del 50% del estado. A las áreas de distribución se le eliminaron las áreas de agricultura de riego, los asentamientos humanos y cuerpos de agua.
+Cobertura | Uso de suelo y vegetación como   provisión de alimentos, recursos genéticos y medicinales, materias primas y   combustibles renovables.
+Cuerpos de agua | Provisión de agua para consumo y   uso agrícola. Presencia de cuerpos de agua no considerados en la capa de   cobertura.
+Parientes silvestres de cultivo | Recursos genéticos para   agricultura y biotecnología. Frecuencia de las siete especies publicadas por   CONABIO que se distribuyen potencialmente en menos del 50% del estado. A las   áreas de distribución se le eliminaron las áreas de agricultura de riego, los   asentamientos humanos y cuerpos de agua.
 
 ###### 1.2.1.3.1 Cobertura
 
-Vegetación con posible uso o consumo, ya sea directamente o con previo procesamiento.   
+ Uso de suelo y vegetación como provisión de alimentos, recursos genéticos y medicinales, materias primas y combustibles renovables.
 
 **Insumos**
 
@@ -284,7 +284,7 @@ ID | Categoría | Importancia | FV
 
 ###### 1.2.1.3.2 Cuerpos de agua
 
-Presencia de cuerpos de agua no considerados en la capa de cobertura.
+ Provisión de agua para consumo y uso agrícola. Presencia de cuerpos de agua no considerados en la capa de cobertura.
 
 **Insumos**
 
@@ -301,7 +301,7 @@ Unidades | Adimensional
 
 ###### 1.2.1.3.3 Parientes silvestres de cultivo
 
-Frecuencia de las siete especies publicadas por CONABIO que se distribuyen potencialmente en menos del 50% del estado. A las áreas de distribución se le eliminaron las áreas de agricultura de riego, los asentamientos humanos y cuerpos de agua.
+Recursos genéticos para agricultura y biotecnología. Frecuencia de las siete especies publicadas por CONABIO que se distribuyen potencialmente en menos del 50% del estado. A las áreas de distribución se le eliminaron las áreas de agricultura de riego, los   asentamientos humanos y cuerpos de agua.
 
 **Insumos**
 
@@ -401,7 +401,7 @@ Atributos administrativos y de gestión relacionados con los servicios ambiental
 
 Atributos | Definición
 -- | --
-ANP bioculturales | Presencia de áreas naturales protegidas con enfoque biocultural
+ANP bioculturales | Presencia de áreas naturales   protegidas con enfoque biocultural (Reserva Biocultural del Puuc, Kabah y San Juan BautistaTabí y Anexa Sacnité).
 ADVC | Presencia de Áreas Destinadas Voluntariamente a la Conservación (ADVC).
 Áreas de uso común | Presencia de áreas ejidales de uso común
 UMA | Presencia de Unidades de Manejo Ambiental (UMA)
@@ -409,7 +409,7 @@ PSA | Presencia de proyectos de pago por servicios ambientales
 
 ###### 1.2.1.4.2.1 ANP bioculturales
 
-Presencia de áreas naturales protegidas con enfoque biocultural.
+Presencia de áreas naturales protegidas con enfoque biocultural (Reserva Biocultural del Puuc, Kabah y San Juan BautistaTabí y Anexa Sacnité).
 
 **Insumos**
 
@@ -508,13 +508,13 @@ Estado de conservación y salud de los ecosistemas y su capacidad de resiliencia
 
 Atributos | Definición
 -- | --
-Integridad ecológica | Índice de Integridad ecológica.  
-Distancia a ANP y sitios Ramsar | Distancia con ANP, incluye las ANP  
+Integridad ecológica | Índice de Integridad ecológica   para depredadores superiores, como la capacidad  para mantener procesos ecológicos   auto-organizados y estables en sitemas naturales (Mora, 2017).
+Distancia a ANP y sitios Ramsar | Presencia y distancia a las   áreas naturales protegidas (federales, estatales, municipales, privadas) y   sitios Ramsar.
 AICAS | Presencia de AICAS fuera de ANP y sitios RAMSAR.
 
 ###### 1.2.2.1.1 Integridad ecológica
 
-Índice de Integridad ecológica.
+Índice de Integridad ecológica para depredadores superiores, como la capacidad para mantener procesos ecológicos auto-organizados y estables en sitemas naturales (Mora, 2017).
 
 **Insumos**
 
@@ -535,7 +535,7 @@ Unidades | Adimensional
 
 ###### 1.2.2.1.2 Distancia a ANP y sitios Ramsar
 
-Distancia con ANP, incluye las ANP.
+Presencia y distancia a las áreas naturales protegidas (federales, estatales, municipales, privadas) y sitios Ramsar.
 
 **Insumos**
 
@@ -575,9 +575,9 @@ Atributos | Definición
 -- | --
 Vulnerabilidad intrínseca | Vulnerabilidad intrínseca a la contaminación del acuífero kárstico.   
 Zonas de recarga | Zonas de recarga de acuífero.
-Humedales | Presencia de cuerpos de agua, excluye cenotes y estanques artificiales.  
-Cenotes | Presencia de cenotes.   
-Reforestación | Zonas cuyo uso de suelo cambió en los últimos 12 años, potenciales a ser reforestadas.
+Humedales | Presencia de cuerpos de agua   (excluye cenotes y estanques artificiales).
+Cenotes | Presencia de cenotes, dolinas,   poljes y uvalas.
+Reforestación | Zonas potenciales a ser   reforestadas o restauradas con base en el cambio de cobertura 2002-2014.
 
 ###### 1.2.2.2.1 Vulnerabilidad intrínseca
 
@@ -630,7 +630,7 @@ Unidades | Milímetros
 
 ###### 1.2.2.2.3 Humedales
 
-Presencia de cuerpos de agua, excluye cenotes y estanques artificiales.  
+Presencia de cuerpos de agua (excluye cenotes y estanques artificiales).
 
 **Insumos**
 
@@ -647,7 +647,7 @@ Unidades | Adimensional
 
 ###### 1.2.2.2.4 Cenotes
 
-Presencia de cenotes.
+Presencia de cenotes, dolinas, poljes y uvalas.
 
 **Insumos**
 
@@ -664,7 +664,7 @@ Unidades | Adimensional
 
 ###### 1.2.2.2.5 Reforestación
 
-Zonas cuyo uso de suelo cambió en los últimos 12 años, potenciales a ser reforestadas.
+Zonas potenciales a ser reforestadas o restauradas con base en el cambio de cobertura 2002-2014.
 
 **Insumos**
 

@@ -310,6 +310,7 @@ ID | Categoría
 14 | Vegetación de duna costera
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
+17 | ND
 
 [2] Se seleccionaron las localidades con 2,500 habitantes o más.
 
@@ -649,6 +650,7 @@ ID | Categoría
 1 | Acuícola
 6 | Cuerpo de agua
 16 | Vegetación halófila hidrófila
+17 | ND
 
 [2] Se seleccionaron las localidades con 2,500 habitantes o más.
 

@@ -328,6 +328,7 @@ ID | Categoría
 14 | Vegetación de duna costera
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
+17 | ND
 
 [2] Se utilizaron todas las localidades (urbanas y rurales).
 
@@ -659,6 +660,7 @@ ID | Categoría
 14 | Vegetación de duna costera
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
+17 | ND
 
 [2] Se utilizaron todas las localidades (urbanas y rurales).
 
