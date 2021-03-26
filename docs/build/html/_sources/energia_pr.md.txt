@@ -7,7 +7,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 Garantizar el aprovechamiento sostenible de los recursos energéticos del estado de Yucatán, para asegurar que la población y los sectores productivos tengan acceso a energía asequible, sostenible, confiable y de calidad, en un marco de justicia ambiental que considere criterios de uso sostenible del territorio, certidumbre jurídica y contribuya a una mayor democracia en la gestión de los recursos energéticos públicos y comunes.
 
-[Lista de participantes](https://www.dropbox.com/s/dtqqr653cni8915/lista_asistencia_energia.pdf?dl=0)
+[Lista de participantes](https://www.dropbox.com/s/h8zuorcqva9gr9e/lista_asistencia_energia.pdf?dl=0)
 <!--
 ### Nota aclaratoria
 **Con base en el Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en Materia de Ordenamiento Ecológico,** la Secretaría deberá observar los criterios contenidos en el presente Reglamento y los instrumentos jurídicos que deriven del mismo (Art. 37). <br />
@@ -473,6 +473,7 @@ ID | Cobertura
 13 | Tular
 14 | Vegetación de duna costera
 16 | Vegetación halófila hidrófila
+17 | ND
 
 ![](/recursos/energia/mapa_exclusion.png)
 
@@ -518,6 +519,7 @@ ID | Cobertura
 13 | Tular
 14 | Vegetación de duna costera
 16 | Vegetación halófila hidrófila
+17 | ND
 
 ![](/recursos/energia/mapa_exclusion.png)
 
@@ -563,6 +565,7 @@ ID | Cobertura
 14 | Vegetación de duna costera
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
+17 | ND
 
 ![](/recursos/energia/mapa_exclusion_solar.png)
 
@@ -608,6 +611,7 @@ ID | Cobertura
 13 | Tular
 14 | Vegetación de duna costera
 16 | Vegetación halófila hidrófila
+17 | ND
 
 ![](/recursos/energia/mapa_exclusion.png)
 
@@ -653,6 +657,7 @@ ID | Cobertura
 13 | Tular
 14 | Vegetación de duna costera
 16 | Vegetación halófila hidrófila
+17 | ND
 
 ![](/recursos/energia/mapa_exclusion.png)
 

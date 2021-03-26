@@ -303,7 +303,6 @@ Industria instalada | Distancia de 5 km a localidades con unidades económicas r
 Localidades | Distancia de 5 km a localidades donde se tiene acceso a capital social, servicios y mercado. Se asigna un mayor peso de importancia a las localidades donde hay universidades e instituciones de educación superior con carreras en el campo de informática, computación, sistemas o afines.
 Tenencia | Tenencia de la tierra.
 
-
 ##### 1.2.2.1 Industria instalada
 
 Distancia de 5 km a localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en las categorías (334) Fabricación de equipo de computación, comunicación, medición y de otros equipos, componentes y accesorios electrónicos y (493) Servicios de almacenamiento, así como el Parque Científico Tecnológico de Yucatán.
@@ -441,6 +440,7 @@ ID | Categoría
 14 | Vegetación de duna costera
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
+17 | ND
 
 [2] Se seleccionaron las localidades urbanas y Sisal
 
@@ -969,6 +969,7 @@ ID | Categoría
 14 | Vegetación de duna costera
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
+17 | ND
 
 [2] Se seleccionaron las localidades urbanas y Sisal
 

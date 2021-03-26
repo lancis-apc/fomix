@@ -321,6 +321,7 @@ ID | Categoría
 12 | Tular (VT)
 14 | Vegetación Halófila Hidrófila (VHH)
 15 | Vegetación de Dunas Costeras (VU)
+16 | NA
 
 [2] Se utilizaron todas las localidades (urbanas y rurales).
 
