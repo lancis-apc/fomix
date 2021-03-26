@@ -366,9 +366,9 @@ Unidades | Kilómetros
 
 ### 1.3 Mapa de aptitud
 
-#### 1.3.1 Mapa de aptitud de aprovechamiento forestal versión 1
+#### 1.3.1 Mapa de aptitud de aprovechamiento forestal maderable versión 1
 
-#### 1.3.1.1 Zonas de exclusión de aprovechamiento forestal versión 1
+#### 1.3.1.1 Zonas de exclusión de aprovechamiento forestal maderable versión 1
 
 **Insumos**
 
@@ -380,7 +380,7 @@ Campo | descripcio
 Escala | 1:250,000
 Unidades | Adimensional
 
-**Tabla de exclusión del aprovechamiento forestal **
+**Tabla de exclusión del aprovechamiento forestal maderable**
 
 ID | Categoría
 -- | --
@@ -395,38 +395,106 @@ ID | Categoría
 17 | Vegetación halófila hidrófila
 18 | NA
 
-![](/recursos/mineria/mapa_exclusion_min.png)
+![](/recursos/forestal/mapa_exclusion_for_mad_a.png)
 
-#### 1.3.1.2 Mapa de aptitud de minería de arcillas
+#### 1.3.1.2 Mapa de aptitud de aprovechamiento forestal maderable versión 1
 
-![](/recursos/mineria/mapa_aptitud_min_arcilla.png)
+![](/recursos/forestal/mapa_aptitud_for_mad_a.png)
 
-**Pesos globales de los atributos de minería de arcillas**
+**Pesos globales de los atributos de aprovechamiento forestal maderable versión 1**
 
 Criterio | Peso
 -- | --
-Tipo de suelo | 0.335
-Nivel freático | 0.223
-Localidades | 0.140
-Caminos | 0.107
-Electricidad | 0.092
-Tipo de cobertura | 0.062
-Minas | 0.040
+Tipo de vegetación | 0.185
+Aprovechamiento | 0.170
+Tenencia | 0.167
+Tipo de suelo | 0.155
+Clima | 0.130
+Comunicación | 0.092
+Mercados | 0.033
+Factores de riesgo | 0.030
+Abastecimiento | 0.020
+Centro de almacenamiento | 0.018
 
 **Área por categoría de aptitud**
 
 Categoría | km² | Porcentaje del   estado
 -- | --: | --:
-Muy alta | 2003.2 | 5
-Alta | 14019.6 | 35
-Moderada | 15223.6 | 39
-Baja | 5674.9 | 14
-Muy baja | 189.3 | 0
-Nula | 2426.0 | 6
+Muy alta | 2587.5 | 7
+Alta | 22047.1 | 56
+Moderada | 12212.2 | 31
+Baja | 318.7 | 1
+Muy baja | 82.0 | 0
+Nula | 2289.1 | 6
 
-#### 1.3.2 Sensibilidad de atributos ambientales de minería de arcillas
+#### 1.3.2 Sensibilidad de atributos ambientales de aprovechamiento forestal maderable versión 1
 
-![](/recursos/mineria/fi_analisis_sensibilidad_mineria_arcilla.png)
+![](/recursos/forestal/fi_analisis_sensibilidad_forestal_maderable_a.png)
+
+#### 1.3.3 Mapa de aptitud de aprovechamiento forestal maderable versión 2
+
+#### 1.3.3.1 Zonas de exclusión de aprovechamiento forestal maderable versión 2
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión del aprovechamiento forestal maderable**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+12 | Sin vegetación
+14 | Tular
+15 | Vegetación de duna costera
+16 | Vegetación de petén
+17 | Vegetación halófila hidrófila
+18 | NA
+
+![](/recursos/forestal/mapa_exclusion_for_mad_b.png)
+
+#### 1.3.3.2 Mapa de aptitud de aprovechamiento forestal maderable versión 2
+
+![](/recursos/forestal/mapa_aptitud_for_mad_b.png)
+
+**Pesos globales de los atributos de aprovechamiento forestal maderable versión 2**
+
+Criterio | Peso
+-- | --
+Tipo de vegetación | 0.185
+Aprovechamiento | 0.170
+Tenencia | 0.167
+Tipo de suelo | 0.155
+Clima | 0.130
+Comunicación | 0.092
+Mercados | 0.033
+Factores de riesgo | 0.030
+Abastecimiento | 0.020
+Centro de almacenamiento | 0.018
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 2993.3 | 8
+Alta | 22654.9 | 57
+Moderada | 11208.7 | 28
+Baja | 338.5 | 1
+Muy baja | 52.2 | 0
+Nula | 2289.1 | 6
+
+#### 1.3.4 Sensibilidad de atributos ambientales de aprovechamiento forestal maderable versión 2
+
+![](/recursos/forestal/fi_analisis_sensibilidad_forestal_maderable_b.png)
 
 ## 2. Aprovechamiento forestal no maderable
 
@@ -764,3 +832,249 @@ Unidades | Kilómetros
 **Función de valor de comunicación**
 
 ![](/recursos/forestal/mapa_fv_for_mad_infra_d_caminos.png)
+
+### 2.3 Mapa de aptitud
+
+#### 2.3.1 Mapa de aptitud de aprovechamiento forestal no maderable versión 1a
+
+#### 2.3.1.1 Zonas de exclusión de aprovechamiento forestal no maderable versión 1a
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión del aprovechamiento forestal no maderable**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+12 | Sin vegetación
+16 | Vegetación de petén
+18 | NA
+
+![](/recursos/forestal/mapa_exclusion_for_nomad_1a.png)
+
+#### 2.3.1.2 Mapa de aptitud de aprovechamiento forestal no maderable versión 1a
+
+![](/recursos/forestal/mapa_aptitud_for_nomad_1a.png)
+
+**Pesos globales de los atributos de aprovechamiento forestal no maderable versión 1a**
+
+Criterio | Peso
+-- | --
+Tipo de vegetación | 0.255
+Tipo de suelo | 0.214
+Clima | 0.179
+Aprovechamiento | 0.108
+Tenencia | 0.081
+Comunicación | 0.064
+Factores de riesgo | 0.041
+Mercados | 0.029
+Abastecimiento | 0.014
+Centro de almacenamiento | 0.013
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 10651.7 | 27
+Alta | 25710.1 | 65
+Moderada | 626.0 | 2
+Baja | 1326.8 | 3
+Muy baja | 188.2 | 0
+Nula | 1033.9 | 3
+
+#### 2.3.2 Sensibilidad de atributos ambientales de aprovechamiento forestal no maderable versión 1a
+
+![](/recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_1a.png)
+
+#### 2.3.3 Mapa de aptitud de aprovechamiento forestal no maderable versión 1b
+
+#### 2.3.3.1 Zonas de exclusión de aprovechamiento forestal no maderable versión 1b
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión del aprovechamiento forestal no maderable**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+12 | Sin vegetación
+16 | Vegetación de petén
+18 | NA
+
+![](/recursos/forestal/mapa_exclusion_for_nomad_1b.png)
+
+#### 2.3.3.2 Mapa de aptitud de aprovechamiento forestal no maderable versión 1b
+
+![](/recursos/forestal/mapa_aptitud_for_nomad_1b.png)
+
+**Pesos globales de los atributos de aprovechamiento forestal no maderable versión 1b**
+
+Criterio | Peso
+-- | --
+Tipo de vegetación | 0.255
+Tipo de suelo | 0.214
+Clima | 0.179
+Aprovechamiento | 0.108
+Tenencia | 0.081
+Comunicación | 0.064
+Factores de riesgo | 0.041
+Mercados | 0.029
+Abastecimiento | 0.014
+Centro de almacenamiento | 0.013
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 12933.1 | 33
+Alta | 23510.3 | 59
+Moderada | 598.7 | 2
+Baja | 1279.6 | 3
+Muy baja | 181.1 | 0
+Nula | 1033.9 | 3
+
+#### 2.3.4 Sensibilidad de atributos ambientales de aprovechamiento forestal no maderable versión 1b
+
+![](/recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_1b.png)
+
+#### 2.3.5 Mapa de aptitud de aprovechamiento forestal no maderable versión 2a
+
+#### 2.3.5.1 Zonas de exclusión de aprovechamiento forestal no maderable versión 2a
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión del aprovechamiento forestal no maderable**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+12 | Sin vegetación
+16 | Vegetación de petén
+18 | NA
+
+![](/recursos/forestal/mapa_exclusion_for_nomad_2a.png)
+
+#### 2.3.3.2 Mapa de aptitud de aprovechamiento forestal no maderable versión 2a
+
+![](/recursos/forestal/mapa_aptitud_for_nomad_2a.png)
+
+**Pesos globales de los atributos de aprovechamiento forestal no maderable versión 2a**
+
+Criterio | Peso
+-- | --
+Tipo de vegetación | 0.255
+Tipo de suelo | 0.214
+Clima | 0.179
+Tenencia | 0.123
+Mercados | 0.077
+Comunicación | 0.064
+Factores de riesgo | 0.041
+Aprovechamiento | 0.020
+Abastecimiento | 0.014
+Centro de almacenamiento | 0.013
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 17554.3 | 44
+Alta | 18961.9 | 48
+Moderada | 535.3 | 1
+Baja | 1290.2 | 3
+Muy baja | 160.9 | 0
+Nula | 1033.9 | 3
+
+#### 2.3.6 Sensibilidad de atributos ambientales de aprovechamiento forestal no maderable versión 2a
+
+![](/recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_2a.png)
+
+#### 2.3.7 Mapa de aptitud de aprovechamiento forestal no maderable versión 2b
+
+#### 2.3.7.1 Zonas de exclusión de aprovechamiento forestal no maderable versión 2b
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión del aprovechamiento forestal no maderable**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+12 | Sin vegetación
+16 | Vegetación de petén
+18 | NA
+
+![](/recursos/forestal/mapa_exclusion_for_nomad_2b.png)
+
+#### 2.3.7.2 Mapa de aptitud de aprovechamiento forestal no maderable versión 2b
+
+![](/recursos/forestal/mapa_aptitud_for_nomad_2b.png)
+
+**Pesos globales de los atributos de aprovechamiento forestal no maderable versión 2b**
+
+Criterio | Peso
+-- | --
+Tipo de vegetación | 0.255
+Tipo de suelo | 0.214
+Clima | 0.179
+Tenencia | 0.123
+Mercados | 0.077
+Comunicación | 0.064
+Factores de riesgo | 0.041
+Aprovechamiento | 0.020
+Abastecimiento | 0.014
+Centro de almacenamiento | 0.013
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 19719.5 | 50
+Alta | 16975.7 | 43
+Moderada | 440.3 | 1
+Baja | 1219.7 | 3
+Muy baja | 147.4 | 0
+Nula | 1033.9 | 3
+
+#### 2.3.8 Sensibilidad de atributos ambientales de aprovechamiento forestal no maderable versión 2b
+
+![](/recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_2b.png)

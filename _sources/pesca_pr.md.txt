@@ -237,4 +237,4 @@ Nula | 10738.1 | 27
 
 #### 1.3.7 Sensibilidad de atributos ambientales del sector pesca
 
-![](/recursos/pesca/fi_analisis_sensibilidad_pesca.png.png)
+![](/recursos/pesca/fi_analisis_sensibilidad_pesca.png)
