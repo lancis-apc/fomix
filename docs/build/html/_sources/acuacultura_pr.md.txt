@@ -1,4 +1,4 @@
-# Acuacultura-En proceso de actualización
+# Acuacultura-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -233,11 +233,11 @@ Vegetación | 0.027
 
 Categoría | km² | Porcentaje del   estado
 -- | --: | --:
-Muy alta | 5862.3 | 15
-Alta | 15606.0 | 39
-Moderada | 12540.4 | 32
-Baja | 3369.2 | 9
-Muy baja | 802.3 | 2
+Muy alta | 7733.8 | 20
+Alta | 14390.9 | 36
+Moderada | 9789.5 | 25
+Baja | 3468.7 | 9
+Muy baja | 2797.4 | 7
 Nula | 1356.4 | 3
 
 #### 1.3.3 Sensibilidad de atributos ambientales del sector acuacultura salobre
@@ -470,11 +470,11 @@ Vegetación | 0.027
 
 Categoría | km² | Porcentaje del   estado
 -- | --: | --:
-Muy alta | 12799.3 | 32
-Alta | 10082.1 | 26
-Moderada | 9986.9 | 25
-Baja | 3798.8 | 10
-Muy baja | 1513.2 | 4
+Muy alta | 14588.0 | 37
+Alta | 8669.1 | 22
+Moderada | 7553.6 | 19
+Baja | 3402.5 | 9
+Muy baja | 3967.0 | 10
 Nula | 1356.4 | 3
 
 #### 2.3.3 Sensibilidad de atributos ambientales del sector acuacultura dulce

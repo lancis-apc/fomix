@@ -1,4 +1,4 @@
-# Conservación-En proceso de actualización
+# Conservación-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -713,9 +713,9 @@ Capa | Densidad de dolinas
 -- | --
 Fuente | Densidad de dolinas. Atlas de Peligros por Fenómenos del Estado de   Yucatán. Servicio Geológico Mexicano
 Año | 2013
-Campo | GRADO
+Campo | VAL_DOL
 Escala | Sin dato
-Unidades | Número de dolinas/hectárea
+Unidades | Número de dolinas/16 km2
 
 **Parámetros de la función de valor**
 

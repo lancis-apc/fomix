@@ -1,4 +1,4 @@
-# Pesca-En proceso de actualización
+# Pesca-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -23,14 +23,14 @@ Debido a que la actividad pesquera en el estado es marina, el análisis se aplic
 
 Criterio|Definición
 --|--
-Agua potable| Acceso a agua potable para la producción de hielo como distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas que disponen de agua entubada.
+Agua potable| Acceso a agua potable para la producción de hielo como distancia de 5 km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas que disponen de agua entubada.
 Electricidad| Distancia a red de transmisión eléctrica.
 Vías de comunicación| Distancia a caminos y carreteras para el transporte de insumos y productos.
 Comunicaciones| Acceso a comunicación a través de internet y telefonía.
 
 ##### 1.2.1.1 Agua potable
 
-Acceso a agua potable para la producción de hielo como distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas que disponen de agua entubada.
+Acceso a agua potable para la producción de hielo como distancia de 5 km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas que disponen de agua entubada.
 
 **Insumos**
 
@@ -97,12 +97,12 @@ Acceso a comunicación a través de internet y telefonía.
 
 Criterio|Definición
 --|--
-Internet| Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet.
-Telefonía| Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con celular.
+Internet| Distancia de 5 km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet.
+Telefonía| Distancia de 5 km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con celular.
 
 ###### 1.2.1.4.1 Internet
 
-Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet.
+Distancia de 5 km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con internet.
 
 **Insumos**
 
@@ -123,7 +123,7 @@ Unidades | Porcentaje
 
 ###### 1.2.1.4.2 Telefonía
 
-Distancia de 5 Km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con celular.
+Distancia de 5 km a localidades urbanas y pesqueras evaluadas con base en el porcentaje de viviendas con celular.
 
 **Insumos**
 
@@ -166,7 +166,7 @@ Unidades | Kilómetros
 
 ![](/recursos/pesca/fi_fv_pes_socio_d_localidades_pesca.png)
 
-**Función de valor de centros de localidades pesqueras**
+**Función de valor de localidades pesqueras**
 
 ![](/recursos/pesca/mapa_fv_pes_socio_d_localidades_pesca.png)
 
@@ -176,7 +176,7 @@ Distancia a localidades consideradas como puntos de distribución de productos p
 
 **Insumos**
 
-Capa | Distancia a localidades con centros de   distribución pesquera
+Capa | Distancia a localidades con centros de distribución de productos pesqueros
 -- | --
 Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
 Año | 2020
@@ -228,11 +228,11 @@ Localidades pesqueras | 0.024
 
 Categoría | km² | Porcentaje del   estado
 -- | --: | --:
-Muy alta | 6053.6 | 15
-Alta | 3647.7 | 9
-Moderada | 2897.9 | 7
-Baja | 12808.6 | 32
-Muy baja | 3390.7 | 9
+Muy alta | 9822.6 | 25
+Alta | 7292.2 | 18
+Moderada | 9981.4 | 25
+Baja | 1357.0 | 3
+Muy baja | 345.3 | 1
 Nula | 10738.1 | 27
 
 #### 1.3.7 Sensibilidad de atributos ambientales del sector pesca
