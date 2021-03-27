@@ -231,13 +231,13 @@ Vegetación | 0.027
 
 **Área por categoría de aptitud**
 
-Categoría | km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 7733.8 | 20
-Alta | 14390.9 | 36
-Moderada | 9789.5 | 25
-Baja | 3468.7 | 9
-Muy baja | 2797.4 | 7
+Muy alta | 13682.1 | 35
+Alta | 18827.1 | 48
+Moderada | 4340.1 | 11
+Baja | 979.2 | 2
+Muy baja | 351.7 | 1
 Nula | 1356.4 | 3
 
 #### 1.3.3 Sensibilidad de atributos ambientales del sector acuacultura salobre
@@ -470,11 +470,11 @@ Vegetación | 0.027
 
 Categoría | km² | Porcentaje del   estado
 -- | --: | --:
-Muy alta | 14588.0 | 37
-Alta | 8669.1 | 22
-Moderada | 7553.6 | 19
-Baja | 3402.5 | 9
-Muy baja | 3967.0 | 10
+Muy alta | 18780.8 | 48
+Alta | 12631.6 | 32
+Moderada | 4653.2 | 12
+Baja | 1484.7 | 4
+Muy baja | 629.9 | 2
 Nula | 1356.4 | 3
 
 #### 2.3.3 Sensibilidad de atributos ambientales del sector acuacultura dulce
