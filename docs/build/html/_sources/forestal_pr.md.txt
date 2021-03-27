@@ -498,7 +498,7 @@ Nula | 2289.1 | 6
 
 #### 1.3.5 Análisis de semejanzas entre las versiones de los mapas de aptitud
 
-Las dos versiones del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza del 77%, medido con el índice de Lee-Sallee.
+Las dos versiones del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza del 77%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
 ![](/recursos/forestal/fi_tabla_mad1_vs_mad2.png)
 
@@ -1092,29 +1092,30 @@ Nula | 1033.9 | 3
 #### 2.3.9 Análisis de semejanzas entre las versiones de los mapas de aptitud
 
 Versión 1 y 2: difieren por los pesos de los atributos socioeconómicos
+
 Versión a y b: difieren por la función de valor del atributo Tenencia
 
-Las versiones 1a y 1b del mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 85%, medido con el índice de Lee-Sallee.
+Las versiones 1a y 1b del mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 85%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
 ![](/recursos/forestal/fi_tabla_nomad_1a_vs_nomad_1b.png)
 
-Las versiones 2a y 2b del mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 88%, medido con el índice de Lee-Sallee.
+Las versiones 2a y 2b del mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 88%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
 ![](/recursos/forestal/fi_tabla_nomad_2a_vs_nomad_2b.png)
 
-Las versiones 1a y 2a de mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 79%, medido con el índice de Lee-Sallee.
+Las versiones 1a y 2a de mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 79%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
 ![](/recursos/forestal/fi_tabla_nomad_1a_vs_nomad_2a.png)
 
-Las versiones 1a y 2b de mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 73%, medido con el índice de Lee-Sallee.
+Las versiones 1a y 2b de mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 73%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
 ![](/recursos/forestal/fi_tabla_nomad_1a_vs_nomad_2b.png)
 
-Las versiones 1b y 2a del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza de 81%, medido con el índice de Lee-Sallee.
+Las versiones 1b y 2a del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza de 81%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
 ![](/recursos/forestal/fi_tabla_nomad_1b_vs_nomad_2a.png)
 
-Las versiones 1b y 2b del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza de 79%, medido con el índice de Lee-Sallee.
+Las versiones 1b y 2b del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza de 79%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
 ![](/recursos/forestal/fi_tabla_nomad_1b_vs_nomad_2b.png)
 

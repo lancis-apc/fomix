@@ -226,13 +226,13 @@ Localidades pesqueras | 0.024
 
 **Área por categoría de aptitud**
 
-Categoría | km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 9822.6 | 25
-Alta | 7292.2 | 18
-Moderada | 9981.4 | 25
-Baja | 1357.0 | 3
-Muy baja | 345.3 | 1
+Muy alta | 9874.9 | 25
+Alta | 9941.1 | 25
+Moderada | 8238.3 | 21
+Baja | 729.6 | 2
+Muy baja | 14.7 | 0
 Nula | 10738.1 | 27
 
 #### 1.3.7 Sensibilidad de atributos ambientales del sector pesca
