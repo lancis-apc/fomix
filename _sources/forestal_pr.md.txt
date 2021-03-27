@@ -1,4 +1,4 @@
-# Forestal-En proceso de actualización
+# Forestal-Final
 
 La generación de los mapas de aptitud está en espera de la recepción de las capas de información de (1) Autorizaciones de aprovechamiento forestal maderable vigentes, (2) Autorizaciones de aprovechamiento forestal no maderable vigentes y (3) Centros de almacenamiento y transformación de materias primas forestales.
 <!-- Ruta de la documentación:
@@ -496,6 +496,16 @@ Nula | 2289.1 | 6
 
 ![](/recursos/forestal/fi_analisis_sensibilidad_forestal_maderable_b.png)
 
+#### 1.3.5 Análisis de semejanzas entre las versiones de los mapas de aptitud
+
+Las dos versiones del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza del 77%, medido con el índice de Lee-Sallee.
+
+![](/recursos/forestal/fi_tabla_mad1_vs_mad2.png)
+
+Las mayores diferencias se encuentran entre las zonas que se categorizan como aptitud moderada o alta y como alta o muy alta.
+
+Para fines del análisis de conflicto se usará la versión 1 debido a que la superficie de las categorías de aptitud alta y muy alta es mayor.
+
 ## 2. Aprovechamiento forestal no maderable
 
 Aprovechamiento de los recursos constituidos por la parte no leñosa de la vegetación de un ecosistema forestal, y susceptibles de aprovechamiento o uso, incluyendo líquenes, musgos, hongos y resinas, así como los suelos de terrenos forestales y preferentemente forestales.
@@ -726,11 +736,11 @@ Unidades | Adimensional
 
 Para este atributo se decidió explorar dos funciones de valor, ya que había dos puntos de vista en el grupo.
 
-Versión 1. Visión de facilidad para gestionar los proyectos.
+Versión a. Visión de facilidad para gestionar los proyectos.
 
 Da mayor importancia a las zonas no ejidales y las ejidales parceladas, ya que en la gestión de los proyectos se trata con una sola persona o un grupo de personas. Se da menor importancia a las tierras ejidales de uso común, debido a que la gestión de un proyecto forestal requeriría un cabildeo más largo y el aval de la asamblea ejidal.
 
-**Parámetros de la función de valor versión 1**
+**Parámetros de la función de valor versión a**
 
 ID | Categoría | Importancia | FV
 -- | -- | -- | --
@@ -738,17 +748,17 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.80
 3 | No ejidal | Baja | 0.56
 
-**Función de valor de tenencia versión 1**
+**Función de valor de tenencia versión a**
 
 ![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra.png)
 
 <!--!![](/recursos/forestal/.png)--->
 
-Versión 2. Visión de impulsar los proyectos forestales en las comunidades. Los proponentes de esta visión exponen que, aunque es más sencillo ponerse de acuerdo con una o pocas personas, el criterio de la versión 1 impulsa los beneficios individuales por encima de los colectivos. Por ello, las tierras de uso común deberían ser más importantes debido que el beneficio es para toda la comunidad.
+Versión b. Visión de impulsar los proyectos forestales en las comunidades. Los proponentes de esta visión exponen que, aunque es más sencillo ponerse de acuerdo con una o pocas personas, el criterio de la versión 1 impulsa los beneficios individuales por encima de los colectivos. Por ello, las tierras de uso común deberían ser más importantes debido que el beneficio es para toda la comunidad.
 
 Da la importancia más alta a las zonas no ejidales y ejidales de uso común ya que en estas áreas están las masas forestales más continuas y la actividad es más redituable y asigna menor importancia a las tierras ejidales parceladas, ya que son más pequeñas y fragmentadas.
 
-**Parámetros de la función de valor versión 2**
+**Parámetros de la función de valor versión b**
 
 ID | Categoría | Importancia | FV
 -- | -- | -- | --
@@ -756,7 +766,7 @@ ID | Categoría | Importancia | FV
 3 | No ejidal | Máxima | 1.0
 2 | Zona de tierras parceladas | Alta | 0.8
 
-**Función de valor de tenencia versión 2**
+**Función de valor de tenencia versión b**
 
 ![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra_v2.png)
 
@@ -1078,3 +1088,34 @@ Nula | 1033.9 | 3
 #### 2.3.8 Sensibilidad de atributos ambientales de aprovechamiento forestal no maderable versión 2b
 
 ![](/recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_2b.png)
+
+#### 2.3.9 Análisis de semejanzas entre las versiones de los mapas de aptitud
+
+Versión 1 y 2: difieren por los pesos de los atributos socioeconómicos
+Versión a y b: difieren por la función de valor del atributo Tenencia
+
+Las versiones 1a y 1b del mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 85%, medido con el índice de Lee-Sallee.
+
+![](/recursos/forestal/fi_tabla_nomad_1a_vs_nomad_1b.png)
+
+Las versiones 2a y 2b del mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 88%, medido con el índice de Lee-Sallee.
+
+![](/recursos/forestal/fi_tabla_nomad_2a_vs_nomad_2b.png)
+
+Las versiones 1a y 2a de mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 79%, medido con el índice de Lee-Sallee.
+
+![](/recursos/forestal/fi_tabla_nomad_1a_vs_nomad_2a.png)
+
+Las versiones 1a y 2b de mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 73%, medido con el índice de Lee-Sallee.
+
+![](/recursos/forestal/fi_tabla_nomad_1a_vs_nomad_2b.png)
+
+Las versiones 1b y 2a del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza de 81%, medido con el índice de Lee-Sallee.
+
+![](/recursos/forestal/fi_tabla_nomad_1b_vs_nomad_2a.png)
+
+Las versiones 1b y 2b del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza de 79%, medido con el índice de Lee-Sallee.
+
+![](/recursos/forestal/fi_tabla_nomad_1b_vs_nomad_2b.png)
+
+Para fines del análisis de conflicto se usará la versión 2b debido a que la superficie de las categorías de aptitud alta y muy alta es mayor.

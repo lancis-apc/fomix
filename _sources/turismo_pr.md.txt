@@ -1,4 +1,4 @@
-# Turismo-En proceso de actualización
+# Turismo-Final
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -21,14 +21,14 @@ Viaje turístico para conocer, comprender y disfrutar el conjunto de rasgos y el
 
 Atributos | Definición
 -- | --
-Patrimonio edificado | Número de registros de   patrimonio edificado por localidad (patrimonio heredado del pasado, con   relevancia cultural, histórica, artística, identitaria, etc. (Valladolid,   Izamal, Dzilam, Maní, Motul, Buctzotz).
-Distancia a sitios   arqueológicos | Distancia a sitios arqueológicos   (Sitios con vestigios de civilizaciones o culturas antiguas, con posibilidad   de ser visitados por los turistas).
-Sitios gastronómicos | Presencia de lugares con   instalaciones y activades destinadas a dar a conocer la gastronomía típica.
-Población indígena | Porcentaje de la población   municipal de 3 años y más que son mayahablantes.
+Patrimonio edificado | Número de registros de   patrimonio edificado por localidad (patrimonio heredado del pasado, con   relevancia cultural, histórica, artística, identitaria, etc., entre las que   destacan Valladolid, Izamal, Dzilam, Maní, Motul, Buctzotz).
+Distancia a sitios   arqueológicos | Distancia a sitios arqueológicos   (sitios con vestigios de civilizaciones o culturas antiguas, con posibilidad   de ser visitados por los turistas).
+Sitios gastronómicos | Localidades sobresalientes con   instalaciones y activades destinadas a dar a conocer la gastronomía típica.
+Población indígena | Porcentaje de la población   municipal de 3 años y más que son mayahablantes como indicador de potencial   para aldeas mayas.
 
 ##### 1.2.1.1 Patrimonio edificado
 
-Número de registros de patrimonio edificado por localidad (patrimonio heredado del pasado, con relevancia cultural, histórica, artística, identitaria, etc. (Valladolid, Izamal, Dzilam, Maní, Motul, Buctzotz).
+Número de registros de patrimonio edificado por localidad (patrimonio heredado del pasado, con relevancia cultural, histórica, artística, identitaria, etc., entre las que destacan Valladolid, Izamal, Dzilam, Maní, Motul, Buctzotz).
 
 **Insumos**
 
@@ -36,7 +36,7 @@ Capa | Patrimonio histórico por localidad
 -- | --
 Fuente | [1] Inventario de bienes inmuebles con carácter de patrimonio histórico   del estado de Yucatán SEDUMA y [2] Polígonos de localidades. Marco   Geoestadístico. Censo de Población y Vivienda INEGI
 Año | [1] Sin dato; [2] 2020
-Escala | Sin dato
+Escala | Localidad
 Unidades | Número de edificaciones
 
 **Parámetros de la función de valor**
@@ -49,7 +49,7 @@ Unidades | Número de edificaciones
 
 ##### 1.2.1.2 Distancia a sitios arqueológicos
 
-Distancia a sitios arqueológicos (Sitios con vestigios de civilizaciones o culturas antiguas, con posibilidad de ser visitados por los turistas).
+Distancia a sitios arqueológicos (sitios con vestigios de civilizaciones o culturas antiguas, con posibilidad de ser visitados por los turistas).
 
 **Insumos**
 
@@ -70,7 +70,7 @@ Unidades | Kilómetros
 
 ##### 1.2.1.3 Sitios gastronómicos
 
-Presencia de lugares con instalaciones y activades destinadas a dar a conocer la gastronomía típica.
+Localidades sobresalientes con instalaciones y activades destinadas a dar a conocer la gastronomía típica.
 
 **Insumos**
 
@@ -78,7 +78,7 @@ Capa | Localidades con relevancia gastronómica
 -- | --
 Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
 Año | 2020
-Escala | Sin dato
+Escala | Localidad
 Unidades | Adimensional
 
 **Función de valor de sitios gastronómicos**
@@ -87,7 +87,7 @@ Unidades | Adimensional
 
 ##### 1.2.1.4 Población indígena
 
-Porcentaje de la población municipal de 3 años y más que son mayahablantes.
+Porcentaje de la población municipal de 3 años y más que son mayahablantes como indicador de potencial para aldeas mayas.
 
 **Insumos**
 
@@ -109,7 +109,7 @@ Unidades | Porcentaje
 
 #### 1.2.2 Naturaleza
 
-Viajes para realizar actividades recreativas en contacto directo con la naturaleza. Incluye turismo de aventura, ecoturismo, aviturismo, comunitario.
+Viajes para realizar actividades   recreativas en contacto directo con la naturaleza.  Incluye    turismo de aventura, ecoturismo, aviturismo, turismo comunitario.
 
 Atributos | Definición
 -- | --
@@ -123,14 +123,14 @@ Elementos o formaciones geológicas con características únicas que satisfacen 
 
 Atributos | Definición
 -- | --
-Cobertura | Tipo de vegetación y uso de suelo
-Cenotes | Presencia de cenotes
-Esteros | Presencia de cuerpos de agua   costeros que no están incluidos en la capa de cobertura (lagunas costeras,   marismas y esteros).
-Grutas | Presencia de grutas (cavidad que   se forma en las rocas por procesos erosivos, principalmente por disolución   causada por el agua de lluvia que se filtra entre rocas calcáreas y las   disuelve).
+Cobertura | Tipo de vegetación y uso de suelo asociado al turismo de   naturaleza.
+Cenotes | Presencia de cenotes con potencial turístico.
+Esteros | Presencia de cuerpos de agua   costeros distintos a los cenotes (lagunas costeras, marismas y esteros).
+Grutas | Presencia de grutas con   potencial turístico (cavidad que se forma en las rocas por procesos erosivos,   principalmente por disolución causada por el agua de lluvia que se filtra   entre rocas calcáreas y las disuelve).
 
 ###### 1.2.2.1.1 Cobertura
 
-Tipo de vegetación y uso de suelo.
+Tipo de vegetación y uso de suelo asociado al turismo de naturaleza.
 
 **Insumos**
 
@@ -170,7 +170,7 @@ ID | Categoría | Importancia | FV
 
 ###### 1.2.2.1.2 Cenotes
 
-Presencia de cenotes.
+Presencia de cenotes con potencial turístico.
 
 **Insumos**
 
@@ -187,7 +187,7 @@ Unidades | Adimensional
 
 ###### 1.2.2.1.3 Esteros
 
-Presencia de cuerpos de agua costeros que no están incluidos en la capa de cobertura (lagunas costeras, marismas y esteros).
+Presencia de cuerpos de agua costeros distintos a los cenotes (lagunas costeras, marismas y esteros).
 
 **Insumos**
 
@@ -205,7 +205,7 @@ Unidades | Adimensional
 
 ###### 1.2.2.1.4 Grutas
 
-Presencia de grutas (cavidad que se forma en las rocas por procesos erosivos, principalmente por disolución causada por el agua de lluvia que se filtra entre rocas calcáreas y las disuelve).
+Presencia de grutas con potencial turístico (cavidad que se forma en las rocas por procesos erosivos, principalmente por disolución causada por el agua de lluvia que se filtra entre rocas calcáreas y las disuelve).
 
 **Insumos**
 
@@ -227,13 +227,13 @@ Atributos administrativos y de gestión relacionados con el turismo de naturalez
 
 Atributos | Definición
 -- | --
-ANP | Presencia de áreas naturales   protegidas de competencia federal, estatal o municipal.
-Tenencia de la tierra | Tipo de tenencia de la tierra:   Áreas ejidales (comunitaria o parcelada) y no ejidales.
+ANP | Presencia de áreas naturales   protegidas de competencia federal, estatal o municipal que influyen en el   turismo de naturaleza.
+Tenencia de la tierra | Tipo de tenencia de la tierra:   Áreas ejidales (comunitaria o parcelada) y no ejidales asociados a turismo de   naturaleza.
 Cooperativas | Número de cooperativas que   ofrecen servicios de turismo de naturaleza.
 
 ###### 1.2.2.2.1 ANP
 
-Presencia de áreas naturales protegidas de competencia federal, estatal o municipal.
+Presencia de áreas naturales protegidas de competencia federal, estatal o municipal que influyen en el turismo de naturaleza.
 
 **Insumos**
 
@@ -252,7 +252,7 @@ Unidades | Adimensional
 
 ###### 1.2.2.2.2 Tenencia de la tierra
 
-Tipo de tenencia de la tierra: Áreas ejidales (comunitaria o parcelada) y no ejidales.
+Tipo de tenencia de la tierra: Áreas ejidales (comunitaria o parcelada) y no ejidales asociados a turismo de naturaleza.
 
 **Insumos**
 
@@ -285,7 +285,7 @@ Capa | Cooperativas
 -- | --
 Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI; [2] Datos de indicador. Productos de turismo alternativo en   Yucatán
 Año | [1] 2020; [2] ?
-Escala | Sin dato
+Escala | Localidad
 Unidades | Número
 
 **Parámetros de la función de valor**
@@ -342,7 +342,7 @@ Unidades | Adimensional
 
 #### 1.2.3 Sol y playa
 
-Turismo de sol y playa, segundas residencias y bodas.
+Turismo de sol y playa y segundas residencias.
 
 Atributos | Definición  
 -- | --
@@ -356,12 +356,12 @@ Atributos que describen las características antropogénicas del territorio.
 
 Atributos | Definición
 -- | --
-Tenencia de la tierra | Áreas ejidales (comunitaria o parcelada) y no ejidales.
-Asentamientos urbanos | Distancia a localidades urbanas >= 15,000 habitantes, vía carreteras.
+Tenencia de la tierra | Áreas ejidales (comunitaria o parcelada) y   no ejidales vinculadas al turismo de sol y playa.
+Asentamientos urbanos | Distancia a localidades urbanas   (>= 15,000 habitantes), vía carreteras como indicador del tiempo de   traslado.
 
 ###### 1.2.3.1.1 Tenencia de la tierra
 
-Áreas ejidales (comunitaria o parcelada) y no ejidales.
+Áreas ejidales (comunitaria o parcelada) y no ejidales vinculadas al turismo de sol y playa.
 
 **Insumos**
 
@@ -386,7 +386,7 @@ ID | Categoría | Importancia | FV
 
 ###### 1.2.3.1.2 Asentamientos urbanos
 
-Distancia a localidades urbanas >= 15,000 habitantes, vía carreteras.
+Distancia a localidades urbanas (>= 15,000 habitantes), vía carreteras como indicador del tiempo de traslado.
 
 **Insumos**
 
@@ -395,7 +395,7 @@ Capa | Distancia a localidades urbanas
 Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI y [2] Red Nacional de Caminos (RNC) Red vial - INEGI
 Año | [1] 2020; [2] 2019
 Campo | [1] AMBITO; [2] TIPO_VIAL
-Escala | Sin dato
+Escala | 1:250,000
 Unidades | Kilómetros
 
 **Parámetros de la función de valor**
@@ -423,9 +423,9 @@ Distancia a zona costera.
 
 Capa | Distancia al litoral
 -- | --
-Fuente | Litoral POETCY
+Fuente | Litoral POETCY, SDS
 Año | Sin dato
-Escala | Sin dato
+Escala | 1:250,000
 Unidades | Kilómetros
 
 **Parámetros de la función de valor**
@@ -470,12 +470,12 @@ Atributos asociados a las propiedades biológicas del ambiente.
 
 Atributos | Definición   
 -- | --
-Cobertura | Tipo de vegetación y uso del suelo.
-Distancia a ANP | Distancia a áreas naturales protegidas costeras.
+Cobertura | Tipo de vegetación y uso del   suelo que contribuye al turismo de sol y playa.
+Distancia a ANP | Distancia a áreas naturales protegidas costeras que influyen en el turismo de sol y playa.
 
 ###### 1.2.3.3.1 Cobertura
 
-Tipo de vegetación y uso del suelo.
+Tipo de vegetación y uso del suelo que contribuye al turismo de sol y playa.
 
 **Insumos**
 
@@ -515,7 +515,7 @@ ID | Categoría | Importancia | FV
 
 ###### 1.2.3.3.2 Distancia a ANP
 
-Distancia a áreas naturales protegidas costeras.
+Distancia a áreas naturales protegidas costeras que influyen en el turismo de sol y playa.
 
 **Insumos**
 
@@ -536,7 +536,7 @@ Unidades | Kilómetros
 
 #### 1.2.4 Urbano
 
-Viajes que se realizan al interior de las zonas urbanas. Comprende convenciones, reuniones, negocios, médico y educativo.
+Actividades turísticas asociadas a zonas urbanas y que incluye bodas, convenciones, reuniones, negocios, turismo médico y turismo educativo.
 
 Atributos | Definición
 -- | --
@@ -555,7 +555,7 @@ Capa | Centros de convenciones
 -- | --
 Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI
 Año | 2020
-Escala | Sin dato
+Escala | Localidad
 Unidades | Adimensional
 
 **Función de valor de centro de convenciones**
@@ -572,7 +572,7 @@ Capa | Hoteles por localidad
 -- | --
 Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI; [2] Datos de indicador. Reporte de servicios de hospedaje   SEFOTUR -InvenTur
 Año | [1] 2020; [2] 2021
-Escala | Sin dato
+Escala | Localidad
 Unidades | Número
 
 **Parámetros de la función de valor**
@@ -644,7 +644,7 @@ Capa | Distancia a Puerto Progreso
 Fuente | [1] Ubicación de los principales puertos de el estado de Yucatán POETY y   [2] Red Nacional de Caminos (RNC) Red vial - INEGI
 Año | [1] 2002; [2] 2019
 Campo | [2] TIPO_VIAL
-Escala | Sin dato
+Escala | 1:250,000
 Unidades | Kilómetros
 
 **Parámetros de la función de valor**
