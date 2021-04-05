@@ -11,7 +11,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 * Orientar la producción al aprovechamiento sostenible, que garantice que los ecosistemas se mantengan.
 * Minimizar los riesgos del sector forestal.
 
-[Lista de participantes](https://www.dropbox.com/s/8kif6lcb53radud/lista_asistencia_forestal.pdf?dl=0)
+[Lista de participantes](https://www.dropbox.com/s/0ikq17y6sluhx1d/lista_asistencia%20forestal.pdf?dl=0)
 
 ## 1. Aprovechamiento forestal maderable
 
