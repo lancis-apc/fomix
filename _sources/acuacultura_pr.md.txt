@@ -73,13 +73,14 @@ Tipos de vegetación y usos de suelo.
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
+
 
 **Parámetros de la función de valor**
 
@@ -193,12 +194,12 @@ ID | Categoría | Importancia | FV
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del subsector de acuacultura salobre**
@@ -233,12 +234,12 @@ Vegetación | 0.027
 
 Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 13682.1 | 35
-Alta | 18827.1 | 48
-Moderada | 4340.1 | 11
+Muy alta | 13512.9 | 34
+Alta | 18708.4 | 47
+Moderada | 4361.9 | 11
 Baja | 979.2 | 2
 Muy baja | 351.7 | 1
-Nula | 1356.4 | 3
+Nula | 1622.4 | 4
 
 #### 1.3.3 Sensibilidad de atributos ambientales del sector acuacultura salobre
 
@@ -310,12 +311,12 @@ Tipos de vegetación y usos de suelo.
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -430,12 +431,12 @@ ID | Categoría | Importancia | FV
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del subsector de acuacultura dulce**
@@ -468,14 +469,14 @@ Vegetación | 0.027
 
 **Área por categoría de aptitud**
 
-Categoría | km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 18780.8 | 48
-Alta | 12631.6 | 32
-Moderada | 4653.2 | 12
-Baja | 1484.7 | 4
-Muy baja | 629.9 | 2
-Nula | 1356.4 | 3
+Muy alta | 18877.9 | 48
+Alta | 12582.7 | 32
+Moderada | 4487.8 | 11
+Baja | 1443.6 | 4
+Muy baja | 522.1 | 1
+Nula | 1622.4 | 4
 
 #### 2.3.3 Sensibilidad de atributos ambientales del sector acuacultura dulce
 

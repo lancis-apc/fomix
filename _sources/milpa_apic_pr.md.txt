@@ -33,12 +33,12 @@ Vegetación o uso de suelo actual.
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -289,10 +289,10 @@ Unidades | Adimensional
 
 Capa | Uso de suelo y vegetación y localidades con 2,500 habitantes o más
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
-Año | [1] 2017; [2] 2020
-Campo | [1] descripcio
-Escala | [1] 1:250,000; [2] Sin dato
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI, [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO y [3] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2021; [3] 2020
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000; [3] Sin dato
 Unidades | Adimensional
 
 **Tabla de exclusión de milpa maya**
@@ -335,14 +335,14 @@ Carreteras | 0.015
 
 **Área por categoría de aptitud**
 
-Categoría | km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 16624.6 | 42
-Alta | 12812.6 | 32
-Moderada | 6700.0 | 17
-Baja | 841.6 | 2
-Muy baja | 144.4 | 0
-Nula | 2413.4 | 6
+Muy alta | 16587.0 | 42
+Alta | 12816.3 | 32
+Moderada | 6636.7 | 17
+Baja | 785.0 | 2
+Muy baja | 59.0 | 0
+Nula | 2652.6 | 7
 
 #### 1.3.4 Sensibilidad de atributos ambientales de milpa maya
 
@@ -369,12 +369,12 @@ Vegetación o uso de suelo actual.
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -635,10 +635,10 @@ Unidades | Adimensional
 
 Capa | Uso de suelo y vegetación y localidades con 2,500 habitantes o más
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y   vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
-Año | [1] 2017; [2] 2020
-Campo | [1] descripcio
-Escala | [1] 1:250,000; [2] Sin dato
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI, [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO y [3] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2021; [3] 2020
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000; [3] Sin dato
 Unidades | Adimensional
 
 **Tabla de exclusión de apicultura**
@@ -678,12 +678,12 @@ Distancia a localidades urbanas | 0.012
 
 Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 22439.4 | 57
-Alta | 5488.2 | 14
-Moderada | 4453.8 | 11
-Baja | 5645.0 | 14
-Muy baja | 524.2 | 1
-Nula | 985.9 | 2
+Muy alta | 22858.8 | 58
+Alta | 4963.4 | 13
+Moderada | 5059.2 | 13
+Baja | 4656.7 | 12
+Muy baja | 527.1 | 1
+Nula | 1471.4 | 4
 
 #### 2.3.4 Sensibilidad de atributos ambientales de apicultura
 
