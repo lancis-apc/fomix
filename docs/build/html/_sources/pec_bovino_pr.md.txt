@@ -121,12 +121,12 @@ Tipos de vegetación y usos de suelo.
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y   vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -256,10 +256,10 @@ Unidades | Kilómetros
 
 Capa | Uso del suelo y vegetación y localidades
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
-Año | [1] 2017; [2] 2020
-Campo | [1] descripcio
-Escala | [1] 1:250,000; [2] Sin dato
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI, [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO y [3] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2021; [3] 2020
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000;[2] 1:50,000; [3] Sin dato
 Unidades | Adimensional
 
 **Tabla de exclusión del subsector pecuario bovino**
@@ -302,12 +302,12 @@ Rastros | 0.010
 
 Categoría | Km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 3679.0 | 9
-Alta | 21901.9 | 55
-Moderada | 10084.4 | 26
-Baja | 258.8 | 1
-Muy baja | 804.5 | 2
-Nula | 2808.0 | 7
+Muy alta | 3716.2 | 9
+Alta | 21852.6 | 55
+Moderada | 9926.7 | 25
+Baja | 189.0 | 0
+Muy baja | 804.3 | 2
+Nula | 3047.8 | 8
 
 #### 1.3.3 Sensibilidad de criterios ambientales del subsector pecuario bovino
 

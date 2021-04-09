@@ -190,12 +190,12 @@ Tipos de vegetación y usos de suelo.
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -308,10 +308,10 @@ ID | Categoría | Importancia | FV
 
 Capa | Uso del suelo y vegetación y localidades
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y   vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
-Año | [1] 2017; [2] 2020
-Campo | [1] descripcio
-Escala | [1] 1:250,000; [2] Sin dato
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI, [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO y [3] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2021; [3] 2020
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000;[2] 1:50,000; [3] Sin dato
 Unidades | Adimensional
 
 **Tabla de exclusión del subsector agricultura tecnificada de riego**
@@ -358,11 +358,11 @@ Tenencia | 0.014
 Categoría | km² | Porcentaje del estado
 -- | --: | --:
 Muy alta | 502.5 | 1
-Alta | 19395.3 | 49
-Moderada | 14850.5 | 38
-Baja | 1785.1 | 5
-Muy baja | 297.2 | 1
-Nula | 2594.7 | 7
+Alta | 19212.2 | 49
+Moderada | 14914.8 | 38
+Baja | 1725.6 | 4
+Muy baja | 305.2 | 1
+Nula | 2876.3 | 7
 
 #### 1.3.3 Sensibilidad de atributos de agricultura tecnificada de riego
 
@@ -477,12 +477,12 @@ Tipos de vegetación y usos de suelo.
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -640,10 +640,10 @@ Unidades | Kilómetros
 
 Capa | Uso del suelo y vegetación y localidades
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y   vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
-Año | [1] 2017; [2] 2020
-Campo | [1] descripcio
-Escala | [1] 1:250,000; [2] Sin dato
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI, [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO y [3] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2021; [3] 2020
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000;[2] 1:50,000; [3] Sin dato
 Unidades | Adimensional
 
 **Tabla de exclusión del subsector agricultura tecnificada de temporal**
@@ -686,14 +686,14 @@ Tenencia | 0.020
 
 **Área por categoría de aptitud**
 
-Categoría | km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 6373.8 | 16
-Alta | 17818.7 | 45
-Moderada | 12031.5 | 31
-Baja | 605.7 | 2
-Muy baja | 0.9 | 0
-Nula | 2594.7 | 7
+Muy alta | 6388.3 | 16
+Alta | 17798.1 | 45
+Moderada | 11998.7 | 30
+Baja | 475.0 | 1
+Muy baja | 0.2 | 0
+Nula | 2876.3 | 7
 
 #### 2.3.3 Sensibilidad de atributos de agricultura tecnificada de temporal
 

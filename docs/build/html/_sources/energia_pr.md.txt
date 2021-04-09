@@ -163,12 +163,12 @@ Tipo de vegetación.
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -283,12 +283,12 @@ Tipo de vegetación.
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -454,12 +454,12 @@ Unidades | Adimensional
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del sector energía de fuente hidrocarburos líquidos**
@@ -500,12 +500,12 @@ Unidades | Adimensional
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del sector energía de fuente gas natural**
@@ -546,12 +546,12 @@ Unidades | Adimensional
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del sector energía de fuente solar**
@@ -592,12 +592,12 @@ Unidades | Adimensional
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del sector energía de fuente energía eólica**
@@ -638,12 +638,12 @@ Unidades | Adimensional
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del sector energía de fuente biomasa**
@@ -670,6 +670,16 @@ ID | Cobertura
 ![](/recursos/energia/mapa_aprov_energia.png)
 
 #### 1.3.7 Zonas de exclusión
+
+**Insumos**
+
+Campo | Uso del suelo y vegetación
+-- | --
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
+Unidades | Adimensional
 
 **Tabla de exclusión general del sector energía industrial**
 
@@ -713,11 +723,11 @@ Biomasa | Residuos agrícolas forestales | 0.002
 Categoría | km² | Porcentaje del estado
 -- | --: | --:
 Muy alta | 617.2 | 2
-Alta | 2080.0 | 5
-Moderada | 9211.1 | 23
-Baja | 17249.7 | 44
-Muy baja | 7959.2 | 20
-Nula | 2419.4 | 6
+Alta | 2079.3 | 5
+Moderada | 9181.9 | 23
+Baja | 17188.5 | 43
+Muy baja | 7800.3 | 20
+Nula | 2669.4 | 7
 
 #### 1.3.9 Sensibilidad de atributos ambientales del sector energía industrial
 

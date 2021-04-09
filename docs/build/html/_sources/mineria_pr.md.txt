@@ -96,10 +96,10 @@ Tipos de vegetación y usos de suelo.
 
 Capa | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -302,10 +302,10 @@ Tipos de vegetación y usos de suelo.
 
 Capa | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -508,10 +508,10 @@ Tipos de vegetación y usos de suelo.
 
 Capa | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -715,10 +715,10 @@ Tipos de vegetación y usos de suelo.
 
 Capa | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -856,10 +856,10 @@ Unidades | Kilómetros
 
 Capa | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del sector minería**
@@ -895,14 +895,14 @@ Minas | 0.040
 
 **Área por categoría de aptitud**
 
-Categoría | km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
 Muy alta | 2003.2 | 5
-Alta | 14019.6 | 35
-Moderada | 15223.6 | 39
-Baja | 5674.9 | 14
-Muy baja | 189.3 | 0
-Nula | 2426.0 | 6
+Alta | 14018.0 | 35
+Moderada | 15175.2 | 38
+Baja | 5496.8 | 14
+Muy baja | 167.7 | 0
+Nula | 2675.8 | 7
 
 #### 1.3.2 Sensibilidad de atributos ambientales de minería de arcillas
 
@@ -916,10 +916,10 @@ Nula | 2426.0 | 6
 
 Capa | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del sector minería**
@@ -955,14 +955,14 @@ Minas | 0.040
 
 **Área por categoría de aptitud**
 
-Categoría | km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 2208.4 | 6
-Alta | 18923.7 | 48
-Moderada | 13549.8 | 34
-Baja | 2411.8 | 6
-Muy baja | 16.9 | 0
-Nula | 2426.0 | 6
+Muy alta | 2187.0 | 6
+Alta | 18839.5 | 48
+Moderada | 13461.6 | 34
+Baja | 2356.3 | 6
+Muy baja | 16.5 | 0
+Nula | 2675.8 | 7
 
 #### 1.3.4 Sensibilidad de atributos ambientales de minería de arenas
 
@@ -976,10 +976,10 @@ Nula | 2426.0 | 6
 
 Capa | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del sector minería**
@@ -1015,14 +1015,14 @@ Minas | 0.040
 
 **Área por categoría de aptitud**
 
-Categoría | km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
 Muy alta | 5777.1 | 15
-Alta | 14206.0 | 36
-Moderada | 13048.0 | 33
-Baja | 4038.6 | 10
-Muy baja | 40.9 | 0
-Nula | 2426.0 | 6
+Alta | 14198.9 | 36
+Moderada | 12940.9 | 33
+Baja | 3916.1 | 10
+Muy baja | 27.8 | 0
+Nula | 2675.8 | 7
 
 #### 1.3.6 Sensibilidad de atributos ambientales de rocas con extracción en seco
 
@@ -1036,10 +1036,10 @@ Nula | 2426.0 | 6
 
 Capa | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación.   Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Tabla de exclusión del sector minería**
@@ -1075,14 +1075,14 @@ Minas | 0.040
 
 **Área por categoría de aptitud**
 
-Categoría | km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 13851.9 | 35
-Alta | 12137.3 | 31
-Moderada | 1897.6 | 5
-Baja | 5476.0 | 14
+Muy alta | 13844.9 | 35
+Alta | 12027.4 | 30
+Moderada | 1764.9 | 4
+Baja | 5475.8 | 14
 Muy baja | 3747.8 | 9
-Nula | 2426.0 | 6
+Nula | 2675.8 | 7
 
 #### 1.3.8 Sensibilidad de atributos ambientales de rocas con extracción en húmedo
 

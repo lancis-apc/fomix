@@ -176,12 +176,12 @@ Vegetación o uso de suelo actual.
 
 **Insumos**
 
-Capa | Cobertura del suelo
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Mapa de coberturas del suelo del estado de Yucatán al año base 2016 CONAFOR
-Año | 2020
-Campo | Desc_SAMOF
-Escala | Sin dato
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -302,12 +302,12 @@ Unidades | Adimensional
 
 **Insumos**
 
-Capa | Cobertura del suelo y localidades
+Capa | Uso del suelo y vegetación y localidades
 -- | --
-Fuente | [1] Mapa de coberturas del suelo del estado de Yucatán al año base 2016 CONAFOR y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
-Año | 2020
-Campo | [1] Desc_SAMOF
-Escala | Sin dato
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI, [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO y [3] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2021; [3] 2020
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000;[2] 1:50,000; [3] Sin dato
 Unidades | Adimensional
 
 **Tabla de exclusión del sector pecuario porcino y avícola**
@@ -348,14 +348,14 @@ Urbanas | 0.012
 
 **Área por categoría de aptitud**
 
-Categoría | km² | Porcentaje del   estado
+Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 6792.6 | 17
-Alta | 14471.5 | 37
-Moderada | 10005.6 | 25
-Baja | 3724.9 | 9
-Muy baja | 1471.0 | 4
-Nula | 3071.1 | 8
+Muy alta | 7430.5 | 19
+Alta | 14296.8 | 36
+Moderada | 9858.9 | 25
+Baja | 3487.4 | 9
+Muy baja | 1416.8 | 4
+Nula | 3046.2 | 8
 
 #### 1.3.4 Sensibilidad de atributos ambientales del sector percuario porcino y avícola
 

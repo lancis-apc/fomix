@@ -379,12 +379,12 @@ Uso de suelo y vegetación.
 
 **Insumos**
 
-Capa | Uso del suelo y vegetación
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -421,10 +421,10 @@ ID | Categoría | Importancia | FV
 
 Capa | Uso del suelo y vegetación y localidades
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
-Año | [1] 2017; [2] 2020
-Campo | [1] descripcio
-Escala | [1] 1:250,000; [2] Sin dato
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI, [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO y [3] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2021; [3] 2020
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000;[2] 1:50,000; [3] Sin dato
 Unidades | Adimensional
 
 **Tabla de exclusión del subsector energía ligera**
@@ -472,14 +472,14 @@ Basureros | 0.006
 
 **Área por categoria de aptitud**
 
-Categoría | Km² | Porcentaje del   estado
+Categoría | Km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 517.0 | 1
-Alta | 1415.7 | 4
-Moderada | 6897.1 | 17
-Baja | 25415.6 | 64
-Muy baja | 2874.9 | 7
-Nula | 2416.2 | 6
+Muy alta | 408.3 | 1
+Alta | 1351.1 | 3
+Moderada | 6807.6 | 17
+Baja | 25442.0 | 64
+Muy baja | 2811.0 | 7
+Nula | 2716.5 | 7
 
 #### 1.3.3 Sensibilidad de atributos de industria ligera
 
@@ -880,12 +880,12 @@ Uso de suelo y vegetación.
 
 **Insumos**
 
-Capa | Cobertura
+Campo | Uso del suelo y vegetación
 -- | --
-Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
-Año | 2017
-Campo | descripcio
-Escala | 1:250,000
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -950,10 +950,10 @@ ID | Categoría | Importancia | FV
 
 Capa | Uso del suelo y vegetación y localidades
 -- | --
-Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
-Año | [1] 2017; [2] 2020
-Campo | [1] descripcio
-Escala | [1] 1:250,000; [2] Sin dato
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI, [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO y [3] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2021; [3] 2020
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000;[2] 1:50,000; [3] Sin dato
 Unidades | Adimensional
 
 **Tabla de exclusión del subsector energía mediana y pesada**
@@ -1005,12 +1005,12 @@ Carreteras de un carril | 0.006
 
 Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 1529.5 | 4
-Alta | 2570.8 | 7
-Moderada | 10017.6 | 25
-Baja | 17272.4 | 44
-Muy baja | 5730.1 | 14
-Nula | 2416.2 | 6
+Muy alta | 1389.6 | 4
+Alta | 2539.8 | 6
+Moderada | 10030.2 | 25
+Baja | 17200.1 | 44
+Muy baja | 5660.4 | 14
+Nula | 2716.5 | 7
 
 #### 2.3.3 Sensibilidad de atributos de industria mediana y pesada
 
