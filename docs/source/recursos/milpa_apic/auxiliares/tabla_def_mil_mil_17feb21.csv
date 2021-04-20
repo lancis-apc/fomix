@@ -1,0 +1,40 @@
+﻿Tipo,Definición,
+Milpa maya y apicultura,"Sistema alimentario agroforestal dinámico, integrado por diversas actividades productivas a pequeña escala (solar, apicultura, otras actividades en el monte), asociadas a la seguridad alimentaria por ser principalmente para autoconsumo. Sus principales componentes son: semillas nativas, agro diversidad, cultivo de temporal, vegetación más o menos conservada, extensión menor a 1-3 ha.",
+,,
+Meta,Definición,
+,"Promover el fortalecimiento del sistema milpa maya tradicional y de la apicultura del Estado de Yucatán, para que la producción se realice de manera sustentable, promueva la conservación de la biodiversidad y del patrimonio biocultural y permita la innovación en la milpa maya, sin perder su esencia tradicional.",
+,,
+Atributos,Definición,Peso
+Biofísicos,"Atributos asociados a las propiedades biológicas, físicas del suelo y del ambiente.",0.635
+Sociales,Atributos que describen las características sociales del territorio.,0.259
+Infraestructura,Atributos asociados a la distribución de productos y centros de acopio y accesibilidad.,0.106
+,,
+Biofísicos,,
+Atributo,Definición,Peso
+Cobertura,Vegetación o uso de suelo actual,0.467
+Tipo de suelo,Tipo de suelo (Edafología),0.407
+Disponibilidad de agua,Fuentes de acceso al agua,0.125
+,,
+Infraestructura,,
+Atributo,Definición,
+Distancia a caminos,"Distancia a caminos principales, brechas, terracerías",
+Distancia a centros de acopio,Distancia a poblaciones principales. Existencia de grupos organizados de mercado.,
+,,
+Sociales,,
+Atributo,Definición,
+Población indígena,Porcentaje de la población que habla una lengua indígena en el municipio.,
+Tenencia de la tierra,"Zonas de área común, parcelas y áreas no ejidales.",
+,,
+Disponibilidad agua,,
+Atributo,Definición,
+Precipitación,"Precipitación promedio de mayo, junio y julio",
+,,
+Caminos,,
+Carreteras,Distancia a carreteras y prolongación,
+Veredas,Distancia a caminos y veredas.,
+,,
+Centros de acopio,,
+Atributo,Definición,
+Distancia a localidades rurales,"Distancia localidades rurales < 2,500 habitantes.",
+Distancia a localidades rurales-urbanas,"Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.",
+Distancia a localidades urbanas,"Distancia a localidades urbanas >= 15,000 habitantes.",

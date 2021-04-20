@@ -1,0 +1,35 @@
+﻿Tipo,Definición,
+Porcícola y avícola,,
+,,
+Meta,Definición,
+,"Fomentar el desarrollo, el crecimiento y la descentralización de empresas porcícolas y avícolas para que su operación se realice de manera ordenada y sustentable, promueva modelos de producción no convencionales a partir de porcinos y aves seleccionados, especializados o localmente adaptados e incorpore esquemas tecnológicos para reducir y mitigar impactos socioambientales, de manera que se incremente la sostenibilidad ambiental y contribuya a mejorar la salud pública.",
+,,
+Atributos,Definición,Peso
+Infraestructura,Atributos asociados a la distribución de productos y centros de acopio y accesibilidad.,0.627
+Biofísicos,"Atributos asociados a las propiedades biológicas, físicas del suelo y del ambiente.",0.278
+Disponibilidad de mano de obra,"Disponibilidad de mano de obra en los diferentes tipos de asentamientos humanos, para ser contratada por las granjas.",0.095
+,,
+Biofísicos,,
+Atributo,Definición,Peso
+Costo de extracción de agua,"Inversión necesaria para extraer el agua del acuífero, determinada por la profundidad o distancia a la que se encuentra el acuífero o nivel piezométrico (m).",0.833
+Cobertura,Vegetación o uso de suelo actual,0.167
+,,
+,,
+Infraestructura,,
+Atributo,Definición,Peso
+Caminos,Distancia (km) a carreteras pavimentadas de 2 carriles y secundarias,0.529
+Distancia a redes eléctricas: ,Distancia (km) a redes eléctricas principales o primarias de la Comisión Federal de Electricida (CFE) como disponibilidad de energía para la operación de las granjas.,0.257
+Distancia a rastro y empacadora ,"Distancia (km) a rastros y empacadoras porcinos y avícolas. Incluye infraestructura industrial complementaria como establecimientos de inspección federal, plantas transformadoras de productos y empacadoras. ",0.139
+Distancia a Puerto Progreso ,"Distancia (km) de las plantas de producción de alimento a Puerto Progreso, para la recepción de insumos.",0.075
+,,
+,,
+Caminos,,
+Atributo,Definición,Peso
+Distancia a carreteras,Distancia (km) a carreteras y prolongación, 0.800 
+Distancia a caminos y veredas,Distancia (km) a caminos y veredas., 0.200 
+,,
+Disponibilidad de mano de obra,,
+Atributo,Definición,Peso
+Rural-Urbano,"Distancia (km) a localidades rurales-urbanas => 2500 y <15,000 habitantes.",0.559
+Rurales,"Distancia (km) a localidades rurales < 2,500 habitantes.",0.319
+Urbanos,"Distancia (km) a localidades urbanas >= 15,000 habitantes.",0.122
