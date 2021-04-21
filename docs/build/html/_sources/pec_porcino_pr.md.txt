@@ -21,23 +21,23 @@ Fomentar el desarrollo, el crecimiento y la descentralización de empresas porc�
 
 Atributo | Definición
 -- | --
-Caminos | Distancia a carreteras pavimentadas de 2 carriles y secundarias
-Distancia a redes eléctricas: | Distancia a redes eléctricas CFE.
-Distancia a rastro y empacadora | Infraestructura industrial complementaria (incluye establecimientos de inspección federal, plantas transformadoras de productos y empacadoras). Distancia a rastros y empacadoras porcinos y avícolas.
-Puerto Progreso | Distancia a Puerto Progreso para recepción de insumos.
+Caminos | Distancia (km) a carreteras pavimentadas de 2 carriles y secundarias.
+Distancia a redes eléctricas: | Distancia (km) a redes eléctricas principales o primarias de la Comisión Federal de Electricidad (CFE) como disponibilidad de energía para la operación de las granjas.
+Distancia a rastro y empacadora | Distancia (km) a rastros y empacadoras porcinos y avícolas. Incluye infraestructura industrial complementaria como establecimientos de inspección federal, plantas transformadoras de productos y empacadoras.
+Distancia a Puerto Progreso | Distancia en kilómetros de las plantas de producción de alimento (ubicadas en su mayoría a una distancia cercana a Puerto Progreso).
 
 ##### 1.2.1.1 Caminos
 
-Distancia a carreteras pavimentadas de 2 carriles y secundarias.
+Distancia (km) a carreteras pavimentadas de 2 carriles y secundarias.
 
 Atributo | Definición
 -- | --
-Distancia a carreteras | Distancia a carreteras y prolongación
-Distancia a caminos y veredas | Distancia a caminos y veredas.
+Distancia a carreteras | Distancia (km) a carreteras y prolongación
+Distancia a caminos y veredas | Distancia (km) a caminos y veredas.
 
 ###### 1.2.1.1.1 Distancia a carreteras
 
-Distancia a carreteras y prolongación.
+Distancia (km) a carreteras y prolongación
 
 **Insumos**
 
@@ -59,7 +59,7 @@ Unidades | Kilómetros
 
 ###### 1.2.1.1.2 Distancia a caminos y veredas
 
-Distancia a caminos y veredas.
+Distancia (km) a caminos y veredas.
 
 **Insumos**
 
@@ -81,11 +81,11 @@ Unidades | Kilómetros
 
 ##### 1.2.1.2 Distancia a redes eléctricas
 
-Distancia a redes eléctricas CFE.
+Distancia (km) a redes eléctricas principales o primarias de la Comisión Federal de Electricidad (CFE) como disponibilidad de energía para la operación de las granjas.
 
 **Insumos**
 
-Capa | Distancia líneas de transmisión de energía   eléctrica
+Capa | Distancia a líneas de transmisión de energía eléctrica
 -- | --
 Fuente | Líneas de transmisión INEGI
 Año | 2012
@@ -102,7 +102,7 @@ Unidades | Kilómetros
 
 ##### 1.2.1.3 Distancia a rastro y empacadora
 
-Infraestructura industrial complementaria (incluye establecimientos de inspección federal, plantas transformadoras de productos y empacadoras). Distancia a rastros y empacadoras porcinos y avícolas.
+Distancia (km) a rastros y empacadoras porcinos y avícolas. Incluye infraestructura industrial complementaria como establecimientos de inspección federal, plantas transformadoras de productos y empacadoras.
 
 **Insumos**
 
@@ -121,9 +121,9 @@ Unidades | Kilómetros
 
 ![](/recursos/pec_porcino/mapa_fv_por_infra_tif_d_rastros_porcinos_avicolas.png)
 
-##### 1.2.1.4 Puerto Progreso
+##### 1.2.1.4 Distancia a Puerto Progreso
 
-Distancia a Puerto Progreso para recepción de insumos.
+Distancia en kilómetros de las plantas de producción de alimento (ubicadas en su mayoría a una distancia cercana a Puerto Progreso).
 
 **Insumos**
 
@@ -139,7 +139,7 @@ Unidades | Kilómetros
 
 ![](/recursos/pec_porcino/fi_fv_por_infra_puer_d_puerto_progreso_con_carreteras.png)
 
-**Función de valor de Puerto Progreso**
+**Función de valor de distancia a Puerto Progreso**
 
 ![](/recursos/pec_porcino/mapa_fv_por_infra_puer_d_puerto_progreso_con_carreteras.png)
 
@@ -147,12 +147,12 @@ Unidades | Kilómetros
 
 Atributo | Definición
 -- | --
-Profundidad del acuífero | Distancia al acuífero o nivel piezométrico. Costo de extracción de agua del acuífero
+Costo de extracción de agua | Inversión necesaria para extraer el agua del acuífero, determinada por la profundidad o distancia a la que se encuentra el acuífero o nivel piezométrico (m).
 Cobertura | Vegetación o uso de suelo actual
 
-##### 1.2.2.1 Profundidad del acuífero
+##### 1.2.2.1 Costo de extracción de agua
 
-Distancia al acuífero o nivel piezométrico. Costo de extracción de agua del acuífero.
+Inversión necesaria para extraer el agua del acuífero, determinada por la profundidad o distancia a la que se encuentra el acuífero o nivel piezométrico (m).
 
 **Insumos**
 
@@ -168,7 +168,7 @@ Unidades | Metros
 
 ![](/recursos/pec_porcino/fi_fv_por_bio_agua_d_manto_freatico.png)
 
-**Función de valor de disponibilidad de agua**
+**Función de valor de costo de extracción de agua**
 
 ![](/recursos/pec_porcino/mapa_fv_por_bio_agua_d_manto_freatico.png)
 
@@ -212,17 +212,17 @@ ID | Categoría | Preferencia del productor | FV
 
 ![](/recursos/pec_porcino/mapa_fv_por_bio_usv_usv_cobertura_conafor.png)
 
-#### 1.2.3 Mano de obra
+#### 1.2.3 Disponibilidad de mano de obra
 
 Atributo | Definición
 -- | --
-Rural-Urbano | Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.
-Rurales | Distancia localidades rurales < 2,500 habitantes.
-Urbanos | Distancia a localidades urbanas >= 15,000 habitantes.
+Localidades rural-urbano | Distancia (km) a localidades rurales-urbanas => 2500 y <15,000   habitantes.
+Localidades rurales | Distancia (km) a localidades rurales < 2,500 habitantes.
+Localidades urbanas | Distancia (km) a localidades urbanas >= 15,000 habitantes.
 
-##### 1.2.3.1 Rural-Urbano
+##### 1.2.3.1 Localidades rural-urbano
 
-Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.
+Distancia (km) a localidades rurales-urbanas => 2500 y <15,000 habitantes.
 
 **Insumos**
 
@@ -238,13 +238,13 @@ Unidades | Kilómetros
 
 ![](/recursos/pec_porcino/fi_fv_por_socio_loca_d_localidades_2500_15k_exc.png)
 
-**Función de valor de rural-urbano**
+**Función de valor de localidades rural-urbano**
 
 ![](/recursos/pec_porcino/mapa_fv_por_socio_loca_d_localidades_2500_15k_exc.png)
 
-##### 1.2.3.2 Rurales
+##### 1.2.3.2 Localidades rurales
 
-Distancia localidades rurales < 2,500 habitantes.
+Distancia (km) a localidades rurales < 2,500 habitantes.
 
 **Insumos**
 
@@ -260,13 +260,13 @@ Unidades | Kilómetros
 
 ![](/recursos/pec_porcino/fi_fv_por_socio_loca_d_localidades_2500_exc.png)
 
-**Función de valor de rurales**
+**Función de valor de localidades rurales**
 
 ![](/recursos/pec_porcino/mapa_fv_por_socio_loca_d_localidades_2500_exc.png)
 
-##### 1.2.3.3 Urbanos
+##### 1.2.3.3 Localidades urbanas
 
-Distancia a localidades urbanas >= 15,000 habitantes.
+Distancia (km) a localidades urbanas >= 15,000 habitantes.
 
 **Insumos**
 
@@ -282,7 +282,7 @@ Unidades | Kilómetros
 
 ![](/recursos/pec_porcino/fi_fv_por_socio_loca_d_localidades_15k_exc.png)
 
-**Función de valor de urbanos**
+**Función de valor de localidades urbanas**
 
 ![](/recursos/pec_porcino/mapa_fv_por_socio_loca_d_localidades_15k_exc.png)
 
@@ -338,16 +338,16 @@ ID | Categoría
 
 Criterio | Peso
 -- | --
-Carreteras | 0.265
-Profundidad del acuífero | 0.232
+Distancia a carreteras | 0.265
+Costo de extracción de agua | 0.232
 Distancia a redes eléctricas | 0.161
-Distancia a rastro y empacadoras | 0.087
-Caminos y veredas | 0.066
-Rurales-Urbanas | 0.053
-Puerto Progreso | 0.047
+Distancia a rastro y empacadora | 0.087
+Distancia a caminos y veredas | 0.066
+Localidades rurales-urbanas | 0.053
+Distancia a Puerto Progreso | 0.047
 Cobertura | 0.046
-Rurales | 0.030
-Urbanas | 0.012
+Localidades rurales | 0.030
+Localidades urbanas | 0.012
 
 **Área por categoría de aptitud**
 
@@ -379,9 +379,9 @@ Nula | 3046.2 | 8
 Atributo | Definición
 -- | --
 Caminos | Distancia (km) a carreteras pavimentadas de 2 carriles y secundarias.
-Distancia a redes eléctricas: | Distancia (km) a redes eléctricas principales o primarias de la Comisión Federal de Electricida (CFE) como disponibilidad de energía para la operación de las granjas.
+Distancia a redes eléctricas: | Distancia (km) a redes eléctricas principales o primarias de la Comisión Federal de Electricidad (CFE) como disponibilidad de energía para la operación de las granjas.
 Distancia a rastro y empacadora | Distancia (km) a rastros y empacadoras porcinos y avícolas. Incluye infraestructura industrial complementaria como establecimientos de inspección federal, plantas transformadoras de productos y empacadoras.
-Distancia a Puerto Progreso | Distancia (km) de las plantas de producción de alimento a Puerto Progreso, para la recepción de insumos.
+Distancia a Puerto Progreso | Distancia en kilómetros de las plantas de producción de alimento (ubicadas en su mayoría a una distancia cercana a Puerto Progreso).
 
 ##### 2.2.1.1 Caminos
 
@@ -438,11 +438,11 @@ Unidades | Kilómetros
 
 ##### 2.2.1.2 Distancia a redes eléctricas
 
-Distancia (km) a redes eléctricas principales o primarias de la Comisión Federal de Electricida (CFE) como disponibilidad de energía para la operación de las granjas.
+Distancia (km) a redes eléctricas principales o primarias de la Comisión Federal de Electricidad (CFE) como disponibilidad de energía para la operación de las granjas.
 
 **Insumos**
 
-Capa | Distancia líneas de transmisión de energía   eléctrica
+Capa | Distancia a líneas de transmisión de energía   eléctrica
 -- | --
 Fuente | Líneas de transmisión INEGI
 Año | 2012
@@ -480,7 +480,7 @@ Unidades | Kilómetros
 
 ##### 2.2.1.4 Distancia a Puerto Progreso
 
-Distancia (km) de las plantas de producción de alimento a Puerto Progreso, para la recepción de insumos.
+Distancia en kilómetros de las plantas de producción de alimento (ubicadas en su mayoría a una distancia cercana a Puerto Progreso).
 
 **Insumos**
 
@@ -573,11 +573,11 @@ ID | Categoría | Preferencia del productor | FV
 
 Atributo | Definición
 -- | --
-Rural-Urbano | Distancia (km) a localidades rurales-urbanas => 2500 y <15,000 habitantes.
-Rurales | Distancia (km) a localidades rurales < 2,500 habitantes.
-Urbanos | Distancia (km) a localidades urbanas >= 15,000 habitantes.
+Localidades rural-urbano | Distancia (km) a localidades rurales-urbanas => 2500 y <15,000   habitantes.
+Localidades rurales | Distancia (km) a localidades rurales < 2,500 habitantes.
+Localidades urbanas | Distancia (km) a localidades urbanas >= 15,000 habitantes.
 
-##### 2.2.3.1 Rural-Urbano
+##### 2.2.3.1 Localidades rural-urbano
 
 Distancia (km) a localidades rurales-urbanas => 2500 y <15,000 habitantes.
 
@@ -595,11 +595,11 @@ Unidades | Kilómetros
 
 ![](/recursos/pec_porcino_v2/fi_fv_por_socio_loca_d_localidades_2500_15k_exc.png)
 
-**Función de valor de rural-urbano**
+**Función de valor de localidades rural-urbano**
 
 ![](/recursos/pec_porcino_v2/mapa_fv_por_socio_loca_d_localidades_2500_15k_exc.png)
 
-##### 2.2.3.2 Rurales
+##### 2.2.3.2 Localidades rurales
 
 Distancia (km) a localidades rurales < 2,500 habitantes.
 
@@ -617,11 +617,11 @@ Unidades | Kilómetros
 
 ![](/recursos/pec_porcino_v2/fi_fv_por_socio_loca_d_localidades_2500_exc.png)
 
-**Función de valor de rurales**
+**Función de valor de localidades rurales**
 
 ![](/recursos/pec_porcino_v2/mapa_fv_por_socio_loca_d_localidades_2500_exc.png)
 
-##### 2.2.3.3 Urbanos
+##### 2.2.3.3 Localidades urbanas
 
 Distancia (km) a localidades urbanas >= 15,000 habitantes.
 
@@ -639,7 +639,7 @@ Unidades | Kilómetros
 
 ![](/recursos/pec_porcino_v2/fi_fv_por_socio_loca_d_localidades_15k_exc.png)
 
-**Función de valor de urbanos**
+**Función de valor de localidades urbanas**
 
 ![](/recursos/pec_porcino_v2/mapa_fv_por_socio_loca_d_localidades_15k_exc.png)
 
@@ -695,16 +695,16 @@ ID | Categoría
 
 Criterio | Peso
 -- | --
-Carreteras | 0.265
+Distancia a carreteras | 0.265
 Costo de extracción de agua | 0.232
 Distancia a redes eléctricas | 0.161
-Distancia a rastro y empacadoras | 0.087
-Caminos y veredas | 0.066
-Rurales-Urbanas | 0.053
+Distancia a rastro y empacadora | 0.087
+Distancia a caminos y veredas | 0.066
+Localidades rurales-urbanas | 0.053
 Distancia a Puerto Progreso | 0.047
 Cobertura | 0.046
-Rurales | 0.030
-Urbanas | 0.012
+Localidades rurales | 0.030
+Localidades urbanas | 0.012
 
 **Área por categoría de aptitud**
 
