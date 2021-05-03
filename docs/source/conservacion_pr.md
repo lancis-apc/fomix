@@ -46,8 +46,8 @@ Zonas de recarga de acuífero como indicador de ciclo del agua.
 Capa | Recarga del acuífero
 -- | --
 Fuente | Recarga del acuífero Yucatán. Amigos de Sian Kaan - Aarón Siller
-Año | ?
-Escala | ?
+Año | 2021
+Escala | 1:20,000
 Unidades | Milímetros
 
 **Parámetros de la función de valor**
@@ -616,8 +616,8 @@ Zonas de recarga de acuífero.
 Capa | Recarga del acuífero
 -- | --
 Fuente | Recarga del acuífero Yucatán. Amigos de Sian Kaan - Aarón Siller
-Año | ?
-Escala | ?
+Año | 2021
+Escala | 1:20,000
 Unidades | Milímetros
 
 **Parámetros de la función de valor**

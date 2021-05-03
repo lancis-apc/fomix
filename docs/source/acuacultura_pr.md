@@ -63,6 +63,10 @@ Año | 2016
 Escala | Sin dato
 Unidades | Metros
 
+**Parámetros de la función de valor**
+
+![](/recursos/pesca/fi_fv_acuasal_bio_espesor_agua_salada.png)
+
 **Función de valor de salinidad**
 
 ![](/recursos/pesca/mapa_fv_acuasal_bio_espesor_agua_salada.png)
@@ -80,7 +84,6 @@ Año | [1] 2017; [2] 2021
 Campo | [1] descripcio; [2] Descrip
 Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
-
 
 **Parámetros de la función de valor**
 
@@ -151,11 +154,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_acuasal_infra_d_lineas_electricas.png)
+![](/recursos/pesca/fi_fv_acuasal_infra_d_carreteras_caminos.png)
 
 **Función de valor de vías de comunicación**
 
-![](/recursos/pesca/mapa_fv_acuasal_infra_d_lineas_electricas.png)
+![](/recursos/pesca/mapa_fv_acuasal_infra_d_carreteras_caminos.png)
 
 #### 1.2.3 Socioeconómicos
 
@@ -301,7 +304,7 @@ Unidades | Metros
 
 ![](/recursos/pesca/fi_fv_acuadul_bio_espesor_agua_dulce.png)
 
-**Función de valor de acceso a agua**
+**Función de valor de salinidad**
 
 ![](/recursos/pesca/mapa_fv_acuadul_bio_espesor_agua_dulce.png)
 
