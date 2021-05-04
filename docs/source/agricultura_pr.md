@@ -585,6 +585,10 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.75
 1 | Tierra de uso común | Baja | 0.25
 
+**Función de valor de tenencia**
+
+![](/recursos/agricultura/mapa_fv_agtem_socio_tene_tenencia_tierra)
+
 #### 2.2.3 Infraestructura
 
 Criterio | Definición
