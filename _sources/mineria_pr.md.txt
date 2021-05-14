@@ -1087,3 +1087,28 @@ Nula | 2675.8 | 7
 #### 1.3.8 Sensibilidad de atributos ambientales de rocas con extracción en húmedo
 
 ![](/recursos/mineria/fi_analisis_sensibilidad_mineria_rocas_humedas.png)
+
+#### 1.3.9 Mapa de aptitud integrado
+
+##### 1.3.9.1 Zonas de exclusión
+
+![](/recursos/mineria/mapa_exclusion_mineria.png)
+
+##### 1.3.9.2 Mapa de aptitud de integrado del sector minería
+
+![](/recursos/mineria/mapa_aptitud_mineria.png)
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del estado
+-- | --: | --:
+Muy alta | 2001.0 | 5
+Alta | 15047.7 | 38
+Moderada | 10426.0 | 26
+Baja | 9088.6 | 23
+Muy baja | 297.5 | 1
+Nula | 2675.8 | 7
+
+#### 1.3.9.3 Sensibilidad de atributos ambientales del sector minería
+
+![](/recursos/mineria/fi_analisis_sensibilidad_mineria.png)
