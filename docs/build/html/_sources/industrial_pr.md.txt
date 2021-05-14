@@ -1016,6 +1016,30 @@ Nula | 2716.5 | 7
 
 ![](/recursos/industrial/fi_analisis_sensibilidad_industria_pesada.png)
 
+### 3.3 Mapa de aptitud integrado
+
+#### 3.3.1 Zonas de exclusión
+
+![](/recursos/industrial/mapa_exclusion_industrial.png)
+
+#### 3.3.2 Mapa de aptitud de integrado del sector industrial
+
+![](/recursos/industrial/mapa_aptitud_industrial.png)
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del   estado
+-- | --: | --:
+Muy alta | 662.7 | 2
+Alta | 2551.4 | 6
+Moderada | 9717.4 | 25
+Baja | 21178.7 | 54
+Muy baja | 2709.8 | 7
+Nula | 2716.5 | 7
+
+#### 3.3.3 Sensibilidad de atributos del sector industrial
+
+![](/recursos/industrial/fi_analisis_sensibilidad_industrial.png)
 <!-- .. csv-table::
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv
    :header-rows: 1

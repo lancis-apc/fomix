@@ -643,6 +643,8 @@ Unidades | Kilómetros
 
 ![](/recursos/pec_porcino_v2/mapa_fv_por_socio_loca_d_localidades_15k_exc.png)
 
+Con base en la solicitud de consulta a los productores, la versión 2 se utilizará como insumo para el POETY.
+
 ### 2.3 Mapa de aptitud
 
 #### 2.3.1 Zona de aprovechamiento actual del sector pecuario porcino y avícola

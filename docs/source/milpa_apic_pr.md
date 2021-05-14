@@ -678,12 +678,12 @@ Distancia a localidades urbanas | 0.012
 
 Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 22858.8 | 58
+Muy alta | 22861.6 | 58
 Alta | 4963.4 | 13
 Moderada | 5059.2 | 13
 Baja | 4656.7 | 12
 Muy baja | 527.1 | 1
-Nula | 1471.4 | 4
+Nula | 1468.6 | 4
 
 #### 2.3.4 Sensibilidad de atributos ambientales de apicultura
 

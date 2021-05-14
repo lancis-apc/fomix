@@ -587,7 +587,7 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tenencia**
 
-![](/recursos/agricultura/mapa_fv_agtem_socio_tene_tenencia_tierra)
+![](/recursos/agricultura/mapa_fv_agtem_socio_tene_tenencia_tierra.png)
 
 #### 2.2.3 Infraestructura
 
@@ -704,3 +704,28 @@ Nula | 2876.3 | 7
 #### 2.3.3 Sensibilidad de atributos de agricultura tecnificada de temporal
 
 ![](/recursos/agricultura/fi_analisis_sensibilidad_agricultura_temporal.png)
+
+### 3.3 Mapa de aptitud integrado
+
+#### 3.3.1 Zonas de exclusión
+
+![](/recursos/agricultura/mapa_agricultura_exclusion.png)
+
+#### 3.3.2 Mapa de aptitud de integrado de agricultura tecnificada
+
+![](/recursos/agricultura/mapa_agricultura_aptitud.png)
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del estado
+-- | --: | --:
+Muy alta | 1461.4 | 4
+Alta | 23470.1 | 59
+Moderada | 11295.6 | 29
+Baja | 431.5 | 1
+Muy baja | 1.8 | 0
+Nula | 2876.3 | 7
+
+#### 3.3.3 Sensibilidad de atributos de agricultura tecnificada
+
+![](/recursos/agricultura/fi_analisis_sensibilidad_agricultura.png)
