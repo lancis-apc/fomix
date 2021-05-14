@@ -9,6 +9,8 @@ Promover la conservación, la protección y el aprovechamiento sustentable de lo
 
 [Lista de participantes](https://www.dropbox.com/s/d67uabsa4we9daj/lista_asistencia_conservaci%C3%B3n.pdf?dl=0)
 
+## 1. Conservación
+
 ### 1.1 Modelo de decisión
 
 ![](/recursos/conservacion/fi_conservacion.png)
@@ -812,6 +814,6 @@ Baja | 8400.7 | 21
 Muy baja | 2040.1 | 5
 Nula | 0.0 | 0
 
-#### 1.3.2 Sensibilidad de atributos ambientales del sector conservación
+#### 1.3.7 Sensibilidad de atributos ambientales del sector conservación
 
 ![](/recursos/conservacion/fi_analisis_sensibilidad_conservacion.png)

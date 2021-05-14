@@ -1121,13 +1121,13 @@ Las versiones 1b y 2b del mapa de aptitud de aprovechamiento forestal maderable 
 
 Para fines del análisis de conflicto se usará la versión 2b debido a que la superficie de las categorías de aptitud alta y muy alta es mayor.
 
-### 3.3 Mapa de aptitud integrado
+## 3 Mapa de aptitud integrado
 
-#### 3.3.1 Zonas de exclusión
+### 3.1 Zonas de exclusión
 
 ![](/recursos/forestal/mapa_exclusion_forestal.png)
 
-#### 3.3.2 Mapa de aptitud de integrado del sector de aprovechamiento forestal
+### 3.2 Mapa de aptitud de integrado del sector de aprovechamiento forestal
 
 ![](/recursos/forestal/mapa_aptitud_forestal.png)
 
@@ -1142,6 +1142,6 @@ Baja | 1389.4 | 4
 Muy baja | 166.4 | 0
 Nula | 1033.9 | 3
 
-#### 3.3.3 Sensibilidad de atributos ambientales de aprovechamiento forestal
+### 3.3 Sensibilidad de atributos ambientales de aprovechamiento forestal
 
 ![](/recursos/forestal/fi_analisis_sensibilidad_forestal.png)

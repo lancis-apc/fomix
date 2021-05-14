@@ -1016,13 +1016,13 @@ Nula | 2716.5 | 7
 
 ![](/recursos/industrial/fi_analisis_sensibilidad_industria_pesada.png)
 
-### 3.3 Mapa de aptitud integrado
+## 3. Mapa de aptitud integrado
 
-#### 3.3.1 Zonas de exclusión
+### 3.1 Zonas de exclusión
 
 ![](/recursos/industrial/mapa_exclusion_industrial.png)
 
-#### 3.3.2 Mapa de aptitud de integrado del sector industrial
+### 3.2 Mapa de aptitud de integrado del sector industrial
 
 ![](/recursos/industrial/mapa_aptitud_industrial.png)
 
@@ -1037,7 +1037,7 @@ Baja | 21178.7 | 54
 Muy baja | 2709.8 | 7
 Nula | 2716.5 | 7
 
-#### 3.3.3 Sensibilidad de atributos del sector industrial
+### 3.3 Sensibilidad de atributos del sector industrial
 
 ![](/recursos/industrial/fi_analisis_sensibilidad_industrial.png)
 <!-- .. csv-table::

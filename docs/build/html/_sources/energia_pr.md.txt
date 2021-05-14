@@ -733,7 +733,7 @@ Nula | 2669.4 | 7
 
 ![](/recursos/energia/fi_analisis_sensibilidad_energia.png)
 
-#### 1.3.10 Mapa de aptitud de energía renovables
+## 2. Mapa de aptitud de energía renovables
 
 Con base en los Art. 37 y 38 del Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en Materia de Ordenamiento Ecológico el mapa de aptitud que se utilizará como insumo para la actualización del POETY es el de energías renovables que se muestra a continuación.
 
@@ -750,7 +750,7 @@ Baja | 9922.8 | 25
 Muy baja | 2476.1 | 6
 Nula | 1871.4 | 5
 
-#### 1.3.11 Sensibilidad de atributos ambientales de energía renovables
+### 2.1 Sensibilidad de atributos ambientales de energía renovables
 
 ![](/recursos/energia/fi_analisis_sensibilidad_energia_renovable.png)
 

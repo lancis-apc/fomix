@@ -705,13 +705,13 @@ Nula | 2876.3 | 7
 
 ![](/recursos/agricultura/fi_analisis_sensibilidad_agricultura_temporal.png)
 
-### 3.3 Mapa de aptitud integrado
+## 3. Mapa de aptitud integrado
 
-#### 3.3.1 Zonas de exclusión
+### 3.1 Zonas de exclusión
 
 ![](/recursos/agricultura/mapa_agricultura_exclusion.png)
 
-#### 3.3.2 Mapa de aptitud de integrado de agricultura tecnificada
+### 3.2 Mapa de aptitud de integrado de agricultura tecnificada
 
 ![](/recursos/agricultura/mapa_agricultura_aptitud.png)
 
@@ -726,6 +726,6 @@ Baja | 431.5 | 1
 Muy baja | 1.8 | 0
 Nula | 2876.3 | 7
 
-#### 3.3.3 Sensibilidad de atributos de agricultura tecnificada
+### 3.3 Sensibilidad de atributos de agricultura tecnificada
 
 ![](/recursos/agricultura/fi_analisis_sensibilidad_agricultura.png)

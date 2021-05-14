@@ -9,6 +9,8 @@ Aumentar la apertura de bancos de materiales para cumplir con la demanda de prod
 
 [Lista de participantes](https://www.dropbox.com/s/lxqdnpxi3kjv4hq/lista_asistencia_mineria.pdf?dl=0)
 
+## 1. Minería
+
 ### 1.1 Modelo de decisión
 
 ![](/recursos/mineria/fi_mineria.png)
@@ -1088,13 +1090,13 @@ Nula | 2675.8 | 7
 
 ![](/recursos/mineria/fi_analisis_sensibilidad_mineria_rocas_humedas.png)
 
-#### 1.3.9 Mapa de aptitud integrado
+## 2. Mapa de aptitud integrado
 
-##### 1.3.9.1 Zonas de exclusión
+### 2.1 Zonas de exclusión
 
 ![](/recursos/mineria/mapa_exclusion_mineria.png)
 
-##### 1.3.9.2 Mapa de aptitud de integrado del sector minería
+### 2.2 Mapa de aptitud de integrado del sector minería
 
 ![](/recursos/mineria/mapa_aptitud_mineria.png)
 
@@ -1109,6 +1111,6 @@ Baja | 9088.6 | 23
 Muy baja | 297.5 | 1
 Nula | 2675.8 | 7
 
-#### 1.3.9.3 Sensibilidad de atributos ambientales del sector minería
+### 2.3 Sensibilidad de atributos ambientales del sector minería
 
 ![](/recursos/mineria/fi_analisis_sensibilidad_mineria.png)

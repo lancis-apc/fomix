@@ -9,6 +9,8 @@ Desarrollar y promocionar un modelo de turismo sustentable y diversificado, que 
 
 [Lista de participantes](https://www.dropbox.com/s/945471sskil5wbd/lista_asistencia_turismo.pdf?dl=0)
 
+## 1. Versión 1
+
 ### 1.1 Modelo de decisión
 
 ![](/recursos/turismo/fi_turismo.png)
@@ -725,6 +727,7 @@ Nula | 0.0 | 0
 
 ![](/recursos/turismo/fi_analisis_sensibilidad_turismo.png)
 
+## 2. Versión 2
 
 ### 2.1 Modelo de decisión
 

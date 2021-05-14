@@ -11,6 +11,8 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 [Lista de participantes](https://www.dropbox.com/s/e44gv4no0lrbcjb/lista_asistencia_pesca.pdf?dl=0)
 
+## 1. Pesca
+
 ### 1.1 Modelo de decisión
 
 ![](/recursos/pesca/fi_pesca.png)
