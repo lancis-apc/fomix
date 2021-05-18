@@ -692,18 +692,18 @@ ID | Categoría
 
 ![](/recursos/silvopastoril/mapa_apt_gbe_silvopastoril.png)
 
-**Pesos globales del modelo de aptitud del subsector pecuario silvopastoril**
+**Pesos globales del mapa de aptitud del subsector pecuario silvopastoril**
 
 Criterio | Peso
 -- | --
-Disponibilidad de agua | 0.38
-Cobertura | 0.2
-Disponibilidad de mano de obra | 0.15
-Accesibilidad a mercados locales | 0.09
-Precipitación | 0.08
-Tipo de suelo | 0.08
-temperatura | 0.02
-Accesibilidad a mercados foráneos | 0.01
+Disponibilidad de agua | 0.375
+Cobertura | 0.195
+Disponibilidad de mano de obra | 0.150
+Accesibilidad a mercados locales | 0.087
+Tipo de suelo | 0.083
+Precipitación | 0.075
+temperatura | 0.023
+Accesibilidad a mercados foráneos | 0.013
 
 <!-- .. csv-table::
    :file: recursos/tabla_pesos_globales.csv
@@ -712,15 +712,69 @@ Accesibilidad a mercados foráneos | 0.01
 
 **Área por categoría de aptitud**
 
-Categoria | km² | Porcentaje del estado
-:-- | --: | --:
-Nula | 2538.1 |  6
-Muy baja | 702.2 |  2
-Baja | 397.2 |  1
-Moderada | 4300.0 | 11
-Alta | 11956.0 | 30
-Muy alta | 19486.6 | 49
+Categoría | km² | Porcentaje del estado
+-- | --: | --:
+Muy alta | 19591.3 | 50
+Alta | 11540.4 | 29
+Moderada | 4255.9 | 11
+Baja | 414.0 | 1
+Muy baja | 714.0 | 2
+Nula | 3021.0 | 8
 
 #### 2.3.3 Sensibilidad de criterios ambientales del subsector pecuario silvopastoril
 
 ![](/recursos/silvopastoril/fi_analisis_sensibilidad_silvopastoril.png)
+
+## 3. Mapa de aptitud integrado del sector pecuario bovino
+
+_El mapa de aptitud se integró considerando que los subsectores son igualmente importantes y, por lo tanto, tienen el mismo peso._
+
+### 3.1 Zonas de exclusión
+
+![](/recursos/pec_bovino/mapa_bov_integrado_exclusion.png)  
+
+### 3.2 Mapa de aptitud integrado del sector pecuario bovino
+
+![](/recursos/pec_bovino/mapa_bov_integrado_aptitud.png)
+
+**Pesos globales del mapa de aptitud integrado del sector pecuario bovino**
+
+Criterio | Peso
+-- | --
+Disponibilidad de agua - Bovino | 0.203
+Disponibilidad de agua - Silvopastoril | 0.190
+Precipitación - Bovino | 0.105
+Cobertura - Silvopastoril | 0.100
+Energía - Bovino | 0.079
+Disponibilidad de mano de obra -   Silvopastoril | 0.075
+Accesibilidad a mercados locales -   Silvopastoril | 0.045
+Tipo de suelo - Bovino | 0.041
+Precipitación - Silvopastoril | 0.040
+Tipo de suelo - Silvopastoril | 0.040
+Tipo de cobertura - Bovino | 0.026
+Vías de comunicación - Bovino | 0.020
+Centros de acopio - Bovino | 0.020
+Temperatura - Silvopastoril | 0.010
+Rastros - Bovino | 0.005
+Accesibilidad a mercados foráneos -   Silvopastoril | 0.005
+
+
+<!-- .. csv-table::
+   :file: recursos/tabla_pesos_globales.csv
+   :header-rows: 1
+   :align: center -->
+
+**Área por categoría de aptitud**
+
+Categoría | km² | Porcentaje del estado
+-- | --: | --:
+Muy alta | 8378.1 | 21
+Alta | 22575.8 | 57
+Moderada | 4686.9 | 12
+Baja | 147.6 | 0
+Muy baja | 820.9 | 2
+Nula | 2927.2 | 7
+
+### 3.3 Sensibilidad del mapa de aptitud integrado del sector pecuario bovino
+
+![](/recursos/pec_bovino/fi_analisis_sensibilidad_bovino_integrado.png)
