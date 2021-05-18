@@ -112,8 +112,12 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#mapa-de-aptitud-de-energia-renovables">2. Mapa de aptitud de energía renovables</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#sensibilidad-de-atributos-ambientales-de-energia-renovables">2.1 Sensibilidad de atributos ambientales de energía renovables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mapa-de-aptitud-de-energias-renovables">2. Mapa de aptitud de energías renovables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modelo-de-decision-del-mapa-de-aptitud-de-energias-renovables">2.1 Modelo de decisión del mapa de aptitud de energías renovables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">2.1.1 Mapa de aptitud de energías renovables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sensibilidad-de-atributos-ambientales-de-energias-renovables">2.1.2 Sensibilidad de atributos ambientales de energías renovables</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1766,17 +1770,17 @@ Los convenios que suscriba la Secretaría con los estados, ..., para la formulac
 <tbody>
 <tr>
 <td>Gas natural</td>
-<td>Distancia del gasoducto a las zonas industriales</td>
+<td>Distancia del gasoducto a las&nbsp;   zonas industriales</td>
 <td>0.274</td>
 </tr>
 <tr>
 <td>Hidrocarburos líquidos</td>
-<td>Distancia a carreteras</td>
+<td>Carreteras</td>
 <td>0.256</td>
 </tr>
 <tr>
 <td>Hidrocarburos líquidos</td>
-<td>Distancia a localidades</td>
+<td>Localidades</td>
 <td>0.138</td>
 </tr>
 <tr>
@@ -1786,17 +1790,17 @@ Los convenios que suscriba la Secretaría con los estados, ..., para la formulac
 </tr>
 <tr>
 <td>Gas natural</td>
-<td>Distancia de localidades al gasoducto</td>
+<td>Distancia del gasoducto a localidades</td>
 <td>0.065</td>
 </tr>
 <tr>
 <td>Eólica</td>
-<td>Velocidad a 120 m de altura</td>
+<td>Velocidad</td>
 <td>0.057</td>
 </tr>
 <tr>
 <td>Biomasa</td>
-<td>Distancia a sitios de disposición final</td>
+<td>Residuos urbanos</td>
 <td>0.026</td>
 </tr>
 <tr>
@@ -1806,7 +1810,7 @@ Los convenios que suscriba la Secretaría con los estados, ..., para la formulac
 </tr>
 <tr>
 <td>Solar</td>
-<td>Tipo de cobertura</td>
+<td>Cobertura</td>
 <td>0.018</td>
 </tr>
 <tr>
@@ -1816,7 +1820,7 @@ Los convenios que suscriba la Secretaría con los estados, ..., para la formulac
 </tr>
 <tr>
 <td>Eólica</td>
-<td>Tipo de cobertura</td>
+<td>Cobertura</td>
 <td>0.012</td>
 </tr>
 <tr>
@@ -1831,12 +1835,12 @@ Los convenios que suscriba la Secretaría con los estados, ..., para la formulac
 </tr>
 <tr>
 <td>Eólica</td>
-<td>Distancia a carreteras</td>
+<td>Distancia a caminos</td>
 <td>0.004</td>
 </tr>
 <tr>
 <td>Biomasa</td>
-<td>Residuos agrícolas forestales</td>
+<td>Residuos vegetales</td>
 <td>0.002</td>
 </tr>
 </tbody>
@@ -1888,11 +1892,82 @@ Los convenios que suscriba la Secretaría con los estados, ..., para la formulac
 </div>
 </div>
 </div>
-<div class="section" id="mapa-de-aptitud-de-energia-renovables">
-<h2>2. Mapa de aptitud de energía renovables<a class="headerlink" href="#mapa-de-aptitud-de-energia-renovables" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="mapa-de-aptitud-de-energias-renovables">
+<h2>2. Mapa de aptitud de energías renovables<a class="headerlink" href="#mapa-de-aptitud-de-energias-renovables" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Con base en los Art. 37 y 38 del Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en Materia de Ordenamiento Ecológico el mapa de aptitud que se utilizará como insumo para la actualización del POETY es el de energías renovables que se muestra a continuación.</p>
+<div class="section" id="modelo-de-decision-del-mapa-de-aptitud-de-energias-renovables">
+<h3>2.1 Modelo de decisión del mapa de aptitud de energías renovables<a class="headerlink" href="#modelo-de-decision-del-mapa-de-aptitud-de-energias-renovables" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><img alt="_images/energia_renovable.png" src="_images/energia_renovable.png" /></p>
+<div class="section" id="id6">
+<h4>2.1.1 Mapa de aptitud de energías renovables<a class="headerlink" href="#id6" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><img alt="_images/mapa_aptitud_energia_renovable.png" src="_images/mapa_aptitud_energia_renovable.png" /></p>
-<p><strong>Área por categoría de aptitud</strong></p>
+<p><strong>Pesos globales del mapa de aptitud de energías renovables</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Fuente de energía</th>
+<th>Criterio</th>
+<th>Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solar</td>
+<td>Distancia a red eléctrica</td>
+<td>0.399</td>
+</tr>
+<tr>
+<td>Eólica</td>
+<td>Velocidad</td>
+<td>0.204</td>
+</tr>
+<tr>
+<td>Solar</td>
+<td>Cobertura</td>
+<td>0.080</td>
+</tr>
+<tr>
+<td>Solar</td>
+<td>Tenencia de la tierra</td>
+<td>0.080</td>
+</tr>
+<tr>
+<td>Eólica</td>
+<td>Distancia a la red eléctrica</td>
+<td>0.074</td>
+</tr>
+<tr>
+<td>Biomasa</td>
+<td>Residuos urbanos</td>
+<td>0.060</td>
+</tr>
+<tr>
+<td>Eólica</td>
+<td>Cobertura</td>
+<td>0.046</td>
+</tr>
+<tr>
+<td>Biomasa</td>
+<td>Distancia a granjas porcícolas</td>
+<td>0.024</td>
+</tr>
+<tr>
+<td>Eólica</td>
+<td>Distancia a carreteras</td>
+<td>0.014</td>
+</tr>
+<tr>
+<td>Eólica</td>
+<td>Distancia a localidades</td>
+<td>0.014</td>
+</tr>
+<tr>
+<td>Biomasa</td>
+<td>Residuos vegetales</td>
+<td>0.005</td>
+</tr>
+</tbody>
+</table><p><strong>Área por categoría de aptitud</strong></p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -1933,8 +2008,9 @@ Los convenios que suscriba la Secretaría con los estados, ..., para la formulac
 <td align="right">5</td>
 </tr>
 </tbody>
-</table><div class="section" id="sensibilidad-de-atributos-ambientales-de-energia-renovables">
-<h3>2.1 Sensibilidad de atributos ambientales de energía renovables<a class="headerlink" href="#sensibilidad-de-atributos-ambientales-de-energia-renovables" title="Enlazar permanentemente con este título">¶</a></h3>
+</table></div>
+<div class="section" id="sensibilidad-de-atributos-ambientales-de-energias-renovables">
+<h4>2.1.2 Sensibilidad de atributos ambientales de energías renovables<a class="headerlink" href="#sensibilidad-de-atributos-ambientales-de-energias-renovables" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><img alt="_images/fi_analisis_sensibilidad_energia_renovable.png" src="_images/fi_analisis_sensibilidad_energia_renovable.png" /></p>
 <!--### Energía comunitaria
 
@@ -1980,6 +2056,7 @@ Generación distribuída de energía en las comunidades, a través de la energí
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv
    :header-rows: 1
    :align: center --></div>
+</div>
 </div>
 </div>
 

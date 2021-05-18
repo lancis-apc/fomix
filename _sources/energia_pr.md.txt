@@ -702,21 +702,21 @@ ID | Cobertura
 
 Fuente de energía | Criterio | Peso
 -- | -- | --
-Gas natural | Distancia del gasoducto a las zonas industriales | 0.274
-Hidrocarburos líquidos | Distancia a carreteras | 0.256
-Hidrocarburos líquidos | Distancia a localidades | 0.138
+Gas natural | Distancia del gasoducto a las&nbsp;   zonas industriales | 0.274
+Hidrocarburos líquidos | Carreteras | 0.256
+Hidrocarburos líquidos | Localidades | 0.138
 Solar | Distancia a red eléctrica | 0.091
-Gas natural | Distancia de localidades al gasoducto | 0.065
-Eólica | Velocidad a 120 m de altura | 0.057
-Biomasa | Distancia a sitios de disposición final | 0.026
+Gas natural | Distancia del gasoducto a localidades | 0.065
+Eólica | Velocidad | 0.057
+Biomasa | Residuos urbanos | 0.026
 Eólica | Distancia a la red eléctrica | 0.020
-Solar | Tipo de cobertura | 0.018
+Solar | Cobertura | 0.018
 Solar | Tenencia de la tierra | 0.018
-Eólica | Tipo de cobertura | 0.012
+Eólica | Cobertura | 0.012
 Biomasa | Distancia a granjas porcícolas | 0.010
 Eólica | Distancia a localidades | 0.004
-Eólica | Distancia a carreteras | 0.004
-Biomasa | Residuos agrícolas forestales | 0.002
+Eólica | Distancia a caminos | 0.004
+Biomasa | Residuos vegetales | 0.002
 
 **Área por categoría de aptitud**
 
@@ -733,11 +733,33 @@ Nula | 2669.4 | 7
 
 ![](/recursos/energia/fi_analisis_sensibilidad_energia.png)
 
-## 2. Mapa de aptitud de energía renovables
+## 2. Mapa de aptitud de energías renovables
 
 Con base en los Art. 37 y 38 del Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en Materia de Ordenamiento Ecológico el mapa de aptitud que se utilizará como insumo para la actualización del POETY es el de energías renovables que se muestra a continuación.
 
+### 2.1 Modelo de decisión del mapa de aptitud de energías renovables
+
+![](/recursos/energia/energia_renovable.png)
+
+#### 2.1.1 Mapa de aptitud de energías renovables
+
 ![](/recursos/energia/mapa_aptitud_energia_renovable.png)
+
+**Pesos globales del mapa de aptitud de energías renovables**
+
+Fuente de energía | Criterio | Peso
+-- | -- | --
+Solar | Distancia a red eléctrica | 0.399
+Eólica | Velocidad  | 0.204
+Solar | Cobertura | 0.080
+Solar | Tenencia de la tierra | 0.080
+Eólica | Distancia a la red eléctrica | 0.074
+Biomasa | Residuos urbanos | 0.060
+Eólica | Cobertura | 0.046
+Biomasa | Distancia a granjas porcícolas | 0.024
+Eólica | Distancia a carreteras | 0.014
+Eólica | Distancia a localidades | 0.014
+Biomasa | Residuos vegetales | 0.005
 
 **Área por categoría de aptitud**
 
@@ -750,7 +772,7 @@ Baja | 9922.8 | 25
 Muy baja | 2476.1 | 6
 Nula | 1871.4 | 5
 
-### 2.1 Sensibilidad de atributos ambientales de energía renovables
+#### 2.1.2 Sensibilidad de atributos ambientales de energías renovables
 
 ![](/recursos/energia/fi_analisis_sensibilidad_energia_renovable.png)
 
