@@ -5,10 +5,11 @@
 
 Sistema de conocimiento para la gestión del Ordenamiento Ecológico del Territorio (OET) del estado de Yucatán
 ===============================================================================================================
-.. Análisis de aptitud sectorial-Resultados preliminares
+.. Análisis de aptitud sectorial-Resultados finales
 .. ######################################################
-Análisis de aptitud sectorial-En proceso de actualización
+Análisis de aptitud sectorial-Final
 ###########################################################
+
 
 Objetivo
 ---------
