@@ -807,12 +807,11 @@ Culturales - político administrativo | PSA | 0.001
 
 Categoría | km² | Porcentaje del estado
 -- | --: | --:
-Muy alta | 4104.6 | 10
-Alta | 16927.5 | 43
-Moderada | 8040.9 | 20
-Baja | 8400.7 | 21
-Muy baja | 2040.1 | 5
-Nula | 0.0 | 0
+Muy alta | 1713.1 | 4
+Alta | 18051.3 | 46
+Moderada | 8985.8 | 23
+Baja | 8434.7 | 21
+Muy baja | 2351.6 | 6
 
 #### 1.3.7 Sensibilidad de atributos ambientales del sector conservación
 
