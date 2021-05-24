@@ -1,6 +1,4 @@
 # Forestal-Final
-
-La generación de los mapas de aptitud está en espera de la recepción de las capas de información de (1) Autorizaciones de aprovechamiento forestal maderable vigentes, (2) Autorizaciones de aprovechamiento forestal no maderable vigentes y (3) Centros de almacenamiento y transformación de materias primas forestales.
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 

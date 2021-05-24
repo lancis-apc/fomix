@@ -96,7 +96,7 @@ ID | Categoría | Importancia | FV
 2 | Agricultura de riego | Moderada | 0.50
 5 | Bosque cultivado/Palmar inducido | Moderada | 0.50
 9 | Selva baja | Moderada | 0.50
-12 | Sábana | Moderada | 0.50
+12 | Sabana | Moderada | 0.50
 7 | Manglar | Baja | 0.25
 10 | Selva mediana | Baja | 0.25
 13 | Tular | Baja | 0.25
@@ -333,7 +333,7 @@ ID | Categoría | Importancia | FV
 2 | Agricultura de riego | Moderada | 0.50
 5 | Bosque cultivado/Palmar inducido | Moderada | 0.50
 9 | Selva baja | Moderada | 0.50
-12 | Sábana | Moderada | 0.50
+12 | Sabana | Moderada | 0.50
 7 | Manglar | Baja | 0.25
 10 | Selva mediana | Baja | 0.25
 13 | Tular | Baja | 0.25

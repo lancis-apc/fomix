@@ -77,7 +77,7 @@ Distancia al manto acuífero medido por el nivel piezométrico.
 Capa | Nivel freático
 -- | --
 Fuente | Nivel freático POETY
-Año | Sin dato
+Año | 2007
 Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
@@ -283,7 +283,7 @@ Distancia al manto acuífero medido por el nivel piezométrico.
 Capa | Nivel freático
 -- | --
 Fuente | Nivel freático POETY
-Año | Sin dato
+Año | 2007
 Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
@@ -453,7 +453,7 @@ Distancia al manto acuífero medido por el nivel piezométrico.
 Capa | Nivel freático
 -- | --
 Fuente | Nivel freático POETY
-Año | Sin dato
+Año | 2007
 Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
@@ -618,7 +618,6 @@ Unidades | Kilómetros
 Criterio|Definición
 --|--
 Localidades| Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.
-Oportunidades| Proyectos de construcción y ampliación de vías de comunicación.
 
 ###### 1.2.3.3.1 Localidades
 
@@ -660,7 +659,7 @@ Distancia al manto acuífero medido por el nivel piezométrico.
 Capa | Nivel freático
 -- | --
 Fuente | Nivel freático POETY
-Año | Sin dato
+Año | 2007
 Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
@@ -825,7 +824,6 @@ Unidades | Kilómetros
 Criterio|Definición
 --|--
 Localidades| Distancia a localidades donde existe mayor demanda de materiales: Mérida y zona conurbada, Tizimín, Progreso, Valladolid e Izamal.
-Oportunidades| Proyectos de construcción y ampliación de vías de comunicación.
 
 ###### 1.2.4.3.1 Localidades
 

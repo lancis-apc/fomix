@@ -92,9 +92,9 @@ Zonas industriales que demandan gas natural.
 
 Capa | Distancia del gasoducto a los parques   industriales
 -- | --
-Fuente | [1] ?; [2] Gasoductos GeoComunes con datos de CRE, SEMARNAT, ASEA y CFE
-Año | [1] ?; [2] 2020
-Escala | [1] ? ; [2] Sin dato
+Fuente | [1] Parques industriales Ayuntamiento de Mérida con datos del PMDU; [2]   Gasoductos GeoComunes con datos de CRE, SEMARNAT, ASEA y CFE
+Año | [1] 2017; [2] 2020
+Escala | [1] 1:65,000; [2] Sin dato
 Unidades | Kilómetros
 
 **Parámetros de la función de valor**

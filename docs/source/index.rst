@@ -7,10 +7,8 @@ Sistema de conocimiento para la gestión del Ordenamiento Ecológico del Territo
 ===============================================================================================================
 .. Análisis de aptitud sectorial-Resultados finales
 .. ######################################################
-
 Análisis de aptitud sectorial-Final
 ###########################################################
-
 
 Objetivo
 ---------
@@ -24,7 +22,7 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
 
 .. toctree::
    :maxdepth: 6
-   :caption: Sectores:
+   :caption: Análisis de aptitud:
 
    acuacultura_pr
    agricultura_pr
@@ -39,7 +37,6 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    pesca_pr
    turismo_pr
    urbano_pr
-
 
 
 

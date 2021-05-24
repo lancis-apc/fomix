@@ -116,7 +116,7 @@ Posibilidad de extraer agua subterránea, considerando el nivel piezométrico.
 Capa | Nivel freático
 -- | --
 Fuente | Nivel freático POETY
-Año | Sin dato
+Año | 2007
 Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
