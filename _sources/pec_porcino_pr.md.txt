@@ -159,7 +159,7 @@ Inversión necesaria para extraer el agua del acuífero, determinada por la prof
 Capa | Nivel freático
 -- | --
 Fuente | Nivel freático POETY
-Año | Sin dato
+Año | 2007
 Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
@@ -368,6 +368,8 @@ Nula | 3046.2 | 8
 
 ## 2. Versión 2
 
+Esta es la versión que se utilizará para análisis de conflictos.
+
 ### 2.1 Modelo de decisión
 
 ![](/recursos/pec_porcino_v2/fi_porcino.png)
@@ -486,7 +488,7 @@ Distancia en kilómetros de las plantas de producción de alimento (ubicadas en 
 
 Capa | Distancia a Puerto Progreso
 -- | --
-Fuente | [1] Ubicación de los principales puertos de el estado de Yucatán POETY y [2] Red Nacional de Caminos (RNC) Red vial - INEGI
+Fuente | [1] Ubicación de los principales puertos del estado de Yucatán POETY y [2] Red Nacional de Caminos (RNC) Red vial - INEGI
 Año | [1] 2002; [2] 2019
 Campo | [2] TIPO_VIAL
 Escala | Sin dato
@@ -516,7 +518,7 @@ Inversión necesaria para extraer el agua del acuífero, determinada por la prof
 Capa | Nivel freático
 -- | --
 Fuente | Nivel freático POETY
-Año | Sin dato
+Año | 2007
 Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros

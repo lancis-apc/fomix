@@ -179,7 +179,7 @@ Presencia de cenotes con potencial turístico.
 Capa | Cenotes turísticos
 -- | --
 Fuente | Cenotes con potencial turístico SEDUMA
-Año | Sin dato
+Año | 2008
 Escala | Sin dato
 Unidades | Adimensional
 
@@ -213,10 +213,10 @@ Presencia de grutas con potencial turístico (cavidad que se forma en las rocas 
 
 Capa | Grutas
 -- | --
-Fuente | Cenotes y Grutas con infraestructura turística y posicionamiento satelital SEDUMA
+Fuente | Cenotes y Grutas con infraestructura turística y posicionamiento   satelital&nbsp; SEDUMA
 Año | Sin dato
 Campo | GRUTAS
-Escala | Sin dato
+Escala | 1:1,000
 Unidades | Adimensional
 
 **Función de valor de grutas**
@@ -241,12 +241,10 @@ Presencia de áreas naturales protegidas de competencia federal, estatal o munic
 
 Capa | Áreas Naturales Protegidas
 -- | --
-Fuente | [1] Áreas Naturales Protegidas SDS, [2] Áreas Naturales Protegidas   Federales de la República Mexicana CONANP y [3]  Áreas Naturales Protegidas Estatales,   Municipales, Ejidales y Privadas de México CONABIO
+Fuente | [1] Áreas Naturales Protegidas SDS con datos de los decretos de las ANPs   estatales, [2] Áreas Naturales Protegidas Federales de la República Mexicana   CONANP y [3] Áreas Naturales   Protegidas Estatales, Municipales, Ejidales y Privadas de México CONABIO
 Año | [1] 2020; [2] 2017; [3] 2015
-Escala | Sin dato
+Escala | [1] 1:50,000; [2] [3] Sin dato
 Unidades | Adimensional
-
-**Parámetros de la función de valor**
 
 **Función de valor de ANP**
 
@@ -425,9 +423,9 @@ Distancia a zona costera.
 
 Capa | Distancia al litoral
 -- | --
-Fuente | Litoral POETCY, SDS
-Año | Sin dato
-Escala | 1:250,000
+Fuente | Tipo de litoral POETCY con datos de INEGI y SEMARNAT
+Año | 2008
+Escala | 1:500,000
 Unidades | Kilómetros
 
 **Parámetros de la función de valor**
@@ -446,10 +444,10 @@ Tipo de playa, de acuerdo al sustrato (arenoso, artificial, lodoso, vegetado).
 
 Capa | Tipo de litoral
 -- | --
-Fuente | Tipo de litoral POETCY
-Año | Sin dato
+Fuente | Tipo de litoral POETCY con datos de INEGI y SEMARNAT
+Año | 2008
 Campo | TIPO
-Escala | Sin dato
+Escala | 1:500,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -525,7 +523,7 @@ Capa | Distancia a Áreas Naturales Protegidas   costeras
 -- | --
 Fuente | [1] Áreas Naturales Protegidas SDS y [2] Áreas Naturales Protegidas   Federales de la República Mexicana CONANP
 Año | [1] 2020; [2] 2017
-Escala | Sin dato
+Escala | [1] 1:50,000; [2] Sin dato
 Unidades | Kilómetros
 
 **Parámetros de la función de valor**
@@ -729,6 +727,8 @@ Nula | 0.0 | 0
 
 ## 2. Versión 2
 
+Esta es la versión que se utilizará para análisis de conflictos.
+
 ### 2.1 Turismo de naturaleza
 
 Viajes para realizar actividades recreativas en contacto directo con la naturaleza. Incluye turismo de aventura, ecoturismo, aviturismo, turismo comunitario.
@@ -752,8 +752,8 @@ Elementos o formaciones geológicas con características únicas que satisfacen 
 Atributos | Definición
 -- | --
 Cobertura | Tipo de vegetación y uso de suelo asociado al turismo de   naturaleza.
-Cenotes | Presencia de cenotes con potencial turístico.
-Esteros | Presencia de cuerpos de agua   costeros distintos a los cenotes (lagunas costeras, marismas y esteros).
+Cenotes | Distancia a cenotes con potencial turístico.
+Esteros | Distancia a cuerpos de agua costeros distintos a los cenotes (lagunas costeras, marismas y esteros).
 Grutas | Presencia de grutas con   potencial turístico (cavidad que se forma en las rocas por procesos erosivos,   principalmente por disolución causada por el agua de lluvia que se filtra   entre rocas calcáreas y las disuelve).
 
 ###### 2.2.1.1.1 Cobertura
@@ -798,16 +798,16 @@ ID | Categoría | Importancia | FV
 
 ###### 2.2.1.1.2 Cenotes
 
-Presencia de cenotes con potencial turístico.
+Distancia a cenotes con potencial turístico.
 
 **Insumos**
 
 Capa | Cenotes turísticos
 -- | --
 Fuente | Cenotes con potencial turístico SEDUMA
-Año | Sin dato
+Año | 2008
 Escala | Sin dato
-Unidades | Adimensional
+Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
@@ -819,7 +819,7 @@ Unidades | Adimensional
 
 ###### 2.2.1.1.3 Esteros
 
-Presencia de cuerpos de agua costeros distintos a los cenotes (lagunas costeras, marismas y esteros).
+Distancia a cuerpos de agua costeros distintos a los cenotes (lagunas costeras, marismas y esteros).
 
 **Insumos**
 
@@ -829,7 +829,7 @@ Fuente | Modelo cartográfico de humedales INEGI
 Año | 2014
 Campo | SUBCLASE
 Escala | 1:50,000
-Unidades | Adimensional
+Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
@@ -837,7 +837,7 @@ Unidades | Adimensional
 
 **Función de valor de esteros**
 
-![](/recursos/turismo_v2/mapa_fv_tur_nat_bio_lagunas_esteros_marismas.png)
+![](/recursos/turismo_v2/mapa_fv_tur_nat_bio_d_lagunas_esteros_marismas.png)
 
 ###### 2.2.1.1.4 Grutas
 
@@ -847,10 +847,10 @@ Presencia de grutas con potencial turístico (cavidad que se forma en las rocas 
 
 Capa | Grutas
 -- | --
-Fuente | Cenotes y Grutas con infraestructura turística y posicionamiento satelital SEDUMA
+Fuente | Cenotes y Grutas con infraestructura turística y posicionamiento   satelital&nbsp; SEDUMA
 Año | Sin dato
 Campo | GRUTAS
-Escala | Sin dato
+Escala | 1:1,000
 Unidades | Adimensional
 
 **Función de valor de grutas**
@@ -875,12 +875,10 @@ Presencia de áreas naturales protegidas de competencia federal, estatal o munic
 
 Capa | Áreas Naturales Protegidas
 -- | --
-Fuente | [1] Áreas Naturales Protegidas SDS, [2] Áreas Naturales Protegidas   Federales de la República Mexicana CONANP y [3]  Áreas Naturales Protegidas Estatales,   Municipales, Ejidales y Privadas de México CONABIO
+Fuente | [1] Áreas Naturales Protegidas SDS con datos de los decretos de las ANPs   estatales, [2] Áreas Naturales Protegidas Federales de la República Mexicana   CONANP y [3] Áreas Naturales   Protegidas Estatales, Municipales, Ejidales y Privadas de México CONABIO
 Año | [1] 2020; [2] 2017; [3] 2015
-Escala | Sin dato
+Escala | [1] 1:50,000; [2] [3] Sin dato
 Unidades | Adimensional
-
-**Parámetros de la función de valor**
 
 **Función de valor de ANP**
 
@@ -1104,9 +1102,9 @@ Distancia a zona costera.
 
 Capa | Distancia al litoral
 -- | --
-Fuente | Litoral POETCY, SDS
-Año | Sin dato
-Escala | 1:250,000
+Fuente | Tipo de litoral POETCY con datos de INEGI y SEMARNAT
+Año | 2008
+Escala | 1:500,000
 Unidades | Kilómetros
 
 **Parámetros de la función de valor**
@@ -1125,10 +1123,10 @@ Tipo de playa, de acuerdo al sustrato (arenoso, artificial, lodoso, vegetado).
 
 Capa | Tipo de litoral
 -- | --
-Fuente | Tipo de litoral POETCY
-Año | Sin dato
+Fuente | Tipo de litoral POETCY con datos de INEGI y SEMARNAT
+Año | 2008
 Campo | TIPO
-Escala | Sin dato
+Escala | 1:500,000
 Unidades | Adimensional
 
 **Parámetros de la función de valor**
@@ -1204,7 +1202,7 @@ Capa | Distancia a Áreas Naturales Protegidas   costeras
 -- | --
 Fuente | [1] Áreas Naturales Protegidas SDS y [2] Áreas Naturales Protegidas   Federales de la República Mexicana CONANP
 Año | [1] 2020; [2] 2017
-Escala | Sin dato
+Escala | [1] 1:50,000; [2] Sin dato
 Unidades | Kilómetros
 
 **Parámetros de la función de valor**

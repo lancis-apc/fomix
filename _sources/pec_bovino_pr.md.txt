@@ -39,7 +39,7 @@ Posibilidad de extraer agua subterránea, considerando el nivel piezométrico.
 Capa | Nivel freático
 -- | --
 Fuente | Nivel freático POETY
-Año | Sin dato
+Año | 2007
 Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
@@ -352,7 +352,7 @@ Acceso a la posibilidad de extraer agua del acuífero para el consumo del ganado
 Capa | Nivel freático
 -- | --
 Fuente | Nivel freático POETY
-Año | Sin dato
+Año | 2007
 Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
@@ -470,18 +470,18 @@ Unidades | Adimensional
 
 ID | Categoría | Expresión verbal | FV
 -- | -- | -- | --
-1 | Arenosol | Baja | 0.56
+8 | Nitosol | Extremadamente alta | 1.00
+6 | Leptosol | Alta | 0.80
+7 | Luvisol | Alta | 0.80
 2 | Cambisol | Moderada | 0.70
 3 | Chernozem | Moderada | 0.70
 4 | Gleysol | Moderada | 0.70
-5 | Histosol | Nula | 0.00
-6 | Leptosol | Alta | 0.80
-7 | Luvisol | Alta | 0.80
-8 | Nitosol | Extremadamente alta | 1.00
-9 | Phaeozem | Baja | 0.56
 10 | Regosol | Moderada | 0.70
-11 | Solonchak | Nula | 0.00
 12 | Vertisol | Moderada | 0.70
+1 | Arenosol | Baja | 0.56
+9 | Phaeozem | Baja | 0.56
+5 | Histosol | Nula | 0.00
+11 | Solonchak | Nula | 0.00
 
 <!-- .. csv-table:: Tipo de suelo
    :file: recursos/tabla_fv_cat_suelo_silvopastoril.csv
@@ -596,7 +596,7 @@ Accesibilidad a mercados foráneos | Distancia a puntos de venta de carne (Campe
    :header-rows: 1
    :align: center -->
 
-###### 2.2.2.2.1 Accesibilidad a mercados locales**
+###### 2.2.2.2.1 Accesibilidad a mercados locales
 
 Distancia a puntos de venta local de becerros (Tizimín, Valladolid, Mérida y Tzucacab).
 
@@ -621,7 +621,7 @@ Unidades | Kilómetros
 
 ![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_d_mercados_loc.png)
 
-###### 2.2.2.2.2 Accesibilidad a mercados foráneos**
+###### 2.2.2.2.2 Accesibilidad a mercados foráneos
 
 Distancia a puntos de venta de carne (Campeche, Cancún, Playa del Carmen).  
 
