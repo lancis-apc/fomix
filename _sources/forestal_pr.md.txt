@@ -750,7 +750,7 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tenencia versión a**
 
-![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra.png)
+![](/recursos/forestal/mapa_fv_for_nomad_socio_tenencia_tierra.png)
 
 <!--!![](/recursos/forestal/.png)--->
 
@@ -768,7 +768,7 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tenencia versión b**
 
-![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra_v2.png)
+![](/recursos/forestal/mapa_fv_for_nomad_socio_tenencia_tierra_v2.png)
 
 <!--!![](/recursos/forestal/.png)--->
 
