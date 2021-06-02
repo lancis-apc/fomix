@@ -963,7 +963,7 @@ Campo | [1] descripcio; [2] Descrip
 Escala | [1] 1:250,000;[2] 1:50,000; [3] Sin dato
 Unidades | Adimensional
 
-**Tabla de exclusión del subsector energía mediana y pesada**
+**Tabla de exclusión del subsector industria mediana y pesada**
 
 [1]
 
@@ -1027,11 +1027,42 @@ Nula | 2716.5 | 7
 
 _El mapa de aptitud se integró considerando que los subsectores son igualmente importantes y, por lo tanto, tienen el mismo peso._
 
-### 3.1 Zonas de exclusión
+### 3.1 Modelo de decisión del mapa de aptitud integrado
+
+![](/recursos/industrial/fi_industrial_integrado.png)
+
+#### 3.1.1 Zonas de exclusión
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación y localidades
+-- | --
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI, [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO y [3] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | [1] 2017; [2] 2021; [3] 2020
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000;[2] 1:50,000; [3] Sin dato
+Unidades | Adimensional
+
+**Tabla de exclusión**
+
+[1] y [2]
+
+ID | Categoría
+-- | --
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+14 | Vegetación de duna costera
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
+17 | ND
+
+[3] Se seleccionaron las localidades urbanas y Sisal
 
 ![](/recursos/industrial/mapa_exclusion_industrial.png)
 
-### 3.2 Mapa de aptitud de integrado del sector industrial
+#### 3.1.2 Mapa de aptitud de integrado del sector industrial
 
 ![](/recursos/industrial/mapa_aptitud_industrial.png)
 
@@ -1083,7 +1114,7 @@ Baja | 21178.7 | 54
 Muy baja | 2709.8 | 7
 Nula | 2716.5 | 7
 
-### 3.3 Sensibilidad de atributos del sector industrial
+#### 3.1.3 Sensibilidad de atributos del sector industrial
 
 ![](/recursos/industrial/fi_analisis_sensibilidad_industrial.png)
 <!-- .. csv-table::

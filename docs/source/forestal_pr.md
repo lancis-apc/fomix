@@ -1125,11 +1125,36 @@ Para fines del análisis de conflicto se usará la versión 2a debido a que la s
 
 _El mapa de aptitud se integró considerando que los subsectores son igualmente importantes y, por lo tanto, tienen el mismo peso._
 
-### 3.1 Zonas de exclusión
+### 3.1 Modelo de decisión del mapa de aptitud integrado
+
+![](/recursos/forestal/fi_forestal_integrado.png)
+
+#### 3.1.1 Zonas de exclusión
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI
+Año | 2017
+Campo | descripcio
+Escala | 1:250,000
+Unidades | Adimensional
+
+**Tabla de exclusión**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+12 | Sin vegetación
+16 | Vegetación de petén
+18 | NA
 
 ![](/recursos/forestal/mapa_exclusion_forestal.png)
 
-### 3.2 Mapa de aptitud integrado del sector de aprovechamiento forestal
+#### 3.1.2 Mapa de aptitud integrado del sector de aprovechamiento forestal
 
 ![](/recursos/forestal/mapa_aptitud_forestal.png)
 
@@ -1169,6 +1194,6 @@ Baja | 1382.2 | 3
 Muy baja | 174.8 | 0
 Nula | 1033.9 | 3
 
-### 3.3 Sensibilidad de atributos ambientales de aprovechamiento forestal
+#### 3.1.3 Sensibilidad de atributos ambientales de aprovechamiento forestal
 
 ![](/recursos/forestal/fi_analisis_sensibilidad_forestal.png)

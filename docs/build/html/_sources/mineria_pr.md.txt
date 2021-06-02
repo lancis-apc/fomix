@@ -1042,7 +1042,7 @@ Campo | [1] descripcio; [2] Descrip
 Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
-**Tabla de exclusión del sector minería**
+**Tabla de exclusión**
 
 ID | Categoría
 -- | --
@@ -1090,13 +1090,39 @@ Nula | 2675.8 | 7
 
 ## 2. Mapa de aptitud integrado
 
-_El mapa de aptitud se integró considerando que los subsectores son igualmente importantes y, por lo tanto, tienen el mismo peso._
+_El mapa de aptitud se integró considerando que los tipos son igualmente importantes y, por lo tanto, tienen el mismo peso._
 
-### 2.1 Zonas de exclusión
+### 2.1 Modelo de decisión del mapa de aptitud integrado
 
+![](/recursos/mineria/fi_mineria_integrado.png)
+
+#### 2.1.1 Zonas de exclusión
+
+**Insumos**
+
+Capa | Uso del suelo y vegetación
+-- | --
+Fuente | [1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI y [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO
+Año | [1] 2017; [2] 2021
+Campo | [1] descripcio; [2] Descrip
+Escala | [1] 1:250,000; [2] 1:50,000
+Unidades | Adimensional
+
+**Tabla de exclusión**
+
+ID | Categoría
+-- | --
+1 | Acuícola
+4 | Asentamiento humano
+6 | Cuerpo de agua
+7 | Manglar
+13 | Tular
+15 | Vegetación de petén
+16 | Vegetación halófila hidrófila
+17 | ND
 ![](/recursos/mineria/mapa_exclusion_mineria.png)
 
-### 2.2 Mapa de aptitud de integrado del sector minería
+### 2.1.2 Mapa de aptitud de integrado del sector minería
 
 ![](/recursos/mineria/mapa_aptitud_mineria.png)
 
@@ -1144,6 +1170,6 @@ Baja | 9088.6 | 23
 Muy baja | 297.5 | 1
 Nula | 2675.8 | 7
 
-### 2.3 Sensibilidad de atributos ambientales del sector minería
+### 2.1.3 Sensibilidad de atributos ambientales del sector minería
 
 ![](/recursos/mineria/fi_analisis_sensibilidad_mineria.png)
