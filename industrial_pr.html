@@ -123,9 +123,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#mapa-de-aptitud-integrado">3. Mapa de aptitud integrado</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id26">3.1 Zonas de exclusión</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mapa-de-aptitud-de-integrado-del-sector-industrial">3.2 Mapa de aptitud de integrado del sector industrial</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sensibilidad-de-atributos-del-sector-industrial">3.3 Sensibilidad de atributos del sector industrial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelo-de-decision-del-mapa-de-aptitud-integrado">3.1 Modelo de decisión del mapa de aptitud integrado</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id26">3.1.1 Zonas de exclusión</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mapa-de-aptitud-de-integrado-del-sector-industrial">3.1.2 Mapa de aptitud de integrado del sector industrial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sensibilidad-de-atributos-del-sector-industrial">3.1.3 Sensibilidad de atributos del sector industrial</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2297,7 +2300,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <td>Adimensional</td>
 </tr>
 </tbody>
-</table><p><strong>Tabla de exclusión del subsector energía mediana y pesada</strong></p>
+</table><p><strong>Tabla de exclusión del subsector industria mediana y pesada</strong></p>
 <p>[1]</p>
 <table border="1" class="docutils">
 <thead>
@@ -2475,12 +2478,89 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 <div class="section" id="mapa-de-aptitud-integrado">
 <h2>3. Mapa de aptitud integrado<a class="headerlink" href="#mapa-de-aptitud-integrado" title="Enlazar permanentemente con este título">¶</a></h2>
 <p><em>El mapa de aptitud se integró considerando que los subsectores son igualmente importantes y, por lo tanto, tienen el mismo peso.</em></p>
+<div class="section" id="modelo-de-decision-del-mapa-de-aptitud-integrado">
+<h3>3.1 Modelo de decisión del mapa de aptitud integrado<a class="headerlink" href="#modelo-de-decision-del-mapa-de-aptitud-integrado" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><img alt="_images/fi_industrial_integrado.png" src="_images/fi_industrial_integrado.png" /></p>
 <div class="section" id="id26">
-<h3>3.1 Zonas de exclusión<a class="headerlink" href="#id26" title="Enlazar permanentemente con este título">¶</a></h3>
+<h4>3.1.1 Zonas de exclusión<a class="headerlink" href="#id26" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><strong>Insumos</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Capa</th>
+<th>Uso del suelo y vegetación y localidades</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuente</td>
+<td>[1] Conjunto de datos vectoriales de la carta de Uso del suelo y vegetación. Serie VI. Conjunto Nacional INEGI, [2] Mapa de uso del suelo y vegetación de la zona costera asociada a los manglares, Región Península de Yucatán CONABIO y [3] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI</td>
+</tr>
+<tr>
+<td>Año</td>
+<td>[1] 2017; [2] 2021; [3] 2020</td>
+</tr>
+<tr>
+<td>Campo</td>
+<td>[1] descripcio; [2] Descrip</td>
+</tr>
+<tr>
+<td>Escala</td>
+<td>[1] 1:250,000;[2] 1:50,000; [3] Sin dato</td>
+</tr>
+<tr>
+<td>Unidades</td>
+<td>Adimensional</td>
+</tr>
+</tbody>
+</table><p><strong>Tabla de exclusión</strong></p>
+<p>[1] y [2]</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>ID</th>
+<th>Categoría</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>Asentamiento humano</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Cuerpo de agua</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Manglar</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Tular</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Vegetación de duna costera</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Vegetación de petén</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Vegetación halófila hidrófila</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ND</td>
+</tr>
+</tbody>
+</table><p>[3] Se seleccionaron las localidades urbanas y Sisal</p>
 <p><img alt="_images/mapa_exclusion_industrial.png" src="_images/mapa_exclusion_industrial.png" /></p>
 </div>
 <div class="section" id="mapa-de-aptitud-de-integrado-del-sector-industrial">
-<h3>3.2 Mapa de aptitud de integrado del sector industrial<a class="headerlink" href="#mapa-de-aptitud-de-integrado-del-sector-industrial" title="Enlazar permanentemente con este título">¶</a></h3>
+<h4>3.1.2 Mapa de aptitud de integrado del sector industrial<a class="headerlink" href="#mapa-de-aptitud-de-integrado-del-sector-industrial" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><img alt="_images/mapa_aptitud_industrial.png" src="_images/mapa_aptitud_industrial.png" /></p>
 <p><strong>Pesos globales del mapa de aptitud integrado del sector industrial</strong></p>
 <table border="1" class="docutils">
@@ -2663,12 +2743,13 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><div class="sectio
 </tbody>
 </table></div>
 <div class="section" id="sensibilidad-de-atributos-del-sector-industrial">
-<h3>3.3 Sensibilidad de atributos del sector industrial<a class="headerlink" href="#sensibilidad-de-atributos-del-sector-industrial" title="Enlazar permanentemente con este título">¶</a></h3>
+<h4>3.1.3 Sensibilidad de atributos del sector industrial<a class="headerlink" href="#sensibilidad-de-atributos-del-sector-industrial" title="Enlazar permanentemente con este título">¶</a></h4>
 <p><img alt="_images/fi_analisis_sensibilidad_industrial.png" src="_images/fi_analisis_sensibilidad_industrial.png" /></p>
 <!-- .. csv-table::
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv
    :header-rows: 1
    :align: center --></div>
+</div>
 </div>
 </div>
 

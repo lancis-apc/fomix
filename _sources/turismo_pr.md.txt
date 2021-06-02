@@ -978,6 +978,15 @@ Unidades | Adimensional
 
 #### 2.3.1 Zonas de exclusión
 
+**Insumos**
+
+Capa | Localidades urbanas
+-- | --
+Fuente | Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI
+Año | 2020
+Escala | Localidad
+Unidades | Adimensional
+
 ![](/recursos/turismo_v2/mapa_exclusion_tur_naturaleza.png)
 
 #### 2.3.2 Mapa de aptitud de turismo de naturaleza
@@ -1216,6 +1225,18 @@ Unidades | Kilómetros
 ### 2.6 Mapa de aptitud
 
 #### 2.6.1 Zonas de exclusión
+
+
+Se considera como exclusión la distancia mayor a  40 km a partir de la línea de costa.
+
+**Insumos**
+
+Capa | Distancia a la línea de costa
+-- | --
+Fuente | Adaptado de: División política municipal INEGI
+Año | 2018
+Escala | 1:250,000
+Unidades | Kilómetros
 
 ![](/recursos/turismo_v2/mapa_exclusion_tur_sol_playa.png)
 
