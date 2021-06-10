@@ -1122,7 +1122,7 @@ ID | Categoría
 17 | ND
 ![](/recursos/mineria/mapa_exclusion_mineria.png)
 
-### 2.1.2 Mapa de aptitud de integrado del sector minería
+### 2.1.2 Mapa de aptitud integrado del sector minería
 
 ![](/recursos/mineria/mapa_aptitud_mineria.png)
 
