@@ -67,13 +67,13 @@ Unidades | mm
 
 **Parámetros de la función de valor**
 
-ID | Categoría | Importancia | FV
+ID | Categoría (mm) | Importancia | FV
 -- | -- | -- | --
-5 | e) 1081-1233 mm | Muy alta | 1.00
-4 | d) 930-1081 mm | Alta | 0.75
-3 | c) 778-930 mm | Moderada | 0.50
-1 | a) 551-626 mm | Baja | 0.25
-2 | b) 626-778 mm | Baja | 0.25
+5 | 1081-1233 | Muy alta | 1.00
+4 | 930-1081 | Alta | 0.75
+3 | 778-930 | Moderada | 0.50
+2 | 626-778 | Baja | 0.25
+1 | 551-626 | Baja | 0.25
 
 **Función de valor de precipitación**
 
