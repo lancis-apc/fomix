@@ -17,7 +17,7 @@ Acuacultura de especies de agua salobre y marina.
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/pesca/fi_acuacultura.png)
+![](./recursos/pesca/fi_acuacultura.png)
 
 ### 1.2 Criterios
 
@@ -44,11 +44,13 @@ Unidades | Metros
 
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_acuasal_bio_nivel_estatico.png)
+![](./recursos/pesca/fi_fv_acuasal_bio_nivel_estatico.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de acceso de agua**
 
-![](/recursos/pesca/mapa_fv_acuasal_bio_nivel_estatico.png)
+![](./recursos/pesca/mapa_fv_acuasal_bio_nivel_estatico.png)
 
 ##### 1.2.1.2 Salinidad
 
@@ -63,17 +65,21 @@ Año | 2016
 Escala | Sin dato
 Unidades | Metros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_acuasal_bio_espesor_agua_salada.png)
+![](./recursos/pesca/fi_fv_acuasal_bio_espesor_agua_salada.png)
 
 **Función de valor de salinidad**
 
-![](/recursos/pesca/mapa_fv_acuasal_bio_espesor_agua_salada.png)
+![](./recursos/pesca/mapa_fv_acuasal_bio_espesor_agua_salada.png)
 
 ##### 1.2.1.3 Vegetación
 
 Tipos de vegetación y usos de suelo.
+
+<div style="page-break-after: always;"></div>
 
 **Insumos**
 
@@ -107,9 +113,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de vegetación**
 
-![](/recursos/pesca/mapa_fv_acuasal_bio_cobertura_usv_svi_16cats.png)
+![](./recursos/pesca/mapa_fv_acuasal_bio_cobertura_usv_svi_16cats.png)
 
 #### 1.2.2 Infraestructura
 
@@ -131,13 +139,15 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_acuasal_infra_d_lineas_electricas.png)
+![](./recursos/pesca/fi_fv_acuasal_infra_d_lineas_electricas.png)
 
 **Función de valor de electricidad**
 
-![](/recursos/pesca/mapa_fv_acuasal_infra_d_lineas_electricas.png)
+![](./recursos/pesca/mapa_fv_acuasal_infra_d_lineas_electricas.png)
 
 ##### 1.2.2.2 Vías de comunicación
 
@@ -154,11 +164,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_acuasal_infra_d_carreteras_caminos.png)
+![](./recursos/pesca/fi_fv_acuasal_infra_d_carreteras_caminos.png)
 
 **Función de valor de vías de comunicación**
 
-![](/recursos/pesca/mapa_fv_acuasal_infra_d_carreteras_caminos.png)
+![](./recursos/pesca/mapa_fv_acuasal_infra_d_carreteras_caminos.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.2.3 Socioeconómicos
 
@@ -187,9 +199,11 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.75
 1 | Tierra de uso común | Baja | 0.25
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tenencia**
 
-![](/recursos/pesca/mapa_fv_acuasal_socio_tenencia_tierra.png)
+![](./recursos/pesca/mapa_fv_acuasal_socio_tenencia_tierra.png)
 
 ### 1.3 Mapa de aptitud
 
@@ -216,11 +230,13 @@ ID | Categoría
 16 | Vegetación halófila hidrófila
 17 | ND
 
-![](/recursos/pesca/mapa_ex_acuasal.png)
+![](./recursos/pesca/mapa_ex_acuasal.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.2 Mapa de aptitud de acuacultura salobre
 
-![](/recursos/pesca/mapa_aptitud_acuasal.png)
+![](./recursos/pesca/mapa_aptitud_acuasal.png)
 
 **Pesos globales de los atributos ambientales de acuacultura salobre**
 
@@ -246,15 +262,17 @@ Nula | 1622.4 | 4
 
 #### 1.3.3 Sensibilidad de atributos ambientales del sector acuacultura salobre
 
-![](/recursos/pesca/fi_analisis_sensibilidad_acuacultura_salobre.png)
+![](./recursos/pesca/fi_analisis_sensibilidad_acuacultura_salobre.png)
 
 ## 2. Acuacultura dulce
 
 Acuacultura de especies de agua dulce.
 
+<div style="page-break-after: always;"></div>
+
 ### 2.1 Modelo de decisión
 
-![](/recursos/pesca/fi_acuacultura_dulce.png)
+![](./recursos/pesca/fi_acuacultura_dulce.png)
 
 ### 2.2 Criterios
 
@@ -279,13 +297,15 @@ Año | 2016
 Escala | Sin dato
 Unidades | Metros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_acuadul_bio_nivel_estatico.png)
+![](./recursos/pesca/fi_fv_acuadul_bio_nivel_estatico.png)
 
 **Función de valor de acceso a agua**
 
-![](/recursos/pesca/mapa_fv_acuadul_bio_nivel_estatico.png)
+![](./recursos/pesca/mapa_fv_acuadul_bio_nivel_estatico.png)
 
 ##### 2.2.1.2 Salinidad
 
@@ -302,11 +322,11 @@ Unidades | Metros
 
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_acuadul_bio_espesor_agua_dulce.png)
+![](./recursos/pesca/fi_fv_acuadul_bio_espesor_agua_dulce.png)
 
 **Función de valor de salinidad**
 
-![](/recursos/pesca/mapa_fv_acuadul_bio_espesor_agua_dulce.png)
+![](./recursos/pesca/mapa_fv_acuadul_bio_espesor_agua_dulce.png)
 
 ##### 2.2.1.3 Vegetación
 
@@ -344,9 +364,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de vegetación**
 
-![](/recursos/pesca/mapa_fv_acuadul_bio_cobertura_usv_svi_16cats.png)
+![](./recursos/pesca/mapa_fv_acuadul_bio_cobertura_usv_svi_16cats.png)
 
 #### 2.2.2 Infraestructura
 
@@ -368,13 +390,15 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_acuadul_infra_d_lineas_electricas.png)
+![](./recursos/pesca/fi_fv_acuadul_infra_d_lineas_electricas.png)
 
 **Función de valor de electricidad**
 
-![](/recursos/pesca/mapa_fv_acuadul_infra_d_lineas_electricas.png)
+![](./recursos/pesca/mapa_fv_acuadul_infra_d_lineas_electricas.png)
 
 ##### 2.2.2.2 Vías de comunicación
 
@@ -391,11 +415,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_acuasal_infra_d_carreteras_caminos.png)
+![](./recursos/pesca/fi_fv_acuasal_infra_d_carreteras_caminos.png)
 
 **Función de valor de vías de comunicación**
 
-![](/recursos/pesca/mapa_fv_acuasal_infra_d_carreteras_caminos.png)
+![](./recursos/pesca/mapa_fv_acuasal_infra_d_carreteras_caminos.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 2.2.3 Socioeconómicos
 
@@ -424,9 +450,11 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.75
 1 | Tierra de uso común | Baja | 0.25
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tenencia**
 
-![](/recursos/pesca/mapa_fv_acuadul_socio_tenencia_tierra.png)
+![](./recursos/pesca/mapa_fv_acuadul_socio_tenencia_tierra.png)
 
 ### 2.3 Mapa de aptitud
 
@@ -453,11 +481,13 @@ ID | Categoría
 16 | Vegetación halófila hidrófila
 17 | ND
 
-![](/recursos/pesca/mapa_ex_acuadul.png)
+![](./recursos/pesca/mapa_ex_acuadul.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 2.3.2 Mapa de aptitud de acuacultura dulce
 
-![](/recursos/pesca/mapa_aptitud_acuadul.png)
+![](./recursos/pesca/mapa_aptitud_acuadul.png)
 
 **Pesos globales de los atributos ambientales de acuacultura dulce**
 
@@ -483,4 +513,4 @@ Nula | 1622.4 | 4
 
 #### 2.3.3 Sensibilidad de atributos ambientales del sector acuacultura dulce
 
-![](/recursos/pesca/fi_analisis_sensibilidad_acuacultura_dulce.png)
+![](./recursos/pesca/fi_analisis_sensibilidad_acuacultura_dulce.png)

@@ -14,7 +14,7 @@ Generar las condiciones, en todas sus vertientes, para el desarrollo urbano en Y
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/urbano/urbano.png)
+![](./recursos/urbano/urbano.png)
 
 ### 1.2 Atributos
 
@@ -49,11 +49,13 @@ Unidades | Número
 
 **Parámetros de la función de valor**
 
-![](/recursos/urbano/fi_fv_urb_urb_empleo_fuentes_empleo.png)  
+![](./recursos/urbano/fi_fv_urb_urb_empleo_fuentes_empleo.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de fuente de empleo**
 
-![](/recursos/urbano/mapa_fv_urb_urb_empleo_fuentes_empleo.png)
+![](./recursos/urbano/mapa_fv_urb_urb_empleo_fuentes_empleo.png)
 
 ##### 1.2.1.2 Infraestructura
 
@@ -69,13 +71,15 @@ Campo | [2] VIVTOT y VPH_C_SERV
 Escala | Localidad
 Unidades | Porcentaje
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/urbano/fi_fv_urb_urb_infra_infraestructura.png)  
+![](./recursos/urbano/fi_fv_urb_urb_infra_infraestructura.png)  
 
 **Función de valor de infraestructura**
 
-![](/recursos/urbano/mapa_fv_urb_urb_infra_infraestructura.png)
+![](./recursos/urbano/mapa_fv_urb_urb_infra_infraestructura.png)
 
 ##### 1.2.1.3 Equipamiento
 
@@ -102,11 +106,13 @@ Unidades | Número
 
 **Parámetros de la función de valor**
 
-![](/recursos/urbano/fi_fv_urb_urb_equi_equipamiento_escuelas.png)  
+![](./recursos/urbano/fi_fv_urb_urb_equi_equipamiento_escuelas.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de escuelas**
 
-![](/recursos/urbano/mapa_fv_urb_urb_equi_equipamiento_escuelas.png)
+![](./recursos/urbano/mapa_fv_urb_urb_equi_equipamiento_escuelas.png)
 
 ###### 1.2.1.3.2 Centros de salud
 
@@ -121,13 +127,15 @@ Año | 2020
 Escala | Localidad
 Unidades | Número
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/urbano/fi_fv_urb_urb_equi_equipamiento_salud.png)  
+![](./recursos/urbano/fi_fv_urb_urb_equi_equipamiento_salud.png)  
 
 **Función de valor de centros de salud**
 
-![](/recursos/urbano/mapa_fv_urb_urb_equi_equipamiento_salud.png)
+![](./recursos/urbano/mapa_fv_urb_urb_equi_equipamiento_salud.png)
 
 ###### 1.2.1.3.3 Edificios administrativos
 
@@ -144,11 +152,11 @@ Unidades | Número
 
 **Parámetros de la función de valor**
 
-![](/recursos/urbano/fi_fv_urb_urb_equi_equipamiento_admin.png)  
+![](./recursos/urbano/fi_fv_urb_urb_equi_equipamiento_admin.png)  
 
 **Función de valor de edificios administrativos**
 
-![](/recursos/urbano/mapa_fv_urb_urb_equi_equipamiento_admin.png)
+![](./recursos/urbano/mapa_fv_urb_urb_equi_equipamiento_admin.png)
 
 ##### 1.2.1.4 Conectividad
 
@@ -173,9 +181,11 @@ Localidades   cercanas a centros de población mixtos o en transición | Ubicada
 Localidades   cercanas a carreteras | Ubicadas   a <= 3 km de un camino transitable todo el año | Baja | 0.33
 Localidades   aisladas | El   resto de las localidades | Muy   baja | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de conectividad**
 
-![](/recursos/urbano/mapa_fv_urb_urb_conec_conectividad.png)
+![](./recursos/urbano/mapa_fv_urb_urb_conec_conectividad.png)
 
 #### 1.2.2 Demográficos
 
@@ -203,11 +213,11 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/urbano/fi_fv_urb_dem_tasa_tasa_crecimiento_anual.png)  
+![](./recursos/urbano/fi_fv_urb_dem_tasa_tasa_crecimiento_anual.png)  
 
 **Función de valor de tasa de crecimiento**
 
-![](/recursos/urbano/mapa_fv_urb_dem_tasa_tasa_crecimiento_anual.png)
+![](./recursos/urbano/mapa_fv_urb_dem_tasa_tasa_crecimiento_anual.png)
 
 ##### 1.2.2.2 Población
 
@@ -225,11 +235,13 @@ Unidades | Número de habitantes
 
 **Parámetros de la función de valor**
 
-![](/recursos/urbano/fi_fv_urb_dem_pob_tam_poblacional.png)  
+![](./recursos/urbano/fi_fv_urb_dem_pob_tam_poblacional.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de población**
 
-![](/recursos/urbano/mapa_fv_urb_dem_pob_tam_poblacional.png)
+![](./recursos/urbano/mapa_fv_urb_dem_pob_tam_poblacional.png)
 
 ##### 1.2.2.3 Densidad
 
@@ -245,13 +257,15 @@ Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Número de habitantes/hectárea
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/urbano/fi_fv_urb_dem_den_densidad_ha.png)  
+![](./recursos/urbano/fi_fv_urb_dem_den_densidad_ha.png)  
 
 **Función de valor de densidad**
 
-![](/recursos/urbano/mapa_fv_urb_dem_den_densidad_ha.png)
+![](./recursos/urbano/mapa_fv_urb_dem_den_densidad_ha.png)
 
 ##### 1.2.2.4 Inmigración
 
@@ -269,11 +283,11 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/urbano/fi_fv_urb_dem_inmi_inmigracion.png)  
+![](./recursos/urbano/fi_fv_urb_dem_inmi_inmigracion.png)  
 
 **Función de valor de inmigración**
 
-![](/recursos/urbano/mapa_fv_urb_dem_inmi_inmigracion.png)
+![](./recursos/urbano/mapa_fv_urb_dem_inmi_inmigracion.png)
 
 ##### 1.2.2.5 Población indígena
 
@@ -291,17 +305,21 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/urbano/fi_fv_urb_dem_indi_por_pob_indigena.png)  
+![](./recursos/urbano/fi_fv_urb_dem_indi_por_pob_indigena.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de población indígena**
 
-![](/recursos/urbano/mapa_fv_urb_dem_indi_por_pob_indigena.png)
+![](./recursos/urbano/mapa_fv_urb_dem_indi_por_pob_indigena.png)
+
+<div style="page-break-after: always;"></div>
 
 ### 1.3 Mapa de aptitud
 
 #### 1.3.1 Priorización de polos de crecimiento
 
-![](/recursos/urbano/mapa_polos_crecimiento.png)
+![](./recursos/urbano/mapa_polos_crecimiento.png)
 
 [Tabla de priorización de polos de crecimiento](https://www.dropbox.com/scl/fi/wadhkv34yots24w3nt99r/polos_de_crecimiento_2020.xlsx?dl=0&rlkey=cg6yizcd20fmvxmjxqhcz42qb)
 
@@ -316,13 +334,15 @@ Año | [1] 2020; [2] 2019
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/urbano/fi_fv_crecimiento_urbano_organico.png)
+![](./recursos/urbano/fi_fv_crecimiento_urbano_organico.png)
 
 **Función de valor de crecimiento urbano orgánico**
 
-![](/recursos/urbano/mapa_fv_urbano_crecimiento.png)
+![](./recursos/urbano/mapa_fv_urbano_crecimiento.png)
 
 #### 1.3.3 Zona de aprovechamiento actual del sector urbano
 
@@ -335,7 +355,7 @@ Año | [1] 2020; [2] 2017
 Escala | [1] Sin dato; [2] 1:250,000
 Unidades | Adimensional
 
-![](/recursos/urbano/mapa_aprov_urbano.png)
+![](./recursos/urbano/mapa_aprov_urbano.png)
 
 #### 1.3.4 Zonas de exclusión
 
@@ -356,15 +376,17 @@ ID | Cobertura
 9 | Laguna costera
 12 | Marisma
 
-![](/recursos/urbano/mapa_exclusion_urb.png)
+![](./recursos/urbano/mapa_exclusion_urb.png)
 
 #### 1.3.5 Reservas territoriales urbanas
 
 **Este mapa se actualizará para incluir como aptitud muy alta los póligonos de reserva territorial incluidos en los programas de desarrollo urbano y vivienda del estado.**
 
+<div style="page-break-after: always;"></div>
+
 #### 1.3.6 Mapa de aptitud urbano
 
-![](/recursos/urbano/mapa_aptitud_urb.png)
+![](./recursos/urbano/mapa_aptitud_urb.png)
 
 **Pesos globales del modelo de aptitud urbano**
 
@@ -382,6 +404,8 @@ Centros de salud | 0.024
 Población indígena | 0.010
 Edificios administrativos | 0.006
 
+<div style="page-break-after: always;"></div>
+
 **Área por categoría de aptitud**
 
 Categoría | km² | Porcentaje del estado
@@ -395,7 +419,7 @@ Nula | 1692.2 | 4
 
 #### 1.3.7 Sensibilidad de atributos ambientales
 
-![](/recursos/urbano/fi_analisis_sensibilidad_urbano.png)
+![](./recursos/urbano/fi_analisis_sensibilidad_urbano.png)
 
 
 

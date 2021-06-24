@@ -17,7 +17,7 @@ Aprovechamiento de los recursos forestales constituidos por vegetación leñosa 
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/forestal/maderable.png)
+![](./recursos/forestal/maderable.png)
 
 ### 1.2 Criterios
 
@@ -29,6 +29,8 @@ Tipo de vegetación | Tipos de vegetación y usos de suelo.
 Edafología | Tipo de suelo.
 Clima | Tipo de clima.
 Factores de riesgo | Elementos del ambiente biofísico que ponen en riesgo las actividades de aprovechamiento forestal maderable (zonas con plagas y zonas con incidencia de incendios).
+
+<div style="page-break-after: always;"></div>
 
 ##### 1.2.1.1 Tipo de vegetación
 
@@ -67,9 +69,11 @@ ID | Categoría | Importancia | FV
 17 | Vegetación halófila hidrófila | Nula | 0.00
 18 | NA | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de vegetación**
 
-![](/recursos/forestal/mapa_fv_for_mad_bio_usv_17cats.png)
+![](./recursos/forestal/mapa_fv_for_mad_bio_usv_17cats.png)
 
 ##### 1.2.1.2 Edafología
 
@@ -105,7 +109,7 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de edafología**
 
-![](/recursos/forestal/mapa_fv_for_mad_bio_t_suelo.png)
+![](./recursos/forestal/mapa_fv_for_mad_bio_t_suelo.png)
 
 ##### 1.2.1.3 Clima
 
@@ -134,9 +138,11 @@ Id | Categoría | Importancia | FV
 7 | BSo(h')(x') | Muy baja | 0.33
 8 | NA | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de climas**
 
-![](/recursos/forestal/mapa_fv_for_mad_bio_climas.png)
+![](./recursos/forestal/mapa_fv_for_mad_bio_climas.png)
 
 ##### 1.2.1.4 Factores de riesgo
 
@@ -164,7 +170,7 @@ Id | Categoría | Importancia | FV
 
 **Función de valor de factores de riesgo**
 
-![](/recursos/forestal/mapa_fv_for_mad_bio_incendios.png)
+![](./recursos/forestal/mapa_fv_for_mad_bio_incendios.png)
 
 #### 1.2.2 Socioeconómicos
 
@@ -217,7 +223,7 @@ Sudzal | 0.25
 
 **Función de valor de aprovechamiento**
 
-![](/recursos/forestal/mapa_fv_mad_socio_aprovechamiento.png)
+![](./recursos/forestal/mapa_fv_mad_socio_aprovechamiento.png)
 
 ##### 1.2.2.2 Mercados
 
@@ -232,13 +238,15 @@ Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/forestal/fi_fv_for_mad_socio_d_mercados.png)
+![](./recursos/forestal/fi_fv_for_mad_socio_d_mercados.png)
 
 **Función de valor de mercados**
 
-![](/recursos/forestal/mapa_fv_for_mad_socio_d_mercados.png)
+![](./recursos/forestal/mapa_fv_for_mad_socio_d_mercados.png)
 
 ##### 1.2.2.3 Tenencia
 
@@ -269,11 +277,13 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.80
 3 | No ejidal | Baja | 0.56
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tenencia versión a**
 
-![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra.png)
+![](./recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra.png)
 
-<!--![](/recursos/forestal/.png)--->
+<!--![](./recursos/forestal/.png)--->
 
 Versión b. Visión de facilidad para gestionar los proyectos.
 
@@ -287,11 +297,13 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.80
 1 | Tierra de uso común | Baja | 0.56
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tenencia versión b**
 
-![](/recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra_v2.png)
+![](./recursos/forestal/mapa_fv_for_mad_socio_tenencia_tierra_v2.png)
 
-<!--!![](/recursos/forestal/.png)--->
+<!--!![](./recursos/forestal/.png)--->
 
 #### 1.2.3 Infraestructura
 
@@ -316,11 +328,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/forestal/fi_fv_mad_infra_infra_d_localidades.png)
+![](./recursos/forestal/fi_fv_mad_infra_infra_d_localidades.png)
 
 **Función de valor de abastecimiento**
 
-![](/recursos/forestal/mapa_fv_for_mad_infra_infra_d_localidades.png)
+![](./recursos/forestal/mapa_fv_for_mad_infra_infra_d_localidades.png)
 
 ##### 1.2.3.2 Centros de almacenamiento
 
@@ -337,11 +349,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/forestal/fi_fv_mad_infra_d_centros_almacenamiento.png)
+![](./recursos/forestal/fi_fv_mad_infra_d_centros_almacenamiento.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de centros de almacenamiento**
 
-![](/recursos/forestal/mapa_fv_mad_infra_d_centros_almacenamiento.png)
+![](./recursos/forestal/mapa_fv_mad_infra_d_centros_almacenamiento.png)
 
 ##### 1.2.3.3 Comunicación
 
@@ -356,13 +370,15 @@ Año | 2019
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/forestal/fi_fv_for_mad_infra_d_caminos.png)  
+![](./recursos/forestal/fi_fv_for_mad_infra_d_caminos.png)  
 
 **Función de valor de comunicación**
 
-![](/recursos/forestal/mapa_fv_for_mad_infra_d_caminos.png)
+![](./recursos/forestal/mapa_fv_for_mad_infra_d_caminos.png)
 
 ### 1.3 Mapa de aptitud
 
@@ -395,11 +411,13 @@ ID | Categoría
 17 | Vegetación halófila hidrófila
 18 | NA
 
-![](/recursos/forestal/mapa_exclusion_for_mad_a.png)
+![](./recursos/forestal/mapa_exclusion_for_mad_a.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.1.2 Mapa de aptitud de aprovechamiento forestal maderable versión a
 
-![](/recursos/forestal/mapa_aptitud_for_mad_a.png)
+![](./recursos/forestal/mapa_aptitud_for_mad_a.png)
 
 **Pesos globales de los atributos de aprovechamiento forestal maderable versión a**
 
@@ -416,6 +434,8 @@ Factores de riesgo | 0.030
 Abastecimiento | 0.020
 Centro de almacenamiento | 0.018
 
+<div style="page-break-after: always;"></div>
+
 **Área por categoría de aptitud**
 
 Categoría | km² | Porcentaje del   estado
@@ -429,7 +449,7 @@ Nula | 2289.1 | 6
 
 #### 1.3.2 Sensibilidad de atributos ambientales de aprovechamiento forestal maderable versión a
 
-![](/recursos/forestal/fi_analisis_sensibilidad_forestal_maderable_a.png)
+![](./recursos/forestal/fi_analisis_sensibilidad_forestal_maderable_a.png)
 
 #### 1.3.3 Mapa de aptitud de aprovechamiento forestal maderable versión b
 
@@ -460,11 +480,13 @@ ID | Categoría
 17 | Vegetación halófila hidrófila
 18 | NA
 
-![](/recursos/forestal/mapa_exclusion_for_mad_b.png)
+![](./recursos/forestal/mapa_exclusion_for_mad_b.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.3.2 Mapa de aptitud de aprovechamiento forestal maderable versión b
 
-![](/recursos/forestal/mapa_aptitud_for_mad_b.png)
+![](./recursos/forestal/mapa_aptitud_for_mad_b.png)
 
 **Pesos globales de los atributos de aprovechamiento forestal maderable versión b**
 
@@ -481,6 +503,8 @@ Factores de riesgo | 0.030
 Abastecimiento | 0.020
 Centro de almacenamiento | 0.018
 
+<div style="page-break-after: always;"></div>
+
 **Área por categoría de aptitud**
 
 Categoría | km² | Porcentaje del estado
@@ -494,13 +518,13 @@ Nula | 2289.1 | 6
 
 #### 1.3.4 Sensibilidad de atributos ambientales de aprovechamiento forestal maderable versión b
 
-![](/recursos/forestal/fi_analisis_sensibilidad_forestal_maderable_b.png)
+![](./recursos/forestal/fi_analisis_sensibilidad_forestal_maderable_b.png)
 
 #### 1.3.5 Análisis de semejanzas entre las versiones de los mapas de aptitud
 
 Las dos versiones del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza del 57%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
-![](/recursos/forestal/fi_tabla_mad1_vs_mad2.png)
+![](./recursos/forestal/fi_tabla_mad1_vs_mad2.png)
 
 Para fines del análisis de conflictos se usará la versión a debido a que la superficie de las categorías de aptitud alta y muy alta es mayor.
 
@@ -510,7 +534,7 @@ Aprovechamiento de los recursos constituidos por la parte no leñosa de la veget
 
 ### 2.1 Modelo de decisión
 
-![](/recursos/forestal/no_maderable.png)
+![](./recursos/forestal/no_maderable.png)
 *Se decidió explorar la priorización de los atributos socioeconómicos de dos maneras, ya que había dos puntos de vista en el grupo.
 
 Versión 1. Da la mayor importancia a Aprovechamientos, ya que ahí se sabe que hay recursos y se puede dar la actividad independientemente de la Tenencia, y la menor importancia la tiene la distancia a Mercados.
@@ -527,6 +551,8 @@ Tipo de vegetación | Tipos de vegetación y usos de suelo.
 Edafología | Tipo de suelo.
 Clima | Tipo de clima.
 Factores de riesgo | Elementos del ambiente biofísico que ponen en riesgo las actividades de aprovechamiento forestal no maderable (zonas con plagas y zonas con incidencia de incendios).
+
+<div style="page-break-after: always;"></div>
 
 ##### 2.2.1.1 Tipo de vegetación
 
@@ -565,9 +591,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación de petén | Nula | 0.00
 18 | NA | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de vegetación**
 
-![](/recursos/forestal/mapa_fv_for_nomad_bio_usv_17cats.png)
+![](./recursos/forestal/mapa_fv_for_nomad_bio_usv_17cats.png)
 
 ##### 2.2.1.2 Edafología
 
@@ -603,7 +631,7 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de edafología**
 
-![](/recursos/forestal/mapa_fv_for_mad_bio_t_suelo.png)
+![](./recursos/forestal/mapa_fv_for_mad_bio_t_suelo.png)
 
 ##### 2.2.1.3 Clima
 
@@ -632,9 +660,11 @@ Id | Categoría | Importancia | FV
 7 | BSo(h')(x') | Muy baja | 0.33
 8 | NA | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de climas**
 
-![](/recursos/forestal/mapa_fv_for_mad_bio_climas.png)
+![](./recursos/forestal/mapa_fv_for_mad_bio_climas.png)
 
 ##### 2.2.1.4 Factores de riesgo
 
@@ -662,7 +692,7 @@ Id | Categoría | Importancia | FV
 
 **Función de valor de factores de riesgo**
 
-![](/recursos/forestal/mapa_fv_for_mad_bio_incendios.png)
+![](./recursos/forestal/mapa_fv_for_mad_bio_incendios.png)
 
 #### 2.2.2 Socioeconómicos
 
@@ -696,7 +726,7 @@ Tzucacab | 0.25
 
 **Función de valor de aprovechamiento**
 
-![](/recursos/forestal/mapa_fv_nomad_socio_aprovechamiento.png)
+![](./recursos/forestal/mapa_fv_nomad_socio_aprovechamiento.png)
 
 ##### 2.2.2.2 Mercados
 
@@ -713,11 +743,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/forestal/fi_fv_for_mad_socio_d_mercados.png)
+![](./recursos/forestal/fi_fv_for_mad_socio_d_mercados.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de mercados**
 
-![](/recursos/forestal/mapa_fv_for_mad_socio_d_mercados.png)
+![](./recursos/forestal/mapa_fv_for_mad_socio_d_mercados.png)
 
 ##### 2.2.2.3 Tenencia
 
@@ -750,9 +782,9 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tenencia versión a**
 
-![](/recursos/forestal/mapa_fv_for_nomad_socio_tenencia_tierra.png)
+![](./recursos/forestal/mapa_fv_for_nomad_socio_tenencia_tierra.png)
 
-<!--!![](/recursos/forestal/.png)--->
+<!--!![](./recursos/forestal/.png)--->
 
 Versión b. Visión de facilidad para gestionar los proyectos.
 
@@ -768,9 +800,9 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tenencia versión b**
 
-![](/recursos/forestal/mapa_fv_for_nomad_socio_tenencia_tierra_v2.png)
+![](./recursos/forestal/mapa_fv_for_nomad_socio_tenencia_tierra_v2.png)
 
-<!--!![](/recursos/forestal/.png)--->
+<!--!![](./recursos/forestal/.png)--->
 
 #### 2.2.3 Infraestructura
 
@@ -795,11 +827,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/forestal/fi_fv_mad_infra_infra_d_localidades.png)
+![](./recursos/forestal/fi_fv_mad_infra_infra_d_localidades.png)
 
 **Función de valor de abastecimiento**
 
-![](/recursos/forestal/mapa_fv_for_nomad_infra_infra_d_localidades.png)
+![](./recursos/forestal/mapa_fv_for_nomad_infra_infra_d_localidades.png)
 
 ##### 2.2.3.2 Centros de almacenamiento
 
@@ -816,11 +848,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/forestal/fi_fv_nomad_infra_d_centros_almacenamiento.png)
+![](./recursos/forestal/fi_fv_nomad_infra_d_centros_almacenamiento.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de centros de almacenamiento**
 
-![](/recursos/forestal/mapa_fv_nomad_infra_d_centros_almacenamiento.png)
+![](./recursos/forestal/mapa_fv_nomad_infra_d_centros_almacenamiento.png)
 
 ##### 2.2.3.3 Comunicación
 
@@ -835,13 +869,15 @@ Año | 2019
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/forestal/fi_fv_for_mad_infra_d_caminos.png)  
+![](./recursos/forestal/fi_fv_for_mad_infra_d_caminos.png)  
 
 **Función de valor de comunicación**
 
-![](/recursos/forestal/mapa_fv_for_mad_infra_d_caminos.png)
+![](./recursos/forestal/mapa_fv_for_mad_infra_d_caminos.png)
 
 ### 2.3 Mapa de aptitud
 
@@ -870,11 +906,13 @@ ID | Categoría
 16 | Vegetación de petén
 18 | NA
 
-![](/recursos/forestal/mapa_exclusion_for_nomad_1a.png)
+![](./recursos/forestal/mapa_exclusion_for_nomad_1a.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 2.3.1.2 Mapa de aptitud de aprovechamiento forestal no maderable versión 1a
 
-![](/recursos/forestal/mapa_aptitud_for_nomad_1a.png)
+![](./recursos/forestal/mapa_aptitud_for_nomad_1a.png)
 
 **Pesos globales de los atributos de aprovechamiento forestal no maderable versión 1a**
 
@@ -891,6 +929,8 @@ Mercados | 0.029
 Abastecimiento | 0.014
 Centro de almacenamiento | 0.013
 
+<div style="page-break-after: always;"></div>
+
 **Área por categoría de aptitud**
 
 Categoría | km² | Porcentaje del   estado
@@ -904,7 +944,7 @@ Nula | 1033.9 | 3
 
 #### 2.3.2 Sensibilidad de atributos ambientales de aprovechamiento forestal no maderable versión 1a
 
-![](/recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_1a.png)
+![](./recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_1a.png)
 
 #### 2.3.3 Mapa de aptitud de aprovechamiento forestal no maderable versión 1b
 
@@ -931,11 +971,13 @@ ID | Categoría
 16 | Vegetación de petén
 18 | NA
 
-![](/recursos/forestal/mapa_exclusion_for_nomad_1b.png)
+![](./recursos/forestal/mapa_exclusion_for_nomad_1b.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 2.3.3.2 Mapa de aptitud de aprovechamiento forestal no maderable versión 1b
 
-![](/recursos/forestal/mapa_aptitud_for_nomad_1b.png)
+![](./recursos/forestal/mapa_aptitud_for_nomad_1b.png)
 
 **Pesos globales de los atributos de aprovechamiento forestal no maderable versión 1b**
 
@@ -952,6 +994,8 @@ Mercados | 0.029
 Abastecimiento | 0.014
 Centro de almacenamiento | 0.013
 
+<div style="page-break-after: always;"></div>
+
 **Área por categoría de aptitud**
 
 Categoría | km² | Porcentaje del estado
@@ -965,7 +1009,7 @@ Nula | 1033.9 | 3
 
 #### 2.3.4 Sensibilidad de atributos ambientales de aprovechamiento forestal no maderable versión 1b
 
-![](/recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_1b.png)
+![](./recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_1b.png)
 
 #### 2.3.5 Mapa de aptitud de aprovechamiento forestal no maderable versión 2a
 
@@ -992,11 +1036,13 @@ ID | Categoría
 16 | Vegetación de petén
 18 | NA
 
-![](/recursos/forestal/mapa_exclusion_for_nomad_2a.png)
+![](./recursos/forestal/mapa_exclusion_for_nomad_2a.png)
 
-#### 2.3.3.2 Mapa de aptitud de aprovechamiento forestal no maderable versión 2a
+<div style="page-break-after: always;"></div>
 
-![](/recursos/forestal/mapa_aptitud_for_nomad_2a.png)
+#### 2.3.5.2 Mapa de aptitud de aprovechamiento forestal no maderable versión 2a
+
+![](./recursos/forestal/mapa_aptitud_for_nomad_2a.png)
 
 **Pesos globales de los atributos de aprovechamiento forestal no maderable versión 2a**
 
@@ -1013,6 +1059,8 @@ Aprovechamiento | 0.020
 Abastecimiento | 0.014
 Centro de almacenamiento | 0.013
 
+<div style="page-break-after: always;"></div>
+
 **Área por categoría de aptitud**
 
 Categoría | km² | Porcentaje del   estado
@@ -1026,7 +1074,7 @@ Nula | 1033.9 | 3
 
 #### 2.3.6 Sensibilidad de atributos ambientales de aprovechamiento forestal no maderable versión 2a
 
-![](/recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_2a.png)
+![](./recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_2a.png)
 
 #### 2.3.7 Mapa de aptitud de aprovechamiento forestal no maderable versión 2b
 
@@ -1053,11 +1101,13 @@ ID | Categoría
 16 | Vegetación de petén
 18 | NA
 
-![](/recursos/forestal/mapa_exclusion_for_nomad_2b.png)
+![](./recursos/forestal/mapa_exclusion_for_nomad_2b.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 2.3.7.2 Mapa de aptitud de aprovechamiento forestal no maderable versión 2b
 
-![](/recursos/forestal/mapa_aptitud_for_nomad_2b.png)
+![](./recursos/forestal/mapa_aptitud_for_nomad_2b.png)
 
 **Pesos globales de los atributos de aprovechamiento forestal no maderable versión 2b**
 
@@ -1074,6 +1124,8 @@ Aprovechamiento | 0.020
 Abastecimiento | 0.014
 Centro de almacenamiento | 0.013
 
+<div style="page-break-after: always;"></div>
+
 **Área por categoría de aptitud**
 
 Categoría | km² | Porcentaje del   estado
@@ -1087,7 +1139,7 @@ Nula | 1033.9 | 3
 
 #### 2.3.8 Sensibilidad de atributos ambientales de aprovechamiento forestal no maderable versión 2b
 
-![](/recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_2b.png)
+![](./recursos/forestal/fi_analisis_sensibilidad_forestal_no_maderable_2b.png)
 
 #### 2.3.9 Análisis de semejanzas entre las versiones de los mapas de aptitud
 
@@ -1097,27 +1149,27 @@ Versión a y b: difieren por la función de valor del atributo Tenencia
 
 Las versiones 1a y 1b del mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 75%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
-![](/recursos/forestal/fi_tabla_nomad_1a_vs_nomad_1b.png)
+![](./recursos/forestal/fi_tabla_nomad_1a_vs_nomad_1b.png)
 
 Las versiones 2a y 2b del mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 72%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
-![](/recursos/forestal/fi_tabla_nomad_2a_vs_nomad_2b.png)
+![](./recursos/forestal/fi_tabla_nomad_2a_vs_nomad_2b.png)
 
 Las versiones 1a y 2a de mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 79%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
-![](/recursos/forestal/fi_tabla_nomad_1a_vs_nomad_2a.png)
+![](./recursos/forestal/fi_tabla_nomad_1a_vs_nomad_2a.png)
 
 Las versiones 1a y 2b de mapa de aptitud de aprovechamiento forestal no maderable tienen una semejanza de 70%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
-![](/recursos/forestal/fi_tabla_nomad_1a_vs_nomad_2b.png)
+![](./recursos/forestal/fi_tabla_nomad_1a_vs_nomad_2b.png)
 
 Las versiones 1b y 2a del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza de 71%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
-![](/recursos/forestal/fi_tabla_nomad_1b_vs_nomad_2a.png)
+![](./recursos/forestal/fi_tabla_nomad_1b_vs_nomad_2a.png)
 
 Las versiones 1b y 2b del mapa de aptitud de aprovechamiento forestal maderable tienen una semejanza de 84%, medido con el índice de Lee-Sallee que compara la superficie (ha) de cada categoría de los dos mapas.
 
-![](/recursos/forestal/fi_tabla_nomad_1b_vs_nomad_2b.png)
+![](./recursos/forestal/fi_tabla_nomad_1b_vs_nomad_2b.png)
 
 Para fines del análisis de conflicto se usará la versión 2a debido a que la superficie de las categorías de aptitud alta y muy alta es mayor.
 
@@ -1127,7 +1179,7 @@ _El mapa de aptitud se integró considerando que los subsectores son igualmente 
 
 ### 3.1 Modelo de decisión del mapa de aptitud integrado
 
-![](/recursos/forestal/fi_forestal_integrado.png)
+![](./recursos/forestal/fi_forestal_integrado.png)
 
 #### 3.1.1 Zonas de exclusión
 
@@ -1152,11 +1204,13 @@ ID | Categoría
 16 | Vegetación de petén
 18 | NA
 
-![](/recursos/forestal/mapa_exclusion_forestal.png)
+![](./recursos/forestal/mapa_exclusion_forestal.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 3.1.2 Mapa de aptitud integrado del sector de aprovechamiento forestal
 
-![](/recursos/forestal/mapa_aptitud_forestal.png)
+![](./recursos/forestal/mapa_aptitud_forestal.png)
 
 **Pesos globales del mapa de aptitud integrado de aprovechamiento forestal**
 
@@ -1194,6 +1248,8 @@ Baja | 1382.2 | 3
 Muy baja | 174.8 | 0
 Nula | 1033.9 | 3
 
+<div style="page-break-after: always;"></div>
+
 #### 3.1.3 Sensibilidad de atributos ambientales de aprovechamiento forestal
 
-![](/recursos/forestal/fi_analisis_sensibilidad_forestal.png)
+![](./recursos/forestal/fi_analisis_sensibilidad_forestal.png)
