@@ -15,7 +15,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/pesca/fi_pesca.png)
+![](./recursos/pesca/fi_pesca.png)
 
 Debido a que la actividad pesquera en el estado es marina, el análisis se aplicó en la zona que abarca 100 km a partir de la línea de costa.
 
@@ -45,11 +45,13 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_pes_infra_d_loc_urb_pes_acceso_agua.png)
+![](./recursos/pesca/fi_fv_pes_infra_d_loc_urb_pes_acceso_agua.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de agua potable**
 
-![](/recursos/pesca/mapa_fv_pes_infra_d_loc_urb_pes_acceso_agua.png)
+![](./recursos/pesca/mapa_fv_pes_infra_d_loc_urb_pes_acceso_agua.png)
 
 ##### 1.2.1.2 Electricidad
 
@@ -64,13 +66,15 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_pes_infra_d_lineas_electricas.png)
+![](./recursos/pesca/fi_fv_pes_infra_d_lineas_electricas.png)
 
 **Función de valor de electricidad**
 
-![](/recursos/pesca/mapa_fv_pes_infra_d_lineas_electricas.png)
+![](./recursos/pesca/mapa_fv_pes_infra_d_lineas_electricas.png)
 
 ##### 1.2.1.3 Vías de comunicación
 
@@ -87,11 +91,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_pes_infra_d_carreteras_caminos.png)
+![](./recursos/pesca/fi_fv_pes_infra_d_carreteras_caminos.png)
 
 **Función de valor de vías de comunicación**
 
-![](/recursos/pesca/mapa_fv_pes_infra_d_carreteras_caminos.png)
+![](./recursos/pesca/mapa_fv_pes_infra_d_carreteras_caminos.png)
+
+<div style="page-break-after: always;"></div>
 
 ##### 1.2.1.4 Comunicaciones
 
@@ -117,11 +123,13 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_pes_infra_loc_urb_pes_internet.png)
+![](./recursos/pesca/fi_fv_pes_infra_loc_urb_pes_internet.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de internet**
 
-![](/recursos/pesca/mapa_fv_pes_infra_loc_urb_pes_internet.png)
+![](./recursos/pesca/mapa_fv_pes_infra_loc_urb_pes_internet.png)
 
 ###### 1.2.1.4.2 Telefonía
 
@@ -136,13 +144,15 @@ Año | 2020
 Campo | [2] VIVTOT y VPH_CEL
 Unidades | Porcentaje
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_pes_infra_loc_urb_pes_celular.png)
+![](./recursos/pesca/fi_fv_pes_infra_loc_urb_pes_celular.png)
 
 **Función de valor de telefonía**
 
-![](/recursos/pesca/mapa_fv_pes_infra_loc_urb_pes_celular.png)
+![](./recursos/pesca/mapa_fv_pes_infra_loc_urb_pes_celular.png)
 
 #### 1.2.2 Socioeconómicos
 
@@ -166,11 +176,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_pes_socio_d_localidades_pesca.png)
+![](./recursos/pesca/fi_fv_pes_socio_d_localidades_pesca.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de localidades pesqueras**
 
-![](/recursos/pesca/mapa_fv_pes_socio_d_localidades_pesca.png)
+![](./recursos/pesca/mapa_fv_pes_socio_d_localidades_pesca.png)
 
 ##### 1.2.2.2 Centros de distribución
 
@@ -185,13 +197,15 @@ Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/pesca/fi_fv_pes_socio_d_centros_distribucion_pesca.png)
+![](./recursos/pesca/fi_fv_pes_socio_d_centros_distribucion_pesca.png)
 
 **Función de valor de centros de distribución**
 
-![](/recursos/pesca/mapa_fv_pes_socio_d_centros_distribucion_pesca.png)
+![](./recursos/pesca/mapa_fv_pes_socio_d_centros_distribucion_pesca.png)
 
 ### 1.3 Mapa de aptitud
 
@@ -208,11 +222,13 @@ Año | 2018
 Escala | 1:250,000
 Unidades | Kilómetros
 
-![](/recursos/pesca/mapa_ex_pes.png)
+![](./recursos/pesca/mapa_ex_pes.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.2 Mapa de aptitud de pesca
 
-![](/recursos/pesca/mapa_aptitud_pes.png)
+![](./recursos/pesca/mapa_aptitud_pes.png)
 
 **Pesos globales de los atributos ambientales de pesca**
 
@@ -239,4 +255,4 @@ Nula | 10738.1 | 27
 
 #### 1.3.7 Sensibilidad de atributos ambientales del sector pesca
 
-![](/recursos/pesca/fi_analisis_sensibilidad_pesca.png)
+![](./recursos/pesca/fi_analisis_sensibilidad_pesca.png)

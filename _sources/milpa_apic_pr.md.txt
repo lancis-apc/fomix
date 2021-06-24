@@ -15,7 +15,7 @@ Sistema alimentario agroforestal dinámico, integrado por diversas actividades p
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/milpa_apic/fi_milpa.png)
+![](./recursos/milpa_apic/fi_milpa.png)
 
 ### 1.2 Atributos
 
@@ -63,9 +63,11 @@ ID | Categoria | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de cobertura**
 
-![](/recursos/milpa_apic/mapa_fv_mil_bio_usv_cobertura_usv_svi_16cats.png)
+![](./recursos/milpa_apic/mapa_fv_mil_bio_usv_cobertura_usv_svi_16cats.png)
 
 ##### 1.2.1.2 Tipo de suelo
 
@@ -101,7 +103,7 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tipo de suelo**
 
-![](/recursos/milpa_apic/mapa_fv_mil_bio_suelo_tipo_suelo.png)
+![](./recursos/milpa_apic/mapa_fv_mil_bio_suelo_tipo_suelo.png)
 
 ##### 1.2.1.3 Precipitación
 
@@ -126,11 +128,13 @@ Unidades | Milímetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_mil_bio_agua_precipitacion_prom_may_jun_jul.png)
+![](./recursos/milpa_apic/fi_fv_mil_bio_agua_precipitacion_prom_may_jun_jul.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de precipitación**
 
-![](/recursos/milpa_apic/mapa_fv_mil_bio_agua_precipitacion_promedio_may_jun_jul.png)
+![](./recursos/milpa_apic/mapa_fv_mil_bio_agua_precipitacion_promedio_may_jun_jul.png)
 
 #### 1.2.2 Sociales
 
@@ -155,11 +159,11 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_mil_soc_indi_porcentaje_indigena_municipal.png)
+![](./recursos/milpa_apic/fi_fv_mil_soc_indi_porcentaje_indigena_municipal.png)
 
 **Función de valor de población indígena**
 
-![](/recursos/milpa_apic/mapa_fv_mil_soc_indi_porcentaje_indigena_municipal.png)
+![](./recursos/milpa_apic/mapa_fv_mil_soc_indi_porcentaje_indigena_municipal.png)
 
 ##### 1.2.2.2 Tenencia de la tierra
 
@@ -184,7 +188,7 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tenencia de la tierra**
 
-![](/recursos/milpa_apic/mapa_fv_mil_soc_ejido_tenencia_tierra.png)
+![](./recursos/milpa_apic/mapa_fv_mil_soc_ejido_tenencia_tierra.png)
 
 #### 1.2.3 Infraestructura
 
@@ -218,11 +222,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_mil_infra_cam_d_caminos_veredas.png)
+![](./recursos/milpa_apic/fi_fv_mil_infra_cam_d_caminos_veredas.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de veredas**
 
-![](/recursos/milpa_apic/mapa_fv_mil_infra_cam_d_caminos_veredas.png)
+![](./recursos/milpa_apic/mapa_fv_mil_infra_cam_d_caminos_veredas.png)
 
 ###### 1.2.3.1.2 Carreteras
 
@@ -238,13 +244,15 @@ Campo | TIPO_VIAL
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_mil_infra_cam_d_carretera_prolongacion.png)
+![](./recursos/milpa_apic/fi_fv_mil_infra_cam_d_carretera_prolongacion.png)
 
 **Función de valor de carreteras**
 
-![](/recursos/milpa_apic/mapa_fv_mil_infra_cam_d_carretera_prolongacion.png)
+![](./recursos/milpa_apic/mapa_fv_mil_infra_cam_d_carretera_prolongacion.png)
 
 ##### 1.2.3.2 Distancia a localidades rurales
 
@@ -262,11 +270,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_mil_infra_merc_d_localidades_2500.png)
+![](./recursos/milpa_apic/fi_fv_mil_infra_merc_d_localidades_2500.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de distancia a localidades rurales**
 
-![](/recursos/milpa_apic/mapa_fv_mil_infra_merc_d_localidades_2500.png)
+![](./recursos/milpa_apic/mapa_fv_mil_infra_merc_d_localidades_2500.png)
 
 ### 1.3 Mapa de aptitud
 
@@ -281,7 +291,7 @@ Año | 2015
 Escala | Sin dato
 Unidades | Adimensional
 
-![](/recursos/milpa_apic/mapa_mil_aprov_actual.png)
+![](./recursos/milpa_apic/mapa_mil_aprov_actual.png)
 
 #### 1.3.2 Zona de exclusión
 
@@ -314,11 +324,13 @@ ID | Categoría
 
 [2] Se seleccionaron las localidades con 2,500 habitantes o más.
 
-![](/recursos/milpa_apic/mapa_mil_exclusion.png)
+![](./recursos/milpa_apic/mapa_mil_exclusion.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.3 Mapa de aptitud de milpa maya
 
-![](/recursos/milpa_apic/mapa_mil_aptitud.png)
+![](./recursos/milpa_apic/mapa_mil_aptitud.png)
 
 **Pesos globales de los atributos ambientales de milpa maya**
 
@@ -346,13 +358,15 @@ Nula | 2652.6 | 7
 
 #### 1.3.4 Sensibilidad de atributos ambientales de milpa maya
 
-![](/recursos/milpa_apic/fi_analisis_sensibilidad_milpa_maya.png)
+![](./recursos/milpa_apic/fi_analisis_sensibilidad_milpa_maya.png)
+
+<div style="page-break-after: always;"></div>
 
 ## 2. Apicultura
 
 ### 2.1 Modelo de decisión
 
-![](/recursos/milpa_apic/fi_apicultura.png)
+![](./recursos/milpa_apic/fi_apicultura.png)
 
 ### 2.2 Atributos
 
@@ -399,9 +413,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de cobertura**
 
-![](/recursos/milpa_apic/mapa_fv_api_bio_usv_cobertura_usv_svi_16cats.png)
+![](./recursos/milpa_apic/mapa_fv_api_bio_usv_cobertura_usv_svi_16cats.png)
 
 ##### 2.2.1.2 Precipitación
 
@@ -416,13 +432,15 @@ Año | 2019
 Resolución | 1000 m x 1000 m
 Unidades | Milímetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_api_bio_agua_precipitacion_marzo.png)
+![](./recursos/milpa_apic/fi_fv_api_bio_agua_precipitacion_marzo.png)
 
 **Función de valor de precipitación**
 
-![](/recursos/milpa_apic/mapa_fv_api_bio_agua_precipitacion_marzo.png)
+![](./recursos/milpa_apic/mapa_fv_api_bio_agua_precipitacion_marzo.png)
 
 #### 2.2.2 Infraestructura
 
@@ -456,11 +474,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_api_infra_cam_d_carretera_prolongacion.png)
+![](./recursos/milpa_apic/fi_fv_api_infra_cam_d_carretera_prolongacion.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de carreteras**
 
-![](/recursos/milpa_apic/mapa_fv_api_infra_cam_d_carretera_prolongacion.png)
+![](./recursos/milpa_apic/mapa_fv_api_infra_cam_d_carretera_prolongacion.png)
 
 ###### 2.2.2.1.2 Veredas
 
@@ -476,13 +496,15 @@ Campo | TIPO_VIAL
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_api_infra_cam_d_caminos_veredas.png)
+![](./recursos/milpa_apic/fi_fv_api_infra_cam_d_caminos_veredas.png)
 
 **Función de valor de veredas**
 
-![](/recursos/milpa_apic/mapa_fv_api_infra_cam_d_caminos_veredas.png)
+![](./recursos/milpa_apic/mapa_fv_api_infra_cam_d_caminos_veredas.png)
 
 ##### 2.2.2.2 Distancia a localidades
 
@@ -510,11 +532,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_api_infra_merc_d_localidades_2500.png)
+![](./recursos/milpa_apic/fi_fv_api_infra_merc_d_localidades_2500.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de distancia a localidades rurales**
 
-![](/recursos/milpa_apic/mapa_fv_api_infra_merc_d_localidades_2500.png)
+![](./recursos/milpa_apic/mapa_fv_api_infra_merc_d_localidades_2500.png)
 
 ###### 2.2.2.2.2 Distancia a localidades rurales-urbanas
 
@@ -530,13 +554,15 @@ Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_api_infra_merc_d_localidades_2500_15k.png)
+![](./recursos/milpa_apic/fi_fv_api_infra_merc_d_localidades_2500_15k.png)
 
 **Función de valor de distancia a localidades rurales-urbanas**
 
-![](/recursos/milpa_apic/mapa_fv_api_infra_merc_d_localidades_2500_15k.png)
+![](./recursos/milpa_apic/mapa_fv_api_infra_merc_d_localidades_2500_15k.png)
 
 ###### 2.2.2.2.3 Distancia a localidades urbanas
 
@@ -554,11 +580,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_api_infra_merc_d_localidades_15k.png)
+![](./recursos/milpa_apic/fi_fv_api_infra_merc_d_localidades_15k.png)
 
 **Función de valor de distancia a localidades urbanas**
 
-![](/recursos/milpa_apic/mapa_fv_api_infra_merc_d_localidades_15k.png)
+![](./recursos/milpa_apic/mapa_fv_api_infra_merc_d_localidades_15k.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 2.2.3 Sociales
 
@@ -588,9 +616,11 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Moderada | 0.50
 3 | No ejidal | Baja | 0.25
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tenencia de la tierra**
 
-![](/recursos/milpa_apic/mapa_fv_api_soc_ejido_tenencia_tierra.png)
+![](./recursos/milpa_apic/mapa_fv_api_soc_ejido_tenencia_tierra.png)
 
 ##### 2.2.3.2 Población indígena
 
@@ -606,13 +636,15 @@ Campo | [2] POBTOT y P3YM_HLI
 Escala | Municipal
 Unidades | Porcentaje
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/milpa_apic/fi_fv_api_soc_indi_porpob_indigena_municipal.png)
+![](./recursos/milpa_apic/fi_fv_api_soc_indi_porpob_indigena_municipal.png)
 
 **Función de valor de población indígena**
 
-![](/recursos/milpa_apic/mapa_fv_api_soc_indi_porpob_indigena_municipal.png)
+![](./recursos/milpa_apic/mapa_fv_api_soc_indi_porpob_indigena_municipal.png)
 
 ### 2.3 Mapa de aptitud
 
@@ -627,7 +659,7 @@ Año | 2005
 Escala | Sin dato
 Unidades | Adimensional
 
- ![](/recursos/milpa_apic/mapa_api_aprov_actual.png)
+ ![](./recursos/milpa_apic/mapa_api_aprov_actual.png)
 
 #### 2.3.2 Zona de exclusión
 
@@ -640,6 +672,8 @@ Año | [1] 2017; [2] 2021; [3] 2020
 Campo | [1] descripcio; [2] Descrip
 Escala | [1] 1:250,000; [2] 1:50,000; [3] Sin dato
 Unidades | Adimensional
+
+<div style="page-break-after: always;"></div>
 
 **Tabla de exclusión de apicultura**
 
@@ -654,11 +688,13 @@ ID | Categoría
 
 [2] Se seleccionaron las localidades con 2,500 habitantes o más.
 
-![](/recursos/milpa_apic/mapa_api_exclusion.png)
+![](./recursos/milpa_apic/mapa_api_exclusion.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 2.3.3 Mapa de aptitud de apicultura
 
-![](/recursos/milpa_apic/mapa_api_aptitud.png)
+![](./recursos/milpa_apic/mapa_api_aptitud.png)
 
 **Pesos globales de los atributos ambientales de apicultura**
 
@@ -674,6 +710,8 @@ Distancia a localidades rurales-urbanas | 0.052
 Población indígena | 0.021
 Distancia a localidades urbanas | 0.012
 
+<div style="page-break-after: always;"></div>
+
 **Área por categoría de aptitud**
 
 Categoría | km² | Porcentaje del estado
@@ -687,4 +725,4 @@ Nula | 1468.6 | 4
 
 #### 2.3.4 Sensibilidad de atributos ambientales de apicultura
 
-![](/recursos/milpa_apic/fi_analisis_sensibilidad_apicultura.png)
+![](./recursos/milpa_apic/fi_analisis_sensibilidad_apicultura.png)

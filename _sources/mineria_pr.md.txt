@@ -13,7 +13,7 @@ Aumentar la apertura de bancos de materiales para cumplir con la demanda de prod
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/mineria/fi_mineria.png)
+![](./recursos/mineria/fi_mineria.png)
 
 Los participantes decidieron que se hiciera la distinción entre la minería de rocas, arenas y arcillas, con base en los tipos de suelo en los que es más viable desarrollar cada tipo de minería.
 Asimismo, de acuerdo con la técnica de explotación de rocas, los participantes definieron dos funciones de valor para el atributo Nivel freático con el objeto de distinguir entre los sitios propicios para la extracción en seco y en húmedo. En el caso de la minería de arenas y arcillas únicamente se hace la extracción en seco.
@@ -64,9 +64,11 @@ ID | Categoría | Importancia | FV
 11 | Solonchak | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de suelo**
 
-![](/recursos/mineria/mapa_fv_min_arci_bio_tipo_suelo.png)
+![](./recursos/mineria/mapa_fv_min_arci_bio_tipo_suelo.png)
 
 ###### 1.2.1.1.2 Nivel freático
 
@@ -82,13 +84,15 @@ Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_arci_bio_d_manto_freatico.png)
+![](./recursos/mineria/fi_fv_min_arci_bio_d_manto_freatico.png)
 
 **Función de valor de nivel freático**
 
-![](/recursos/mineria/mapa_fv_min_arci_bio_d_manto_freatico.png)
+![](./recursos/mineria/mapa_fv_min_arci_bio_d_manto_freatico.png)
 
 ###### 1.2.1.1.3 Tipo de Cobertura
 
@@ -126,9 +130,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de cobertura**
 
-![](/recursos/mineria/mapa_fv_min_arci_bio_cobertura_usv_svi_16cats.png)
+![](./recursos/mineria/mapa_fv_min_arci_bio_cobertura_usv_svi_16cats.png)
 
 ##### 1.2.1.2 Infraestructura
 
@@ -151,13 +157,15 @@ Año | 2019
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_arci_infra_d_carreteras_caminos.png)
+![](./recursos/mineria/fi_fv_min_arci_infra_d_carreteras_caminos.png)
 
 **Función de valor de caminos**
 
-![](/recursos/mineria/mapa_fv_min_arci_infra_d_carreteras_caminos.png)
+![](./recursos/mineria/mapa_fv_min_arci_infra_d_carreteras_caminos.png)
 
 ###### 1.2.1.2.2 Electricidad
 
@@ -174,11 +182,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_arci_infra_d_lineas_electricas.png)
+![](./recursos/mineria/fi_fv_min_arci_infra_d_lineas_electricas.png)
 
 **Función de valor de electricidad**
 
-![](/recursos/mineria/mapa_fv_min_arci_infra_d_lineas_electricas.png)
+![](./recursos/mineria/mapa_fv_min_arci_infra_d_lineas_electricas.png)
 
 ###### 1.2.1.2.3 Minas
 
@@ -195,11 +203,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_arci_infra_rocas_banco_materiales.png)
+![](./recursos/mineria/fi_fv_min_arci_infra_rocas_banco_materiales.png)
 
 **Función de valor de minas**
 
-![](/recursos/mineria/mapa_fv_min_arci_infra_rocas_banco_materiales.png)
+![](./recursos/mineria/mapa_fv_min_arci_infra_rocas_banco_materiales.png)
 
 ##### 1.2.1.3 Socioeconómicos
 
@@ -222,11 +230,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_arci_socio_d_localidades_min.png)
+![](./recursos/mineria/fi_fv_min_arci_socio_d_localidades_min.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de localidades**
 
-![](/recursos/mineria/mapa_fv_min_arci_socio_d_localidades_min.png)
+![](./recursos/mineria/mapa_fv_min_arci_socio_d_localidades_min.png)
 
 #### 1.2.2 Minería de arenas
 
@@ -270,9 +280,11 @@ ID | Categoría | Importancia | FV
 12 | Vertisol | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de suelo**
 
-![](/recursos/mineria/mapa_fv_min_arena_bio_tipo_suelo.png)
+![](./recursos/mineria/mapa_fv_min_arena_bio_tipo_suelo.png)
 
 ###### 1.2.2.1.2 Nivel freático
 
@@ -288,13 +300,15 @@ Campo | n_freat_m
 Escala | Estatal
 Unidades | Metros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_arena_bio_d_manto_freatico.png)
+![](./recursos/mineria/fi_fv_min_arena_bio_d_manto_freatico.png)
 
 **Función de valor de nivel freático**
 
-![](/recursos/mineria/mapa_fv_min_arena_bio_d_manto_freatico.png)
+![](./recursos/mineria/mapa_fv_min_arena_bio_d_manto_freatico.png)
 
 ###### 1.2.2.1.3 Tipo de Cobertura
 
@@ -332,9 +346,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de cobertura**
 
-![](/recursos/mineria/mapa_fv_min_arena_bio_cobertura_usv_svi_16cats.png)
+![](./recursos/mineria/mapa_fv_min_arena_bio_cobertura_usv_svi_16cats.png)
 
 ##### 1.2.2.2 Infraestructura
 
@@ -357,13 +373,15 @@ Año | 2019
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_arena_infra_d_carreteras_caminos.png)
+![](./recursos/mineria/fi_fv_min_arena_infra_d_carreteras_caminos.png)
 
 **Función de valor de caminos**
 
-![](/recursos/mineria/mapa_fv_min_arena_infra_d_carreteras_caminos.png)
+![](./recursos/mineria/mapa_fv_min_arena_infra_d_carreteras_caminos.png)
 
 ###### 1.2.2.2.2 Electricidad
 
@@ -380,11 +398,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_arena_infra_d_lineas_electricas.png)
+![](./recursos/mineria/fi_fv_min_arena_infra_d_lineas_electricas.png)
 
 **Función de valor de electricidad**
 
-![](/recursos/mineria/mapa_fv_min_arena_infra_d_lineas_electricas.png)
+![](./recursos/mineria/mapa_fv_min_arena_infra_d_lineas_electricas.png)
 
 ###### 1.2.2.2.3 Minas
 
@@ -401,11 +419,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_arena_infra_rocas_banco_materiales.png)
+![](./recursos/mineria/fi_fv_min_arena_infra_rocas_banco_materiales.png)
 
 **Función de valor de minas**
 
-![](/recursos/mineria/mapa_fv_min_arena_infra_rocas_banco_materiales.png)
+![](./recursos/mineria/mapa_fv_min_arena_infra_rocas_banco_materiales.png)
 
 ##### 1.2.2.3 Socioeconómicos
 
@@ -428,11 +446,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_arena_socio_d_localidades_min.png)
+![](./recursos/mineria/fi_fv_min_arena_socio_d_localidades_min.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de localidades**
 
-![](/recursos/mineria/mapa_fv_min_arena_socio_d_localidades_min.png)
+![](./recursos/mineria/mapa_fv_min_arena_socio_d_localidades_min.png)
 
 #### 1.2.3 Minería de rocas con extracción en seco
 
@@ -460,11 +480,11 @@ Unidades | Metros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_rosec_bio_d_manto_freatico.png)
+![](./recursos/mineria/fi_fv_min_rosec_bio_d_manto_freatico.png)
 
 **Función de valor de nivel freático**
 
-![](/recursos/mineria/mapa_fv_min_rosec_bio_d_manto_freatico.png)
+![](./recursos/mineria/mapa_fv_min_rosec_bio_d_manto_freatico.png)
 
 ###### 1.2.3.1.2 Tipo de suelo
 
@@ -498,9 +518,11 @@ ID | Categoría | Importancia | FV
 11 | Solonchak | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de suelo**
 
-![](/recursos/mineria/mapa_fv_min_rosec_bio_tipo_suelo.png)
+![](./recursos/mineria/mapa_fv_min_rosec_bio_tipo_suelo.png)
 
 ###### 1.2.3.1.3 Tipo de Cobertura
 
@@ -538,9 +560,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de cobertura**
 
-![](/recursos/mineria/mapa_fv_min_rosec_bio_cobertura_usv_svi_16cats.png)
+![](./recursos/mineria/mapa_fv_min_rosec_bio_cobertura_usv_svi_16cats.png)
 
 ##### 1.2.3.2 Infraestructura
 
@@ -563,13 +587,15 @@ Año | 2019
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_rosec_infra_d_carreteras_caminos.png)
+![](./recursos/mineria/fi_fv_min_rosec_infra_d_carreteras_caminos.png)
 
 **Función de valor de caminos**
 
-![](/recursos/mineria/mapa_fv_min_rosec_infra_d_carreteras_caminos.png)
+![](./recursos/mineria/mapa_fv_min_rosec_infra_d_carreteras_caminos.png)
 
 ###### 1.2.3.2.2 Electricidad
 
@@ -586,11 +612,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_rosec_infra_d_lineas_electricas.png)
+![](./recursos/mineria/fi_fv_min_rosec_infra_d_lineas_electricas.png)
 
 **Función de valor de electricidad**
 
-![](/recursos/mineria/mapa_fv_min_rosec_infra_d_lineas_electricas.png)
+![](./recursos/mineria/mapa_fv_min_rosec_infra_d_lineas_electricas.png)
 
 ###### 1.2.3.2.3 Minas
 
@@ -607,11 +633,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_rosec_infra_rocas_banco_materiales.png)
+![](./recursos/mineria/fi_fv_min_rosec_infra_rocas_banco_materiales.png)
 
 **Función de valor de minas**
 
-![](/recursos/mineria/mapa_fv_min_rosec_infra_rocas_banco_materiales.png)
+![](./recursos/mineria/mapa_fv_min_rosec_infra_rocas_banco_materiales.png)
 
 ##### 1.2.3.3 Socioeconómicos
 
@@ -634,11 +660,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_rosec_socio_d_localidades_min.png)
+![](./recursos/mineria/fi_fv_min_rosec_socio_d_localidades_min.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de localidades**
 
-![](/recursos/mineria/mapa_fv_min_rosec_socio_d_localidades_min.png)
+![](./recursos/mineria/mapa_fv_min_rosec_socio_d_localidades_min.png)
 
 #### 1.2.4 Minería de rocas con extracción en húmedo
 
@@ -666,11 +694,11 @@ Unidades | Metros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_rohum_bio_d_manto_freatico.png)
+![](./recursos/mineria/fi_fv_min_rohum_bio_d_manto_freatico.png)
 
 **Función de valor de nivel freático**
 
-![](/recursos/mineria/mapa_fv_min_rohum_bio_d_manto_freatico.png)
+![](./recursos/mineria/mapa_fv_min_rohum_bio_d_manto_freatico.png)
 
 ###### 1.2.4.1.2 Tipo de suelo
 
@@ -704,9 +732,11 @@ ID | Categoría | Importancia | FV
 11 | Solonchak | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de suelo**
 
-![](/recursos/mineria/mapa_fv_min_rohum_bio_tipo_suelo.png)
+![](./recursos/mineria/mapa_fv_min_rohum_bio_tipo_suelo.png)
 
 ###### 1.2.4.1.3 Tipo de Cobertura
 
@@ -744,9 +774,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de cobertura**
 
-![](/recursos/mineria/mapa_fv_min_rohum_bio_cobertura_usv_svi_16cats.png)
+![](./recursos/mineria/mapa_fv_min_rohum_bio_cobertura_usv_svi_16cats.png)
 
 ##### 1.2.4.2 Infraestructura
 
@@ -769,13 +801,15 @@ Año | 2019
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_rohum_infra_d_carreteras_caminos.png)
+![](./recursos/mineria/fi_fv_min_rohum_infra_d_carreteras_caminos.png)
 
 **Función de valor de caminos**
 
-![](/recursos/mineria/mapa_fv_min_rohum_infra_d_carreteras_caminos.png)
+![](./recursos/mineria/mapa_fv_min_rohum_infra_d_carreteras_caminos.png)
 
 ###### 1.2.4.2.2 Electricidad
 
@@ -792,11 +826,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_rohum_infra_d_lineas_electricas.png)
+![](./recursos/mineria/fi_fv_min_rohum_infra_d_lineas_electricas.png)
 
 **Función de valor de electricidad**
 
-![](/recursos/mineria/mapa_fv_min_rohum_infra_d_lineas_electricas.png)
+![](./recursos/mineria/mapa_fv_min_rohum_infra_d_lineas_electricas.png)
 
 ###### 1.2.4.2.3 Minas
 
@@ -813,11 +847,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_rohum_infra_rocas_banco_materiales.png)
+![](./recursos/mineria/fi_fv_min_rohum_infra_rocas_banco_materiales.png)
 
 **Función de valor de minas**
 
-![](/recursos/mineria/mapa_fv_min_rohum_infra_rocas_banco_materiales.png)
+![](./recursos/mineria/mapa_fv_min_rohum_infra_rocas_banco_materiales.png)
 
 ##### 1.2.4.3 Socioeconómicos
 
@@ -840,11 +874,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/mineria/fi_fv_min_rohum_socio_d_localidades_min.png)
+![](./recursos/mineria/fi_fv_min_rohum_socio_d_localidades_min.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de localidades**
 
-![](/recursos/mineria/mapa_fv_min_rohum_socio_d_localidades_min.png)
+![](./recursos/mineria/mapa_fv_min_rohum_socio_d_localidades_min.png)
 
 ### 1.3 Mapa de aptitud
 
@@ -862,6 +898,8 @@ Campo | [1] descripcio; [2] Descrip
 Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
+<div style="page-break-after: always;"></div>
+
 **Tabla de exclusión del sector minería**
 
 ID | Categoría
@@ -875,11 +913,13 @@ ID | Categoría
 16 | Vegetación halófila hidrófila
 17 | ND
 
-![](/recursos/mineria/mapa_exclusion_min.png)
+![](./recursos/mineria/mapa_exclusion_min.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.1.2 Mapa de aptitud de minería de arcillas
 
-![](/recursos/mineria/mapa_aptitud_min_arcilla.png)
+![](./recursos/mineria/mapa_aptitud_min_arcilla.png)
 
 **Pesos globales de los atributos de minería de arcillas**
 
@@ -906,7 +946,7 @@ Nula | 2675.8 | 7
 
 #### 1.3.2 Sensibilidad de atributos ambientales de minería de arcillas
 
-![](/recursos/mineria/fi_analisis_sensibilidad_mineria_arcilla.png)
+![](./recursos/mineria/fi_analisis_sensibilidad_mineria_arcilla.png)
 
 #### 1.3.3 Mapa de aptitud de minería de arenas
 
@@ -935,11 +975,13 @@ ID | Categoría
 16 | Vegetación halófila hidrófila
 17 | ND
 
-![](/recursos/mineria/mapa_exclusion_min.png)
+![](./recursos/mineria/mapa_exclusion_min.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.3.2 Mapa de aptitud de minería de arenas
 
-![](/recursos/mineria/mapa_aptitud_min_arena.png)
+![](./recursos/mineria/mapa_aptitud_min_arena.png)
 
 **Pesos globales de los atributos de minería de arenas**
 
@@ -966,7 +1008,7 @@ Nula | 2675.8 | 7
 
 #### 1.3.4 Sensibilidad de atributos ambientales de minería de arenas
 
-![](/recursos/mineria/fi_analisis_sensibilidad_mineria_arena.png)
+![](./recursos/mineria/fi_analisis_sensibilidad_mineria_arena.png)
 
 #### 1.3.5 Mapa de aptitud de minería de rocas con extracción en seco
 
@@ -995,11 +1037,13 @@ ID | Categoría
 16 | Vegetación halófila hidrófila
 17 | ND
 
-![](/recursos/mineria/mapa_exclusion_min.png)
+![](./recursos/mineria/mapa_exclusion_min.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.5.2 Mapa de aptitud de minería de rocas con extracción en seco
 
-![](/recursos/mineria/mapa_aptitud_min_rosec.png)
+![](./recursos/mineria/mapa_aptitud_min_rosec.png)
 
 **Pesos globales de los atributos de minería de rocas con extracción en seco**
 
@@ -1026,7 +1070,7 @@ Nula | 2675.8 | 7
 
 #### 1.3.6 Sensibilidad de atributos ambientales de rocas con extracción en seco
 
-![](/recursos/mineria/fi_analisis_sensibilidad_mineria_rocas_secas.png)
+![](./recursos/mineria/fi_analisis_sensibilidad_mineria_rocas_secas.png)
 
 #### 1.3.7 Mapa de aptitud de minería de rocas con extracción en húmedo
 
@@ -1055,11 +1099,13 @@ ID | Categoría
 16 | Vegetación halófila hidrófila
 17 | ND
 
-![](/recursos/mineria/mapa_exclusion_min.png)
+![](./recursos/mineria/mapa_exclusion_min.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.7.2 Mapa de aptitud de minería de rocas con extracción en húmedo
 
-![](/recursos/mineria/mapa_aptitud_min_rohum.png)
+![](./recursos/mineria/mapa_aptitud_min_rohum.png)
 
 **Pesos globales de los atributos de minería de rocas con extracción en húmedo**
 
@@ -1086,7 +1132,9 @@ Nula | 2675.8 | 7
 
 #### 1.3.8 Sensibilidad de atributos ambientales de rocas con extracción en húmedo
 
-![](/recursos/mineria/fi_analisis_sensibilidad_mineria_rocas_humedas.png)
+![](./recursos/mineria/fi_analisis_sensibilidad_mineria_rocas_humedas.png)
+
+<div style="page-break-after: always;"></div>
 
 ## 2. Mapa de aptitud integrado
 
@@ -1094,7 +1142,7 @@ _El mapa de aptitud se integró considerando que los tipos son igualmente import
 
 ### 2.1 Modelo de decisión del mapa de aptitud integrado
 
-![](/recursos/mineria/fi_mineria_integrado.png)
+![](./recursos/mineria/fi_mineria_integrado.png)
 
 #### 2.1.1 Zonas de exclusión
 
@@ -1120,11 +1168,14 @@ ID | Categoría
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
 17 | ND
-![](/recursos/mineria/mapa_exclusion_mineria.png)
+
+![](./recursos/mineria/mapa_exclusion_mineria.png)
+
+<div style="page-break-after: always;"></div>
 
 ### 2.1.2 Mapa de aptitud integrado del sector minería
 
-![](/recursos/mineria/mapa_aptitud_mineria.png)
+![](./recursos/mineria/mapa_aptitud_mineria.png)
 
 **Pesos globales del mapa integrado del sector minería**
 
@@ -1170,6 +1221,8 @@ Baja | 9088.6 | 23
 Muy baja | 297.5 | 1
 Nula | 2675.8 | 7
 
+<div style="page-break-after: always;"></div>
+
 ### 2.1.3 Sensibilidad de atributos ambientales del sector minería
 
-![](/recursos/mineria/fi_analisis_sensibilidad_mineria.png)
+![](./recursos/mineria/fi_analisis_sensibilidad_mineria.png)

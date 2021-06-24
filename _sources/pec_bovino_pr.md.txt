@@ -17,7 +17,7 @@ Sistema de producción en el que la alimentación se basa principalmente en past
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/pec_bovino/fi_bovino.png)
+![](./recursos/pec_bovino/fi_bovino.png)
 
 ### 1.2 Criterios
 
@@ -46,11 +46,13 @@ Unidades | Metros
 
 **Parámetros de la función de valor**
 
-![](/recursos/pec_bovino/fi_fv_bov_bio_d_manto_freatico.png)
+![](./recursos/pec_bovino/fi_fv_bov_bio_d_manto_freatico.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de disponibilidad de agua**
 
-![](/recursos/pec_bovino/mapa_fv_bov_bio_d_manto_freatico.png)
+![](./recursos/pec_bovino/mapa_fv_bov_bio_d_manto_freatico.png)
 
 ##### 1.2.1.2 Precipitación
 
@@ -77,7 +79,7 @@ ID | Categoría (mm) | Importancia | FV
 
 **Función de valor de precipitación**
 
-![](/recursos/pec_bovino/mapa_fv_bov_bio_precipitacion.png)
+![](./recursos/pec_bovino/mapa_fv_bov_bio_precipitacion.png)
 
 ##### 1.2.1.3 Tipo de suelo
 
@@ -92,6 +94,8 @@ Año | 2014
 Campo | tipo_suelo
 Escala | 1:250,000
 Unidades | Adimensional
+
+<div style="page-break-after: always;"></div>
 
 **Parámetros de la función de valor**
 
@@ -111,9 +115,11 @@ ID | Categoría | Importancia | FV
 11 | Solonchak | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de suelo**
 
-![](/recursos/pec_bovino/mapa_fv_bov_bio_tipo_suelo.png)
+![](./recursos/pec_bovino/mapa_fv_bov_bio_tipo_suelo.png)
 
 ##### 1.2.1.4 Tipo de cobertura
 
@@ -151,9 +157,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de cobertura**
 
-![](/recursos/pec_bovino/mapa_fv_bov_bio_cobertura_usv_svi_16cats.png)
+![](./recursos/pec_bovino/mapa_fv_bov_bio_cobertura_usv_svi_16cats.png)
 
 #### 1.2.2 Infraestructura
 
@@ -179,11 +187,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/pec_bovino/fi_fv_bov_infra_d_lineas_electricas.png)
+![](./recursos/pec_bovino/fi_fv_bov_infra_d_lineas_electricas.png)
 
 **Función de valor de energía**
 
-![](/recursos/pec_bovino/mapa_fv_bov_infra_d_lineas_electricas.png)
+![](./recursos/pec_bovino/mapa_fv_bov_infra_d_lineas_electricas.png)
 
 ##### 1.2.2.2 Vías de comunicación
 
@@ -200,11 +208,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/pec_bovino/fi_fv_bov_infra_d_carreteras_caminos.png)
+![](./recursos/pec_bovino/fi_fv_bov_infra_d_carreteras_caminos.png)
 
 **Función de valor de vías de comunicación**
 
-![](/recursos/pec_bovino/mapa_fv_bov_infra_d_carreteras_caminos.png)
+![](./recursos/pec_bovino/mapa_fv_bov_infra_d_carreteras_caminos.png)
+
+<div style="page-break-after: always;"></div>
 
 ##### 1.2.2.3 Centros de acopio
 
@@ -221,11 +231,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/pec_bovino/fi_fv_bov_infra_d_centros_acopio_bov.png)
+![](./recursos/pec_bovino/fi_fv_bov_infra_d_centros_acopio_bov.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de centros de acopio**
 
-![](/recursos/pec_bovino/mapa_fv_bov_infra_d_centros_acopio_bov.png)
+![](./recursos/pec_bovino/mapa_fv_bov_infra_d_centros_acopio_bov.png)
 
 ##### 1.2.2.4 Rastros
 
@@ -240,13 +252,15 @@ Año | [1] Sin dato; [2] [3] 2020
 Escala | Localidad
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/pec_bovino/fi_fv_bov_infra_d_rastros_bov.png)
+![](./recursos/pec_bovino/fi_fv_bov_infra_d_rastros_bov.png)
 
 **Función de valor de rastros**
 
-![](/recursos/pec_bovino/mapa_fv_bov_infra_d_rastros_bov.png)
+![](./recursos/pec_bovino/mapa_fv_bov_infra_d_rastros_bov.png)
 
 ### 1.3 Mapa de aptitud
 
@@ -279,11 +293,13 @@ ID | Categoría
 
 [2] Se utilizaron todas las localidades (urbanas y rurales).
 
-![](/recursos/pec_bovino/mapa_bov_exclusion.png)
+![](./recursos/pec_bovino/mapa_bov_exclusion.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.2 Mapa de aptitud del subsector pecuario bovino
 
-![](/recursos/pec_bovino/mapa_bov_aptitud.png)
+![](./recursos/pec_bovino/mapa_bov_aptitud.png)
 
 **Pesos globales de los atributos ambientales del subsector pecuario bovino**
 
@@ -311,7 +327,7 @@ Nula | 3047.8 | 8
 
 #### 1.3.3 Sensibilidad de criterios ambientales del subsector pecuario bovino
 
-![](/recursos/pec_bovino/fi_analisis_sensibilidad_bovino.png)
+![](./recursos/pec_bovino/fi_analisis_sensibilidad_bovino.png)
 
 ## 2.Bovino silvopastoril
 
@@ -322,9 +338,11 @@ Sistema de producción bovina en el que la alimentación está integrada a espec
 
 [Lista de participantes](https://www.dropbox.com/s/uqmvq4qrembvk9e/lista_asistencia_silvopastoril.pdf?dl=0)
 
+<div style="page-break-after: always;"></div>
+
 ### 2.1 Modelo de decisión
 
-![](/recursos/silvopastoril/silvopastoril.png)
+![](./recursos/silvopastoril/silvopastoril.png)
 
 ### 2.2 Criterios
 
@@ -363,11 +381,11 @@ Unidades | Metros
 
 **Parámetros de la función de valor**
 
-![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_d_acuifero.png)
+![](./recursos/silvopastoril/fi_fv_gbe_sil_bio_d_acuifero.png)
 
 **Función de valor de disponibilidad de agua**
 
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_d_acuifero.png)   
+![](./recursos/silvopastoril/mapa_fv_gbe_sil_bio_d_acuifero.png)   
 
 ##### 2.2.1.2 Cobertura
 
@@ -444,9 +462,11 @@ ID | Categoría | Expresión verbal | FV
    :header-rows: 1
    :align: center -->
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de cobertura**
 
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_usv_inegi.PNG)
+![](./recursos/silvopastoril/mapa_fv_gbe_sil_bio_usv_inegi.PNG)
 
 ##### 2.2.1.3 Tipo de suelo
 
@@ -490,7 +510,7 @@ ID | Categoría | Expresión verbal | FV
 
 **Función de valor de tipo de suelo**
 
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_t_suelo.png)    
+![](./recursos/silvopastoril/mapa_fv_gbe_sil_bio_t_suelo.png)    
 
 ##### 2.2.1.4 Precipitación
 
@@ -513,11 +533,11 @@ Unidades | Milímetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_precipitacion.png)  
+![](./recursos/silvopastoril/fi_fv_gbe_sil_bio_precipitacion.png)  
 
 **Función de valor de precipitación**
 
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_precipitacion.png)
+![](./recursos/silvopastoril/mapa_fv_gbe_sil_bio_precipitacion.png)
 
 ##### 2.2.1.5 Temperatura
 
@@ -539,11 +559,13 @@ Unidades | °C
 
 **Parámetros de la función de valor**
 
-![](/recursos/silvopastoril/fi_fv_gbe_sil_bio_temp_max.png)
+![](./recursos/silvopastoril/fi_fv_gbe_sil_bio_temp_max.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de temperatura**
 
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_bio_temp_max.png)
+![](./recursos/silvopastoril/mapa_fv_gbe_sil_bio_temp_max.png)
 
 #### 2.2.2 Socioeconómicos
 
@@ -578,11 +600,11 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/silvopastoril/fi_fv_gbe_sil_socio_sec_primario.png)  
+![](./recursos/silvopastoril/fi_fv_gbe_sil_socio_sec_primario.png)  
 
 **Función de valor de disponibilidad de mano de obra**
 
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_sec_primario.png)  
+![](./recursos/silvopastoril/mapa_fv_gbe_sil_socio_sec_primario.png)  
 
 ##### 2.2.2.2 Accesibilidad a mercados
 
@@ -615,11 +637,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/silvopastoril/fi_fv_gbe_sil_socio_d_mercados_loc.png)
+![](./recursos/silvopastoril/fi_fv_gbe_sil_socio_d_mercados_loc.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de accesibilidad a mercados locales**
 
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_d_mercados_loc.png)
+![](./recursos/silvopastoril/mapa_fv_gbe_sil_socio_d_mercados_loc.png)
 
 ###### 2.2.2.2.2 Accesibilidad a mercados foráneos
 
@@ -638,13 +662,15 @@ Unidades | Kilómetros
    :file: recursos/tabla_insumos_fv_gbe_sil_socio_d_mercados_for.csv
    :align: left -->
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/silvopastoril/fi_fv_gbe_sil_socio_d_mercados_for.png)
+![](./recursos/silvopastoril/fi_fv_gbe_sil_socio_d_mercados_for.png)
 
 **Función de valor de accesibilidad a mercados foráneos**
 
-![](/recursos/silvopastoril/mapa_fv_gbe_sil_socio_d_mercados_for.png)  
+![](./recursos/silvopastoril/mapa_fv_gbe_sil_socio_d_mercados_for.png)  
 
 ### 2.3 Mapa de aptitud
 
@@ -686,11 +712,13 @@ ID | Categoría
    :header-rows: 1
    :align: center -->
 
-![](/recursos/silvopastoril/mapa_gbe_silvopastoril_exclusion.png)  
+![](./recursos/silvopastoril/mapa_gbe_silvopastoril_exclusion.png)  
+
+<div style="page-break-after: always;"></div>
 
 #### 2.3.2 Mapa de aptitud del subsector pecuario silvopastoril
 
-![](/recursos/silvopastoril/mapa_apt_gbe_silvopastoril.png)
+![](./recursos/silvopastoril/mapa_apt_gbe_silvopastoril.png)
 
 **Pesos globales del mapa de aptitud del subsector pecuario silvopastoril**
 
@@ -723,15 +751,17 @@ Nula | 3021.0 | 8
 
 #### 2.3.3 Sensibilidad de criterios ambientales del subsector pecuario silvopastoril
 
-![](/recursos/silvopastoril/fi_analisis_sensibilidad_silvopastoril.png)
+![](./recursos/silvopastoril/fi_analisis_sensibilidad_silvopastoril.png)
 
 ## 3. Mapa de aptitud integrado del sector pecuario bovino
 
 _El mapa de aptitud se integró considerando que los subsectores son igualmente importantes y, por lo tanto, tienen el mismo peso._
 
+<div style="page-break-after: always;"></div>
+
 ### 3.1 Modelo de decisión del mapa de aptitud integrado
 
-![](/recursos/pec_bovino/fi_bov_integrado.png)  
+![](./recursos/pec_bovino/fi_bov_integrado.png)  
 
 #### 3.1.1 Zonas de exclusión
 
@@ -757,11 +787,13 @@ ID | Categoría
 15 | Vegetación de petén
 16 | Vegetación halófila hidrófila
 
-![](/recursos/pec_bovino/mapa_bov_integrado_exclusion.png)  
+![](./recursos/pec_bovino/mapa_bov_integrado_exclusion.png)  
+
+<div style="page-break-after: always;"></div>
 
 #### 3.1.2 Mapa de aptitud integrado del sector pecuario bovino
 
-![](/recursos/pec_bovino/mapa_bov_integrado_aptitud.png)
+![](./recursos/pec_bovino/mapa_bov_integrado_aptitud.png)
 
 **Pesos globales del mapa de aptitud integrado del sector pecuario bovino**
 
@@ -803,4 +835,4 @@ Nula | 2927.2 | 7
 
 #### 3.1.3 Sensibilidad del mapa de aptitud integrado del sector pecuario bovino
 
-![](/recursos/pec_bovino/fi_analisis_sensibilidad_bovino_integrado.png)
+![](./recursos/pec_bovino/fi_analisis_sensibilidad_bovino_integrado.png)
