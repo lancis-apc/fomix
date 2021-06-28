@@ -7,7 +7,7 @@ Sistema de conocimiento para la gestión del Ordenamiento Ecológico del Territo
 ===============================================================================================================
 .. Análisis de aptitud sectorial-Resultados finales
 .. ######################################################
-Análisis de aptitud sectorial-Final
+Análisis de aptitud sectorial
 ###########################################################
 
 Objetivo
@@ -38,7 +38,25 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    turismo_pr
    urbano_pr
 
-
+.. toctree::
+   :maxdepth: 6
+   :caption: Análisis de conflictos:
+   
+   introduccion
+   acuacultura_s_conflictos
+   agricultura_conflictos
+   conservacion_conflictos
+   energia_conflictos
+   forestal_conflictos
+   industrial_conflictos
+   milpa_conflictos
+   mineria_conflictos
+   bovino_conflictos
+   porcino_conflictos
+   turismo_conflictos
+   turismo_sol_playa_conflictos
+   urbano_conflictos
+   referencias
 
 .. Indices and tables
 .. ==================

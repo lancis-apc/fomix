@@ -1,66 +1,91 @@
 # Industrial
 
+
 ## Industrial **vs.** Conservación
+
 
 ### Descripción del conflicto
 
-- Pérdida de zonas forestales en sitios donde el gobierno da apoyos al sector agrícola
-- Incendios forestales por quemas agropastoriles.
+- Deforestación por la ampliación de zonas industriales.
+- Contaminación del acuífero por descarga de agua residual del sector industrial.
 
 
 #### Recursos afectados
 
-* Biodiversidad, recursos forestales maderables y no maderables, fauna y suelo
+* Agua, vegetación forestal.
 
 
 #### Ubicación reportada
 
-- Sin dato
+- Zona metropolitana de Mérida, Noroeste de Yucatán.
 
 
 #### Fuentes
 
-- Taller bovino
-- Clave de registro en formulario: F1, F4 y F23
+- González Herrera et al. 2018, Ellis et al. 2015.
+- Clave de registro en encuesta de conflictos ambientales: F11 y F36.
 
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](/recursos/conflictos/.png)
+![](./recursos/conflictos/fi_industrial_conservacion_extension.png)
 
+<div style="page-break-after: always;"></div>
 
 ### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](/recursos/conflictos/.png)
+![](./recursos/conflictos/mapa_industrial_eq_cruza_conservacion_eq.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](/recursos/conflictos/.png)
+![](./recursos/conflictos/fi_industrial_conservacion_indices.png)
 
 
-Industria vs Conservación
-Descripción del conflicto:
-Deforestación por la ampliación de zonas industriales.
-Recursos afectados:
-Cobertura vegetal
-Ubicación reportada:
-Noroeste de Yucatán
-Fuentes:
-- Ellis et al. 2015
-- Clave de registro en formulario: F11 y F36
 
-Industria vs Forestal no maderable
-Descripción del conflicto:
-Deforestación por la ampliación de zonas industriales.
-Recursos afectados:
-Cobertura vegetal
-Ubicación reportada:
-Noroeste de Yucatán
-Fuentes:
-- Ellis et al. 2015
-- Clave de registro en formulario: F11 y F36
+## Industrial **vs.** Forestal
+
+
+### Descripción del conflicto
+
+- Deforestación por la ampliación de zonas industriales.
+
+
+#### Recursos afectados
+
+* Vegetación forestal.
+
+
+#### Ubicación reportada
+
+- Noroeste de Yucatán.
+
+
+#### Fuentes
+
+- Ellis et al. 2015.
+- Clave de registro en encuesta de conflictos ambientales: F11 y F36.
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_industrial_forestal_extension.png)
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_industrial_eq_cruza_forestal_eq.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_industrial_forestal_indices.png)
