@@ -1,4 +1,4 @@
-# Industrial-Final
+# Industrial
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -18,7 +18,7 @@ La industria ligera incluye desarrollo de tecnología, actividades de apoyo a la
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/industrial/industria_ligera.png)
+![](./recursos/industrial/industria_ligera.png)
 
 ### 1.2 Criterios
 
@@ -47,11 +47,13 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_loc_internet.png)  
+![](./recursos/industrial/fi_fv_lig_infra_loc_internet.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de comunicación**
 
-![](/recursos/industrial/mapa_fv_lig_infra_loc_internet.png)
+![](./recursos/industrial/mapa_fv_lig_infra_loc_internet.png)
 
 ##### 1.2.1.2 Conectividad
 
@@ -73,6 +75,8 @@ Subcriterio | Definición
 Varios carriles | Carreteras de dos o más carriles.
 Un carril | Carreteras de un solo carril.
 
+<div style="page-break-after: always;"></div>
+
 ###### 1.2.1.2.1.1 Varios carriles
 
 Carreteras de dos o más carriles.
@@ -89,11 +93,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_carreteras_2mcarril.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_carreteras_2mcarril.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de varios carriles**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_carreteras_2mcarril.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_carreteras_2mcarril.png)
 
 ###### 1.2.1.2.1.2 Un carril
 
@@ -109,13 +115,15 @@ Campo | CARRILES
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_carreteras_1carril.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_carreteras_1carril.png)  
 
 **Función de valor de un carril**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_carreteras_1carril.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_carreteras_1carril.png)
 
 ###### 1.2.1.2.2 Aeropuertos
 
@@ -132,11 +140,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_aeropuertos.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_aeropuertos.png)  
 
 **Función de valor de aeropuertos**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_aeropuertos.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_aeropuertos.png)
+
+<div style="page-break-after: always;"></div>
 
 ###### 1.2.1.2.3 Puertos
 
@@ -153,11 +163,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_puertos.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_puertos.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de puertos**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_puertos.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_puertos.png)
 
 ###### 1.2.1.2.4 Red ferroviaria
 
@@ -172,13 +184,15 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_red_ferroviaria.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_red_ferroviaria.png)  
 
 **Función de valor de red ferroviaria**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_red_ferroviaria.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_red_ferroviaria.png)
 
 ##### 1.2.1.3 Energía
 
@@ -195,11 +209,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_lineas_electricas.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_lineas_electricas.png)  
 
 **Función de valor de energía**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_lineas_electricas.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_lineas_electricas.png)
+
+<div style="page-break-after: always;"></div>
 
 ##### 1.2.1.4 Acceso a agua
 
@@ -217,11 +233,13 @@ Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_loc_acceso_agua.png)  
+![](./recursos/industrial/fi_fv_lig_infra_loc_acceso_agua.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de acceso a agua**
 
-![](/recursos/industrial/mapa_fv_lig_infra_loc_acceso_agua.png)
+![](./recursos/industrial/mapa_fv_lig_infra_loc_acceso_agua.png)
 
 ##### 1.2.1.5 Manejo de residuos
 
@@ -248,11 +266,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_plantas_agua_residual.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_plantas_agua_residual.png)  
 
 **Función de valor de plantas de aguas residuales**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_plantas_agua_residual.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_plantas_agua_residual.png)
+
+<div style="page-break-after: always;"></div>
 
 ###### 1.2.1.5.2 Rellenos sanitarios
 
@@ -269,11 +289,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_relleno_sanitario.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_relleno_sanitario.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de rellenos sanitarios**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_relleno_sanitario.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_relleno_sanitario.png)
 
 ###### 1.2.1.5.3 Basureros
 
@@ -288,13 +310,15 @@ Año | 2017
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_basureros.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_basureros.png)  
 
 **Función de valor de basureros**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_basureros.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_basureros.png)
 
 #### 1.2.2 Socioeconómicos
 
@@ -317,9 +341,11 @@ Año | [1][2] 2020; [3] 2016
 Escala | [1][2] Localidad; [3] 1:65,000
 Unidades | Adimensional
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de industria instalada**
 
-![](/recursos/industrial/mapa_fv_lig_socio_ind_instalada.png)
+![](./recursos/industrial/mapa_fv_lig_socio_ind_instalada.png)
 
 ##### 1.2.2.2 Localidades
 
@@ -343,7 +369,7 @@ Distancia de 5 km a localidades | Baja | 0.25
 
 **Función de valor de localidades**
 
-![](/recursos/industrial/mapa_fv_lig_socio_d_localidades.png)
+![](./recursos/industrial/mapa_fv_lig_socio_d_localidades.png)
 
 ##### 1.2.2.3 Tenencia
 
@@ -366,9 +392,11 @@ ID | Categoría | Importancia | FV
 2 | Zona de tierras parceladas | Alta | 0.80
 1 | Tierra de uso común | Muy Baja | 0.33
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tenencia**
 
-![](/recursos/industrial/mapa_fv_lig_socio_tenencia_tierra.png)
+![](./recursos/industrial/mapa_fv_lig_socio_tenencia_tierra.png)
 
 #### 1.2.3 Biofísicos
 
@@ -389,6 +417,8 @@ Año | [1] 2017; [2] 2021
 Campo | [1] descripcio; [2] Descrip
 Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
+
+<div style="page-break-after: always;"></div>
 
 **Parámetros de la función de valor**
 
@@ -412,9 +442,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de cobertura**
 
-![](/recursos/industrial/mapa_fv_lig_bio_usv_16cats.png)
+![](./recursos/industrial/mapa_fv_lig_bio_usv_16cats.png)
 
 ### 1.3 Mapa de aptitud
 
@@ -429,6 +461,8 @@ Año | [1] 2017; [2] 2021; [3] 2020
 Campo | [1] descripcio; [2] Descrip
 Escala | [1] 1:250,000;[2] 1:50,000; [3] Sin dato
 Unidades | Adimensional
+
+<div style="page-break-after: always;"></div>
 
 **Tabla de exclusión del subsector energía ligera**
 
@@ -447,11 +481,13 @@ ID | Categoría
 
 [2] Se seleccionaron las localidades urbanas y Sisal
 
-![](/recursos/industrial/mapa_exclusion_lig.png)
+![](./recursos/industrial/mapa_exclusion_lig.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.2 Mapa de aptitud de industria ligera
 
-![](/recursos/industrial/mapa_aptitud_lig.png)
+![](./recursos/industrial/mapa_aptitud_lig.png)
 
 **Pesos globales de los atributos ambientales de industria ligera**
 
@@ -486,7 +522,7 @@ Nula | 2716.5 | 7
 
 #### 1.3.3 Sensibilidad de atributos de industria ligera
 
-![](/recursos/industrial/fi_analisis_sensibilidad_industria_ligera.png)
+![](./recursos/industrial/fi_analisis_sensibilidad_industria_ligera.png)
 
 ## 2. Industria mediana y pesada
 
@@ -494,7 +530,7 @@ La industria mediana y pesada incluye agroindustria y manufactura, como las prin
 
 ### 2.1 Modelo de decisión
 
-![](/recursos/industrial/industria_pesada.png)
+![](./recursos/industrial/industria_pesada.png)
 
 ### 2.2 Criterios
 
@@ -523,11 +559,11 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_pesm_infra_d_lineas_electricas_gas.png)  
+![](./recursos/industrial/fi_fv_pesm_infra_d_lineas_electricas_gas.png)  
 
 **Función de valor de energía**
 
-![](/recursos/industrial/mapa_fv_pesm_infra_d_lineas_electricas_gas.png)
+![](./recursos/industrial/mapa_fv_pesm_infra_d_lineas_electricas_gas.png)
 
 ##### 2.2.1.2 Acceso a agua
 
@@ -545,11 +581,13 @@ Unidades | Adimensional
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_loc_acceso_agua.png)  
+![](./recursos/industrial/fi_fv_lig_infra_loc_acceso_agua.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de acceso a agua**
 
-![](/recursos/industrial/mapa_fv_lig_infra_loc_acceso_agua.png)
+![](./recursos/industrial/mapa_fv_lig_infra_loc_acceso_agua.png)
 
 ##### 2.2.1.3 Conectividad
 
@@ -571,6 +609,8 @@ Subcriterio | Definición
 Varios carriles | Carreteras de dos o más carriles.
 Un carril | Carreteras de un solo carril.
 
+<div style="page-break-after: always;"></div>
+
 ###### 2.2.1.3.1.1 Varios carriles
 
 Carreteras de dos o más carriles.
@@ -587,11 +627,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_carreteras_2mcarril.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_carreteras_2mcarril.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de varios carriles**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_carreteras_2mcarril.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_carreteras_2mcarril.png)
 
 ###### 2.2.1.3.1.2 Un carril
 
@@ -607,13 +649,15 @@ Campo | CARRILES
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_carreteras_1carril.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_carreteras_1carril.png)  
 
 **Función de valor de un carril**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_carreteras_1carril.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_carreteras_1carril.png)
 
 ###### 2.2.1.3.2 Puertos
 
@@ -628,11 +672,11 @@ Año | 2002
 Escala | Sin dato
 Unidades | Kilómetros
 
-![](/recursos/industrial/fi_fv_lig_infra_d_puertos.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_puertos.png)  
 
 **Función de valor de puertos**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_puertos.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_puertos.png)
 
 ###### 2.2.1.3.3 Red ferroviaria
 
@@ -649,11 +693,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_red_ferroviaria.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_red_ferroviaria.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de red ferroviaria**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_red_ferroviaria.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_red_ferroviaria.png)
 
 ###### 2.2.1.3.3 Aeropuertos
 
@@ -668,13 +714,15 @@ Año | 2017
 Escala | 1:1,000,000
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_aeropuertos.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_aeropuertos.png)  
 
 **Función de valor de aeropuertos**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_aeropuertos.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_aeropuertos.png)
 
 ##### 2.2.1.4 Manejo de residuos
 
@@ -701,11 +749,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_plantas_agua_residual.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_plantas_agua_residual.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de plantas de aguas residuales**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_plantas_agua_residual.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_plantas_agua_residual.png)
 
 ###### 2.2.1.4.2 Rellenos sanitarios
 
@@ -720,13 +770,15 @@ Año | 2017
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_relleno_sanitario.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_relleno_sanitario.png)  
 
 **Función de valor de rellenos sanitarios**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_relleno_sanitario.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_relleno_sanitario.png)
 
 ###### 2.2.1.4.3 Basureros
 
@@ -743,11 +795,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_d_basureros.png)  
+![](./recursos/industrial/fi_fv_lig_infra_d_basureros.png)  
 
 **Función de valor de basureros**
 
-![](/recursos/industrial/mapa_fv_lig_infra_d_basureros.png)
+![](./recursos/industrial/mapa_fv_lig_infra_d_basureros.png)
+
+<div style="page-break-after: always;"></div>
 
 ##### 2.2.1.5 Comunicación
 
@@ -765,11 +819,13 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_infra_loc_internet.png)  
+![](./recursos/industrial/fi_fv_lig_infra_loc_internet.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de comunicación**
 
-![](/recursos/industrial/mapa_fv_lig_infra_loc_internet.png)
+![](./recursos/industrial/mapa_fv_lig_infra_loc_internet.png)
 
 #### 2.2.2 Socioeconómicos
 
@@ -794,7 +850,7 @@ Unidades | Adimensional
 
 **Función de valor de industria instalada**
 
-![](/recursos/industrial/mapa_fv_pesm_socio_ind_instalada.png)
+![](./recursos/industrial/mapa_fv_pesm_socio_ind_instalada.png)
 
 ##### 2.2.2.2 Localidades
 
@@ -809,13 +865,15 @@ Año | 2020
 Escala | Localidad
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/industrial/fi_fv_lig_socio_d_localidades.png)  
+![](./recursos/industrial/fi_fv_lig_socio_d_localidades.png)  
 
 **Función de valor de localidades**
 
-![](/recursos/industrial/mapa_fv_pesm_socio_d_localidades.png)
+![](./recursos/industrial/mapa_fv_pesm_socio_d_localidades.png)
 
 ##### 2.2.2.3 Tenencia
 
@@ -840,7 +898,7 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tenencia**
 
-![](/recursos/industrial/mapa_fv_lig_socio_tenencia_tierra.png)
+![](./recursos/industrial/mapa_fv_lig_socio_tenencia_tierra.png)
 
 #### 2.2.3 Biofísicos
 
@@ -877,9 +935,11 @@ ID | Categoría | Importancia | FV
 7 | 60 m | Nula | 0.00
 8 | 100 m | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de disponibilidad de agua**
 
-![](/recursos/industrial/mapa_fv_pesm_bio_d_manto_freatico.png)
+![](./recursos/industrial/mapa_fv_pesm_bio_d_manto_freatico.png)
 
 ##### 2.2.3.2 Cobertura
 
@@ -917,9 +977,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de cobertura**
 
-![](/recursos/industrial/mapa_fv_lig_bio_usv_16cats.png)
+![](./recursos/industrial/mapa_fv_lig_bio_usv_16cats.png)
 
 ##### 2.2.3.3 Dispersión de emisiones
 
@@ -947,7 +1009,7 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de dispersión de emisiones**
 
-![](/recursos/industrial/mapa_fv_pesm_bio_vul_acuifero.png)
+![](./recursos/industrial/mapa_fv_pesm_bio_vul_acuifero.png)
 
 ### 2.3 Mapa de aptitud
 
@@ -980,11 +1042,13 @@ ID | Categoría
 
 [2] Se seleccionaron las localidades urbanas y Sisal
 
-![](/recursos/industrial/mapa_exclusion_pesm.png)
+![](./recursos/industrial/mapa_exclusion_pesm.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 2.3.2 Mapa de aptitud de industria mediana y pesada
 
-![](/recursos/industrial/mapa_aptitud_pesm.png)
+![](./recursos/industrial/mapa_aptitud_pesm.png)
 
 **Pesos globales de los atributos ambientales de industria mediana y pesada**
 
@@ -1021,7 +1085,9 @@ Nula | 2716.5 | 7
 
 #### 2.3.3 Sensibilidad de atributos de industria mediana y pesada
 
-![](/recursos/industrial/fi_analisis_sensibilidad_industria_pesada.png)
+![](./recursos/industrial/fi_analisis_sensibilidad_industria_pesada.png)
+
+<div style="page-break-after: always;"></div>
 
 ## 3. Mapa de aptitud integrado
 
@@ -1029,7 +1095,7 @@ _El mapa de aptitud se integró considerando que los subsectores son igualmente 
 
 ### 3.1 Modelo de decisión del mapa de aptitud integrado
 
-![](/recursos/industrial/fi_industrial_integrado.png)
+![](./recursos/industrial/fi_industrial_integrado.png)
 
 #### 3.1.1 Zonas de exclusión
 
@@ -1060,11 +1126,13 @@ ID | Categoría
 
 [3] Se seleccionaron las localidades urbanas y Sisal
 
-![](/recursos/industrial/mapa_exclusion_industrial.png)
+![](./recursos/industrial/mapa_exclusion_industrial.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 3.1.2 Mapa de aptitud de integrado del sector industrial
 
-![](/recursos/industrial/mapa_aptitud_industrial.png)
+![](./recursos/industrial/mapa_aptitud_industrial.png)
 
 **Pesos globales del mapa de aptitud integrado del sector industrial**
 
@@ -1114,9 +1182,11 @@ Baja | 21178.7 | 54
 Muy baja | 2709.8 | 7
 Nula | 2716.5 | 7
 
+<div style="page-break-after: always;"></div>
+
 #### 3.1.3 Sensibilidad de atributos del sector industrial
 
-![](/recursos/industrial/fi_analisis_sensibilidad_industrial.png)
+![](./recursos/industrial/fi_analisis_sensibilidad_industrial.png)
 <!-- .. csv-table::
    :file: recursos/tabla_c_biofisicos_silvopastoril.csv
    :header-rows: 1

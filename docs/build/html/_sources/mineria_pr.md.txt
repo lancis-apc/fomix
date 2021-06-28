@@ -1,4 +1,4 @@
-# Minería-Final
+# Minería
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->

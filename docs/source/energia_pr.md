@@ -1,4 +1,4 @@
-# Energía-Final
+# Energía
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -8,15 +8,12 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 Garantizar el aprovechamiento sostenible de los recursos energéticos del estado de Yucatán, para asegurar que la población y los sectores productivos tengan acceso a energía asequible, sostenible, confiable y de calidad, en un marco de justicia ambiental que considere criterios de uso sostenible del territorio, certidumbre jurídica y contribuya a una mayor democracia en la gestión de los recursos energéticos públicos y comunes.
 
 [Lista de participantes](https://www.dropbox.com/s/h8zuorcqva9gr9e/lista_asistencia_energia.pdf?dl=0)
-<!--
-### Nota aclaratoria
-**Con base en el Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en Materia de Ordenamiento Ecológico,** la Secretaría deberá observar los criterios contenidos en el presente Reglamento y los instrumentos jurídicos que deriven del mismo (Art. 37). <br />
-Los convenios que suscriba la Secretaría con los estados, ..., para la formulación de los programas de ordenamiento ecológico a que se refiere el artículo 20 BIS 2 de la Ley, además de los requisitos señalados en el artículo 8o. de este Reglamento, deberán establecer, entre otros aspectos:<br />
-**No podrán ser objeto de estos convenios las actividades que permiten el desarrollo de la industria de hidrocarburos**, ni las actividades a que se refiere el artículo 3o., fracción XI de la Ley de la Agencia Nacional de Seguridad Industrial y de Protección al Medio Ambiente del Sector Hidrocarburos, conforme lo previsto en el artículo 95 de la Ley de Hidrocarburos (Art.38). -->
 
-## 1. Energía industrial
+**Si bien durante los talleres se evaluó la aptitud de cinco tipos de fuentes que incluyen hidrocarburos líquidos, gas natural, solar, eólica y biomasa, con base en los Art. 37 y 38 del Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en Materia de Ordenamiento Ecológico el mapa de aptitud que se utilizará como insumo para la actualización del POETY es el de energías renovables que se muestra en la sección 2.**
 
-Fuentes de energía a escala industrial.
+## 1. Energía
+
+Fuentes de energía a escala.
 
 ### 1.1 Modelo de decisión
 
@@ -665,7 +662,7 @@ ID | Cobertura
 
 ![](/recursos/energia/mapa_aptitud_biomasa.png)
 
-#### 1.3.6 Zona de aprovechamiento actual del sector energía industrial
+#### 1.3.6 Zona de aprovechamiento actual del sector energía
 
 ![](/recursos/energia/mapa_aprov_energia.png)
 
@@ -681,7 +678,7 @@ Campo | [1] descripcio; [2] Descrip
 Escala | [1] 1:250,000; [2] 1:50,000
 Unidades | Adimensional
 
-**Tabla de exclusión general del sector energía industrial**
+**Tabla de exclusión general del sector energía**
 
 ID | Cobertura
 -- | --
@@ -694,11 +691,11 @@ ID | Cobertura
 
 ![](/recursos/energia/mapa_exclusion_energia.png)
 
-#### 1.3.8 Mapa de aptitud de energía industrial
+#### 1.3.8 Mapa de aptitud de energía
 
 ![](/recursos/energia/mapa_aptitud_energia.png)
 
-**Pesos globales de los atributos del sector energía industrial**
+**Pesos globales de los atributos del sector energía**
 
 Fuente de energía | Criterio | Peso
 -- | -- | --
@@ -729,13 +726,11 @@ Baja | 17188.5 | 43
 Muy baja | 7800.3 | 20
 Nula | 2669.4 | 7
 
-#### 1.3.9 Sensibilidad de atributos ambientales del sector energía industrial
+#### 1.3.9 Sensibilidad de atributos ambientales del sector energía
 
 ![](/recursos/energia/fi_analisis_sensibilidad_energia.png)
 
 ## 2. Mapa de aptitud de energías renovables
-
-Con base en los Art. 37 y 38 del Reglamento de la Ley General del Equilibrio Ecológico y la Protección al Ambiente en Materia de Ordenamiento Ecológico el mapa de aptitud que se utilizará como insumo para la actualización del POETY es el de energías renovables que se muestra a continuación.
 
 ### 2.1 Modelo de decisión del mapa de aptitud de energías renovables
 

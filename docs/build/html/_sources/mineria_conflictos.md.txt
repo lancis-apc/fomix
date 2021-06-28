@@ -4,52 +4,42 @@
 
 ### Descripción del conflicto
 
-- Pérdida de zonas forestales en sitios donde el gobierno da apoyos al sector agrícola
-- Incendios forestales por quemas agropastoriles.
+- Deforestación y pérdida de suelo por extracción de material pétreo.
+- Contaminación del acuífero por la exposición del suelo generada por la extracción de material pétreo.
 
 
 #### Recursos afectados
 
-* Biodiversidad, recursos forestales maderables y no maderables, fauna y suelo
+* Agua, vegetación forestal.
 
 
 #### Ubicación reportada
 
-- Sin dato
+- Municipios: Chocholá, Homún, Kopomá, Progreso, Tekax, Tzucacab.
+- Zona metropolitana de Mérida.
 
 
 #### Fuentes
 
-- Taller bovino
-- Clave de registro en formulario: F1, F4 y F23
+- Actual Yucatán 2019, Aristegui noticias 2019, Diario de Yucatán, 2019, González Herrera et al. 2018, Ch´iibal Mayao´ob A.C. 2011.
+- Clave de registro en encuesta de conflictos ambientales: F34.
 
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](/recursos/conflictos/.png)
+![](./recursos/conflictos/fi_mineria_conservacion_extension.png)
 
+<div style="page-break-after: always;"></div>
 
 ### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](/recursos/conflictos/.png)
+![](./recursos/conflictos/mapa_mineria_eq_cruza_conservacion_eq.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](/recursos/conflictos/.png)
-
-
-Minería vs Conservación
-Descripción del conflicto:
-Deforestación y pérdida de suelo por extracción de material pétreo.
-Recursos afectados:
-Cobertura vegetal
-Ubicación reportada:
-Chocholá, Homún, Kopomá, Progreso, Tekax, Tzucacab
-Fuentes:
-- Actual Yucatán 2019, Aristegui noticias 2019, Ch´iibal Mayao´ob A.C. 2011, Diario de Yucatán, 2019.
-- Clave de registro en formulario: F34
+![](./recursos/conflictos/fi_mineria_conservacion_indices.png)

@@ -1,4 +1,4 @@
-# Urbano-Final
+# Urbano
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -154,6 +154,8 @@ Unidades | Número
 
 ![](./recursos/urbano/fi_fv_urb_urb_equi_equipamiento_admin.png)  
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de edificios administrativos**
 
 ![](./recursos/urbano/mapa_fv_urb_urb_equi_equipamiento_admin.png)
@@ -181,8 +183,6 @@ Localidades   cercanas a centros de población mixtos o en transición | Ubicada
 Localidades   cercanas a carreteras | Ubicadas   a <= 3 km de un camino transitable todo el año | Baja | 0.33
 Localidades   aisladas | El   resto de las localidades | Muy   baja | 0.00
 
-<div style="page-break-after: always;"></div>
-
 **Función de valor de conectividad**
 
 ![](./recursos/urbano/mapa_fv_urb_urb_conec_conectividad.png)
@@ -196,6 +196,8 @@ Población | Número de habitantes.
 Densidad | Número de habitantes por hectárea.
 Inmigración | Porcentaje de la población total nacida fuera de la entidad o país.
 Población indígena | Porcentaje de la población índígena en el asentamiento.
+
+<div style="page-break-after: always;"></div>
 
 ##### 1.2.2.1 Tasa de crecimiento
 
@@ -215,6 +217,8 @@ Unidades | Porcentaje
 
 ![](./recursos/urbano/fi_fv_urb_dem_tasa_tasa_crecimiento_anual.png)  
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tasa de crecimiento**
 
 ![](./recursos/urbano/mapa_fv_urb_dem_tasa_tasa_crecimiento_anual.png)
@@ -233,11 +237,11 @@ Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Número de habitantes
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
 ![](./recursos/urbano/fi_fv_urb_dem_pob_tam_poblacional.png)  
-
-<div style="page-break-after: always;"></div>
 
 **Función de valor de población**
 
@@ -257,11 +261,11 @@ Campo | [2] POBTOT
 Escala | Localidad
 Unidades | Número de habitantes/hectárea
 
-<div style="page-break-after: always;"></div>
-
 **Parámetros de la función de valor**
 
 ![](./recursos/urbano/fi_fv_urb_dem_den_densidad_ha.png)  
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de densidad**
 
@@ -280,6 +284,8 @@ Año | 2020
 Campo | [2] POBTOT y PNACOE
 Escala | Localidad
 Unidades | Porcentaje
+
+<div style="page-break-after: always;"></div>
 
 **Parámetros de la función de valor**
 

@@ -1,4 +1,4 @@
-# Agricultura tecnificada-Final
+# Agricultura tecnificada
 
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
@@ -19,7 +19,7 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
 ### 1.1 Modelo de decisión
 
-![](/recursos/agricultura/a_riego.png)
+![](./recursos/agricultura/a_riego.png)
 
 ### 1.2 Criterios
 
@@ -52,9 +52,11 @@ ID | Categoría | Importancia | FV
 2 | Unidad de riego | Muy alta | 1.00
 3 | NA | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de hidroagrícola**
 
-![](/recursos/agricultura/mapa_fv_agrie_infra_hidro_unidades_distritos_riego.png)
+![](./recursos/agricultura/mapa_fv_agrie_infra_hidro_unidades_distritos_riego.png)
 
 ##### 1.2.1.2 Energía
 
@@ -69,13 +71,15 @@ Año | 2012
 Escala | 1:50,000
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/agricultura/fi_fv_agrie_infra_ene_d_lineas_electricas.png)
+![](./recursos/agricultura/fi_fv_agrie_infra_ene_d_lineas_electricas.png)
 
 **Función de valor de energía**
 
-![](/recursos/agricultura/mapa_fv_agrie_infra_ene_d_lineas_electricas.png)
+![](./recursos/agricultura/mapa_fv_agrie_infra_ene_d_lineas_electricas.png)
 
 ##### 1.2.1.3 Vías de comunicación
 
@@ -92,11 +96,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/agricultura/fi_fv_agrie_infra_com_d_carreteras_caminos.png)
+![](./recursos/agricultura/fi_fv_agrie_infra_com_d_carreteras_caminos.png)
 
 **Función de valor de vías de comunicación**
 
-![](/recursos/agricultura/mapa_fv_agrie_infra_com_d_carreteras_caminos.png)
+![](./recursos/agricultura/mapa_fv_agrie_infra_com_d_carreteras_caminos.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.2.2 Biofísicos
 
@@ -123,11 +129,13 @@ Unidades | Metros
 
 **Parámetros de la función de valor**
 
-![](/recursos/agricultura/fi_fv_agrie_bio_agua_d_manto_freatico.png)
+![](./recursos/agricultura/fi_fv_agrie_bio_agua_d_manto_freatico.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de disponibilidad de agua**
 
-![](/recursos/agricultura/mapa_fv_agrie_bio_agua_d_manto_freatico.png)
+![](./recursos/agricultura/mapa_fv_agrie_bio_agua_d_manto_freatico.png)
 
 ##### 1.2.2.2 Pendiente
 
@@ -142,13 +150,15 @@ Año | 2013
 Resolución | 15 m x 15 m
 Unidades | Grados
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/agricultura/fi_fv_agrie_bio_pend_pendiente_grados.png)
+![](./recursos/agricultura/fi_fv_agrie_bio_pend_pendiente_grados.png)
 
 **Función de valor de pendiente**
 
-![](/recursos/agricultura/mapa_fv_agrie_bio_pend_pendiente_grados.png)
+![](./recursos/agricultura/mapa_fv_agrie_bio_pend_pendiente_grados.png)
 
 ##### 1.2.2.2 Tipo de suelo
 
@@ -182,9 +192,11 @@ ID | Categoría | Importancia | FV
 11 | Solonchak | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de suelo**
 
-![](/recursos/agricultura/mapa_fv_agrie_bio_suelo_tipo_suelo.png)
+![](./recursos/agricultura/mapa_fv_agrie_bio_suelo_tipo_suelo.png)
 
 ##### 1.2.2.1 Tipo de cobertura
 
@@ -222,9 +234,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de cobertura**
 
-![](/recursos/agricultura/mapa_fv_agrie_bio_cober_cobertura_usv_svi_16cats.png)
+![](./recursos/agricultura/mapa_fv_agrie_bio_cober_cobertura_usv_svi_16cats.png)
 
 #### 1.2.3 Socioeconómicos
 
@@ -247,13 +261,15 @@ Año | [1] 2020; [2] Sin dato
 Escala | Localidad
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/agricultura/fi_fv_agrie_socio_merca_almacen_central_abasto_agricola.png)
+![](./recursos/agricultura/fi_fv_agrie_socio_merca_almacen_central_abasto_agricola.png)
 
 **Función de valor de mercados**
 
-![](/recursos/agricultura/mapa_fv_agrie_socio_merca_almacen_central_abasto_agricola.png)
+![](./recursos/agricultura/mapa_fv_agrie_socio_merca_almacen_central_abasto_agricola.png)
 
 ##### 1.2.3.2 Mano de obra
 
@@ -271,11 +287,13 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/agricultura/fi_fv_agrie_socio_pea_pea_sector_primario.png)
+![](./recursos/agricultura/fi_fv_agrie_socio_pea_pea_sector_primario.png)
 
 **Función de valor de mano de obra**
 
-![](/recursos/agricultura/mapa_fv_agrie_socio_pea_pea_sector_primario.png)
+![](./recursos/agricultura/mapa_fv_agrie_socio_pea_pea_sector_primario.png)
+
+<div style="page-break-after: always;"></div>
 
 ##### 1.2.3.3 Tenencia
 
@@ -300,7 +318,9 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tenencia**
 
-![](/recursos/agricultura/mapa_fv_agrie_socio_tene_tenencia_tierra.png)
+![](./recursos/agricultura/mapa_fv_agrie_socio_tene_tenencia_tierra.png)
+
+<div style="page-break-after: always;"></div>
 
 ### 1.3 Mapa de aptitud
 
@@ -334,11 +354,13 @@ ID | Categoría
 
 [2] Se utilizaron todas las localidades (urbanas y rurales).
 
-![](/recursos/agricultura/mapa_agrie_exclusion.png)
+![](./recursos/agricultura/mapa_agrie_exclusion.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 1.3.2 Mapa de aptitud de agricultura tecnificada de riego
 
-![](/recursos/agricultura/mapa_agrie_aptitud.png)
+![](./recursos/agricultura/mapa_agrie_aptitud.png)
 
 **Pesos globales de los atributos ambientales de agricultura tecnificada de riego**
 
@@ -355,6 +377,8 @@ Tipo de suelo | 0.042
 Tipo de cobertura | 0.021
 Tenencia | 0.014
 
+<div style="page-break-after: always;"></div>
+
 **Área por categoría de aptitud**
 
 Categoría | km² | Porcentaje del estado
@@ -368,15 +392,17 @@ Nula | 2876.3 | 7
 
 #### 1.3.3 Sensibilidad de atributos de agricultura tecnificada de riego
 
-![](/recursos/agricultura/fi_analisis_sensibilidad_agricultura_riego.png)
+![](./recursos/agricultura/fi_analisis_sensibilidad_agricultura_riego.png)
 
 ## 2. Agricultura tecnificada de temporal
 
 Agricultura comercial que se desarrolla en grandes extensiones, depende de la precipitación pluvial e incorpora diversas tecnologías y soluciones (maquinaria, aplicación de agroquímicos, semillas mejoradas, entre otros) para mejorar la eficiencia y aumentar la producción.
 
+<div style="page-break-after: always;"></div>
+
 ### 2.1 Modelo de decisión
 
-![](/recursos/agricultura/a_temporal.png)
+![](./recursos/agricultura/a_temporal.png)
 
 ### 2.2 Criterios
 
@@ -414,7 +440,7 @@ ID | Categoría (mm) | Importancia | FV
 
 **Función de valor de precipitación**
 
-![](/recursos/agricultura/mapa_fv_agtem_bio_prec_precipitacion.png)
+![](./recursos/agricultura/mapa_fv_agtem_bio_prec_precipitacion.png)
 
 ##### 2.2.1.2 Tipo de suelo
 
@@ -448,9 +474,11 @@ ID | Categoría | Importancia | FV
 11 | Solonchak | Nula | 0.00
 13 | No aplica | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de suelo**
 
-![](/recursos/agricultura/mapa_fv_agtem_bio_suelo_tipo_suelo.png)
+![](./recursos/agricultura/mapa_fv_agtem_bio_suelo_tipo_suelo.png)
 
 ##### 2.2.1.3 Pendiente
 
@@ -465,13 +493,15 @@ Año | 2013
 Resolución | 15 m x 15 m
 Unidades | Grados
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/agricultura/fi_fv_agtem_bio_pend_pendiente_grados.png)
+![](./recursos/agricultura/fi_fv_agtem_bio_pend_pendiente_grados.png)
 
 **Función de valor de pendiente**
 
-![](/recursos/agricultura/mapa_fv_agtem_bio_pend_pendiente_grados.png)
+![](./recursos/agricultura/mapa_fv_agtem_bio_pend_pendiente_grados.png)
 
 ##### 2.2.1.4 Tipo de cobertura
 
@@ -509,9 +539,11 @@ ID | Categoría | Importancia | FV
 16 | Vegetación halófila hidrófila | Nula | 0.00
 17 | ND | Nula | 0.00
 
+<div style="page-break-after: always;"></div>
+
 **Función de valor de tipo de cobertura**
 
-![](/recursos/agricultura/mapa_fv_agtem_bio_cober_cobertura_usv_svi_16cats.png)
+![](./recursos/agricultura/mapa_fv_agtem_bio_cober_cobertura_usv_svi_16cats.png)
 
 #### 2.2.2 Socioeconómicos
 
@@ -534,13 +566,15 @@ Año | [1] 2020; [2] Sin dato
 Escala | Localidad
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/agricultura/fi_fv_agtem_socio_merca_almacen_central_abasto_agricola.png)
+![](./recursos/agricultura/fi_fv_agtem_socio_merca_almacen_central_abasto_agricola.png)
 
 **Función de valor de mercados**
 
-![](/recursos/agricultura/mapa_fv_agtem_socio_merca_almacen_central_abasto_agricola.png)
+![](./recursos/agricultura/mapa_fv_agtem_socio_merca_almacen_central_abasto_agricola.png)
 
 ##### 2.2.2.2 Mano de obra
 
@@ -558,11 +592,11 @@ Unidades | Porcentaje
 
 **Parámetros de la función de valor**
 
-![](/recursos/agricultura/fi_fv_agtem_socio_pea_pea_sector_primario.png)
+![](./recursos/agricultura/fi_fv_agtem_socio_pea_pea_sector_primario.png)
 
 **Función de valor de mano de obra**
 
-![](/recursos/agricultura/mapa_fv_agtem_socio_pea_pea_sector_primario.png)
+![](./recursos/agricultura/mapa_fv_agtem_socio_pea_pea_sector_primario.png)
 
 ##### 2.2.2.3 Tenencia
 
@@ -587,7 +621,7 @@ ID | Categoría | Importancia | FV
 
 **Función de valor de tenencia**
 
-![](/recursos/agricultura/mapa_fv_agtem_socio_tene_tenencia_tierra.png)
+![](./recursos/agricultura/mapa_fv_agtem_socio_tene_tenencia_tierra.png)
 
 #### 2.2.3 Infraestructura
 
@@ -611,11 +645,13 @@ Unidades | Kilómetros
 
 **Parámetros de la función de valor**
 
-![](/recursos/agricultura/fi_fv_agtem_infra_com_d_carreteras_caminos.png)
+![](./recursos/agricultura/fi_fv_agtem_infra_com_d_carreteras_caminos.png)
+
+<div style="page-break-after: always;"></div>
 
 **Función de valor de vías de comunicación**
 
-![](/recursos/agricultura/mapa_fv_agtem_infra_com_d_carreteras_caminos.png)
+![](./recursos/agricultura/mapa_fv_agtem_infra_com_d_carreteras_caminos.png)
 
 ##### 2.2.3.2 Combustible
 
@@ -630,13 +666,15 @@ Año | 2020
 Escala | Sin dato
 Unidades | Kilómetros
 
+<div style="page-break-after: always;"></div>
+
 **Parámetros de la función de valor**
 
-![](/recursos/agricultura/fi_fv_agtem_infra_ene_gasolina.png)
+![](./recursos/agricultura/fi_fv_agtem_infra_ene_gasolina.png)
 
 **Función de valor de combustible**
 
-![](/recursos/agricultura/mapa_fv_agtem_infra_ene_gasolina.png)
+![](./recursos/agricultura/mapa_fv_agtem_infra_ene_gasolina.png)
 
 ### 2.3 Mapa de aptitud
 
@@ -670,11 +708,13 @@ ID | Categoría
 
 [2] Se utilizaron todas las localidades (urbanas y rurales).
 
-![](/recursos/agricultura/mapa_agtem_exclusion.png)
+![](./recursos/agricultura/mapa_agtem_exclusion.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 2.3.2 Mapa de aptitud de agricultura tecnificada de temporal
 
-![](/recursos/agricultura/mapa_agtem_aptitud.png)
+![](./recursos/agricultura/mapa_agtem_aptitud.png)
 
 **Pesos globales de los atributos ambientales de agricultura tecnificada de temporal**
 
@@ -703,15 +743,17 @@ Nula | 2876.3 | 7
 
 #### 2.3.3 Sensibilidad de atributos de agricultura tecnificada de temporal
 
-![](/recursos/agricultura/fi_analisis_sensibilidad_agricultura_temporal.png)
+![](./recursos/agricultura/fi_analisis_sensibilidad_agricultura_temporal.png)
 
 ## 3. Mapa de aptitud integrado
 
 _El mapa de aptitud se integró considerando que los subsectores son igualmente importantes y, por lo tanto, tienen el mismo peso._
 
+<div style="page-break-after: always;"></div>
+
 ### 3.1 Modelo de decisión del mapa de aptitud integrado
 
-![](/recursos/agricultura/fi_agricultura_integrado.png)
+![](./recursos/agricultura/fi_agricultura_integrado.png)
 
 #### 3.1.1 Zonas de exclusión
 
@@ -743,11 +785,13 @@ ID | Categoría
 
 [3] Se utilizaron todas las localidades (urbanas y rurales).
 
-![](/recursos/agricultura/mapa_agricultura_exclusion.png)
+![](./recursos/agricultura/mapa_agricultura_exclusion.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 3.1.2 Mapa de aptitud integrado del sector agricultura tecnificada
 
-![](/recursos/agricultura/mapa_agricultura_aptitud.png)
+![](./recursos/agricultura/mapa_agricultura_aptitud.png)
 
 **Pesos globales del mapa de aptitud integrado del sector agricultura tecnificada**
 
@@ -784,6 +828,8 @@ Baja | 431.5 | 1
 Muy baja | 1.8 | 0
 Nula | 2876.3 | 7
 
+<div style="page-break-after: always;"></div>
+
 #### 3.1.3 Sensibilidad de atributos de agricultura tecnificada
 
-![](/recursos/agricultura/fi_analisis_sensibilidad_agricultura.png)
+![](./recursos/agricultura/fi_analisis_sensibilidad_agricultura.png)
