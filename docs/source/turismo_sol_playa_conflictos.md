@@ -23,9 +23,11 @@
 
 - Clave de registro en encuesta de conflictos ambientales: F43.
 
+
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](./recursos/conflictos/fi_tur_sol_playa_acuacultura salobre_extension.png)
+![](./recursos/conflictos/fi_tur_sol_playa_acuacultura_salobre_extension.png)
+
 
 <div style="page-break-after: always;"></div>
 
@@ -48,7 +50,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ### Descripción del conflicto
 
-- Desbalance en el flujo de sedimentos en el sistema playa-duna por construcción de espigones y por eliminación de dunas o su vegetación para construcción de infraestructura turística.  
+- Desbalance en el flujo de sedimentos en el sistema playa-duna por construcción de espigones y por eliminación de dunas o su vegetación para construcción de infraestructura turística.
 - Pérdida y fragmentación de ecosistemas por el cambio de uso de suelo para construcción de in-fraestructura turística y casas de verano.
 - Contaminación de lagunas costeras y el mar por descarga de aguas residuales, debido a la falta de drenaje y de plantas de tratamiento.
 - Contaminación de humedales costeros por residuos sólidos.

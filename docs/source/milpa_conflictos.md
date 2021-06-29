@@ -27,21 +27,22 @@
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](/recursos/conflictos/fi_milpa_conservacion_extension.png)
+![](./recursos/conflictos/fi_milpa_conservacion_extension.png)
 
+<div style="page-break-after: always;"></div>
 
 ### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](/recursos/conflictos/mapa_milpa_maya_eq_cruza_conservacion_eq.png)
+![](./recursos/conflictos/mapa_milpa_maya_eq_cruza_conservacion_eq.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](/recursos/conflictos/fi_milpa_conservacion_indices.png)
+![](./recursos/conflictos/fi_milpa_conservacion_indices.png)
 
 
 
@@ -72,18 +73,20 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](/recursos/conflictos/fi_milpa_forestal_extension.png)
+![](./recursos/conflictos/fi_milpa_forestal_extension.png)
 
+
+<div style="page-break-after: always;"></div>
 
 ### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](/recursos/conflictos/mapa_milpa_maya_eq_cruza_forestal_eq.png)
+![](./recursos/conflictos/mapa_milpa_maya_eq_cruza_forestal_eq.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](/recursos/conflictos/fi_milpa_forestal_indices.png)
+![](./recursos/conflictos/fi_milpa_forestal_indices.png)
