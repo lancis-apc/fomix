@@ -24,6 +24,7 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    :maxdepth: 6
    :caption: Análisis de aptitud:
 
+   introduccion_aptitud
    acuacultura_pr
    agricultura_pr
    conservacion_pr
