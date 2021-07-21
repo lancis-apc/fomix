@@ -234,12 +234,12 @@ Distribución agregada de especies melíferas como indicador de polinización.
 
 **Insumos**
 
-Capa | Riqueza melífera
+Capa | Cooperativas
 -- | --
-Fuente | Riqueza melífera SEDUMA, con información de la base de datos de especies de flora integrada para el Estudio de Biodiversidad y Desarrollo Humano en Yucatán. CICY, PPD-FMAM, CONABIO y SEDUMA
-Año | 2005
-Escala | Sin dato
-Unidades | Número de especies
+Fuente | [1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y   Vivienda INEGI; [2] Datos de indicador. Productos de turismo alternativo en   Yucatán SEFOTUR
+Año | [1] 2020; [2] 2020
+Escala | Localidad
+Unidades | Número
 
 **Parámetros de la función de valor**
 
@@ -309,11 +309,11 @@ ID | Categoría | Importancia | FV
 
 **Insumos**
 
-Capa | Cuerpos de agua no incluidos en el Serie VI de Uso del suelo y vegetación INEGI
+Capa | Paradores turísticos
 -- | --
-Fuente | [1] Modelo cartográfico de humedales INEGI; [2] Cenotes POETY y [3] Censo de cenotes SEDUMA
-Año | [1] 2014; [2] 2007; [3] 2009
-Escala | [1] 1:50,000; [2] [3] 1:1,000
+Fuente | Paradores turísticos SEFOTUR
+Año | 2020
+Escala | Localidad
 Unidades | Adimensional
 
 <div style="page-break-after: always;"></div>
