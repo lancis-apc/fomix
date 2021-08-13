@@ -1,0 +1,70 @@
+﻿cve_ent,nom_ent,cve_mun,nom_mun,mun_ori,cve_geo,id_region,region,proyecto,fecha_aut,fecha_vig,vol_tot,unidades,tipo,material
+31,Yucatán,010,Cantamayec,Cantamayec,31010,6,VI Oriente,Subinah y anexa San José,04/08/2005,03/08/2025,685.35,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,N.C.P.E. Sinay,28/07/2005,27/07/2025,97333.6,m3,maderable,NA
+31,Yucatán,069,Sotuta,Sotuta,31069,6,VI Oriente,Dziuche,04/08/2005,03/08/2025,21314,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,Chunhuas,11/08/2005,10/08/2030,11600,m3,maderable,NA
+31,Yucatán,030,Dzitas,Dzitás,31030,6,VI Oriente,Xtohbil Número Uno,22/03/2006,21/03/2026,12256.717,m3,maderable,NA
+31,Yucatán,045,Kopoma,Kopomá,31045,1,I Poniente ,Ejido Kopoma,18/04/2006,17/04/2026,16303,m3,maderable,NA
+31,Yucatán,053,Muna,Muna,31053,7,VII Sur ,San Pedro Xocchel,18/04/2006,17/04/2026,6953.133,m3,maderable,NA
+31,Yucatán,069,Sotuta,Sotuta,31069,6,VI Oriente,Haschac,18/04/2006,17/04/2026,1321.198,m3,maderable,NA
+31,Yucatán,066,Santa Elena,Santa Elena,31066,7,VII Sur ,TC 2490 Santa Elena,22/04/2008,28/04/2028,0,m3,maderable,NA
+31,Yucatán,071,Sudzal,Sudzal,31071,3,III Centro ,P. 7 Z1 P1/1 Ej. Chumbec,29/04/2008,28/04/2028,7532.096,m3,maderable,NA
+31,Yucatán,098,Tzucacab,Tzucacab,31098,7,VII Sur ,Los Reyes,20/10/2011,31/12/2021,8100.69,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,N.C.P.A. San Agustín,13/12/2011,31/12/2031,32778.465,m3,maderable,NA
+31,Yucatán,098,Tzucacab,Tzucacab,31098,7,VII Sur ,Tab.No. 1659 ,12/11/2012,31/12/2029,26914,m3,maderable,NA
+31,Yucatán,048,Maxcanu,Maxcanú,31048,1,I Poniente ,Ejido San Rafael ,05/04/2013,31/12/2022,36615.3,m3,maderable,NA
+31,Yucatán,104,Yaxcaba,Yaxcabá,31104,6,VI Oriente,Ejido Huechenbalam ,27/05/2013,31/12/2022,25789.43,m3,maderable,NA
+31,Yucatán,023,Chochola,Chocholá,31023,1,I Poniente ,Ejido Chocholá,17/06/2013,31/12/2022,31032,m3,maderable,NA
+31,Yucatán,104,Yaxcaba,Yaxcabá,31104,6,VI Oriente, Segundo Tecoh ,18/06/2013,31/12/2022,37958.47,m3,maderable,NA
+31,Yucatán,058,Peto,Peto,31058,6,VI Oriente,S. Cruz 3 y S. Juan A.,25/06/2013,31/12/2022,6913.21,m3,maderable,NA
+31,Yucatán,098,Tzucacab,Tzucacab,31098,7,VII Sur ,TC 3242,28/06/2013,31/12/2023,2486.5,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,Haltun Cab 2 ,25/10/2013,31/12/2023,1513.4,m3,maderable,NA
+31,Yucatán,087,Tetiz,Tetiz,31087,1,I Poniente , Xcoch-Jol 1a. Mod.,26/06/2014,31/12/2023,61093.78,m3,maderable,NA
+31,Yucatán,087,Tetiz,Tetiz,31087,1,I Poniente , Chun Ek 1a. Mod.,26/06/2014,31/12/2023,85199.15,m3,maderable,NA
+31,Yucatán,096,Tizimin,Tizimín,31096,5,V Noreste ,Finca San Miguel Uno ,22/07/2014,22/07/2029,2304.06,m3,maderable,NA
+31,Yucatán,104,Yaxcaba,Yaxcabá,31104,6,VI Oriente,Santa Rosa N° 1 ,15/01/2015,15/01/2034,2889.24,m3,maderable,NA
+31,Yucatán,104,Yaxcaba,Yaxcabá,31104,6,VI Oriente,Xkambul ,23/01/2015,31/12/2034,40839.34,m3,maderable,NA
+31,Yucatán,058,Peto,Peto,31058,6,VI Oriente,Santa Rita,09/04/2015,31/12/2023,1039.8,m3,maderable,NA
+31,Yucatán,058,Peto,Peto,31058,6,VI Oriente,Parcela 20 Z-2 P1/1,10/04/2015,31/12/0024,1039.8,m3,maderable,NA
+31,Yucatán,102,Valladolid,Valladolid,31102,6,VI Oriente,Ejido Chulutan,01/07/2015,31/12/0024,4799.92,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,Ejido Alfonso Caso II,03/10/2016,31/12/0036,103185.82,m3,maderable,NA
+31,Yucatán,098,Tzucacab,Tzucacab,31098,7,VII Sur ,"Finca San Salvador, Tablaje 135  ",01/07/2015,31/12/2028,27485.11,m3,maderable,NA
+31,Yucatán,058,Peto,Peto,31058,6,VI Oriente,Tulipanes,01/07/2015,31/12/2024,1254.8,m3,maderable,NA
+31,Yucatán,071,Sudzal,Sudzal,31071,3,III Centro ,Tablaje 1028 ,01/07/2015,31/12/2025,3819.4,m3,maderable,NA
+31,Yucatán,102,Valladolid,Valladolid,31102,6,VI Oriente,Kondzonot,01/07/2015,31/12/2025,3049.92,m3,maderable,NA
+31,Yucatán,097,Tunkas,Tunkás,31097,3,III Centro ,PC  3 Z-1 P1/1,15/12/2015,31/12/2025,4013.71,m3,maderable,NA
+31,Yucatán,071,Sudzal,Sudzal,31071,3,III Centro ,"Parcela 11 Z-1 P1/1, Ej Kankabchen",06/10/2015,31/12/2027,1164.92,m3,maderable,NA
+31,Yucatán,021,Chichimila,Chichimilá,31021,6,VI Oriente,Kanchunup N° 4,03/10/2016,31/12/2025,1002.3,m3,maderable,NA
+31,Yucatán,097,Tunkas,Tunkás,31097,3,III Centro ,"Ejido Yaxha, Municipio de Tunkás",03/10/2016,31/12/2025,10155.08,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,N.C.P.A. SAN AGUSTIN,03/10/2016,31/12/2036,181423.99,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,Tablaje Catastral Número 521,01/07/2015,31/12/2025,35725.6,m3,maderable,NA
+31,Yucatán,071,Sudzal,Sudzal,31071,3,III Centro ,San Pedro Chenchelá,01/07/2015,31/12/2030,10894.06,m3,maderable,NA
+31,Yucatán,071,Sudzal,Sudzal,31071,3,III Centro ,"Parcela 23 Z-1 P /1/1, ",01/07/2015,31/12/2030,1476.96,m3,maderable,NA
+31,Yucatán,023,Chochola,Chocholá,31023,1,I Poniente ,Rancho Altamira,03/10/2016,31/12/0031,2767.47,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,SUDZAL CHICO,28/10/2016,31/12/2031,29045.77,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,Alfonso Caso II,07/10/2016,01/01/2036,103185.82,m3,maderable,NA
+31,Yucatán,043,Kaua,Kaua,31043,6,VI Oriente,Chen Santa Ana N° 1,10/02/2017,31/12/2021,689.35,m3,maderable,NA
+31,Yucatán,091,Tinum,Tinum,31091,6,VI Oriente,Tablaje Catastral 7126,10/02/2017,31/12/2021,579.7,m3,maderable,NA
+31,Yucatán,043,Kaua,Kaua,31043,6,VI Oriente,Tablaje Catastral 2286 Chan Haymil,13/02/2017,31/12/2021,932,m3,maderable,NA
+31,Yucatán,102,Valladolid,Valladolid,31102,6,VI Oriente,Macchen,13/02/2017,31/12/2021,248,m3,maderable,NA
+31,Yucatán,043,Kaua,Kaua,31043,6,VI Oriente,Tablaje Catastral 7460,16/02/2017,31/12/2021,604.1,m3,maderable,NA
+31,Yucatán,033,Halacho,Halachó,31033,1,I Poniente ,SAN JERÓNIMO KUNCHEILA,23/03/2017,31/15/2026,7309.66,m3,maderable,NA
+31,Yucatán,098,Tzucacab,Tzucacab,31098,7,VII Sur ,"T.C. 1333, Tzucacab",19/04/2017,31/12/2021,16487.6,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,Ejido Huacpelchén y su anexo Xtoloc,25/04/2017,31/12/2026,1706.01,m3,maderable,NA
+31,Yucatán,091,Tinum,Tinum,31091,6,VI Oriente,Tablaje Catastral 2435. Yokdzonot,15/05/2017,31/12/2021,493.8,m3,maderable,NA
+31,Yucatán,091,Tinum,Tinum,31091,6,VI Oriente,Tablaje Catastral 7799,16/05/2017,31/12/2021,95,m3,maderable,NA
+31,Yucatán,012,Cenotillo,Cenotillo,31012,5,V Noreste ,El Mostrenco,29/06/2017,31/12/2026,1588.57,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,N.C.P.E. SAN JUAN TEKAX,10/10/2017,31/12/2027,26238.54,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,San José,16/04/2018,31/12/2027,1388.96,m3,maderable,NA
+31,Yucatán,069,Sotuta,Sotuta,31069,6,VI Oriente,San Antonio y Anexas,11/06/2018,31/12/2028,2475.6,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,EL PALOMO,19/02/2018,31/12/2027,2786.65,m3,maderable,NA
+31,Yucatán,071,Sudzal,Sudzal,31071,3,III Centro ,P 19 Z-1P1/1,08/05/2018,31/12/2037,2560.75,m3,maderable,NA
+31,Yucatán,008,Calotmul,Calotmul,31008,5,V Noreste ,Pocoboch No. 10,08/02/2019,01/01/2038,3128.74,m3,maderable,NA
+31,Yucatán,066,Santa Elena,Santa Elena,31066,7,VII Sur ,TC 2490 Santa Elena,25/10/2019,31/12/2029,12726.77,m3,maderable,NA
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,P 30 Z-1P1/1,25/11/2020,31/12/2023,2009.05,m3,maderable,NA
+31,Yucatán,033,Halacho,Halachó,31033,1,I Poniente ,CESAR AUGUSTO ARRIGUNAGA COELLO,28/06/2017 ,31/12/2021,38.864,ton,no maderable,Hoja huano
+31,Yucatán,098,Tzucacab,Tzucacab,31098,7,VII Sur ,EJIDO TIGRE GRANDE,16/10/2017 ,31/12/2021,11.055,ton,no maderable,Sem granadillo
+31,Yucatán,044,Kinchil,Kinchil,31044,1,I Poniente ,EJIDO KINCHIL,27/11/2017,31/12/2021,4444.003,ton,no maderable,Hoja huano
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,EJIDO MANUEL CEPEDA PERAZA,21/03/2018 ,31/12/2022,332.64,ton,no maderable,Hoja huano
+31,Yucatán,044,Kinchil,Kinchil,31044,1,I Poniente ,EJIDO KINCHIL,04/04/2018 ,31/12/2022,384,kg,no maderable,Semilla huano
+31,Yucatán,079,Tekax,Tekax,31079,7,VII Sur ,EUGENIA BEATRIZ EUAN CALDERON,29/11/2018 ,31/12/2023,38.864,ton,no maderable,Hoja huano
