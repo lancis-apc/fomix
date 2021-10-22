@@ -1,0 +1,44 @@
+# Acuacultura salobre
+
+
+## Acuacultura salobre **vs.** Conservación
+
+
+### Descripción del conflicto
+
+* Contaminación por descarga de agua residual con químicos y altos niveles de nutrientes.
+
+
+#### Recursos afectados
+
+* Agua.
+
+
+#### Ubicación reportada
+
+- Sin dato.
+
+
+#### Fuentes
+
+- Batllori 2016.
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_acuacultura_salobre_conservacion_extension.png)
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_acuacultura_salobre_pg_1_3_cruza_conservacion_eq.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_acuacultura_salobre_conservacion_indices.png)

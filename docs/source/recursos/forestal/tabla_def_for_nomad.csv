@@ -1,0 +1,29 @@
+﻿Sector,Definición
+Forestal,
+,
+Meta,Definición
+,"Incorporar nuevas superficies y productores a la producción forestal maderable y no maderable, de tal manera que se represente una alternativa productiva y mejorar las capacidades técnicas y financieras de aprovechamiento de las áreas ya destinadas a la producción forestal maderable y no maderable."
+,"Orientar la producción al aprovechamiento sostenible, que garantice que los ecosistemas se mantengan."
+, Minimizar los riesgos del sector forestal y fomentar las plantaciones forestales en superficies preferentemente forestales.
+,
+Tipo,Definición
+No maderable ,"Parte no leñosa de la vegetación de un ecosistema forestal, susceptible de aprovechamiento o uso, incluyendo líquenes, musgos, hongos y resinas, así como los suelos de terrenos forestales y preferentemente forestales"
+,
+Biofísicos,
+Criterio,Definición
+Tipo de vegetación,Uso de suelo y vegetación (cubierta vegetal)
+Edafología,Tipo de suelo 
+Clima,Tipo de clima
+Factores de riesgo,"Elementos del ambiente biofísico que impiden las actividades forestales maderables (zonas con plagas y especies invasoras, zonas con incidencia de incendios)"
+,
+Socioeconómicos,
+Criterio,Definición
+Aprovechamiento,Autorizaciones de aprovechamiento (activos e inactivos)
+Mercados,Distancia a localidades con puntos de venta
+Tenencia,"Tenencia de la tierra por zonas ejidales, no ejidales y tierras de uso común"
+,
+Infraestructura,
+Criterio,Definición
+Abastecimiento,Acceso a insumos para la producción (fuentes de energía y combustible en localidades)
+Centros de almacenamiento,Distancia a centros de almacenamiento y transformación
+Comunicación,"Distancia a carreteras, caminos rurales y veredas (red de caminos primarios y secundarios)"

@@ -1,0 +1,6 @@
+﻿Capa,Distancia a localidades urbanas 
+Fuente,[1] Polígonos de localidades. Marco Geoestadístico. Censo de Población y Vivienda INEGI y [2] Red Nacional de Caminos (RNC) Red vial - INEGI 
+Año,[1] 2020; [2] 2019
+Campo,[1] AMBITO; [2] TIPO_VIAL
+Escala,"1:250,000"
+Unidades,Kilómetros

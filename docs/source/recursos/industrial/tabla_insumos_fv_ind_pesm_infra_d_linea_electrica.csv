@@ -1,5 +1,5 @@
-﻿Capa,Distancia líneas de transmisión de energía eléctrica
-Fuente,Líneas de transmisión INEGI
-Año,2012
-Escala," 1:50,000"
+﻿Capa,Distancia a líneas de transmisión de energía eléctrica y gasoducto
+Fuente,"[1] Líneas de transmisión en México. GeoComunes con datos de CFE y [2] Gasoducto GeoComunes con datos de CRE, SEMARNAT, ASEA y CFE"
+Año,2020
+Escala,Sin dato
 Unidades,Kilómetros

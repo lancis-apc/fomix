@@ -1,0 +1,43 @@
+﻿Meta,Definición
+,"Incrementar la productividad considerando los elementos de producción, las actividades e infraestructura de producción, almacenamiento y centro de distribución y de logística y comercialización de productos terminados. "
+,
+Tipo de industria,
+Pesada y mediana,Industria mediana y pesada (incluye agroindustria y manufactura como las principales)
+,
+Infraestructura,
+Criterio,Definición
+Energía,Acceso y calidad/capacidad de infraestructura eléctrica (CENACE capacidad de carga en nodos)
+Acceso a agua,"Distancia a red de agua potable, plantas de tratamiento, cobertura"
+Conectividad,Capacidad de hacer conexiones a centros de abastecimiento de mano de obra y distribución de productos
+Manejo de residuos,Sitios de disposición final 
+Comunicación,Telecomunicaciones: cobertura de red (IFETEL)
+,
+Conectividad,
+Subcriterio,Definición
+Carreteras,"Tipo de carreteras a las que se tiene acceso, carreteras de un carril o más de dos carriles"
+Puertos,Distancia a puertos
+Caminos ferroviarios,Distancia a caminos ferroviarios
+Aeropuertos,Distancia a aeropuertos
+,
+Carreteras,
+Subcriterio,Definición
+Un carril,Carreteras de un solo carril
+Varios carriles,Carreteras de dos o más carriles
+,
+Manejo residuos,
+Subcriterio,Definición
+Plantas de aguas residuales,Distania a plantas de tratamiento de aguas residuales
+Rellenos sanitarios,Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial
+Basureros,"Distancia a  bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos"
+,
+Socioeconómicos,
+Criterio,Definición
+Industria instalada,Unidades económicas industriales instaladas
+Localidades,Población total en las localidades
+Tenencia,Tenencia de la tierra: terrenos ejidales o propiedad privada
+,
+Biofísicos,
+Criterio,Definición
+Disponibilidad de agua  ,Distancia a manto freático
+Cobertura  ,"Zonas urbanas, asentamientos humanos"
+Dispersión de emisiones,"Zonas con mayor dispersión de contaminantes al aire, con base en datos obtenidos en casetas de medición y de vulnerabilidad por movimiento de contaminantes en agua subterránea "

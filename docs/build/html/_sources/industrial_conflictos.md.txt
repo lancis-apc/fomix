@@ -1,0 +1,91 @@
+# Industrial
+
+
+## Industrial **vs.** Conservación
+
+
+### Descripción del conflicto
+
+- Deforestación por la ampliación de zonas industriales.
+- Contaminación del acuífero por descarga de agua residual del sector industrial.
+
+
+#### Recursos afectados
+
+* Agua, vegetación forestal.
+
+
+#### Ubicación reportada
+
+- Zona metropolitana de Mérida, Noroeste de Yucatán.
+
+
+#### Fuentes
+
+- González Herrera et al. 2018, Ellis et al. 2015.
+- Clave de registro en encuesta de conflictos ambientales: F11 y F36.
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_industrial_conservacion_extension.png)
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_industrial_eq_cruza_conservacion_eq.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_industrial_conservacion_indices.png)
+
+
+
+## Industrial **vs.** Forestal
+
+
+### Descripción del conflicto
+
+- Deforestación por la ampliación de zonas industriales.
+
+
+#### Recursos afectados
+
+* Vegetación forestal.
+
+
+#### Ubicación reportada
+
+- Noroeste de Yucatán.
+
+
+#### Fuentes
+
+- Ellis et al. 2015.
+- Clave de registro en encuesta de conflictos ambientales: F11 y F36.
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_industrial_forestal_extension.png)
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_industrial_eq_cruza_forestal_eq.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_industrial_forestal_indices.png)

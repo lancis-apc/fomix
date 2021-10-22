@@ -1,0 +1,92 @@
+# Milpa maya
+
+## Milpa maya **vs.** Conservación
+
+
+### Descripción del conflicto
+
+- Incendios y deforestación de selvas y áreas forestales de aprovechamiento maderable y no made-rable por expansión de la milpa debido a la pérdida de fertilidad del suelo.
+
+
+#### Recursos afectados
+
+* Vegetación forestal.
+
+
+#### Ubicación reportada
+
+- Municipio de Tekax.
+
+
+#### Fuentes
+
+- Batllori 2019, Cepeda y Amoroso 2016.
+- Taller milpa maya y apicultura.
+- Clave de registro en encuesta de conflictos ambientales: F2.
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_milpa_conservacion_extension.png)
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_milpa_maya_eq_cruza_conservacion_eq.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_milpa_conservacion_indices.png)
+
+
+
+## Milpa maya **vs.** Forestal
+
+
+### Descripción del conflicto
+
+- Incendios y deforestación de selvas y áreas forestales de aprovechamiento maderable y no maderable por expansión de la milpa debido a la pérdida de fertilidad de suelos.
+
+
+#### Recursos afectados
+
+* Vegetación forestal.
+
+
+#### Ubicación reportada
+
+- Municipio de Tekax.
+
+
+#### Fuentes
+
+- Batllori 2019, Cepeda y Amoroso 2016.
+- Taller milpa maya y apicultura.
+- Clave de registro en encuesta de conflictos ambientales: F2.
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_milpa_forestal_extension.png)
+
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_milpa_maya_eq_cruza_forestal_eq.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_milpa_forestal_indices.png)

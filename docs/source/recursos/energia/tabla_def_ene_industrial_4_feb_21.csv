@@ -1,0 +1,57 @@
+﻿Sector,Definición,
+Energía industrial,,
+,,
+Meta,"Garantizar el aprovechamiento sostenible de los recursos energéticos del estado de Yucatán, para asegurar que la población y los sectores productivos tengan acceso a energía asequible, sostenible, confiable y de calidad, en un marco de justicia ambiental que considere criterios de uso sostenible del territorio, certidumbre jurídica y contribuya a una mayor democracia en la gestión de los recursos energéticos públicos y comunes.",
+,,
+Fuente ,Tipo de fuente de energía,
+Criterio,Definición,
+Hidrocarburos líquidos,Consumo y almacenamiento de hidrocarburos líquidos. Plantas que utilizan diesel o combustóleo para generar energía. Terminales de almacenamiento y reparto.,0.398
+Gas natural,Transporte de gas natural por gasoductos y vehículos terrestres. Terminales de almacenamiento y centrales eléctricas. Uso de gas comprimido por empresas.,0.339
+Solar,Instalaciones industriales que aprovechan la irradiación solar como fuente de energía.,0.127
+Eólica,"Instalaciones de generación de energía mediante el viento, mayores a 0.5 MW.",0.097
+Biomasa,Proyectos que utilizan material biológico para conversión en energía utilizable. Incluye los desechos de granjas porcícolas para producir energía eléctrica.,0.039
+,,
+Hidrocarburos líquidos,,
+Atributos,Definición,
+Carreteras,Distancia a carreteras,0.64
+Localidades,"Distancia a asentamientos humanos, excluye a las localidades.",0.36
+,,
+,,
+Gas natural,,
+Atributos,Definición,
+Distancia del gasoducto a zonas industriales,Zonas industriales que demandan gas natural,0.81
+Distancia del gasoducto a localidades,Distancia a asentamientos humanos,0.19
+,,
+Solar,,
+Atributos,Definición,
+Distancia a red eléctrica,Distancia a líneas de transmisión y subestaciones.,0.714
+Cobertura,Tipo de vegetación.,0.143
+Tenencia de la tierra,Tipo de tenencia de la tierra: Áreas ejidales (comunitaria o parcelada) y no ejidales.,0.143
+,,
+,,
+Eólica,,
+Atributos,Definición,
+Velocidad,"Velocidad del viento en m/s a 120 m de altura, para colocar dispositivos de conversión de energía eólica a eléctrica.",0.583
+Distancia a red eléctrica,Distancia a líneas de transmisión y subestaciones.,0.211
+Cobertura,Tipo de vegetación.,0.126
+Distancia a caminos,Distancia a carreteras,0.042
+Distancia a localidades,"Distancia de asentamientos humanos a los aerogeneradores, excluye a las localidades.",0.039
+,,
+,, 
+Biomasa,, 
+Atributos,Definición, 
+Residuos urbanos,Distancia a los sitios de disposición final de residuos urbanos ,0.669
+Distancia a granjas porcícolas,Distancia a granjas porcícolas,0.267
+Residuos vegetales,Residuos agrícolas y forestales,0.064
+,,
+,, 
+Tenencia,,
+Atributos,Definición,
+No ejidal,Zona no ejidal,0.584
+Parcelada,Zona de tierras parceladas,0.305
+Comunal ,Tierra de uso común,0.111
+,, 
+,, 
+,, 
+,, 
+,, 

@@ -1,0 +1,49 @@
+﻿Tipo,Definición,
+Milpa maya y apicultura,"Sistema alimentario agroforestal dinámico, integrado por diversas actividades productivas a pequeña escala (solar, apicultura, otras actividades en el monte), asociadas a la seguridad alimentaria por ser principalmente para autoconsumo. Sus principales componentes son: semillas nativas, agro diversidad, cultivo de temporal, vegetación más o menos conservada, extensión menor a 1-3 ha.",
+,,
+Meta,Definición,
+,"Promover el fortalecimiento del sistema milpa maya tradicional y de la apicultura del Estado de Yucatán, para que la producción se realice de manera sustentable, promueva la conservación de la biodiversidad y del patrimonio biocultural y permita la innovación en la milpa maya, sin perder su esencia tradicional.",
+,,
+Atributos,Definición,Peso
+Biofísicos,"Atributos asociados a las propiedades biológicas, físicas del suelo y del ambiente.",0.635
+Sociales,Atributos que describen las características sociales del territorio.,0.259
+Infraestructura,Atributos asociados a la distribución de productos y centros de acopio y accesibilidad.,0.106
+,,
+Biofísicos,,
+Atributo,Definición,Peso
+Cobertura,Vegetación o uso de suelo actual,0.467
+Tipo de suelo,Tipo de suelo (Edafología),0.407
+Disponibilidad de agua,Fuentes de acceso al agua,0.125
+,,
+Sociales,,
+Atributo,Definición,
+Población indígena,Porcentaje de la población que habla una lengua indígena en el municipio.,0.500
+Tenencia de la tierra,"Zonas de área común, parcelas y áreas no ejidales.",0.500
+,,
+Infraestructura,,
+Atributo,Definición,
+Distancia a caminos,"Distancia a caminos principales, brechas, terracerías",0.833
+Distancia a centros de acopio,"Distancia a localidades rurales, como centros de vivienda, acopio y comercio.",0.167
+,,
+Disponibilidad agua,,
+Atributo,Definición,
+Precipitación,"Precipitación promedio de los meses de mayo, junio y julio (meses de inicio de siembra de la milpa).",1.00
+,,
+Distancia a caminos,,
+Veredas,Distancia a caminos y veredas.,0.834
+Carreteras,Distancia a carreteras y prolongación,0.166
+,,
+Distancia a centros de acopio,,
+Atributo,Definición,
+Distancia a localidades rurales,"Distancia a localidades rurales < 2,500 habitantes.",1
+,,
+,,
+,,
+Paola:,,
+se sube precipitación al cluster de atributos físicos?,,
+se sube localidad rural al cluster de infraestructura?,,
+,,
+Exclusión solo por cobertura nula?,,
+Tenencia mismas categorías de apicultura?,,
+,,
+ 3. Actualizar y verificar todas las funciones de valor para los dos sectores en SIGplanning @ofegarcia,,

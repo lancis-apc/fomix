@@ -5,8 +5,10 @@
 
 Sistema de conocimiento para la gestión del Ordenamiento Ecológico del Territorio (OET) del estado de Yucatán
 ===============================================================================================================
+.. Análisis de aptitud sectorial-Resultados finales
+.. ######################################################
 Análisis de aptitud sectorial
-################################
+###########################################################
 
 Objetivo
 ---------
@@ -19,15 +21,55 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
 
 
 .. toctree::
-   :maxdepth: 4
-   :caption: Sectores:
+   :maxdepth: 6
+   :caption: Análisis de aptitud:
 
+   introduccion_aptitud
+   acuacultura_pr
+   agricultura_pr
+   conservacion_pr
    energia_pr
    forestal_pr
    industrial_pr
-   ga_silvopastoril_pr
+   milpa_apic_pr
+   mineria_pr
+   pec_bovino_pr
+   pec_porcino_pr
+   pesca_pr
+   turismo_pr
    urbano_pr
 
+.. toctree::
+   :maxdepth: 6
+   :caption: Análisis de conflictos:
+   
+   introduccion
+   acuacultura_s_conflictos
+   agricultura_conflictos
+   conservacion_conflictos
+   energia_conflictos
+   forestal_conflictos
+   industrial_conflictos
+   milpa_conflictos
+   mineria_conflictos
+   bovino_conflictos
+   porcino_conflictos
+   turismo_conflictos
+   turismo_sol_playa_conflictos
+   urbano_conflictos
+   referencias
+
+.. toctree::
+   :maxdepth: 6
+   :caption: Talleres de pronóstico:
+   
+   introduccion_pronos
+   agricultura_pronos
+   bovino_pronos
+   porcino_avi_pronos
+   urbano_indus_pronos
+
+   
 
 
 .. Indices and tables

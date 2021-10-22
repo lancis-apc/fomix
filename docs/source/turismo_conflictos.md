@@ -1,0 +1,44 @@
+# Turismo de naturaleza
+
+## Turismo de naturaleza **vs.** Conservación
+
+### Descripción del conflicto
+
+- Impacto sobre humedales, esteros y arrecifes afecta hábitats costeros y acuáticos.
+- Modificación de los cenotes para fines turísticos.
+
+
+#### Recursos afectados
+
+* Agua, humedales.
+
+
+#### Ubicación reportada
+
+- Sin dato.
+
+
+#### Fuentes
+
+- García de Fuentes et al. 2019, Herrera Silveira 2006, Salas et al. 2006.
+- Clave de registro en encuesta de conflictos ambientales: F40.
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_tur_naturaleza_conservacion_extension.png)
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_tur_naturaleza_eq_cruza_conservacion_eq.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_tur_naturaleza_conservacion_indices.png)

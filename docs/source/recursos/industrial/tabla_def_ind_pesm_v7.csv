@@ -1,0 +1,46 @@
+﻿Meta,Definición
+,"Incrementar la productividad y diversificar las actividades en sector industrial, considerando las actividades e infraestructura de: (1) producción, (2) almacenamiento y centros de distribución y de loística, y (3) comercialización de insumos y productos terminados."
+,"Disminuir el impacto ambiental, en cuanto al consumo de recursos y suelo y generación de residuos."
+,Promover la producción en el sector industrial mediante el favorecimiento de economía circular.
+,Promover la descentralización de la actividad industrial hacia la zona sur y oriente.
+,
+Tipo de industria,
+Mediana y pesada,"La industria mediana y pesada incluye agroindustria y manufactura, como las principales."
+,
+Infraestructura,
+Criterio,Definición
+Energía,Distancia a líneas de transmisión eléctrica de 230 KV y 400 KV y a gasoductos.
+Acceso a agua,Distancia a localidades con cobertura de red de agua potable.
+Conectividad,Distancia a vías de comunicación que permiten el movimiento de trabajadores y la distribución de insumos y productos.
+Manejo de residuos,Distancia a sitios de disposición final de residuos solidos y agua residual. 
+Comunicación,Distancia a localidades con cobertura de internet.
+,
+Conectividad,
+Subcriterio,Definición
+Carreteras,Distancia a carreteras.
+Puertos,Distancia a puertos.
+Red ferroviaria,Distancia a red ferroviaria.
+Aeropuertos,Distancia a aeropuertos.
+,
+Carreteras,
+Subcriterio,Definición
+Un carril,Carreteras de un solo carril.
+Varios carriles,Carreteras de dos o más carriles.
+,
+Manejo residuos,
+Subcriterio,Definición
+Plantas de aguas residuales,Distancia a plantas de tratamiento de aguas residuales.
+Rellenos sanitarios,Distancia a infraestructura que involucra métodos y obras de ingeniería para la disposición final de los residuos sólidos urbanos y de manejo especial.
+Basureros,"Distancia a  bancos de basura, basureros, centros de acopio de residuos, chascaderas, tiraderos."
+,
+Socioeconómicos,
+Criterio,Definición
+Industria instalada,Parques industriales y localidades con unidades económicas registradas en el Directorio Estadístico Nacional de Unidades Económicas del INEGI en la categoría (31-33). Industrias manufactureras excepto la categoría (334)
+Localidades,"Distancia a localidades donde se tiene acceso a capital social, servicios y mercado."
+Tenencia,Tenencia de la tierra.
+,
+Biofísicos,
+Criterio,Definición
+Disponibilidad de agua  ,Distancia a manto freático.
+Cobertura  ,Uso de suelo y vegetación.
+Dispersión de emisiones,Vulnerabilidad del acuífero a la contaminación.

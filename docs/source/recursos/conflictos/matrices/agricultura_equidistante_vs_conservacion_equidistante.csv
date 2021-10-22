@@ -1,0 +1,14 @@
+Categoria,Muy baja,Baja,Moderada,Alta,Muy alta
+Muy baja,893.3,9.4,60.6,94.0,1870.3
+Baja,4.5,117.3,184.4,613.2,396.6
+Moderada,465.1,2648.3,4108.6,6717.1,4215.4
+Alta,122.2,4516.7,3651.6,6282.2,2165.1
+Muy alta,12.9,216.7,73.2,70.0,27.9
+Índices,Valor,Prioridad
+Severidad regional bruta (extensión),0.22,Moderada
+Severidad regional neta (magnitud),0.28,Alta
+Severidad sectorial neta (asimetría) del sector B,0.38,Alta
+Severidad sectorial neta (asimetría) del sector A,0.5,Muy alta
+
+Sector B, conservacion
+Sector A,agricultura

@@ -1,0 +1,36 @@
+﻿Tipo,Definición,
+Apicultura,"Sistema alimentario agroforestal dinámico, integrado por diversas actividades productivas a pequeña escala (solar, apicultura, otras actividades en el monte), asociadas a la seguridad alimentaria por ser principalmente para autoconsumo. ",
+,,
+Meta,Definición,
+,"Promover el fortalecimiento del sistema milpa maya tradicional y de la apicultura del Estado de Yucatán, para que la producción se realice de manera sustentable, promueva la conservación de la biodiversidad y del patrimonio biocultural y permita la innovación en la milpa maya, sin perder su esencia tradicional.",
+,,
+Atributos,Definición,Peso
+Biofísicos,Atributos asociados a las propiedades biológicas y del ambiente.,0.68
+Infraestructura,"Atributos asociados al acceso de insumos, distribución de productos y centros de acopio.",0.24
+Sociales,Atributos que describen características sociales del territorio.,0.08
+,,
+Biofísicos,,
+Atributo,Definición,Peso
+Cobertura,Vegetación o uso de suelo actual,0.8
+Precipitación,Precipitación promedio del mes de marzo (temporada de estiaje),0.2
+,,
+Infraestructura,,
+Atributo,Definición,Peso
+Distancia a caminos,"Distancia a caminos principales, brechas, terracerías",0.5
+Distancia a localidades,"Distancia a poblaciones para el acceso a insumos, recursos, herramientas y centros de acopio. Existencia de grupos organizados de mercado.",0.5
+,,
+Sociales,,
+Atributo,Definición,Peso
+Tenencia de la tierra,"Zonas de área común, parcelas y áreas no ejidales.",0.75
+Población indígena,Porcentaje de la población de 3 años y más que habla una lengua indígena en el municipio.,0.25
+,,
+Caminos,,
+Atributo,Definición,Peso
+Carreteras,Distancia a carreteras y prolongación,0.5
+Veredas,Distancia a caminos y veredas.,0.5
+,,
+Distancia a localidades,,
+Atributo,Definición,Peso
+Distancia a localidades rurales,"Distancia localidades rurales < 2,500 habitantes.",0.46
+Distancia a localidades rurales-urbanas,"Distancia a localidades rurales-urbanas => 2500 y <15,000 habitantes.",0.44
+Distancia a localidades urbanas,"Distancia a localidades urbanas >= 15,000 habitantes.",0.1

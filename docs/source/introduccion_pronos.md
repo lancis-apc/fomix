@@ -1,0 +1,21 @@
+# Introducción
+
+A partir de la información recabada en el análisis de conflictos, el equipo técnico del Laboratorio Nacional de Ciencias de la Sostenibilidad, UNAM generó diagramas que representan los principales factores de transformación del territorio y sus efectos sobre los factores ambientales y las actividades sectoriales.
+
+Para la programación de talleres se consideraron aquellos factores de transformación del territorio que tienen un efecto más significativo en términos sus impactos sobre el ambiente y otros sectores.
+
+Los participantes en los talleres revisaron las variables y las relaciones causales de los diagramas de flujo y, en su caso, los complementaron. Asimismo, avanzaron en la evaluación de las intensidades de las interacciones entre las variables, utilizando una escala lingüística.
+
+En este reporte se muestran:
+
+1.	Los diagramas que incorporan las observaciones de los participantes en cada taller
+2.	Una tabla con la definición de las variables
+3.	Una tabla que explica las interacciones entre variables, la dirección del efecto y la intensidad de la interacción
+
+Se identifica como una interacción positiva, si el cambio en una variable conduce al cambio en la otra en el mismo sentido. Es decir, el aumento de la variable causante ocasiona el aumento de la variable que recibe el efecto, o si la disminución de la variable causante ocasiona la disminución de la variable que recibe el efecto.
+
+Se identifica como una interacción negativa, si el cambio en una variable conduce al cambio en la otra en el mismo sentido. Es decir, el aumento de la variable causante ocasiona la disminución de la variable que recibe el efecto, o si la disminución de la variable causante ocasiona el aumento de la variable que recibe el efecto.
+
+La intensidad de la interacción se evalúa con las siguientes variables lingüísticas: Muy fuerte (MF), Fuerte (F), Moderada (M), Baja (B), Muy baja (MB), Baja (B). Las interacciones que no alcanzaron a ser evaluadas durante en taller se reportan como NE.
+
+[Presentación de los talleres](https://www.dropbox.com/s/n9mxy3vz6gmv8x2/pres_talleres_pron_oct21_pag_web.pdf?dl=0)
