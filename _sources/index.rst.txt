@@ -59,6 +59,19 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    urbano_conflictos
    referencias
 
+.. toctree::
+   :maxdepth: 6
+   :caption: Talleres de pronóstico:
+   
+   introduccion_pronos
+   agricultura_pronos
+   bovino_pronos
+   porcino_avi_pronos
+   urbano_indus_pronos
+
+   
+
+
 .. Indices and tables
 .. ==================
 

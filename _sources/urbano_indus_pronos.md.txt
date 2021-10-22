@@ -1,0 +1,68 @@
+# Urbano e industrial
+
+<!-- Ruta de la documentación:
+FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
+
+[Lista de participantes](https://www.dropbox.com/s/ocazajcfvfdsdeg/asistencia_taller_pron_urb_ind_12oct21.pdf?dl=0)
+
+### Diagrama que representa los efectos del crecimiento urbano e industrial
+
+![](./recursos/pronostico/urbano_indus/fi_urbano_informe.png)
+
+### Variables del diagrama que representa los efectos del crecimiento urbano e industrial
+
+Variable | Definición | Unidades
+-- | -- | --
+Acuífero: calidad del agua | Índice | Adimensional
+Acuífero: disponibilidad de agua | Disponibilidad Media Anual de Agua Subterránea | Hectómetros cúbicos
+Bancos de   materiales pétreos | Superficie de bancos de materiales | Hectáreas
+Calidad del aire | Promedio de emisiones de contaminantes atmosféricos | Partes por millón
+Cobertura forestal | Superficie con cobertura forestal | Hectáreas
+Consumo de agua | Consumo de agua   para uso de servicios, urbano público, industrial y doméstico; Consumo promedio de agua por habitante | Metros cúbicos; Litros/habitante
+Generación y distribución de energía | Superficie de instalaciones de energía eólica, solar y termoeléctricas | Hectáreas
+Hábitat de flora y fauna | Superficie total del hábitat interior de parches de vegetación natural | Hectáreas
+Humedales terrestres y costeros | Superficie de humedales costeros, cenotes, dolinas, aguadas, etc. | Hectáreas
+Población | Habitantes   en zonas urbanas | Número de   habitantes
+Producción pesquera | Producción pesquera en el estado | Toneladas
+Residuos sólidos y líquidos | Residuos sólidos y aguas residuales | Toneladas y metros   cúbicos
+Vulnerabilidad ante eventos hidrometeorológicos | Zonas vulnerables a inundación | Hectáreas
+Vulnerabilidad   del acuífero | Superficie de acuífero con vulnerabilidad alta a la contaminación | Hectáreas
+Zonas agropecuarias | Superficie con uso agropecuario | Hectáreas
+Zonas urbanas e industriales | Superficie de zonas urbanas e industriales | Hectáreas
+
+### Interacciones del diagrama que representa los efectos del crecimiento urbano e industrial
+
+Variable causante | Variable afectada | Efecto | Dirección | Intensidad
+-- | -- | -- | -- | --
+Zonas urbanas e industriales | Cobertura forestal | Si aumentan las zonas urbanas e industriales    la cobertura forestal disminuye y se fragmenta | - | MF, F
+Cobertura forestal | Hábitat de flora y fauna | Si aumenta la cobertura forestal, el hábitat de    flora y fauna aumenta | + | NE
+Cobertura forestal | Acuífero: disponibilidad de agua | Si aumenta la cobertura forestal, las zonas de recarga del acuífero aumentan | + | NE
+Cobertura forestal | Vulnerabilidad ante eventos hidrometeorológicos | Si aumenta la cobertura vegetal, la vulnerabilidad ante eventos de hidrometeorológicos disminuye por la retención del flujo    hidráulico | - | NE
+Zonas urbanas e industriales | Humedales    terrestres y costeros | Si aumentan las zonas urbanas e industriales, la superficie manglares y otros humedales disminuye por relleno o alteración del flujo hidrodinámico | - | NE
+Humedales costeros y terrestres | Vulnerabilidad ante eventos hidrometeorológicos | Si aumentan los humedales costeros y terrestres, la vulnerabilidad ante    eventos de hidrometeorológicos disminuye | - | NE
+Zonas urbanas e industriales | Vulnerabilidad ante eventos hidrometeorológicos | Si aumentan las zonas urbanas e industriales, la vulnerabilidad ante inundaciones aumenta por    el establecimiento de superficies impermeables. | + | NE
+Vulnerabilidad ante eventos hidrometeorológicos | Zonas urbanas e industriales | Si aumenta la vulnerabilidad ante eventos hidrometeorológicos, las zonas aptas para el desarrollo urbano e    industrial disminuyen | - | NE
+Zonas urbanas e industriales | Zonas agropecuarias | Si aumentan las zonas urbanas e industriales, la superficie con uso agropecuario disminuyen | - | F, M
+Zonas urbanas e industriales | Bancos de materiales pétreos | Si aumentan las zonas urbanas e industriales, los bancos de materiales aumentan para abastecer la demanda para la construcción de infraestructura urbana y vivienda | + | MF, F
+Bancos de materiales pétreos | Cobertura forestal | Si aumentan los bancos de materiales, la cobertura forestal disminuye y se fragmenta | - | NE
+Bancos de materiales pétreos | Zonas agropecuarias | Si aumentan los bancos de materiales, la    superficie con uso agropecuario disminuye | - | NE
+Bancos de materiales pétreos | Vulnerabilidad del acuífero | Si aumentan los bancos de materiales, la    vulnerabilidad intrínseca y específica del acuífero aumenta por alteración    del suelo y las actividades mineras | + | NE
+Zonas urbanas e industriales | Generación y distribución de energía | Si aumentan las zonas urbanas e industriales, la demanda de energía para uso domiciliario, de servicios e industrial aumenta | + | NE
+Zonas urbanas e industriales | Población | Si aumentan las zonas urbanas e industriales, el    número de habitantes atraídos por la oferta de desarrollos inmobiliarios y    de empleo aumenta | + | NE
+Población | Residuos sólidos y líquidos | Si aumenta la población, la generación de residuos sólidos y líquidos aumenta | + | NE
+Residuos    sólidos y líquidos | Vulnerabilidad del acuífero | Si aumentan los residuos sólidos y líquidos, la vulnerabilidad específica de contaminación del acuífero aumenta | + | NE
+Vulnerabilidad del acuífero | Acuífero: calidad del agua | Si aumenta la vulnerabilidad específica de contaminación del acuífero, la  calidad del agua disminuye | - | NE
+Acuífero: calidad del agua | Zonas urbanas e industriales | Si aumenta la disponibilidad de agua de buena calidad las zonas aptas para el desarrollo urbano e industrial aumentan | + | NE
+Población | Consumo de agua | Si aumenta la población, la demanda de agua para usos domiciliario y de servicios e industrial aumenta | + | NE
+Consumo de agua | Acuífero: disponibilidad de agua | Si aumenta el consumo de agua para usos domiciliario y de servicios e industrial, la disponibilidad de agua del acuífero disminuye| - | NE
+Acuífero: disponibilidad de agua | Acuífero: calidad del agua | Si aumenta la disponibilidad de    agua del acuífero la calidad de agua del acuífero aumenta por dilución | + | NE
+Acuífero: disponibilidad de agua | Humedales terrestres y costeros | Si aumenta la disponibilidad de agua del acuífero, el flujo de agua a los humedales aumenta | + | NE
+Acuífero: calidad del agua | Humedales terrestres y costeros | Si aumenta la disponibilidad de    agua del acuífero, la calidad de agua que fluye a los humedales aumenta | + | NE
+Humedales terrestres y costeros | Hábitat de flora y fauna | Si aumenta la extensión y la calidad de agua de los humedales, el hábitat de flora y fauna aumenta | + | NE
+Hábitat de flora y fauna | Producción pesquera | Si aumenta el hábitat de flora y fauna, las especies de interés pesquero aumentan | + | NE
+Zonas urbanas e industriales | Calidad del aire | Si aumentan las zonas urbanas e industriales, la    calidad del aire disminuye por la emisión de contaminantes de fuentes fijas y móviles | - | NE
+
+
+
+
+<div style="page-break-after: always;"></div>

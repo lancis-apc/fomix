@@ -142,7 +142,7 @@ Capa | Biomasa aérea
 -- | --
 Fuente | Biomasa aérea CICY - José Luis Hernández Stefanoni
 Año | 2021
-Escala | ?
+Escala | Sin dato
 Unidades | Toneladas/hectárea
 
 **Parámetros de la función de valor**
@@ -309,11 +309,11 @@ ID | Categoría | Importancia | FV
 
 **Insumos**
 
-Capa | Paradores turísticos
+Capa | Cuerpos de agua no incluidos en el Serie VI de Uso del suelo y vegetación INEGI
 -- | --
-Fuente | Paradores turísticos SEFOTUR
-Año | 2020
-Escala | Localidad
+Fuente | [1] Modelo cartográfico de humedales INEGI; [2] Cenotes POETY y [3] Censo de cenotes SEDUMA
+Año | [1] 2014; [2] 2007; [3] 2009
+Escala | [1] 1:50,000; [2] [3] 1:1,000
 Unidades | Adimensional
 
 <div style="page-break-after: always;"></div>
