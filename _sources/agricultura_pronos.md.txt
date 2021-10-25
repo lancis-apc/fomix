@@ -30,6 +30,8 @@ Zonas de producción forestal | Zonas de aprovechamiento forestal | Hectáreas
 
 ### Interacciones del diagrama que representa los efectos del crecimiento agrícola
 
+![](./recursos/pronostico/agricola/fi_tabla_interacc_agri.png)
+<!--
 Variable causante | Variable afectada | Efecto | Dirección | Intensidad
 -- | -- | -- | -- | --
 Zonas de agricultura tecnificada | Zonas de milpa | Si las zonas de agricultura tecnificada aumentan, las zonas de milpa disminuyen | - | M, MB

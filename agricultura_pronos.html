@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="_static/translations.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -286,152 +286,31 @@ FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs --><p><a class="refer
 </table></div>
 <div class="section" id="interacciones-del-diagrama-que-representa-los-efectos-del-crecimiento-agricola">
 <h2>Interacciones del diagrama que representa los efectos del crecimiento agrícola<a class="headerlink" href="#interacciones-del-diagrama-que-representa-los-efectos-del-crecimiento-agricola" title="Enlazar permanentemente con este título">¶</a></h2>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Variable causante</th>
-<th>Variable afectada</th>
-<th>Efecto</th>
-<th>Dirección</th>
-<th>Intensidad</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Zonas de agricultura tecnificada</td>
-<td>Zonas de milpa</td>
-<td>Si las zonas de agricultura tecnificada aumentan, las zonas de milpa disminuyen</td>
-<td>-</td>
-<td>M, MB</td>
-</tr>
-<tr>
-<td>Zonas de milpa</td>
-<td>Cobertura forestal</td>
-<td>Si las zonas de milpa aumentan, la cobertura forestal disminuye y se fragmenta</td>
-<td>-</td>
-<td>NE</td>
-</tr>
-<tr>
-<td>Zonas de agricultura tecnificada</td>
-<td>Cobertura forestal</td>
-<td>Si las zonas agrícolas aumentan, la cobertura forestal disminuye y se fragmenta</td>
-<td>-</td>
-<td>B (centro y oriente)    F(sur)</td>
-</tr>
-<tr>
-<td>Cobertura forestal</td>
-<td>Hábitat de flora y fauna</td>
-<td>Si la cobertura forestal aumenta,  el    hábitat de flora y fauna aumenta</td>
-<td>+</td>
-<td>NE</td>
-</tr>
-<tr>
-<td>Cobertura forestal</td>
-<td>Acuífero: disponibilidad de agua</td>
-<td>Si la cobertura forestal aumenta, las zonas de recarga del acuífero aumentan</td>
-<td>+</td>
-<td>NE</td>
-</tr>
-<tr>
-<td>Zonas de agricultura tecnificada</td>
-<td>Cobertura de especies melíferas</td>
-<td>Si las zonas agrícolas aumentan, la cobertura de especies melíferas disminuye</td>
-<td>-</td>
-<td>F, M</td>
-</tr>
-<tr>
-<td>Cobertura de especies melíferas</td>
-<td>Producción apícola</td>
-<td>Si la cobertura de especies melíferas aumenta,  la producción de miel aumenta</td>
-<td>+</td>
-<td>NE</td>
-</tr>
-<tr>
-<td>Zonas de agricultura tecnificada</td>
-<td>Uso de agroquímicos</td>
-<td>Si aumentan las zonas de agricultura tecnificada ,    el uso de agroquímicos aumenta</td>
-<td>+</td>
-<td>MF, F</td>
-</tr>
-<tr>
-<td>Uso de agroquímicos</td>
-<td>Producción apícola</td>
-<td>Si el uso de agroquímicos aumenta, la producción de miel disminuye por la muerte de abejas y la contaminación de la miel</td>
-<td>-</td>
-<td>F</td>
-</tr>
-<tr>
-<td>Producción apícola</td>
-<td>Zonas de agricultura tecnificada</td>
-<td>Si aumenta la presión social por los efectos en la apicultura de los cultivos de transgénicos, las zonas de agricultura tecnificada pueden disminuir</td>
-<td>-</td>
-<td>NE</td>
-</tr>
-<tr>
-<td>Uso de agroquímicos</td>
-<td>Vulnerabilidad del acuífero</td>
-<td>Si aumenta el uso de agroquímicos, la    vulnerabilidad específica de contaminación del acuífero aumenta</td>
-<td>+</td>
-<td>F (norte y oriente)    M(sur)</td>
-</tr>
-<tr>
-<td>Vulnerabilidad del acuífero</td>
-<td>Acuífero: calidad de agua</td>
-<td>Si aumenta la vulnerabilidad específica de contaminación del acuífero, la calidad    del agua disminuye</td>
-<td>-</td>
-<td>MF, F</td>
-</tr>
-<tr>
-<td>Acuífero: calidad de agua</td>
-<td>Zonas de agricultura tecnificada</td>
-<td>Si aumenta la calidad del agua, las zonas aptas para la agricultura tecnificada aumentan</td>
-<td>+</td>
-<td>NE</td>
-</tr>
-<tr>
-<td>Zonas de agricultura tecnificada</td>
-<td>Consumo de agua</td>
-<td>Si aumentan las zonas de agricultura tecnificada, la demanda de agua para riego aumenta</td>
-<td>+</td>
-<td>NE</td>
-</tr>
-<tr>
-<td>Consumo de agua</td>
-<td>Acuífero: disponibilidad de agua</td>
-<td>Si aumenta el consumo de agua, la disponibilidad de agua en el acuífero disminuye</td>
-<td>-</td>
-<td>MF, F (sur, Motul)</td>
-</tr>
-<tr>
-<td>Acuífero: disponibilidad de agua</td>
-<td>Acuífero: calidad de agua</td>
-<td>Si aumenta la disponibilidad de    agua del acuífero la calidad de agua del acuífero aumenta por dilución</td>
-<td>+</td>
-<td>NE</td>
-</tr>
-<tr>
-<td>Acuífero: disponibilidad de agua</td>
-<td>Humedales terrestres y costeros</td>
-<td>Si aumenta la disponibilidad de agua del acuífero, el flujo de agua a los humedales aumenta</td>
-<td>+</td>
-<td>NE</td>
-</tr>
-<tr>
-<td>Acuífero: calidad de agua</td>
-<td>Humedales terrestres y costeros</td>
-<td>Si aumenta la disponibilidad de    agua del acuífero, la calidad de agua que fluye a los humedales aumenta</td>
-<td>+</td>
-<td>NE</td>
-</tr>
-<tr>
-<td>Humedales terrestres y costeros</td>
-<td>Hábitat de flora y fauna</td>
-<td>Si aumenta la extensión y la calidad de agua de los humedales, el hábitat de flora y fauna aumenta</td>
-<td>+</td>
-<td>NE</td>
-</tr>
-</tbody>
-</table><div style="page-break-after: always;"></div></div>
+<p><img alt="_images/fi_tabla_interacc_agri.png" src="_images/fi_tabla_interacc_agri.png" /></p>
+<!--
+Variable causante | Variable afectada | Efecto | Dirección | Intensidad
+-- | -- | -- | -- | --
+Zonas de agricultura tecnificada | Zonas de milpa | Si las zonas de agricultura tecnificada aumentan, las zonas de milpa disminuyen | - | M, MB
+Zonas de milpa | Cobertura forestal | Si las zonas de milpa aumentan, la cobertura forestal disminuye y se fragmenta | - | NE
+Zonas de agricultura tecnificada | Cobertura forestal | Si las zonas agrícolas aumentan, la cobertura forestal disminuye y se fragmenta | - | B (centro y oriente)    F(sur)
+Cobertura forestal | Hábitat de flora y fauna | Si la cobertura forestal aumenta,  el    hábitat de flora y fauna aumenta | + | NE
+Cobertura forestal | Acuífero: disponibilidad de agua | Si la cobertura forestal aumenta, las zonas de recarga del acuífero aumentan | + | NE
+Zonas de agricultura tecnificada | Cobertura de especies melíferas | Si las zonas agrícolas aumentan, la cobertura de especies melíferas disminuye | - | F, M
+Cobertura de especies melíferas | Producción apícola | Si la cobertura de especies melíferas aumenta,  la producción de miel aumenta | + | NE
+Zonas de agricultura tecnificada | Uso de agroquímicos | Si aumentan las zonas de agricultura tecnificada ,    el uso de agroquímicos aumenta | + | MF, F
+Uso de agroquímicos | Producción apícola | Si el uso de agroquímicos aumenta, la producción de miel disminuye por la muerte de abejas y la contaminación de la miel | - | F
+Producción apícola | Zonas de agricultura tecnificada | Si aumenta la presión social por los efectos en la apicultura de los cultivos de transgénicos, las zonas de agricultura tecnificada pueden disminuir | - | NE
+Uso de agroquímicos | Vulnerabilidad del acuífero | Si aumenta el uso de agroquímicos, la    vulnerabilidad específica de contaminación del acuífero aumenta | + | F (norte y oriente)    M(sur)
+Vulnerabilidad del acuífero | Acuífero: calidad de agua | Si aumenta la vulnerabilidad específica de contaminación del acuífero, la calidad    del agua disminuye | - | MF, F
+Acuífero: calidad de agua | Zonas de agricultura tecnificada | Si aumenta la calidad del agua, las zonas aptas para la agricultura tecnificada aumentan | + | NE
+Zonas de agricultura tecnificada | Consumo de agua | Si aumentan las zonas de agricultura tecnificada, la demanda de agua para riego aumenta | + | NE
+Consumo de agua | Acuífero: disponibilidad de agua | Si aumenta el consumo de agua, la disponibilidad de agua en el acuífero disminuye | - | MF, F (sur, Motul)
+Acuífero: disponibilidad de agua | Acuífero: calidad de agua | Si aumenta la disponibilidad de    agua del acuífero la calidad de agua del acuífero aumenta por dilución | + | NE
+Acuífero: disponibilidad de agua | Humedales terrestres y costeros | Si aumenta la disponibilidad de agua del acuífero, el flujo de agua a los humedales aumenta | + | NE
+Acuífero: calidad de agua | Humedales terrestres y costeros | Si aumenta la disponibilidad de    agua del acuífero, la calidad de agua que fluye a los humedales aumenta | + | NE
+Humedales terrestres y costeros | Hábitat de flora y fauna | Si aumenta la extensión y la calidad de agua de los humedales, el hábitat de flora y fauna aumenta | + | NE
+
+<div style="page-break-after: always;"></div></div>
 </div>
 
 

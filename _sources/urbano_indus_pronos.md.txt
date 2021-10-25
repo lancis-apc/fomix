@@ -16,7 +16,7 @@ Variable | Definición | Unidades
 Acuífero: calidad del agua | Índice | Adimensional
 Acuífero: disponibilidad de agua | Disponibilidad Media Anual de Agua Subterránea | Hectómetros cúbicos
 Bancos de   materiales pétreos | Superficie de bancos de materiales | Hectáreas
-Calidad del aire | Promedio de emisiones de contaminantes atmosféricos | Partes por millón
+Calidad del aire | Índice | Adimensional
 Cobertura forestal | Superficie con cobertura forestal | Hectáreas
 Consumo de agua | Consumo de agua   para uso de servicios, urbano público, industrial y doméstico; Consumo promedio de agua por habitante | Metros cúbicos; Litros/habitante
 Generación y distribución de energía | Superficie de instalaciones de energía eólica, solar y termoeléctricas | Hectáreas
@@ -32,6 +32,9 @@ Zonas urbanas e industriales | Superficie de zonas urbanas e industriales | Hect
 
 ### Interacciones del diagrama que representa los efectos del crecimiento urbano e industrial
 
+![](./recursos/pronostico/urbano_indus/fi_tabla_interacc_urbano.jpg)
+
+<!--
 Variable causante | Variable afectada | Efecto | Dirección | Intensidad
 -- | -- | -- | -- | --
 Zonas urbanas e industriales | Cobertura forestal | Si aumentan las zonas urbanas e industriales    la cobertura forestal disminuye y se fragmenta | - | MF, F
