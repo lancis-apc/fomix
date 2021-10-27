@@ -3,16 +3,31 @@
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
-[Lista de participantes]()
+[Lista de participantes](https://www.dropbox.com/s/laqim2r47vcbjuh/asistencia_pronost_por_avi.pdf?dl=0)
 
-##
+### Diagrama que representa los efectos del crecimiento de la ganadería porcícola y avícola
 
-###  
+![](./recursos/pronostico/porcino_avi/fi_por_avi_informe.png)
 
-####
+### Variables del diagrama que representan los efectos del crecimiento de la ganadería porcícola y avícola
 
-### Figura
+Variable | Definición | Unidades
+-- | -- | --
+Acuífero: calidad del agua | Índice | Adimensional
+Acuífero: diponibilidad de agua | Disponibilidad Media Anual de Agua Subterránea | Hectómetros cúbicos
+Calidad del aire | Promedio de emisiones de contaminantes atmosféricos | Partes por millón
+Cobertura forestal | Superficie con cobertura forestal | Hectáreas
+Consumo de agua | Consumo promedio de agua por granja | Metros cúbicos por año
+Granjas porcícolas y avícolas | Número de animales y/o número de granjas | Cabezas y granjas
+Hábitat de flora y fauna | Superficie total del hábitat interior de parches de vegetación   natural | Hectáreas
+Humedales costeros y   terrestres | Superficie de humedales, cenotes, dolinas, aguadas, etc | Hectáreas
+Inversión | Programas de fomento gubernamentales o inversión de los productores | Pesos
+Residuos sólidos y líquidos | Excretas y aguas residuales | Toneladas y metros cúbicos
+Tren Maya | Proyecto Tren Maya |  
+Vulnerabilidad del acuífero | Superficie de acuífero con vulnerabilidad alta a la contaminación | Hectáreas
 
-![](./recursos/pronostico/porcino_avi/fi.png)
+### Interacciones del diagrama que representa los efectos del crecimiento de la ganadería porcícola y avícola
+
+![](./recursos/pronostico/porcino_avi/fi_tabla_interacc_por_avi.png)
 
 <div style="page-break-after: always;"></div>
