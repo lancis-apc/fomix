@@ -1,0 +1,40 @@
+# Energía
+
+<!-- Ruta de la documentación:
+FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
+
+[Lista de participantes](https://www.dropbox.com/s/7kxi644ji7xsysy/asistencia_pronost_ene.pdf?dl=0)
+
+### Diagrama que representa los efectos del crecimiento del sector energético
+
+![](./recursos/pronostico/energia/fi_energia_informe.png)
+
+### Variables del diagrama que representa los efectos del crecimiento del sector energético
+
+Variable | Definición | Unidades
+-- | -- | --
+Acuífero: calidad del agua | Índice | Adimensional
+Acuífero: disponibilidad de agua | Disponibilidad Media Anual de Agua Subterránea | Hectómetros cúbicos
+Aguas residuales | Aguas residuales | Metros cúbicos
+Calidad del aire | Índice | Adimensional
+Cobertura forestal | Superficie con cobertura forestal | Hectáreas
+Consumo de agua | Consumo promedio de agua por planta | Metros cúbicos por año
+Ductos de distribución de combustibles | Gasoductos | Kilómetros
+Generación y distribución de energía | Superficie de instalaciones de energía eólica, solar y termoeléctricas | Hectáreas
+Hábitat de flora y fauna | Superficie total del hábitat interior de parches de vegetación natural | Hectáreas
+Población aves y murciélagos | Número de aves y murciélagos | Número de animales
+Termoeléctricas | Superficie de plantas termoeléctricas | Hectáreas
+Vulnerabilidad del acuífero | Superficie de acuífero con vulnerabilidad alta a la contaminación | Hectáreas
+Zonas agrícolas | Superficie de zonas de uso agrícola | Hectáreas
+Zonas agropecuarias | Superficie de zonas con uso agropecuario | Hectáreas
+Zonas energía eólica | Superficie con proyectos de energía eólica | Hectáreas
+Zonas energía solar | Superficie con proyectos de energía solar | Hectáreas
+Zonas pecuarias | Superficie de zonas de uso pecuario bovino, pecuario porcino y avícola | Hectáreas
+Zonas turismo de sol y playa | Superficie de zonas de uso turístico de sol y playa | Hectáreas
+Zonas urbanas e industriales | Superficie de zonas urbanas e industriales | Hectáreas
+
+### Interacciones del diagrama que representa los efectos del crecimiento del sector energético
+
+![](./recursos/pronostico/energia/fi_tabla_interacc_ene.png)
+
+<div style="page-break-after: always;"></div>
