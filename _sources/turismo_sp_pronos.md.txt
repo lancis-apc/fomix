@@ -1,0 +1,39 @@
+# Turismo sol y playa
+
+<!-- Ruta de la documentación:
+FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
+
+[Lista de participantes](https://www.dropbox.com/s/qimizdo49517f87/asistencia_pronost_tur.pdf?dl=0)
+
+### Diagrama que representa los efectos del crecimiento del turismo de sol y playa
+
+![](./recursos/pronostico/turismo/fi_turismo_informe.png)
+
+### Variables del diagrama que representa los efectos del crecimiento del turismo de sol y playa
+
+Variable | Definición | Unidades
+-- | -- | --
+Acceso público a playas | Libre acceso y tránsito por las playas y la zona federal marítimo   terrestre |  
+Acuífero: calidad del agua | Índice | Adimensional
+Acuífero: disponibilidad de agua | Disponibilidad Media Anual de Agua Subterránea | Hectómetros cúbicos
+Áreas Naturales Protegidas | Zonas establecidas como Áreas Naturales Protegidas | Hectáreas
+Áreas para desarrollo de acuacultura y   pesca | Superficie de zonas con uso acuícola o pesquero | Hectáreas
+Bancos de materiales pétreos | Superficie de bancos de materiales | Hectáreas
+Cobertura forestal | Superficie con cobertura forestal | Hectáreas
+Consumo de agua | Consumo promedio de agua por instalaciones hoteleras | Metros cúbicos por año
+Generación y distribución de energía | Superficie de instalaciones de energía eólica, solar y termoeléctricas | Hectáreas
+Hábitat de flora y fauna | Superficie total del hábitat interior de parches de vegetación natural | Hectáreas
+Humedales costeros | Superficie de humedales costeros | Hectáreas
+Inversión | Programas de fomento gubernamentales o inversión privada | Pesos
+Residuos sólidos y líquidos | Residuos sólidos y aguas residuales | Toneladas y metros cúbicos
+Sistema playa-duna | Superficie de dunas costeras | Hectáreas
+Vulnerabilidad ante eventos   hidrometeorológicos | Índice | Adimensional
+Vulnerabilidad del acuífero | Superficie de acuífero con vulnerabilidad alta a la contaminación | Hectáreas
+Zonas turismo sol y playa | Superficie con uso turístico de sol y playa y pesca recreativa | Hectáreas
+Zonas urbanas | Superficie de zonas urbanas | Hectáreas
+
+### Interacciones del diagrama que representa los efectos del crecimiento del turismo de sol y playa
+
+![](./recursos/pronostico/turismo/fi_tabla_interacc_tur.jpg)
+
+<div style="page-break-after: always;"></div>

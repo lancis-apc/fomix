@@ -66,7 +66,10 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    introduccion_pronos
    agricultura_pronos
    bovino_pronos
+   cambio_clima_pronos
+   energia_pronos
    porcino_avi_pronos
+   turismo_sp_pronos
    urbano_indus_pronos
 
    
