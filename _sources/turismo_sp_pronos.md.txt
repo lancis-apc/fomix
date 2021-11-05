@@ -36,4 +36,14 @@ Zonas urbanas | Superficie de zonas urbanas | Hectáreas
 
 ![](./recursos/pronostico/turismo/fi_tabla_interacc_tur.jpg)
 
+![](./recursos/pronostico/turismo/fi_tabla_interacc_tur2.png)
+
+![](./recursos/pronostico/turismo/fi_tabla_interacc_tur3.png)
+
+### Justificación de la evaluación de intensidad de las interacciones
+
+![](./recursos/pronostico/turismo/fi_justificacion.png)
+
+![](./recursos/pronostico/turismo/fi_justificacion2.png)
+
 <div style="page-break-after: always;"></div>

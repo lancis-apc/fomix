@@ -34,6 +34,12 @@ Zonas urbanas e industriales | Superficie de zonas urbanas e industriales | Hect
 
 ![](./recursos/pronostico/urbano_indus/fi_tabla_interacc_urbano.jpg)
 
+![](./recursos/pronostico/urbano_indus/fi_tabla_interacc_urbano2.png)
+
+### Justificación de la evaluación de intensidad de las interacciones
+
+![](./recursos/pronostico/urbano_indus/fi_justificacion.png)
+
 <!--
 Variable causante | Variable afectada | Efecto | Dirección | Intensidad
 -- | -- | -- | -- | --

@@ -31,6 +31,13 @@ Zonas de producción forestal | Zonas de aprovechamiento forestal | Hectáreas
 ### Interacciones del diagrama que representa los efectos del crecimiento agrícola
 
 ![](./recursos/pronostico/agricola/fi_tabla_interacc_agri.png)
+
+![](./recursos/pronostico/agricola/fi_tabla_interacc_agri2.png)
+
+### Justificación de la evaluación de intensidad de las interacciones
+
+![](./recursos/pronostico/agricola/fi_tabla_just_interacc_agri.png)
+
 <!--
 Variable causante | Variable afectada | Efecto | Dirección | Intensidad
 -- | -- | -- | -- | --

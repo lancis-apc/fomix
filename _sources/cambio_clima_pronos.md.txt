@@ -40,4 +40,16 @@ Incendios | Incidencia de incendios | Número de incendios, Superficie afectada
 
 ![](./recursos/pronostico/cambio_clima/fi_tabla_interacc_camb_clim.png)
 
+![](./recursos/pronostico/cambio_clima/fi_tabla_interacc_camb_clim2.png)
+
+![](./recursos/pronostico/cambio_clima/fi_tabla_interacc_camb_clim3.png)
+
+### Justificación de la evaluación de intensidad de las interacciones
+
+![](./recursos/pronostico/cambio_clima/fi_tabla_just_interacc_camb_clim.png)
+
+*Mardero, S., Schmook, B., López-Martínez, J. O., Cicero, L., Radel, C., & Christman, Z. (2018). The uneven influence of climate trends   and agricultural policies on maize production in the Yucatan Peninsu-la, Mexico. Land, 7(3), 80.     
+** Rodríguez-Huerta, E., Rosas-Casals, M., & Hernández-Terrones, L. M. (2020). A water balance model to estimate climate change impact on   groundwater recharge in Yucatan Peninsula, Mexico. Hydrological Sciences Journal, 65(3), 470-486.     
+*** Zavala-Hidalgo, J., De Buen Kalman, R., Romero-Centeno, R., & Hernández-Maguey, F. (2010). Tendencias del nivel del mar en las costas mexicanas. Vulnerabilidad de las zonas costeras mexicanas ante el cambio   climático, 249-268.
+
 <div style="page-break-after: always;"></div>

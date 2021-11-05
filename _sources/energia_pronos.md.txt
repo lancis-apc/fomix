@@ -37,4 +37,12 @@ Zonas urbanas e industriales | Superficie de zonas urbanas e industriales | Hect
 
 ![](./recursos/pronostico/energia/fi_tabla_interacc_ene.png)
 
+![](./recursos/pronostico/energia/fi_tabla_interacc_ene2.png)
+
+### Justificación de la evaluación de intensidad de las interacciones
+
+![](./recursos/pronostico/energia/fi_justificacion.png)
+
+![](./recursos/pronostico/energia/fi_justificacion2.png)
+
 <div style="page-break-after: always;"></div>

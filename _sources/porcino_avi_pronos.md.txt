@@ -30,4 +30,12 @@ Vulnerabilidad del acuífero | Superficie de acuífero con vulnerabilidad alta a
 
 ![](./recursos/pronostico/porcino_avi/fi_tabla_interacc_por_avi.png)
 
+### Justificación de la evaluación de intensidad de las interacciones
+
+![](./recursos/pronostico/porcino_avi/fi_justificacion.png)
+
+![](./recursos/pronostico/porcino_avi/fi_justificacion2.png)
+
+*Novelo,   R. M., Borges, E. C., Borges, E. V., Pérez, O. B., Peraza, V. C., Canul, R.   P., & Vivas, P. G. (2009). Estimación del potencial contaminante de las   granjas porcinas y avícolas del estado de Yucatán. Ingeniería, 13(2), 13-21.
+
 <div style="page-break-after: always;"></div>

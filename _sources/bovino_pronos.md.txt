@@ -32,4 +32,12 @@ Zonas de ganadería de bovinos | Número de cabezas de ganado | Número de anima
 
 ![](./recursos/pronostico/bovino/fi_tabla_interacc_bov.png)
 
+![](./recursos/pronostico/bovino/fi_tabla_interacc_bov2.png)
+
+### Justificación de la evaluación de intensidad de las interacciones
+
+![](./recursos/pronostico/bovino/fi_tabla_just_interacc_bov.png)
+
+![](./recursos/pronostico/bovino/fi_tabla_just_interacc_bov2.png)
+
 <div style="page-break-after: always;"></div>
