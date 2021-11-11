@@ -1,10 +1,52 @@
 # Forestal
 
+## Forestal **vs.** Apicultura
+
+### Descripción del conflicto
+
+- Pérdida de especies de plantas melíferas producto de la deforestación acelerada.
+
+
+#### Recursos afectados
+
+* Biodiversidad.
+
+
+#### Ubicación reportada
+
+- Sin dato.
+
+
+#### Fuentes
+
+- Clave de registro en encuesta de conflictos ambientales: F8.
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_forestal_apicultura_extension.png)
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_forestal_eq_cruza_apicultura_eq.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_forestal_apicultura_indices.png)
+
+
 ## Forestal **vs.** Conservación
 
 ### Descripción del conflicto
 
-- Deforestación y pérdida de biodiversidad por aprovechamiento forestal y cultivo de maderas preciosas - cedros por aplicación del Programa Sembrando vida.
+- Deforestación y afectación a fauna nativa por aprovechamiento forestal y cultivo de maderas preciosas (cedros) por aplicación del Programa Sembrando vida.
 
 
 #### Recursos afectados
@@ -22,6 +64,48 @@
 - Batllori 2019.
 - Taller forestal.
 - Clave de registro en encuesta de conflictos ambientales: F39.
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_forestal_conservacion_extension.png)
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_forestal_eq_cruza_conservacion_eq.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_forestal_conservacion_indices.png)
+
+
+## Forestal **vs.** Urbano
+
+### Descripción del conflicto
+
+- Restricciones a la expansión urbana.
+
+
+#### Recursos afectados
+
+* Espacio físico.
+
+
+#### Ubicación reportada
+
+- Sin dato.
+
+
+#### Fuentes
+
+- Clave de registro en encuesta de conflictos ambientales: F16.
 
 
 ### Superficie de conflicto por categorías de aptitud (km²)

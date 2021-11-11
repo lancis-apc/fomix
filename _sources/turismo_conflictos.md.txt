@@ -6,11 +6,11 @@
 
 - Impacto sobre humedales, esteros y arrecifes afecta hábitats costeros y acuáticos.
 - Modificación de los cenotes para fines turísticos.
-
+- Contaminación por uso turístico de los cenotes.
 
 #### Recursos afectados
 
-* Agua, humedales.
+* Agua, humedales, playa, manglares.
 
 
 #### Ubicación reportada
@@ -20,8 +20,8 @@
 
 #### Fuentes
 
-- García de Fuentes et al. 2019, Herrera Silveira 2006, Salas et al. 2006.
-- Clave de registro en encuesta de conflictos ambientales: F40.
+- García de Fuentes et al. 2019, Herrera Silveira 2006, Salas et al. 2006
+- Clave de registro en encuesta de conflictos ambientales: F17
 
 
 ### Superficie de conflicto por categorías de aptitud (km²)
@@ -42,3 +42,44 @@ Los conflictos ambientales resultan de la sopreposición de las categorías Alta
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
 ![](./recursos/conflictos/fi_tur_naturaleza_conservacion_indices.png)
+
+
+## Turismo de naturaleza **vs.** Pesca
+
+### Descripción del conflicto
+
+- Impacto sobre humedales, esteros y arrecifes afecta hábitats costeros y acuáticos.
+
+#### Recursos afectados
+
+* Humedales, playa, manglares.
+
+
+#### Ubicación reportada
+
+- Sin dato.
+
+
+#### Fuentes
+
+- Herrera Silveira 2006, Salas et al. 2006
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_turismo_naturaleza_pesca_extension.png)
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_tur_naturaleza_eq_cruza_pesca_pg_1_8.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_turismo_naturaleza_pesca_indices.png)

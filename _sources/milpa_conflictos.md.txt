@@ -21,7 +21,7 @@
 #### Fuentes
 
 - Batllori 2019, Cepeda y Amoroso 2016.
-- Taller milpa maya y apicultura.
+- Taller forestal, taller milpa y apicultura.
 - Clave de registro en encuesta de conflictos ambientales: F2.
 
 
@@ -67,7 +67,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 #### Fuentes
 
 - Batllori 2019, Cepeda y Amoroso 2016.
-- Taller milpa maya y apicultura.
+- Taller forestal, taller milpa y apicultura.
 - Clave de registro en encuesta de conflictos ambientales: F2.
 
 

@@ -40,3 +40,87 @@ Los conflictos ambientales resultan de la sopreposición de las categorías Alta
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
 ![](./recursos/conflictos/fi_conservacion_acuacultura_salobre_indices.png)
+
+
+## Conservación **vs.** Minería
+
+### Descripción del conflicto
+
+* Restricciones a la expansión de la minería.
+
+
+#### Recursos afectados
+
+- Suelo.
+
+
+#### Ubicación reportada
+
+- Sin dato.
+
+
+#### Fuentes
+
+- Clave de registro en encuesta de conflictos ambientales: F34.
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_conservacion_mineria_extension.png)
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_conservacion_eq_cruza_mineria_eq.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_conservacion_mineria_indices.png)
+
+
+## Conservación **vs.** Urbano
+
+### Descripción del conflicto
+
+* Limitaciones para el crecimiento urbano por estar dentro de un Área Natural Protegida.
+
+
+#### Recursos afectados
+
+- Espacio físico.
+
+
+#### Ubicación reportada
+
+- San Felipe.
+
+
+#### Fuentes
+
+- Clave de registro en encuesta de conflictos ambientales: F57.
+
+
+### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_conservacion_urbano_extension.png)
+
+<div style="page-break-after: always;"></div>
+
+### Mapa de conflictos
+
+Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
+
+![](./recursos/conflictos/mapa_conservacion_eq_cruza_urbano_eq.png)
+
+
+### Índices de conflictos ambientales
+
+Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
+
+![](./recursos/conflictos/fi_conservacion_urbano_indices.png)

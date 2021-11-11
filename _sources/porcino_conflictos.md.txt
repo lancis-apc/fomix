@@ -6,29 +6,29 @@
 
 ### Descripción del conflicto
 
-- Contaminación de cenotes, acuífero y lagunas costeras por la descarga de desechos de las granjas sin tratamiento.
-- Contaminación de acuífero por uso de herbicidas e insecticidas en potreros.
-- Intrusión salina por extracción de agua para uso pecuario.
-- Escasez de agua por extracción de agua para uso pecuario.
+- Contaminación de cenotes, acuífero y lagunas costeras por la descarga de desechos sin tratamiento de los corrales de bovinos y las granjas porcícolas y avícolas.
+- Pérdida y fragmentación de ecosistemas por invasión o cambio de uso de suelo derivado del creci-miento de las áreas ganaderas (se mencionan en particular humedales, selvas, hábitat de jaguar).
 
 
 #### Recursos afectados
 
-* Agua, aire.
+* Agua, aire, vegetación forestal.
 
 
 #### Ubicación reportada
 
-- Municipios: Abalá, Acanceh, Cacalchén, Conkal, Homún, Hunucmá, Kanasín, Muxupip, Tekantó, Tizimín.
-- Regiones: Noroeste.
-- Reserva Estatal Geohidrológica del Anillo de Cenotes y Punta Laguna.
+- Municipios: Abalá, Acanceh, Buctzotz, Cacalchén, Conkal, Homún, Hunucmá, Kanasín, Muxupip, Pana-bá, San Felipe, Sucilá, Tekantó, Tekax, Tizimín.
+- Regiones: Noroeste, Oriente, Litoral Centro, Centro.
+- Reserva Estatal Geohidrológica del Anillo de Cenotes.
+- Reserva Estatal Dzilam - Reserva de la Biosfera Ría Lagartos (humedales).
+- UMAFOR 3105: 16 municipios (Cenotillo, Chankom, Dzitás, Hocabá, Hoctún, Huhí, Izamal, Kantunil, Quintana Roo, Sanahcat, Sotuta, Sudzal, Tekal de Venegas, Tunkás, Xocchel, Yaxcabá).
 
 
 #### Fuentes
 
-- Batllori, 2019, García de Fuentes et al. 2019, OCDE 2019, Batllori 2016, FAO-SEDER-Gobierno de Yucatán 2016, Novelo et al. 2009, Drucker et al. 2003.
-- Taller pecuario porcino y avícola.
-- Clave de registro en encuesta de conflictos ambientales: F7, F13, F14, F31, F45 y F46.
+- Batllori, 2019, García de Fuentes et al. 2019, OCDE 2019, Ellis et al. 2017, Cruz Zamudio 2017, Batllori 2016, Cepeda y Amoroso 2016, FAO-SEDER-Gobierno de Yucatán 2016, Ellis et al. 2015, Ch´iibal Ma-yao´ob A.C. 2011, González Acereto y Quezada Euán, 2010, Méndez et al. 2009, Drucker et al. 2003, Ayala Arcipestre 2001, Greenpeace s.f.
+- Taller pecuario bovino, taller pecuario porcino y avícola, taller pesca y acuacultura.
+- Clave de registro en encuesta de conflictos ambientales: F7, F13, F14, F29, F31, F45, F46, F48, F49; F54 y F55.
 
 
 ### Superficie de conflicto por categorías de aptitud (km²)
@@ -57,7 +57,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ### Descripción del conflicto
 
-- Contaminación del aire y malos olores generados por los desechos de las granjas porcícolas (emi-siones de amoniaco, sulfuros de hidrógeno metano y dióxido de carbono).
+- Contaminación del aire y malos olores generados por los desechos de los corrales de bovinos y las gran-jas porcícolas y avícolas.
 
 
 #### Recursos afectados
@@ -72,10 +72,9 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 #### Fuentes
 
-- Batllori 2019, Drucker et al. 2003.
-- Taller pecuario porcino y avícola.
-- Clave de registro en encuesta de conflictos ambientales: F3 y F9
-es: F7, F13, F14, F31, F45 y F46.
+- Batllori 2019, Drucker et al. 2003, Greenpeace s.f.
+- Taller pecuario bovino, taller pecuario porcino y avícola.
+- Clave de registro en encuesta de conflictos ambientales: F3 y F9.
 
 
 ### Superficie de conflicto por categorías de aptitud (km²)
