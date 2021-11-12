@@ -32,19 +32,19 @@ Sector | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16
 2 | - | - | - | - | [1](https://lancis-apc.github.io/fomix/acuacultura_s_conflictos.html) | - | - | - | - | - | - | - | - | - | - | -
 3 | - | - | - | [1](https://lancis-apc.github.io/fomix/agricultura_conflictos.html) | [1](https://lancis-apc.github.io/fomix/agricultura_conflictos.html#agricultura-tecnificada-vs-conservacion) | - | [1](https://lancis-apc.github.io/fomix/agricultura_conflictos.html#agricultura-tecnificada-vs-forestal) | - | [1](https://lancis-apc.github.io/fomix/agricultura_conflictos.html#agricultura-tecnificada-vs-milpa-maya) | - | - | - | - | - | - | -
 4 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -
-5 | - | [1](https://lancis-apc.github.io/fomix/conservacion_conflictos.html#conservacion-vs-acuacultura-salobre) | - | - | - | - | - | - | - | [1]() | - | - | - | - | - | [1]()
-6 | - | - | - | [1]() | [1]() | - | - | - | [1]() | - | - | - | - | - | - | -
-7 | - | - | - | [1]() | [1]() | - | - | - | - | - | - | - | - | - | - | [1]()
-8 | - | - | - | - | [1]() | - | [1]() | - | - | - | - | - | - | - | - | -
-9 | - | - | - | - | [1]() | - | [1]() | - | - | - | - | - | - | - | - | -
-10 | - | - | - | - | [1]() | - | - | - | - | - | - | - | - | - | - | [1]()
-11 | - | - | - | [1]() | [1]() | - | - | - | - | - | - | - | - | - | - | [1]()
-12 | - | - | - | - | [1]() | - | - | - | - | - | - | - | - | - | - | [1]()
+5 | - | [1](https://lancis-apc.github.io/fomix/conservacion_conflictos.html#conservacion-vs-acuacultura-salobre) | - | - | - | - | - | - | - | [1](https://lancis-apc.github.io/fomix/conservacion_conflictos.html#conservacion-vs-mineria) | - | - | - | - | - | [1](https://lancis-apc.github.io/fomix/conservacion_conflictos.html#conservacion-vs-urbano)
+6 | - | - | - | [1](https://lancis-apc.github.io/fomix/energia_conflictos.html#energia-renovable-vs-apicultura) | [1](https://lancis-apc.github.io/fomix/energia_conflictos.html#energia-renovable-vs-conservacion) | - | - | - | [1](https://lancis-apc.github.io/fomix/energia_conflictos.html#energia-renovable-vs-milpa-maya) | - | - | - | - | - | - | -
+7 | - | - | - | [1](https://lancis-apc.github.io/fomix/forestal_conflictos.html#forestal-vs-apicultura) | [1](https://lancis-apc.github.io/fomix/forestal_conflictos.html#forestal-vs-conservacion) | - | - | - | - | - | - | - | - | - | - | [1](https://lancis-apc.github.io/fomix/forestal_conflictos.html#forestal-vs-urbano)
+8 | - | - | - | - | [1](https://lancis-apc.github.io/fomix/industrial_conflictos.html#industrial-vs-conservacion) | - | [1](https://lancis-apc.github.io/fomix/industrial_conflictos.html#industrial-vs-forestal) | - | - | - | - | - | - | - | - | -
+9 | - | - | - | - | [1](https://lancis-apc.github.io/fomix/milpa_conflictos.html#milpa-maya-vs-conservacion) | - | [1](https://lancis-apc.github.io/fomix/milpa_conflictos.html#milpa-maya-vs-forestal) | - | - | - | - | - | - | - | - | -
+10 | - | - | - | - | [1](https://lancis-apc.github.io/fomix/mineria_conflictos.html#mineria-vs-conservacion) | - | - | - | - | - | - | - | - | - | - | [1](https://lancis-apc.github.io/fomix/mineria_conflictos.html#mineria-vs-urbano)
+11 | - | - | - | [1](https://lancis-apc.github.io/fomix/bovino_conflictos.html#pecuario-bovino-vs-apicola) | [1](https://lancis-apc.github.io/fomix/bovino_conflictos.html#pecuario-bovino-vs-conservacion) | - | - | - | - | - | - | - | - | - | - | [1](https://lancis-apc.github.io/fomix/bovino_conflictos.html#pecuario-bovino-vs-urbano)
+12 | - | - | - | - | [1](https://lancis-apc.github.io/fomix/porcino_conflictos.html#porcino-y-avicola-vs-conservacion) | - | - | - | - | - | - | - | - | - | - | [1](https://lancis-apc.github.io/fomix/porcino_conflictos.html#porcino-y-avicola-vs-urbano)
 13 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -
-14 | - | - | - | - | [1]() | - | - | - | - | - | - | - | [1]() | - | - | -
-15 | - | [1]() | - | - | [1]() | - | - | - | - | - | - | - | [1]() | [1]() | - | [1]()
-16 | - | - | [1]() | - | [1]() | - | [1]() | - | - | - | - | [1]() | - | [1]() | [1]() | -
+14 | - | - | - | - | [1](https://lancis-apc.github.io/fomix/turismo_conflictos.html#turismo-de-naturaleza-vs-conservacion) | - | - | - | - | - | - | - | [1](https://lancis-apc.github.io/fomix/turismo_conflictos.html#turismo-de-naturaleza-vs-pesca) | - | - | -
+15 | - | [1](https://lancis-apc.github.io/fomix/turismo_sol_playa_conflictos.html#turismo-de-sol-y-playa-vs-acuacultura-salobre) | - | - | [1](https://lancis-apc.github.io/fomix/turismo_sol_playa_conflictos.html#turismo-de-sol-y-playa-vs-conservacion) | - | - | - | - | - | - | - | [1](https://lancis-apc.github.io/fomix/turismo_sol_playa_conflictos.html#turismo-de-sol-y-playa-vs-pesca) | [1](https://lancis-apc.github.io/fomix/turismo_sol_playa_conflictos.html#turismo-de-sol-y-playa-vs-turismo-de-naturaleza) | - | [1](https://lancis-apc.github.io/fomix/turismo_sol_playa_conflictos.html#turismo-de-sol-y-playa-vs-urbano)
+16 | - | - | [1](https://lancis-apc.github.io/fomix/urbano_conflictos.html#urbano-vs-agricultura-tecnificada) | - | [1](https://lancis-apc.github.io/fomix/urbano_conflictos.html#urbano-vs-conservacion) | - | [1](https://lancis-apc.github.io/fomix/urbano_conflictos.html#urbano-vs-forestal) | - | - | - | - | [1](https://lancis-apc.github.io/fomix/urbano_conflictos.html#urbano-vs-pecuario-porcino-y-avicola) | - | [1](https://lancis-apc.github.io/fomix/urbano_conflictos.html#urbano-vs-turismo-de-naturaleza) | [1](https://lancis-apc.github.io/fomix/urbano_conflictos.html#urbano-vs-turismo-de-sol-y-playa) | -
 
 Nota: Renglón afecta a columna
 
-Identificación de sectores: 1 = Acuacultura de agua dulce, 2 = Acuacultura salobre, 3 = Agricultura tecnificada, 4 = Apicultura, 5 = Conservación, 6 = Energía, 7 = Forestal, 8 = Industrial, 9 = Milpa maya, 10 = Minería, 11 = Pecuario bovino, 12 = Pecuario porcino y avícola, 13 = Pesca, 14 = Turismo de natu-raleza, 15 = Turismo de sol y playa, 16 = Urbano
+Identificación de sectores: 1 = Acuacultura de agua dulce, 2 = Acuacultura salobre, 3 = Agricultura tecnificada, 4 = Apicultura, 5 = Conservación, 6 = Energía, 7 = Forestal, 8 = Industrial, 9 = Milpa maya, 10 = Minería, 11 = Pecuario bovino, 12 = Pecuario porcino y avícola, 13 = Pesca, 14 = Turismo de naturaleza, 15 = Turismo de sol y playa, 16 = Urbano
