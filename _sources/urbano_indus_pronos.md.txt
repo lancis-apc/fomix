@@ -3,7 +3,7 @@
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
-[Lista de participantes](https://www.dropbox.com/s/ocazajcfvfdsdeg/asistencia_taller_pron_urb_ind_12oct21.pdf?dl=0)
+[Lista de participantes](https://www.dropbox.com/s/q49oyh8pcz2qsa6/asistencia_pronost_urb_ind.pdf?dl=0)
 
 ### Diagrama que representa los efectos del crecimiento urbano e industrial
 

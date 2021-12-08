@@ -3,7 +3,7 @@
 <!-- Ruta de la documentación:
 FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
 
-[Lista de participantes](https://www.dropbox.com/s/06d1mxg53vb48kg/asistencia_taller_pron_agr_14oct21.pdf?dl=0)
+[Lista de participantes](https://www.dropbox.com/s/q4xkjogz0zei7zo/asistencia_pronost_agr.pdf?dl=0)
 
 ### Diagrama que representa los efectos del crecimiento agrícola
 
