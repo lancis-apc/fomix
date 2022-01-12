@@ -1,11 +1,11 @@
 # Milpa maya
 
-## Milpa maya **vs.** Conservación
+## Milpa maya afecta a Conservación
 
 
 ### Descripción del conflicto
 
-- Incendios y deforestación de selvas y áreas forestales de aprovechamiento maderable y no made-rable por expansión de la milpa debido a la pérdida de fertilidad del suelo.
+- Incendios y deforestación de selvas y áreas forestales de aprovechamiento maderable y no maderable por expansión de la milpa debido a la pérdida de fertilidad del suelo.
 
 
 #### Recursos afectados
@@ -46,7 +46,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 
 
-## Milpa maya **vs.** Forestal
+## Milpa maya afecta a Forestal
 
 
 ### Descripción del conflicto

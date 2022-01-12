@@ -1,13 +1,13 @@
 # Pecuario porcino y avícola
 
 
-## Porcino y avícola **vs.** Conservación
+## Porcino y avícola afecta a Conservación
 
 
 ### Descripción del conflicto
 
 - Contaminación de cenotes, acuífero y lagunas costeras por la descarga de desechos sin tratamiento de los corrales de bovinos y las granjas porcícolas y avícolas.
-- Pérdida y fragmentación de ecosistemas por invasión o cambio de uso de suelo derivado del creci-miento de las áreas ganaderas (se mencionan en particular humedales, selvas, hábitat de jaguar).
+- Pérdida y fragmentación de ecosistemas por invasión o cambio de uso de suelo derivado del crecimiento de las áreas ganaderas (se mencionan en particular humedales, selvas, hábitat de jaguar).
 
 
 #### Recursos afectados
@@ -17,7 +17,7 @@
 
 #### Ubicación reportada
 
-- Municipios: Abalá, Acanceh, Buctzotz, Cacalchén, Conkal, Homún, Hunucmá, Kanasín, Muxupip, Pana-bá, San Felipe, Sucilá, Tekantó, Tekax, Tizimín.
+- Municipios: Abalá, Acanceh, Buctzotz, Cacalchén, Conkal, Homún, Hunucmá, Kanasín, Muxupip, Panabá, San Felipe, Sucilá, Tekantó, Tekax, Tizimín.
 - Regiones: Noroeste, Oriente, Litoral Centro, Centro.
 - Reserva Estatal Geohidrológica del Anillo de Cenotes.
 - Reserva Estatal Dzilam - Reserva de la Biosfera Ría Lagartos (humedales).
@@ -52,12 +52,12 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 
 
-## Porcino y avícola **vs.** Urbano
+## Porcino y avícola afecta a Urbano
 
 
 ### Descripción del conflicto
 
-- Contaminación del aire y malos olores generados por los desechos de los corrales de bovinos y las gran-jas porcícolas y avícolas.
+-Contaminación del aire y malos olores generados por los desechos de los corrales de bovinos y las granjas porcícolas y avícolas.
 
 
 #### Recursos afectados
@@ -79,18 +79,19 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](./recursos/conflictos/fi_pec_porcino_urbano_extension.png)
+![](./recursos/conflictos/fi_porcino_avicola_vs_crec_urbano_resc_extension.png)
 
 <div style="page-break-after: always;"></div>
+
 ### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](./recursos/conflictos/mapa_porcino_avicola_eq_cruza_urbano_eq.png)
+![](./recursos/conflictos/mapa_porcino_avicola_eq_cruza_crec_urbano_resc.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](./recursos/conflictos/fi_porcino_avicola_urbano_indices.png)
+![](./recursos/conflictos/fi_porcino_avicola_vs_crec_urbano_resc_indice.png)

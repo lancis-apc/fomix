@@ -1,7 +1,7 @@
 # Urbano
 
 
-## Urbano **vs.** Agricultura tecnificada
+## Urbano afecta a Agricultura tecnificada
 
 
 ### Descripción del conflicto
@@ -26,7 +26,7 @@
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](./recursos/conflictos/fi_urbano_agricultura_extension.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_agricultura_extension.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -34,17 +34,17 @@
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](./recursos/conflictos/mapa_urbano_eq_cruza_agricultura_eq.png)
+![](./recursos/conflictos/mapa_crec_urbano_resc_cruza_agricultura_eq.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](./recursos/conflictos/fi_urbano_agricultura_indices.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_agricultura_indice.png)
 
 
-## Urbano **vs.** Conservación
+## Urbano afecta a Conservación
 
 
 ### Descripción del conflicto
@@ -66,7 +66,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 #### Ubicación reportada
 
-- Municipios: Abalá, Cenotillo, Chocholá, Conkal, Cuzamá, Homún, Huhí, Hunucmá, Izamal, Kantunil, Kaua, Kopomá, Mérida, Motul, Progreso, Sisal, Tecoh, Tekax, Telchac Puerto, Temozón, Tizimín, Valla-dolid, Yaxcabá
+- Municipios: Abalá, Cenotillo, Chocholá, Conkal, Cuzamá, Homún, Huhí, Hunucmá, Izamal, Kantunil, Kaua, Kopomá, Mérida, Motul, Progreso, Sisal, Tecoh, Tekax, Telchac Puerto, Temozón, Tizimín, Valla-dolid, Yaxcabá.
 Regiones: II Noroeste, Zona central de Mérida.
 - Zonas urbanas y peri-urbanas (Ciudad Caucel, Fracc. Los Héroes, Fracc. Las Américas), ZMM (Mérida, Conkal, Kanasín, Progreso, Ucú y Umán), Chicxulub Pueblo, Dzemul, Ixil, Izamal, Hunucmá, Telchac Puerto y Tixpéhual.
 - UMAFOR 3105: 16 municipios (Cenotillo, Chankom, Dzitás, Hocabá, Hoctún, Huhí, Izamal, Kantunil, Quintana Roo, Sanahcat, Sotuta, Sudzal, Tekal de Venegas, Tunkás, Xocchel, Yaxcabá).
@@ -85,7 +85,7 @@ Regiones: II Noroeste, Zona central de Mérida.
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](./recursos/conflictos/fi_urbano_conservacion_extension.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_conservacion_extension.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -93,17 +93,17 @@ Regiones: II Noroeste, Zona central de Mérida.
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](./recursos/conflictos/mapa_urbano_eq_cruza_conservacion_eq.png)
+![](./recursos/conflictos/mapa_crec_urbano_resc_cruza_conservacion_eq.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](./recursos/conflictos/fi_urbano_conservacion_indices.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_conservacion_indice.png)
 
 
-## Urbano **vs.** Forestal
+## Urbano afecta a Forestal
 
 
 ### Descripción del conflicto
@@ -133,7 +133,7 @@ Regiones: II Noroeste, Zona central de Mérida.
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](./recursos/conflictos/fi_urbano_forestal_extension.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_forestal_extension.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -141,17 +141,17 @@ Regiones: II Noroeste, Zona central de Mérida.
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](./recursos/conflictos/mapa_urbano_eq_cruza_forestal_eq.png)
+![](./recursos/conflictos/mapa_crec_urbano_resc_cruza_forestal_eq.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](./recursos/conflictos/fi_urbano_forestal_indices.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_forestal_indice.png)
 
 
-## Urbano **vs.** Pecuario porcino y avícola
+## Urbano afecta a Pecuario porcino y avícola
 
 
 ### Descripción del conflicto
@@ -174,10 +174,9 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 - Clave de registro en encuesta de conflictos ambientales: F58.
 
 
-
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](./recursos/conflictos/fi_urbano_porcino_avicola_extension.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_porcino_avicola_extension.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -185,18 +184,17 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](./recursos/conflictos/mapa_urbano_eq_cruza_porcino_avicola_eq.png)
-
+![](./recursos/conflictos/mapa_crec_urbano_resc_cruza_porcino_avicola_eq.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](./recursos/conflictos/fi_urbano_porcino_avicola_indices.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_porcino_avicola_indice.png)
 
 
-## Urbano **vs.** Turismo de naturaleza
+## Urbano afecta a Turismo de naturaleza
 
 
 ### Descripción del conflicto
@@ -212,8 +210,8 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 #### Ubicación reportada
 
 - Municipios: Dzemul, Ixil, Progreso y Telchac Puerto.
-- Costa norte de Yucatán, zona costera de Celestún, Sisal, Chuburná, Tulix, La Casona, San Benito, Hol-chit, Punta Cancunito, Alegrías y El Cuyo.
-- Áreas inmediatas al este de: Chelem (1.5 km de longitud de playa), Chuburná (2km), Uaymitun (2.7 km)
+- Costa norte de Yucatán, zona costera de Celestún, Sisal, Chuburná, Tulix, La Casona, San Benito, Holchit, Punta Cancunito, Alegrías y El Cuyo.
+- Áreas inmediatas al este de: Chelem (1.5 km de longitud de playa), Chuburná (2km), Uaymitun (2.7 km).
 
 
 #### Fuentes
@@ -223,7 +221,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](./recursos/conflictos/fi_urbano_tur_naturaleza_extension.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_tur_naturaleza_extension.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -231,17 +229,17 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](./recursos/conflictos/mapa_urbano_eq_cruza_tur_naturaleza_eq.png)
+![](./recursos/conflictos/mapa_crec_urbano_resc_cruza_tur_naturaleza_eq.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](./recursos/conflictos/fi_urbano_tur_naturaleza_indices.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_tur_naturaleza_indice.png)
 
 
-## Urbano **vs.** Turismo de sol y playa
+## Urbano afecta a Turismo de sol y playa
 
 
 ### Descripción del conflicto
@@ -268,7 +266,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](./recursos/conflictos/fi_urbano_tur_syp_extension.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_tur_sol_playa_extension.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -276,11 +274,11 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](./recursos/conflictos/mapa_urbano_eq_cruza_tur_sol_playa_eq.png)
+![](./recursos/conflictos/mapa_crec_urbano_resc_cruza_tur_sol_playa_eq.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](./recursos/conflictos/fi_urbano_turismo_syp_indices.png)
+![](./recursos/conflictos/fi_crec_urbano_resc_vs_tur_sol_playa_indice.png)

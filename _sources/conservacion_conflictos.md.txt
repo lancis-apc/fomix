@@ -1,6 +1,6 @@
 # Conservación
 
-## Conservación **vs.** Acuacultura salobre
+## Conservación afecta a Acuacultura salobre
 
 ### Descripción del conflicto
 
@@ -42,7 +42,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 ![](./recursos/conflictos/fi_conservacion_acuacultura_salobre_indices.png)
 
 
-## Conservación **vs.** Minería
+## Conservación afecta a Minería
 
 ### Descripción del conflicto
 
@@ -84,7 +84,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 ![](./recursos/conflictos/fi_conservacion_mineria_indices.png)
 
 
-## Conservación **vs.** Urbano
+## Conservación afecta a Urbano
 
 ### Descripción del conflicto
 
@@ -108,7 +108,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](./recursos/conflictos/fi_conservacion_urbano_extension.png)
+![](./recursos/conflictos/fi_conservacion_vs_crec_urbano_resc_extension.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -116,11 +116,11 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](./recursos/conflictos/mapa_conservacion_eq_cruza_urbano_eq.png)
+![](./recursos/conflictos/mapa_conservacion_eq_cruza_crec_urbano_resc.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](./recursos/conflictos/fi_conservacion_urbano_indices.png)
+![](./recursos/conflictos/fi_conservacion_vs_crec_urbano_resc_indice.png)

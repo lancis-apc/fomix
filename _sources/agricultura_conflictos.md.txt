@@ -1,6 +1,6 @@
 # Agricultura tecnificada
 
-## Agricultura tecnificada **vs.** Apicultura
+## Agricultura tecnificada afecta a Apicultura
 
 ### Descripción del conflicto
 
@@ -44,7 +44,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 ![](./recursos/conflictos/fi_agricultura_apicultura_indices.png)
 
 
-## Agricultura tecnificada **vs.** Conservación
+## Agricultura tecnificada afecta a Conservación
 
 ### Descripción del conflicto
 
@@ -59,15 +59,13 @@ Agua, vegetación forestal, suelo.
 
 #### Ubicación reportada
 
-- Municipios (localidades, ejidos o zonas): Abalá, Acanceh, Akil, Buctzotz, Cantamayec, Celestún, Cenoti-llo, Chemax, Chocholá, Conkal, Cuzamá, Dzilam González, Espita, Homún, Huhí, Hunucmá, Izamal, Kan-tunil, Kaua, Kopomá, Mérida, Motul, Muxupip, Opichén, Oxkutzcab, Panabá, Peto, San Felipe, Sotuta, Sucilá, Tecoh, Tekax (sur), Temozón, Tizimín (ejidos: Santa María, Santa Clara, Dzonot, Nuevo Mundo-El Cuyo, San Manuel); localidades: Ramonal, Regadío, Xbojon, San Antonio y colonia Yucatán), Valladolid, Yaxcabá.
-- Centro, noroeste, sur y suroeste del estado.
-- Zonas de amortiguamiento y corredores biológicos de áreas naturales protegidas y reservas estatales.
+- Municipios (localidades, ejidos o zonas): Abalá, Acanceh, Akil, Buctzotz, Cantamayec, Celestún, Cenotillo, Chemax, Chocholá, Conkal, Cuzamá, Dzilam González, Espita, Homún, Huhí, Hunucmá, Izamal, Kan-tunil, Kaua, Kopomá, Mérida, Motul, Muxupip, Opichén, Oxkutzcab, Panabá, Peto, San Felipe, Sotuta, Sucilá, Tecoh, Tekax (sur), Temozón, Tizimín (ejidos: Santa María, Santa Clara, Dzonot, Nuevo Mundo-El Cuyo, San Manuel); localidades: Ramonal, Regadío, Xbojon, San Antonio y colonia Yucatán), Valladolid, Yaxcabá
+- Centro, noroeste, sur y suroeste del estado
+- Zonas de amortiguamiento y corredores biológicos de áreas naturales protegidas y reservas estatales
 
 #### Fuentes
 
-- Consejo Civil Mexicano para la Silvicultura Sostenible 2020, Rodríguez-Robayo et al. 2020, Barba Ma-cías et al. 2019, Batllori, 2019, Echánove Huacuja 2019, Gómez Cano et al. 2019, González Herrera et al. 2018, Polanco- Rodríguez et al. 2018, Gómez González 2017, Polanco- Rodríguez 2017, Williams et al. 2017, Batllori, 2016, FAO-SEDER-Gobierno de Yucatán 2016, Mascorro et al. 2016, Ellis et al. 2015, Hoo-gesteijn et al. 2015, Polanco- Rodríguez et al. 2015, Batllori 2006, Pacheco-Ávila et al 2004, Ayala Arci-pestre 2001.
-- Taller agricultura tecnificada.
-- Clave de registro en encuesta de conflictos ambientales: F4, F19, F30, F32, F35, F37, F40 y 42.
+- Consejo Civil Mexicano para la Silvicultura Sostenible 2020, Rodríguez-Robayo et al. 2020, Barba Ma-cías et al. 2019, Batllori, 2019, Echánove Huacuja 2019, Gómez Cano et al. 2019, González Herrera et al. 2018, Polanco-Rodríguez et al. 2018, Gómez González 2017, Polanco- Rodríguez 2017, Williams et al. 2017, Batllori, 2016, FAO-SEDER-Gobierno de Yucatán 2016, Mascorro et al. 2016, Ellis et al. 2015, Hoo-gesteijn et al. 2015, Polanco-Rodríguez et al. 2015, Batllori et al. 2006, Pacheco-Ávila et al 2004, Ayala Arcipreste 2001.
 
 
 ### Superficie de conflicto por categorías de aptitud (km²)
@@ -89,7 +87,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 ![](./recursos/conflictos/fi_agricultura_conservacion_indices.png)
 
 
-## Agricultura tecnificada **vs.** Forestal
+## Agricultura tecnificada afecta a Forestal
 
 ### Descripción del conflicto
 
@@ -130,7 +128,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 ![](./recursos/conflictos/fi_agricultura_forestal_indices.png)
 
 
-## Agricultura tecnificada **vs.** Milpa maya
+## Agricultura tecnificada afecta a Milpa maya
 
 ### Descripción del conflicto
 
@@ -147,9 +145,9 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 #### Fuentes
 
-- Consejo Civil Mexicano para la Silvicultura Sostenible 2020, Rodríguez-Robayo et al. 2020, Barba Macías et al. 2019, Echánove Huacuja 2019, Gómez Cano et al. 2019, Williams et al. 2017, Mascorro et al. 2016, Ellis et al. 2015, Ayala Arcipestre 2001.
-- Taller milpa y apicultura, taller agricultura tecnificada.
-- Clave de registro en encuesta de conflictos ambientales: F19, F32, F35, F37 y F53.
+- Consejo Civil Mexicano para la Silvicultura Sostenible 2020, Rodríguez-Robayo et al. 2020, Barba Ma-cías et al. 2019, Echánove Huacuja 2019, Gómez Cano et al. 2019, Williams et al. 2017, Mascorro et al. 2016, Ellis et al. 2015, Ayala Arcipreste 2001
+- Taller milpa y apicultura, taller agricultura tecnificada
+- Clave de registro en encuesta de conflictos ambientales: F19, F32, F35, F37 y F53
 
 
 ### Superficie de conflicto por categorías de aptitud (km²)

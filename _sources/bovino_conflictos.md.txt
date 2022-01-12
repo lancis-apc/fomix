@@ -1,7 +1,7 @@
 # Pecuario bovino
 
 
-## Pecuario bovino **vs.** Apícola
+## Pecuario bovino afecta a Apícultura
 
 
 ### Descripción del conflicto
@@ -44,13 +44,13 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 
 
-## Pecuario bovino **vs.** Conservación
+## Pecuario bovino afecta a Conservación
 
 
 ### Descripción del conflicto
 
-- Pérdida y fragmentación de ecosistemas por invasión o cambio de uso de suelo derivado del creci-miento de las áreas ganaderas (se mencionan en particular humedales, selvas, hábitat de jaguar).
-- Degradación del suelo por compactación debida al pisoteo del ganado o por el uso frecuente de ma-quinaria pesada.
+- Pérdida y fragmentación de ecosistemas por invasión o cambio de uso de suelo derivado del crecimiento de las áreas ganaderas (se mencionan en particular humedales, selvas, hábitat de jaguar).
+- Degradación del suelo por compactación debida al pisoteo del ganado o por el uso frecuente de maquinaria pesada.
 - Contaminación de cenotes, acuífero y lagunas costeras por la descarga de desechos sin tratamiento de los corrales de bovinos y las granjas porcícolas y avícolas.
 - Contaminación de acuífero por uso de herbicidas e insecticidas en potreros.
 - Intrusión salina por extracción de agua para uso pecuario.
@@ -64,7 +64,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 #### Ubicación reportada
 
-- Municipios: Abalá, Acanceh, Buctzotz, Cacalchén, Conkal, Homún, Hunucmá, Kanasín, Muxupip, Pana-bá, San Felipe, Sucilá, Tekantó, Tekax, Tizimín, Valladolid.
+- Municipios: Abalá, Acanceh, Buctzotz, Cacalchén, Conkal, Homún, Hunucmá, Kanasín, Muxupip, Panabá, San Felipe, Sucilá, Tekantó, Tekax, Tizimín, Valladolid.
 - Regiones: Centro, Litoral Centro, Noreste, Noroeste, Oriente.
 - UMAFOR 3105: 16 municipios (Cenotillo, Chankom, Dzitás, Hocabá, Hoctún, Huhí, Izamal, Kantunil, Quintana Roo, Sanahcat, Sotuta, Sudzal, Tekal de Venegas, Tunkás, Xocchel, Yaxcabá).
 - Reserva Estatal Dzilam - Reserva de la Biosfera Ría Lagartos (humedales), Reserva Estatal Geohidroló-gica del Anillo de Cenotes y La Laguna.
@@ -72,7 +72,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 #### Fuentes
 
-- Batllori, 2019, García de Fuentes et al. 2019, OCDE 2019, Cruz Zamudio 2017, Ellis et al. 2017, Batllori 2016, Cepeda y Amoroso 2016, FAO-SEDER-Gobierno de Yucatán 2016, Ellis et al. 2015, Ch´iibal Ma-yao´ob A.C. 2011, González Acereto y Quezada Euán, 2010, Méndez et al. 2009, Drucker et al. 2003, Ayala Arcipestre 2001, Greenpeace s.f.
+- Batllori, 2019, García de Fuentes et al. 2019, OCDE 2019, Cruz Zamudio 2017, Ellis et al. 2017, Batllori 2016, Cepeda y Amoroso 2016, FAO-SEDER-Gobierno de Yucatán 2016, Ellis et al. 2015, Ch´iibal Ma-yao´ob A.C. 2011, González Acereto y Quezada Euán, 2010, Méndez et al. 2009, Drucker et al. 2003, Ayala Arcipreste 2001, Greenpeace s.f.
 - Taller bovino, Taller Acuacultura, Taller Porcícola y avícola.
 - Clave de registro en encuesta de conflictos ambientales: F7, F13, F14, F29, F31, F45, F46, F48, F49, F54, y F55
 
@@ -96,12 +96,12 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 
 
-## Pecuario bovino **vs.** Urbano
+## Pecuario bovino afecta a Urbano
 
 
 ### Descripción del conflicto
 
-* Contaminación del aire y malos olores generados por los desechos de los corrales de bovinos y las gran-jas porcícolas y avícolas.
+* Contaminación del aire y malos olores generados por los desechos de los corrales de bovinos y las granjas porcícolas y avícolas.
 
 
 #### Recursos afectados
@@ -124,12 +124,12 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](./recursos/conflictos/fi_pec_bovino_urbano_extension.png)
+![](./recursos/conflictos/fi_bovino_vs_crec_urbano_resc_extension.png)
 
 
 ### Mapa de conflictos
 
-![](./recursos/conflictos/mapa_bovino_eq_cruza_urbano_eq.png)
+![](./recursos/conflictos/mapa_bovino_eq_cruza_crec_urbano_resc.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -137,4 +137,4 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](./recursos/conflictos/fi_bovino_urbano_indices.png)
+![](./recursos/conflictos/fi_bovino_vs_crec_urbano_resc_indice.png)

@@ -1,6 +1,6 @@
 # Turismo de naturaleza
 
-## Turismo de naturaleza **vs.** Conservación
+## Turismo de naturaleza afecta a Conservación
 
 ### Descripción del conflicto
 
@@ -44,7 +44,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 ![](./recursos/conflictos/fi_tur_naturaleza_conservacion_indices.png)
 
 
-## Turismo de naturaleza **vs.** Pesca
+## Turismo de naturaleza afecta a Pesca
 
 ### Descripción del conflicto
 

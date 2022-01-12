@@ -1,6 +1,6 @@
 # Forestal
 
-## Forestal **vs.** Apicultura
+## Forestal afecta a Apicultura
 
 ### Descripción del conflicto
 
@@ -42,7 +42,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 ![](./recursos/conflictos/fi_forestal_apicultura_indices.png)
 
 
-## Forestal **vs.** Conservación
+## Forestal afecta a Conservación
 
 ### Descripción del conflicto
 
@@ -86,7 +86,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 ![](./recursos/conflictos/fi_forestal_conservacion_indices.png)
 
 
-## Forestal **vs.** Urbano
+## Forestal afecta a Urbano
 
 ### Descripción del conflicto
 
@@ -110,7 +110,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ### Superficie de conflicto por categorías de aptitud (km²)
 
-![](./recursos/conflictos/fi_forestal_conservacion_extension.png)
+![](./recursos/conflictos/fi_forestal_vs_crec_urbano_resc_extension.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -118,11 +118,11 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
-![](./recursos/conflictos/mapa_forestal_eq_cruza_conservacion_eq.png)
+![](./recursos/conflictos/mapa_forestal_eq_cruza_crec_urbano_resc.png)
 
 
 ### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
-![](./recursos/conflictos/fi_forestal_conservacion_indices.png)
+![](./recursos/conflictos/fi_forestal_vs_crec_urbano_resc_indice.png)

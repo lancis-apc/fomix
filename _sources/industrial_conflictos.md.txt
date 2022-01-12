@@ -1,7 +1,7 @@
 # Industrial
 
 
-## Industrial **vs.** Conservación
+## Industrial afecta a Conservación
 
 
 ### Descripción del conflicto
@@ -47,7 +47,7 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 
 
-## Industrial **vs.** Forestal
+## Industrial afecta a Forestal
 
 
 ### Descripción del conflicto
