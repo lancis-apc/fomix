@@ -2,27 +2,19 @@
 
 ## Conservación afecta a Acuacultura salobre
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-* Limitación de la acuacultura en cuerpos de agua costeros por la protección de ecosistemas de humedales.
+1. Limitación de la acuacultura en cuerpos de agua costeros por la protección de ecosistemas de humedales.
 
+   **Recursos afectados:** Espacio físico.
 
-#### Recursos afectados
+   **Ubicación reportada:** Sin dato.
 
-- Espacio físico.
+   **Fuentes:** Clave de registro en encuesta de conflictos ambientales: F44.
 
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-#### Ubicación reportada
-
-- Sin dato.
-
-
-#### Fuentes
-
-- Clave de registro en encuesta de conflictos ambientales: F44.
-
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_conservacion_acuacultur_salobre_extension.png)
 
@@ -44,40 +36,31 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ## Conservación afecta a Minería
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-* Restricciones a la expansión de la minería.
+1. Restricciones a la expansión de la minería.
 
+   **Recursos afectados:** Suelo.
 
-#### Recursos afectados
+   **Ubicación reportada:** Sin dato.
 
-- Suelo.
+   **Fuentes:** Clave de registro en encuesta de conflictos ambientales: F34.
 
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-#### Ubicación reportada
-
-- Sin dato.
-
-
-#### Fuentes
-
-- Clave de registro en encuesta de conflictos ambientales: F34.
-
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_conservacion_mineria_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_conservacion_eq_cruza_mineria_eq.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
@@ -86,40 +69,31 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ## Conservación afecta a Urbano
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-* Limitaciones para el crecimiento urbano por estar dentro de un Área Natural Protegida.
+1. Limitaciones para el crecimiento urbano por estar dentro de un Área Natural Protegida.
 
+   **Recursos afectados:** Espacio físico.
 
-#### Recursos afectados
+   **Ubicación reportada:** San Felipe.
 
-- Espacio físico.
+   **Fuentes:** Clave de registro en encuesta de conflictos ambientales: F57.
 
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-#### Ubicación reportada
-
-- San Felipe.
-
-
-#### Fuentes
-
-- Clave de registro en encuesta de conflictos ambientales: F57.
-
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_conservacion_vs_crec_urbano_resc_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_conservacion_eq_cruza_crec_urbano_resc.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 

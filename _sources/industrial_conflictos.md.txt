@@ -1,90 +1,82 @@
 # Industrial
 
-
 ## Industrial afecta a Conservación
 
+### Conflictos reportados en la literatura, encuestas y talleres
 
-### Descripción del conflicto
+1. Deforestación por la ampliación de zonas industriales.
 
-- Deforestación por la ampliación de zonas industriales.
-- Contaminación del acuífero por descarga de agua residual del sector industrial.
+   **Recursos afectados:** Vegetación forestal.
 
+   **Ubicación reportada:** Noroeste de Yucatán.
 
-#### Recursos afectados
+   **Fuentes:**
 
-* Agua, vegetación forestal.
+   - Ellis et al. 2015
+   - Clave de registro en encuesta de conflictos ambientales: F11 y F36
 
+2. Contaminación del acuífero por descarga de agua residual del sector industrial.
 
-#### Ubicación reportada
+   **Recursos afectados:** Agua.
 
-- Zona metropolitana de Mérida, Noroeste de Yucatán.
+   **Ubicación reportada:** Zona metropolitana de Mérida, Región II Noroeste.
 
+   **Fuentes:**
 
-#### Fuentes
+   - González Herrera et al. 2018.
+   - Taller pesca y acuacultura.
 
-- González Herrera et al. 2018, Ellis et al. 2015.
-- Clave de registro en encuesta de conflictos ambientales: F11 y F36.
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_industrial_conservacion_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_industrial_eq_cruza_conservacion_eq.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
 ![](./recursos/conflictos/fi_industrial_conservacion_indices.png)
 
 
-
 ## Industrial afecta a Forestal
 
+### Conflictos reportados en la literatura, encuestas y talleres
 
-### Descripción del conflicto
+1. Deforestación por la ampliación de zonas industriales.
 
-- Deforestación por la ampliación de zonas industriales.
+   **Recursos afectados:** Vegetación forestal.
 
+   **Ubicación reportada:** Noroeste de Yucatán.
 
-#### Recursos afectados
+   **Fuentes:**
 
-* Vegetación forestal.
+   - Ellis et al. 2015.
+   - Clave de registro en encuesta de conflictos ambientales: F11 y F36.
 
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-#### Ubicación reportada
-
-- Noroeste de Yucatán.
-
-
-#### Fuentes
-
-- Ellis et al. 2015.
-- Clave de registro en encuesta de conflictos ambientales: F11 y F36.
-
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_industrial_forestal_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_industrial_eq_cruza_forestal_eq.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 

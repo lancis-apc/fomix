@@ -1,139 +1,163 @@
 # Pecuario bovino
 
-
 ## Pecuario bovino afecta a Apícultura
 
+### Conflictos reportados en la literatura, encuestas y talleres
 
-### Descripción del conflicto
+1. Afectación de floraciones de especies melíferas por uso de herbicidas e insecticidas en potreros.
 
-* Afectación de floraciones de especies melíferas por uso de herbicidas e insecticidas en potreros.
+   **Recursos afectados:** Biodiversidad.
 
+   **Ubicación reportada:** Tizimín.
 
-#### Recursos afectados
+   **Fuentes:**
 
-* Biodiversidad.
+   - Ayala Arcipestre 2001.
+   - Taller pecuario bovino.
 
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-#### Ubicación reportada
-
-- Tizimín.
-
-
-#### Fuentes
-
-- Ayala Arcipestre 2001.
-- Taller pecuario bovino.
-
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_pec_bovino_apicultura_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 ![](./recursos/conflictos/mapa_bovino_eq_cruza_apicultura_eq.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
 ![](./recursos/conflictos/fi_bovino_apicultura_indices.png)
 
 
-
 ## Pecuario bovino afecta a Conservación
 
+### Conflictos reportados en la literatura, encuestas y talleres
 
-### Descripción del conflicto
+1. Pérdida y fragmentación de ecosistemas por invasión o cambio de uso de suelo derivado del crecimiento de las áreas ganaderas (se mencionan en particular humedales, selvas, hábitat de jaguar).
 
-- Pérdida y fragmentación de ecosistemas por invasión o cambio de uso de suelo derivado del crecimiento de las áreas ganaderas (se mencionan en particular humedales, selvas, hábitat de jaguar).
-- Degradación del suelo por compactación debida al pisoteo del ganado o por el uso frecuente de maquinaria pesada.
-- Contaminación de cenotes, acuífero y lagunas costeras por la descarga de desechos sin tratamiento de los corrales de bovinos y las granjas porcícolas y avícolas.
-- Contaminación de acuífero por uso de herbicidas e insecticidas en potreros.
-- Intrusión salina por extracción de agua para uso pecuario.
-- Escasez de agua por extracción de agua para uso pecuario.
+   **Recursos afectados:** Vegetación forestal, humedales.
 
+   **Ubicación reportada:**
 
-#### Recursos afectados
+   - Municipios: Buctzotz, Panabá, San Felipe, Sucilá, Tekax, Tizimín.
+   - Regiones: Centro, Litoral Centro, Noreste, Oriente.
+   - UMAFOR 3105: 16 municipios (Cenotillo, Chankom, Dzitás, Hocabá, Hoctún, Huhí, Izamal, Kantu-nil, Quintana Roo, Sanahcat, Sotuta, Sudzal, Tekal de Venegas, Tunkás, Xocchel, Yaxcabá).
+   - Reserva Estatal Dzilam - Reserva de la Biosfera Ría Lagartos (humedales).
 
-* Agua, aire, vegetación forestal, humedales, suelo.
+   **Fuentes:**
 
+   - Cruz Zamudio 2017, Ellis et al. 2017, Cepeda y Amoroso 2016, Ellis et al. 2015, Ch´iibal Mayao´ob A.C. 2011, González Acereto y Quezada Euán, 2010, Ayala Arcipreste 2001.
+   - Taller pecuario bovino.
+   - Clave de registro en encuesta de conflictos ambientales: F29 y F49.
 
-#### Ubicación reportada
+2. Degradación del suelo por compactación debida al pisoteo del ganado o por el uso frecuente de maquinaria pesada.
 
-- Municipios: Abalá, Acanceh, Buctzotz, Cacalchén, Conkal, Homún, Hunucmá, Kanasín, Muxupip, Panabá, San Felipe, Sucilá, Tekantó, Tekax, Tizimín, Valladolid.
-- Regiones: Centro, Litoral Centro, Noreste, Noroeste, Oriente.
-- UMAFOR 3105: 16 municipios (Cenotillo, Chankom, Dzitás, Hocabá, Hoctún, Huhí, Izamal, Kantunil, Quintana Roo, Sanahcat, Sotuta, Sudzal, Tekal de Venegas, Tunkás, Xocchel, Yaxcabá).
-- Reserva Estatal Dzilam - Reserva de la Biosfera Ría Lagartos (humedales), Reserva Estatal Geohidroló-gica del Anillo de Cenotes y La Laguna.
+   **Recursos afectados:** Suelo.
 
+   **Ubicación reportada:** Región Noroeste.
 
-#### Fuentes
+   **Fuentes:** Batllori, 2019.
 
-- Batllori, 2019, García de Fuentes et al. 2019, OCDE 2019, Cruz Zamudio 2017, Ellis et al. 2017, Batllori 2016, Cepeda y Amoroso 2016, FAO-SEDER-Gobierno de Yucatán 2016, Ellis et al. 2015, Ch´iibal Ma-yao´ob A.C. 2011, González Acereto y Quezada Euán, 2010, Méndez et al. 2009, Drucker et al. 2003, Ayala Arcipreste 2001, Greenpeace s.f.
-- Taller bovino, Taller Acuacultura, Taller Porcícola y avícola.
-- Clave de registro en encuesta de conflictos ambientales: F7, F13, F14, F29, F31, F45, F46, F48, F49, F54, y F55
+3. Contaminación de cenotes, acuífero y lagunas costeras por la descarga de desechos sin tratamiento de los corrales de bovinos y las granjas porcícolas y avícolas.
 
+   **Recursos afectados:** Agua.
 
-### Superficie de conflicto por categorías de aptitud (km²)
+   **Ubicación reportada:**
+
+   - Municipios: Abalá, Acanceh, Cacalchén, Conkal, Homún, Hunucmá, Kanasín, Muxupip, Tekantó, Tizimín, Valladolid.
+   - Zona Oriente.
+   - Reserva Estatal Geohidrológica del Anillo de Cenotes.
+
+   **Fuentes:**
+
+   - Batllori, 2019, García de Fuentes et al. 2019, OCDE 2019, Batllori 2016, FAO-SEDER-Gobierno de Yucatán 2016, Méndez et al. 2009, Drucker et al. 2003, Greenpeace s.f.
+   - Taller pecuario bovino, taller pesca y acuacultura, taller pecuario porcino y avícola
+   - Clave de registro en encuesta de conflictos ambientales: F7, F13, F14, F31, F45, F46, F48, F49, F54, y F55
+
+4. Contaminación de acuífero por uso de herbicidas e insecticidas en potreros.
+
+   **Recursos afectados:** Agua.
+
+   **Ubicación reportada:** Tizimín.
+
+   **Fuentes:**
+
+   - Ayala Arcipreste 2001
+   - Taller pecuario bovino
+   - Clave de registro en encuesta de conflictos ambientales: F14   
+
+5. Intrusión salina por extracción de agua para uso pecuario.
+
+   **Recursos afectados:** Agua.
+
+   **Ubicación reportada:** Zona Oriente.
+
+   **Fuentes:**
+
+   - Taller pecuario bovino.
+   - Clave de registro en encuesta de conflictos ambientales: F14.
+
+6. Escasez de agua por extracción de agua para uso pecuario.
+
+   **Recursos afectados:** Agua.
+
+   **Ubicación reportada:** La Laguna.
+
+   **Fuentes:** Taller pecuario bovino.
+
+### Análisis de conflictos potenciales con base en la aptitud sectorial
+
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_pec_bovino_conservacion_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 ![](./recursos/conflictos/mapa_bovino_eq_cruza_conservacion_eq.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
 ![](./recursos/conflictos/fi_bovino_conservacion_indices.png)
 
 
-
 ## Pecuario bovino afecta a Urbano
 
+### Conflictos reportados en la literatura, encuestas y talleres
 
-### Descripción del conflicto
+1. Contaminación del aire y malos olores generados por los desechos de los corrales de bovinos y las granjas porcícolas y avícolas.
 
-* Contaminación del aire y malos olores generados por los desechos de los corrales de bovinos y las granjas porcícolas y avícolas.
+   **Recursos afectados:** Aire.
 
+   **Ubicación reportada:** Sin dato.
 
-#### Recursos afectados
+   **Fuentes:**
 
-* Aire.
+   - Batllori 2019, Drucker et al. 2003.
+   - Taller pecuario bovino.
+   - Clave de registro en encuesta de conflictos ambientales: F3 y F9.
 
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-#### Ubicación reportada
-
-- Sin dato.
-
-
-#### Fuentes
-
-- Batllori 2019, Drucker et al. 2003.
-- Taller bovino.
-- Clave de registro en encuesta de conflictos ambientales: F3 y F9.
-
-
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_bovino_vs_crec_urbano_resc_extension.png)
 
-
-### Mapa de conflictos
+#### Mapa de conflictos
 
 ![](./recursos/conflictos/mapa_bovino_eq_cruza_crec_urbano_resc.png)
 
 <div style="page-break-after: always;"></div>
 
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 

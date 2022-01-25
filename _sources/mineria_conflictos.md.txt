@@ -2,42 +2,46 @@
 
 ## Minería afecta a Conservación
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-- Deforestación y pérdida de suelo por extracción de material pétreo.
-- Contaminación del acuífero por la exposición del suelo generada por la extracción de material pétreo.
+1. Deforestación y pérdida de suelo por extracción de material pétreo.
 
+   **Recursos afectados:** Vegetación forestal.
 
-#### Recursos afectados
+   **Ubicación reportada:** Municipios: Chocholá, Homún, Kopomá, Progreso, Tekax, Tzucacab.
 
-* Agua, vegetación forestal.
+   **Fuentes:**
 
+   - Actual Yucatán 2019, Aristegui noticias 2019, Diario de Yucatán 2019, Ch´iibal Mayao´ob A.C. 2011.
 
-#### Ubicación reportada
+2. Contaminación del acuífero por la exposición del suelo generada por la extracción de material pétreo.
 
-- Municipios: Chocholá, Homún, Kopomá, Progreso, Tekax, Tzucacab.
-- Zona metropolitana de Mérida.
+   **Recursos afectados:** Agua.
 
+   **Ubicación reportada:**
 
-#### Fuentes
+   - Municipios: Chocholá, Homún, Kopomá, Progreso, Tekax, Tzucacab
+   - Zona metropolitana de Mérida
 
-- Actual Yucatán 2019, Aristegui noticias 2019, Diario de Yucatán, 2019, González Herrera et al. 2018, Ch´iibal Mayao´ob A.C. 2011.
+   **Fuentes:**
 
+   - Actual Yucatán 2019, Aristegui noticias 2019, Diario de Yucatán, 2019, González Herrera et al. 2018
 
-### Superficie de conflicto por categorías de aptitud (km²)
+### Análisis de conflictos potenciales con base en la aptitud sectorial
+
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_mineria_conservacion_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_mineria_eq_cruza_conservacion_eq.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
@@ -46,40 +50,31 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ## Minería afecta a Urbano
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-- Hundimientos en zonas urbanas por falta de restauración de bancos de material abandonados.
+1. Hundimientos en zonas urbanas por falta de restauración de bancos de material abandonados.
 
+   **Recursos afectados:** Suelo.
 
-#### Recursos afectados
+   **Ubicación reportada:** Parque Acuático Baxal Ja y Colonia García Ginerés en Mérida.
 
-* Suelo.
+   **Fuentes:** Clave de registro en encuesta de conflictos ambientales: F47.
 
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-#### Ubicación reportada
-
-- Parque Acuático Baxal Ja y Colonia García Ginerés en Mérida.
-
-
-#### Fuentes
-
-- Clave de registro en encuesta de conflictos ambientales: F47.
-
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_mineria_vs_crec_urbano_resc_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_mineria_eq_cruza_crec_urbano_resc.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 

@@ -2,42 +2,56 @@
 
 ## Agricultura tecnificada afecta a Apicultura
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-* Muerte de abejas y contaminación de producción de miel por uso de agroquímicos en zonas agrícolas.
-- Deforestación y fragmentación de selvas y vegetación melífera y ocupación de zonas milperas por crecimiento de zonas agrícolas.
+1. Muerte de abejas y contaminación de producción de miel por uso de agroquímicos en zonas agrícolas.
 
-#### Recursos afectados
+   **Recursos afectados:** Aire, vegetación forestal.
 
-* Aire, vegetación forestal.
+   **Ubicación reportada:**
 
-#### Ubicación reportada
+   - Municipios y (localidades): Chacsinkín (Xbox), Chankom (Muchucux y Xcalakdzonoten), Tekax, (San Agustín, San Juan Tekax, Alfonso Caso I), Tixméhuac (Kimbilá, Sabacché, Dzutoh), Tixcacalcu-pul (Tixcacalcupul), Tizimín.
+   - Centro, oriente, sur y suroeste del estado.
+   - Zonas de amortiguamiento y corredores biológicos de áreas naturales protegidas y reservas estatales.
 
-- Municipios y (localidades): Chacsinkín (Xbox), Chankom (Muchucux y Xcalakdzonoten), Huhí, Sucilá, Tekax, (San Agustín, San Juan Tekax, Alfonso Caso I, sur del municipio), Tixméhuac (Kimbilá, Sabacché, Dzutoh), Tixcacalcupul (Tixcacalcupul); Tizimín (ejidos: Santa María, Santa Clara, Dzonot, Nuevo Mundo-El Cuyo, San Manuel; localidades: Ramonal, Regadío, Xbojon, San Antonio y colonia Yucatán).
-- Centro, oriente, sur y suroeste del estado, Región II Noroeste.
-- Zonas de amortiguamiento y corredores biológicos de áreas naturales protegidas y reservas estatales.
+   **Fuentes:**
 
-#### Fuentes
+   - Chan 2019, Cruz Zamudio 2017, Gómez González 2017, Sánchez-Contreras et al. 2016, González Acereto y Quezada Euán 2010, Ayala Arcipreste 2001.
+   - Taller milpa y apicultura.
+   - Clave de registro en encuesta de conflictos ambientales: F37, F40, F42 y 51.
 
-- Rodríguez-Robayo et al. 2020, Barba Macías et al. 2019, Chan 2019, Echánove Huacuja 2019, Gómez Cano et al. 2019, Cruz Zamudio 2017, Gómez González 2017, Williams et al. 2017, Mascorro et al. 2016, Sánchez-Contreras et al. 2016, Ellis et al. 2015, González Acereto y Quezada Euán 2010, Ayala Arcipes-tre 2001.
-- Taller agricultura tecnificada, taller milpa y apicultura.
-- Clave de registro en encuesta de conflictos ambientales: F19, F30, F32, F37, F40, F42, F51, F53.
+2. Deforestación y fragmentación de selvas y vegetación melífera y ocupación de zonas milperas por crecimiento de zonas agrícolas.
 
+   **Recursos afectados:** Biodiversidad, vegetación forestal.
 
-### Superficie de conflicto por categorías de aptitud (km²)
+   **Ubicación reportada:**
 
-![](./recursos/conflictos/fi_agricultura_apicultura_extension.png)
+   - Municipios y (localidades): Sucilá, Tekax (sur del municipio), Tizimín (ejidos: Santa María, Santa Clara, Dzonot, Nuevo Mundo-El Cuyo, San Manuel; localidades: Ramonal, Regadío, Xbojon, San An-tonio y colonia Yucatán).
+   - Centro, sur y suroeste del estado.
+
+   **Fuentes:**
+
+   - Consejo Civil Mexicano para la Silvicultura Sostenible 2020, Rodríguez-Robayo et al. 2020, Barba Macías et al. 2019, Chan 2019, Echánove Huacuja 2019, Gómez Cano et al. 2019, Williams et al. 2017, Mascorro et al. 2016, Ellis et al. 2015, González Acereto y Quezada Euán 2010, Ayala Arcipreste 2001.
+   - Taller agricultura tecnificada, taller milpa y apicultura.
+   - Clave de registro en encuesta de conflictos ambientales: F19, F30, F32, F37, F53.
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+### Análisis de conflictos potenciales con base en la aptitud sectorial
+
+#### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_agricultura_apicultura_extension.png)
+
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_agricultura_eq_cruza_apicultura_eq.png)
 
+<div style="page-break-after: always;"></div>
 
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
@@ -46,41 +60,78 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ## Agricultura tecnificada afecta a Conservación
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-- Deforestación y fragmentación de selvas y vegetación melífera y ocupación de zonas milperas por cre-cimiento de zonas agrícolas.
-- Erosión por cultivos intensivos y degradación química del suelo por uso de agroquímicos.
-- Contaminación del acuífero, cenotes y área marina por uso de agroquímicos.
-- Uso intensivo de agua e intrusión salina por extracción de agua para riego.
+1. Deforestación y fragmentación de selvas y vegetación melífera y ocupación de zonas milperas por crecimiento de zonas agrícolas.
 
-#### Recursos afectados
+   **Recursos afectados:** Biodiversidad, vegetación forestal.
 
-Agua, vegetación forestal, suelo.
+   **Ubicación reportada:**
 
-#### Ubicación reportada
+   - Municipios y (localidades): Sucilá, Tekax (sur del municipio), Tizimín (ejidos: Santa María, Santa Clara, Dzonot, Nuevo Mundo-El Cuyo, San Manuel; localidades: Ramonal, Regadío, Xbojon, San Antonio y colonia Yucatán).
+   - Centro, sur y suroeste del estado.
 
-- Municipios (localidades, ejidos o zonas): Abalá, Acanceh, Akil, Buctzotz, Cantamayec, Celestún, Cenotillo, Chemax, Chocholá, Conkal, Cuzamá, Dzilam González, Espita, Homún, Huhí, Hunucmá, Izamal, Kan-tunil, Kaua, Kopomá, Mérida, Motul, Muxupip, Opichén, Oxkutzcab, Panabá, Peto, San Felipe, Sotuta, Sucilá, Tecoh, Tekax (sur), Temozón, Tizimín (ejidos: Santa María, Santa Clara, Dzonot, Nuevo Mundo-El Cuyo, San Manuel); localidades: Ramonal, Regadío, Xbojon, San Antonio y colonia Yucatán), Valladolid, Yaxcabá
-- Centro, noroeste, sur y suroeste del estado
-- Zonas de amortiguamiento y corredores biológicos de áreas naturales protegidas y reservas estatales
+   **Fuentes:**
 
-#### Fuentes
+   - Consejo Civil Mexicano para la Silvicultura Sostenible 2020, Rodríguez-Robayo et al. 2020, Barba Macías et al. 2019, Chan 2019, Echánove Huacuja 2019, Gómez Cano et al. 2019, Williams et al. 2017, Mascorro et al. 2016, Ellis et al. 2015, González Acereto y Quezada Euán 2010, Ayala Arcipreste 2001.
+   - Taller agricultura tecnificada, taller milpa y apicultura.
+   - Clave de registro en encuesta de conflictos ambientales: F19, F30, F32, F37, F53.
 
-- Consejo Civil Mexicano para la Silvicultura Sostenible 2020, Rodríguez-Robayo et al. 2020, Barba Ma-cías et al. 2019, Batllori, 2019, Echánove Huacuja 2019, Gómez Cano et al. 2019, González Herrera et al. 2018, Polanco-Rodríguez et al. 2018, Gómez González 2017, Polanco- Rodríguez 2017, Williams et al. 2017, Batllori, 2016, FAO-SEDER-Gobierno de Yucatán 2016, Mascorro et al. 2016, Ellis et al. 2015, Hoo-gesteijn et al. 2015, Polanco-Rodríguez et al. 2015, Batllori et al. 2006, Pacheco-Ávila et al 2004, Ayala Arcipreste 2001.
+2. Erosión por cultivos intensivos y degradación química del suelo por uso de agroquímicos.
 
+   **Recursos afectados:** Suelo.
 
-### Superficie de conflicto por categorías de aptitud (km²)
+   **Ubicación reportada:** Sin dato
+
+   **Fuentes:**
+
+   - Batllori 2019
+   - Clave de registro en encuesta de conflictos ambientales: F4, F40
+
+3. Contaminación del acuífero, cenotes y área marina por uso de agroquímicos.
+
+   **Recursos afectados:** Agua.
+
+<div style="page-break-after: always;"></div>
+
+   **Ubicación reportada:**
+
+   - Municipios: Abalá, Acanceh, Akil, Buctzotz, Cantamayec, Celestún, Cenotillo, Chemax, Chocholá, Conkal, Cuzamá, Dzilam González, Espita, Homún, Huhí, Hunucmá, Izamal, Kantunil, Kaua, Kopo-má, Mérida, Motul, Muxupip, Opichén, Oxkutzcab, Panabá, Peto, San Felipe, Sotuta, Sucilá, Tecoh, Tekax, Temozón, Tizimín, Valladolid, Yaxcabá.
+   - Región II Noroeste.
+   - Zonas de amortiguamiento y corredores biológicos de áreas naturales protegidas y reservas estatales.
+
+   **Fuentes:**
+
+   - Batllori 2019, González Herrera et al. 2018, Gómez González 2017, Batllori, 2016, FAO-SEDER-Gobierno de Yucatán 2016, Hoogesteijn et al. 2015, Polanco-Rodríguez et al. 2015, Batllori et al. 2006, Pacheco-Ávila et al 2004.
+   - Taller agricultura tecnificada.
+   - Clave de registro en encuesta de conflictos ambientales: F4, F30, F40, 42 y 51.  
+
+4. Uso intensivo de agua e intrusión salina por extracción de agua para riego.  
+
+   **Recursos afectados:** Agua.
+
+   **Ubicación reportada:** Sin dato.
+
+   **Fuentes:**
+
+   - Batllori et al. 2006
+   - Clave de registro en encuesta de conflictos ambientales: F40
+
+### Análisis de conflictos potenciales con base en la aptitud sectorial
+
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_agricultura_conservacion_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_agricultura_eq_cruza_conservacion_eq.png)
 
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
@@ -89,39 +140,39 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ## Agricultura tecnificada afecta a Forestal
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-- Pérdida de zonas forestales en sitios donde el gobierno da apoyos al sector agrícola.
-- Incendios forestales por quemas agropastoriles.
+1. Pérdida de zonas forestales en sitios donde el gobierno da apoyos al sector agrícola.
 
-#### Recursos afectados
+   **Recursos afectados:** Biodiversidad, vegetación forestal.
 
-* Biodiversidad, recursos forestales maderables y no maderables, fauna y suelo.
+   **Ubicación reportada:** Sin dato.
 
-#### Ubicación reportada
+   **Fuentes:** Clave de registro en encuesta de conflictos ambientales: F40.
 
-- Sin dato.
+2. Incendios forestales por quemas agropastoriles.
 
-#### Fuentes
+   **Recursos afectados:** Biodiversidad, vegetación forestal.
 
-- Taller bovino.
-- Clave de registro en encuesta de conflictos ambientales: F1, F4 y F23.
+   **Ubicación reportada:** Sin dato.
 
+   **Fuentes:** Clave de registro en encuesta de conflictos ambientales: F40.
 
-### Superficie de conflicto por categorías de aptitud (km²)
+### Análisis de conflictos potenciales con base en la aptitud sectorial
+
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_agricultura_forestal_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_agricultura_eq_cruza_forestal_eq.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
@@ -130,40 +181,38 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ## Agricultura tecnificada afecta a Milpa maya
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-* Deforestación y fragmentación de selvas y vegetación melífera y ocupación de zonas milperas por crecimiento de zonas agrícolas.
+1. Deforestación y fragmentación de selvas y vegetación melífera y ocupación de zonas milperas por crecimiento de zonas agrícolas.
 
-#### Recursos afectados
+   **Recursos afectados:** Biodiversidad, vegetación forestal.
 
-* Vegetación forestal.
+   **Ubicación reportada:**
 
-#### Ubicación reportada
+   - Municipios y (localidades): Sucilá, Tekax (sur del municipio), Tizimín (ejidos: Santa María, Santa Clara, Dzonot, Nuevo Mundo-El Cuyo, San Manuel; localidades: Ramonal, Regadío, Xbojon, San Antonio y colonia Yucatán).
+   - Centro, sur y suroeste del estado.
 
-- Municipios (localidades, ejidos o zonas): Sucilá, Tekax (sur), Tizimín (ejidos: Santa María, Santa Clara, Dzonot, Nuevo Mundo-El Cuyo, San Manuel); localidades: Ramonal, Regadío, Xbojon, San Antonio y colonia Yucatán).
-- Centro, sur y suroeste del estado.
+   **Fuentes:**
 
-#### Fuentes
+   - Consejo Civil Mexicano para la Silvicultura Sostenible 2020, Rodríguez-Robayo et al. 2020, Barba Macías et al. 2019, Chan 2019, Echánove Huacuja 2019, Gómez Cano et al. 2019, Williams et al. 2017, Mascorro et al. 2016, Ellis et al. 2015, González Acereto y Quezada Euán 2010, Ayala Arcipreste 2001.
+   - Taller agricultura tecnificada, taller milpa y apicultura.
+   - Clave de registro en encuesta de conflictos ambientales: F19, F32, F37 y F53.
 
-- Consejo Civil Mexicano para la Silvicultura Sostenible 2020, Rodríguez-Robayo et al. 2020, Barba Ma-cías et al. 2019, Echánove Huacuja 2019, Gómez Cano et al. 2019, Williams et al. 2017, Mascorro et al. 2016, Ellis et al. 2015, Ayala Arcipreste 2001
-- Taller milpa y apicultura, taller agricultura tecnificada
-- Clave de registro en encuesta de conflictos ambientales: F19, F32, F35, F37 y F53
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_agricultura_milpa_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_agricultura_eq_cruza_milpa_maya_eq.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 

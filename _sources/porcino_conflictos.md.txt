@@ -1,96 +1,96 @@
 # Pecuario porcino y avícola
 
-
 ## Porcino y avícola afecta a Conservación
 
+### Conflictos reportados en la literatura, encuestas y talleres
 
-### Descripción del conflicto
+1. Contaminación de cenotes, acuífero y lagunas costeras por la descarga de desechos sin tratamiento de los corrales de bovinos y las granjas porcícolas y avícolas.
 
-- Contaminación de cenotes, acuífero y lagunas costeras por la descarga de desechos sin tratamiento de los corrales de bovinos y las granjas porcícolas y avícolas.
-- Pérdida y fragmentación de ecosistemas por invasión o cambio de uso de suelo derivado del crecimiento de las áreas ganaderas (se mencionan en particular humedales, selvas, hábitat de jaguar).
+   **Recursos afectados:** Agua.
 
+   **Ubicación reportada:**
 
-#### Recursos afectados
+   - Municipios: Abalá, Acanceh, Cacalchén, Conkal, Homún, Hunucmá, Kanasín, Muxupip, Tekantó, Tizimín, Valladolid.
+   - Zona Oriente.
+   - Reserva Estatal Geohidrológica del Anillo de Cenotes.
 
-* Agua, aire, vegetación forestal.
+   **Fuentes:**
 
+   - Batllori, 2019, García de Fuentes et al. 2019, OCDE 2019, Batllori 2016, FAO-SEDER-Gobierno de Yucatán 2016, Méndez et al. 2009, Drucker et al. 2003, Greenpeace s.f.
+   - Taller pecuario bovino, taller pecuario porcino y avícola, taller pesca y acuacultura.
+   - Clave de registro en encuesta de conflictos ambientales: F7, F13, F14, F31, F45, F46, F48, F49; F54 y F55.
 
-#### Ubicación reportada
+2. Pérdida y fragmentación de ecosistemas por invasión o cambio de uso de suelo derivado del crecimiento de las áreas ganaderas (se mencionan en particular humedales, selvas, hábitat de jaguar).
 
-- Municipios: Abalá, Acanceh, Buctzotz, Cacalchén, Conkal, Homún, Hunucmá, Kanasín, Muxupip, Panabá, San Felipe, Sucilá, Tekantó, Tekax, Tizimín.
-- Regiones: Noroeste, Oriente, Litoral Centro, Centro.
-- Reserva Estatal Geohidrológica del Anillo de Cenotes.
-- Reserva Estatal Dzilam - Reserva de la Biosfera Ría Lagartos (humedales).
-- UMAFOR 3105: 16 municipios (Cenotillo, Chankom, Dzitás, Hocabá, Hoctún, Huhí, Izamal, Kantunil, Quintana Roo, Sanahcat, Sotuta, Sudzal, Tekal de Venegas, Tunkás, Xocchel, Yaxcabá).
+   **Recursos afectados:** Vegetación forestal, humedales.
 
+   **Ubicación reportada:**
 
-#### Fuentes
+   - Municipios: Buctzotz, Panabá, San Felipe, Sucilá, Tekax, Tizimín.
+   - Regiones: Centro, Litoral Centro, Noreste, Oriente.
+   - UMAFOR 3105: 16 municipios (Cenotillo, Chankom, Dzitás, Hocabá, Hoctún, Huhí, Izamal, Kantu-nil, Quintana Roo, Sanahcat, Sotuta, Sudzal, Tekal de Venegas, Tunkás, Xocchel, Yaxcabá).
+   - Reserva Estatal Dzilam - Reserva de la Biosfera Ría Lagartos (humedales).
 
-- Batllori, 2019, García de Fuentes et al. 2019, OCDE 2019, Ellis et al. 2017, Cruz Zamudio 2017, Batllori 2016, Cepeda y Amoroso 2016, FAO-SEDER-Gobierno de Yucatán 2016, Ellis et al. 2015, Ch´iibal Ma-yao´ob A.C. 2011, González Acereto y Quezada Euán, 2010, Méndez et al. 2009, Drucker et al. 2003, Ayala Arcipestre 2001, Greenpeace s.f.
-- Taller pecuario bovino, taller pecuario porcino y avícola, taller pesca y acuacultura.
-- Clave de registro en encuesta de conflictos ambientales: F7, F13, F14, F29, F31, F45, F46, F48, F49; F54 y F55.
+   **Fuentes:**
 
-
-### Superficie de conflicto por categorías de aptitud (km²)
-
-![](./recursos/conflictos/fi_pec_porcino_conservacion_extension.png)
+   - Cruz Zamudio 2017, Ellis et al. 2017, Cepeda y Amoroso 2016, Ellis et al. 2015, Ch´iibal Mayao´ob A.C. 2011, González Acereto y Quezada Euán, 2010, Ayala Arcipreste 2001.
+   - Taller pecuario bovino.
+   - Clave de registro en encuesta de conflictos ambientales: F29 y F49.
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+### Análisis de conflictos potenciales con base en la aptitud sectorial
+
+#### Superficie de conflicto por categorías de aptitud (km²)
+
+![](./recursos/conflictos/fi_pec_porcino_conservacion_extension.png)
+
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_porcino_avicola_eq_cruza_conservacion_eq.png)
 
+<div style="page-break-after: always;"></div>
 
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
 ![](./recursos/conflictos/fi_porcino_avicola_conservacion_indices.png)
 
 
-
 ## Porcino y avícola afecta a Urbano
 
+### Conflictos reportados en la literatura, encuestas y talleres
 
-### Descripción del conflicto
+1. Contaminación del aire y malos olores generados por los desechos de los corrales de bovinos y las granjas porcícolas y avícolas.
 
--Contaminación del aire y malos olores generados por los desechos de los corrales de bovinos y las granjas porcícolas y avícolas.
+   **Recursos afectados:** Aire.
 
+   **Ubicación reportada:** Sin dato.
 
-#### Recursos afectados
+   **Fuentes:**
 
-* Aire.
+   - Batllori 2019, Drucker et al. 2003.
+   - Taller pecuario bovino, taller pecuario porcino y avícola.
+   - Clave de registro en encuesta de conflictos ambientales: F3 y F9.
 
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-#### Ubicación reportada
-
-- Sin dato.
-
-
-#### Fuentes
-
-- Batllori 2019, Drucker et al. 2003, Greenpeace s.f.
-- Taller pecuario bovino, taller pecuario porcino y avícola.
-- Clave de registro en encuesta de conflictos ambientales: F3 y F9.
-
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_porcino_avicola_vs_crec_urbano_resc_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_porcino_avicola_eq_cruza_crec_urbano_resc.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 

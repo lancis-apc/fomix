@@ -2,40 +2,31 @@
 
 ## Forestal afecta a Apicultura
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-- Pérdida de especies de plantas melíferas producto de la deforestación acelerada.
+1. Pérdida de especies de plantas melíferas producto de la deforestación acelerada.
 
+   **Recursos afectados:** Biodiversidad.
 
-#### Recursos afectados
+   **Ubicación reportada:** Sin dato.
 
-* Biodiversidad.
+   **Fuentes:** Clave de registro en encuesta de conflictos ambientales: F8.
 
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-#### Ubicación reportada
-
-- Sin dato.
-
-
-#### Fuentes
-
-- Clave de registro en encuesta de conflictos ambientales: F8.
-
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_forestal_apicultura_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_forestal_eq_cruza_apicultura_eq.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
@@ -44,42 +35,35 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ## Forestal afecta a Conservación
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-- Deforestación y afectación a fauna nativa por aprovechamiento forestal y cultivo de maderas preciosas (cedros) por aplicación del Programa Sembrando vida.
+1. Deforestación y afectación a fauna nativa por aprovechamiento forestal y cultivo de maderas preciosas (cedros) por aplicación del Programa Sembrando vida.
 
+   **Recursos afectados:** Biodiversidad, vegetación forestal.
 
-#### Recursos afectados
+   **Ubicación reportada:** Sin dato.
 
-* Biodiversidad, vegetación forestal.
+   **Fuentes:**
 
+   - Batllori 2019.
+   - Taller forestal.
+   - Clave de registro en encuesta de conflictos ambientales: F39.
 
-#### Ubicación reportada
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-- Sin dato.
-
-
-#### Fuentes
-
-- Batllori 2019.
-- Taller forestal.
-- Clave de registro en encuesta de conflictos ambientales: F39.
-
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_forestal_conservacion_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_forestal_eq_cruza_conservacion_eq.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
@@ -88,40 +72,31 @@ Los índices indican la severidad del conflicto y pueden tener valores entre 0 y
 
 ## Forestal afecta a Urbano
 
-### Descripción del conflicto
+### Conflictos reportados en la literatura, encuestas y talleres
 
-- Restricciones a la expansión urbana.
+1. Restricciones a la expansión urbana.
 
+   **Recursos afectados:** Espacio físico.
 
-#### Recursos afectados
+   **Ubicación reportada:** Sin dato.
 
-* Espacio físico.
+   **Fuentes:** Clave de registro en encuesta de conflictos ambientales: F16.
 
+### Análisis de conflictos potenciales con base en la aptitud sectorial
 
-#### Ubicación reportada
-
-- Sin dato.
-
-
-#### Fuentes
-
-- Clave de registro en encuesta de conflictos ambientales: F16.
-
-
-### Superficie de conflicto por categorías de aptitud (km²)
+#### Superficie de conflicto por categorías de aptitud (km²)
 
 ![](./recursos/conflictos/fi_forestal_vs_crec_urbano_resc_extension.png)
 
 <div style="page-break-after: always;"></div>
 
-### Mapa de conflictos
+#### Mapa de conflictos
 
 Los conflictos ambientales resultan de la sopreposición de las categorías Alta y Muy alta de aptitud de los dos sectores incompatibles.
 
 ![](./recursos/conflictos/mapa_forestal_eq_cruza_crec_urbano_resc.png)
 
-
-### Índices de conflictos ambientales
+#### Índices de conflictos ambientales
 
 Los índices indican la severidad del conflicto y pueden tener valores entre 0 y 1.
 
