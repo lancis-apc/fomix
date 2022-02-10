@@ -1,0 +1,47 @@
+# Escenarios
+
+<!-- Ruta de la documentación:
+FOMIX\fmx_estudio_tecnico\diagnostico\talleres\sphinx\docs -->
+
+
+[Región I Poniente: Tendencial](./recursos/escenarios/1_tendencial_r1.html)
+
+[Región I Poniente: Contextual](./recursos/escenarios/2_contextual_r1.html)
+
+[Región I Poniente: Estratégico](./recursos/escenarios/3_estrategico_r1.html)
+
+[Región II Noroeste: Tendencial](./recursos/escenarios/4_tendencial_r2.html)
+
+[Región II Noroeste: Contextual](./recursos/escenarios/5_contextual_r2.html)
+
+[Región II Noroeste: Estratégico](./recursos/escenarios/6_estrategico_r2.html)
+
+[Región III Centro: Tendencial](./recursos/escenarios/7_tendencial_r3.html)
+
+[Región III Centro: Contextual](./recursos/escenarios/8_contextual_r3.html)
+
+[Región III Centro: Estratégico](./recursos/escenarios/9_estrategico_r3.html)
+
+[Región IV Litoral centro: Tendencial](./recursos/escenarios/10_tendencial_r4.html)
+
+[Región IV Litoral centro: Contextual](./recursos/escenarios/11_contextual_r4.html)
+
+[Región IV Litoral Centro: Estratégico](./recursos/escenarios/12_estrategico_r4.html)
+
+[Región V Noreste: Tendencial](./recursos/escenarios/13_tendencial_r5.html)
+
+[Región V Noreste: Contextual](./recursos/escenarios/14_contextual_r5.html)
+
+[Región V Noreste: Estratégico](./recursos/escenarios/15_estrategico_r5.html)
+
+[Región VI Oriente: Tendencial](./recursos/escenarios/16_tendencial_r6.html)
+
+[Región VI Oriente: Contextual](./recursos/escenarios/17_contextual_r6.html)
+
+[Región VI Oriente: Estratégico](./recursos/escenarios/18_estrategico_r6.html)
+
+[Región VII Sur: Tendencial](./recursos/escenarios/19_tendencial_r7.html)
+
+[Región VII Sur: Contextual](./recursos/escenarios/20_contextual_r7.html)
+
+[Región VII Sur: Estratégico](./recursos/escenarios/21_estrategico_r7.html)

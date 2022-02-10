@@ -61,6 +61,12 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
 
 .. toctree::
    :maxdepth: 6
+   :caption: Análisis de interacciones sectoriales:
+
+   redes
+
+.. toctree::
+   :maxdepth: 6
    :caption: Talleres de pronóstico:
    
    introduccion_pronos
@@ -72,7 +78,11 @@ Los productos de los talleres se actualizan conforme se obtienen resultados en l
    turismo_sp_pronos
    urbano_indus_pronos
 
+.. toctree::
+   :maxdepth: 6
+   :caption: Escenarios:
    
+   escenarios
 
 
 .. Indices and tables
