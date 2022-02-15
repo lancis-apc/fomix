@@ -14,7 +14,7 @@ En este reporte se muestran:
 
 Se identifica como una interacción positiva, si el cambio en una variable conduce al cambio en la otra en el mismo sentido. Es decir, el aumento de la variable causante ocasiona el aumento de la variable que recibe el efecto, o si la disminución de la variable causante ocasiona la disminución de la variable que recibe el efecto.
 
-Se identifica como una interacción negativa, si el cambio en una variable conduce al cambio en la otra en el mismo sentido. Es decir, el aumento de la variable causante ocasiona la disminución de la variable que recibe el efecto, o si la disminución de la variable causante ocasiona el aumento de la variable que recibe el efecto.
+Se identifica como una interacción negativa, si el cambio en una variable conduce al cambio en la otra en el sentido inverso. Es decir, el aumento de la variable causante ocasiona la disminución de la variable que recibe el efecto, o si la disminución de la variable causante ocasiona el aumento de la variable que recibe el efecto.
 
 La intensidad de la interacción se evalúa con las siguientes variables lingüísticas: Muy fuerte (MF), Fuerte (F), Moderada (M), Baja (B), Muy baja (MB), Baja (B). Las interacciones que no alcanzaron a ser evaluadas durante en taller se reportan como NE.
 
