@@ -389,3 +389,9 @@ Nula | 3046.2 | 8
 #### 1.3.4 Sensibilidad de atributos ambientales del sector percuario porcino y avícola
 
 ![](./recursos/pec_porcino_v2/fi_analisis_sensibilidad_porcino_avicola.png)
+
+#### 1.3.5 Mapa de aptitud insumo para el modelo de ordenamiento
+
+El sector pecuario porcícola y avícola enfrenta oposición por los impactos socioambientales asociados a sus actividades. Con el fin de encontrar el esquema de ocupación que resuelva este conflicto, se identificó el área mínima que reúne las características óptimas para el sector, a través de la aplicación del operador OWA al modelo multicriterio de aptitud (ver el método en Anexos de la etapa de Diagnóstico). Al mapa resultante se le excluyeron las zonas con valores de vulnerabilidad intrínseca del acuífero mayores a 0.5 como medida precautoria ante la posible contaminación del agua subterránea por las actividades porcícolas y avícolas.
+
+![](./recursos/pec_porcino_v2/mapa_porcino_mo.png)

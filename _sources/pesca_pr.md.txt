@@ -256,3 +256,9 @@ Nula | 10738.1 | 27
 #### 1.3.7 Sensibilidad de atributos ambientales del sector pesca
 
 ![](./recursos/pesca/fi_analisis_sensibilidad_pesca.png)
+
+#### 1.3.8 Mapa de aptitud insumo para el modelo de ordenamiento
+
+El mapa de aptitud para el desarrollo de infraestructura pesquera se restringió a la zona costera. Con el fin de encontrar el esquema de ocupación que optimice los beneficios al sector en la menor área, se aplicó el operador OWA al modelo multicriterio de aptitud (ver el método en Anexos de la etapa de Diagnóstico). El resultado prioriza la cercanía a localidades pesqueras y centros de distribución.
+
+![](./recursos/pesca/mapa_pesca_mo.png)

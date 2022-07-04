@@ -427,7 +427,11 @@ Nula | 1692.2 | 4
 
 ![](./recursos/urbano/fi_analisis_sensibilidad_urbano.png)
 
+#### 1.3.8 Mapa de aptitud insumo para el modelo de ordenamiento
 
+Con el fin de que el mapa de aptitud del sector urbano destaque las zonas de expansión urbana, se modificó la escala nominal de cinco a cuatro categorías, Muy baja (MB), Baja (B), Alta (A), Muy alta (MA), con los siguientes cortes: {MB=[0,0.2),B=[0.2,0.4),A=[0.4,0.8),MA=[0.8,1]}
+
+![](./recursos/urbano/mapa_urbano_mo.png)
 
 <!-- .. csv-table::
    :file: recursos/tabla_insumos_fv_gbe_sil_bio_usv_inegi.csv

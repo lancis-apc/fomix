@@ -1173,7 +1173,7 @@ ID | Categoría
 
 <div style="page-break-after: always;"></div>
 
-### 2.1.2 Mapa de aptitud integrado del sector minería
+#### 2.1.2 Mapa de aptitud integrado del sector minería
 
 ![](./recursos/mineria/mapa_aptitud_mineria.png)
 
@@ -1223,6 +1223,12 @@ Nula | 2675.8 | 7
 
 <div style="page-break-after: always;"></div>
 
-### 2.1.3 Sensibilidad de atributos ambientales del sector minería
+#### 2.1.3 Sensibilidad de atributos ambientales del sector minería
 
 ![](./recursos/mineria/fi_analisis_sensibilidad_mineria.png)
+
+#### 2.1.4 Mapa de aptitud insumo para el modelo de ordenamiento
+
+Al mapa de aptitud se le excluyeron las zonas con valores de vulnerabilidad intrínseca del acuífero mayores a 0.5 como medida precautoria ante la posible contaminación del agua subterránea por las actividades mineras.
+
+![](./recursos/mineria/mapa_mineria_mo.png)
